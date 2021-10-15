@@ -1,0 +1,392 @@
+/*rojo*/
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.rojo {
+  color: #e10707;
+  fill: #e10707;
+}
+
+.fondo-rojo {
+  background-color: #e10707;
+}
+
+/*azul*/
+.azul {
+  color: #1e73be;
+  fill: #1e73be;
+}
+
+.fondo-azul {
+  background-color: #1e73be;
+}
+
+/*gris-oscuro*/
+.gris-oscuro {
+  color: #282a2b;
+  fill: #282a2b;
+}
+
+.fondo-gris-oscuro {
+  background-color: #282a2b;
+}
+
+/*gris*/
+.gris {
+  color: #363839;
+  fill: #363839;
+}
+
+.fondo-gris {
+  background-color: #363839;
+}
+
+/*gris2*/
+.gris2 {
+  color: #7a7a7a;
+  fill: #7a7a7a;
+}
+
+.fondo-gris2 {
+  background-color: #7a7a7a;
+}
+
+/*gris3*/
+.gris3 {
+  color: #bbbbbb;
+  fill: #bbbbbb;
+}
+
+.fondo-gris3 {
+  background-color: #bbbbbb;
+}
+
+/*gris-claro*/
+.gris-claro {
+  color: #f8f8f8;
+  fill: #f8f8f8;
+}
+
+.fondo-gris-claro {
+  background-color: #f8f8f8;
+}
+
+/*blanco*/
+.blanco {
+  color: #ffffff;
+  fill: #ffffff;
+}
+
+.fondo-blanco {
+  background-color: #ffffff;
+}
+
+/*blanco90*/
+.blanco90 {
+  color: #ffffff90;
+  fill: #ffffff90;
+}
+
+.fondo-blanco90 {
+  background-color: #ffffff80;
+}
+
+/*blanco80*/
+.blanco80 {
+  color: #ffffff80;
+  fill: #ffffff80;
+}
+
+.fondo-blanco80 {
+  background-color: #ffffff80;
+}
+
+/*blanco60*/
+.blanco60 {
+  color: #ffffff60;
+  fill: #ffffff60;
+}
+
+.fondo-blanco60 {
+  background-color: #ffffff60;
+}
+
+/*blanco40*/
+.blanco40 {
+  color: #ffffff40;
+  fill: #ffffff40;
+}
+
+.fondo-blanco40 {
+  background-color: #ffffff40;
+}
+
+/*blanco20*/
+.blanco20 {
+  color: #ffffff20;
+  fill: #ffffff20;
+}
+
+.fondo-blanco20 {
+  background-color: #ffffff20;
+}
+
+/*negro*/
+.negro {
+  color: #000000;
+  fill: #000000;
+}
+
+.fondo-negro {
+  background-color: #000000;
+}
+
+.raleway {
+  font-family: "Raleway";
+}
+
+.work-sans {
+  font-family: "Work Sans";
+}
+
+h1 {
+  font: 4rem "Raleway";
+}
+
+h2 {
+  font: 3rem "Raleway";
+}
+
+h3 {
+  font: 2rem "Work Sans";
+}
+
+h4 {
+  font: 2rem "Work Sans";
+}
+
+h5 {
+  font: 1.5rem "Work Sans";
+}
+
+h6 {
+  font: 1rem "Work Sans";
+}
+
+h1,
+h2,
+h3 {
+  color: #282a2b;
+  font-weight: 800;
+}
+
+h4,
+h5,
+h6 {
+  color: #e10707;
+  font-weight: 500;
+}
+
+p {
+  line-height: 1.4em;
+}
+
+span,
+strong {
+  font-weight: bolder;
+}
+
+a div {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
+
+a div:hover, a div.hover {
+  font-weight: 600;
+  color: #363839;
+}
+
+a.dark div {
+  color: #ffffff80;
+}
+
+a.dark div:hover, a.dark div.hover {
+  font-weight: 600;
+  color: #ffffff;
+}
+
+a strong {
+  color: #7a7a7a;
+}
+
+a strong:hover, a strong.hover {
+  font-weight: 800;
+  color: #000000;
+}
+
+:root,
+html,
+body,
+*,
+*:before,
+*:after {
+  /* THIS DISABLE THE INHERIT STYLES */
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  -webkit-margin-start: 0;
+          margin-inline-start: 0;
+  -webkit-margin-end: 0;
+          margin-inline-end: 0;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  /* THIS ARE THE BRAND CUSTOM STYLES */
+  font-family: "Work Sans", "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #7a7a7a;
+  line-height: normal;
+  -webkit-transition: 500ms ease;
+  transition: 500ms ease;
+}
+
+.flex-row {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-column {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+header {
+  width: 100vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  text-align: center;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 0 10px #bbbbbb;
+          box-shadow: 0 0 10px #bbbbbb;
+}
+
+header:hover, header.hover {
+  -webkit-box-shadow: 0 0 20px #bbbbbb;
+          box-shadow: 0 0 20px #bbbbbb;
+}
+
+header * {
+  color: #bbbbbb;
+}
+
+header .navbar {
+  width: 100%;
+  height: 100%;
+  padding: 24px 40px;
+}
+
+header .navbar img {
+  height: 40px;
+}
+
+header .navbar:first-child {
+  padding-left: 40px;
+}
+
+header .nav-links {
+  width: 60%;
+  height: 100%;
+}
+
+header .nav-contact {
+  padding: 8px 40px;
+}
+
+header .nav-contact a:hover,
+header .nav-contact strong:hover {
+  color: #ffffff;
+}
+
+body {
+  width: 100%;
+  background-color: #f4f4f4;
+}
+
+.banner-div {
+  width: 100%;
+  height: 50vh;
+  background: #ffffff00 url(../../img/transport-bg.jpg) no-repeat;
+  background-size: cover;
+  mix-blend-mode: luminosity;
+  opacity: 0.24;
+}
+
+footer {
+  width: 100vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #282a2b;
+  padding: 80px 10%;
+  -webkit-box-shadow: 0 0 20px #7a7a7a;
+          box-shadow: 0 0 20px #7a7a7a;
+}
+
+footer:hover, footer.hover {
+  -webkit-box-shadow: 0 0 40px #363839;
+          box-shadow: 0 0 40px #363839;
+}
+
+footer a:hover {
+  color: #ffffff;
+}
+
+footer h3 {
+  margin-bottom: 2rem;
+}
+
+footer h3:hover {
+  color: #ffffff80;
+}
+
+footer div {
+  row-gap: 0.5rem;
+}
+
+footer div:last-child {
+  row-gap: 2rem;
+}
+
+footer div:last-child {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+/*# sourceMappingURL=gps-control-styles.css.map */
