@@ -11,7 +11,7 @@ body,
 }
 
 /*rojo*/
-.rojo {
+.rojo * {
   color: #e30521;
   fill: #e30521;
 }
@@ -42,12 +42,12 @@ body,
 
 /*gris-oscuro*/
 .gris-oscuro {
-  color: #2d2d2b;
-  fill: #2d2d2b;
+  color: #2d2d2d;
+  fill: #2d2d2d;
 }
 
 .fondo-gris-oscuro {
-  background-color: #282a2b;
+  background-color: #2d2d2d;
 }
 
 /*gris*/
@@ -82,12 +82,12 @@ body,
 
 /*gris-claro*/
 .gris-claro {
-  color: #f8f8f8;
-  fill: #f8f8f8;
+  color: #f4f4f4;
+  fill: #f4f4f4;
 }
 
 .fondo-gris-claro {
-  background-color: #f8f8f8;
+  background-color: #f4f4f4;
 }
 
 /*blanco*/
@@ -107,7 +107,7 @@ body,
 }
 
 .fondo-blanco90 {
-  background-color: #ffffff80;
+  background-color: #ffffff90;
 }
 
 /*blanco80*/
@@ -148,6 +148,16 @@ body,
 
 .fondo-blanco20 {
   background-color: #ffffff20;
+}
+
+/*blanco0*/
+.blanco0 {
+  color: #ffffff00;
+  fill: #ffffff00;
+}
+
+.fondo-blanco0 {
+  background-color: #ffffff00;
 }
 
 /*negro*/
@@ -202,7 +212,7 @@ h3 {
 h4,
 h5,
 h6 {
-  color: #2d2d2b;
+  color: #2d2d2d;
   font-weight: 500;
 }
 
@@ -224,28 +234,124 @@ dd {
   line-height: 1.8;
 }
 
-a div {
-  cursor: pointer;
-  height: 100%;
+li::marker,
+dd::marker {
+  color: #1c2f5c;
 }
 
-a div:hover, a div.hover {
+button,
+a,
+input {
+  /* THIS DISABLES THE PRESET OPTIONS */
+  -webkit-appearance: inherit;
+     -moz-appearance: inherit;
+          appearance: inherit;
+  font: inherit;
+  font-size: 100%;
+  background-color: inherit;
+  background-image: inherit;
+  border-style: inherit;
+  outline: inherit;
+}
+
+button,
+a,
+input[type="submit"],
+input[type="button"],
+input[type="file"] {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #2d2d2d;
+  font-family: 'Raleway';
   font-weight: 600;
-  color: #0099ca;
+  padding: 0.5em 0;
+  position: relative;
+  display: inline-block;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  text-decoration: none;
+  text-align: left;
+  line-height: normal;
+  white-space: nowrap;
+  vertical-align: middle;
+  border-bottom: 0.15em solid;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  cursor: pointer;
 }
 
-a.dark div {
+button *,
+a *,
+input[type="submit"] *,
+input[type="button"] *,
+input[type="file"] * {
+  color: #2d2d2d;
+}
+
+button:hover,
+a:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover,
+input[type="file"]:hover {
+  padding-left: 1em;
+}
+
+button strong:hover, button strong.hover,
+a strong:hover,
+a strong.hover,
+input[type="submit"] strong:hover,
+input[type="submit"] strong.hover,
+input[type="button"] strong:hover,
+input[type="button"] strong.hover,
+input[type="file"] strong:hover,
+input[type="file"] strong.hover {
+  font-weight: 800;
+  color: #e30521;
+}
+
+button.dark,
+a.dark,
+input[type="submit"].dark,
+input[type="button"].dark,
+input[type="file"].dark {
+  color: #ffffff90;
+}
+
+button.dark *,
+a.dark *,
+input[type="submit"].dark *,
+input[type="button"].dark *,
+input[type="file"].dark * {
   color: #ffffff80;
 }
 
-a.dark div:hover, a.dark div.hover {
-  font-weight: 600;
+button.dark:hover, button.dark.hover,
+button.dark strong:hover,
+a.dark:hover,
+a.dark.hover,
+a.dark strong:hover,
+input[type="submit"].dark:hover,
+input[type="submit"].dark.hover,
+input[type="submit"].dark strong:hover,
+input[type="button"].dark:hover,
+input[type="button"].dark.hover,
+input[type="button"].dark strong:hover,
+input[type="file"].dark:hover,
+input[type="file"].dark.hover,
+input[type="file"].dark strong:hover {
   color: #ffffff;
 }
 
-a strong:hover, a strong.hover {
-  font-weight: 800;
-  color: #e30521;
+button.sin-borde,
+a.sin-borde,
+input[type="submit"].sin-borde,
+input[type="button"].sin-borde,
+input[type="file"].sin-borde {
+  padding: 0;
+  border: none;
 }
 
 :root,
@@ -308,6 +414,7 @@ body,
 
 .big-div {
   width: 100vw;
+  z-index: 3;
 }
 
 .card {
@@ -365,10 +472,10 @@ header {
   height: -moz-fit-content;
   height: fit-content;
   text-align: center;
-  background-color: #ffffff;
+  background-color: #ffffff00;
   -webkit-box-shadow: 0 0 10px #bbbbbb;
           box-shadow: 0 0 10px #bbbbbb;
-  z-index: 3;
+  z-index: 4;
 }
 
 header:hover, header.hover {
@@ -376,14 +483,11 @@ header:hover, header.hover {
           box-shadow: 0 0 20px #bbbbbb;
 }
 
-header * {
-  color: #bbbbbb;
-}
-
 header .navbar {
   width: 100vw;
   height: 100%;
   padding: 24px 40px;
+  background-color: #ffffff00;
 }
 
 header .navbar img {
@@ -403,40 +507,50 @@ header .nav-contact {
   padding: 8px 40px;
 }
 
-header .nav-contact a:hover,
-header .nav-contact strong:hover {
-  color: #ffffff;
-}
-
 html,
 body {
   width: 100vw;
+  background-color: #ffffff00;
+}
+
+.main {
+  position: absolute;
   background-color: #ffffff;
+  top: 0;
+  z-index: -1;
 }
 
 .banner-div {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100vw;
+  overflow: hidden;
+  padding: 16% 20% 12%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: relative;
-  padding: 14% 20%;
 }
 
-.banner-div .img-bg {
+.banner-div .img-div {
   position: absolute;
-  width: 100vw;
+  width: 100%;
   height: 100%;
-  background: #ffffff00 url(../../img/transport-bg.jpg) no-repeat;
+  background: url(../../img/transport-bg.jpg) no-repeat;
   background-size: cover;
   mix-blend-mode: luminosity;
-  opacity: 0.2;
+}
+
+.banner-div .img-filter {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(#ffffff80), to(#ffffff));
+  background: linear-gradient(to top, #ffffff80, #ffffff);
 }
 
 .banner-div .text-div {
@@ -454,11 +568,11 @@ footer {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  background-color: #2d2d2b;
+  background-color: #2d2d2d;
   padding: 80px 10%;
   -webkit-box-shadow: 0 0 20px #7a7a7a;
           box-shadow: 0 0 20px #7a7a7a;
-  z-index: 3;
+  z-index: 4;
 }
 
 footer:hover, footer.hover {
@@ -475,7 +589,13 @@ footer h3 {
 }
 
 footer h3:hover {
-  color: #ffffff80;
+  color: #ffffff;
+}
+
+footer.flex-row {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 footer div {

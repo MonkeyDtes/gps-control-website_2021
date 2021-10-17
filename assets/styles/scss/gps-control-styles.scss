@@ -11,137 +11,148 @@ body,
 
 $rojo: #e30521; /*rojo*/
 .rojo {
-  color: #e30521;
-  fill: #e30521;
+  *{    
+    color: $rojo;
+    fill: $rojo;
+  }
 }
 .fondo-rojo {
-  background-color: #e30521;
+  background-color: $rojo;
 }
 
 $azul: #1c2f5c; /*azul*/
 .azul {
-  color: #1c2f5c;
-  fill: #1c2f5c;
+  color: $azul;
+  fill: $azul;
 }
 .fondo-azul {
-  background-color: #1c2f5c;
+  background-color: $azul;
 }
 
 $cyan: #0099ca; /*cyan*/
 .cyan {
-  color: #0099ca;
-  fill: #0099ca;
+  color: $cyan;
+  fill: $cyan;
 }
 .fondo-cyan {
-  background-color: #0099ca;
+  background-color: $cyan;
 }
 
-$gris-oscuro: #2d2d2b; /*gris-oscuro*/
+$gris-oscuro: #2d2d2d; /*gris-oscuro*/
 .gris-oscuro {
-  color: #2d2d2b;
-  fill: #2d2d2b;
+  color: $gris-oscuro;
+  fill: $gris-oscuro;
 }
 .fondo-gris-oscuro {
-  background-color: #282a2b;
+  background-color: $gris-oscuro;
 }
 
 $gris: #555555; /*gris*/
 .gris {
-  color: #555555;
-  fill: #555555;
+  color: $gris;
+  fill: $gris;
 }
 .fondo-gris {
-  background-color: #555555;
+  background-color: $gris;
 }
 
 $gris2: #7a7a7a; /*gris2*/
 .gris2 {
-  color: #7a7a7a;
-  fill: #7a7a7a;
+  color: $gris2;
+  fill: $gris2;
 }
 .fondo-gris2 {
-  background-color: #7a7a7a;
+  background-color: $gris2;
 }
 
 $gris3: #bbbbbb; /*gris3*/
 .gris3 {
-  color: #bbbbbb;
-  fill: #bbbbbb;
+  color: $gris3;
+  fill: $gris3;
 }
 .fondo-gris3 {
-  background-color: #bbbbbb;
+  background-color: $gris3;
 }
 
 $gris-claro: #f4f4f4; /*gris-claro*/
 .gris-claro {
-  color: #f8f8f8;
-  fill: #f8f8f8;
+  color: $gris-claro;
+  fill: $gris-claro;
 }
 .fondo-gris-claro {
-  background-color: #f8f8f8;
+  background-color: $gris-claro;
 }
 
 $blanco: #ffffff; /*blanco*/
 .blanco {
-  color: #ffffff;
-  fill: #ffffff;
+  color: $blanco;
+  fill: $blanco;
 }
 .fondo-blanco {
-  background-color: #ffffff;
+  background-color: $blanco;
 }
 
 $blanco90: #ffffff90; /*blanco90*/
 .blanco90 {
-  color: #ffffff90;
-  fill: #ffffff90;
+  color: $blanco90;
+  fill: $blanco90;
 }
 .fondo-blanco90 {
-  background-color: #ffffff80;
+  background-color: $blanco90;
 }
 
 $blanco80: #ffffff80; /*blanco80*/
 .blanco80 {
-  color: #ffffff80;
-  fill: #ffffff80;
+  color: $blanco80;
+  fill: $blanco80;
 }
 .fondo-blanco80 {
-  background-color: #ffffff80;
+  background-color: $blanco80;
 }
 
 $blanco60: #ffffff60; /*blanco60*/
 .blanco60 {
-  color: #ffffff60;
-  fill: #ffffff60;
+  color: $blanco60;
+  fill: $blanco60;
 }
 .fondo-blanco60 {
-  background-color: #ffffff60;
+  background-color: $blanco60;
 }
 
 $blanco40: #ffffff40; /*blanco40*/
 .blanco40 {
-  color: #ffffff40;
-  fill: #ffffff40;
+  color: $blanco40;
+  fill: $blanco40;
 }
 .fondo-blanco40 {
-  background-color: #ffffff40;
+  background-color: $blanco40;
 }
 
 $blanco20: #ffffff20; /*blanco20*/
 .blanco20 {
-  color: #ffffff20;
-  fill: #ffffff20;
+  color: $blanco20;
+  fill: $blanco20;
 }
 .fondo-blanco20 {
-  background-color: #ffffff20;
+  background-color: $blanco20;
+}
+
+$blanco0: #ffffff00; /*blanco0*/
+.blanco0 {
+  color: $blanco0;
+  fill: $blanco0;
+}
+.fondo-blanco0 {
+  background-color: $blanco0;
 }
 
 $negro: #000000; /*negro*/
 .negro {
-  color: #000000;
-  fill: #000000;
+  color: $negro;
+  fill: $negro;
 }
 .fondo-negro {
-  background-color: #000000;
+  background-color: $negro;
 }
 
 /// FONTS ///
@@ -211,32 +222,56 @@ dd{
   font-size: 14px;
   color: $gris3;
   line-height: 1.8;
+
+  &::marker{
+    color: $azul;
+  }
 }
 
 /// LINKS AND BUTTONS STYLES ///
 
-a {
-  div {
-    cursor: pointer;
-    height: 100%;
+button,
+a,
+input {
+  /* THIS DISABLES THE PRESET OPTIONS */
+  appearance: inherit;
+  font: inherit;
+  font-size: 100%;
+  background-color: inherit;
+  background-image: inherit;
+  border-style: inherit;
+  outline: inherit;
+}
 
-    &:hover,
-    &.hover {
-      font-weight: 600;
-      color: $cyan;
-    }
+button,
+a,
+input[type="submit"],
+input[type="button"],
+input[type="file"]{
+  width: fit-content;
+  color: $gris-oscuro;
+  font-family: 'Raleway';
+  font-weight: 600;
+  padding: 0.5em 0;
+  position: relative;
+  display: inline-block;
+  width: fit-content;
+  height: fit-content;
+  text-decoration: none;
+  text-align: left;
+  line-height: normal;
+  white-space: nowrap;
+  vertical-align: middle;
+  border-bottom: 0.15em solid;
+  touch-action: manipulation;
+  cursor: pointer;
+
+  *{
+    color: $gris-oscuro;
   }
 
-  &.dark {
-    div {
-      color: $blanco80;
-
-      &:hover,
-      &.hover {
-        font-weight: 600;
-        color: $blanco;
-      }
-    }
+  &:hover{
+    padding-left: 1em;
   }
 
   strong {
@@ -246,6 +281,25 @@ a {
       color: $rojo;
     }
   }
+
+  &.dark {
+    color: $blanco90;
+
+    *{
+      color: $blanco80;
+    }
+
+    &:hover,
+    &.hover,
+    strong:hover {
+      color: $blanco;
+    }
+  }
+
+  &.sin-borde {
+    padding: 0;
+    border: none;
+  }  
 }
 
 /// GENERAL STYLES ///
@@ -290,6 +344,7 @@ body,
 
 .big-div {
   width: 100vw;
+  z-index: 3;
 }
 
 .card {
@@ -343,23 +398,20 @@ header {
   width: 100vw;
   height: fit-content;
   text-align: center;
-  background-color: $blanco;
+  background-color: $blanco0;
   box-shadow: 0 0 10px $gris3;
-  z-index: 3;
+  z-index: 4;
 
   &:hover,
   &.hover {
     box-shadow: 0 0 20px $gris3;
   }
 
-  * {
-    color: $gris3;
-  }
-
   .navbar {
     width: 100vw;
     height: 100%;
     padding: 24px 40px;
+    background-color: $blanco0;
 
     img {
       height: 40px;
@@ -377,11 +429,6 @@ header {
 
   .nav-contact {
     padding: 8px 40px;
-
-    a:hover,
-    strong:hover {
-      color: $blanco;
-    }
   }
 }
 
@@ -390,27 +437,41 @@ header {
 html,
 body {
   width: 100vw;
+  background-color: $blanco0;
+}
+
+.main{
+  position: absolute;
   background-color: $blanco;
+  top: 0;
+  z-index: -1;
 }
 
 /// BANNER ///
 
 .banner-div {
+  position: relative;
   display: flex;
   width: 100vw;
+  overflow: hidden;
+  padding: 16% 20% 12%;
   align-items: center;
   justify-content: center;
-  position: relative;
-  padding: 14% 20%;
 
-  .img-bg {
+  .img-div{
     position: absolute;
-    width: 100vw;
+    width: 100%;
     height: 100%;
-    background: #ffffff00 url(../../img/transport-bg.jpg) no-repeat;
+    background: url(../../img/transport-bg.jpg) no-repeat;
     background-size: cover;
     mix-blend-mode: luminosity;
-    opacity: 0.2;
+  }
+  
+  .img-filter {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, $blanco80, $blanco);
   }
 
   .text-div {
@@ -432,7 +493,7 @@ footer {
   background-color: $gris-oscuro;
   padding: 80px 10%;
   box-shadow: 0 0 20px $gris2;
-  z-index: 3;
+  z-index: 4;
 
   &:hover,
   &.hover {
@@ -447,8 +508,12 @@ footer {
     margin-bottom: 2rem;
 
     &:hover {
-      color: $blanco80;
+      color: $blanco;
     }
+  }
+
+  &.flex-row{
+    align-items: flex-start;
   }
 
   div {
