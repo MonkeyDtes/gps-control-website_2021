@@ -11,13 +11,20 @@ body,
 
 $rojo: #e30521; /*rojo*/
 .rojo {
-  *{    
-    color: $rojo;
-    fill: $rojo;
-  }
+  color: $rojo;
+  fill: $rojo;
 }
 .fondo-rojo {
   background-color: $rojo;
+}
+.hover-rojo:hover {
+  color: $rojo;
+  fill: $rojo;
+
+  *{
+    color: $rojo;
+    fill: $rojo;
+  }
 }
 
 $azul: #1c2f5c; /*azul*/
@@ -28,6 +35,15 @@ $azul: #1c2f5c; /*azul*/
 .fondo-azul {
   background-color: $azul;
 }
+.hover-azul:hover {
+  color: $azul;
+  fill: $azul;
+
+  *{
+    color: $azul;
+    fill: $azul;
+  }
+}
 
 $cyan: #0099ca; /*cyan*/
 .cyan {
@@ -37,6 +53,15 @@ $cyan: #0099ca; /*cyan*/
 .fondo-cyan {
   background-color: $cyan;
 }
+.hover-cyan:hover {
+  color: $cyan;
+  fill: $cyan;
+
+  *{
+    color: $cyan;
+    fill: $cyan;
+  }
+}
 
 $gris-oscuro: #2d2d2d; /*gris-oscuro*/
 .gris-oscuro {
@@ -45,6 +70,10 @@ $gris-oscuro: #2d2d2d; /*gris-oscuro*/
 }
 .fondo-gris-oscuro {
   background-color: $gris-oscuro;
+}
+.hover-gris-oscuro:hover {
+  color: $gris-oscuro;
+  fill: $gris-oscuro;
 }
 
 $gris: #555555; /*gris*/
@@ -219,12 +248,23 @@ strong {
 
 li,
 dd{
+  overflow: visible;
   font-size: 14px;
   color: $gris3;
   line-height: 1.8;
 
   &::marker{
-    color: $azul;
+    color: $gris3;
+    border-radius: 0;
+  }
+
+  &:hover,
+  &.hover{
+    color: $gris-oscuro;
+
+    &::marker{
+      color: $cyan;
+    }
   }
 }
 
@@ -249,7 +289,7 @@ input[type="submit"],
 input[type="button"],
 input[type="file"]{
   width: fit-content;
-  color: $gris-oscuro;
+  color: $gris3;
   font-family: 'Raleway';
   font-weight: 600;
   padding: 0.5em 0;
@@ -286,7 +326,7 @@ input[type="file"]{
     color: $blanco90;
 
     *{
-      color: $blanco80;
+      color: $blanco90;
     }
 
     &:hover,
@@ -299,7 +339,13 @@ input[type="file"]{
   &.sin-borde {
     padding: 0;
     border: none;
-  }  
+  }
+}
+
+/// IMAGES STYLES ///
+
+.app-icon{
+  width: 160px;
 }
 
 /// GENERAL STYLES ///
@@ -319,7 +365,6 @@ body,
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  overflow-x: hidden;
 
   /* THIS ARE THE BRAND CUSTOM STYLES */
   font-family: "Work Sans", "Raleway", sans-serif;
@@ -342,6 +387,27 @@ body,
   justify-content: start;
 }
 
+.flex-gallery{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+
+  *{
+    text-align: center;
+  }
+
+  .app-icon{
+    transform: scale(0.8);
+  }
+
+  a:hover{
+    .app-icon{
+      transform: scale(1);
+    }
+  }
+}
+
 .big-div {
   width: 100vw;
   z-index: 3;
@@ -362,22 +428,64 @@ body,
   }
 }
 
+.main-title-div{
+  text-align: center;
+  gap: 1em;
+}
+
+.big-img-div{
+  text-align: center;
+  padding: 0 20% 5%;
+
+  img{
+    width: 100%;
+  }
+}
+
 .app-div{
-  padding: 5% 10%;
+  padding: 8% 10%;
   gap: 10%;
+
+  img{
+    width: 50%;
+    box-shadow: 0 30px 60px $gris3;
+  }
 
   h4{
     margin-bottom: 0.5em;
   }
 
   .app-info-div{
-    width: 45%;
+    width: 40%;
     gap: 2rem;
 
     p{
       margin-top: 1rem;
     }
   }
+}
+
+.data-div{
+  padding: 5% 20%;
+  gap: 4rem;
+  background-color: $gris-claro;
+
+  .data-info-div{
+    
+    *{
+      width: 45%;
+    }
+  }
+}
+
+.gallery-list{
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.btns-div{
+  justify-content: flex-start;
+  gap: 2em;
 }
 
 .sombra10{
@@ -438,6 +546,7 @@ html,
 body {
   width: 100vw;
   background-color: $blanco0;
+  overflow-x: hidden;
 }
 
 .main{
@@ -460,6 +569,7 @@ body {
 
   .img-div{
     position: absolute;
+    top: 0;
     width: 100%;
     height: 100%;
     background: url(../../img/transport-bg.jpg) no-repeat;
@@ -469,9 +579,10 @@ body {
   
   .img-filter {
     position: absolute;
+    top: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to top, $blanco80, $blanco);
+    background: linear-gradient(to top, $blanco80, $blanco 85%);
   }
 
   .text-div {
@@ -482,6 +593,38 @@ body {
       margin-bottom: 2rem;
       text-shadow: 0 0 10px $blanco;
     }
+  }
+}
+
+/// SEGUIMIENTO ///
+
+.seguimiento-div{
+  padding: 8% 10%;
+  gap: 5rem;
+
+  .main-title-div{
+    padding: 0 10%;
+  }
+}
+
+.soluciones-gal{
+  column-gap: 4rem;
+  row-gap: 2rem;
+}
+
+/// SOLUCIONES ///
+
+.mas-soluciones-div{
+  padding: 5% 20%;
+  row-gap: 4rem;
+  background-color: $gris-claro;
+
+  h5{
+    text-align: center;
+  }
+
+  li{
+    font-size: 16px;
   }
 }
 
