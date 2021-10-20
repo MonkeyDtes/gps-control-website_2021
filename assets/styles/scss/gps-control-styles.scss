@@ -575,6 +575,12 @@ header {
 
   .nav-contact {
     padding: 8px 40px;
+
+    p{
+      font-family: 'Raleway';
+      font-weight: 600;
+      color: $blanco90;
+    }
   }
 }
 
@@ -697,7 +703,7 @@ footer {
   .footer-float{
     position: absolute;
     width: 70vw;
-    padding: 4% 10%;
+    padding: 4%;
     margin: auto;
     top: 0;
     left: 0;
