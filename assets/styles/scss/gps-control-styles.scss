@@ -923,3 +923,16 @@ footer {
     box-shadow: 0 0 20px $gris3;
   }
 }
+
+@media screen and (max-width: 1400px) {
+    
+    /// BODY ///
+
+  .img-items-div{
+    padding: 8% 4%;
+
+    .img-items{
+      grid-template-columns: auto 35% auto;
+    }
+  }
+}

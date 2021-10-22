@@ -1081,4 +1081,14 @@ footer .map-div {
   -webkit-box-shadow: 0 0 20px #bbbbbb;
           box-shadow: 0 0 20px #bbbbbb;
 }
+
+@media screen and (max-width: 1400px) {
+  .img-items-div {
+    padding: 8% 4%;
+  }
+  .img-items-div .img-items {
+    -ms-grid-columns: auto 35% auto;
+        grid-template-columns: auto 35% auto;
+  }
+}
 /*# sourceMappingURL=gps-control-styles.css.map */
