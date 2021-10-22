@@ -329,9 +329,10 @@ dd {
   height: -moz-fit-content;
   height: fit-content;
   font-size: 14px;
-  line-height: 2.2;
   color: #bbbbbb;
   padding-left: 1rem;
+  padding-top: 0.7em;
+  padding-bottom: 0.7em;
   border-left: 2px solid;
   border-color: #f4f4f4;
   list-style-type: none;
@@ -347,6 +348,17 @@ dd.hover {
   font-weight: 600;
   -webkit-transform: translateX(2em);
           transform: translateX(2em);
+}
+
+li:hover strong, li.hover strong,
+dd:hover strong,
+dd.hover strong {
+  color: #10c4ff;
+}
+
+li strong,
+dd strong {
+  color: #7a7a7a;
 }
 
 button,
@@ -700,7 +712,7 @@ body,
 
 .app-div img.vertical {
   width: auto;
-  max-height: 80vh;
+  max-height: 75vh;
   margin: auto;
 }
 
@@ -748,7 +760,6 @@ body,
 
 .img-items-div .img-items li {
   width: 215px;
-  line-height: normal;
   margin-top: 1em;
   margin-bottom: 1em;
 }
@@ -926,47 +937,57 @@ body {
   padding: 0 10%;
 }
 
-.soluciones-div {
+.soluciones-div,
+.aplicaciones-div {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.soluciones-div .main-title-div {
+.soluciones-div .main-title-div,
+.aplicaciones-div .main-title-div {
   width: 45%;
 }
 
-.soluciones-div .main-title-div h1 {
+.soluciones-div .main-title-div h1,
+.aplicaciones-div .main-title-div h1 {
   color: #1c2f5c;
 }
 
-.soluciones-gal {
+.soluciones-gal,
+.aplicaciones-gal {
   row-gap: 40px;
 }
 
-.soluciones-gal a {
+.soluciones-gal a,
+.aplicaciones-gal a {
   width: 140px;
 }
 
-.soluciones-gal a p {
+.soluciones-gal a p,
+.aplicaciones-gal a p {
   width: 100%;
   margin-top: 1em;
   color: #bbbbbb;
 }
 
-.soluciones-gal a:hover .app-icon * {
+.soluciones-gal a:hover .app-icon *,
+.aplicaciones-gal a:hover .app-icon * {
   fill: #1c2f5c;
 }
 
-.soluciones-gal a:hover p {
+.soluciones-gal a:hover p,
+.aplicaciones-gal a:hover p {
   color: #10c4ff;
 }
 
-.soluciones-gal .app-icon {
+.soluciones-gal .app-icon,
+.aplicaciones-gal .app-icon {
   height: 100px;
 }
 
-.soluciones-gal .app-icon * {
+.soluciones-gal .app-icon *,
+.aplicaciones-gal .app-icon * {
   fill: #bbbbbb;
 }
 

@@ -315,9 +315,10 @@ li,
 dd{
   height: fit-content;
   font-size: 14px;
-  line-height: 2.2;
   color: $gris3;
   padding-left: 1rem;
+  padding-top: 0.7em;
+  padding-bottom: 0.7em;
   border-left: 2px solid;
   border-color: $gris-claro;
   list-style-type: none;
@@ -330,6 +331,14 @@ dd{
     font-weight: 600;
     transform: translateX(2em);
 
+    strong{
+      color: $cyan;
+    }
+
+  }
+
+  strong{
+    color: $gris2;
   }
 }
 
@@ -557,7 +566,7 @@ body,
 
     &.vertical{
       width: auto;
-      max-height: 80vh;
+      max-height: 75vh;
       margin: auto;
     }
   }
@@ -601,7 +610,6 @@ body,
 
     li{
       width: 215px;
-      line-height: normal;
       margin-top: 1em;
       margin-bottom: 1em;
       
@@ -778,7 +786,8 @@ body {
   }
 }
 
-.soluciones-div{
+.soluciones-div,
+.aplicaciones-div{
   align-items: center;
 
   .main-title-div{
@@ -790,7 +799,8 @@ body {
   }
 }
 
-.soluciones-gal{
+.soluciones-gal,
+.aplicaciones-gal{
   row-gap: 40px;
 
   a{
