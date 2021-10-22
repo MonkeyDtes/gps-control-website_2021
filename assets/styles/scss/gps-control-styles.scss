@@ -435,8 +435,16 @@ select{
 /// IMAGES STYLES ///
 
 .app-icon{
-  width: 160px;
-  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+  image{
+    width: 100%;
+    height: 100%;
+  }
 }
 
 /// GENERAL STYLES ///
@@ -529,7 +537,7 @@ body,
 .big-img-div{
   text-align: center;
 
-  img{
+  img {
     width: 100%;
   }
 }
@@ -544,7 +552,7 @@ body,
   padding: 8% 10%;
   gap: 10%;
 
-  img{
+  img {
     width: 50%;
 
     &.vertical{
@@ -787,19 +795,34 @@ body {
 
   a{
     width: 140px;
-    
-    h6{
-
-      color: $gris3;
-    }
 
     p{
       width: 100%;
+      margin-top: 1em;
+      color: $gris3;
+    }
+
+    &:hover{
+
+      .app-icon{
+
+        *{
+          fill: $azul;
+        }
+      }
+
+      p{
+        color: $cyan;
+      }
     }
   }
 
   .app-icon{
     height: 100px;
+    
+    *{
+      fill: $gris3;
+    }
   }
 }
 

@@ -1,1 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg"   viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-video"><polygon points="23 7 16 12 23 17 23 7"></polygon><rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#10C4FF;}
+</style>
+<path class="st0" d="M22.5,6.6c-0.3-0.2-0.7-0.1-0.9,0.1l-4.9,3.5V7.4c0-1.5-1.2-2.7-2.7-2.7H4c-1.5,0-2.7,1.2-2.7,2.7v9.1
+	c0,1.5,1.2,2.7,2.7,2.7h10c1.5,0,2.7-1.2,2.7-2.7v-2.8l4.9,3.5c0.2,0.1,0.3,0.2,0.5,0.2c0.1,0,0.3,0,0.4-0.1
+	c0.3-0.2,0.5-0.5,0.5-0.8V7.4C23,7.1,22.8,6.8,22.5,6.6z M14.8,16.6c0,0.5-0.4,0.9-0.9,0.9h-10c-0.5,0-0.9-0.4-0.9-0.9V7.4
+	c0-0.5,0.4-0.9,0.9-0.9h10c0.5,0,0.9,0.4,0.9,0.9V16.6z M21.2,14.8L17.3,12l3.9-2.8C21.2,9.2,21.2,14.8,21.2,14.8z"/>
+</svg>

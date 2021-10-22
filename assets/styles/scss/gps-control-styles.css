@@ -546,8 +546,22 @@ select::placeholder {
 }
 
 .app-icon {
-  width: 160px;
-  height: 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.app-icon image {
+  width: 100%;
+  height: 100%;
 }
 
 :root,
@@ -934,16 +948,26 @@ body {
   width: 140px;
 }
 
-.soluciones-gal a h6 {
+.soluciones-gal a p {
+  width: 100%;
+  margin-top: 1em;
   color: #bbbbbb;
 }
 
-.soluciones-gal a p {
-  width: 100%;
+.soluciones-gal a:hover .app-icon * {
+  fill: #1c2f5c;
+}
+
+.soluciones-gal a:hover p {
+  color: #10c4ff;
 }
 
 .soluciones-gal .app-icon {
   height: 100px;
+}
+
+.soluciones-gal .app-icon * {
+  fill: #bbbbbb;
 }
 
 .mas-caracteristicas-div {
