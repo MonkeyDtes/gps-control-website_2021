@@ -1090,12 +1090,51 @@ footer .map-div {
 }
 
 @media screen and (max-width: 1400px) {
+  :root,
+  html,
+  body,
+  *,
+  *:before,
+  *:after {
+    /* THIS ARE THE BRAND CUSTOM STYLES */
+    font-size: 14px;
+  }
   .img-items-div {
     padding: 8% 4%;
   }
   .img-items-div .img-items {
     -ms-grid-columns: auto 35% auto;
         grid-template-columns: auto 35% auto;
+  }
+  .app-div {
+    padding: 8%;
+  }
+  .app-gallery-div {
+    padding: 8% 2%;
+  }
+  .data-div,
+  .mas-caracteristicas-div {
+    padding: 6% 12%;
+  }
+  .img-items-div {
+    padding: 8% 4%;
+  }
+  .desarrollo-div {
+    padding: 5% 20%;
+  }
+  .desarrollo-div .data-info-div h1 {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .desarrollo-div .data-info-div p {
+    width: 60%;
+  }
+  footer {
+    height: 120vh;
+  }
+  footer .footer-float {
+    width: 80vw;
   }
 }
 /*# sourceMappingURL=gps-control-styles.css.map */

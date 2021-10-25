@@ -931,7 +931,17 @@ footer {
 }
 
 @media screen and (max-width: 1400px) {
-    
+
+    :root,
+  html,
+  body,
+  *,
+  *:before,
+  *:after {
+    /* THIS ARE THE BRAND CUSTOM STYLES */
+    font-size: 14px;
+  }
+
     /// BODY ///
 
   .img-items-div{
@@ -939,6 +949,48 @@ footer {
 
     .img-items{
       grid-template-columns: auto 35% auto;
+    }
+  }
+
+  .app-div{
+    padding: 8%;
+  }
+
+  .app-gallery-div{
+    padding: 8% 2%;
+  }
+
+  .data-div,
+  .mas-caracteristicas-div{
+    padding: 6% 12%;
+  }
+
+  .img-items-div{
+    padding: 8% 4%;
+  }
+
+  .desarrollo-div{
+    padding: 5% 20%;
+    
+    .data-info-div{
+
+      h1{
+        width: fit-content;
+      }
+
+      p{
+        width: 60%;
+      }
+    }
+  }
+
+    /// FOOTER ///
+
+  footer {
+    height: 120vh;
+
+    .footer-float{
+      width: 80vw;
     }
   }
 }
