@@ -443,7 +443,7 @@ select{
 
 /// IMAGES STYLES ///
 
-.app-icon{
+.sol-icon{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -506,11 +506,13 @@ body,
     text-align: center;
   }
 
+  .sol-icon,
   .app-icon{
     transform: scale(0.8);
   }
 
   a:hover{
+    .sol-icon,
     .app-icon{
       transform: scale(1);
     }
@@ -814,7 +816,7 @@ body {
 
     &:hover{
 
-      .app-icon{
+      .sol-icon{
 
         *{
           fill: $azul;
@@ -828,6 +830,10 @@ body {
   }
 
   .app-icon{
+    height: 100px;
+  }
+
+  .sol-icon{
     height: 100px;
     
     *{

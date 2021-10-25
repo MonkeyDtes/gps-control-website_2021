@@ -557,7 +557,7 @@ select::placeholder {
   color: #ffffff40;
 }
 
-.app-icon {
+.sol-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -571,7 +571,7 @@ select::placeholder {
   height: 100%;
 }
 
-.app-icon image {
+.sol-icon image {
   width: 100%;
   height: 100%;
 }
@@ -650,11 +650,13 @@ body,
   text-align: center;
 }
 
+.flex-gallery .sol-icon,
 .flex-gallery .app-icon {
   -webkit-transform: scale(0.8);
           transform: scale(0.8);
 }
 
+.flex-gallery a:hover .sol-icon,
 .flex-gallery a:hover .app-icon {
   -webkit-transform: scale(1);
           transform: scale(1);
@@ -971,8 +973,8 @@ body {
   color: #bbbbbb;
 }
 
-.soluciones-gal a:hover .app-icon *,
-.aplicaciones-gal a:hover .app-icon * {
+.soluciones-gal a:hover .sol-icon *,
+.aplicaciones-gal a:hover .sol-icon * {
   fill: #1c2f5c;
 }
 
@@ -986,8 +988,13 @@ body {
   height: 100px;
 }
 
-.soluciones-gal .app-icon *,
-.aplicaciones-gal .app-icon * {
+.soluciones-gal .sol-icon,
+.aplicaciones-gal .sol-icon {
+  height: 100px;
+}
+
+.soluciones-gal .sol-icon *,
+.aplicaciones-gal .sol-icon * {
   fill: #bbbbbb;
 }
 
