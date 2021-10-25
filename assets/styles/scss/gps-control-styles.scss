@@ -726,6 +726,7 @@ header {
 html,
 body {
   width: 100vw;
+  height: fit-content;
   background-color: $blanco0;
   overflow-x: hidden;
 }
@@ -837,7 +838,7 @@ body {
     height: 100px;
     
     *{
-      fill: $gris3;
+      fill: $gris2;
     }
   }
 }
@@ -930,7 +931,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1400px) { /// ESTILOS PANTALLAS PEQUEÑAS DE ESCRITORIO///
 
     :root,
   html,
@@ -942,7 +943,7 @@ footer {
     font-size: 14px;
   }
 
-    /// BODY ///
+  /// GENERAL STYLES ///
 
   .img-items-div{
     padding: 8% 4%;
@@ -984,7 +985,7 @@ footer {
     }
   }
 
-    /// FOOTER ///
+  /// FOOTER ///
 
   footer {
     height: 120vh;
@@ -993,4 +994,195 @@ footer {
       width: 80vw;
     }
   }
+}
+
+@media screen and (max-width: 1100px) { /// ESTILOS IPAD PAISAJE///
+
+  /// FONTS ///
+
+  h1 {
+    font-size: 2.5rem; //3.5rem
+  }
+
+  h2 {
+    font-size: 2rem; //2.5rem
+  }
+
+  h3 {
+    font-size: 1.25rem; //1.5rem
+  }
+
+  h4 {
+    font-size: 1.5rem; //2rem
+  }
+
+  h5 {
+    font-size: 1.25rem; //1.5rem
+  }
+
+  h6 {
+    font: 1rem "Work Sans"; //1rem
+  }
+
+  /// HEADER ///
+
+  header{
+    .nav-links{
+      width: 65%;
+    }
+  }
+
+  /// GENERAL STYLES ///
+
+  .banner-div{
+    padding: 24% 20% 16%;
+  }
+  
+  .img-items-div{
+
+    .img-items{
+      grid-template-columns: auto 45% auto;
+      column-gap: 1.4%;
+    
+      li{
+        width: 200px;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        
+        h3{
+          padding-bottom: 0.1em;
+          
+        }
+      }
+    
+      .main-title-div{
+        padding: 0;
+        
+        h3{
+          padding-bottom: 0;
+          padding-top: 2em;
+        }
+      }
+    }
+  }
+
+  .lista-izq,
+  .lista-der{
+
+    li{
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+    }
+  }
+
+  .mas-caracteristicas-div{
+    padding: 8% 4%;
+  }
+  
+  .soluciones-div,
+  .aplicaciones-div{
+
+    .main-title-div{
+      width: 60%;
+    }
+  }
+
+  .app-div{
+    gap: 4%;
+
+    img{
+      min-width: 50vw;
+    }
+  }
+
+  .app-gallery-div{
+    padding: 8%;
+    
+    .flex-gallery{
+      column-gap: 4%;
+      justify-content: center;
+    }
+  }
+
+  .soluciones-div,
+.aplicaciones-div{
+
+  .main-title-div{
+    width: 88%;
+  }
+}
+
+  /// FOOTER ///
+
+  footer {
+    height: 90vh;
+  }    
+}
+
+@media screen and (max-device-width: 800px) and (orientation: portrait){
+  
+  /// HEADER ///
+
+  header{
+    .nav-links{
+      width: 65%;
+    }
+  }
+
+  /// GENERAL STYLES ///
+
+  .app-div{
+    padding: 10% 14%;
+    flex-direction: column;
+    row-gap:4rem;
+
+    img,
+    img.vertical{
+      width: 60vw;
+    }
+  }
+
+  .data-div{
+
+    .data-info-div{
+      flex-direction: column;
+      gap: 1rem;
+
+      *{
+        width: 100%;
+      }
+    }
+  }
+
+  .app-gallery-div{
+
+    .flex-gallery{
+      column-gap: 14%;
+    }
+  }
+
+  .mas-caracteristicas-div{
+    padding: 10%;
+
+    ul{
+      grid-template-columns: auto auto;
+    }
+  }
+
+  .soluciones-div,
+  .aplicaciones-div{
+  
+    .main-title-div{
+      width: 92%;
+    }
+  }  
+
+  /// FOOTER ///
+  
+  footer {
+    height: 65vh;
+  }    
+}
+
+@media screen and (max-device-width: 800px) and (orientation: portrait){
 }
