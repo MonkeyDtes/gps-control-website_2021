@@ -1250,6 +1250,7 @@ footer .map-div {
   .app-div img.vertical {
     width: 40vw;
     min-width: inherit;
+    max-height: inherit;
   }
   .data-div {
     padding: 8%;
@@ -1268,7 +1269,7 @@ footer .map-div {
     padding: 8% 4%;
   }
   footer {
-    height: 200vh;
+    height: 220vh;
   }
   footer .links-form-div {
     -ms-flex-wrap: wrap;

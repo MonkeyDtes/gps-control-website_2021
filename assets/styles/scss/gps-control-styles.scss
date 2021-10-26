@@ -1160,6 +1160,7 @@ footer {
     img.vertical{
       width: 40vw;
       min-width: inherit;
+      max-height: inherit;
     }
   }
 
@@ -1192,7 +1193,7 @@ footer {
   /// FOOTER ///
   
   footer {
-    height: 200vh;
+    height: 220vh;
 
     .links-form-div{
       flex-wrap: wrap;
