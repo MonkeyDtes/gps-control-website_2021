@@ -576,6 +576,59 @@ select::placeholder {
   height: 100%;
 }
 
+header {
+  position: fixed;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  text-align: center;
+  background-color: #ffffff;
+  z-index: 4;
+}
+
+header:hover, header.hover {
+  -webkit-box-shadow: 0 0 20px #bbbbbb;
+          box-shadow: 0 0 20px #bbbbbb;
+}
+
+header .navbar {
+  width: 100vw;
+  height: 100%;
+  padding: 24px 40px;
+}
+
+header .navbar:first-child {
+  padding-left: 40px;
+}
+
+header .logo-gps {
+  height: 40px;
+}
+
+header .nav-links {
+  width: 60%;
+  height: 100%;
+}
+
+header .nav-links .mobile-menu-icon {
+  display: none;
+}
+
+header .nav-contact {
+  padding: 8px 40px;
+}
+
+header .nav-contact p {
+  font-family: 'Raleway';
+  font-weight: 600;
+  color: #ffffff90;
+}
+
 :root,
 html,
 body,
@@ -820,55 +873,6 @@ body,
 .sombra40 {
   -webkit-box-shadow: 0 0 40px #bbbbbb;
           box-shadow: 0 0 40px #bbbbbb;
-}
-
-header {
-  position: fixed;
-  margin: auto;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100vw;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  text-align: center;
-  background-color: #ffffff;
-  z-index: 4;
-}
-
-header:hover, header.hover {
-  -webkit-box-shadow: 0 0 20px #bbbbbb;
-          box-shadow: 0 0 20px #bbbbbb;
-}
-
-header .navbar {
-  width: 100vw;
-  height: 100%;
-  padding: 24px 40px;
-}
-
-header .navbar img {
-  height: 40px;
-}
-
-header .navbar:first-child {
-  padding-left: 40px;
-}
-
-header .nav-links {
-  width: 60%;
-  height: 100%;
-}
-
-header .nav-contact {
-  padding: 8px 40px;
-}
-
-header .nav-contact p {
-  font-family: 'Raleway';
-  font-weight: 600;
-  color: #ffffff90;
 }
 
 html,
@@ -1219,6 +1223,9 @@ footer .map-div {
   footer {
     height: 90vh;
   }
+  footer .footer-float {
+    padding: 8%;
+  }
 }
 
 @media screen and (max-device-width: 800px) {
@@ -1269,7 +1276,7 @@ footer .map-div {
     padding: 8% 4%;
   }
   footer {
-    height: 220vh;
+    height: 320vh;
   }
   footer .links-form-div {
     -ms-flex-wrap: wrap;
@@ -1323,7 +1330,137 @@ footer .map-div {
     width: 92%;
   }
   footer {
-    height: 85vh;
+    height: 140vh;
+  }
+}
+
+@media screen and (max-device-width: 560px) {
+  :root,
+  html,
+  body,
+  *,
+  *:before,
+  *:after {
+    /* THIS ARE THE BRAND CUSTOM STYLES */
+    font-size: 1.5rem;
+  }
+  h1 {
+    font-size: 3.5rem;
+  }
+  li {
+    font-size: 1rem !important;
+  }
+  header .nav-contact {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 20px;
+    row-gap: 0.2rem;
+  }
+  header .navbar {
+    padding: 50px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  header .nav-links {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  header .nav-links .nav-btn {
+    display: none;
+  }
+  header .nav-links .mobile-menu-icon {
+    display: block;
+  }
+  header .logo-gps {
+    width: 60vw;
+    height: inherit;
+  }
+  .banner-div {
+    padding: 50% 14% 40%;
+  }
+  .app-div {
+    padding: 14%;
+  }
+  .flex-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 3rem;
+  }
+  .btns-div {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .data-div {
+    padding: 12%;
+  }
+  .data-div .data-info-div * {
+    width: 100% !important;
+  }
+  .desarrollo-div .data-div {
+    padding: 10% 20%;
+  }
+  .desarrollo-div .flex-row:last-child {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .desarrollo-div .flex-row:last-child div {
+    width: 100%;
+  }
+  .soluciones-gal a,
+  .aplicaciones-gal a {
+    width: 240px;
+  }
+  .app-gallery-div {
+    padding: 10%;
+  }
+  .app-gallery-div .flex-gallery {
+    gap: 80px;
+    -webkit-column-gap: 20%;
+            column-gap: 20%;
+  }
+  .img-items-div {
+    padding: 10%;
+  }
+  .img-items-div .img-items {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  .img-items-div .img-items {
+    row-gap: 4rem;
+  }
+  .img-items-div .img-items li {
+    width: inherit;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+  .img-items-div .img-items li h3 {
+    padding-bottom: 0.5em;
+  }
+  .img-items-div .img-items .main-title-div {
+    padding: 0;
+  }
+  .img-items-div .img-items .main-title-div h3 {
+    padding-bottom: 1em;
+    padding-top: 4em;
+  }
+  .sol-icon,
+  .app-icon {
+    width: 200px !important;
+    height: inherit !important;
+  }
+  footer {
+    height: 240vh;
   }
 }
 /*# sourceMappingURL=gps-control-styles.css.map */

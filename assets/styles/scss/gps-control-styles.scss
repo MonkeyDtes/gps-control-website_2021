@@ -456,6 +456,59 @@ select{
   }
 }
 
+/// HEADER ///
+
+header {
+  position: fixed;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: fit-content;
+  text-align: center;
+  background-color: $blanco;
+  z-index: 4;
+
+  &:hover,
+  &.hover {
+    box-shadow: 0 0 20px $gris3;
+  }
+
+  .navbar {
+    width: 100vw;
+    height: 100%;
+    padding: 24px 40px;
+
+    &:first-child {
+      padding-left: 40px;
+    }
+  }
+
+  .logo-gps{
+    height: 40px;
+  }
+
+  .nav-links {
+    width: 60%;
+    height: 100%;
+
+    .mobile-menu-icon{
+      display: none;
+    }
+  }
+
+  .nav-contact {
+    padding: 8px 40px;
+
+    p{
+      font-family: 'Raleway';
+      font-weight: 600;
+      color: $blanco90;
+    }
+  }
+}
+
 /// GENERAL STYLES ///
 
 :root,
@@ -670,55 +723,6 @@ body,
 
 .sombra40{
   box-shadow: 0 0 40px $gris3;
-}
-
-/// HEADER ///
-
-header {
-  position: fixed;
-  margin: auto;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100vw;
-  height: fit-content;
-  text-align: center;
-  background-color: $blanco;
-  z-index: 4;
-
-  &:hover,
-  &.hover {
-    box-shadow: 0 0 20px $gris3;
-  }
-
-  .navbar {
-    width: 100vw;
-    height: 100%;
-    padding: 24px 40px;
-
-    img {
-      height: 40px;
-    }
-
-    &:first-child {
-      padding-left: 40px;
-    }
-  }
-
-  .nav-links {
-    width: 60%;
-    height: 100%;
-  }
-
-  .nav-contact {
-    padding: 8px 40px;
-
-    p{
-      font-family: 'Raleway';
-      font-weight: 600;
-      color: $blanco90;
-    }
-  }
 }
 
 /// BODY ///
@@ -1112,6 +1116,10 @@ footer {
 
   footer {
     height: 90vh;
+
+    .footer-float{
+      padding: 8%;
+    }
   }    
 }
 
@@ -1193,7 +1201,7 @@ footer {
   /// FOOTER ///
   
   footer {
-    height: 220vh;
+    height: 320vh;
 
     .links-form-div{
       flex-wrap: wrap;
@@ -1261,6 +1269,177 @@ footer {
   /// FOOTER ///
   
   footer {
-    height: 85vh;
+    height: 140vh;
+  }    
+}
+
+@media screen and (max-device-width: 560px) { /// SMARTPHONES ///
+
+  :root,
+  html,
+  body,
+  *,
+  *:before,
+  *:after {
+    /* THIS ARE THE BRAND CUSTOM STYLES */
+    font-size: 1.5rem;
+  }
+
+  /// FONTS ///
+
+  h1 {
+    font-size: 3.5rem; //3.5rem
+  }
+
+  li{
+    font-size: 1rem !important;
+  }
+
+  /// HEADER ///
+
+  header{
+
+    .nav-contact{
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      padding: 20px;
+      row-gap: 0.2rem;
+    }
+
+    .navbar{
+      padding: 50px;
+      flex-direction: row;
+    }
+
+    .nav-links{
+      width: fit-content;
+
+      .nav-btn{
+        display: none;
+      }
+
+      .mobile-menu-icon{
+        display: block;
+      }
+    }
+
+    .logo-gps{
+      width: 60vw;
+      height: inherit;
+    }
+  }
+
+  /// GENERAL STYLES ///
+
+  .banner-div{
+    padding: 50% 14% 40%;
+  }
+
+  .app-div{
+    padding: 14%;
+  }
+
+  .flex-row{
+    flex-direction: column;
+    row-gap: 3rem;
+
+  }
+
+  .btns-div{
+    flex-direction: row;
+  }
+
+  .data-div{
+    padding: 12%;
+
+    .data-info-div{
+
+      *{
+        width: 100% !important;
+      }
+    }
+  }
+
+  .desarrollo-div{
+
+    .data-div{
+      padding: 10% 20%;
+    }
+
+    .flex-row:last-child{
+      justify-content: start;
+
+      div{
+        width: 100%;
+      }
+    }
+  }
+
+  .soluciones-gal,
+  .aplicaciones-gal{
+
+    a{
+      width: 240px;
+    }
+  }
+
+  .app-gallery-div{
+    padding: 10%;
+
+    .flex-gallery{
+      gap: 80px;
+      column-gap: 20%;
+    }
+  }
+
+
+  .img-items-div{
+    padding: 10%;
+
+    .img-items{
+      grid-template-columns: auto;
+    }
+  }
+
+  .img-items-div{
+
+    .img-items{
+      row-gap: 4rem;
+    
+      li{
+        width: inherit;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        
+        h3{
+          padding-bottom: 0.5em;
+          
+        }
+      }
+    
+      .main-title-div{
+        padding: 0;
+        
+        h3{
+          padding-bottom: 1em;
+          padding-top: 4em;
+        }
+      }
+    }
+  }
+
+  .sol-icon,
+  .app-icon{
+    width: 200px !important;
+    height: inherit !important;
+  }
+
+  /// FOOTER ///
+
+  footer {
+    height: 240vh;
   }    
 }
