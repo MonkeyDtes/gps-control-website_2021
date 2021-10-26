@@ -15,6 +15,42 @@
         <style>
         </style>
 
+        <script>
+
+            // MENU SCRIPTS //
+
+                function abrir_menu() {
+                    document.getElementById("menu-icon").classList.add("rojo");
+                    document.getElementById("menu-icon").innerHTML = "Cerrar";
+                    document.getElementById("navbar").style.flexDirection = "column";
+                    document.getElementById("nav-btn1").style.display = "block";
+                    document.getElementById("nav-btn2").style.display = "block";
+                    document.getElementById("nav-btn3").style.display = "block";
+                    document.getElementById("nav-btn4").style.display = "block";
+                    document.getElementById("menu-icon").onclick = cerrar_menu;
+                    document.getElementById("nav-btn1").onclick = cerrar_menu;
+                    document.getElementById("nav-btn2").onclick = cerrar_menu;
+                    document.getElementById("nav-btn3").onclick = cerrar_menu;
+                    document.getElementById("nav-btn4").onclick = cerrar_menu;
+                }
+                
+                function cerrar_menu() {
+                    document.getElementById("menu-icon").classList.remove("rojo");
+                    document.getElementById("menu-icon").innerHTML = "Menú";
+                    document.getElementById("navbar").style.flexDirection = "row";
+                    document.getElementById("nav-btn1").style.display = "none";
+                    document.getElementById("nav-btn2").style.display = "none";
+                    document.getElementById("nav-btn3").style.display = "none";
+                    document.getElementById("nav-btn4").style.display = "none";
+                    document.getElementById("menu-icon").onclick = abrir_menu;
+                    document.getElementById("nav-btn1").onclick = abrir_menu;
+                    document.getElementById("nav-btn2").onclick = abrir_menu;
+                    document.getElementById("nav-btn3").onclick = abrir_menu;
+                    document.getElementById("nav-btn4").onclick = abrir_menu;
+                }
+
+        </script>
+
     </head>
     
     <body>
@@ -58,7 +94,7 @@
             </div>
 
             <!-- NAVBAR -->
-            <div
+            <div id="navbar"
             class="navbar flex-row over-cyan">
                 <div>
                     <a
@@ -74,29 +110,34 @@
     
                 <div
                 class="nav-links flex-row">
-                    <a
-                    class="hover-cyan mobile-menu-icon">
+                    <a id="menu-icon"
+                    class="hover-cyan"
+                    onclick="abrir_menu()">
                         Menú
                     </a>
-                    <a
+                    <a id="nav-btn1"
                     href="#"
-                    class="hover-cyan nav-btn">
+                    class="hover-cyan nav-btn"
+                    onclick="">
                         Plataforma de rastreo
                     </a>
-                    <a
+                    <a id="nav-btn2"
                     href="#"
-                    class="hover-cyan nav-btn">
+                    class="hover-cyan nav-btn"
+                    onclick="">
                         Soluciones a medida
                     </a>
-                    <a
+                    <a id="nav-btn3"
                     href="#"
-                    class="hover-cyan nav-btn">
+                    class="hover-cyan nav-btn"
+                    onclick="">
                         Aplicaciones (Apps)
                     </a>
-                    <a
+                    <a id="nav-btn4"
                     href="https://tracking.gpscontrolcolombia.com/"
                     target="blank"
-                    class="gris hover-rojo nav-btn">
+                    class="gris hover-rojo nav-btn"
+                    onclick="">
                         <strong
                         class="gris">
                             Ingreso Clientes

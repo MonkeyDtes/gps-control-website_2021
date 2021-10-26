@@ -615,7 +615,7 @@ header .nav-links {
   height: 100%;
 }
 
-header .nav-links .mobile-menu-icon {
+header .nav-links #menu-icon {
   display: none;
 }
 
@@ -1370,16 +1370,17 @@ footer .map-div {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
+    row-gap: 1.5rem;
   }
   header .nav-links .nav-btn {
     display: none;
   }
-  header .nav-links .mobile-menu-icon {
+  header .nav-links #menu-icon {
     display: block;
   }
   header .logo-gps {
     width: 60vw;
-    height: inherit;
+    height: auto;
   }
   .banner-div {
     padding: 50% 14% 40%;
@@ -1420,6 +1421,7 @@ footer .map-div {
   .soluciones-gal a,
   .aplicaciones-gal a {
     width: 240px;
+    height: auto;
   }
   .app-gallery-div {
     padding: 10%;

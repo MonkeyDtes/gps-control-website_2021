@@ -493,7 +493,7 @@ header {
     width: 60%;
     height: 100%;
 
-    .mobile-menu-icon{
+    #menu-icon{
       display: none;
     }
   }
@@ -1316,19 +1316,20 @@ footer {
 
     .nav-links{
       width: fit-content;
+      row-gap: 1.5rem;
 
       .nav-btn{
         display: none;
       }
 
-      .mobile-menu-icon{
+      #menu-icon{
         display: block;
       }
     }
 
     .logo-gps{
       width: 60vw;
-      height: inherit;
+      height: auto;
     }
   }
 
@@ -1383,6 +1384,7 @@ footer {
 
     a{
       width: 240px;
+      height: auto;
     }
   }
 
