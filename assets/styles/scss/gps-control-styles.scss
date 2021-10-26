@@ -1020,10 +1020,6 @@ footer {
     font-size: 1.25rem; //1.5rem
   }
 
-  h6 {
-    font: 1rem "Work Sans"; //1rem
-  }
-
   /// HEADER ///
 
   header{
@@ -1119,7 +1115,29 @@ footer {
   }    
 }
 
-@media screen and (max-device-width: 800px) and (orientation: portrait){
+@media screen and (max-device-width: 800px) { /// ESTILOS SMARTPHONE PAISAJE///
+
+  /// FONTS ///
+
+  h1 {
+    font-size: 3rem; //3.5rem
+  }
+
+  h2 {
+    font-size: 2.5rem; //2.5rem
+  }
+
+  h3 {
+    font-size: 1.5rem; //1.5rem
+  }
+
+  h4 {
+    font-size: 2rem; //2rem
+  }
+
+  h5 {
+    font-size: 1.5rem; //1.5rem
+  }
   
   /// HEADER ///
 
@@ -1130,6 +1148,75 @@ footer {
   }
 
   /// GENERAL STYLES ///
+
+  .banner-div{
+    padding: 20% 8% 10%;
+  }
+
+  .app-div{
+    padding: 8% 4%;
+
+    img,
+    img.vertical{
+      width: 40vw;
+      min-width: inherit;
+    }
+  }
+
+  .data-div{
+    padding: 8%;
+
+    .data-info-div{
+
+      *{
+        width: 50%;
+      }
+    }
+  }
+
+  .img-items-div{
+
+    .img-items{
+      grid-template-columns: auto 40% auto;
+    }
+  }
+
+  .app-gallery-div{
+    padding: 8% 4%;
+  }
+
+  .mas-caracteristicas-div{
+    padding: 8% 4%;
+  }
+
+  /// FOOTER ///
+  
+  footer {
+    height: 200vh;
+
+    .links-form-div{
+      flex-wrap: wrap;
+      gap: 4rem;
+
+      div{
+        width: 46%;
+      }
+
+      div:last-child,
+      a{
+        width: 100%;
+      }
+    }
+  }    
+}
+
+@media screen and (max-device-width: 800px) and (orientation: portrait){ /// ESTILOS IPAD RETRATO///
+  
+  /// GENERAL STYLES ///
+
+  .banner-div{
+    padding: 24% 16% 16%;
+  }
 
   .app-div{
     padding: 10% 14%;
@@ -1142,19 +1229,12 @@ footer {
     }
   }
 
-  .data-div{
-
-    .data-info-div{
-      flex-direction: column;
-      gap: 1rem;
-
-      *{
-        width: 100%;
-      }
-    }
+  .desarrollo-div{
+    padding: 8% 14%;
   }
 
   .app-gallery-div{
+    padding: 14%;
 
     .flex-gallery{
       column-gap: 14%;
@@ -1180,9 +1260,6 @@ footer {
   /// FOOTER ///
   
   footer {
-    height: 65vh;
+    height: 85vh;
   }    
-}
-
-@media screen and (max-device-width: 800px) and (orientation: portrait){
 }
