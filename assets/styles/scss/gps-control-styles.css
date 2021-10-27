@@ -1509,6 +1509,11 @@ footer .map-div {
   .app-div {
     padding: 14%;
   }
+  .app-div img,
+  .app-div img.vertical {
+    width: 100%;
+    height: auto;
+  }
   .flex-row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

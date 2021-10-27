@@ -1496,6 +1496,12 @@ footer {
 
   .app-div{
     padding: 14%;
+
+    img,
+    img.vertical{
+      width: 100%;
+      height: auto;
+    }
   }
 
   .flex-row{
