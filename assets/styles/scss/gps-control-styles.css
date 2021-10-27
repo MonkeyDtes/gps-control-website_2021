@@ -578,14 +578,14 @@ select::placeholder {
 
 header {
   position: fixed;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: auto;
   margin: auto;
   top: 0;
   left: 0;
   right: 0;
   width: 100vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   text-align: center;
   background-color: #ffffff;
@@ -1524,7 +1524,7 @@ footer .map-div {
     height: auto;
   }
   .banner-div {
-    padding: 40% 14%;
+    padding: 36% 14%;
   }
   .app-div {
     padding: 14%;

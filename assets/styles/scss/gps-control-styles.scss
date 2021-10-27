@@ -460,7 +460,7 @@ select{
 
 header {
   position: fixed;
-  height: fit-content;
+  height: auto;
   margin: auto;
   top: 0;
   left: 0;
@@ -1516,7 +1516,7 @@ footer {
   /// GENERAL STYLES ///
 
   .banner-div{
-    padding: 40% 14%;
+    padding: 36% 14%;
   }
 
   .app-div{
