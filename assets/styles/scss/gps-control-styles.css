@@ -875,8 +875,7 @@ body,
           box-shadow: 0 0 40px #bbbbbb;
 }
 
-html,
-body {
+html {
   width: 100vw;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -1228,6 +1227,107 @@ footer .map-div {
   }
 }
 
+@media screen and (max-width: 970px) {
+  :root,
+  html,
+  body,
+  *,
+  *:before,
+  *:after {
+    /* THIS ARE THE BRAND CUSTOM STYLES */
+    font-size: 12px;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+  li {
+    font-size: 12px !important;
+  }
+  header .nav-contact {
+    padding: 8px 24px;
+  }
+  header .logo-gps {
+    width: 180px;
+    height: inherit;
+  }
+  header .navbar {
+    padding: 18px 24px;
+  }
+  header .navbar a {
+    font-size: 10px;
+  }
+  .banner-div {
+    padding: 24% 10% 16%;
+  }
+  .app-div {
+    padding: 10%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 4rem;
+  }
+  .app-div img,
+  .app-div img.vertical {
+    width: 60vw;
+  }
+  .app-gallery-div {
+    padding: 10%;
+  }
+  .app-gallery-div .flex-gallery {
+    -webkit-column-gap: 10%;
+            column-gap: 10%;
+  }
+  .mas-caracteristicas-div {
+    padding: 10%;
+  }
+  .mas-caracteristicas-div ul {
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+  }
+  .soluciones-div .main-title-div,
+  .aplicaciones-div .main-title-div {
+    width: 100%;
+  }
+  .soluciones-div .main-title-div h1,
+  .aplicaciones-div .main-title-div h1 {
+    margin-bottom: 0.4em;
+  }
+  .data-div {
+    padding: 10%;
+  }
+  .data-div .data-info-div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 1rem;
+  }
+  .data-div .data-info-div * {
+    width: 100% !important;
+  }
+  .img-items-div .img-items {
+    -ms-grid-columns: auto 30% auto;
+        grid-template-columns: auto 30% auto;
+  }
+  footer {
+    height: 180vh;
+  }
+  footer .footer-float .links-form-div {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    row-gap: 4rem;
+  }
+  footer .footer-float .copyright-div {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    row-gap: 1rem;
+  }
+  footer .footer-float .copyright-div a {
+    width: 100%;
+  }
+}
+
 @media screen and (max-device-width: 800px) {
   h1 {
     font-size: 3rem;
@@ -1350,6 +1450,10 @@ footer .map-div {
   li {
     font-size: 1rem !important;
   }
+  header:hover {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
   header .nav-contact {
     position: fixed;
     bottom: 0;
@@ -1360,26 +1464,43 @@ footer .map-div {
     row-gap: 0.2rem;
   }
   header .navbar {
-    padding: 50px;
+    padding: 4% 14%;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
   header .nav-links {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
+    position: fixed;
+    width: 100%;
+    height: 8%;
+    margin: auto;
+    padding: 2% 14%;
+    left: 0;
+    right: 0;
+    bottom: 185px;
+    background-color: #ffffff90;
     row-gap: 1.5rem;
+    overflow: hidden;
   }
-  header .nav-links .nav-btn {
-    display: none;
+  header .nav-links.modal {
+    height: 90vh;
+    padding: 60% 14% 14%;
+    bottom: 0;
+    background-color: #ffffff;
+  }
+  header .nav-links a {
+    width: 100%;
+    background-color: #ffffff00;
   }
   header .nav-links #menu-icon {
     display: block;
   }
   header .logo-gps {
-    width: 60vw;
+    width: 100%;
     height: auto;
   }
   .banner-div {

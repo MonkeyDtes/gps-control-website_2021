@@ -727,8 +727,7 @@ body,
 
 /// BODY ///
 
-html,
-body {
+html{
   width: 100vw;
   height: fit-content;
   background-color: $blanco0;
@@ -935,7 +934,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 1400px) { /// ESTILOS PANTALLAS PEQUEÑAS DE ESCRITORIO///
+@media screen and (max-width: 1400px) { /// PANTALLAS PEQUEÑAS DE ESCRITORIO///
 
     :root,
   html,
@@ -1000,7 +999,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 1100px) { /// ESTILOS IPAD PAISAJE///
+@media screen and (max-width: 1100px) { /// IPAD PAISAJE///
 
   /// FONTS ///
 
@@ -1123,7 +1122,141 @@ footer {
   }    
 }
 
-@media screen and (max-device-width: 800px) { /// ESTILOS SMARTPHONE PAISAJE///
+@media screen and (max-width: 970px) { /// PANTALLA DIVIDA ESCRITORIO ///
+
+
+  :root,
+  html,
+  body,
+  *,
+  *:before,
+  *:after {
+    /* THIS ARE THE BRAND CUSTOM STYLES */
+    font-size: 12px;
+  }
+
+  /// FONTS ///
+
+  h3{
+    font-size: 1rem;
+  }
+
+  li{
+    font-size: 12px !important;
+  }
+
+  /// HEADER ///
+
+  header{
+
+    .nav-contact{
+      padding: 8px 24px;
+    }
+
+    .logo-gps{
+      width: 180px;
+      height: inherit;
+    }
+
+    .navbar{
+      padding: 18px 24px;
+
+      a{
+        font-size: 10px;
+      }
+    }
+  }
+
+  /// GENERAL STYLES ///
+
+  .banner-div{
+    padding: 24% 10% 16%;
+  }
+
+  .app-div{
+    padding: 10%;
+    flex-direction: column;
+    row-gap:4rem;
+
+    img,
+    img.vertical{
+      width: 60vw;
+    }
+  }
+
+  .app-gallery-div{
+    padding: 10%;
+
+    .flex-gallery{
+      column-gap: 10%;
+    }
+  }
+
+  .mas-caracteristicas-div{
+    padding: 10%;
+
+    ul{
+      grid-template-columns: auto auto;
+    }
+  }
+
+  .soluciones-div,
+  .aplicaciones-div{
+  
+    .main-title-div{
+      width: 100%;
+
+      h1{
+        margin-bottom: 0.4em;
+      }
+    }
+  }
+
+  .data-div{
+    padding: 10%;
+    
+    .data-info-div{
+      flex-direction: column;
+      row-gap: 1rem;
+      
+      *{
+        width: 100% !important;
+      }
+    }
+  }
+
+  .img-items-div{
+
+    .img-items{
+      grid-template-columns: auto 30% auto;
+    }
+  }
+
+  /// FOOTER ///
+
+  footer{
+    height: 180vh;
+
+    .footer-float{
+
+      .links-form-div{
+        flex-wrap: wrap;
+        row-gap: 4rem;
+      }
+
+      .copyright-div{
+        flex-wrap: wrap;
+        row-gap: 1rem;
+        
+        a{
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-device-width: 800px) { /// SMARTPHONE PAISAJE///
 
   /// FONTS ///
 
@@ -1219,7 +1352,7 @@ footer {
   }    
 }
 
-@media screen and (max-device-width: 800px) and (orientation: portrait){ /// ESTILOS IPAD RETRATO///
+@media screen and (max-device-width: 800px) and (orientation: portrait){ /// IPAD RETRATO///
   
   /// GENERAL STYLES ///
 
@@ -1299,6 +1432,10 @@ footer {
 
   header{
 
+    &:hover{
+      box-shadow: none;
+    }
+
     .nav-contact{
       position: fixed;
       bottom: 0;
@@ -1310,16 +1447,34 @@ footer {
     }
 
     .navbar{
-      padding: 50px;
+      padding: 4% 14%;
       flex-direction: row;
+      align-items: baseline;
     }
 
     .nav-links{
-      width: fit-content;
+      position: fixed;
+      width: 100%;
+      height: 8%;
+      margin: auto;
+      padding: 2% 14%;
+      left: 0;
+      right: 0;
+      bottom: 185px;
+      background-color: $blanco90;
       row-gap: 1.5rem;
+      overflow: hidden;
+      
+      &.modal{
+        height: 90vh;
+        padding: 60% 14% 14%;
+        bottom: 0;
+        background-color: $blanco;
+      }
 
-      .nav-btn{
-        display: none;
+      a{
+        width: 100%;
+        background-color: $blanco0;
       }
 
       #menu-icon{
@@ -1328,7 +1483,7 @@ footer {
     }
 
     .logo-gps{
-      width: 60vw;
+      width: 100%;
       height: auto;
     }
   }

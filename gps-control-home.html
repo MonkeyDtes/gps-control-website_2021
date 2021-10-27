@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html id="full-html">
     <head>
 
         <meta charset="utf-8">
@@ -20,40 +20,36 @@
             // MENU SCRIPTS //
 
                 function abrir_menu() {
+                    document.getElementById("menu-icon").classList.remove("azul");
                     document.getElementById("menu-icon").classList.add("rojo");
+                    document.getElementById("nav-links").classList.add("modal");
+                    document.getElementById("full-html").style.overflowY ="hidden";
                     document.getElementById("menu-icon").innerHTML = "Cerrar";
-                    document.getElementById("navbar").style.flexDirection = "column";
-                    document.getElementById("nav-btn1").style.display = "block";
-                    document.getElementById("nav-btn2").style.display = "block";
-                    document.getElementById("nav-btn3").style.display = "block";
-                    document.getElementById("nav-btn4").style.display = "block";
                     document.getElementById("menu-icon").onclick = cerrar_menu;
                     document.getElementById("nav-btn1").onclick = cerrar_menu;
                     document.getElementById("nav-btn2").onclick = cerrar_menu;
                     document.getElementById("nav-btn3").onclick = cerrar_menu;
                     document.getElementById("nav-btn4").onclick = cerrar_menu;
+                    document.getElementById("nav-btn4").onclick = cerrar_menu;
                 }
                 
                 function cerrar_menu() {
                     document.getElementById("menu-icon").classList.remove("rojo");
+                    document.getElementById("menu-icon").classList.add("azul");
+                    document.getElementById("nav-links").classList.remove("modal");
+                    document.getElementById("full-html").style.overflowY ="scroll";
                     document.getElementById("menu-icon").innerHTML = "Menú";
-                    document.getElementById("navbar").style.flexDirection = "row";
-                    document.getElementById("nav-btn1").style.display = "none";
-                    document.getElementById("nav-btn2").style.display = "none";
-                    document.getElementById("nav-btn3").style.display = "none";
-                    document.getElementById("nav-btn4").style.display = "none";
                     document.getElementById("menu-icon").onclick = abrir_menu;
                     document.getElementById("nav-btn1").onclick = abrir_menu;
                     document.getElementById("nav-btn2").onclick = abrir_menu;
                     document.getElementById("nav-btn3").onclick = abrir_menu;
-                    document.getElementById("nav-btn4").onclick = abrir_menu;
                 }
 
         </script>
 
     </head>
     
-    <body>
+    <body id="full-body">
     
         <header>
     
@@ -97,10 +93,11 @@
             <div id="navbar"
             class="navbar flex-row over-cyan">
                 <div>
-                    <a
+                    <a id="a-logo-gps"
                     class="sin-borde"
                     href="https://www.gpscontrol.co">
                         <img
+                        id="logo-gps"
                         class="logo-gps"
                         src="assets/img/gps-control-logo-XL.png"
                         alt="Logo GPS CONTROL">
@@ -108,10 +105,10 @@
                     </a>
                 </div>
     
-                <div
+                <div id="nav-links"
                 class="nav-links flex-row">
                     <a id="menu-icon"
-                    class="hover-cyan"
+                    class="azul"
                     onclick="abrir_menu()">
                         Menú
                     </a>
