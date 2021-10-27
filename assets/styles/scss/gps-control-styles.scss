@@ -1256,6 +1256,60 @@ footer {
   }
 }
 
+@media screen and (max-device-width: 800px) and (orientation: portrait){ /// IPAD RETRATO///
+  
+  /// GENERAL STYLES ///
+
+  .banner-div{
+    padding: 24% 16% 16%;
+  }
+
+  .app-div{
+    padding: 10% 14%;
+    flex-direction: column;
+    row-gap:4rem;
+
+    img,
+    img.vertical{
+      width: 60vw;
+    }
+  }
+
+  .desarrollo-div{
+    padding: 8% 14%;
+  }
+
+  .app-gallery-div{
+    padding: 14%;
+
+    .flex-gallery{
+      column-gap: 14%;
+    }
+  }
+
+  .mas-caracteristicas-div{
+    padding: 10%;
+
+    ul{
+      grid-template-columns: auto auto;
+    }
+  }
+
+  .soluciones-div,
+  .aplicaciones-div{
+  
+    .main-title-div{
+      width: 92%;
+    }
+  }  
+
+  /// FOOTER ///
+  
+  footer {
+    height: 140vh;
+  }    
+}
+
 @media screen and (max-device-width: 800px) { /// SMARTPHONE PAISAJE///
 
   /// FONTS ///
@@ -1352,60 +1406,6 @@ footer {
   }    
 }
 
-@media screen and (max-device-width: 800px) and (orientation: portrait){ /// IPAD RETRATO///
-  
-  /// GENERAL STYLES ///
-
-  .banner-div{
-    padding: 24% 16% 16%;
-  }
-
-  .app-div{
-    padding: 10% 14%;
-    flex-direction: column;
-    row-gap:4rem;
-
-    img,
-    img.vertical{
-      width: 60vw;
-    }
-  }
-
-  .desarrollo-div{
-    padding: 8% 14%;
-  }
-
-  .app-gallery-div{
-    padding: 14%;
-
-    .flex-gallery{
-      column-gap: 14%;
-    }
-  }
-
-  .mas-caracteristicas-div{
-    padding: 10%;
-
-    ul{
-      grid-template-columns: auto auto;
-    }
-  }
-
-  .soluciones-div,
-  .aplicaciones-div{
-  
-    .main-title-div{
-      width: 92%;
-    }
-  }  
-
-  /// FOOTER ///
-  
-  footer {
-    height: 140vh;
-  }    
-}
-
 @media screen and (max-device-width: 560px) { /// SMARTPHONES ///
 
   :root,
@@ -1461,7 +1461,7 @@ footer {
       left: 0;
       right: 0;
       bottom: 185px;
-      background-color: $blanco90;
+      background-color: $blanco95;
       row-gap: 1.5rem;
       overflow: hidden;
       

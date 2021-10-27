@@ -1328,6 +1328,48 @@ footer .map-div {
   }
 }
 
+@media screen and (max-device-width: 800px) and (orientation: portrait) {
+  .banner-div {
+    padding: 24% 16% 16%;
+  }
+  .app-div {
+    padding: 10% 14%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 4rem;
+  }
+  .app-div img,
+  .app-div img.vertical {
+    width: 60vw;
+  }
+  .desarrollo-div {
+    padding: 8% 14%;
+  }
+  .app-gallery-div {
+    padding: 14%;
+  }
+  .app-gallery-div .flex-gallery {
+    -webkit-column-gap: 14%;
+            column-gap: 14%;
+  }
+  .mas-caracteristicas-div {
+    padding: 10%;
+  }
+  .mas-caracteristicas-div ul {
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+  }
+  .soluciones-div .main-title-div,
+  .aplicaciones-div .main-title-div {
+    width: 92%;
+  }
+  footer {
+    height: 140vh;
+  }
+}
+
 @media screen and (max-device-width: 800px) {
   h1 {
     font-size: 3rem;
@@ -1392,48 +1434,6 @@ footer .map-div {
   }
 }
 
-@media screen and (max-device-width: 800px) and (orientation: portrait) {
-  .banner-div {
-    padding: 24% 16% 16%;
-  }
-  .app-div {
-    padding: 10% 14%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    row-gap: 4rem;
-  }
-  .app-div img,
-  .app-div img.vertical {
-    width: 60vw;
-  }
-  .desarrollo-div {
-    padding: 8% 14%;
-  }
-  .app-gallery-div {
-    padding: 14%;
-  }
-  .app-gallery-div .flex-gallery {
-    -webkit-column-gap: 14%;
-            column-gap: 14%;
-  }
-  .mas-caracteristicas-div {
-    padding: 10%;
-  }
-  .mas-caracteristicas-div ul {
-    -ms-grid-columns: auto auto;
-        grid-template-columns: auto auto;
-  }
-  .soluciones-div .main-title-div,
-  .aplicaciones-div .main-title-div {
-    width: 92%;
-  }
-  footer {
-    height: 140vh;
-  }
-}
-
 @media screen and (max-device-width: 560px) {
   :root,
   html,
@@ -1482,7 +1482,7 @@ footer .map-div {
     left: 0;
     right: 0;
     bottom: 185px;
-    background-color: #ffffff90;
+    background-color: #ffffff95;
     row-gap: 1.5rem;
     overflow: hidden;
   }
