@@ -999,129 +999,6 @@ footer {
   }
 }
 
-@media screen and (max-width: 1100px) { /// IPAD PAISAJE///
-
-  /// FONTS ///
-
-  h1 {
-    font-size: 2.5rem; //3.5rem
-  }
-
-  h2 {
-    font-size: 2rem; //2.5rem
-  }
-
-  h3 {
-    font-size: 1.25rem; //1.5rem
-  }
-
-  h4 {
-    font-size: 1.5rem; //2rem
-  }
-
-  h5 {
-    font-size: 1.25rem; //1.5rem
-  }
-
-  /// HEADER ///
-
-  header{
-    .nav-links{
-      width: 65%;
-    }
-  }
-
-  /// GENERAL STYLES ///
-
-  .banner-div{
-    padding: 24% 20% 16%;
-  }
-  
-  .img-items-div{
-
-    .img-items{
-      grid-template-columns: auto 45% auto;
-      column-gap: 1.4%;
-    
-      li{
-        width: 200px;
-        margin-top: 0.5em;
-        margin-bottom: 0.5em;
-        
-        h3{
-          padding-bottom: 0.1em;
-          
-        }
-      }
-    
-      .main-title-div{
-        padding: 0;
-        
-        h3{
-          padding-bottom: 0;
-          padding-top: 2em;
-        }
-      }
-    }
-  }
-
-  .lista-izq,
-  .lista-der{
-
-    li{
-      margin-left: 0 !important;
-      margin-right: 0 !important;
-    }
-  }
-
-  .mas-caracteristicas-div{
-    padding: 8% 4%;
-  }
-  
-  .soluciones-div,
-  .aplicaciones-div{
-
-    .main-title-div{
-      width: 60%;
-    }
-  }
-
-  .app-div{
-    gap: 4%;
-
-    img{
-      min-width: 50vw;
-    }
-  }
-
-  .app-gallery-div{
-    padding: 8%;
-    
-    .flex-gallery{
-      column-gap: 4%;
-      justify-content: center;
-    }
-  }
-
-  .soluciones-div,
-.aplicaciones-div{
-
-  .main-title-div{
-    width: 88%;
-  }
-}
-
-  /// FOOTER ///
-
-  footer {
-    height: 90vh;
-
-    .footer-float{
-      padding: 8%;
-    }
-  }    
-}
-
 @media screen and (max-width: 970px) { /// PANTALLA DIVIDA ESCRITORIO ///
 
 
@@ -1256,57 +1133,126 @@ footer {
   }
 }
 
-@media screen and (max-device-width: 800px) and (orientation: portrait){ /// IPAD RETRATO///
-  
-  /// GENERAL STYLES ///
+@media screen and (max-width: 1100px) { /// IPAD PAISAJE///
 
-  .banner-div{
-    padding: 24% 16% 16%;
+  /// FONTS ///
+
+  h1 {
+    font-size: 2.5rem; //3.5rem
   }
 
-  .app-div{
-    padding: 10% 14%;
-    flex-direction: column;
-    row-gap:4rem;
+  h2 {
+    font-size: 2rem; //2.5rem
+  }
 
-    img,
-    img.vertical{
-      width: 60vw;
+  h3 {
+    font-size: 1.25rem; //1.5rem
+  }
+
+  h4 {
+    font-size: 1.5rem; //2rem
+  }
+
+  h5 {
+    font-size: 1.25rem; //1.5rem
+  }
+
+  /// HEADER ///
+
+  header{
+    .nav-links{
+      width: 65%;
     }
   }
 
-  .desarrollo-div{
-    padding: 8% 14%;
+  /// GENERAL STYLES ///
+
+  .banner-div{
+    padding: 24% 20% 16%;
+  }
+  
+  .img-items-div{
+
+    .img-items{
+      grid-template-columns: auto 45% auto;
+      column-gap: 1.4%;
+    
+      li{
+        width: 200px;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        
+        h3{
+          padding-bottom: 0.1em;
+          
+        }
+      }
+    
+      .main-title-div{
+        padding: 0;
+        
+        h3{
+          padding-bottom: 0;
+          padding-top: 2em;
+        }
+      }
+    }
   }
 
-  .app-gallery-div{
-    padding: 14%;
+  .lista-izq,
+  .lista-der{
 
-    .flex-gallery{
-      column-gap: 14%;
+    li{
+      margin-left: 0 !important;
+      margin-right: 0 !important;
     }
   }
 
   .mas-caracteristicas-div{
-    padding: 10%;
+    padding: 8% 4%;
+  }
+  
+  .soluciones-div,
+  .aplicaciones-div{
 
-    ul{
-      grid-template-columns: auto auto;
+    .main-title-div{
+      width: 60%;
+    }
+  }
+
+  .app-div{
+    gap: 4%;
+
+    img{
+      min-width: 50vw;
+    }
+  }
+
+  .app-gallery-div{
+    padding: 8%;
+    
+    .flex-gallery{
+      column-gap: 4%;
+      justify-content: center;
     }
   }
 
   .soluciones-div,
-  .aplicaciones-div{
-  
-    .main-title-div{
-      width: 92%;
-    }
-  }  
+.aplicaciones-div{
+
+  .main-title-div{
+    width: 88%;
+  }
+}
 
   /// FOOTER ///
-  
+
   footer {
-    height: 140vh;
+    height: 100vh;
+
+    .footer-float{
+      padding: 8%;
+    }
   }    
 }
 
@@ -1395,7 +1341,7 @@ footer {
       gap: 4rem;
 
       div{
-        width: 46%;
+        width: 44%;
       }
 
       div:last-child,
@@ -1406,7 +1352,61 @@ footer {
   }    
 }
 
-@media screen and (max-device-width: 560px) { /// SMARTPHONES ///
+@media screen and (max-device-width: 800px) and (orientation: portrait){ /// IPAD RETRATO///
+  
+  /// GENERAL STYLES ///
+
+  .banner-div{
+    padding: 24% 16% 16%;
+  }
+
+  .app-div{
+    padding: 10% 14%;
+    flex-direction: column;
+    row-gap:4rem;
+
+    img,
+    img.vertical{
+      width: 60vw;
+    }
+  }
+
+  .desarrollo-div{
+    padding: 8% 14%;
+  }
+
+  .app-gallery-div{
+    padding: 14%;
+
+    .flex-gallery{
+      column-gap: 14%;
+    }
+  }
+
+  .mas-caracteristicas-div{
+    padding: 10%;
+
+    ul{
+      grid-template-columns: auto auto;
+    }
+  }
+
+  .soluciones-div,
+  .aplicaciones-div{
+  
+    .main-title-div{
+      width: 92%;
+    }
+  }  
+
+  /// FOOTER ///
+  
+  footer {
+    height: 100vh;
+  }    
+}
+
+@media screen and (max-device-width: 560px) and (orientation: portrait) { /// SMARTPHONES ///
 
   :root,
   html,
@@ -1604,5 +1604,12 @@ footer {
 
   footer {
     height: 240vh;
+
+    .links-form-div{
+
+      div{
+        width: 100%;
+      }
+    }
   }    
 }
