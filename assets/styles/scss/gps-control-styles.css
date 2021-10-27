@@ -1469,6 +1469,10 @@ footer .map-div {
   }
   li {
     font-size: 1rem !important;
+    margin: 0.2em 0;
+  }
+  ul {
+    margin-top: 2rem;
   }
   header {
     height: 10vh;
@@ -1484,7 +1488,9 @@ footer .map-div {
     right: 0;
     margin: auto;
     padding: 20px;
-    row-gap: 0.2rem;
+  }
+  header .nav-contact * {
+    margin-bottom: 0.1em;
   }
   header .navbar {
     padding: 4% 14%;
@@ -1504,13 +1510,13 @@ footer .map-div {
     padding: 2% 14%;
     left: 0;
     right: 0;
-    bottom: 185px;
+    bottom: 190px;
     background-color: #ffffff95;
     row-gap: 1.5rem;
     overflow: hidden;
   }
   header .nav-links.modal {
-    height: 90vh;
+    height: 80vh;
     padding: 60% 14% 14%;
     bottom: 0;
     background-color: #ffffff;
@@ -1527,34 +1533,69 @@ footer .map-div {
     height: auto;
   }
   .banner-div {
-    padding: 36% 14%;
+    padding: 28% 14%;
   }
   .app-div {
     padding: 14%;
+    gap: 0;
+  }
+  .app-div .app-info-div {
+    gap: 0;
+  }
+  .app-div .app-info-div .title-div {
+    margin-bottom: 2rem;
   }
   .app-div img,
   .app-div img.vertical {
     width: 100%;
     height: auto;
+    margin-bottom: 5vh;
   }
   .flex-row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    row-gap: 3rem;
+    row-gap: 0;
   }
   .btns-div {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    margin-top: 2rem;
+    gap: 0;
+  }
+  .btns-div a {
+    margin-right: 3rem;
   }
   .data-div {
     padding: 12%;
+    gap: 0;
+  }
+  .data-div .data-info-div {
+    margin-bottom: 2rem;
   }
   .data-div .data-info-div * {
     width: 100% !important;
+  }
+  .data-div .data-info-div h1 {
+    margin-bottom: 2rem !important;
+  }
+  .data-div .flex-row:last-child {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .data-div .flex-row:last-child div {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .mas-caracteristicas-div {
+    row-gap: 0;
+  }
+  .mas-caracteristicas-div h2 {
+    margin-bottom: 0.5em;
   }
   .desarrollo-div .data-div {
     padding: 10% 20%;
@@ -1574,11 +1615,20 @@ footer .map-div {
   }
   .app-gallery-div {
     padding: 10%;
+    gap: 0;
+  }
+  .app-gallery-div .main-title-div {
+    margin-bottom: 4rem;
+  }
+  .app-gallery-div .main-title-div h1 {
+    margin-bottom: 0.5em;
   }
   .app-gallery-div .flex-gallery {
-    gap: 80px;
-    -webkit-column-gap: 20%;
-            column-gap: 20%;
+    -webkit-column-gap: 0;
+            column-gap: 0;
+  }
+  .app-gallery-div .flex-gallery a {
+    margin: 5%;
   }
   .img-items-div {
     padding: 10%;
@@ -1611,10 +1661,21 @@ footer .map-div {
     height: inherit !important;
   }
   footer {
-    height: 240vh;
+    height: 200vh;
+  }
+  footer .footer-float {
+    row-gap: 0;
+  }
+  footer .links-form-div {
+    gap: 0;
+    margin-bottom: 2rem;
   }
   footer .links-form-div div {
     width: 100%;
+    margin-bottom: 4rem;
+  }
+  footer .copyright-div a {
+    margin-bottom: 1em;
   }
 }
 /*# sourceMappingURL=gps-control-styles.css.map */
