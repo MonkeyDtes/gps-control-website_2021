@@ -578,13 +578,14 @@ select::placeholder {
 
 header {
   position: fixed;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   margin: auto;
   top: 0;
   left: 0;
   right: 0;
   width: 100vw;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
   height: fit-content;
   text-align: center;
   background-color: #ffffff;
@@ -886,6 +887,7 @@ html {
 
 .main {
   position: absolute;
+  padding-top: 14vh;
   background-color: #ffffff;
   top: 0;
   z-index: -1;
@@ -898,7 +900,7 @@ html {
   display: flex;
   width: 100vw;
   overflow: hidden;
-  padding: 16% 20% 12%;
+  padding: 12% 20%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1105,6 +1107,9 @@ footer .map-div {
     /* THIS ARE THE BRAND CUSTOM STYLES */
     font-size: 14px;
   }
+  .main {
+    padding-top: 32vh;
+  }
   .img-items-div {
     padding: 8% 4%;
   }
@@ -1154,6 +1159,9 @@ footer .map-div {
     /* THIS ARE THE BRAND CUSTOM STYLES */
     font-size: 12px;
   }
+  .main {
+    padding-top: 14vh;
+  }
   h3 {
     font-size: 1rem;
   }
@@ -1174,7 +1182,7 @@ footer .map-div {
     font-size: 10px;
   }
   .banner-div {
-    padding: 24% 10% 16%;
+    padding: 16% 10%;
   }
   .app-div {
     padding: 10%;
@@ -1246,6 +1254,9 @@ footer .map-div {
 }
 
 @media screen and (max-width: 1100px) {
+  .main {
+    padding-top: 16vh;
+  }
   h1 {
     font-size: 2.5rem;
   }
@@ -1265,7 +1276,7 @@ footer .map-div {
     width: 65%;
   }
   .banner-div {
-    padding: 24% 20% 16%;
+    padding: 16% 20%;
   }
   .img-items-div .img-items {
     -ms-grid-columns: auto 45% auto;
@@ -1329,6 +1340,9 @@ footer .map-div {
 }
 
 @media screen and (max-device-width: 800px) {
+  .main {
+    padding-top: 28vh;
+  }
   h1 {
     font-size: 3rem;
   }
@@ -1348,7 +1362,7 @@ footer .map-div {
     width: 65%;
   }
   .banner-div {
-    padding: 20% 8% 10%;
+    padding: 10% 8%;
   }
   .app-div {
     padding: 8% 4%;
@@ -1393,8 +1407,11 @@ footer .map-div {
 }
 
 @media screen and (max-device-width: 800px) and (orientation: portrait) {
+  .main {
+    padding-top: 10vh;
+  }
   .banner-div {
-    padding: 24% 16% 16%;
+    padding: 16%;
   }
   .app-div {
     padding: 10% 14%;
@@ -1443,6 +1460,9 @@ footer .map-div {
   *:after {
     /* THIS ARE THE BRAND CUSTOM STYLES */
     font-size: 1.5rem;
+  }
+  .main {
+    padding-top: 10vh;
   }
   h1 {
     font-size: 3.5rem;
@@ -1504,7 +1524,7 @@ footer .map-div {
     height: auto;
   }
   .banner-div {
-    padding: 50% 14% 40%;
+    padding: 40% 14%;
   }
   .app-div {
     padding: 14%;
