@@ -1672,11 +1672,11 @@ footer .map-div {
     padding: 10%;
     row-gap: 0;
   }
-  footer .links-form-div {
+  footer .footer-float .links-form-div {
     gap: 0;
     margin-bottom: 2rem;
   }
-  footer .links-form-div div {
+  footer .footer-float .links-form-div .flex-column {
     width: 100%;
     margin-bottom: 4rem;
   }
