@@ -252,6 +252,7 @@ h2,
 h3 {
   color: #e30521;
   font-weight: 800;
+  line-height: 1.1;
 }
 
 h4,
@@ -259,6 +260,7 @@ h5,
 h6 {
   color: #2d2d2d;
   font-weight: 500;
+  line-height: 1.1;
 }
 
 p {
@@ -824,7 +826,7 @@ body,
 .img-items-div .img-items li h3 {
   color: #7a7a7a;
   line-height: 1;
-  padding-bottom: 0.2em;
+  margin-bottom: 0.2em;
 }
 
 .img-items-div .img-items li:nth-child(even) h3 {
@@ -847,7 +849,7 @@ body,
 .img-items-div .img-items .main-title-div h3 {
   color: #2d2d2d;
   line-height: 1;
-  padding-bottom: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 .gallery-list {
@@ -1018,6 +1020,23 @@ html {
   font-size: 16px;
 }
 
+.desarrollo-div .data-info-div {
+  width: 50%;
+}
+
+.desarrollo-div .data-info-div * {
+  width: 100%;
+}
+
+.desarrollo-div .data-info-div .flex-row {
+  margin-top: 4rem;
+}
+
+.desarrollo-div img {
+  width: inherit;
+  max-height: 60vh;
+}
+
 footer {
   position: relative;
   width: 100vw;
@@ -1147,15 +1166,7 @@ footer .map-div {
   .aplicaciones-gal a {
     margin: 0 2rem;
   }
-  .desarrollo-div {
-    padding: 5% 20%;
-  }
-  .desarrollo-div .data-info-div h1 {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-  }
-  .desarrollo-div .data-info-div p {
+  .desarrollo-div .data-info-div {
     width: 60%;
   }
   footer {
@@ -1223,7 +1234,7 @@ footer .map-div {
   }
   .data-div .data-info-div * {
     width: 100%;
-    padding-bottom: 2rem;
+    margin-bottom: 2rem;
   }
   .data-div h1.cyan {
     font-size: 2.5rem;
@@ -1275,6 +1286,20 @@ footer .map-div {
   .aplicaciones-gal .sol-icon,
   .aplicaciones-gal .app-icon {
     height: 120px;
+  }
+  .desarrollo-div .data-info-div .flex-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 1rem;
+  }
+  .desarrollo-div .data-info-div * {
+    margin-bottom: 1rem;
+  }
+  .desarrollo-div img {
+    max-height: inherit;
+    width: 45%;
   }
   footer {
     height: 180vh;
@@ -1377,6 +1402,18 @@ footer .map-div {
   .img-items-div .img-items {
     -ms-grid-columns: auto 30% auto;
         grid-template-columns: auto 30% auto;
+  }
+  .desarrollo-div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .desarrollo-div .data-info-div {
+    width: 100%;
   }
   footer {
     height: 180vh;
@@ -1618,14 +1655,6 @@ footer .map-div {
     width: 100%;
     margin-bottom: 2rem;
   }
-  .desarrollo-div .flex-row:last-child {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
-  }
-  .desarrollo-div .flex-row:last-child div {
-    width: 100%;
-  }
   .soluciones-gal a,
   .aplicaciones-gal a {
     width: 240px;
@@ -1658,12 +1687,31 @@ footer .map-div {
     margin-bottom: 1em;
   }
   .img-items-div .img-items li h3 {
-    padding-bottom: 0.5em;
+    margin-bottom: 0.5em;
   }
   .sol-icon,
   .app-icon {
     width: 200px !important;
     height: inherit !important;
+  }
+  .desarrollo-div * {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .desarrollo-div .data-info-div {
+    width: 100%;
+    margin-top: 4rem;
+    margin-bottom: 0;
+  }
+  .desarrollo-div .data-info-div .flex-row {
+    margin-top: 2rem;
+    margin-bottom: 0;
+  }
+  .desarrollo-div .data-info-div .flex-row div:last-child {
+    margin-bottom: 0;
+  }
+  .desarrollo-div img {
+    width: 100%;
   }
   footer {
     height: 200vh;

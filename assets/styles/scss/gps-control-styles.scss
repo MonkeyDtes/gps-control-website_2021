@@ -235,6 +235,7 @@ h2,
 h3 {
   color: $rojo;
   font-weight: 800;
+  line-height: 1.1;
 }
 
 h4,
@@ -242,6 +243,7 @@ h5,
 h6 {
   color: $gris-oscuro;
   font-weight: 500;
+  line-height: 1.1;
 }
 
 p{
@@ -676,7 +678,7 @@ body,
       h3{
         color: $gris2;
         line-height: 1;
-        padding-bottom: 0.2em;
+        margin-bottom: 0.2em;
         
       }
     
@@ -703,7 +705,7 @@ body,
       h3{
         color: $gris-oscuro;
         line-height: 1;
-        padding-bottom: 0.5em;
+        margin-bottom: 0.5em;
       }
     }
   }
@@ -860,6 +862,28 @@ html {
   }
 }
 
+/// DESARROLLO ///
+
+.desarrollo-div{
+
+  .data-info-div{
+    width: 50%;
+
+    *{
+      width: 100%;
+    }
+
+    .flex-row{
+      margin-top: 4rem;
+    }
+  }
+
+  img{
+    width: inherit;
+    max-height: 60vh;
+  }
+}
+
 /// FOOTER ///
 
 footer {
@@ -1010,17 +1034,9 @@ footer {
   }
 
   .desarrollo-div{
-    padding: 5% 20%;
     
     .data-info-div{
-
-      h1{
-        width: fit-content;
-      }
-
-      p{
-        width: 60%;
-      }
+      width: 60%;
     }
   }
 
@@ -1099,7 +1115,7 @@ footer {
 
       *{
         width: 100%;
-        padding-bottom: 2rem;
+        margin-bottom: 2rem;
       }
     }
 
@@ -1181,6 +1197,28 @@ footer {
     .sol-icon,
     .app-icon{
       height: 120px;
+    }
+  }
+
+  /// DESARROLLO ///
+
+  .desarrollo-div{
+    
+    .data-info-div{
+
+      .flex-row{
+        flex-direction: column;
+        margin-top: 1rem;
+      }
+
+      *{
+        margin-bottom: 1rem;
+      }
+    }
+
+    img{
+      max-height: inherit;
+      width: 45%;
     }
   }
 
@@ -1317,6 +1355,17 @@ footer {
 
     .img-items{
       grid-template-columns: auto 30% auto;
+    }
+  }
+
+  /// DESARROLLO ///
+
+  .desarrollo-div{
+    flex-direction: column;
+    justify-content: center;
+
+    .data-info-div{
+      width: 100%;
     }
   }
 
@@ -1616,17 +1665,6 @@ footer {
     }
   }
 
-  .desarrollo-div{
-
-    .flex-row:last-child{
-      justify-content: start;
-
-      div{
-        width: 100%;
-      }
-    }
-  }
-
   .soluciones-gal,
   .aplicaciones-gal{
 
@@ -1675,7 +1713,7 @@ footer {
         margin-bottom: 1em;
         
         h3{
-          padding-bottom: 0.5em;
+          margin-bottom: 0.5em;
           
         }
       }
@@ -1686,6 +1724,35 @@ footer {
   .app-icon{
     width: 200px !important;
     height: inherit !important;
+  }
+
+  /// DESARROLLO ///
+
+  .desarrollo-div{
+
+    *{
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    .data-info-div{
+      width: 100%;
+      margin-top: 4rem;
+      margin-bottom: 0;
+
+      .flex-row{
+        margin-top: 2rem;
+        margin-bottom: 0;
+        
+        div:last-child{
+        margin-bottom: 0;
+        }
+      }
+    }
+
+    img{
+      width: 100%;
+    }
   }
 
   /// FOOTER ///
