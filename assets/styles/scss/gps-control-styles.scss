@@ -1242,6 +1242,12 @@ footer {
         }
       }
     }
+
+    .copyright-div{
+      height: 10vh;
+      flex-wrap: wrap;
+      align-items: flex-end !important;
+    }
   }
 }
 
@@ -1776,6 +1782,9 @@ footer {
     }
 
     .copyright-div{
+      height: inherit;
+      flex-wrap: nowrap;
+      align-items: flex-start !important;
 
       a{
         margin-bottom: 1em;

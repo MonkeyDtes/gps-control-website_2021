@@ -1315,6 +1315,14 @@ footer .map-div {
   footer .footer-float .links-form-div .flex-column:last-child {
     width: 100%;
   }
+  footer .copyright-div {
+    height: 10vh;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: end !important;
+        -ms-flex-align: end !important;
+            align-items: flex-end !important;
+  }
 }
 
 @media screen and (max-width: 970px) and (min-width: 660px) {
@@ -1727,6 +1735,14 @@ footer .map-div {
   footer .footer-float .links-form-div .flex-column {
     width: 100%;
     margin-bottom: 4rem;
+  }
+  footer .copyright-div {
+    height: inherit;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: flex-start !important;
   }
   footer .copyright-div a {
     margin-bottom: 1em;
