@@ -443,6 +443,29 @@ select{
   }
 }
 
+.whatsapp-btn{
+  position: fixed;
+  right: 1vw;
+  bottom: 2vh;
+  width: 100px;
+  z-index: 99;
+  transform: scale(0.8);
+  
+  img{
+    width: 100%;
+    filter: brightness(1);
+  }
+  
+  &:hover,
+  &.hover{
+    transform: scale(1);
+
+    img{
+      filter: brightness(1.14);
+    }
+  }
+}
+
 /// IMAGES STYLES ///
 
 .sol-icon{
@@ -989,6 +1012,12 @@ footer {
     }
   }
 
+  /// HEADER ///
+
+  .whatsapp-btn{
+    width: 80px;
+  }  
+
   /// GENERAL STYLES ///
   .app-div,
   .data-div,
@@ -1065,6 +1094,10 @@ footer {
   }
 
   /// HEADER ///
+
+  .whatsapp-btn{
+    width: 80px;
+  }  
 
   /// GENERAL STYLES ///
 
@@ -1298,6 +1331,10 @@ footer {
       }
     }
   }
+
+  .whatsapp-btn{
+    width: 80px;
+  }  
 
   /// GENERAL STYLES ///
 
@@ -1580,6 +1617,12 @@ footer {
       width: 100%;
       height: auto;
     }
+  }
+
+  .whatsapp-btn{
+    width: 120px;
+    bottom: 1vh;
+    right: 1vw;
   }  
 
   /// GENERAL STYLES ///
