@@ -585,6 +585,32 @@ select::placeholder {
           filter: brightness(1.14);
 }
 
+.whatsapp-btn1 {
+  position: fixed;
+  right: 1vw;
+  bottom: 2.5vh;
+  width: 100px;
+  z-index: 99;
+  -webkit-transform: scale(0.8);
+  transform: scale(0.8);
+}
+
+.whatsapp-btn1 img {
+  width: 100%;
+  -webkit-filter: brightness(1);
+  filter: brightness(1);
+}
+
+.whatsapp-btn1:hover, .whatsapp-btn1.hover {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.whatsapp-btn1:hover img, .whatsapp-btn1.hover img {
+  -webkit-filter: brightness(1.14);
+  filter: brightness(1.14);
+}
+
 .sol-icon {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1163,6 +1189,9 @@ footer .map-div {
   .whatsapp-btn {
     width: 80px;
   }
+  .whatsapp-btn1 {
+    width: 80px;
+  }
   .app-div,
   .data-div,
   .app-gallery-div,
@@ -1216,7 +1245,8 @@ footer .map-div {
   .main {
     padding-top: 18vh;
   }
-  .whatsapp-btn {
+  .whatsapp-btn,
+  .whatsapp-btn1{
     width: 80px;
   }
   .app-div,
@@ -1389,7 +1419,8 @@ footer .map-div {
   header .navbar a {
     font-size: 10px;
   }
-  .whatsapp-btn {
+  .whatsapp-btn,
+  .whatsapp-btn1{
     width: 80px;
   }
   .banner-div {
@@ -1621,7 +1652,8 @@ footer .map-div {
     width: 100%;
     height: auto;
   }
-  .whatsapp-btn {
+  .whatsapp-btn,
+  .whatsapp-btn1{
     width: 120px;
     bottom: 1vh;
     right: 1vw;
