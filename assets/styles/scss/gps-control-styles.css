@@ -588,7 +588,7 @@ select::placeholder {
 .whatsapp-btn1 {
   position: fixed;
   right: 1vw;
-  bottom: 4vh;
+  bottom: 10vh;
   width: 100px;
   z-index: 99;
   -webkit-transform: scale(0.8);
