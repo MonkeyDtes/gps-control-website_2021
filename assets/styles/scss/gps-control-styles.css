@@ -588,7 +588,7 @@ select::placeholder {
 .whatsapp-btn1 {
   position: fixed;
   right: 1vw;
-  bottom: 10vh;
+  bottom: 12vh;
   width: 100px;
   z-index: 99;
   -webkit-transform: scale(0.8);
@@ -1652,10 +1652,14 @@ footer .map-div {
     width: 100%;
     height: auto;
   }
-  .whatsapp-btn,
-  .whatsapp-btn1{
+  .whatsapp-btn{
     width: 120px;
     bottom: 1vh;
+    right: 1vw;
+  }
+  .whatsapp-btn1{
+    width: 120px;
+    bottom: 6vh;
     right: 1vw;
   }
   .app-div,
