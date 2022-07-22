@@ -1,0 +1,76 @@
+.imagen_sensor{
+    width: 80%;
+    height:80%;
+    align-items: right;
+}
+
+.titulo1_landing{
+    font-size: 100px;
+    color: #1c2f5c;
+}
+
+
+.landing_div{
+    
+
+}
+
+.over{
+
+}
+
+.s_robo{
+    height: 40vh;
+}
+
+.s_sensor{
+
+}
+
+.s_tecnologia{
+
+}
+
+.s_contacto{
+    margin-bottom: 120vh;
+}
+
+.t_robo{
+    margin-top: 14vh;
+    padding-top: 14vh;
+    text-align: center;
+}
+
+.t_sensor{
+
+}
+
+.back_sensor{
+ background: url(../../img/sensor_landing.png) no-repeat;
+ background-size: cover;
+ position: absolute;
+ width: 50%;
+ height: 50%;
+ background-position: center;
+ 
+}
+
+.back_tecnologia{
+
+}
+
+.container_contacto{
+
+}
+
+.icon_contacto{
+
+}
+
+.title_contacto{
+
+}
+
+.desc_contacto{
+
+}
