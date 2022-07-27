@@ -1,67 +1,77 @@
-.imagen_sensor{
+.content {
+    height: 100vh
+}
+
+.imagen_sensor {
     width: 80%;
-    height:80%;
+    height: 80%;
     align-items: right;
 }
 
-.titulo1_landing{
+.titulo1_landing {
     font-size: 100px;
-    color: #1c2f5c;
+    color: #e30521;
 }
 
-
-.landing_div{
-    width: 1200px; 
-    height: 2230px;
-    margin: auto;
+.content-div {
+    background-color: #e30521;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-Content: center;
 }
 
-.over{
-
+.content-label {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
-.s_robo{
+.label-cont {
+    color: white;
+    font-family: "Montserrat";
+}
+
+.s_robo {
     height: 40vh;
-    width: 1200px; 
 }
 
-.s_sensor{
- display: table;
- width: 1200px;
+.s_sensor {
+    display: table;
+    width: 1200px;
 }
 
-.s_tecnologia{
- display: table;
- position: center;
- float: bottom;
- width: 1200px; 
- height: 100vh;
+.s_tecnologia {
+    display: table;
+    position: center;
+    float: bottom;
+    width: 1200px;
+    height: 100vh;
 }
 
-.s_contacto{
+.s_contacto {
     margin-bottom: 5vh;
-    width: 1200px; 
+    width: 1200px;
 }
 
-.t_robo{
+.t_robo {
     margin-top: 14vh;
     padding-top: 14vh;
     text-align: center;
 }
 
-.t_sensor{
- width: 20vw;
- vertical-align: bottom;
- position: absolute;
- bottom: 40%;
- left: 20%;
+.t_sensor {
+    width: 20vw;
+    vertical-align: bottom;
+    position: absolute;
+    bottom: 40%;
+    left: 20%;
 }
 
-.animation_t_sensor{
-
-}
-
-.div_back{
+.div_back {
     border: none;
     margin-left: 0vh;
     padding: 0vh;
@@ -70,38 +80,32 @@
     z-index: 3;
 }
 
-.back_sensor{
- background: url(../../img/sensor_landing.png)no-repeat;
- background-size: 90vh;
- position: absolute;
- width: 100%;
- height: 100%;
- background-position: right;
- background-origin: content-box;
- padding-right: 18rem;
+.back_sensor {
+    background: url(../../img/sensor_landing.png)no-repeat;
+    background-size: 90vh;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position: right;
+    background-origin: content-box;
+    padding-right: 18rem;
 }
 
-.back_tecnologia{
+.back_tecnologia {
     background: url(assets\img\Gasolina_landing.png);
     position: relative;
     background-position: center;
-    width: 1200px; 
+    width: 1200px;
     height: 100%;
     float: bottom;
 }
 
-.container_contacto{
-
-}
-
-.icon_contacto{
-
-}
-
-.title_contacto{
-
-}
-
-.desc_contacto{
-
+.content-footer {
+    background-color: #e30521;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-Content: center;
 }

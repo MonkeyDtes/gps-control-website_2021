@@ -1,346 +1,139 @@
 <!doctype html>
 <html id="full-html">
-    <head>
 
-        <meta charset="utf-8">
-        
-        <title>GPS CONTROL</title>
+<head>
+    <meta charset="utf-8">
 
-        <link rel="shortcut icon"
-        type="image/png"
-        href="assets/img/logo-1x1.png">
+    <title>GPS CONTROL</title>
 
-        <link href="assets/styles/scss/gps-control-styles.css" rel="stylesheet" type="text/css">
-        <link href="assets/styles/Landing/landing.css" rel="stylesheet" type="text/css">
-        <style>
-        </style>
+    <link rel="shortcut icon" type="image/png" href="assets/img/logo-1x1.png">
 
-        <script>
+    <link href="assets/styles/scss/gps-control-styles.css" rel="stylesheet" type="text/css">
+    <link href="assets/styles/Landing/landing.css" rel="stylesheet" type="text/css">
+    <style>
 
-            // MENU SCRIPTS //
+    </style>
 
-                function abrir_menu() {
-                    document.getElementById("menu-icon").classList.remove("azul");
-                    document.getElementById("menu-icon").classList.add("rojo");
-                    document.getElementById("nav-links").classList.add("modal");
-                    document.getElementById("full-html").style.overflowY ="hidden";
-                    document.getElementById("menu-icon").innerHTML = "Cerrar";
-                    document.getElementById("menu-icon").onclick = cerrar_menu;
-                    document.getElementById("nav-btn1").onclick = cerrar_menu;
-                    document.getElementById("nav-btn2").onclick = cerrar_menu;
-                    document.getElementById("nav-btn3").onclick = cerrar_menu;
-                    document.getElementById("nav-btn4").onclick = cerrar_menu;
-                    document.getElementById("nav-btn4").onclick = cerrar_menu;
-                }
-                
-                function cerrar_menu() {
-                    document.getElementById("menu-icon").classList.remove("rojo");
-                    document.getElementById("menu-icon").classList.add("azul");
-                    document.getElementById("nav-links").classList.remove("modal");
-                    document.getElementById("full-html").style.overflowY ="scroll";
-                    document.getElementById("menu-icon").innerHTML = "Menú";
-                    document.getElementById("menu-icon").onclick = abrir_menu;
-                    document.getElementById("nav-btn1").onclick = abrir_menu;
-                    document.getElementById("nav-btn2").onclick = abrir_menu;
-                    document.getElementById("nav-btn3").onclick = abrir_menu;
-                }
+    <script>
+        // MENU SCRIPTS //
 
-        </script>
+        function abrir_menu() {
+            document.getElementById("menu-icon").classList.remove("azul");
+            document.getElementById("menu-icon").classList.add("rojo");
+            document.getElementById("nav-links").classList.add("modal");
+            document.getElementById("full-html").style.overflowY = "hidden";
+            document.getElementById("menu-icon").innerHTML = "Cerrar";
+            document.getElementById("menu-icon").onclick = cerrar_menu;
+            document.getElementById("nav-btn1").onclick = cerrar_menu;
+            document.getElementById("nav-btn2").onclick = cerrar_menu;
+            document.getElementById("nav-btn3").onclick = cerrar_menu;
+            document.getElementById("nav-btn4").onclick = cerrar_menu;
+            document.getElementById("nav-btn4").onclick = cerrar_menu;
+        }
 
-    </head>
-    
-    <body id="full-body">
-    
-        <header>
-    
-            <!-- CONTACTO SUPERIOR -->
-            <div
-            class="nav-contact flex-row fondo-rojo">
-                <p
-                class="raleway">
-                    Llame ahora! (+57) 
-                    <a
-                    class="dark sin-borde"
-                    target="blank"
-                    href="https://wa.me/573225406709">
+        function cerrar_menu() {
+            document.getElementById("menu-icon").classList.remove("rojo");
+            document.getElementById("menu-icon").classList.add("azul");
+            document.getElementById("nav-links").classList.remove("modal");
+            document.getElementById("full-html").style.overflowY = "scroll";
+            document.getElementById("menu-icon").innerHTML = "Menú";
+            document.getElementById("menu-icon").onclick = abrir_menu;
+            document.getElementById("nav-btn1").onclick = abrir_menu;
+            document.getElementById("nav-btn2").onclick = abrir_menu;
+            document.getElementById("nav-btn3").onclick = abrir_menu;
+        }
+    </script>
+
+</head>
+<header>
+    <!-- CONTACTO SUPERIOR -->
+    <div class="nav-contact flex-row fondo-rojo">
+        <p class="raleway">
+            Llame ahora! (+57)
+            <a class="dark sin-borde" target="blank" href="https://wa.me/573225406709">
                         3225406709
-                    </a> -  
-                    <a
-                    class="dark sin-borde"
-                    target="blank"
-                    href="https://wa.me/573187810059">
+                    </a> -
+            <a class="dark sin-borde" target="blank" href="https://wa.me/573187810059">
                         3187810059
                     </a>
-                </p>
-                <a
-                href="https://wa.me/573174021086"
-                target="blank"
-                class="dark sin-borde">
-                    <div>
-                        <strong>
+        </p>
+        <a href="https://wa.me/573174021086" target="blank" class="dark sin-borde">
+            <div>
+                <strong>
                             Soporte Técnico
                         </strong>
-                    </div>
-                </a>
-                <a
-                class="dark sin-borde"
-                href="mailto:sales@gpscontrol.co">
+            </div>
+        </a>
+        <a class="dark sin-borde" href="mailto:sales@gpscontrol.co">
                 Escríbanos a sales@gpscontrol.co
                 </a>
-            </div>
+    </div>
 
-            <!-- NAVBAR -->
-            <div id="navbar"
-            class="navbar flex-row over-cyan">
-                <div>
-                    <a id="a-logo-gps"
-                    class="sin-borde"
-                    href="index.html">
-                        <img
-                        id="logo-gps"
-                        class="logo-gps"
-                        src="assets/img/gps-control-logo-XL.png"
-                        alt="Logo GPS CONTROL">
-                        </img>
-                    </a>
-                </div>
-    
-                <div id="nav-links"
-                class="nav-links flex-row">
-                    <a id="menu-icon"
-                    class="azul"
-                    onclick="abrir_menu()">
+    <!-- NAVBAR -->
+    <div id="navbar" class="navbar flex-row over-cyan">
+        <div>
+            <a id="a-logo-gps" class="sin-borde" href="index.html">
+                <img id="logo-gps" class="logo-gps" src="assets/img/gps-control-logo-XL.png" alt="Logo GPS CONTROL">
+                </img>
+            </a>
+        </div>
+
+        <div id="nav-links" class="nav-links flex-row">
+            <a id="menu-icon" class="azul" onclick="abrir_menu()">
                         Menú
                     </a>
-                    <a id="nav-btn1"
-                    href="plataforma.html"
-                    class="hover-cyan nav-btn"
-                    onclick="">
+            <a id="nav-btn1" href="plataforma.html" class="hover-cyan nav-btn" onclick="">
                         Plataforma de rastreo
                     </a>
-                    <a id="nav-btn2"
-                    href="soluciones.html"
-                    class="hover-cyan nav-btn"
-                    onclick="">
+            <a id="nav-btn2" href="soluciones.html" class="hover-cyan nav-btn" onclick="">
                         Soluciones a medida
                     </a>
-                    <a id="nav-btn3"
-                    href="aplicaciones.html"
-                    class="hover-cyan nav-btn"
-                    onclick="">
+            <a id="nav-btn3" href="aplicaciones.html" class="hover-cyan nav-btn" onclick="">
                         Aplicaciones (Apps)
                     </a>
-                    <a id="nav-btn3"
-                    href="landings.html"
-                    class="rojo nav-btn"
-                    onclick="">
+            <a id="nav-btn3" href="landings.html" class="rojo nav-btn" onclick="">
                         Promociones                                     
                     </a>
-                    <a id="nav-btn4"
-                    href="https://tracking.gpscontrolcolombia.com/"
-                    target="blank"
-                    class="gris hover-rojo nav-btn"
-                    onclick="">
-                        <strong
-                        class="gris">
+            <a id="nav-btn4" href="https://tracking.gpscontrolcolombia.com/" target="blank" class="gris hover-rojo nav-btn" onclick="">
+                <strong class="gris">
                             Ingreso Clientes
                         </strong>
-                    </a>
-                </div>
-                
-            </div>
-        </header>
-        
-            <div class="landing_div">
+            </a>
+        </div>
+
+    </div>
+</header>
+<div class="content">
+
+    <body>
+        <div class=" column landing_div">
+            <div>
                 <section id="s_robo" class="s_robo">
-
                     <div class="t_robo">
-                        <h1
-                            class="titulo1_landing">
-                                EVITA EL ROBO 
-                            <h2
-                            class="azul">
+                        <h1 class="titulo1_landing">
+                            EVITA EL ROBO
+                            <h2 class="azul">
                                 <strong class="cyan">DE TU COMBUSTIBLE</strong>
-                            </p>
-                    </div>
-
-                
-                </section>
-                <section id="s_sensor" class="s_sensor">
-                    <div class="back_sensor">
-                        <div class="t_sensor">
-                            <span>
-                                Comienza a <b>ahorrar y optimizar</b> costos operativos, controlando el consumo de combustible de <b>tu flota.</b>
-                            </span>
-                        </div>
-                    </div>
-                </section>
-                <section id="s_tecnologia" class="s_tecnologia ">
-                    <div class="back_tecnologia">
-                        
-                    </div>
-                </section>
-                <section id="s_contacto" class="s_contacto">
-                    <div>
-                        <div class="title_contacto">
-                            <span>322 540 67 09</span>
-                        </div>
-                        <div class="desc_contacto">
-                            <span>Instalación y servicio técnico a nivel nacional</span>
-                        </div>
+                                </p>
                     </div>
                 </section>
             </div>
-
-        <!-- BODY -->
-        
-
-
-            
-        
-
-        <!-- FOOTER -->
-        <footer>
-
-            <!-- MAPA -->
-            <div
-            class="map-div">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d248.53985367611298!2d-74.0639334!3d4.6585344!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9a5af33a2501%3A0x72d9b2f153ee13c9!2sCra.%2016%20%2370a74%2C%20Bogot%C3%A1%2C%20Cundinamarca!5e0!3m2!1sen!2sco!4v1634744778546!5m2!1sen!2sco" width="100%" height="100%" top="0" bottom="0" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-    
-            <div
-            class="flex-column footer-float">
-                <div
-                class="flex-row links-form-div">
-                    <!-- SOLUCIONES -->
-                    <div
-                    class="flex-column">
-                        <a
-                        class="sin-borde"
-                        href="soluciones.html">
-                            <h3>
-                                Soluciones a medida
-                            </h3>
-                        </a>
-                        <a
-                        href="soluciones.html#sensor-combustible">
-                            Sensor de combustible
-                        </a>
-                        <a
-                        href="soluciones.html#temperatura">
-                            Sensor de temperatura
-                        </a>
-                        <a
-                        href="soluciones.html#pasajeros">
-                            Control de pasajeros
-                        </a>
-                        <a
-                        href="soluciones.html#simcard">
-                            Sim Card Multioperador
-                        </a>
-                        <a
-                        href="soluciones.html#mdvr">
-                            Monitoreo por video
-                        </a>
-                    </div>
-        
-                    <!-- APLICACIONES -->
-                    <div
-                    class="flex-column">
-                        <a
-                        class="sin-borde"
-                        href="aplicaciones.html">
-                            <h3>
-                                Aplicaciones (Apps)
-                            </h3>
-                        </a>
-                        <a
-                        href="aplicaciones.html#enlist-control">
-                            Enlist Control
-                        </a>
-                        <a
-                        href="aplicaciones.html#fuec">
-                            FUEC
-                        </a>
-                        <a
-                        href="aplicaciones.html#opco">
-                            Operative Control
-                        </a>
-                        <a
-                        href="aplicaciones.html#logistics">
-                            Logistics
-                        </a>
-                        <a
-                        href="aplicaciones.html#nimbus">
-                            Nimbus
-                        </a>
-                    </div>
-        
-                    <!-- CONTACTO -->
-                    <form id="contacto"
-                    class="flex-column"
-                    method="post">
-    
-                        <h3>
-                            Escríbanos!
-                        </h3>
-    
-                        <input
-                        type="text"
-                        placeholder="Ingrese su nombre">
-    
-                        <input
-                        type="text"
-                        placeholder="Su número de teléfono (móvil o fijo)">
-    
-                        <input
-                        type="email"
-                        placeholder="Su correo electrónico">
-    
-                        <input
-                        type="text"
-                        placeholder="Su solicitud">
-    
-                        <input
-                        type="submit"
-                        class="hover-cyan">
-    
-                    </form>
-    
+            <div class="content-div">
+                <div class="content-label">
+                    <h4 class="label-cont">COMPRA</h4>
+                    <span class="label-cont" style="padding: 5px; font-weight: 400; font-size: 1.5em;"> por whatsapp</span>
                 </div>
-    
-                <!-- DATOS Y COPYRIGHT -->
-                <div
-                class="flex-row rojo copyright-div">
-    
-                    <a
-                    class="sin-borde">
-                        Copyright 2021 © AB Comercial S.A.S
-                    </a>
-                    <a
-                    class="sin-borde"
-                    target="blank"
-                    href="https://wa.me/573225406709">
-                        Llame ahora! +57 3225406709
-                    </a>
-                    <a
-                    class="sin-borde"
-                    target="blank"
-                    href="https://wa.me/573187810059">
-                        Llame ahora! +57 3187810059
-                    </a>
-                    <a
-                    class="sin-borde"
-                    target="blank"
-                    href="mailto:sales@gpscontrol.co">
-                        Escríbanos! sales@gpscontrol.co
-                    </a>
-                        
-                </div>
+                <div>icon aca</div>
             </div>
-    
-        </footer>
-            
+
+        </div>
+
     </body>
+    <footer>
+        <div class="content-footer">
+
+        </div>
+    </footer>
+</div>
 
 </html>
