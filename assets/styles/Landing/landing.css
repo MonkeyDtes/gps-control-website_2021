@@ -1,11 +1,7 @@
-.content {
-    height: 100vh
-}
-
-.imagen_sensor {
-    width: 80%;
-    height: 80%;
-    align-items: right;
+.landing_div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
 }
 
 .titulo1_landing {
@@ -23,6 +19,15 @@
     justify-Content: center;
 }
 
+.cont-img-what {
+    display: flex;
+    justify-content: center;
+}
+
+.img-what {
+    height: 23px;
+}
+
 .content-label {
     flex-direction: row;
     display: flex;
@@ -32,80 +37,168 @@
 
 .label-cont {
     color: white;
-    font-family: "Montserrat";
-}
-
-.s_robo {
-    height: 40vh;
-}
-
-.s_sensor {
-    display: table;
-    width: 1200px;
-}
-
-.s_tecnologia {
-    display: table;
-    position: center;
-    float: bottom;
-    width: 1200px;
-    height: 100vh;
-}
-
-.s_contacto {
-    margin-bottom: 5vh;
-    width: 1200px;
+    font-family: "raleway";
 }
 
 .t_robo {
-    margin-top: 14vh;
-    padding-top: 14vh;
+    margin-top: 16vh;
+    padding-bottom: 8vh;
     text-align: center;
 }
 
-.t_sensor {
-    width: 20vw;
-    vertical-align: bottom;
-    position: absolute;
-    bottom: 40%;
-    left: 20%;
+.back-sensor {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    height: 1000px;
+    align-items: center;
+    align-content: end;
 }
 
-.div_back {
-    border: none;
-    margin-left: 0vh;
-    padding: 0vh;
-    position: absolute;
-    width: 100vw;
-    z-index: 3;
+.back-sensor-img {
+    background: url(/assets/img/sensor_gasolina.png)no-repeat;
+    height: 40%;
 }
 
-.back_sensor {
-    background: url(../../img/sensor_landing.png)no-repeat;
-    background-size: 90vh;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-position: right;
-    background-origin: content-box;
-    padding-right: 18rem;
-}
-
-.back_tecnologia {
-    background: url(assets\img\Gasolina_landing.png);
+.label-sensor {
+    border-left: 0.15em solid #bbbbbb;
+    display: inline-grid;
+    height: 110px;
     position: relative;
-    background-position: center;
-    width: 1200px;
-    height: 100%;
-    float: bottom;
+    bottom: -300px;
+    left: 15%;
+    padding-left: 10px;
 }
 
-.content-footer {
-    background-color: #e30521;
-    flex-direction: row;
-    justify-content: space-around;
-    height: 100px;
+b {
+    font-size: 20px;
+}
+
+.label-info {
+    text-align: center;
+    display: inline-grid;
+    height: 110px;
+    position: relative;
+    top: -40px;
+    padding-left: 10px;
+}
+
+.back-sensor-info {
+    border-left: 0.1em solid #bbbbbb;
+    border-right: 0.1em solid #bbbbbb;
+    border-radius: 10%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    width: 70%;
+    align-items: center;
+}
+
+.form {
+    width: 70%;
+    height: 150%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input_info {
+    text-align: center !important;
+    color: #7a7a7a!important;
+    border-bottom: 0.1em solid #bbbbbb;
+    font-size: 20px;
+}
+
+::placeholder {
+    color: #7a7a7a !important;
+}
+
+.input_bottom {
+    border-bottom: 0.1em solid #10c4ff;
+    color: #10c4ff !important;
+    width: 60px;
+    font-size: 20px;
+}
+
+.input_bottom::placeholder {
+    color: #10c4ff !important;
+}
+
+.img-sensor {
+    text-align: center;
+    display: inline-grid;
+    height: 30%;
+    position: relative;
+    bottom: -10px;
+    padding-left: 10px;
+}
+
+.back-tecnologia-img {
+    width: 100%
+}
+
+.footer-icon {}
+
+.footer-one {
+    background: rgb(161, 5, 33);
+    background: linear-gradient(90deg, rgba(161, 5, 33, 1) 50%, rgba(227, 5, 33, 1) 50%);
+    bottom: 95px;
+    width: 100%;
+    height: 20%;
     display: flex;
     align-items: center;
-    justify-Content: center;
+    padding: 25px;
+    justify-content: center;
+}
+
+.icon-what-footer {
+    height: 35px;
+    padding-left: 10px;
+    margin-bottom: 55px;
+}
+
+.footer-general {
+    background: rgb(161, 5, 33);
+    background: linear-gradient(90deg, rgba(161, 5, 33, 1) 47.7%, rgba(227, 5, 33, 1) 47.7%);
+    color: white;
+    position: relative;
+    right: 12px;
+    bottom: -10px;
+    border-radius: 25px;
+    padding-left: 10px;
+    width: 55%;
+}
+
+.conten-footer {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.label-number {
+    color: white;
+    font-family: "raleway";
+}
+
+.label-footer {
+    color: white;
+    font-family: "raleway";
+    text-align: center;
+}
+
+.footer-two {
+    background-color: white;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.logo-footer {
+    height: 40px;
 }
