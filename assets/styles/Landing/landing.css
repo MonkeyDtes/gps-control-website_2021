@@ -5,7 +5,8 @@
 }
 
 .titulo1_landing {
-    font-size: 100px;
+    font-size: 900%;
+    ;
     color: #e30521;
 }
 
@@ -62,7 +63,7 @@
 .label-sensor {
     border-left: 0.15em solid #bbbbbb;
     display: inline-grid;
-    height: 110px;
+    height: 80px;
     position: relative;
     bottom: -300px;
     left: 15%;
