@@ -43,20 +43,18 @@
 
 .t_robo {
     margin-top: 16vh;
-    padding-bottom: 8vh;
-    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .back-sensor {
     display: grid;
     grid-template-columns: 60% 40%;
-    height: 1000px;
-    align-items: center;
-    align-content: end;
+  
 }
 
 .back-sensor-img {
-    background: url(/assets/img/sensor_gasolina.png)no-repeat;
+    background: url(/assets/img/SENSOR_LANDING.png)no-repeat;
     height: 40%;
 }
 
@@ -93,6 +91,7 @@ b {
     height: 50%;
     width: 70%;
     align-items: center;
+    margin-top: 10%;
 }
 
 .form {
@@ -141,9 +140,8 @@ b {
 
 .footer-icon {}
 
-.footer-one {
-    background: rgb(161, 5, 33);
-    background: linear-gradient(90deg, rgba(161, 5, 33, 1) 50%, rgba(227, 5, 33, 1) 50%);
+.footer{
+    background:  rgba(227, 5, 33, 1);
     bottom: 95px;
     width: 100%;
     height: 20%;
@@ -160,8 +158,7 @@ b {
 }
 
 .footer-general {
-    background: rgb(161, 5, 33);
-    background: linear-gradient(90deg, rgba(161, 5, 33, 1) 47.7%, rgba(227, 5, 33, 1) 47.7%);
+    background:  rgba(227, 5, 33, 1);
     color: white;
     position: relative;
     right: 12px;
@@ -187,17 +184,6 @@ b {
     color: white;
     font-family: "raleway";
     text-align: center;
-}
-
-.footer-two {
-    background-color: white;
-    bottom: 0;
-    width: 100%;
-    height: 10%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 10px;
 }
 
 .logo-footer {
