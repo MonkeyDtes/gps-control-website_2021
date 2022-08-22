@@ -6,8 +6,13 @@
 
 .titulo1_landing {
     font-size: 900%;
-    ;
     color: #e30521;
+}
+
+.cyan {
+    font-size: 56px;
+    color: #0065CA;
+    margin-left: 9%;
 }
 
 .content-div {
@@ -48,24 +53,35 @@
 }
 
 .back-sensor {
-    display: grid;
-    grid-template-columns: 60% 40%;
-  
+    display: flex;
+    height: 600px;
 }
 
 .back-sensor-img {
+    margin-left: 16%;
     background: url(/assets/img/SENSOR_LANDING.png)no-repeat;
-    height: 40%;
+    height: 60%;
+}
+
+.img-gasolina {
+    position: relative;
+    left: -19%;
+    top: 150px;
 }
 
 .label-sensor {
     border-left: 0.15em solid #bbbbbb;
     display: inline-grid;
-    height: 80px;
+    height: 110px;
     position: relative;
-    bottom: -300px;
-    left: 15%;
+    bottom: -80px;
     padding-left: 10px;
+}
+
+.label-info-sensor {
+    font-size: 20px;
+    text-align: justify;
+    width: 50%;
 }
 
 b {
@@ -88,10 +104,19 @@ b {
     justify-content: center;
     display: flex;
     flex-direction: column;
-    height: 50%;
-    width: 70%;
+    height: 70%;
+    width: 55%;
     align-items: center;
     margin-top: 10%;
+}
+
+.contact {
+    font-size: 40px;
+    line-height: 0.8em;
+}
+
+.label-contact {
+    font-size: 40px;
 }
 
 .form {
@@ -128,9 +153,8 @@ b {
 .img-sensor {
     text-align: center;
     display: inline-grid;
-    height: 30%;
+    height: 20%;
     position: relative;
-    bottom: -10px;
     padding-left: 10px;
 }
 
@@ -138,10 +162,8 @@ b {
     width: 100%
 }
 
-.footer-icon {}
-
-.footer{
-    background:  rgba(227, 5, 33, 1);
+.footer {
+    background: rgba(227, 5, 33, 1);
     bottom: 95px;
     width: 100%;
     height: 20%;
@@ -151,98 +173,168 @@ b {
     justify-content: center;
 }
 
-.icon-what-footer {
-    height: 35px;
-    padding-left: 10px;
-    margin-bottom: 55px;
+@media screen and (max-width: 1400px) and (min-width: 1100px) {
+    .cyan {
+        font-size: 53px;
+    }
+    .back-sensor {
+        height: 584px;
+    }
 }
-
-.footer-general {
-    background:  rgba(227, 5, 33, 1);
-    color: white;
-    position: relative;
-    right: 12px;
-    bottom: -10px;
-    border-radius: 25px;
-    padding-left: 10px;
-    width: 55%;
-}
-
-.conten-footer {
-    display: flex;
-    width: 50%;
-    align-items: center;
-    justify-content: center;
-}
-
-.label-number {
-    color: white;
-    font-family: "raleway";
-}
-
-.label-footer {
-    color: white;
-    font-family: "raleway";
-    text-align: center;
-}
-
-.logo-footer {
-    height: 40px;
-}
-
-@media screen and (max-width: 1400px) and (min-width: 1100px) {}
 
 @media screen and (max-width: 1100px) and (min-width: 970px) {
     .img-sensor {
         height: 20%;
     }
     .back-sensor-img {
-        height: 40%;
+        height: 50%;
         background-size: 100%;
     }
     .label-sensor {
         bottom: -250px;
+    }
+    .t_robo {
+        margin-top: 10vh;
+    }
+    .titulo1_landing {
+        font-size: 92px;
+    }
+    .cyan {
+        font-size: 40px;
+    }
+    .label-sensor {
+        bottom: -90px;
+        left: 50px;
+        height: 140px;
+    }
+    .back-sensor-info {
+        width: 75%;
+        height: 50%;
+    }
+    .back-sensor {
+        height: 1069px;
     }
 }
 
 @media screen and (max-width: 970px) and (min-width: 660px) {
+    .contact {
+        font-size: 30px;
+    }
+    .label-contact {
+        font-size: 30px;
+    }
     .img-sensor {
-        height: 20%;
+        height: 15%;
     }
     .back-sensor-img {
+        margin-left: 16%;
         height: 40%;
-        background-size: 100%;
+        background-size: 90%;
     }
     .label-sensor {
-        bottom: -250px;
+        bottom: -90px;
+        left: 50px;
+        height: 90px;
+    }
+    .label-info-sensor {
+        font-size: 15px;
+    }
+    .img-gasolina {
+        left: -19%;
+    }
+    .titulo1_landing {
+        font-size: 80px;
+    }
+    .cyan {
+        font-size: 35px;
+    }
+    .input_info {
+        font-size: 15px;
+    }
+    .back-sensor-info {
+        width: 75%;
     }
 }
 
 @media screen and (max-device-width: 820px) and (min-device-width: 560px) and (orientation: portrait) {
+    .contact {
+        font-size: 30px;
+    }
+    .label-contact {
+        font-size: 30px;
+    }
     .img-sensor {
-        height: 20%;
+        height: 15%;
     }
     .back-sensor-img {
+        margin-left: 16%;
         height: 40%;
-        background-size: 100%;
+        background-size: 90%;
     }
     .label-sensor {
-        bottom: -250px;
+        bottom: -90px;
+        left: 50px;
+        height: 90px;
+    }
+    .label-info-sensor {
+        font-size: 15px;
+    }
+    .img-gasolina {
+        left: -19%;
+    }
+    .titulo1_landing {
+        font-size: 80px;
+    }
+    .cyan {
+        font-size: 35px;
+    }
+    .back-sensor-info {
+        width: 70%;
+    }
+    .back-sensor {
+        height: 1027px;
     }
 }
 
 @media screen and (max-device-width: 560px) and (orientation: portrait) {
+    .contact {
+        font-size: 30px;
+    }
+    .label-contact {
+        font-size: 30px;
+    }
     .footer {
         display: none;
     }
     .img-sensor {
-        height: 20%;
+        height: 15%;
     }
     .back-sensor-img {
+        margin-left: 16%;
         height: 40%;
-        background-size: 100%;
+        background-size: 90%;
     }
     .label-sensor {
-        bottom: -250px;
+        bottom: -90px;
+        left: 50px;
+        height: 90px;
+    }
+    .label-info-sensor {
+        font-size: 15px;
+    }
+    .img-gasolina {
+        left: -19%;
+    }
+    .t_robo {
+        margin-top: 10vh;
+    }
+    .titulo1_landing {
+        font-size: 80px;
+    }
+    .cyan {
+        font-size: 35px;
+    }
+    .back-sensor-info {
+        width: 75%;
     }
 }
