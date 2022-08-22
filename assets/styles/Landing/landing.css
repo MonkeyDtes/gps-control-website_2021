@@ -354,16 +354,18 @@ b {
 
 @media screen and (max-device-width: 560px) and (orientation: portrait) {
     .contact {
-        font-size: 30px;
+        font-size: 50px;
     }
     .label-contact {
-        font-size: 30px;
+        font-size: 50px;
     }
     .footer {
         display: none;
     }
     .img-sensor {
-        height: 25%;
+        position: relative;
+        bottom: -20px;
+        height: 30%;
     }
     .back-sensor-img {
         width: -webkit-fill-available ;
@@ -410,7 +412,7 @@ b {
     }
     .back-sensor-info {
         height: 50%;
-        width: 40%;
+        width: 35%;
     }
     .back-sensor {
         flex-direction: column;
@@ -428,5 +430,16 @@ b {
     }
     .s_robo{
         width: 143vw;
+    }
+    .input_info {
+        font-size: 40px;
+        width: inherit;
+    }
+    .input_bottom{
+        width: inherit;
+        font-size: 40px;
+    }
+    .label-info {
+        top: -70px;
     }
 }
