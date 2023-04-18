@@ -13,7 +13,7 @@ import "./home.css"
 export default function Home(){
     return(
         <div>
-            <NavbarGPS></NavbarGPS>
+            <NavbarGPS Home={true} Plataforma={false} Equipos={false} transporte={false} Apps={false} Promociones={false}></NavbarGPS>
             <section className="home_section1">
                 <SwiperHome></SwiperHome>
                 <div className="home_section1_end">

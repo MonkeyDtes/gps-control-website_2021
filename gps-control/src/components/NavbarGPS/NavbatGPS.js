@@ -18,38 +18,24 @@ import navbarTel from "../../assets/navbarPhone.svg"
 import ingresoLogo1 from "../../assets/ingresoLogo1.svg"
 import ingresoLogo2 from "../../assets/ingresoLogo2.svg"
 import { useState } from "react"
+import {history} from "../History"
 
-export default function NavbarGPS(){
-    const [Home, setHome] = useState(true)
-    const [Plataforma, setPlataformas] = useState(false)
-    const [Equipos, setEquipos] = useState(false)
-    const [transporte, setTransporte] = useState(false)
-    const [Apps, setApps] = useState(false)
-    const [Promociones, setPromociones] = useState(false)
+export default function NavbarGPS(e){
+    const [Home, setHome] = useState(e.Home)
+    const [Plataforma, setPlataformas] = useState(e.Plataforma)
+    const [Equipos, setEquipos] = useState(e.Equipos)
+    const [transporte, setTransporte] = useState(e.transporte)
+    const [Apps, setApps] = useState(e.Apps)
+    const [Promociones, setPromociones] = useState(e.Promociones)
     
     const handleClick =(index)=>{
         if(index.currentTarget.id === "1"){    
-            setHome(true)
-            setPlataformas(false)
-            setEquipos(false)
-            setTransporte(false)
-            setApps(false)
-            setPromociones(false)
+            history.push("/")
         } else if(index.currentTarget.id === "2"){
-            setHome(false)
-            setPlataformas(true)
-            setEquipos(false)
-            setTransporte(false)
-            setApps(false)
-            setPromociones(false)
+            history.push("/plataforma")
         }
         else if(index.currentTarget.id === "3"){
-            setHome(false)
-            setPlataformas(false)
-            setEquipos(true)
-            setTransporte(false)
-            setApps(false)
-            setPromociones(false)
+            history.push("/equipos")
         }
         else if(index.currentTarget.id === "4"){
             setHome(false)
@@ -82,7 +68,9 @@ export default function NavbarGPS(){
                 <div className="main_box">
                     {
                         Home ? (
-                        <button className="navbar_home">
+                        <button className="navbar_home"
+                        id="1"
+                        onClick={e=>handleClick(e)}>
                             <img alt="logo gps control" src={GPSControlLogo}></img>
                             <h1>Home</h1>
                         </button>):(
@@ -100,7 +88,9 @@ export default function NavbarGPS(){
                 <div className="main_box">
                     {
                         Plataforma ? (
-                            <button className="navbar_section_click">
+                            <button className="navbar_section_click"
+                            id="2"
+                            onClick={e=>handleClick(e)}>
                                 <div className="navbar_section_text">
                                     <h2>Plataforma</h2>
                                     <img alt="nube" src={navbarNubeWhite}></img>
