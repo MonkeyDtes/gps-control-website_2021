@@ -1,0 +1,70 @@
+.soluciones_section{
+    height: 100vh;
+    width: 100%;
+    background-color: #EEE8F2;
+    display: flex;
+    flex-direction: row;
+
+}
+.soluciones_buttons{
+    display: flex;
+    flex-direction: column;
+    margin-top: calc(5.88vh*6);
+    margin-left: calc(8.33vw*0.2);
+
+}
+.soluciones_buttons >button{
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    border: none;
+    justify-content: flex-start;
+    align-items: center;
+    width: calc(8.33vw*2.5);
+    height: calc(5.88vh*0.8);
+    font-family: 'Bahnschrift';
+    font-style: normal;
+    font-weight: 300;
+    margin-bottom: calc(5.88vh*0.5);
+    color: #6B6B6B;
+    text-align: justify;
+
+}
+.soluciones_button_check{
+    height: 20px;
+    width: 20px;
+    background-color: red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2vw;
+    box-shadow: 0px 4px 4px #030D4F;
+}
+.dot{
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+
+}
+.soluciones_button_dontcheck{
+    height: 20px;
+    width: 20px;
+    background-color: #6B6B6B;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2vw;    
+    opacity: 0.2;
+    box-shadow: 0px 4px 4px #030D4F;
+
+}
+.soluciones_section1{
+    width: calc(8.33vw*9);
+    background: url("../../assets/Vigilancia_Vehicular\ 1.svg");
+    background-position-x: -10vw;
+    background-position-y: 0vw;
+}

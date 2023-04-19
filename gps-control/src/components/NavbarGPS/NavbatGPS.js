@@ -17,17 +17,15 @@ import navbarYT from "../../assets/navbarYT.svg"
 import navbarTel from "../../assets/navbarPhone.svg"
 import ingresoLogo1 from "../../assets/ingresoLogo1.svg"
 import ingresoLogo2 from "../../assets/ingresoLogo2.svg"
-import { useState } from "react"
 import {history} from "../History"
 
 export default function NavbarGPS(e){
-    const [Home, setHome] = useState(e.Home)
-    const [Plataforma, setPlataformas] = useState(e.Plataforma)
-    const [Equipos, setEquipos] = useState(e.Equipos)
-    const [transporte, setTransporte] = useState(e.transporte)
-    const [Apps, setApps] = useState(e.Apps)
-    const [Promociones, setPromociones] = useState(e.Promociones)
-    
+    const Home = e.Home
+    const Plataforma = e.Plataforma
+    const Equipos = e.Equipos
+    const transporte = e.transporte
+    const Apps = e.Apps
+    const Promociones = e.Promociones
     const handleClick =(index)=>{
         if(index.currentTarget.id === "1"){    
             history.push("/")
@@ -38,28 +36,14 @@ export default function NavbarGPS(e){
             history.push("/equipos")
         }
         else if(index.currentTarget.id === "4"){
-            setHome(false)
-            setPlataformas(false)
-            setEquipos(false)
-            setTransporte(true)
-            setApps(false)
-            setPromociones(false)
+            
+            history.push("/soluciones")
         }
         else if(index.currentTarget.id==="5"){
-            setHome(false)
-            setPlataformas(false)
-            setEquipos(false)
-            setTransporte(false)
-            setApps(true)
-            setPromociones(false)
+            history.push("/apps")
         }
         else if(index.currentTarget.id === "6"){
-            setHome(false)
-            setPlataformas(false)
-            setEquipos(false)
-            setTransporte(false)
-            setApps(false)
-            setPromociones(true)
+            history.push("/promociones")
         }
     }
     return(

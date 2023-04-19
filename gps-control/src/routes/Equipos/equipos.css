@@ -79,9 +79,9 @@
     height: 100vh;
     width: 100%;
     background: url("../../assets/persona_caminando.svg");
-    background-size: 80vw 70vh;
+    background-size: 90vw 80vh;
     background-repeat: no-repeat;
-    background-position-x: 16vw;
+    background-position-x: 13vw;
     background-position-y: 25vh;
     display: flex;
     flex-direction: row;

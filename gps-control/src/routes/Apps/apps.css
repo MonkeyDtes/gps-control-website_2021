@@ -1,0 +1,67 @@
+.apps_section1{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #EEE8F2;
+}
+.apps_section1>h1{
+    
+    margin-top: calc(5.88vh*2);
+    margin-left: calc(8.33vw);
+    font-family: 'Bahnschrift';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4vh;
+    line-height: 72px;
+    color: #6B6B6B;
+
+}
+.apps_section1_buttons{
+    display: flex;
+    flex-direction: row;
+    margin-left: calc(8.33vw);
+
+}
+.apps_section1_buttons >button{
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    border: none;
+    justify-content: flex-start;
+    align-items: center;
+    height: calc(5.88vh*0.8);
+    font-family: 'Bahnschrift';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.5vh;
+    margin-bottom: calc(5.88vh*0.5);
+    color: #6B6B6B;
+    text-align: justify;
+
+}
+
+.apps_button_check{
+    height: 20px;
+    width: 20px;
+    background-color: red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1vw;
+    box-shadow: 0px 4px 4px #030D4F;
+}
+.apps_button_dontcheck{
+    height: 20px;
+    width: 20px;
+    background-color: #6B6B6B;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1vw;    
+    opacity: 0.2;
+    box-shadow: 0px 4px 4px #030D4F;
+
+}

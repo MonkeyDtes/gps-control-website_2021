@@ -8,6 +8,7 @@ import Plataforma from "./routes/Plataforma/index"
 import Equipos from './routes/Equipos/index';
 import Promociones from './routes/Promociones/index';
 import Apps from './routes/Apps/index';
+import Soluciones from "./routes/Soluciones/index"
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
             <Route  path="/equipos" element={<Equipos />} />
             <Route  path="/promociones" element={<Promociones />} />
             <Route  path="/apps" element={<Apps />} />
+            <Route path='/soluciones' element={<Soluciones></Soluciones>}></Route>
           </Routes>
         </ThreeRouter>
       </div>
