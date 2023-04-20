@@ -18,10 +18,6 @@ const SwiperApps = (e) => {
     const [button4, setButton4] = useState(e.button4)
     const [button5, setButton5] = useState(e.button5)
     const [button6, setButton6] = useState(e.button6)
-
-   
-  console.log(button1, "alex carechimba")
-  console.log(e.button1, "mateo el crack")
   useEffect(() => {
       setButton1(e.button1)
       setButton2(e.button2)
