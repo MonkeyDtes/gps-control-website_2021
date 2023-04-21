@@ -1,12 +1,12 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import {  Pagination, Navigation } from "swiper";
+import {  Pagination, Navigation, Autoplay  } from "swiper";
 import SwiperCore, { Keyboard, Mousewheel } from "swiper/core";
 import "./swiper.css"
 import FormatoCarrusel from "../../assets/FormatoCarrusel.svg"
 
 const SwiperHome = () => {
-    SwiperCore.use([Keyboard, Mousewheel]);
+    SwiperCore.use([Keyboard, Mousewheel, Autoplay]);
   return (
     <div
     style={{
@@ -21,7 +21,11 @@ const SwiperHome = () => {
           navigation={true}
           modules={[ Pagination, Navigation]}
           initialSlide={0}
-          mousewheel={true}>
+          mousewheel={false}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}>
             <SwiperSlide> 
                 <img alt="carrusel1" src={FormatoCarrusel} ></img>  
             </SwiperSlide>     

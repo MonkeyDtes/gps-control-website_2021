@@ -13,30 +13,31 @@
     left: 0;
     top: calc(5.88vh*2);
 }
-.navbar_contacts>button{
+.navbar_contacts>a{
     width: calc(8.33vw*0.34);
     margin-bottom: calc(5.88vh*0.1);
     border: none;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-decoration: none;
 }
-.navbar_contacts>button>img{
+.navbar_contacts>a>img{
     height: calc(5.88vh*0.6);
 }
-.navbar_contacts>button:nth-child(1) {
+.navbar_contacts>a:nth-child(1) {
     background-color: #ED2F4C;
 }
-.navbar_contacts>button:nth-child(2) {
+.navbar_contacts>a:nth-child(2) {
     background-color: #6B6B6B;
 }
-.navbar_contacts>button:nth-child(3) {
+.navbar_contacts>a:nth-child(3) {
     background-color: #1E8C93;
 }
-.navbar_contacts>button:nth-child(4) {
+.navbar_contacts>a:nth-child(4) {
     background-color: #EB162C;
 }
-.navbar_contacts>button:hover{
+.navbar_contacts>a:hover{
     opacity: 0.7;
 }
 
@@ -156,6 +157,15 @@ nav{
     height: calc(5.88vh*0.3);
     margin-left: 2vw;
 }
+.navbar_section_click>div:nth-child(1) {
+    margin-bottom: -3vh;
+    margin-left: -3vw;
+
+}
+.navbar_section_click>div:nth-child(2) {
+    margin-right: -2vw;
+
+}
 .navbar_section>div:nth-child(1) {
     margin-bottom: -3vh;
     margin-left: -3vw;
@@ -191,7 +201,7 @@ nav{
     display: flex;
     flex-direction: row;
 }
-.navbar_ingresos>button{
+.navbar_ingresos>a{
     display: flex;
     flex-direction: row;
     font-size: 1vh;
@@ -201,22 +211,22 @@ nav{
     box-shadow: 0px 2.66667px 4px rgba(235, 22, 44, 0.25);
     border: none;
 }
-.navbar_ingresos>button>img{
+.navbar_ingresos>a>img{
     height: calc(5.88vh*0.5);
     margin-right: 1vw;
 }
-.navbar_ingresos>button:nth-child(1){
-    color: #1E8C93;
-}
-.navbar_ingresos>button:nth-child(2){
+.navbar_ingresos>a:nth-child(1){
     color: #EB162C;
 }
-.navbar_ingresos>button:nth-child(1):hover{
-    background-color: #1E8C93;
+.navbar_ingresos>a:nth-child(2){
+    color: #1E8C93;
+}
+.navbar_ingresos>a:nth-child(1):hover{
+    background-color: #eb162bb1;
     color: white;
 }
-.navbar_ingresos>button:nth-child(2):hover{
-    background-color: #EB162C;
+.navbar_ingresos>a:nth-child(2):hover{
+    background-color: #238d95d7;
     color: white;    
 }
 

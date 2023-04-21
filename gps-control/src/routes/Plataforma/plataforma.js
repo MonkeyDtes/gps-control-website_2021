@@ -2,11 +2,15 @@ import NavbarGPS from "../../components/NavbarGPS";
 import "./plataforma.css"
 import PlataformaPantallas from "../../assets/PlataformaPantallas.svg"
 import videoPlataforma from "../../assets/videoPlataforma.svg"
+import GifGPS from "../../components/gifGPS/index";
+import Leads from "../../components/Leads/index";
+import Footer from "../../components/Footer/index";
 
 export default function Plataforma(){
     return(
         <div>
             <NavbarGPS Home={false} Plataforma={true} Equipos={false} transporte={false} Apps={false} Promociones={false}></NavbarGPS>
+            <GifGPS type="2"></GifGPS>
             <section className="plataforma_section1">
                 <div className="plataforma_section1_header">
                     <div className="plataforma_sectionq_body_text_a1">
@@ -73,6 +77,8 @@ export default function Plataforma(){
                 </div>
 
             </section>
+            <Leads></Leads>
+            <Footer></Footer>
         </div>
     )
 }

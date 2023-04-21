@@ -9,6 +9,8 @@ import iconoApps3 from "../../assets/iconoApps3.svg"
 import iconoApps4 from "../../assets/iconoApps4.svg"
 import iconoApps5 from "../../assets/iconoApps5.svg"
 import iconoApps6 from "../../assets/iconoApps6.svg"
+import ytVerde from "../../assets/ytVerde.svg"
+import appsUsuario from "../../assets/appsUsuario.svg"
 
 const SwiperApps = (e) => {
     SwiperCore.use([Keyboard, Mousewheel]);
@@ -28,7 +30,6 @@ const SwiperApps = (e) => {
 
     
   }, [e.button1,e.button2,e.button3,e.button4,e.button5,e.button6]);
-
     
   return (
     <div
@@ -42,24 +43,25 @@ const SwiperApps = (e) => {
           modules={[ Pagination, Navigation]}
           initialSlide={0}
           mousewheel={true}
+          slidesPerView={4}
           className="swiper_apps">
             {
               button1 ? (
                 <SwiperSlide className="swiper_apps_slide_clicked"> 
                     <h1>FLEETRUN</h1>  
-                    <img alt="fleetrun" src={iconoApps1}></img>
+                    <img alt="fleetrun" src={iconoApps3}></img>
                     <div className="swiper_apps_buttons_clicked">
-                      <button>VIDEO DIDÁCTICO</button>
-                      <button>INICIAR SESIÓN </button>
+                      <button><img alt="Youtube" src={ytVerde}></img>DIDÁCTICO</button>
+                      <button><img alt="usuario" src={appsUsuario}></img>INICIAR SESIÓN </button>
                     </div>
                 </SwiperSlide>     
               ):(
                 <SwiperSlide className="swiper_apps_slide"> 
                     <h1>FLEETRUN</h1>  
-                    <img alt="fleetrun" src={iconoApps1}></img>
+                    <img alt="fleetrun" src={iconoApps3}></img>
                     <div className="swiper_apps_buttons">
-                      <button>VIDEO DIDÁCTICO</button>
-                      <button>INICIAR SESIÓN </button>
+                      <button><img alt="Youtube" src={ytVerde}></img>DIDÁCTICO</button>
+                      <button><img alt="usuario" src={appsUsuario}></img>INICIAR SESIÓN </button>
                     </div>
                 </SwiperSlide>     
               )
@@ -68,20 +70,20 @@ const SwiperApps = (e) => {
             {
               button2 ? (
                 <SwiperSlide className="swiper_apps_slide_clicked"> 
-                    <h1>FLEETRUN</h1>  
-                    <img alt="fleetrun" src={iconoApps2}></img>
+                    <h1>LOGISTICS</h1>  
+                    <img alt="LOGISTICS" src={iconoApps2}></img>
                     <div className="swiper_apps_buttons_clicked">
-                      <button>VIDEO DIDÁCTICO</button>
-                      <button>INICIAR SESIÓN </button>
+                      <button><img alt="Youtube" src={ytVerde}></img>DIDÁCTICO</button>
+                      <button><img alt="usuario" src={appsUsuario}></img>INICIAR SESIÓN </button>
                     </div>
                 </SwiperSlide>     
               ):(
                 <SwiperSlide className="swiper_apps_slide"> 
-                    <h1>FLEETRUN</h1>  
-                    <img alt="fleetrun" src={iconoApps2}></img>
+                    <h1>LOGISTICS</h1>  
+                    <img alt="LOGISTICS" src={iconoApps2}></img>
                     <div className="swiper_apps_buttons">
-                      <button>VIDEO DIDÁCTICO</button>
-                      <button>INICIAR SESIÓN </button>
+                      <button><img alt="Youtube" src={ytVerde}></img>DIDÁCTICO</button>
+                      <button><img alt="usuario" src={appsUsuario}></img>INICIAR SESIÓN </button>
                     </div>
                 </SwiperSlide>     
               )
@@ -89,20 +91,20 @@ const SwiperApps = (e) => {
             {
               button3 ? (
                 <SwiperSlide className="swiper_apps_slide_clicked"> 
-                    <h1>FLEETRUN</h1>  
-                    <img alt="fleetrun" src={iconoApps3}></img>
+                    <h1>HECTERRA</h1>  
+                    <img alt="HECTERRA" src={iconoApps4}></img>
                     <div className="swiper_apps_buttons_clicked">
-                      <button>VIDEO DIDÁCTICO</button>
-                      <button>INICIAR SESIÓN </button>
+                      <button><img alt="Youtube" src={ytVerde}></img>DIDÁCTICO</button>
+                      <button><img alt="usuario" src={appsUsuario}></img>INICIAR SESIÓN </button>
                     </div>
                 </SwiperSlide>     
               ):(
                 <SwiperSlide className="swiper_apps_slide"> 
-                    <h1>FLEETRUN</h1>  
-                    <img alt="fleetrun" src={iconoApps3}></img>
+                    <h1>HECTERRA</h1>  
+                    <img alt="HECTERRA" src={iconoApps4}></img>
                     <div className="swiper_apps_buttons">
-                      <button>VIDEO DIDÁCTICO</button>
-                      <button>INICIAR SESIÓN </button>
+                      <button><img alt="Youtube" src={ytVerde}></img>DIDÁCTICO</button>
+                      <button><img alt="usuario" src={appsUsuario}></img>INICIAR SESIÓN </button>
                     </div>
                 </SwiperSlide>     
               )
@@ -110,20 +112,20 @@ const SwiperApps = (e) => {
             {
               button4 ? (
                 <SwiperSlide className="swiper_apps_slide_clicked"> 
-                    <h1>FLEETRUN</h1>  
-                    <img alt="fleetrun" src={iconoApps4}></img>
+                    <h1>ECODRIVING</h1>  
+                    <img alt="ECODRIVING" src={iconoApps5}></img>
                     <div className="swiper_apps_buttons_clicked">
-                      <button>VIDEO DIDÁCTICO</button>
-                      <button>INICIAR SESIÓN </button>
+                      <button><img alt="Youtube" src={ytVerde}></img>DIDÁCTICO</button>
+                      <button><img alt="usuario" src={appsUsuario}></img>INICIAR SESIÓN </button>
                     </div>
                 </SwiperSlide>     
               ):(
                 <SwiperSlide className="swiper_apps_slide"> 
-                    <h1>FLEETRUN</h1>  
-                    <img alt="fleetrun" src={iconoApps4}></img>
+                    <h1>ECODRIVING</h1>  
+                    <img alt="ECODRIVING" src={iconoApps5}></img>
                     <div className="swiper_apps_buttons">
-                      <button>VIDEO DIDÁCTICO</button>
-                      <button>INICIAR SESIÓN </button>
+                      <button><img alt="Youtube" src={ytVerde}></img>DIDÁCTICO</button>
+                      <button><img alt="usuario" src={appsUsuario}></img>INICIAR SESIÓN </button>
                     </div>
                 </SwiperSlide>     
               )
@@ -131,20 +133,20 @@ const SwiperApps = (e) => {
             {
               button5 ? (
                 <SwiperSlide className="swiper_apps_slide_clicked"> 
-                    <h1>FLEETRUN</h1>  
-                    <img alt="fleetrun" src={iconoApps5}></img>
+                    <h1>CHATTERBOX</h1>  
+                    <img alt="CHATTERBOX" src={iconoApps6}></img>
                     <div className="swiper_apps_buttons_clicked">
-                      <button>VIDEO DIDÁCTICO</button>
-                      <button>INICIAR SESIÓN </button>
+                      <button><img alt="Youtube" src={ytVerde}></img>DIDÁCTICO</button>
+                      <button><img alt="usuario" src={appsUsuario}></img>INICIAR SESIÓN </button>
                     </div>
                 </SwiperSlide>     
               ):(
                 <SwiperSlide className="swiper_apps_slide"> 
-                    <h1>FLEETRUN</h1>  
-                    <img alt="fleetrun" src={iconoApps5}></img>
+                    <h1>CHATTERBOX</h1>  
+                    <img alt="CHATTERBOX" src={iconoApps6}></img>
                     <div className="swiper_apps_buttons">
-                      <button>VIDEO DIDÁCTICO</button>
-                      <button>INICIAR SESIÓN </button>
+                      <button><img alt="Youtube" src={ytVerde}></img>DIDÁCTICO</button>
+                      <button><img alt="usuario" src={appsUsuario}></img>INICIAR SESIÓN </button>
                     </div>
                 </SwiperSlide>     
               )
@@ -152,20 +154,20 @@ const SwiperApps = (e) => {
             {
               button6 ? (
                 <SwiperSlide className="swiper_apps_slide_clicked"> 
-                    <h1>FLEETRUN</h1>  
-                    <img alt="fleetrun" src={iconoApps6}></img>
+                    <h1>WIATAG</h1>  
+                    <img alt="WIATAG" src={iconoApps1}></img>
                     <div className="swiper_apps_buttons_clicked">
-                      <button>VIDEO DIDÁCTICO</button>
-                      <button>INICIAR SESIÓN </button>
+                      <button><img alt="Youtube" src={ytVerde}></img>DIDÁCTICO</button>
+                      <button><img alt="usuario" src={appsUsuario}></img>INICIAR SESIÓN </button>
                     </div>
                 </SwiperSlide>     
               ):(
                 <SwiperSlide className="swiper_apps_slide"> 
-                    <h1>FLEETRUN</h1>  
-                    <img alt="fleetrun" src={iconoApps6}></img>
+                    <h1>WIATAG</h1>  
+                    <img alt="WIATAG" src={iconoApps1}></img>
                     <div className="swiper_apps_buttons">
-                      <button>VIDEO DIDÁCTICO</button>
-                      <button>INICIAR SESIÓN </button>
+                      <button><img alt="Youtube" src={ytVerde}></img>DIDÁCTICO</button>
+                      <button><img alt="usuario" src={appsUsuario}></img>INICIAR SESIÓN </button>
                     </div>
                 </SwiperSlide>     
               )

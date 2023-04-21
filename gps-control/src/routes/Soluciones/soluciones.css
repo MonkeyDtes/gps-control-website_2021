@@ -11,6 +11,7 @@
     flex-direction: column;
     margin-top: calc(5.88vh*6);
     margin-left: calc(8.33vw*0.2);
+    width: calc(8.33vw*3);
 
 }
 .soluciones_buttons >button{
@@ -63,8 +64,185 @@
 
 }
 .soluciones_section1{
-    width: calc(8.33vw*9);
+    width: 100%;
+    height: 100%;
     background: url("../../assets/Vigilancia_Vehicular\ 1.svg");
-    background-position-x: -10vw;
+    background-position-x: -40vw;
     background-position-y: 0vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.soluciones_section2{
+    width: 100%;
+    height: 100%;
+    background: url("../../assets/Temperatura_CarrosBG.svg");
+    background-repeat: no-repeat;
+    background-position-x: -5vw;
+    background-position-y: -0vw;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.soluciones_section2>img{
+    margin-top: calc(5.88vh*3);
+    max-width: calc(8.33vw*3);
+    max-height: calc(5.88vh*6);
+    margin-right: calc(8.33vw*4.2);
+}
+.soluciones_section3{
+    width: 100%;
+    height: 100%;
+    background: url("../../assets/Rastreo\ 1.svg");
+    background-position-x: -40vw;
+    background-position-y: -30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.soluciones_section3>img{
+    max-width: calc(8.33vw*3);
+    max-height: calc(5.88vh*6);
+    margin-right: calc(8.33vw*5);
+}
+.soluciones_section4{
+    width: 100%;
+    height: 100%;
+    background: url("../../assets/Personalizacion_Conductores\ 1.svg");
+    background-repeat: no-repeat;
+    background-position-x: -25vw;
+    background-position-y: -10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.soluciones_section4>img{
+    max-width: calc(8.33vw*3);
+    max-height: calc(5.88vh*6);
+    margin-right: calc(8.33vw*5);
+}
+.soluciones_section5{
+    width: 100%;
+    height: 100%;
+    background: url("../../assets/Identificación_QR\ 1.svg");
+    background-repeat: no-repeat;
+    background-position-x: -55vw;
+    background-position-y: -15vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.soluciones_section5 >img{
+    max-width: calc(8.33vw*3);
+    max-height: calc(5.88vh*6);
+    margin-right: calc(8.33vw*5);
+}
+
+.soluciones_section1>img{
+    max-width: calc(8.33vw*3);
+    max-height: calc(5.88vh*6);
+    margin-right: calc(8.33vw*5);
+}
+.soluciones_section1_header{
+    margin-right: calc(8.33vw);
+}
+.soluciones_section1_header>h1{
+    margin-top: calc(5.88vh*3);
+    font-family: 'Kiona';
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(5.88vw*0.8);
+    line-height: 130px;
+    color: #EB162C;
+    
+
+}
+.soluciones_section3_header{
+    margin-right: calc(8.33vw);
+}
+.soluciones_section3_header>h1{
+    margin-top: calc(5.88vh*3);
+    margin-right: calc(8.33vw*1.5);
+    font-family: 'Kiona';
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(5.88vw*0.8);
+    line-height: 130px;
+    color: #EB162C;
+    
+
+}
+.soluciones_slides{
+    width: calc(8.33vw*9);
+}
+.soluciones_section1_label{
+    clip-path: polygon(0% 0%, 100% 0, 80% 100%, 0% 100%);
+    width: calc(8.33vw*4.8);
+    height: calc(5.88vh*1.5);
+    background: #EEE8F2;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.25);
+    margin-top: -12vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+.soluciones_section1_row{
+    display: flex;
+    flex-direction: row;
+}
+.soluciones_section1_row>img{
+    margin-top: -10.5vh;
+    width: calc(8.33vw);
+    max-height: calc(5.88vh*3);
+    margin-left: calc(-8.33vw*0.9);
+
+}
+.soluciones_section3_row{
+    display: flex;
+    flex-direction: row;
+    margin-left: calc(8.33vw*1.5);
+}
+.soluciones_section3_row>img{
+    margin-top: -20.5vh;
+    width: calc(8.33vw);    
+    max-height: calc(5.88vh*3);
+    margin-left: calc(-8.33vw*0.4);
+
+}
+.soluciones_section1_label>img{
+    margin-right: calc(8.33vw*0.1);
+    height: calc(5.88vh*0.9);
+
+}
+.soluciones_section1_label>h2{
+    font-family: 'Bahnschrift';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 5vh;
+    color: #6B6B6B;
+    margin-right: calc(8.33vw*0.9);
+}
+.soluciones_section_greenColumn{
+    position: absolute;
+    bottom: 0vh;
+    right: calc(8.33vw);
+    width: calc(8.33vw*2);
+    height: calc(5.88vh*17);
+    background: rgba(30, 140, 147, 0.2);
+    mix-blend-mode: multiply;
+    z-index: 1;
+}
+.soluciones_section1_greenColumn{
+    clip-path: polygon(0 0, 100% 15%, 100% 100%, 0% 100%);
+    position: absolute;
+    bottom: 0vh;
+    right: calc(8.33vw);
+    width: calc(8.33vw*2);
+    height: calc(5.88vh*14);
+    background: rgba(30, 140, 147, 0.2);
+    mix-blend-mode: multiply;
+    z-index: 1;
 }

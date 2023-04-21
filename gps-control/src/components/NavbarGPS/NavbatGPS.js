@@ -27,6 +27,7 @@ export default function NavbarGPS(e){
     const Apps = e.Apps
     const Promociones = e.Promociones
     const handleClick =(index)=>{
+        goToTop()
         if(index.currentTarget.id === "1"){    
             history.push("/")
         } else if(index.currentTarget.id === "2"){
@@ -46,6 +47,13 @@ export default function NavbarGPS(e){
             history.push("/promociones")
         }
     }
+    const goToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+        });
+    };
+    
     return(
         <div className="navbar_app">
             <nav>
@@ -225,26 +233,26 @@ export default function NavbarGPS(e){
                 
             </nav>
             <div className="navbar_contacts">
-                <button><img alt="mail" src={navbarMail}></img></button>
-                <button><img alt="telefono" src={navbarWa}></img></button>
-                <button><img alt="WhatsApp" src={navbarYT}></img></button>
-                <button><img alt="Youtube" src={navbarTel}></img></button>
+                <a  href="mailto:sales@gpscontrol.co"><img alt="mail" src={navbarMail}></img></a>
+                <a href="https://wa.me/qr/AFTZFJYUOAWOM1" ><img alt="telefono"  src={navbarWa}></img></a>
+                <a href="https://wa.me/qr/AFTZFJYUOAWOM1"><img alt="WhatsApp"  src={navbarYT}></img></a>
+                <a href="https://www.youtube.com/channel/UCYU-Vn3lnDLePlavejpZMBg"><img alt="Youtube"  src={navbarTel}></img></a>
             </div>
             <div className="navbar_ingresos">
-                <button>
-                    <img alt="ingreso plataforma" src={ingresoLogo1}></img>
+                <a href="https://tracking.gpscontrolcolombia.com/">
+                    <img alt="ingreso plataforma" src={ingresoLogo2}></img>
                     <div>
                         <h2>Ingreso</h2>
                         <h2>plataforma</h2>
                     </div>
-                </button>
-                <button>
-                    <img alt="atencion al cliente" src={ingresoLogo2}></img>
+                </a>
+                <a href="https://wa.me/message/Y3KRNJYESUPWL1">
+                    <img alt="atencion al cliente" src={ingresoLogo1}></img>
                     <div>
                         <h2>Atención</h2>
                         <h2>Inmediata</h2>
                     </div>
-                </button>
+                </a>
             </div>
         </div>
     )

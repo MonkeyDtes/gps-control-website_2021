@@ -1,0 +1,65 @@
+.footer_gpscontrol{
+    height: auto;
+    width: 100%;
+    background: linear-gradient(180deg, #EB162C 0%, #ED2F4C 100%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer_gpscontrol>h6{
+    font-family: 'Bahnschrift';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5vh;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+.footer_column>h2{
+    font-family: 'Bahnschrift';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.5vh;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+.footer_column>h3{
+    font-family: 'Bahnschrift';
+    font-style: normal;
+    font-weight: 400;
+    font-size:2vh;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+.footer_redes>h2{
+    font-family: 'Bahnschrift';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.5vh;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+.footer_redes>a{
+    margin-inline:calc(8.33vw*0.1);
+}
+.footer_redes>a>img{
+    height: calc(5.88vh*0.5);
+}
+.footer_column{
+    display: flex;
+    flex-direction: column;
+    margin-inline: calc(8.33vw);
+}
+.footer_body{
+    display: flex;
+    flex-direction: row;  
+    
+
+    
+}
+.footer_redes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
