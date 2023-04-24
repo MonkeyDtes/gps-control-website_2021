@@ -77,6 +77,13 @@
     border: none;
     margin-top: 5vh;
 }
+.leads_page_form_end>button{
+    background-color: transparent;
+    color: white;
+    text-decoration: underline;
+    border: none;
+    margin-top: 5vh;
+}
 .leads_page_form_end>label>textarea {
     height: calc(5.88vh*10);
     background: #EEE8F2;

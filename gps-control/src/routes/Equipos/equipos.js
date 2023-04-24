@@ -34,8 +34,8 @@ export default function equipos(){
                 <div className="equipos_section2_start">
                     <div className="equipos_section2_start_column">
                         <div className="equipos_section2_start_buttons">
-                            <button>VIDEO DEL EQUIPO<img alt="youtube icon " src={ytIcon}></img></button>
-                            <button>CHATEE CON NOSOTROS<img alt="youtube icon " src={waIcon}></img></button>
+                            <a href="https://www.youtube.com/channel/UCYU-Vn3lnDLePlavejpZMBg">VIDEO DEL EQUIPO<img alt="youtube icon " src={ytIcon}></img></a>
+                            <a href=" https://wa.me/qr/HVC55BD4ZJMLH1">CHATEE CON NOSOTROS<img alt="youtube icon " src={waIcon}></img></a>
                         </div>
                         <p>Este equipo GPS para maquinaria amarilla es una solución efectiva para monitorear tus maquinas en tiempo real. Con geolocalización precisa, alertas de posibles problemas y fácil instalación y manejo, mejora la gestión de tus activos y tomar decisiones informadas sobre su uso y mantenimiento.</p>
                         <img alt=" logo gps control" src={gpsControlWhite}></img>
@@ -147,8 +147,8 @@ export default function equipos(){
                     <h1>TRANSPORTE</h1>
                     <div className="equipos_section3_end_column">
                         <div className="equipos_section2_start_buttons">
-                            <button>VIDEO DEL EQUIPO<img alt="youtube icon " src={ytIcon}></img></button>
-                            <button>CHATEE CON NOSOTROS<img alt="youtube icon " src={waIcon}></img></button>
+                            <a href="https://www.youtube.com/channel/UCYU-Vn3lnDLePlavejpZMBg">VIDEO DEL EQUIPO<img alt="youtube icon " src={ytIcon}></img></a>
+                            <a href=" https://wa.me/qr/HVC55BD4ZJMLH1">CHATEE CON NOSOTROS<img alt="youtube icon " src={waIcon}></img></a>
                         </div>
                         <p>Este equipo GPS para maquinaria amarilla es una solución efectiva para monitorear tus maquinas en tiempo real. Con geolocalización precisa, alertas de posibles problemas y fácil instalación y manejo, mejora la gestión de tus activos y tomar decisiones informadas sobre su uso y mantenimiento.</p>
                         <img alt=" logo gps control" src={gpsControlWhite}></img>
@@ -161,8 +161,8 @@ export default function equipos(){
                 <div className="equipos_section2_start">
                     <div className="equipos_section2_start_column">
                         <div className="equipos_section2_start_buttons">
-                            <button>VIDEO DEL EQUIPO<img alt="youtube icon " src={ytIcon}></img></button>
-                            <button>CHATEE CON NOSOTROS<img alt="youtube icon " src={waIcon}></img></button>
+                            <a href="https://www.youtube.com/channel/UCYU-Vn3lnDLePlavejpZMBg">VIDEO DEL EQUIPO<img alt="youtube icon " src={ytIcon}></img></a>
+                            <a href=" https://wa.me/qr/HVC55BD4ZJMLH1">CHATEE CON NOSOTROS<img alt="youtube icon " src={waIcon}></img></a>
                         </div>
                         <p>Este equipo GPS para maquinaria amarilla es una solución efectiva para monitorear tus maquinas en tiempo real. Con geolocalización precisa, alertas de posibles problemas y fácil instalación y manejo, mejora la gestión de tus activos y tomar decisiones informadas sobre su uso y mantenimiento.</p>
                         <img alt=" logo gps control" src={gpsControlWhite}></img>

@@ -15,7 +15,6 @@ import playGreen from "../../assets/playGreen.svg"
 import Leads from "../../components/Leads";
 import Footer from "../../components/Footer/index";
 import { useRef } from "react";
-
 export default function Home(){
     
     const sectionRef = useRef(null);

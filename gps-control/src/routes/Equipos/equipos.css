@@ -134,7 +134,7 @@
     flex-direction: row;
     justify-content: flex-end;
 }
-.equipos_section2_start_buttons>button{
+.equipos_section2_start_buttons>a{
     width: calc(8.33vw*1);
     height: calc(5.88vh*1);
     margin-inline: 0.5vw;
@@ -148,8 +148,9 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    text-decoration: none;
 }
-.equipos_section2_start_buttons>button>img{
+.equipos_section2_start_buttons>a>img{
     height: calc(5.88vh*0.5);
 }
 .equipos_section2_start_column>p{

@@ -3,7 +3,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import {  Pagination, Navigation, Autoplay  } from "swiper";
 import SwiperCore, { Keyboard, Mousewheel } from "swiper/core";
 import "./swiperAppsHome.css"
-import FormatoCarrusel from "../../assets/FormatoCarrusel.svg"
+import BANNERFLEETRUN from "../../assets/BANNER FLEETRUN 1.svg"
+import BANNERHECTERRA from "../../assets/BANNER HECTERRA 1.svg"
+import BANNERFUEC from "../../assets/BANNER FUEC 1.svg"
+import BANNERMISIM from "../../assets/BANNER MISIM 1.svg"
+
 
 const SwiperAppsHome = () => {
     SwiperCore.use([Keyboard, Mousewheel, Autoplay]);
@@ -29,11 +33,17 @@ const SwiperAppsHome = () => {
                 disableOnInteraction: false,
             }}>
             <SwiperSlide className="swiperAppsHome_slide"> 
-                <img alt="carrusel1" src={FormatoCarrusel} ></img>  
+                <img alt="carrusel1" src={BANNERFLEETRUN} ></img>  
             </SwiperSlide>     
             <SwiperSlide className="swiperAppsHome_slide">   
-                <img alt="carrusel1" src={FormatoCarrusel} ></img>  
-            </SwiperSlide>                  
+                <img alt="carrusel1" src={BANNERHECTERRA} ></img>  
+            </SwiperSlide>  
+            <SwiperSlide className="swiperAppsHome_slide"> 
+                <img alt="carrusel1" src={BANNERFUEC} ></img>  
+            </SwiperSlide>     
+            <SwiperSlide className="swiperAppsHome_slide">   
+                <img alt="carrusel1" src={BANNERMISIM} ></img>  
+            </SwiperSlide>                    
         </Swiper>
     </div>
   );

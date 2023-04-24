@@ -51,8 +51,8 @@ const SwiperApps = (e) => {
                     <h1>FLEETRUN</h1>  
                     <img alt="fleetrun" src={iconoApps3}></img>
                     <div className="swiper_apps_buttons_clicked">
-                      <button><img alt="Youtube" src={ytVerde}></img>DIDÁCTICO</button>
-                      <button><img alt="usuario" src={appsUsuario}></img>INICIAR SESIÓN </button>
+                      <a href="https://www.youtube.com/channel/UCYU-Vn3lnDLePlavejpZMBg"><img alt="Youtube" src={ytVerde}></img>DIDÁCTICO</a>
+                      <a href="https://fleetrun.wialon.com/login "><img alt="usuario" src={appsUsuario}></img>INICIAR SESIÓN </a>
                     </div>
                 </SwiperSlide>     
               ):(
@@ -60,8 +60,8 @@ const SwiperApps = (e) => {
                     <h1>FLEETRUN</h1>  
                     <img alt="fleetrun" src={iconoApps3}></img>
                     <div className="swiper_apps_buttons">
-                      <button><img alt="Youtube" src={ytVerde}></img>DIDÁCTICO</button>
-                      <button><img alt="usuario" src={appsUsuario}></img>INICIAR SESIÓN </button>
+                      <a href="https://www.youtube.com/channel/UCYU-Vn3lnDLePlavejpZMBg"><img alt="Youtube" src={ytVerde}></img>DIDÁCTICO</a>
+                      <a href="https://fleetrun.wialon.com/login"><img alt="usuario" src={appsUsuario}></img>INICIAR SESIÓN </a>
                     </div>
                 </SwiperSlide>     
               )
@@ -73,8 +73,8 @@ const SwiperApps = (e) => {
                     <h1>LOGISTICS</h1>  
                     <img alt="LOGISTICS" src={iconoApps2}></img>
                     <div className="swiper_apps_buttons_clicked">
-                      <button><img alt="Youtube" src={ytVerde}></img>DIDÁCTICO</button>
-                      <button><img alt="usuario" src={appsUsuario}></img>INICIAR SESIÓN </button>
+                      <a href="https://www.youtube.com/channel/UCYU-Vn3lnDLePlavejpZMBg"><img alt="Youtube" src={ytVerde}></img>DIDÁCTICO</a>
+                      <a href="https://apps.wialon.com/logistics/?&lang=es#/"><img alt="usuario" src={appsUsuario}></img>INICIAR SESIÓN </a>
                     </div>
                 </SwiperSlide>     
               ):(
@@ -82,8 +82,8 @@ const SwiperApps = (e) => {
                     <h1>LOGISTICS</h1>  
                     <img alt="LOGISTICS" src={iconoApps2}></img>
                     <div className="swiper_apps_buttons">
-                      <button><img alt="Youtube" src={ytVerde}></img>DIDÁCTICO</button>
-                      <button><img alt="usuario" src={appsUsuario}></img>INICIAR SESIÓN </button>
+                      <a href="https://www.youtube.com/channel/UCYU-Vn3lnDLePlavejpZMBg"><img alt="Youtube" src={ytVerde}></img>DIDÁCTICO</a>
+                      <a href="https://apps.wialon.com/logistics/?&lang=es#/"><img alt="usuario" src={appsUsuario}></img>INICIAR SESIÓN </a>
                     </div>
                 </SwiperSlide>     
               )
@@ -94,8 +94,8 @@ const SwiperApps = (e) => {
                     <h1>HECTERRA</h1>  
                     <img alt="HECTERRA" src={iconoApps4}></img>
                     <div className="swiper_apps_buttons_clicked">
-                      <button><img alt="Youtube" src={ytVerde}></img>DIDÁCTICO</button>
-                      <button><img alt="usuario" src={appsUsuario}></img>INICIAR SESIÓN </button>
+                      <a href="https://www.youtube.com/channel/UCYU-Vn3lnDLePlavejpZMBg"><img alt="Youtube" src={ytVerde}></img>DIDÁCTICO</a>
+                      <a href="https://hecterra.wialon.com/login"><img alt="usuario" src={appsUsuario}></img>INICIAR SESIÓN </a>
                     </div>
                 </SwiperSlide>     
               ):(
@@ -103,8 +103,8 @@ const SwiperApps = (e) => {
                     <h1>HECTERRA</h1>  
                     <img alt="HECTERRA" src={iconoApps4}></img>
                     <div className="swiper_apps_buttons">
-                      <button><img alt="Youtube" src={ytVerde}></img>DIDÁCTICO</button>
-                      <button><img alt="usuario" src={appsUsuario}></img>INICIAR SESIÓN </button>
+                      <a href="https://www.youtube.com/channel/UCYU-Vn3lnDLePlavejpZMBg"><img alt="Youtube" src={ytVerde}></img>DIDÁCTICO</a>
+                      <a href="https://hecterra.wialon.com/login"><img alt="usuario" src={appsUsuario}></img>INICIAR SESIÓN </a>
                     </div>
                 </SwiperSlide>     
               )
@@ -115,8 +115,8 @@ const SwiperApps = (e) => {
                     <h1>ECODRIVING</h1>  
                     <img alt="ECODRIVING" src={iconoApps5}></img>
                     <div className="swiper_apps_buttons_clicked">
-                      <button><img alt="Youtube" src={ytVerde}></img>DIDÁCTICO</button>
-                      <button><img alt="usuario" src={appsUsuario}></img>INICIAR SESIÓN </button>
+                      <a href="https://www.youtube.com/channel/UCYU-Vn3lnDLePlavejpZMBg"><img alt="Youtube" src={ytVerde}></img>DIDÁCTICO</a>
+                      <a href="https://apps.wialon.com/ecodriving/"><img alt="usuario" src={appsUsuario}></img>INICIAR SESIÓN </a>
                     </div>
                 </SwiperSlide>     
               ):(
@@ -124,8 +124,8 @@ const SwiperApps = (e) => {
                     <h1>ECODRIVING</h1>  
                     <img alt="ECODRIVING" src={iconoApps5}></img>
                     <div className="swiper_apps_buttons">
-                      <button><img alt="Youtube" src={ytVerde}></img>DIDÁCTICO</button>
-                      <button><img alt="usuario" src={appsUsuario}></img>INICIAR SESIÓN </button>
+                      <a href="https://www.youtube.com/channel/UCYU-Vn3lnDLePlavejpZMBg"><img alt="Youtube" src={ytVerde}></img>DIDÁCTICO</a>
+                      <a href="https://apps.wialon.com/ecodriving/"><img alt="usuario" src={appsUsuario}></img>INICIAR SESIÓN </a>
                     </div>
                 </SwiperSlide>     
               )
@@ -136,8 +136,8 @@ const SwiperApps = (e) => {
                     <h1>CHATTERBOX</h1>  
                     <img alt="CHATTERBOX" src={iconoApps6}></img>
                     <div className="swiper_apps_buttons_clicked">
-                      <button><img alt="Youtube" src={ytVerde}></img>DIDÁCTICO</button>
-                      <button><img alt="usuario" src={appsUsuario}></img>INICIAR SESIÓN </button>
+                      <a href="https://www.youtube.com/channel/UCYU-Vn3lnDLePlavejpZMBg"><img alt="Youtube" src={ytVerde}></img>DIDÁCTICO</a>
+                      <a href="https://apps.wialon.com/chatterbox/"><img alt="usuario" src={appsUsuario}></img>INICIAR SESIÓN </a>
                     </div>
                 </SwiperSlide>     
               ):(
@@ -145,8 +145,8 @@ const SwiperApps = (e) => {
                     <h1>CHATTERBOX</h1>  
                     <img alt="CHATTERBOX" src={iconoApps6}></img>
                     <div className="swiper_apps_buttons">
-                      <button><img alt="Youtube" src={ytVerde}></img>DIDÁCTICO</button>
-                      <button><img alt="usuario" src={appsUsuario}></img>INICIAR SESIÓN </button>
+                      <a href="https://www.youtube.com/channel/UCYU-Vn3lnDLePlavejpZMBg"><img alt="Youtube" src={ytVerde}></img>DIDÁCTICO</a>
+                      <a href="https://apps.wialon.com/chatterbox/"><img alt="usuario" src={appsUsuario}></img>INICIAR SESIÓN </a>
                     </div>
                 </SwiperSlide>     
               )
@@ -157,8 +157,8 @@ const SwiperApps = (e) => {
                     <h1>WIATAG</h1>  
                     <img alt="WIATAG" src={iconoApps1}></img>
                     <div className="swiper_apps_buttons_clicked">
-                      <button><img alt="Youtube" src={ytVerde}></img>DIDÁCTICO</button>
-                      <button><img alt="usuario" src={appsUsuario}></img>INICIAR SESIÓN </button>
+                      <a href="https://www.youtube.com/channel/UCYU-Vn3lnDLePlavejpZMBg"><img alt="Youtube" src={ytVerde}></img>DIDÁCTICO</a>
+                      <a href="https://configurator.wialon.com/login "><img alt="usuario" src={appsUsuario}></img>INICIAR SESIÓN </a>
                     </div>
                 </SwiperSlide>     
               ):(
@@ -166,8 +166,8 @@ const SwiperApps = (e) => {
                     <h1>WIATAG</h1>  
                     <img alt="WIATAG" src={iconoApps1}></img>
                     <div className="swiper_apps_buttons">
-                      <button><img alt="Youtube" src={ytVerde}></img>DIDÁCTICO</button>
-                      <button><img alt="usuario" src={appsUsuario}></img>INICIAR SESIÓN </button>
+                      <a href="https://www.youtube.com/channel/UCYU-Vn3lnDLePlavejpZMBg"><img alt="Youtube" src={ytVerde}></img>DIDÁCTICO</a>
+                      <a href="https://configurator.wialon.com/login "><img alt="usuario" src={appsUsuario}></img>INICIAR SESIÓN </a>
                     </div>
                 </SwiperSlide>     
               )
