@@ -30,13 +30,16 @@ export default function Leads(){
         .then(
             (result) => {
             console.log(result.text);
+            alert("Su correo ha sido enviado")
             // Hacer algo cuando se envió el correo electrónico con éxito
             },
             (error) => {
             console.log(error.text);
+            alert("Error intente de nuevo mas tarde")
             // Hacer algo cuando se produjo un error al enviar el correo electrónico
             }
         );
+        
     };
     
     return(
