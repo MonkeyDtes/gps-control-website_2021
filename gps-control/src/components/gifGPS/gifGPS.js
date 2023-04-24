@@ -12,7 +12,7 @@ export default function GifGPS(e){
             setType(false)
         } 
       
-    }, [e.setType]);
+    }, [e.type]);
 
     return(
     <div className="gif_gpscontrol">
