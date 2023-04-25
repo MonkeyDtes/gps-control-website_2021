@@ -7,6 +7,7 @@ import emailjs from 'emailjs-com';
 import { useState } from "react";
 import "./leads.css"
 export default function Leads(){
+    const [button1, setButton1] = useState(true)
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -30,7 +31,9 @@ export default function Leads(){
         .then(
             (result) => {
             console.log(result.text);
+            window.location.reload(false);
             alert("Su correo ha sido enviado")
+            
             // Hacer algo cuando se envió el correo electrónico con éxito
             },
             (error) => {
@@ -41,6 +44,17 @@ export default function Leads(){
         );
         
     };
+    const HandleClick =(e)=>{
+        e.preventDefault()
+        if(e.currentTarget.id==='1'){
+            setButton1(true)
+            
+
+        }else{
+            setButton1(false)
+            
+        }
+    }
     
     return(
     <section className="leads_page">
@@ -67,9 +81,13 @@ export default function Leads(){
                                 <input  type="email" name="email" value={formData.email} onChange={handleChange}  placeholder="gpscomercial@gpscontrol.co" />
                             </label>
                         </div>
+                        <div className="leads_buttons">
+                            <button onClick={e=>HandleClick(e)} id="1"> {button1 ?(<div className="soluciones_button_check"><div className="dot"></div></div>):(<div className="soluciones_button_dontcheck"></div>)}  Empresa</button>
+                            <button onClick={e=>HandleClick(e)} id="2"> {button1 ?(<div className="soluciones_button_dontcheck"></div>):(<div className="soluciones_button_check"><div className="dot"></div></div>)}  Independiente</button>
+                        </div>
                         <div className="leads_page_form_start_control">
                             <label>
-                                <input type="company" name="company" value={formData.company} onChange={handleChange} placeholder="Nombre de la empresa"/>
+                                <input type="company" name="company" value={ formData.company } onChange={handleChange} placeholder={button1 ? "Nombre de la Empresa" : "Independiente"}/>
                             </label>
                         </div>
                         <h6>Seguimos los requerimientos del cliente ofreciendo la mejor solución.</h6>

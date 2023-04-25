@@ -110,6 +110,7 @@
     max-width: calc(8.33vw*3);
     max-height: calc(5.88vh*6);
     margin-right: calc(8.33vw*5);
+    margin-top: calc(5.88vh*2);
 }
 .soluciones_section4{
     width: 100%;
@@ -127,6 +128,7 @@
     max-width: calc(8.33vw*3);
     max-height: calc(5.88vh*6);
     margin-right: calc(8.33vw*5);
+    margin-top: calc(5.88vh*2);
 }
 .soluciones_section5{
     width: 100%;
@@ -154,6 +156,10 @@
 .soluciones_section1_header{
     margin-right: calc(8.33vw);
 }
+.soluciones_section1_header>img{
+    position: absolute;
+    margin-top: calc(5.88vh*3.1);
+}
 .soluciones_section1_header>h1{
     margin-top: calc(5.88vh*3);
     font-family: 'Kiona';
@@ -162,6 +168,7 @@
     font-size: calc(5.88vw*0.8);
     line-height: 130px;
     color: #EB162C;
+    margin-left: calc(8.33vw*0.5);
     
 
 }
@@ -185,11 +192,11 @@
 }
 .soluciones_section1_label{
     clip-path: polygon(0% 0%, 100% 0, 80% 100%, 0% 100%);
-    width: calc(8.33vw*4.8);
+    width: calc(8.33vw*6);
     height: calc(5.88vh*1.5);
     background: #EEE8F2;
     box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.25);
-    margin-top: -12vh;
+    margin-top: -8vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -212,7 +219,7 @@
     margin-left: calc(8.33vw*1.5);
 }
 .soluciones_section3_row>img{
-    margin-top: -20.5vh;
+    margin-top: -10.5vh;
     width: calc(8.33vw);    
     max-height: calc(5.88vh*3);
     margin-left: calc(-8.33vw*0.4);

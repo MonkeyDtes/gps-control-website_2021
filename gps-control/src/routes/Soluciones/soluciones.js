@@ -13,6 +13,7 @@ import wifiHorizontal from "../../assets/wifiHorizontal.svg"
 import GifGPS from "../../components/gifGPS/index";
 import Leads from "../../components/Leads/index";
 import Footer from "../../components/Footer/index";
+import termometro from "../../assets/termometro.svg"
 export default function Soluciones(){
     const [button1, setButton1] = useState(true)
     const [button2, setButton2] = useState(false)
@@ -83,6 +84,7 @@ export default function Soluciones(){
                                 </div>
                             </div>
                             <img alt="camara" src={camaraSoluciones}></img>
+                            
                             <div className="soluciones_section1_greenColumn"></div>
                             <GifGPS type="2"></GifGPS>
                             
@@ -93,15 +95,14 @@ export default function Soluciones(){
                         button2 ?(
                         <div className="soluciones_section2">
                             <div className="soluciones_section1_header">
+                                <img alt="termometro" src={termometro}></img>
                                 <h1>CALOR/FRIO</h1>
                                 <div className="soluciones_section1_row">
                                     <div className="main_box">
                                         <div className="soluciones_section1_label">
-                                            <img alt="nube" src={navbarNube}></img>
                                             <h2>Reporte cada minuto</h2>
                                         </div>
                                     </div>
-                                    <img alt="nube" src={navbarNube}></img>
                                 </div>
                             </div>
                             <img alt="camara" src={eyeSensor}></img>

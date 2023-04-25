@@ -61,8 +61,8 @@
     margin-left: calc(5.88vh*0.3);
     width: calc(8.33vw*3);
 }
-.leads_page_form_start_control:nth-child(4){
-    margin-left: calc(8.33vw*1.05);
+.leads_page_form_start_control:nth-child(5){
+    margin-left: calc(8.33vw*1.01   );
 }
 .leads_page_form_end{
     display: flex;
@@ -84,6 +84,15 @@
     border: none;
     margin-top: 5vh;
 }
+.leads_page_form_end>button:hover{
+    background-color: white;
+    color: red;
+}
+.leads_page_form_end>button:active{
+    background-color: rgba(255, 255, 255, 0.561);
+    color: red;
+}
+
 .leads_page_form_end>label>textarea {
     height: calc(5.88vh*10);
     background: #EEE8F2;
@@ -165,3 +174,28 @@
 textarea {
     resize:none;
    }
+
+
+.leads_buttons{
+    display: flex;
+    flex-direction: row;
+
+}
+.leads_buttons >button{
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    border: none;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: calc(8.33vw*1);
+    width: calc(8.33vw*1);
+    height: calc(5.88vh*0.8);
+    font-family: 'Bahnschrift';
+    font-style: normal;
+    font-weight: 300;
+    margin-bottom: calc(5.88vh*0.5);
+    color:#EEE8F2;
+    text-align: justify;
+
+}

@@ -17,6 +17,7 @@
     background-color: #ED2F4C;
     margin-left:  calc(8.33vw*2);
     margin-right: calc(8.33vw*2);
+    border: 1px solid #ED2F4C;
 }
 .home_section1_icons{
     display: flex;
@@ -38,6 +39,7 @@
     width: calc(8.33vw*2);
     margin-left: calc(8.33vw*2);
     background-color: #ED2F4C;
+    border: 1px solid #ED2F4C;
 }
 .home_section2_column{
     display: flex;
