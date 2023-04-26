@@ -1,6 +1,6 @@
 import NavbarGPS from "../../components/NavbarGPS";
 import "./plataforma.css"
-import PlataformaPantallas from "../../assets/PlataformaPantallas.svg"
+import PlataformaPantallas from "../../assets/PlataformaPantallas.png"
 import videoPlataforma from "../../assets/videoPlataforma.svg"
 import GifGPS from "../../components/gifGPS/index";
 import Leads from "../../components/Leads/index";

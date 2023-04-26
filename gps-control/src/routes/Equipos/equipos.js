@@ -3,9 +3,9 @@ import "./equipos.css"
 import circuloHome from "../../assets/circuloHome.svg"
 import waIcon from "../../assets/waWhite.svg"
 import ytIcon from "../../assets/ytWhite.svg"
-import Suntech from "../../assets/Suntech.svg"
+import Suntech from "../../assets/Suntech.png"
 import gpsControlWhite from "../../assets/gpsControlWhite.svg"
-import FMC920 from "../../assets/FMC_920.svg"
+import FMC920 from "../../assets/FMC_920.png"
 import GifGPS from "../../components/gifGPS/index";
 import Leads from "../../components/Leads/index";
 import Footer from "../../components/Footer/index";

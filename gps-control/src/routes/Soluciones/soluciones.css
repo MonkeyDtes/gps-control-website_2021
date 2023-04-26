@@ -66,7 +66,7 @@
 .soluciones_section1{
     width: 100%;
     height: 100%;
-    background: url("../../assets/Vigilancia_Vehicular\ 1.svg");
+    background: url("../../assets/vigilanciaVehicular.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: 0vw;
@@ -78,7 +78,7 @@
 .soluciones_section2{
     width: 100%;
     height: 100%;
-    background: url("../../assets/Temperatura_CarrosBG.svg");
+    background: url("../../assets/Temperatura_CarrosBG.png");
     background-repeat: no-repeat;
     background-position-x: -5vw;
     background-position-y: -0vw;
@@ -89,15 +89,16 @@
     align-items: flex-end;
 }
 .soluciones_section2>img{
-    margin-top: calc(5.88vh*3);
+    margin-top: calc(5.88vh*3.2);
+    z-index: 5;
     max-width: calc(8.33vw*3);
     max-height: calc(5.88vh*6);
-    margin-right: calc(8.33vw*4.2);
+    margin-right: calc(8.33vw*4.8);
 }
 .soluciones_section3{
     width: 100%;
     height: 100%;
-    background: url("../../assets/Rastreo\ 1.svg");
+    background: url("../../assets/Rastreo.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: -0vw;
@@ -109,13 +110,14 @@
 .soluciones_section3>img{
     max-width: calc(8.33vw*3);
     max-height: calc(5.88vh*6);
-    margin-right: calc(8.33vw*5);
-    margin-top: calc(5.88vh*2);
+    margin-right: calc(8.33vw*5.3);
+    margin-top: calc(5.88vh*1);
+    z-index: 5;
 }
 .soluciones_section4{
     width: 100%;
     height: 100%;
-    background: url("../../assets/Personalizacion_Conductores\ 1.svg");
+    background: url("../../assets/PersonalizacionConductores.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: 0vw;
@@ -128,12 +130,13 @@
     max-width: calc(8.33vw*3);
     max-height: calc(5.88vh*6);
     margin-right: calc(8.33vw*5);
-    margin-top: calc(5.88vh*2);
+    margin-top: calc(5.88vh*2.4);
+    z-index: 5;
 }
 .soluciones_section5{
     width: 100%;
     height: 100%;
-    background: url("../../assets/Identificación_QR\ 1.svg");
+    background: url("../../assets/IdentificacionQR.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: -10vw;
@@ -146,12 +149,16 @@
     max-width: calc(8.33vw*3);
     max-height: calc(5.88vh*6);
     margin-right: calc(8.33vw*5);
+    margin-top: calc(8.33vw*0.5);
+    z-index: 5;
 }
 
 .soluciones_section1>img{
     max-width: calc(8.33vw*3);
     max-height: calc(5.88vh*6);
     margin-right: calc(8.33vw*5);
+    z-index: 6;
+
 }
 .soluciones_section1_header{
     margin-right: calc(8.33vw);
@@ -200,7 +207,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 2;
 }
 .soluciones_section1_row{
     display: flex;
@@ -258,4 +264,19 @@
     background: rgba(30, 140, 147, 0.2);
     mix-blend-mode: multiply;
     z-index: 1;
+}
+.pedestales_equipos{
+    clip-path: ellipse(50% 40% at 50% 50%);
+    width: calc(8.33vw*3);
+    height: calc(5.88vh*2);
+    box-shadow: 0px 38px 5px 0px rgba(207,50,50,1);
+    background-color: #EEE8F2;
+    margin-bottom: calc(5.88vh);
+}
+.main_box_pedestales{
+    position: absolute;
+    top: calc(5.88vh*10);
+    left: calc(8.33vw*4.5);
+    filter: drop-shadow(0px 31px 25px rgb(172, 30, 30));
+    display: flex;
 }

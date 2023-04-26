@@ -2,11 +2,11 @@ import { useState } from "react";
 import NavbarGPS from "../../components/NavbarGPS";
 import "./soluciones.css"
 import navbarNube from "../../assets/navbarNube.svg"
-import camaraSoluciones from "../../assets/camaraSoluciones.svg"
-import eyeSensor from "../../assets/eyeSensor.svg"
-import FMB_120 from "../../assets/FMB_120.svg"
-import Llaves_Dallas from "../../assets/Llaves_Dallas.svg"
-import LECTOR_QR from "../../assets/LECTOR_QR.svg"
+import camaraSoluciones from "../../assets/camaraSoluciones.png"
+import eyeSensor from "../../assets/eyeSensor.png"
+import FMB_120 from "../../assets/FMB_120.png"
+import Llaves_Dallas from "../../assets/Llaves_Dallas.png"
+import LECTOR_QR from "../../assets/LECTOR_QR.png"
 import circulosRojos from "../../assets/circulosRojos.svg"
 import usuariosSoluciones from "../../assets/usuariosSoluciones.svg"
 import wifiHorizontal from "../../assets/wifiHorizontal.svg"
@@ -83,7 +83,11 @@ export default function Soluciones(){
                                     <img alt="nube" src={navbarNube}></img>
                                 </div>
                             </div>
+                            <div className="main_box_pedestales">
+                                <div className="pedestales_equipos"></div>
+                            </div>
                             <img alt="camara" src={camaraSoluciones}></img>
+                            
                             
                             <div className="soluciones_section1_greenColumn"></div>
                             <GifGPS type="2"></GifGPS>
@@ -104,6 +108,9 @@ export default function Soluciones(){
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                            <div className="main_box_pedestales">
+                                <div className="pedestales_equipos"></div>
                             </div>
                             <img alt="camara" src={eyeSensor}></img>
                             <div className="soluciones_section_greenColumn"></div>
@@ -127,6 +134,9 @@ export default function Soluciones(){
                                     <img alt="nube" src={circulosRojos}></img>
                                 </div>
                             </div>
+                            <div className="main_box_pedestales">
+                                <div className="pedestales_equipos"></div>
+                            </div>
                             <img alt="camara" src={FMB_120}></img>
                             <div className="soluciones_section_greenColumn"></div>
                             <GifGPS type="1"></GifGPS>
@@ -148,6 +158,9 @@ export default function Soluciones(){
                                     </div>
                                 </div>
                             </div>
+                            <div className="main_box_pedestales">
+                                <div className="pedestales_equipos"></div>
+                            </div>
                             <img alt="camara" src={Llaves_Dallas}></img>
                             <div className="soluciones_section_greenColumn"></div>
                             <GifGPS type="1"></GifGPS>
@@ -168,6 +181,9 @@ export default function Soluciones(){
                                     </div>
                                     <img alt="nube" src={wifiHorizontal}></img>
                                 </div>
+                            </div>
+                            <div className="main_box_pedestales">
+                                <div className="pedestales_equipos"></div>
                             </div>
                             <img alt="camara" src={LECTOR_QR}></img>
                             <div className="soluciones_section_greenColumn"></div>

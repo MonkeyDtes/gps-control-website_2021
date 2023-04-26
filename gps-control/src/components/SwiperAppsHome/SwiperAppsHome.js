@@ -3,10 +3,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import {  Pagination, Navigation, Autoplay  } from "swiper";
 import SwiperCore, { Keyboard, Mousewheel } from "swiper/core";
 import "./swiperAppsHome.css"
-import BANNERFLEETRUN from "../../assets/BANNER FLEETRUN 1.svg"
-import BANNERHECTERRA from "../../assets/BANNER HECTERRA 1.svg"
-import BANNERFUEC from "../../assets/BANNER FUEC 1.svg"
-import BANNERMISIM from "../../assets/BANNER MISIM 1.svg"
+import BANNERFLEETRUN from "../../assets/BANNER-FLEETRUN.png"
+import BANNERHECTERRA from "../../assets/BANNER-HECTERRA.png"
+import BANNERFUEC from "../../assets/BANNER-FUEC.png"
+import BANNERMISIM from "../../assets/BANNER-MISIM.png"
 
 
 const SwiperAppsHome = () => {

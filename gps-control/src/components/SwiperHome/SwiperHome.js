@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import {  Pagination, Navigation, Autoplay  } from "swiper";
 import SwiperCore, { Keyboard, Mousewheel } from "swiper/core";
 import "./swiper.css"
-import FormatoCarrusel from "../../assets/FormatoCarrusel.svg"
+import FormatoCarrusel from "../../assets/formatoCarrusel.jpg"
 
 const SwiperHome = () => {
     SwiperCore.use([Keyboard, Mousewheel, Autoplay]);

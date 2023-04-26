@@ -18,6 +18,7 @@ import navbarTel from "../../assets/navbarPhone.svg"
 import ingresoLogo1 from "../../assets/ingresoLogo1.svg"
 import ingresoLogo2 from "../../assets/ingresoLogo2.svg"
 import {history} from "../History"
+import { useEffect, useState } from "react"
 
 export default function NavbarGPS(e){
     const Home = e.Home
@@ -47,6 +48,23 @@ export default function NavbarGPS(e){
             history.push("/promociones")
         }
     }
+    const [showTopBtn, setShowTopBtn] = useState(false);
+    const [showTopBtnClick, setShowTopBtnClick] = useState(false)
+    useEffect(() => {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 5 && showTopBtnClick === false) {
+                setShowTopBtn(true);
+            } else {
+                setShowTopBtn(false);
+            }
+        });
+    }, []);
+    const handleClickBurguer =()=>{
+        setShowTopBtnClick(true)
+        setShowTopBtn(false)
+        console.log(showTopBtnClick)
+        
+    }
     const goToTop = () => {
         window.scrollTo({
             top: 0,
@@ -55,205 +73,247 @@ export default function NavbarGPS(e){
     };
     
     return(
-        <div className="navbar_app">
-            <nav>
-                <div className="main_box">
-                    {
-                        Home ? (
-                        <button className="navbar_home"
-                        id="1"
-                        onClick={e=>handleClick(e)}>
-                            <img alt="logo gps control" src={GPSControlLogo}></img>
-                            <h1>Home</h1>
-                        </button>):(
-                        <button className="navbar_home_click"
-                        id="1"
-                        onClick={e=>handleClick(e)}
-                        >
-                            <img alt="logo gps control" src={GPSControlLogoRed}></img>
-                            <h1>Home</h1>
-                        </button>
-                        )
-                    }
-                    
-                </div>
-                <div className="main_box">
-                    {
-                        Plataforma ? (
-                            <button className="navbar_section_click"
-                            id="2"
-                            onClick={e=>handleClick(e)}>
-                                <div className="navbar_section_text">
-                                    <h2>Plataforma</h2>
-                                    <img alt="nube" src={navbarNubeWhite}></img>
+        <>
+            {
+                showTopBtn ? (
+                    <div className="navbar_app">
+                        <div className="navbar_close">
+                            <div>
+                                <img alt="logo gps control" src={GPSControlLogoRed}></img>
+                            </div>
+                            <button className="hamburguer_nav" onClick={handleClickBurguer}>
+                                <div className="iconBurguer">
                                 </div>
-                                <div className="navbar_section_text">
-                                    <div className="navbar_section_linea_click"></div>
-                                    <h2>de monitoreo</h2>
+                           </button>
+                        </div>
+                        <div className="navbar_contacts">
+                            <a  href="mailto:sales@gpscontrol.co"><img alt="mail" src={navbarMail}></img></a>
+                            <a href="https://wa.me/qr/AFTZFJYUOAWOM1" ><img alt="telefono"  src={navbarWa}></img></a>
+                            <a href="https://wa.me/qr/AFTZFJYUOAWOM1"><img alt="WhatsApp"  src={navbarYT}></img></a>
+                            <a href="https://www.youtube.com/channel/UCYU-Vn3lnDLePlavejpZMBg"><img alt="Youtube"  src={navbarTel}></img></a>
+                        </div>
+                        <div className="navbar_ingresos">
+                            <a href="https://tracking.gpscontrolcolombia.com/">
+                                <img alt="ingreso plataforma" src={ingresoLogo2}></img>
+                                <div>
+                                    <h2>Ingreso</h2>
+                                    <h2>plataforma</h2>
                                 </div>
-                            </button>
-                        ):(
-                            <button className="navbar_section"
-                            id="2"
-                            onClick={e=>handleClick(e)}
-                            >
-                                <div className="navbar_section_text">
-                                    <h2>Plataforma</h2>
-                                    <img alt="nube" src={navbarNube}></img>
+                            </a>
+                            <a href="https://wa.me/message/Y3KRNJYESUPWL1">
+                                <img alt="atencion al cliente" src={ingresoLogo1}></img>
+                                <div>
+                                    <h2>Atención</h2>
+                                    <h2>Inmediata</h2>
                                 </div>
-                                <div className="navbar_section_text">
-                                    <div className="navbar_section_linea"></div>
-                                    <h2>de monitoreo</h2>
-                                </div>
-                            </button>
-                        )
-                    }                    
-                </div>
-                <div className="main_box">
-                    {
-                        Equipos ? (
-                            <button className="navbar_section_click">
-                                <div className="navbar_section_text">
-                                    <h2>Soluciones</h2>
-                                    <img alt="nube" src={navbarLogowhite1}></img>
-                                </div>
-                                <div className="navbar_section_text">
-                                    <div className="navbar_section_linea_click"></div>
-                                    <h2>de monitoreo</h2>
-                                </div>
-                            </button>
-                        ):(
-                            <button 
-                            className="navbar_section"
-                            id="3"
-                            onClick={e=>handleClick(e)}>
-                                <div className="navbar_section_text">
-                                    <h2>Soluciones</h2>
-                                    <img alt="nube" src={navbarLogo1}></img>
-                                </div>
-                                <div className="navbar_section_text">
-                                    <div className="navbar_section_linea"></div>
-                                    <h2>de monitoreo</h2>
-                                </div>
-
-                            </button>
-                        )
-                    }
-                </div>
-                <div className="main_box">
-                    {
-                        transporte ? (
-                            <button className="navbar_section_click">
-                                <div className="navbar_section_text">
-                                    <h2>Soluciones</h2>
-                                    <img alt="nube" src={navbarLogowhite2}></img>
-                                </div>
-                                <div className="navbar_section_text">
-                                    <div className="navbar_section_linea_click"></div>
-                                    <h2>de transporte</h2>
-                                </div>
-
-                            </button>    ):(
-                            <button className="navbar_section"
-                            id="4"
-                            onClick={e=>handleClick(e)}>
-                                <div className="navbar_section_text">
-                                    <h2>Soluciones</h2>
-                                    <img alt="nube" src={navbarLogo2}></img>
-                                </div>
-                                <div className="navbar_section_text">
-                                    <div className="navbar_section_linea"></div>
-                                    <h2>de transporte</h2>
-                                </div>
-                            </button>    )
-                    }
-                                    
-                </div>
-                <div className="main_box">
-                    {
-                        Apps ? (
-                            <button className="navbar_section_click">
-                                <div className="navbar_section_text">
-                                    <h2>Nuestras</h2>
-                                    <img alt="nube" src={navbarLogowhite3}></img>
-                                </div>
-                                <div className="navbar_section_text">
-                                    <div className="navbar_section_linea_click"></div>
-                                    <h2>Aplicaciones</h2>
-                                </div>
-                            </button>    
-                        ):(
-                            <button className="navbar_section"
-                            id="5"
-                            onClick={e=>handleClick(e)}>
-                                <div className="navbar_section_text">
-                                    <h2>Nuestras</h2>
-                                    <img alt="nube" src={navbarLogo3}></img>
-                                </div>
-                                <div className="navbar_section_text">
-                                    <div className="navbar_section_linea"></div>
-                                    <h2>Aplicaciones</h2>
-                                </div>
-                            </button>    
-                        )
-
-                    }
-                                   
-                </div>
-                <div className="main_box">
-                    {
-                        Promociones ? (
-                            <button className="navbar_section_click">
-                                <div className="navbar_section_text">
-                                    <h2>Tu negocio</h2>
-                                    <img alt="nube" src={navbarLogowhite4}></img>
-                                </div>
-                                <div className="navbar_section_text">
-                                    <div className="navbar_section_linea_click"></div>
-                                    <h2>propio de GPS</h2>
-                                </div>
-                            </button>       
-                        ):(
-                            <button className="navbar_section"
-                            id="6"
-                            onClick={e=>handleClick(e)}>
-                                <div className="navbar_section_text">
-                                    <h2>Tu negocio</h2>
-                                    <img alt="nube" src={navbarLogo4}></img>
-                                </div>
-                                <div className="navbar_section_text">
-                                    <div className="navbar_section_linea"></div>
-                                    <h2>propio de GPS</h2>
-                                </div>
-                            </button>       
-                        )
-                    }
-                                 
-                </div>
-                
-            </nav>
-            <div className="navbar_contacts">
-                <a  href="mailto:sales@gpscontrol.co"><img alt="mail" src={navbarMail}></img></a>
-                <a href="https://wa.me/qr/AFTZFJYUOAWOM1" ><img alt="telefono"  src={navbarWa}></img></a>
-                <a href="https://wa.me/qr/AFTZFJYUOAWOM1"><img alt="WhatsApp"  src={navbarYT}></img></a>
-                <a href="https://www.youtube.com/channel/UCYU-Vn3lnDLePlavejpZMBg"><img alt="Youtube"  src={navbarTel}></img></a>
-            </div>
-            <div className="navbar_ingresos">
-                <a href="https://tracking.gpscontrolcolombia.com/">
-                    <img alt="ingreso plataforma" src={ingresoLogo2}></img>
-                    <div>
-                        <h2>Ingreso</h2>
-                        <h2>plataforma</h2>
+                            </a>
+                        </div>
                     </div>
-                </a>
-                <a href="https://wa.me/message/Y3KRNJYESUPWL1">
-                    <img alt="atencion al cliente" src={ingresoLogo1}></img>
-                    <div>
-                        <h2>Atención</h2>
-                        <h2>Inmediata</h2>
+                ):(
+                    <div className="navbar_app">
+                        <nav>
+                            <div className="main_box">
+                                {
+                                    Home ? (
+                                    <button className="navbar_home"
+                                    id="1"
+                                    onClick={e=>handleClick(e)}>
+                                        <img alt="logo gps control" src={GPSControlLogo}></img>
+                                        <h1>Home</h1>
+                                    </button>):(
+                                    <button className="navbar_home_click"
+                                    id="1"
+                                    onClick={e=>handleClick(e)}
+                                    >
+                                        <img alt="logo gps control" src={GPSControlLogoRed}></img>
+                                        <h1>Home</h1>
+                                    </button>
+                                    )
+                                }
+                                
+                            </div>
+                            <div className="main_box">
+                                {
+                                    Plataforma ? (
+                                        <button className="navbar_section_click"
+                                        id="2"
+                                        onClick={e=>handleClick(e)}>
+                                            <div className="navbar_section_text">
+                                                <h2>Plataforma</h2>
+                                                <img alt="nube" src={navbarNubeWhite}></img>
+                                            </div>
+                                            <div className="navbar_section_text">
+                                                <div className="navbar_section_linea_click"></div>
+                                                <h2>de monitoreo</h2>
+                                            </div>
+                                        </button>
+                                    ):(
+                                        <button className="navbar_section"
+                                        id="2"
+                                        onClick={e=>handleClick(e)}
+                                        >
+                                            <div className="navbar_section_text">
+                                                <h2>Plataforma</h2>
+                                                <img alt="nube" src={navbarNube}></img>
+                                            </div>
+                                            <div className="navbar_section_text">
+                                                <div className="navbar_section_linea"></div>
+                                                <h2>de monitoreo</h2>
+                                            </div>
+                                        </button>
+                                    )
+                                }                    
+                            </div>
+                            <div className="main_box">
+                                {
+                                    Equipos ? (
+                                        <button className="navbar_section_click">
+                                            <div className="navbar_section_text">
+                                                <h2>Soluciones</h2>
+                                                <img alt="nube" src={navbarLogowhite1}></img>
+                                            </div>
+                                            <div className="navbar_section_text">
+                                                <div className="navbar_section_linea_click"></div>
+                                                <h2>de monitoreo</h2>
+                                            </div>
+                                        </button>
+                                    ):(
+                                        <button 
+                                        className="navbar_section"
+                                        id="3"
+                                        onClick={e=>handleClick(e)}>
+                                            <div className="navbar_section_text">
+                                                <h2>Soluciones</h2>
+                                                <img alt="nube" src={navbarLogo1}></img>
+                                            </div>
+                                            <div className="navbar_section_text">
+                                                <div className="navbar_section_linea"></div>
+                                                <h2>de monitoreo</h2>
+                                            </div>
+
+                                        </button>
+                                    )
+                                }
+                            </div>
+                            <div className="main_box">
+                                {
+                                    transporte ? (
+                                        <button className="navbar_section_click">
+                                            <div className="navbar_section_text">
+                                                <h2>Soluciones</h2>
+                                                <img alt="nube" src={navbarLogowhite2}></img>
+                                            </div>
+                                            <div className="navbar_section_text">
+                                                <div className="navbar_section_linea_click"></div>
+                                                <h2>de transporte</h2>
+                                            </div>
+
+                                        </button>    ):(
+                                        <button className="navbar_section"
+                                        id="4"
+                                        onClick={e=>handleClick(e)}>
+                                            <div className="navbar_section_text">
+                                                <h2>Soluciones</h2>
+                                                <img alt="nube" src={navbarLogo2}></img>
+                                            </div>
+                                            <div className="navbar_section_text">
+                                                <div className="navbar_section_linea"></div>
+                                                <h2>de transporte</h2>
+                                            </div>
+                                        </button>    )
+                                }
+                                                
+                            </div>
+                            <div className="main_box">
+                                {
+                                    Apps ? (
+                                        <button className="navbar_section_click">
+                                            <div className="navbar_section_text">
+                                                <h2>Nuestras</h2>
+                                                <img alt="nube" src={navbarLogowhite3}></img>
+                                            </div>
+                                            <div className="navbar_section_text">
+                                                <div className="navbar_section_linea_click"></div>
+                                                <h2>Aplicaciones</h2>
+                                            </div>
+                                        </button>    
+                                    ):(
+                                        <button className="navbar_section"
+                                        id="5"
+                                        onClick={e=>handleClick(e)}>
+                                            <div className="navbar_section_text">
+                                                <h2>Nuestras</h2>
+                                                <img alt="nube" src={navbarLogo3}></img>
+                                            </div>
+                                            <div className="navbar_section_text">
+                                                <div className="navbar_section_linea"></div>
+                                                <h2>Aplicaciones</h2>
+                                            </div>
+                                        </button>    
+                                    )
+
+                                }
+                                            
+                            </div>
+                            <div className="main_box">
+                                {
+                                    Promociones ? (
+                                        <button className="navbar_section_click">
+                                            <div className="navbar_section_text">
+                                                <h2>Tu negocio</h2>
+                                                <img alt="nube" src={navbarLogowhite4}></img>
+                                            </div>
+                                            <div className="navbar_section_text">
+                                                <div className="navbar_section_linea_click"></div>
+                                                <h2>propio de GPS</h2>
+                                            </div>
+                                        </button>       
+                                    ):(
+                                        <button className="navbar_section"
+                                        id="6"
+                                        onClick={e=>handleClick(e)}>
+                                            <div className="navbar_section_text">
+                                                <h2>Tu negocio</h2>
+                                                <img alt="nube" src={navbarLogo4}></img>
+                                            </div>
+                                            <div className="navbar_section_text">
+                                                <div className="navbar_section_linea"></div>
+                                                <h2>propio de GPS</h2>
+                                            </div>
+                                        </button>       
+                                    )
+                                }
+                                            
+                            </div>
+                            
+                        </nav>
+                        <div className="navbar_contacts">
+                            <a  href="mailto:sales@gpscontrol.co"><img alt="mail" src={navbarMail}></img></a>
+                            <a href="https://wa.me/qr/AFTZFJYUOAWOM1" ><img alt="telefono"  src={navbarWa}></img></a>
+                            <a href="https://wa.me/qr/AFTZFJYUOAWOM1"><img alt="WhatsApp"  src={navbarYT}></img></a>
+                            <a href="https://www.youtube.com/channel/UCYU-Vn3lnDLePlavejpZMBg"><img alt="Youtube"  src={navbarTel}></img></a>
+                        </div>
+                        <div className="navbar_ingresos">
+                            <a href="https://tracking.gpscontrolcolombia.com/">
+                                <img alt="ingreso plataforma" src={ingresoLogo2}></img>
+                                <div>
+                                    <h2>Ingreso</h2>
+                                    <h2>plataforma</h2>
+                                </div>
+                            </a>
+                            <a href="https://wa.me/message/Y3KRNJYESUPWL1">
+                                <img alt="atencion al cliente" src={ingresoLogo1}></img>
+                                <div>
+                                    <h2>Atención</h2>
+                                    <h2>Inmediata</h2>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                </a>
-            </div>
-        </div>
+                )
+            }
+        
+        </>
+        
     )
 }
