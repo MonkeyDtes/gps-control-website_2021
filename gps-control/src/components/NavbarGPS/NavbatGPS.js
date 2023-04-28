@@ -31,6 +31,7 @@ export default function NavbarGPS(e){
         goToTop()
         if(index.currentTarget.id === "1"){    
             history.push("/")
+            
         } else if(index.currentTarget.id === "2"){
             history.push("/plataforma")
         }
