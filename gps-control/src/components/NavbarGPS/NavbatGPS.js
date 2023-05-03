@@ -18,7 +18,7 @@ import navbarTel from "../../assets/navbarPhone.svg"
 import ingresoLogo1 from "../../assets/ingresoLogo1.svg"
 import ingresoLogo2 from "../../assets/ingresoLogo2.svg"
 import {history} from "../History"
-import { useEffect, useState } from "react"
+import { useEffect, useRef, useState } from "react"
 
 export default function NavbarGPS(e){
     const Home = e.Home
@@ -27,6 +27,9 @@ export default function NavbarGPS(e){
     const transporte = e.transporte
     const Apps = e.Apps
     const Promociones = e.Promociones
+    const windowSize = useRef([window.innerWidth, window.innerHeight]);
+    const windowWidth = windowSize.current[0]
+    
     const handleClick =(index)=>{
         goToTop()
         if(index.currentTarget.id === "1"){    
@@ -52,18 +55,30 @@ export default function NavbarGPS(e){
     const [showTopBtn, setShowTopBtn] = useState(false);
     const [showTopBtnClick, setShowTopBtnClick] = useState(false)
     useEffect(() => {
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 5 && showTopBtnClick === false) {
-                setShowTopBtn(true);
-            } else {
-                setShowTopBtn(false);
-            }
-        });
-    }, []);
+        
+        if(windowSize.current[0]>600){
+            
+            window.addEventListener('scroll', () => {
+            
+                if (window.scrollY > 5 && showTopBtnClick === false) {
+                    setShowTopBtn(true);
+                } else {
+                    setShowTopBtn(false);
+                }
+        })
+        } else{
+            setShowTopBtn(true);
+
+        };
+    }, [windowWidth]);
     const handleClickBurguer =()=>{
         setShowTopBtnClick(true)
         setShowTopBtn(false)
-        console.log(showTopBtnClick)
+        
+    }
+    const handleClickClose =()=>{
+        setShowTopBtnClick(false)
+        setShowTopBtn(true)
         
     }
     const goToTop = () => {
@@ -79,8 +94,56 @@ export default function NavbarGPS(e){
                 showTopBtn ? (
                     <div className="navbar_app">
                         <div className="navbar_close">
-                            <div>
-                                <img alt="logo gps control" src={GPSControlLogoRed}></img>
+                            <div className="main_box">
+                                {
+                                    Home ? (
+                                    <div className="navar_section_select">
+                                        <h1>Home</h1>
+                                        <img alt="logo gps control" src={GPSControlLogoRed}></img>
+                                    </div>
+                                    ):(<></>)
+                                }
+                                {
+                                    Plataforma ? (
+                                    <div className="navar_section_select">
+                                        <h1>Plataforma de monitoreo</h1>
+                                        <img alt="logo gps control" src={GPSControlLogoRed}></img>
+                                    </div>
+                                    ):(<></>)
+                                }
+                                {
+                                    Equipos ? (
+                                    <div className="navar_section_select">
+                                        <h1>Soluciones de monitoreo</h1>
+                                        <img alt="logo gps control" src={GPSControlLogoRed}></img>
+                                    </div>
+                                    ):(<></>)
+                                }
+                                {
+                                    transporte ? (
+                                    <div className="navar_section_select">
+                                        <h1>Soluciones de transporte</h1>
+                                        <img alt="logo gps control" src={GPSControlLogoRed}></img>
+                                    </div>
+                                    ):(<></>)
+                                }
+                                {
+                                    Apps ? (
+                                    <div className="navar_section_select">
+                                        <h1>Aplicaciones</h1>
+                                        <img alt="logo gps control" src={GPSControlLogoRed}></img>
+                                    </div>
+                                    ):(<></>)
+                                }
+                                {
+                                    Promociones ? (
+                                    <div className="navar_section_select">
+                                        <h1>Tu negocio propio de GPS</h1>
+                                        <img alt="logo gps control" src={GPSControlLogoRed}></img>
+                                    </div>
+                                    ):(<></>)
+                                }
+                                
                             </div>
                             <button className="hamburguer_nav" onClick={handleClickBurguer}>
                                 <div className="iconBurguer">
@@ -284,6 +347,7 @@ export default function NavbarGPS(e){
                                         </button>       
                                     )
                                 }
+                            <button className="navbar_close_button" onClick={handleClickClose}>X</button>
                                             
                             </div>
                             

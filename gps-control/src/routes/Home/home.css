@@ -217,3 +217,97 @@
     margin-left: calc(8.33vw*2);
     background-color: #ED2F4C;
 }
+@media only screen and (max-width: 600px) {
+    .home_section2_column{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: calc(8.33vw*0);
+    
+    }
+    .home_section2_column>h1{
+        font-size: calc(8.33vw*1);
+    }
+    .home_section2_column>h3{
+        
+        font-family: 'Bahnschrift';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2.5vh;
+        line-height: 38px;
+        color: #6B6B6B;
+        margin-top: calc(5.88vh*5);
+        
+    
+    }
+    .home_section2_label {
+        width: calc(8.33vw*4.5);
+        height: calc(5.88vh*.5);
+        margin-top: calc(-5.88vh*0.5);
+       
+      }
+      .home_section2_label > h2 {
+        font-size: 2vh;
+      }
+      .home_section2_column > h3 {
+        font-size: 1.5vh;
+      }
+      .home_section2_wifiIcon{
+        margin-top: 0vh;
+      }
+      .home_section2_body {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.1vh;
+        width: calc(8.33vw*10);
+      }
+      .home_section2_body > div {
+        margin-top: calc(5.88vh*0.5);
+        border-bottom: none;
+        border-left: 2px solid #6B6B6B;
+        border-image:auto;
+        width: calc(8.33vw*3);
+        padding-left: calc(8.33vw*0.2);
+        margin-inline: calc(8.33vw*0.4);
+      }
+      .home_section2_pantallas {
+        position: absolute;
+        margin-top: calc(5.88vh*3);
+        margin-left: calc(8.33vw*3);
+      }
+      .home_section1_icons > img {
+        height: calc(5.88vh*0.7);
+        opacity: 0;
+      }
+      .home_section2_pantallas > img {
+        width: calc(8.33vw*8);
+      }
+      .home_section2_body > div {
+        margin-top: calc(5.88vh*0.4);
+      }
+      .home_section2_group > button {
+        width: calc(8.33vw*4);
+        height: calc(5.88vh*1.5);
+        margin-left: calc(5.88vh);
+      }
+      .home_section2_combusible > img {
+        width: calc(8.33vw*8);
+        margin-left: calc(8.33vw*2.5);
+        margin-top: calc(5.88vh*1.5);
+        
+      }
+      .home_section2_camara > img {
+        width: calc(8.33vw*5);
+        margin-top: calc(5.88vh*2);
+        margin-left: calc(8.33vw*6);
+      }
+      .home_section2_carretera > img {
+        width: calc(8.33vw*8);
+        mix-blend-mode: multiply;
+        margin-top: calc(5.88vh*2);
+        margin-left: calc(8.33vw*2.5);
+      }
+      div.home_section2_group:nth-child(4) {
+        margin-top: calc(5.88vh*5 );
+        }
+    }
