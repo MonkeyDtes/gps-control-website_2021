@@ -1,14 +1,15 @@
 @import url('https://fonts.cdnfonts.com/css/das-reicht-gut');
 .leads_page{
-    height: 100vh !important;    
+    height: 100vh ;    
     background-color: #EEE8F2;
 }
 .leads_page_background{
     
     background: url("../../assets/fondoLeads.png");
-    background-size: 100vw;
+    background-size: cover;
     background-position: 1vh;
-    height: 100% !important;    
+    background-repeat: no-repeat;
+    height: 100%;    
     display: flex;
     flex-direction: row;
 }
@@ -16,7 +17,7 @@
     display: flex;
     clip-path: polygon(0 0, 85% 0, 100% 15%, 100% 100%, 15% 100%, 0 85%);
     flex-direction: column;
-    width: calc(8.33vw*8) !important;
+    width: calc(8.33vw*8);
     background-color: #EB162C;
     mix-blend-mode: multiply;
 
@@ -198,4 +199,37 @@ textarea {
     color:#EEE8F2;
     text-align: justify;
 
+}
+@media only screen and (max-width: 600px) {
+    .leads_page_form {
+        display: flex;
+        flex-direction: column;
+    }
+    .leads_page_end{
+        width: 0vh;
+    }
+    .leads_page_start{
+        width: 100%;
+    }
+    .leads_page_form_start_control>label>input {
+        
+        width: calc(8.33vw*8);
+    }
+    .leads_page_form_start>h6 {
+        
+        width: calc(8.33vw*8);
+    }
+
+    .leads_page_form_end>label>textarea {
+        height: calc(5.88vh*7);
+        width: calc(8.33vw*8);
+    }
+    .leads_page{
+        height: 150vh;
+
+    }
+    .leads_page_form_end>button {
+       width: calc(8.33vw*3);
+       font-size: 2vh;
+    }
 }

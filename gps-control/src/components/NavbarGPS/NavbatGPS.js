@@ -59,6 +59,7 @@ export default function NavbarGPS(e){
         if(windowSize.current[0]>600){
             
             window.addEventListener('scroll', () => {
+                
             
                 if (window.scrollY > 5 && showTopBtnClick === false) {
                     setShowTopBtn(true);
