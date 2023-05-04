@@ -159,9 +159,44 @@
     font-size: 4vh;
 
 }
+.plataforma_section2_body>h6{
+    font-family: 'Bahnschrift';
+    font-style: normal;
+    font-weight: 300;
+}
 .plataforma_section2_body_line{
     height: calc(5.88vh*0.4);
     width: auto;
     border-left: solid 1px red;
 
+}
+@media only screen and (max-width: 600px) {
+    .plataforma_sectionq_body_text_a1{
+        font-size: 1vh;
+    }
+    .plataforma_sectionq_body_text_a2{
+        font-size: 1vh;
+    }
+    .plataforma_sectionq_body_text_a{
+        font-size: 1vh;
+    }
+    .plataforma_sectionq_body_text_a3{
+        font-size: 1vh;
+    }
+    .plataforma_section2{
+        flex-direction: column;
+    }
+    .plataforma_section2_body{
+        margin-top: calc(5.88vh*2);
+        width: calc(8.33vw*8);
+        margin-left: calc(8.33vw*2);
+
+    
+    }
+    .plataforma_section2>img {
+        width: calc(8.33vw*8);
+        margin-left: calc(8.33vw*2);
+        margin-top: calc(5.88vh*3);
+    }
+    
 }

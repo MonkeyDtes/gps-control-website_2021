@@ -10,24 +10,27 @@ export default function Footer(){
         <footer className="footer_gpscontrol">
             <h6>© GPS Control</h6>
             <div className="footer_body">
-                <div className="footer_column">
-                    <h2>Correos</h2>
-                    <h3>Comercial@gpscontrol.co</h3>
-                    <h3>Soporte@gpscontrol.co</h3>
-                    <h3>Soporte2@gpscontrol.co</h3>
-                    <h3>Sales@gpscontrol.co</h3>
-                    <h3>Sales2@gpscontrol.co</h3>
+                <div className="footer_body_start">
+                    <div className="footer_column">
+                        <h2>Correos</h2>
+                        <h3>Comercial@gpscontrol.co</h3>
+                        <h3>Soporte@gpscontrol.co</h3>
+                        <h3>Soporte2@gpscontrol.co</h3>
+                        <h3>Sales@gpscontrol.co</h3>
+                        <h3>Sales2@gpscontrol.co</h3>
 
-                </div>
-                <div className="footer_column">
-                    <h2>Teléfonos móviles</h2>
-                    <h3>+57 3187810059</h3>
-                    <h3>+57 3202410632</h3>
-                    <h3>+57 3174021086</h3>
-                    <h3>+57 3225406709</h3>
-                    <h3>+57 3245598681</h3>
+                    </div>
+                    <div className="footer_column">
+                        <h2>Teléfonos móviles</h2>
+                        <h3>+57 3187810059</h3>
+                        <h3>+57 3202410632</h3>
+                        <h3>+57 3174021086</h3>
+                        <h3>+57 3225406709</h3>
+                        <h3>+57 3245598681</h3>
 
+                    </div>
                 </div>
+                
                 <div className="footer_column">
                     <h2>Teléfonos Sucurasales</h2>
                     <h3>+57 3187810059</h3>

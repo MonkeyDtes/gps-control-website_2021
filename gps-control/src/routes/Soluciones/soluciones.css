@@ -280,3 +280,60 @@
     filter: drop-shadow(0px 31px 25px rgb(172, 30, 30));
     display: flex;
 }
+@media only screen and (max-width: 600px) {
+    .soluciones_section{
+        flex-direction: column;
+    }
+    .soluciones_buttons{
+        margin-top: calc(5.88vh*2);
+        margin-left: calc(8.33vw*2);
+    }
+    .soluciones_buttons>button{
+        width: calc(8.33vw*6.5);
+    }
+    .pedestales_equipos{
+        margin-bottom: 0vh;
+    }
+    .main_box_pedestales{
+        top: calc(5.88vh*14);
+
+    }
+    .soluciones_section1_header>h1{
+        margin-top: calc(8.33vw*0);
+    }
+    .soluciones_section1_label{
+        height: calc(5.88vh*1);
+
+    }
+    .soluciones_section1_label>h2{
+        font-size: 2vh;
+    }
+    .soluciones_section1>img{
+        margin-right: calc(8.33vw*1.5);
+        margin-top: calc(5.88vh*1);
+    }
+    .soluciones_section2>img{
+        margin-right: calc(8.33vw*1.5);
+        margin-top: calc(5.88vh*2);
+
+    }
+    .soluciones_section3_header>h1{
+        margin-top: 0vh;
+        margin-left: calc(8.33vw*2);
+        margin-right: 0vw;
+        
+    }
+    .soluciones_section3>img{
+        margin-right: calc(8.33vw*1.5);
+        margin-top: calc(5.88vh*0.5);
+    }
+    .soluciones_section4>img{
+        margin-right: calc(8.33vw*1.5);
+        margin-top: calc(5.88vh*1.2);
+    }
+    .soluciones_section5 >img{
+        margin-right: calc(8.33vw*1.5);
+        margin-top: calc(5.88vh*1.2);
+    }
+    
+}

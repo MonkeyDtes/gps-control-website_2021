@@ -1,6 +1,6 @@
 {
   "name": "gps-control",
-  "homepage":"https://gpscontrol.co",
+  "homepage": "https://gpscontrol.co",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

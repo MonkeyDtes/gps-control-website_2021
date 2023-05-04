@@ -63,3 +63,27 @@
     flex-direction: row;
     align-items: center;
 }
+.footer_body_start{
+    display: flex;
+    flex-direction: row;
+
+}
+@media only screen and (max-width: 600px) {
+    .footer_body{
+        flex-direction: column;
+    
+    }
+    .footer_column>h2{
+        font-size: 2vh;
+    }
+    .footer_column>h3{
+        font-size: 1vh;
+    }
+    .footer_redes>a {
+        margin-inline: calc(8.33vw*0.3);
+    }
+    .footer_redes>h2 {
+        font-size: 2vh;
+        margin-right: calc(8.33vw);
+    }
+}

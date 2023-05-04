@@ -210,7 +210,7 @@
 .equipos_section2_end_cell{
     display: table-cell;
     text-align: center;
-    height: 5vh !important;  
+    height: 5vh ;  
     width: 8.33vw;   
 }
 .equipos_section2_end_title1{
@@ -277,4 +277,76 @@
 }
 .equipos_section3_end_column>p{
     text-align: justify;
+}
+@media only screen and (max-width: 600px) {
+    .equipos_section2_column>h1{
+        font-size: 4vh;
+        margin-top: calc(5.88vh*0.1);
+
+    }
+    .equipos_section2_label{
+        margin-top: calc(-5.88vh*0.3);
+        height: calc(5.88vh*0.8);
+        width: calc(8.33vw*7);
+    }
+    .equipos_section2_label>h2{
+        font-size: 2vh;
+    }
+    .equipos_section2_circleIcon>img{
+        height: calc(5.88vh*0.5);
+        
+    }
+    .equipos_section2_circleIcon{
+        margin-right: calc(8.33vw);
+    }
+    .equipos_section1_bg{
+        background-size:200vw 60vh;
+        background-repeat: no-repeat;
+        background-position-y:bottom    ;
+    }
+    .equipos_section2{}
+    .equipos_section2_start>h1{
+        font-size: 2vh;
+    }
+    .equipos_section2_start_buttons{
+        padding-left: calc(8.33vw);
+        height: calc(5.88vh*0.6);
+    }
+    .equipos_section2_start_buttons>a{
+        font-size: 0.7vh;
+        width: calc(8.33vw*3);
+        height: calc(5.88vh*0.5);
+    }
+    .equipos_section2_start_column>p {
+        font-size: 1vh;
+    }
+    .equipos_section2 {
+        background-position-y: 36vh;
+        background-position-x: -2vw;
+        background-size: contain;
+    }
+    .equipos_section2_end>img {
+        margin-top: calc(5.88vh*5);
+        margin-left: calc(8.33vw*0);
+    }
+    .equipos_section2_end_row{
+        font-size: 0.7vh;
+        height: 3vh;
+        width: calc(8.33vw*4);
+    }
+    .equipos_section2_end_cell{
+        height: calc(5.88vh*0.2);
+        width: calc(8.33vw*3);
+    }
+    .equipos_section3_end>h1{
+        font-size: 2vh;
+    }
+    .equipos_section3_end_column{
+        font-size: 1vh;
+    }
+    .equipos_section4{
+        background-size: 40vh;
+        background-position-x: 36vw;
+    }
+    
 }

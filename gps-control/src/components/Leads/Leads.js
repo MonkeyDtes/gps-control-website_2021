@@ -1,5 +1,6 @@
 
 import iconosGroup from "../../assets/iconosGroup.svg"
+import iconosWhite from "../../assets/iconsWhite.svg"
 import Leads1 from "../../assets/Leads1.svg"
 import Leads2 from "../../assets/Leads2.svg"
 import Leads3 from "../../assets/Leads3.svg"
@@ -105,12 +106,15 @@ export default function Leads(){
                 <div className="leads_page_end_img">
                     <img alt="iconosHome" src={iconosGroup}></img>
                 </div>
-                <div className="leads_page_end_gray"></div>
-                <div className="leads_page_end_white"></div>
-                <div className="leads_page_end_green"></div>
-                <div className="leads_page_end_blue"></div>
-                <div className="leads_page_end_red"></div>
-                <div className="leads_page_end_redwine"></div>
+                <div className="leads_page_end_img_white">
+                    <img alt="iconosHome" src={iconosWhite}></img>
+                </div>
+                <div className="leads_page_end_cuadro"></div>
+                <div className="leads_page_end_cuadro"></div>
+                <div className="leads_page_end_cuadro"></div>
+                <div className="leads_page_end_cuadro"></div>
+                <div className="leads_page_end_cuadro"></div>
+                <div className="leads_page_end_cuadro"></div>
                 
             </div>
         </div>

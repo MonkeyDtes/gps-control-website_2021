@@ -13,5 +13,6 @@
     margin-bottom: calc(5.88vh);
 }
 @media only screen and (max-width: 600px) {
-    
+    .gif_gpscontrol{
+    }
 }
