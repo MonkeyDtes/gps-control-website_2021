@@ -61,6 +61,9 @@ export default function Leads(){
     <section className="leads_page">
         <div className="leads_page_background">
             <div className="leads_page_start">
+                <div className="leads_page_end_img_white">
+                    <img alt="iconosHome" src={iconosWhite}></img>
+                </div>
                 <form className="leads_page_form"  onSubmit={handleSubmit}>
                     <div className="leads_page_form_start">
                         <div className="leads_page_form_start_control">
@@ -106,9 +109,7 @@ export default function Leads(){
                 <div className="leads_page_end_img">
                     <img alt="iconosHome" src={iconosGroup}></img>
                 </div>
-                <div className="leads_page_end_img_white">
-                    <img alt="iconosHome" src={iconosWhite}></img>
-                </div>
+                
                 <div className="leads_page_end_cuadro"></div>
                 <div className="leads_page_end_cuadro"></div>
                 <div className="leads_page_end_cuadro"></div>

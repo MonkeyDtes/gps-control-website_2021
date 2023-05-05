@@ -8,11 +8,16 @@
     flex-direction: column-reverse;
 }
 .gif_gpscontrol>img{
-    height: calc(5.88vh*7);
+    height: calc(5.88vh*8);
     width: 100%;
     margin-bottom: calc(5.88vh);
+    min-width: 100px;
+    min-height: 120px;
 }
 @media only screen and (max-width: 600px) {
     .gif_gpscontrol{
+        position: absolute;
+        top:-70vh;
+        right: 55vw;
     }
 }

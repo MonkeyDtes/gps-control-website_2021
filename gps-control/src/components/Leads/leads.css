@@ -266,13 +266,13 @@ textarea {
     }
     .leads_page_end_img_white{
         height: calc(5.88vh * 0.7);
+        align-self: self-start;
+        margin-top: calc(5.88vh);
+        margin-left: calc(8.33vw*2);
     }
 
     .leads_page_end_img_white>img{
         height: calc(5.88vh * 0.7);
-        z-index: 3;
-        position: relative;
-        margin-right: calc(8.33vw*12);
     }
     .leads_page_end_img > img{
 

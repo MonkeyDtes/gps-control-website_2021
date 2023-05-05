@@ -23,7 +23,25 @@
     margin-left: calc(8.33vw);
 
 }
-.apps_section1_buttons >button{
+.apps_section1_buttons_top>button{
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    border: none;
+    justify-content: flex-start;
+    align-items: center;
+    height: calc(5.88vh*0.8);
+    font-family: 'Bahnschrift';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.5vh;
+    margin-bottom: calc(5.88vh*0.5);
+    color: #6B6B6B;
+    text-align: justify;
+    margin-right: calc(8.33vw*0.5);
+
+}
+.apps_section1_buttons_bot>button{
     display: flex;
     flex-direction: row;
     background-color: transparent;
@@ -65,4 +83,25 @@
     opacity: 0.2;
     box-shadow: 0px 4px 4px #030D4F;
 
+}
+.apps_section1_buttons_top{
+    display: flex;
+    flex-direction: row;
+}
+.apps_section1_buttons_bot{
+    display: flex;
+    flex-direction: row;
+}
+@media only screen and (max-width: 600px) {
+    .apps_section1_buttons_top{
+        flex-direction:column;
+        height: calc(5.88vh);
+    }
+    .apps_section1_buttons_bot{
+        flex-direction:column;
+        height: calc(5.88vh);
+    }
+    .apps_section1_buttons{
+        margin-bottom: calc(5.88vh);
+    }
 }

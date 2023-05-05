@@ -67,13 +67,16 @@ export default function Apps(){
             <section className="apps_section1">
                 <h1>Seleccione una actividad de su interés</h1>
                     <div className="apps_section1_buttons">
-                        <button onClick={e=>HandleClick(e)} id="1"> {button1 ?(<div className="apps_button_check"><div className="dot"></div></div>):(<div className="apps_button_dontcheck"></div>)}  Servicios técnicos</button>
-                        <button onClick={e=>HandleClick(e)} id="2"> {button2 ?(<div className="apps_button_check"><div className="dot"></div></div>):(<div className="apps_button_dontcheck"></div>)}  Planificación de rutas</button>
-                        <button onClick={e=>HandleClick(e)} id="3"> {button3 ?(<div className="apps_button_check"><div className="dot"></div></div>):(<div className="apps_button_dontcheck"></div>)}  Producción agrícola</button>
-                        <button onClick={e=>HandleClick(e)} id="4"> {button4 ?(<div className="apps_button_check"><div className="dot"></div></div>):(<div className="apps_button_dontcheck"></div>)}  Calidad de conducción</button>
-                        <button onClick={e=>HandleClick(e)} id="5"> {button5 ?(<div className="apps_button_check"><div className="dot"></div></div>):(<div className="apps_button_dontcheck"></div>)}  Comunicación por chat</button>
-                        <button onClick={e=>HandleClick(e)} id="6"> {button6 ?(<div className="apps_button_check"><div className="dot"></div></div>):(<div className="apps_button_dontcheck"></div>)}  Rastreo móvil de vehículos</button>
-
+                        <div className="apps_section1_buttons_top">
+                            <button onClick={e=>HandleClick(e)} id="1"> {button1 ?(<div className="apps_button_check"><div className="dot"></div></div>):(<div className="apps_button_dontcheck"></div>)}  Servicios técnicos</button>
+                            <button onClick={e=>HandleClick(e)} id="2"> {button2 ?(<div className="apps_button_check"><div className="dot"></div></div>):(<div className="apps_button_dontcheck"></div>)}  Planificación de rutas</button>
+                            <button onClick={e=>HandleClick(e)} id="3"> {button3 ?(<div className="apps_button_check"><div className="dot"></div></div>):(<div className="apps_button_dontcheck"></div>)}  Producción agrícola</button>
+                        </div>
+                        <div className="apps_section1_buttons_bot">
+                            <button onClick={e=>HandleClick(e)} id="4"> {button4 ?(<div className="apps_button_check"><div className="dot"></div></div>):(<div className="apps_button_dontcheck"></div>)}  Calidad de conducción</button>
+                            <button onClick={e=>HandleClick(e)} id="5"> {button5 ?(<div className="apps_button_check"><div className="dot"></div></div>):(<div className="apps_button_dontcheck"></div>)}  Comunicación por chat</button>
+                            <button onClick={e=>HandleClick(e)} id="6"> {button6 ?(<div className="apps_button_check"><div className="dot"></div></div>):(<div className="apps_button_dontcheck"></div>)}  Rastreo móvil de vehículos</button>
+                        </div>
                     </div>
                     <SwiperApps button1={button1} button2={button2} button3={button3} button4={button4} button5={button5} button6={button6}></SwiperApps>
                     

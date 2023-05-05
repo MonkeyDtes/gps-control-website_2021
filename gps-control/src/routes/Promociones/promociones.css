@@ -69,3 +69,23 @@
     height: calc(5.88vh*0.7);
     margin-right: calc(8.33vw*0.1);
 }
+@media only screen and (max-width: 600px) {
+    .promociones_section_body{
+        margin-top: calc(5.88vh*2);
+    }
+    .promociones_section_body>div{
+        font-size: 1.5vh;
+        width: calc(8.33vw*6);
+    }
+    .promociones_section_body>button{
+        width: calc(8.33vw*3);
+        margin-top: calc(5.88vh*5);
+        margin-left: calc(8.33vw*6)
+    }
+    .promociones_section_bg{
+        background-repeat: no-repeat;
+        background-size: 100vw 70vh;
+        background-position-x: -20vw;
+        background-position-y: 50vh;
+    }
+}

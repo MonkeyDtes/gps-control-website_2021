@@ -74,6 +74,7 @@
     align-items: center;
     justify-content: center;
     text-decoration: none;
+    border-radius: 10%;
 }
 .swiper_apps_buttons>a:hover{
     background-color: #EB162C;
@@ -105,6 +106,7 @@
     font-size: 1.2vh;
     justify-content: center;
     text-decoration: none;
+    border-radius: 10%;
 }
 .swiper_apps_buttons_clicked>a>img{
     height: calc(5.88*0.33);
@@ -119,4 +121,33 @@
 }
 .swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled{
     opacity: 0;
+}
+@media only screen and (max-width: 600px) {
+    .swiper_apps_slide_clicked{
+        width: calc(8.33vw*6) !important;
+        margin-bottom: calc(5.88vh);
+        height: calc(5.88vh*7) !important;
+    }
+    .swiper_apps_slide{
+        width: calc(8.33vw*6) !important;
+        margin-bottom: calc(5.88vh);
+        height: calc(5.88vh*7) !important;
+    }
+    .swiper_apps_buttons>a{
+        width: calc(8.33vw*2);
+        margin-inline: calc(8.33vw*0.4);
+        justify-content: space-around;
+    }
+    .swiper_apps_buttons_clicked>a{
+        width: calc(8.33vw*2);
+        margin-inline: calc(8.33vw*0.4);
+        justify-content: space-around;
+    }
+    .swiper_apps_slide>img{
+        width: calc(8.33vw*4);
+    }
+
+    .swiper_apps_slide_clicked>img{
+        width: calc(8.33vw*4);
+    }
 }
