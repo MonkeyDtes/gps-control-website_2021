@@ -253,11 +253,12 @@ textarea {
     }
 
     .leads_page_form_end>label>textarea {
+        margin-left: 0vw;
         height: calc(5.88vh*7);
         width: calc(8.33vw*8);
     }
     .leads_page{
-        height: 150vh;
+        height: 170vh;
 
     }
     .leads_page_form_end>button {

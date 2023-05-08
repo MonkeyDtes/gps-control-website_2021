@@ -335,5 +335,8 @@
         margin-right: calc(8.33vw*1.5);
         margin-top: calc(5.88vh*1.2);
     }
+    .gif_soluciones>div>img{
+        opacity: 0;
+    }
     
 }

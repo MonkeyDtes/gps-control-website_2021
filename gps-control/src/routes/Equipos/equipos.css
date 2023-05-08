@@ -280,6 +280,9 @@
     text-align: justify;
 }
 @media only screen and (max-width: 600px) {
+    .equipos_section2_column{
+        padding-top: calc(5.88vh*3);
+    }
     .equipos_section2_column>h1{
         font-size: 4vh;
         margin-top: calc(5.88vh*0.1);

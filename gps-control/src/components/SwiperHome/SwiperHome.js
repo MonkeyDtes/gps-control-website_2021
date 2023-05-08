@@ -14,9 +14,7 @@ const SwiperHome = () => {
         alignItems: "center",
       }}>
         <Swiper
-             style={{
-                height:"80vh"                
-            }}
+          className="swiper_home"
           centeredSlides={true}
           navigation={true}
           modules={[ Pagination, Navigation]}

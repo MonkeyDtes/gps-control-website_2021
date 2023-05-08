@@ -102,6 +102,12 @@
         height: calc(5.88vh);
     }
     .apps_section1_buttons{
-        margin-bottom: calc(5.88vh);
+        margin-bottom: calc(5.88vh*2);
+    }
+    .apps_section1>h1{
+        margin-top: calc(5.88vh*6);
+    }
+    .apps_section1{
+        height: 140vh;
     }
 }

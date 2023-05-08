@@ -117,10 +117,16 @@
     color: white;
 }
 .swiper-button-prev,.swiper-button-next{
-    opacity: 0;
+    opacity: 1;
+   
+}
+.swiper_apps>div:nth-child(3){
+    margin-right: calc(8.33vw*2);
+
 }
 .swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled{
-    opacity: 0;
+    opacity: 1;
+    
 }
 @media only screen and (max-width: 600px) {
     .swiper_apps_slide_clicked{

@@ -1,10 +1,10 @@
 import NavbarGPS from "../../components/NavbarGPS";
 import "./plataforma.css"
 import PlataformaPantallas from "../../assets/PlataformaPantallas.png"
-import videoPlataforma from "../../assets/videoPlataforma.svg"
 import GifGPS from "../../components/gifGPS/index";
 import Leads from "../../components/Leads/index";
 import Footer from "../../components/Footer/index";
+import YoutubeEmbed from "../../components/youtubeVideos/index";
 
 export default function Plataforma(){
     return(
@@ -66,7 +66,7 @@ export default function Plataforma(){
                 </div>                
             </section>
             <section className="plataforma_section2">
-                <img alt="video yt" src={videoPlataforma}></img>
+                <YoutubeEmbed embedId="HqHACFImhZ0"></YoutubeEmbed>
                 <div className="plataforma_section2_body">
                     <div className="plataforma_section2_body_line">
 

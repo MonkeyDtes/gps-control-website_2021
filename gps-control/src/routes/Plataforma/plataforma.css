@@ -185,9 +185,10 @@
     }
     .plataforma_section2{
         flex-direction: column;
+        height: 150vh;
     }
     .plataforma_section2_body{
-        margin-top: calc(5.88vh*2);
+        margin-top: calc(5.88vh*9);
         width: calc(8.33vw*8);
         margin-left: calc(8.33vw*2);
 
@@ -197,6 +198,12 @@
         width: calc(8.33vw*8);
         margin-left: calc(8.33vw*2);
         margin-top: calc(5.88vh*3);
+    }
+    .plataforma_section1_header{
+        margin-top: calc(5.88vh*2);
+    }
+    .plataforma_section1{
+        height: 130vh;
     }
     
 }

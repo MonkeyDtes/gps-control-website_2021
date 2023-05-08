@@ -1,13 +1,14 @@
 import NavbarGPS from "../../components/NavbarGPS/index";
-import SwiperHome from "../../components/SwiperHome/index";
-import iconosGroup from "../../assets/iconosGroup.svg"
+import iconsVertical from "../../assets/iconsVertical.svg"
 import wifiIcon from "../../assets/wifiIcon.svg"
 import cotizacion from "../../assets/cotizacion.svg"
 import pantallasHome from "../../assets/pantallasHome.png"
 import combustible from "../../assets/Combustible.png"
 import circuloHome from "../../assets/circuloHome.svg"
 import vigilanciaHome from "../../assets/vigilanciaHome.png"
+import homeBG from "../../assets/homeBG.jpg"
 import camHome from "../../assets/camHome.png"
+import bgPortadaHome from "../../assets/bgPortadaHome.mp4"
 import GifGPS from "../../components/gifGPS/index"
 import "./home.css"
 import SwiperAppsHome from "../../components/SwiperAppsHome/index";
@@ -23,14 +24,21 @@ export default function Home(){
             <NavbarGPS Home={true} Plataforma={false} Equipos={false} transporte={false} Apps={false} Promociones={false}></NavbarGPS>
             <GifGPS type="2"></GifGPS>
             <section className="home_section1">
-                <SwiperHome></SwiperHome>
-                <div className="home_section1_end">
-                    <div className="home_section1_column"></div>
+                <video autoPlay loop muted>
+                    <source src={bgPortadaHome} type="video/mp4" />
+                </video>
+                <div className="home_section1_start">
+                    <h1>Control is better</h1>
+                    <h2>BEYOND CONTROL</h2>
                     <div className="home_section1_icons">
-                        <img alt="Grupo iconos" src={iconosGroup}></img>
+                        <img alt="Grupo iconos" src={iconsVertical}></img>
                     </div>
-
                 </div>
+                <div className="home_section1_end">
+                    <img alt="camiones home" src={homeBG}></img>
+                    <p> Creamos soluciones tecnológicas, en un ecosistema integrado por un software robusto de tracking y monitoreo en tiempo real, todo en una sola plataforma.</p>
+                </div>
+                <div className="home_section1_column"></div>
                 
             </section>
             <section className="home_section2">

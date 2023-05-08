@@ -90,8 +90,10 @@ export default function Soluciones(){
                             
                             
                             <div className="soluciones_section1_greenColumn"></div>
-                            <GifGPS type="2"></GifGPS>
-                            
+                            <div className="gif_soluciones">
+                                <GifGPS type="2"></GifGPS>
+
+                            </div>
 
                         </div>):(<></>)
                     }
@@ -114,7 +116,10 @@ export default function Soluciones(){
                             </div>
                             <img alt="camara" src={eyeSensor}></img>
                             <div className="soluciones_section_greenColumn"></div>
-                            <GifGPS type="1"></GifGPS>
+                            <div className="gif_soluciones">
+                                <GifGPS type="1"></GifGPS>
+
+                            </div>
                             
 
                         </div>):(<></>)
@@ -139,7 +144,10 @@ export default function Soluciones(){
                             </div>
                             <img alt="camara" src={FMB_120}></img>
                             <div className="soluciones_section_greenColumn"></div>
-                            <GifGPS type="1"></GifGPS>
+                            <div className="gif_soluciones">
+                                <GifGPS type="1"></GifGPS>
+
+                            </div>
                             
 
                         </div>):(<></>)
@@ -163,7 +171,10 @@ export default function Soluciones(){
                             </div>
                             <img alt="camara" src={Llaves_Dallas}></img>
                             <div className="soluciones_section_greenColumn"></div>
-                            <GifGPS type="1"></GifGPS>
+                            <div className="gif_soluciones">
+                                <GifGPS type="1"></GifGPS>
+
+                            </div>
                             
 
                         </div>):(<></>)
@@ -187,7 +198,12 @@ export default function Soluciones(){
                             </div>
                             <img alt="camara" src={LECTOR_QR}></img>
                             <div className="soluciones_section_greenColumn"></div>
-                            <GifGPS type="1"></GifGPS>
+                            <div className="gif_soluciones">
+                                <GifGPS type="1"></GifGPS>
+
+                            </div>
+                            
+                            
                             
 
                         </div>):(<></>)

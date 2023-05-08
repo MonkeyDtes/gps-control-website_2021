@@ -70,8 +70,11 @@
     margin-right: calc(8.33vw*0.1);
 }
 @media only screen and (max-width: 600px) {
+    .promociones_section{
+        height: 120vh;
+    }
     .promociones_section_body{
-        margin-top: calc(5.88vh*2);
+        margin-top: calc(5.88vh*7);
     }
     .promociones_section_body>div{
         font-size: 1.5vh;
