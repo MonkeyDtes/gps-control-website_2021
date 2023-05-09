@@ -1,113 +1,107 @@
-.apps_section1{
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    background-color: #EEE8F2;
+.apps_section1 {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #eee8f2;
 }
-.apps_section1>h1{
-    
-    margin-top: calc(5.88vh*2);
-    margin-left: calc(8.33vw);
-    font-family: 'Bahnschrift';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 4vh;
-    line-height: 72px;
-    color: #6B6B6B;
-
+.apps_section1 > h1 {
+  margin-top: calc(5.88vh * 2);
+  margin-left: calc(8.33vw);
+  font-family: "Bahnschrift";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4vh;
+  line-height: 72px;
+  color: #6b6b6b;
 }
-.apps_section1_buttons{
-    display: flex;
-    flex-direction: row;
-    margin-left: calc(8.33vw);
-
+.apps_section1_buttons {
+  display: flex;
+  flex-direction: row;
+  margin-left: calc(8.33vw);
 }
-.apps_section1_buttons_top>button{
-    display: flex;
-    flex-direction: row;
-    background-color: transparent;
-    border: none;
-    justify-content: flex-start;
-    align-items: center;
-    height: calc(5.88vh*0.8);
-    font-family: 'Bahnschrift';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 1.5vh;
-    margin-bottom: calc(5.88vh*0.5);
-    color: #6B6B6B;
-    text-align: justify;
-    margin-right: calc(8.33vw*0.5);
-
+.apps_section1_buttons_top > button {
+  display: flex;
+  flex-direction: row;
+  background-color: transparent;
+  border: none;
+  justify-content: flex-start;
+  align-items: center;
+  height: calc(5.88vh * 0.8);
+  font-family: "Bahnschrift";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.5vh;
+  margin-bottom: calc(5.88vh * 0.5);
+  color: #6b6b6b;
+  text-align: justify;
+  margin-right: calc(8.33vw * 0.5);
 }
-.apps_section1_buttons_bot>button{
-    display: flex;
-    flex-direction: row;
-    background-color: transparent;
-    border: none;
-    justify-content: flex-start;
-    align-items: center;
-    height: calc(5.88vh*0.8);
-    font-family: 'Bahnschrift';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 1.5vh;
-    margin-bottom: calc(5.88vh*0.5);
-    color: #6B6B6B;
-    text-align: justify;
-    margin-right: calc(8.33vw*0.5);
-
+.apps_section1_buttons_bot > button {
+  display: flex;
+  flex-direction: row;
+  background-color: transparent;
+  border: none;
+  justify-content: flex-start;
+  align-items: center;
+  height: calc(5.88vh * 0.8);
+  font-family: "Bahnschrift";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.5vh;
+  margin-bottom: calc(5.88vh * 0.5);
+  color: #6b6b6b;
+  text-align: justify;
+  margin-right: calc(8.33vw * 0.5);
 }
 
-.apps_button_check{
-    height: 20px;
-    width: 20px;
-    background-color: red;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 1vw;
-    box-shadow: 0px 4px 4px #030D4F;
+.apps_button_check {
+  height: 20px;
+  width: 20px;
+  background-color: red;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1vw;
+  box-shadow: 0px 4px 4px #030d4f;
 }
-.apps_button_dontcheck{
-    height: 20px;
-    width: 20px;
-    background-color: #6B6B6B;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 1vw;    
-    opacity: 0.2;
-    box-shadow: 0px 4px 4px #030D4F;
-
+.apps_button_dontcheck {
+  height: 20px;
+  width: 20px;
+  background-color: #6b6b6b;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1vw;
+  opacity: 0.2;
+  box-shadow: 0px 4px 4px #030d4f;
 }
-.apps_section1_buttons_top{
-    display: flex;
-    flex-direction: row;
+.apps_section1_buttons_top {
+  display: flex;
+  flex-direction: row;
 }
-.apps_section1_buttons_bot{
-    display: flex;
-    flex-direction: row;
+.apps_section1_buttons_bot {
+  display: flex;
+  flex-direction: row;
 }
 @media only screen and (max-width: 600px) {
-    .apps_section1_buttons_top{
-        flex-direction:column;
-        height: calc(5.88vh);
-    }
-    .apps_section1_buttons_bot{
-        flex-direction:column;
-        height: calc(5.88vh);
-    }
-    .apps_section1_buttons{
-        margin-bottom: calc(5.88vh*2);
-    }
-    .apps_section1>h1{
-        margin-top: calc(5.88vh*6);
-    }
-    .apps_section1{
-        height: 140vh;
-    }
+  .apps_section1_buttons_top {
+    flex-direction: column;
+    height: calc(5.88vh);
+  }
+  .apps_section1_buttons_bot {
+    flex-direction: column;
+    height: calc(5.88vh);
+  }
+  .apps_section1_buttons {
+    margin-bottom: calc(5.88vh * 2);
+  }
+  .apps_section1 > h1 {
+    margin-top: calc(5.88vh * 6);
+  }
+  .apps_section1 {
+    height: 140vh;
+  }
 }

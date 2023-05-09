@@ -1,15 +1,14 @@
-.swiperAppsHome{
-    height: calc(5.88vh*12) !important;
-    width: 100% !important;    
-    margin-top: calc(5.88vh*1) !important;
-    
+.swiperAppsHome {
+  height: calc(5.88vh * 12) !important;
+  width: 100% !important;
+  margin-top: calc(5.88vh * 1) !important;
 }
-.swiperAppsHome_slide{
-    display: flex;
-    flex-direction: column;
-    background-color: transparent;
-    align-items: center;
+.swiperAppsHome_slide {
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  align-items: center;
 }
-.swiperAppsHome_slide>img{
-    width: calc(8.33vw*9);
+.swiperAppsHome_slide > img {
+  width: calc(8.33vw * 9);
 }
