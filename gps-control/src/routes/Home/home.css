@@ -169,6 +169,7 @@
 }
 .home_section2_camara {
   position: absolute;
+  z-index: 3;
 }
 .home_section2_camara > img {
   width: calc(8.33vw * 3);
@@ -217,7 +218,8 @@
 .home_section1 > video {
   position: absolute;
   width: 100vw;
-  height: auto;
+  height: inherit;
+  object-fit: cover;
   mix-blend-mode: multiply;
 }
 .home_section1_start {
@@ -269,6 +271,10 @@
 .home_section1_text {
   display: flex;
   flex-direction: row;
+}
+.home_section1_column>img{
+  width: calc(8.33vw*2);
+  height: inherit;
 }
 @media only screen and (max-width: 600px) {
   .home_section1_end_body {

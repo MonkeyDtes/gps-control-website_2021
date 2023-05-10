@@ -6,6 +6,7 @@ import pantallasHome from "../../assets/pantallasHome.png";
 import combustible from "../../assets/Combustible.png";
 import circuloHome from "../../assets/circuloHome.svg";
 import vigilanciaHome from "../../assets/vigilanciaHome.png";
+import homeDownButton from "../../assets/homeDownButton.svg"
 import homeBG from "../../assets/homeBG.jpg";
 import camHome from "../../assets/camHome.png";
 import bgPortadaHome from "../../assets/bgPortadaHome.mp4";
@@ -17,6 +18,7 @@ import Leads from "../../components/Leads";
 import Footer from "../../components/Footer/index";
 import { useRef } from "react";
 export default function Home() {
+  
   const sectionRef = useRef(null);
   return (
     <div>
@@ -30,7 +32,7 @@ export default function Home() {
       ></NavbarGPS>
       <GifGPS type="2"></GifGPS>
       <section className="home_section1">
-        <video autoPlay loop muted>
+        <video playsInline autoPlay loop muted>
           <source src={bgPortadaHome} type="video/mp4" />
         </video>
         <div className="home_section1_start">
@@ -53,7 +55,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="home_section1_column"></div>
+        <div className="home_section1_column">
+          <img alt="home Down" src={homeDownButton}></img>
+        </div>
       </section>
       <section className="home_section2">
         <div className="home_column_red"></div>

@@ -47,11 +47,10 @@ export default function NavbarGPS(e) {
     }
   };
   const [showTopBtn, setShowTopBtn] = useState(false);
-  const [showTopBtnClick, setShowTopBtnClick] = useState(false);
   useEffect(() => {
     if (windowSize.current[0] > 600) {
       window.addEventListener("scroll", () => {
-        if (window.scrollY > 5 && showTopBtnClick === false) {
+        if (window.scrollY > 5 ) {
           setShowTopBtn(true);
         } else {
           setShowTopBtn(false);
@@ -60,13 +59,11 @@ export default function NavbarGPS(e) {
     } else {
       setShowTopBtn(true);
     }
-  }, [windowWidth, showTopBtnClick]);
+  }, [windowWidth]);
   const handleClickBurguer = () => {
-    setShowTopBtnClick(true);
     setShowTopBtn(false);
   };
   const handleClickClose = () => {
-    setShowTopBtnClick(false);
     setShowTopBtn(true);
   };
   const goToTop = () => {

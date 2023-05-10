@@ -4,10 +4,11 @@
   margin-top: calc(5.88vh * 1) !important;
 }
 .swiperAppsHome_slide {
-  display: flex;
+  display: flex !important;
   flex-direction: column;
   background-color: transparent;
   align-items: center;
+  justify-content: center
 }
 .swiperAppsHome_slide > img {
   width: calc(8.33vw * 9);
