@@ -8,6 +8,7 @@ import Equipos from "./routes/Equipos/index";
 import Promociones from "./routes/Promociones/index";
 import Apps from "./routes/Apps/index";
 import Soluciones from "./routes/Soluciones/index";
+import NotFound from "./routes/404";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/promociones" element={<Promociones />} />
           <Route path="/apps" element={<Apps />} />
           <Route path="/soluciones" element={<Soluciones></Soluciones>}></Route>
+          <Route path="*" element={<NotFound></NotFound>}></Route>
         </Routes>
       </ThreeRouter>
     </div>

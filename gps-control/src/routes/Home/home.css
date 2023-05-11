@@ -283,7 +283,7 @@
   .home_section1_end_body > div > p {
     width: calc(8.33vw * 7);
 
-    font-size: 1.5vh;
+    font-size: 2vh;
   }
   .home_section1_end_body > div {
     z-index: 10;
@@ -303,15 +303,18 @@
     object-fit: cover;
   }
   .home_section2 {
-    height: 150vh;
+    height: 140vh;
   }
   .home_section1_column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     bottom: -20vh;
     height: calc(5.88vh * 6);
   }
   .home_column_red {
     position: absolute;
-    height: calc(5.88vh * 25.5);
+    height: 139.7vh
   }
   .home_section2_column {
     display: flex;
@@ -347,7 +350,7 @@
   .home_section2_body {
     display: flex;
     flex-direction: column;
-    font-size: 1.1vh;
+    font-size: 2vh;
     width: calc(8.33vw * 10);
   }
   .home_section2_body > div {
@@ -381,7 +384,8 @@
     margin-top: calc(5.88vh);
   }
   .home_section2_body > div {
-    margin-top: calc(5.88vh * 0.4);
+    width: calc(8.33vw*4);
+    margin-top: calc(5.88vh * 1);
   }
   .home_section2_group > button {
     width: calc(8.33vw * 4);
@@ -391,7 +395,7 @@
   .home_section2_combusible > img {
     width: calc(8.33vw * 8);
     margin-left: calc(8.33vw * 2.5);
-    margin-top: calc(5.88vh * 1.5);
+    margin-top: calc(5.88vh * 2);
   }
   .home_section2_camara > img {
     width: calc(8.33vw * 5);
@@ -428,5 +432,9 @@
   }
   .home_section1_end {
     align-items: center;
+  }
+  .home_section1_column>img{
+    height: auto;
+
   }
 }

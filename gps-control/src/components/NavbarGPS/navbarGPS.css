@@ -106,7 +106,7 @@ nav {
   color: #eb162c;
   width: calc(8.33vw * 2.3);
   height: 100%;
-  background: white;
+  background: #eee8f2;
   box-shadow: 14px -5px 8px rgba(0, 0, 0, 0.05);
   display: flex;
   flex-direction: row;
