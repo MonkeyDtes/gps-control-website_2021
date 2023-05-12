@@ -47,3 +47,42 @@
 .notFound_socialmedia>a{
     margin-inline:calc(8.33vw*0.2);
 }
+@media only screen and (max-width: 600px) {
+  .notFound_page {
+    width: 100%;
+  }
+
+.notFound_bg {
+  flex-direction: column-reverse;
+}
+.notFound_img > img {
+  height: calc(5.99vh*4);
+}
+.notFound_body{
+  margin-top: calc(5.88vh*4);
+}
+.notFound_body > p {
+  font-size: 1.5vh;
+  line-height: 18px;
+  width: calc(8.33vw * 8);
+}
+.notFound_body_label{
+  width: calc(8.33vw*9);
+  height: calc(5.88vh*1);
+}
+.notFound_body_label>a{
+  font-size: 1.5vh;
+}
+.notFound_body_label>img {
+  width: calc(8.33vw*1);
+}
+.notFound_socialmedia{
+  margin-top: calc(5.88vh*0.5);
+  margin-bottom: calc(5.88vh*0.5);
+}
+.notFound_socialmedia>a>img{
+  max-width: calc(8.33vw);
+  max-height: calc(5.88vh*0.5);
+  margin-inline: calc(8.33vw*.3);
+}
+}

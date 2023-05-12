@@ -42,7 +42,15 @@ const SwiperApps = (e) => {
         modules={[Pagination, Navigation]}
         initialSlide={0}
         mousewheel={true}
-        slidesPerView={4}
+        breakpoints={{
+          200: {
+            spaceBetween:10,
+            slidesPerView: 2,
+          },
+          650: {
+            slidesPerView: 4,
+          },
+        }}
         className="swiper_apps"
       >
         {button1 ? (

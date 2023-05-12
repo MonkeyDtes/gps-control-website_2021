@@ -12,7 +12,7 @@ import navbarLogowhite3 from "../../assets/navbarLogoWhite3.svg";
 import navbarLogo4 from "../../assets/navbarLogo4.svg";
 import navbarLogowhite4 from "../../assets/navbarLogoWhite4.svg";
 import navbarMail from "../../assets/navbarMail.svg";
-import navbarWa from "../../assets/navbarWa.svg";
+import navbarWa from "../../assets/waGreen.svg";
 import navbarYT from "../../assets/navbarYT.svg";
 import navbarTel from "../../assets/navbarPhone.svg";
 import ingresoLogo1 from "../../assets/ingresoLogo1.svg";
@@ -137,28 +137,27 @@ export default function NavbarGPS(e) {
               <img alt="mail" src={navbarMail}></img>
             </a>
             <a href="https://wa.me/qr/AFTZFJYUOAWOM1">
-              <img alt="telefono" src={navbarWa}></img>
+              <img alt="yt" src={navbarYT}></img>
             </a>
-            <a href="https://wa.me/qr/AFTZFJYUOAWOM1">
-              <img alt="WhatsApp" src={navbarYT}></img>
-            </a>
+            
             <a href="https://www.youtube.com/channel/UCYU-Vn3lnDLePlavejpZMBg">
-              <img alt="Youtube" src={navbarTel}></img>
+              <img alt="telefono" src={navbarTel}></img>
             </a>
           </div>
           <div className="navbar_ingresos">
+            <a href="https://wa.me/qr/AFTZFJYUOAWOM1">
+              <img alt="WhatsApp" src={navbarWa}></img>
+            </a>
+            <div className="text_suport">Asesoria por chat</div>
+            <a href="https://wa.me/message/Y3KRNJYESUPWL1">
+              <img alt="atencion al cliente" src={ingresoLogo1}></img>
+            </a>
+            <div className="text_suport">Soporte Técnico</div>
             <a href="https://tracking.gpscontrolcolombia.com/">
               <img alt="ingreso plataforma" src={ingresoLogo2}></img>
               <div>
                 <h2>Ingreso</h2>
                 <h2>plataforma</h2>
-              </div>
-            </a>
-            <a href="https://wa.me/message/Y3KRNJYESUPWL1">
-              <img alt="atencion al cliente" src={ingresoLogo1}></img>
-              <div>
-                <h2>Atención</h2>
-                <h2>Inmediata</h2>
               </div>
             </a>
           </div>
@@ -348,28 +347,27 @@ export default function NavbarGPS(e) {
               <img alt="mail" src={navbarMail}></img>
             </a>
             <a href="https://wa.me/qr/AFTZFJYUOAWOM1">
-              <img alt="telefono" src={navbarWa}></img>
+              <img alt="yt" src={navbarYT}></img>
             </a>
-            <a href="https://wa.me/qr/AFTZFJYUOAWOM1">
-              <img alt="WhatsApp" src={navbarYT}></img>
-            </a>
+            
             <a href="https://www.youtube.com/channel/UCYU-Vn3lnDLePlavejpZMBg">
-              <img alt="Youtube" src={navbarTel}></img>
+              <img alt="telefono" src={navbarTel}></img>
             </a>
           </div>
           <div className="navbar_ingresos">
+            <a href="https://wa.me/qr/AFTZFJYUOAWOM1">
+              <img alt="WhatsApp" src={navbarWa}></img>
+            </a>
+            <div className="text_suport">Asesoria por chat</div>
+            <a href="https://wa.me/message/Y3KRNJYESUPWL1">
+              <img alt="atencion al cliente" src={ingresoLogo1}></img>
+            </a>
+            <div className="text_suport">Soporte Técnico</div>
             <a href="https://tracking.gpscontrolcolombia.com/">
               <img alt="ingreso plataforma" src={ingresoLogo2}></img>
               <div>
                 <h2>Ingreso</h2>
                 <h2>plataforma</h2>
-              </div>
-            </a>
-            <a href="https://wa.me/message/Y3KRNJYESUPWL1">
-              <img alt="atencion al cliente" src={ingresoLogo1}></img>
-              <div>
-                <h2>Atención</h2>
-                <h2>Inmediata</h2>
               </div>
             </a>
           </div>
