@@ -29,7 +29,6 @@ export default function NavbarGPS(e) {
   const Promociones = e.Promociones;
   const windowSize = useRef([window.innerWidth, window.innerHeight]);
   const windowWidth = windowSize.current[0];
-
   const handleClick = (index) => {
     goToTop();
     if (index.currentTarget.id === "1") {
@@ -72,7 +71,6 @@ export default function NavbarGPS(e) {
       behavior: "smooth",
     });
   };
-
   return (
     <>
       {showTopBtn ? (
@@ -139,7 +137,6 @@ export default function NavbarGPS(e) {
             <a href="https://wa.me/qr/AFTZFJYUOAWOM1">
               <img alt="yt" src={navbarYT}></img>
             </a>
-            
             <a href="https://www.youtube.com/channel/UCYU-Vn3lnDLePlavejpZMBg">
               <img alt="telefono" src={navbarTel}></img>
             </a>
@@ -349,7 +346,6 @@ export default function NavbarGPS(e) {
             <a href="https://wa.me/qr/AFTZFJYUOAWOM1">
               <img alt="yt" src={navbarYT}></img>
             </a>
-            
             <a href="https://www.youtube.com/channel/UCYU-Vn3lnDLePlavejpZMBg">
               <img alt="telefono" src={navbarTel}></img>
             </a>

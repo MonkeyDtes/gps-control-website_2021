@@ -28,7 +28,6 @@ const SwiperApps = (e) => {
     setButton5(e.button5);
     setButton6(e.button6);
   }, [e.button1, e.button2, e.button3, e.button4, e.button5, e.button6]);
-
   return (
     <div
       style={{
@@ -36,7 +35,7 @@ const SwiperApps = (e) => {
         alignItems: "center",
       }}
     >
-      <Swiper
+      <Swiper 
         centeredSlides={true}
         navigation={true}
         modules={[Pagination, Navigation]}
@@ -44,7 +43,7 @@ const SwiperApps = (e) => {
         mousewheel={true}
         breakpoints={{
           200: {
-            spaceBetween:10,
+            spaceBetween: 10,
             slidesPerView: 2,
           },
           650: {
@@ -65,6 +64,11 @@ const SwiperApps = (e) => {
                 <img alt="usuario" src={appsUsuario}></img>INICIAR SESIÓN{" "}
               </a>
             </div>
+            <div className="text_suport_apps">
+              Aplicación informativa sobre los servicios realizados para su
+              flota. de todo tipo de trabajos y servicios, llevando un registro
+              de gastos en cada vehículo e incluso cada kilómetro.
+            </div>
           </SwiperSlide>
         ) : (
           <SwiperSlide className="swiper_apps_slide">
@@ -77,6 +81,11 @@ const SwiperApps = (e) => {
               <a href="https://fleetrun.wialon.com/login">
                 <img alt="usuario" src={appsUsuario}></img>INICIAR SESIÓN{" "}
               </a>
+            </div>
+            <div className="text_suport_apps">
+              Aplicación informativa sobre los servicios realizados para su
+              flota. de todo tipo de trabajos y servicios, llevando un registro
+              de gastos en cada vehículo e incluso cada kilómetro.
             </div>
           </SwiperSlide>
         )}
@@ -93,6 +102,11 @@ const SwiperApps = (e) => {
                 <img alt="usuario" src={appsUsuario}></img>INICIAR SESIÓN{" "}
               </a>
             </div>
+            <div className="text_suport_apps">
+              Herramienta de logística y entrega: planifica rutas, optimiza
+              transporte y ahorro de gastos. Contando con la versión web para
+              los operadores y la aplicación móvil para los conductores.
+            </div>
           </SwiperSlide>
         ) : (
           <SwiperSlide className="swiper_apps_slide">
@@ -105,6 +119,11 @@ const SwiperApps = (e) => {
               <a href="https://apps.wialon.com/logistics/?&lang=es#/">
                 <img alt="usuario" src={appsUsuario}></img>INICIAR SESIÓN{" "}
               </a>
+            </div>
+            <div className="text_suport_apps">
+              Herramienta de logística y entrega: planifica rutas, optimiza
+              transporte y ahorro de gastos. Contando con la versión web para
+              los operadores y la aplicación móvil para los conductores.
             </div>
           </SwiperSlide>
         )}
@@ -120,6 +139,12 @@ const SwiperApps = (e) => {
                 <img alt="usuario" src={appsUsuario}></img>INICIAR SESIÓN{" "}
               </a>
             </div>
+            <div className="text_suport_apps">
+              Desarrollada para la ejecución de operaciones de campo. Informando
+              sobre el registro de operaciones y productos agrícolas, guías
+              especiales, reportes detallados, todo lo necesario para una
+              eficiente gestión agrícola.
+            </div>
           </SwiperSlide>
         ) : (
           <SwiperSlide className="swiper_apps_slide">
@@ -132,6 +157,12 @@ const SwiperApps = (e) => {
               <a href="https://hecterra.wialon.com/login">
                 <img alt="usuario" src={appsUsuario}></img>INICIAR SESIÓN{" "}
               </a>
+            </div>
+            <div className="text_suport_apps">
+              Desarrollada para la ejecución de operaciones de campo. Informando
+              sobre el registro de operaciones y productos agrícolas, guías
+              especiales, reportes detallados, todo lo necesario para una
+              eficiente gestión agrícola.
             </div>
           </SwiperSlide>
         )}
@@ -147,6 +178,11 @@ const SwiperApps = (e) => {
                 <img alt="usuario" src={appsUsuario}></img>INICIAR SESIÓN{" "}
               </a>
             </div>
+            <div className="text_suport_apps">
+              Evalúa la calidad de conducción, los datos obtenidos capacitan a
+              los conductores, disminuir gastos en combustible, garantizar
+              seguridad de transporte de pasajeros y de carga.
+            </div>
           </SwiperSlide>
         ) : (
           <SwiperSlide className="swiper_apps_slide">
@@ -159,6 +195,11 @@ const SwiperApps = (e) => {
               <a href="https://apps.wialon.com/ecodriving/">
                 <img alt="usuario" src={appsUsuario}></img>INICIAR SESIÓN{" "}
               </a>
+            </div>
+            <div className="text_suport_apps">
+              Evalúa la calidad de conducción, los datos obtenidos capacitan a
+              los conductores, disminuir gastos en combustible, garantizar
+              seguridad de transporte de pasajeros y de carga.
             </div>
           </SwiperSlide>
         )}
@@ -174,6 +215,12 @@ const SwiperApps = (e) => {
                 <img alt="usuario" src={appsUsuario}></img>INICIAR SESIÓN{" "}
               </a>
             </div>
+            <div className="text_suport_apps">
+              Chatterbox es una aplicación que permite al operador comunicarse
+              con los conductores y enviar varios comandos a la unidad. Los
+              mensajes pueden enviarse vía Internet (conexión TCP, UDP) o como
+              SMS.
+            </div>
           </SwiperSlide>
         ) : (
           <SwiperSlide className="swiper_apps_slide">
@@ -186,6 +233,12 @@ const SwiperApps = (e) => {
               <a href="https://apps.wialon.com/chatterbox/">
                 <img alt="usuario" src={appsUsuario}></img>INICIAR SESIÓN{" "}
               </a>
+            </div>
+            <div className="text_suport_apps">
+              Chatterbox es una aplicación que permite al operador comunicarse
+              con los conductores y enviar varios comandos a la unidad. Los
+              mensajes pueden enviarse vía Internet (conexión TCP, UDP) o como
+              SMS.
             </div>
           </SwiperSlide>
         )}
@@ -201,6 +254,11 @@ const SwiperApps = (e) => {
                 <img alt="usuario" src={appsUsuario}></img>INICIAR SESIÓN{" "}
               </a>
             </div>
+            <div className="text_suport_apps">
+              Esta aplicación conecta los dispositivos móviles como herramientas
+              de rastreo, permite hacer seguimiento de diferentes tareas y
+              controla su ejecución de forma remota.
+            </div>
           </SwiperSlide>
         ) : (
           <SwiperSlide className="swiper_apps_slide">
@@ -213,6 +271,11 @@ const SwiperApps = (e) => {
               <a href="https://configurator.wialon.com/login ">
                 <img alt="usuario" src={appsUsuario}></img>INICIAR SESIÓN{" "}
               </a>
+            </div>
+            <div className="text_suport_apps">
+              Esta aplicación conecta los dispositivos móviles como herramientas
+              de rastreo, permite hacer seguimiento de diferentes tareas y
+              controla su ejecución de forma remota.
             </div>
           </SwiperSlide>
         )}

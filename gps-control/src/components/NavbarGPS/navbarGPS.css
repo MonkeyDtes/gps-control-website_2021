@@ -15,6 +15,7 @@
 }
 .navbar_contacts > a {
   width: calc(8.33vw * 0.34);
+  height: calc(5.88vh*0.5);
   margin-bottom: calc(5.88vh * 0.1);
   border: none;
   display: flex;
@@ -30,16 +31,13 @@
   height: calc(5.88vh * 0.3);
 }
 .navbar_contacts > a:nth-child(1) {
-  background-color: #ed2f4c;
+  background-color: #030D4F;
 }
 .navbar_contacts > a:nth-child(2) {
-  background-color: #6b6b6b;
+  background-color: #6B6B6B;
 }
 .navbar_contacts > a:nth-child(3) {
-  background-color: #1e8c93;
-}
-.navbar_contacts > a:nth-child(4) {
-  background-color: #eb162c;
+  background-color: #ED2F4C;
 }
 .navbar_contacts > a:hover {
   opacity: 0.7;

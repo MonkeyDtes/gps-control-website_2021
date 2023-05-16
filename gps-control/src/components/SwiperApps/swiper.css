@@ -127,6 +127,35 @@
 .swiper-button-prev.swiper-button-disabled {
   opacity: 1;
 }
+.text_suport_apps {
+  opacity: 0;
+  position: fixed;
+  font-family: "Bahnschrift";
+  font-style: normal;
+  font-weight: 300;
+  background-color: #6B6B6B;
+  color: #eee8f2;
+  padding-inline: 1.5vw;
+  z-index: 3;
+}
+.swiper_apps_slide:hover>  .text_suport_apps{
+  opacity: 1;
+}
+.swiper_apps_slide_clicked:hover>  .text_suport_apps{
+  opacity: 1;
+}
+.swiper_apps:hover + .text_suport_apps{
+  opacity: 1;
+}
+.text_suport_apps:nth-child(2) {
+  bottom: calc(8.33vh * 2.5);
+  left: calc(5.88vh * 1.5);
+}
+.text_suport_apps:nth-child(4) {
+  bottom: calc(8.33vh * 1.7);
+  left: calc(5.88vh * 1.5);
+}
+
 @media only screen and (max-width: 600px) {
   .swiper_apps_slide_clicked {
     width: calc(8.33vw * 6) !important;

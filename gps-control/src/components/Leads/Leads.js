@@ -18,7 +18,6 @@ export default function Leads() {
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
-
   const handleSubmit = (e) => {
     e.preventDefault();
     emailjs
@@ -33,7 +32,6 @@ export default function Leads() {
           console.log(result.text);
           window.location.reload(false);
           alert("Su correo ha sido enviado");
-
           // Hacer algo cuando se envió el correo electrónico con éxito
         },
         (error) => {
@@ -55,6 +53,9 @@ export default function Leads() {
   return (
     <section className="leads_page">
       <div className="leads_page_background">
+        <div className="leads_page_start_bg">
+          
+        </div>
         <div className="leads_page_start">
           <div className="leads_page_end_img_white">
             <img alt="iconosHome" src={iconosWhite}></img>
@@ -160,13 +161,6 @@ export default function Leads() {
           <div className="leads_page_end_img">
             <img alt="iconosHome" src={iconosGroup}></img>
           </div>
-
-          <div className="leads_page_end_cuadro"></div>
-          <div className="leads_page_end_cuadro"></div>
-          <div className="leads_page_end_cuadro"></div>
-          <div className="leads_page_end_cuadro"></div>
-          <div className="leads_page_end_cuadro"></div>
-          <div className="leads_page_end_cuadro"></div>
         </div>
       </div>
     </section>

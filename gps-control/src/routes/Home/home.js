@@ -6,7 +6,7 @@ import pantallasHome from "../../assets/pantallasHome.png";
 import combustible from "../../assets/Combustible.png";
 import circuloHome from "../../assets/circuloHome.svg";
 import vigilanciaHome from "../../assets/vigilanciaHome.png";
-import homeDownButton from "../../assets/homeDownButton.svg"
+import homeDownButton from "../../assets/homeDownButton.svg";
 import homeBG from "../../assets/homeBG.jpg";
 import camHome from "../../assets/camHome.png";
 import bgPortadaHome from "../../assets/bgPortadaHome.mp4";
@@ -17,8 +17,8 @@ import playGreen from "../../assets/playGreen.svg";
 import Leads from "../../components/Leads";
 import Footer from "../../components/Footer/index";
 import { useRef } from "react";
+
 export default function Home() {
-  
   const sectionRef = useRef(null);
   return (
     <div>
@@ -35,9 +35,16 @@ export default function Home() {
         <video playsInline autoPlay loop muted>
           <source src={bgPortadaHome} type="video/mp4" />
         </video>
-        <div className="home_section1_start">
-          <h1>Control is better</h1>
-          <h2>BEYOND CONTROL</h2>
+        <div className="home_section1_header">
+          <div className="home_section1_start">
+            <h1>Control is better</h1>
+            <h2>BEYOND CONTROL</h2>
+          </div>
+          <div className="home_section1_header_end">
+            <div>sensores remotos</div>
+            <div>gestión de flotas</div>
+            <div>monitoreo gps</div>
+          </div>
         </div>
         <div className="home_section1_end">
           <div className="home_section1_icons">
@@ -142,7 +149,6 @@ export default function Home() {
               <h2>Vehicular</h2>
             </div>
           </div>
-
           <div className="home_section2_group">
             <div className="home_section2_body">
               <div>Evitar accidentes</div>
@@ -177,7 +183,6 @@ export default function Home() {
           <h2>Aplicaciones</h2>
         </div>
         <SwiperAppsHome></SwiperAppsHome>
-
         <div className="home_column_red_end"></div>
       </section>
       <section ref={sectionRef}></section>
