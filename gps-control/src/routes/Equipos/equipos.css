@@ -89,11 +89,17 @@
 .equipos_section2_start {
   width: 50%;
   height: 100vh;
-  background-color: #eb162b;
-  mix-blend-mode: multiply;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  isolation: isolate;
+}
+.equipos_section2_startbg{
+  position: absolute;
+  width: 50%;
+  height: 100vh;
+  background-color: #eb162b;
+  mix-blend-mode: multiply;
 }
 .equipos_section2_start_column {
   display: flex;
@@ -109,13 +115,14 @@
   font-style: normal;
   font-weight: 900;
   font-size: 6.3vh;
-  margin-right: 1.2vw;
+  margin-right: 2vw;
   text-align: center;
   writing-mode: vertical-rl;
   text-orientation: upright;
   mix-blend-mode: normal;
   color: white;
   line-height: 0vh;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
 .equipos_section2_start_buttons {
   width: 100%;
@@ -235,24 +242,32 @@
 .equipos_section3_end {
   width: 50%;
   height: 100vh;
-  background-color: #eb162b;
-  mix-blend-mode: multiply;
+  isolation: isolate;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+.equipos_section3_end_bg {
+  position: absolute;
+  right: 0vw;
+  width: 50%;
+  height: 100vh;
+  background-color: #eb162b;
+  mix-blend-mode: multiply;
 }
 .equipos_section3_end > h1 {
   font-family: "Kiona";
   font-style: normal;
   font-weight: 900;
   font-size: 6.3vh;
-  margin-left: 1.2vw;
+  margin-left: 1.7vw;
   text-align: center;
   writing-mode: vertical-rl;
   text-orientation: upright;
   mix-blend-mode: normal;
   color: white;
   line-height: 0vh;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
 .equipos_section3_end_column {
   display: flex;

@@ -13,6 +13,7 @@ export default function Apps() {
   const [button4, setButton4] = useState(false);
   const [button5, setButton5] = useState(false);
   const [button6, setButton6] = useState(false);
+  const [focusOnSlide, setFocusOnSlide] = useState(0);
 
   const HandleClick = (index) => {
     if (index.currentTarget.id === "1") {
@@ -22,6 +23,7 @@ export default function Apps() {
       setButton4(false);
       setButton5(false);
       setButton6(false);
+      setFocusOnSlide(0)
     } else if (index.currentTarget.id === "2") {
       setButton1(false);
       setButton2(true);
@@ -29,6 +31,7 @@ export default function Apps() {
       setButton4(false);
       setButton5(false);
       setButton6(false);
+      setFocusOnSlide(1)
     } else if (index.currentTarget.id === "3") {
       setButton1(false);
       setButton2(false);
@@ -36,6 +39,7 @@ export default function Apps() {
       setButton4(false);
       setButton5(false);
       setButton6(false);
+      setFocusOnSlide(2)
     } else if (index.currentTarget.id === "4") {
       setButton1(false);
       setButton2(false);
@@ -43,6 +47,7 @@ export default function Apps() {
       setButton4(true);
       setButton5(false);
       setButton6(false);
+      setFocusOnSlide(3)
     } else if (index.currentTarget.id === "5") {
       setButton1(false);
       setButton2(false);
@@ -50,6 +55,7 @@ export default function Apps() {
       setButton4(false);
       setButton5(true);
       setButton6(false);
+      setFocusOnSlide(4)
     } else if (index.currentTarget.id === "6") {
       setButton1(false);
       setButton2(false);
@@ -57,6 +63,7 @@ export default function Apps() {
       setButton4(false);
       setButton5(false);
       setButton6(true);
+      setFocusOnSlide(5)
     }
   };
   return (
@@ -151,6 +158,7 @@ export default function Apps() {
           button4={button4}
           button5={button5}
           button6={button6}
+          focusOnSlide={focusOnSlide} 
         ></SwiperApps>
       </section>
       <Leads></Leads>

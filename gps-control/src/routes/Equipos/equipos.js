@@ -39,6 +39,7 @@ export default function equipos() {
         </div>
       </section>
       <section className="equipos_section2">
+        <div className="equipos_section2_startbg"></div>
         <div className="equipos_section2_start">
           <div className="equipos_section2_start_column">
             <div className="equipos_section2_start_buttons">
@@ -129,6 +130,7 @@ export default function equipos() {
 
           <img alt="suntech" src={FMC920}></img>
         </div>
+        <div className="equipos_section3_end_bg"></div>
         <div className="equipos_section3_end">
           <h1>TRANSPORTE</h1>
           <div className="equipos_section3_end_column">
@@ -152,6 +154,7 @@ export default function equipos() {
         </div>
       </section>
       <section className="equipos_section4">
+        <div className="equipos_section2_startbg"></div>
         <div className="equipos_section2_start">
           <div className="equipos_section2_start_column">
             <div className="equipos_section2_start_buttons">

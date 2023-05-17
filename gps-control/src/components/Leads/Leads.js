@@ -53,10 +53,9 @@ export default function Leads() {
   return (
     <section className="leads_page">
       <div className="leads_page_background">
-        <div className="leads_page_start_bg">
-          
-        </div>
+        <div className="leads_page_start_bg"></div>
         <div className="leads_page_start">
+          <p className="leads_page_start_text">Aumenta la productividad de tu flota con nuestra plataforma de gestión lógistica. Todos los beneficios están incluidos por una misma mensualidad. llena el formulario y obtén una asesoría completa.</p>
           <div className="leads_page_end_img_white">
             <img alt="iconosHome" src={iconosWhite}></img>
           </div>
@@ -106,7 +105,7 @@ export default function Leads() {
                       <div className="dot"></div>
                     </div>
                   ) : (
-                    <div className="soluciones_button_dontcheck"></div>
+                    <div className="leads_button_dontcheck"></div>
                   )}{" "}
                   Empresa
                 </button>

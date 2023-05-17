@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper";
 import SwiperCore, { Keyboard, Mousewheel } from "swiper/core";
@@ -20,6 +20,9 @@ const SwiperApps = (e) => {
   const [button4, setButton4] = useState(e.button4);
   const [button5, setButton5] = useState(e.button5);
   const [button6, setButton6] = useState(e.button6);
+  const [swiper, setSwiper] = useState(null);
+
+  const swiperRef = useRef(null);
   useEffect(() => {
     setButton1(e.button1);
     setButton2(e.button2);
@@ -27,7 +30,26 @@ const SwiperApps = (e) => {
     setButton4(e.button4);
     setButton5(e.button5);
     setButton6(e.button6);
-  }, [e.button1, e.button2, e.button3, e.button4, e.button5, e.button6]);
+    focusSlide(e.focusOnSlide);
+  }, [
+    e.button1,
+    e.button2,
+    e.button3,
+    e.button4,
+    e.button5,
+    e.button6,
+    e.focusOnSlide,
+  ]);
+
+  const handleSwiperInit = (swiper) => {
+    setSwiper(swiper);
+  };
+
+  const focusSlide = (slideIndex) => {
+    if (swiper) {
+      swiper.slideTo(slideIndex);
+    }
+  };
   return (
     <div
       style={{
@@ -35,12 +57,14 @@ const SwiperApps = (e) => {
         alignItems: "center",
       }}
     >
-      <Swiper 
+      <Swiper
         centeredSlides={true}
         navigation={true}
         modules={[Pagination, Navigation]}
         initialSlide={0}
         mousewheel={true}
+        ref={swiperRef}
+        onSwiper={(swiper) => handleSwiperInit(swiper)}
         breakpoints={{
           200: {
             spaceBetween: 10,
