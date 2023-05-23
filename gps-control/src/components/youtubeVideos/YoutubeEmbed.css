@@ -14,5 +14,6 @@
   .video-responsive iframe {
     width: calc(8.33vw * 8);
     margin-left: calc(8.33vw * 2);
+    height: calc(5.88vh*4);
   }
 }

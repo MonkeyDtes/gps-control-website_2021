@@ -63,6 +63,7 @@ export default function Plataforma() {
         <div className="plataforma_sectionq_body_text_a3">
           <div>SEGUIMIENTO EN TIEMPO REAL</div>
         </div>
+        <img alt="pantallas plataforma" src={PlataformaPantallas}></img>
       </section>
       <Leads></Leads>
       <Footer></Footer>

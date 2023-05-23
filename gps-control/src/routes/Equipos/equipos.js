@@ -9,6 +9,7 @@ import FMC920 from "../../assets/FMC_920.png";
 import GifGPS from "../../components/gifGPS/index";
 import Leads from "../../components/Leads/index";
 import Footer from "../../components/Footer/index";
+import VectorsensorEquipos from "../../assets/VectorsensorEquipos.svg"
 
 export default function equipos() {
   return (
@@ -25,6 +26,15 @@ export default function equipos() {
       <section className="equipos_section1">
         <div className="equipos_section1_bg">
           <div className="equipos_section2_column">
+            <div className="equipos_section1_sensor">
+              <img alt="sensor de combustible" src={VectorsensorEquipos}></img>
+              <div className="equipos_section1_sensor_text">
+                Sensor de combustible
+              </div>
+            </div>
+            <div className="main_box_pedestales_sensor">
+                <div className="pedestales_sensor"></div>
+              </div>
             <div className="equipos_section2_circleIcon">
               <img alt="wifi icon" src={circuloHome}></img>
             </div>

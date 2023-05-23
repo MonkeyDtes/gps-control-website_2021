@@ -269,15 +269,20 @@ textarea {
     height: calc(5.88vh * 0.7);
     align-self: self-start;
     margin-top: calc(5.88vh);
-    margin-left: calc(8.33vw * 2);
+    margin-left: calc(8.33vw * 1.7);
     z-index: 1;
   }
   .leads_page_end_img_white > img {
     height: calc(5.88vh * 0.7);
   }
+  .leads_page_end_img{
+    margin: 0vh;
+    opacity: 0;
+  }
   .leads_page_end_img > img {
     height: 0vh;
     width: 0vw;
+    margin: 0vh;
   }
   .leads_buttons{
     margin-left: 0vw;

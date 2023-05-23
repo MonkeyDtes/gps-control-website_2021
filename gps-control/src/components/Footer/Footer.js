@@ -30,7 +30,7 @@ export default function Footer() {
         </div>
 
         <div className="footer_column">
-          <h2>Teléfonos Sucurasales</h2>
+          <h2>Teléfonos Sucursales</h2>
           <h3>+57 3187810059</h3>
           <h3>+57 3202410632</h3>
           <div className="footer_redes">

@@ -106,8 +106,8 @@ export default function Home() {
       </section>
       <section className="home_section2">
         <div className="home_column_red"></div>
-        <div className="home_section2_column">
-          <div className="home_section2_wifiIcon">
+        <div className="home_section3_column">
+          <div className="home_section3_circle">
             <img alt="wifi icon" src={circuloHome}></img>
           </div>
           <h1>EVITA EL ROBO</h1>
@@ -117,7 +117,7 @@ export default function Home() {
             </div>
           </div>
           <h3>PLATAFORMA para controlar :</h3>
-          <div className="home_section2_group">
+          <div className="home_section3_group">
             <div className="home_section2_body">
               <div>Sensor Cableado</div>
             </div>
@@ -139,7 +139,7 @@ export default function Home() {
       </section>
       <section className="home_section2">
         <div className="home_column_red"></div>
-        <div className="home_section2_column">
+        <div className="home_section4_column">
           <div className="home_section2_wifiIcon">
             <img alt="wifi icon" src={wifiIcon}></img>
           </div>
@@ -149,7 +149,7 @@ export default function Home() {
               <h2>Vehicular</h2>
             </div>
           </div>
-          <div className="home_section2_group">
+          <div className="home_section4_group">
             <div className="home_section2_body">
               <div>Evitar accidentes</div>
             </div>

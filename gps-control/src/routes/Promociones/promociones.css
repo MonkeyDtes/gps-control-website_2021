@@ -75,6 +75,7 @@
   }
   .promociones_section_body {
     margin-top: calc(5.88vh * 7);
+    margin-left: calc(8.33vw*2);
   }
   .promociones_section_body > div {
     font-size: 1.5vh;
