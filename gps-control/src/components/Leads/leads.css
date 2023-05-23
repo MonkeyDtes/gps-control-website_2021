@@ -6,7 +6,6 @@
 .leads_page_background {
   background: url("../../assets/fondoLeads.png");
   background-size: cover;
-  background-position: 1vh;
   background-repeat: no-repeat;
   height: 100%;
   display: flex;
@@ -269,7 +268,7 @@ textarea {
     height: calc(5.88vh * 0.7);
     align-self: self-start;
     margin-top: calc(5.88vh);
-    margin-left: calc(8.33vw * 1.7);
+    margin-left: calc(8.33vw * 1);
     z-index: 1;
   }
   .leads_page_end_img_white > img {

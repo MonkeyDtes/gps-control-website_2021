@@ -204,7 +204,7 @@ export default function Soluciones() {
           )}
           {button4 ? (
             <div className="soluciones_section4">
-              <div className="soluciones_section1_header">
+              <div className="soluciones_section4_header">
                 <h1>PERSONALIZACIÓN</h1>
                 <div className="soluciones_section1_row">
                   <div className="main_box">

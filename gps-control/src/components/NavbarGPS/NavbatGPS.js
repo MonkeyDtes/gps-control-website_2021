@@ -343,10 +343,10 @@ export default function NavbarGPS(e) {
             <a href="mailto:sales@gpscontrol.co">
               <img alt="mail" src={navbarMail}></img>
             </a>
-            <a href="https://wa.me/qr/AFTZFJYUOAWOM1">
+            <a href="https://www.youtube.com/channel/UCYU-Vn3lnDLePlavejpZMBg">
               <img alt="yt" src={navbarYT}></img>
             </a>
-            <a href="https://www.youtube.com/channel/UCYU-Vn3lnDLePlavejpZMBg">
+            <a href="https://wa.me/qr/AFTZFJYUOAWOM1">
               <img alt="telefono" src={navbarTel}></img>
             </a>
           </div>
