@@ -53,6 +53,24 @@ nav {
   box-shadow: 0px 0px 10px rgba(30, 140, 147, 0.6);
   z-index: 20;
 }
+nav>div:nth-child(1){
+  z-index: 36;
+}
+nav>div:nth-child(2){
+  z-index: 35;
+}
+nav>div:nth-child(3){
+  z-index: 34;
+}
+nav>div:nth-child(4){
+  z-index: 33;
+}
+nav>div:nth-child(5){
+  z-index: 32;
+}
+nav>div:nth-child(6){
+  z-index: 31;
+}
 .navbar_close {
   position: fixed;
   display: flex;
@@ -75,7 +93,7 @@ nav {
   filter: drop-shadow(14px -5px 8px rgba(0, 0, 0, 0.25));
 }
 .navbar_home {
-  clip-path: polygon(0% 0%, 100% 0, 80% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 100% 0, 85% 100%, 0% 100%);
   color: #eee8f2;
   width: calc(8.33vw * 2.3);
   height: 100%;
@@ -103,7 +121,7 @@ nav {
 }
 
 .navbar_home_click {
-  clip-path: polygon(0% 0%, 100% 0, 80% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 100% 0, 85% 100%, 0% 100%);
   color: #eb162c;
   width: calc(8.33vw * 2.3);
   height: 100%;
@@ -130,7 +148,7 @@ nav {
   color: white;
 }
 .navbar_section {
-  clip-path: polygon(20% 0%, 100% 0, 80% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 100% 0, 85% 100%, 0% 100%);
   margin-left: -3vw;
   color: #1e8c93;
   width: calc(8.33vw * 2.3);
@@ -144,7 +162,7 @@ nav {
   align-items: center;
 }
 .navbar_section_click {
-  clip-path: polygon(20% 0%, 100% 0, 80% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 100% 0, 85% 100%, 0% 100%);
   margin-left: -3vw;
   color: white;
   width: calc(8.33vw * 2.3);
@@ -249,7 +267,10 @@ nav {
   width: calc(8.33vw*0.15);
 } 
 .navbar_ingresos > a:nth-child(5) {
-  color: #eb162c;
+  width: calc(8.33vw*0.2);
+}
+.navbar_ingresos > a:nth-child(5)>img {
+  width: calc(8.33vw*0.15);
 }
 .navbar_ingresos > a:nth-child(5):hover {
   background-color: #eb162bb1;
@@ -279,12 +300,19 @@ nav {
 .navbar_ingresos > a:nth-child(3):hover + .text_suport {
   opacity: 1;
 }
+.navbar_ingresos > a:nth-child(5):hover + .text_suport {
+  opacity: 1;
+}
 .text_suport:nth-child(2) {
   bottom: calc(8.33vh * 2.5);
   left: calc(5.88vh * 1.5);
 }
 .text_suport:nth-child(4) {
   bottom: calc(8.33vh * 1.7);
+  left: calc(5.88vh * 1.5);
+}
+.text_suport:nth-child(6) {
+  bottom: calc(8.33vh * 0.7);
   left: calc(5.88vh * 1.5);
 }
 

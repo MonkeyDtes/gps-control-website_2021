@@ -16,7 +16,7 @@ import navbarWa from "../../assets/waGreen.svg";
 import navbarYT from "../../assets/navbarYT.svg";
 import navbarTel from "../../assets/navbarPhone.svg";
 import ingresoLogo1 from "../../assets/ingresoLogo1.svg";
-import ingresoLogo2 from "../../assets/ingresoLogo2.svg";
+import ingresoLogo2 from "../../assets/userGray.svg";
 import { history } from "../History";
 import { useEffect, useRef, useState } from "react";
 
@@ -49,7 +49,7 @@ export default function NavbarGPS(e) {
   useEffect(() => {
     if (windowSize.current[0] > 600) {
       window.addEventListener("scroll", () => {
-        if (window.scrollY > 5 ) {
+        if (window.scrollY > 5) {
           setShowTopBtn(true);
         } else {
           setShowTopBtn(false);
@@ -152,11 +152,9 @@ export default function NavbarGPS(e) {
             <div className="text_suport">Soporte Técnico</div>
             <a href="https://tracking.gpscontrolcolombia.com/">
               <img alt="ingreso plataforma" src={ingresoLogo2}></img>
-              <div>
-                <h2>Ingreso</h2>
-                <h2>plataforma</h2>
-              </div>
+              <div></div>
             </a>
+            <div className="text_suport">Ingreso plataforma</div>
           </div>
         </div>
       ) : (
@@ -361,11 +359,9 @@ export default function NavbarGPS(e) {
             <div className="text_suport">Soporte Técnico</div>
             <a href="https://tracking.gpscontrolcolombia.com/">
               <img alt="ingreso plataforma" src={ingresoLogo2}></img>
-              <div>
-                <h2>Ingreso</h2>
-                <h2>plataforma</h2>
-              </div>
+              <div></div>
             </a>
+            <div className="text_suport">Ingreso Plataforma</div>
           </div>
         </div>
       )}
