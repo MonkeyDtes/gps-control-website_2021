@@ -4,9 +4,6 @@
   height: 100%;
   width: 100%;
   margin-left: calc(8.33vw);
-  background: url("../../assets/bgApps.png");
-  background-size: cover;
-  background-repeat: no-repeat;
   margin-top: calc(5.88vh * 1) !important;
 }
 .swiper_apps_slide {

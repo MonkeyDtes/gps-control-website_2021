@@ -1,15 +1,15 @@
 import NavbarGPS from "../../components/NavbarGPS";
 import "./equipos.css";
 import circuloHome from "../../assets/circuloHome.svg";
-import waIcon from "../../assets/waWhite.svg";
-import ytIcon from "../../assets/ytWhite.svg";
+import waIcon from "../../assets/waRed.svg";
+import ytIcon from "../../assets/ytRed.svg";
 import Suntech from "../../assets/Suntech.png";
 import gpsControlWhite from "../../assets/gpsControlWhite.svg";
 import FMC920 from "../../assets/FMC_920.png";
 import GifGPS from "../../components/gifGPS/index";
 import Leads from "../../components/Leads/index";
 import Footer from "../../components/Footer/index";
-import VectorsensorEquipos from "../../assets/VectorsensorEquipos.svg"
+import VectorsensorEquipos from "../../assets/VectorsensorEquipos.svg";
 
 export default function equipos() {
   return (
@@ -33,8 +33,8 @@ export default function equipos() {
               </div>
             </div>
             <div className="main_box_pedestales_sensor">
-                <div className="pedestales_sensor"></div>
-              </div>
+              <div className="pedestales_sensor"></div>
+            </div>
             <div className="equipos_section2_circleIcon">
               <img alt="wifi icon" src={circuloHome}></img>
             </div>
@@ -54,10 +54,10 @@ export default function equipos() {
           <div className="equipos_section2_start_column">
             <div className="equipos_section2_start_buttons">
               <a href="https://www.youtube.com/channel/UCYU-Vn3lnDLePlavejpZMBg">
-                VIDEO DEL EQUIPO<img alt="youtube icon " src={ytIcon}></img>
+              <img alt="youtube icon " src={ytIcon}></img>VIDEO DEL EQUIPO
               </a>
               <a href=" https://wa.me/qr/HVC55BD4ZJMLH1">
-                CHATEE CON NOSOTROS<img alt="youtube icon " src={waIcon}></img>
+              <img alt="youtube icon " src={waIcon}></img>CHATEE CON NOSOTROS
               </a>
             </div>
             <p>
@@ -73,71 +73,10 @@ export default function equipos() {
         </div>
         <div className="equipos_section2_end">
           <img alt="suntech" src={Suntech}></img>
-          <div className="equipos_section2_end_table">
-            <div className="equipos_section2_end_row">
-              <div className="equipos_section2_end_title1">Deta</div>
-              <div className="equipos_section2_end_title2">lles</div>
-            </div>
-            <div className="equipos_section2_end_row">
-              <div className="equipos_section2_end_cell">Conexión</div>
-              <div className="equipos_section2_end_cell">Micro USB</div>
-            </div>
-            <div className="equipos_section2_end_row">
-              <div className="equipos_section2_end_cell"># de Pines</div>
-              <div className="equipos_section2_end_cell">3</div>
-            </div>
-            <div className="equipos_section2_end_row">
-              <div className="equipos_section2_end_cell"># Cables</div>
-              <div className="equipos_section2_end_cell">6</div>
-            </div>
-            <div className="equipos_section2_end_row">
-              <div className="equipos_section2_end_cell">GPS</div>
-              <div className="equipos_section2_end_cell">2G</div>
-            </div>
-            <div className="equipos_section2_end_row">
-              <div className="equipos_section2_end_cell">Antena</div>
-              <div className="equipos_section2_end_cell">Interna</div>
-            </div>
-            <div className="equipos_section2_end_row">
-              <div className="equipos_section2_end_cell">Reporte</div>
-              <div className="equipos_section2_end_cell">Configurable</div>
-            </div>
-          </div>
         </div>
       </section>
       <section className="equipos_section3">
         <div className="equipos_section3_start">
-          <div className="equipos_section2_end_table">
-            <div className="equipos_section2_end_row">
-              <div className="equipos_section2_end_title1">Deta</div>
-              <div className="equipos_section2_end_title2">lles</div>
-            </div>
-            <div className="equipos_section2_end_row">
-              <div className="equipos_section2_end_cell">CAT</div>
-              <div className="equipos_section2_end_cell">4G</div>
-            </div>
-            <div className="equipos_section2_end_row">
-              <div className="equipos_section2_end_cell">Prevención</div>
-              <div className="equipos_section2_end_cell">Choques</div>
-            </div>
-            <div className="equipos_section2_end_row">
-              <div className="equipos_section2_end_cell">Respaldo</div>
-              <div className="equipos_section2_end_cell">Batería</div>
-            </div>
-            <div className="equipos_section2_end_row">
-              <div className="equipos_section2_end_cell">Equipo</div>
-              <div className="equipos_section2_end_cell">Compacto</div>
-            </div>
-            <div className="equipos_section2_end_row">
-              <div className="equipos_section2_end_cell">Banda</div>
-              <div className="equipos_section2_end_cell">Ancha</div>
-            </div>
-            <div className="equipos_section2_end_row">
-              <div className="equipos_section2_end_cell">Baja</div>
-              <div className="equipos_section2_end_cell">Latencia</div>
-            </div>
-          </div>
-
           <img alt="suntech" src={FMC920}></img>
         </div>
         <div className="equipos_section3_end_bg"></div>
@@ -146,10 +85,10 @@ export default function equipos() {
           <div className="equipos_section3_end_column">
             <div className="equipos_section2_start_buttons">
               <a href="https://www.youtube.com/channel/UCYU-Vn3lnDLePlavejpZMBg">
-                VIDEO DEL EQUIPO<img alt="youtube icon " src={ytIcon}></img>
+              <img alt="youtube icon " src={ytIcon}></img>VIDEO DEL EQUIPO
               </a>
               <a href=" https://wa.me/qr/HVC55BD4ZJMLH1">
-                CHATEE CON NOSOTROS<img alt="youtube icon " src={waIcon}></img>
+              <img alt="youtube icon " src={waIcon}></img>CHATEE CON NOSOTROS
               </a>
             </div>
             <p>
@@ -169,10 +108,10 @@ export default function equipos() {
           <div className="equipos_section2_start_column">
             <div className="equipos_section2_start_buttons">
               <a href="https://www.youtube.com/channel/UCYU-Vn3lnDLePlavejpZMBg">
-                VIDEO DEL EQUIPO<img alt="youtube icon " src={ytIcon}></img>
+              <img alt="youtube icon " src={ytIcon}></img>VIDEO DEL EQUIPO
               </a>
               <a href=" https://wa.me/qr/HVC55BD4ZJMLH1">
-                CHATEE CON NOSOTROS<img alt="youtube icon " src={waIcon}></img>
+              <img alt="youtube icon " src={waIcon}></img>CHATEE CON NOSOTROS
               </a>
             </div>
             <p>

@@ -7,6 +7,23 @@
   flex-direction: column;
   background-color: #eee8f2;
 }
+.home_section1_start_label{
+  clip-path: polygon(0% 0%, 100% 0, 80% 100%, 0% 100%);
+  width: calc(8.33vw * 7.3);
+  height: calc(5.88vh * 2);
+  background: #ed2f4c;
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+}
+.home_section1_start_label > h1 {
+  font-family: "Bahnschrift";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 6vw;
+  line-height: 0.1vh;
+  color: #eee8f2;
+}
 .home_section1_end {
   display: flex;
   flex-direction: row;
@@ -27,6 +44,7 @@
 .home_section1_icons {
   display: flex;
   margin-left: calc(8.33vw);
+  margin-top: calc(5.88vh);
 }
 .home_section2 {
   height: 83vh;
@@ -64,7 +82,7 @@
   font-family: "Bahnschrift";
   font-style: normal;
   font-weight: 400;
-  font-size: 2.5vh;
+  font-size: 1.5vw;
   line-height: 38px;
   color: #6b6b6b;
 }
@@ -88,7 +106,7 @@
   font-family: "Bahnschrift";
   font-style: normal;
   font-weight: 400;
-  font-size: 2.5vh;
+  font-size: 1.5vw;
   line-height: 38px;
   color: #6b6b6b;
 }
@@ -139,7 +157,7 @@
   font-family: "Bahnschrift";
   font-style: normal;
   font-weight: 700;
-  font-size: 6vh;
+  font-size: 3vw;
   color: #6b6b6b;
 }
 .home_section2_body {
@@ -149,6 +167,7 @@
   font-style: normal;
   font-weight: 300;
   line-height: 38px;
+  font-size: 1vw;
   color: #6b6b6b;
   width: calc(8.33vw * 4);
   justify-content: space-between;
@@ -337,21 +356,13 @@
   margin-top: calc(5.88vh * 3);
   margin-left: calc(8.33vw * 1);
 }
-.home_section1_start > h1 {
-  font-family: "Bahnschrift";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 8vh;
-  line-height: 0.1vh;
-  color: #eb162c;
-}
 .home_section1_start > h2 {
   font-family: "Bahnschrift";
   font-style: normal;
   font-weight: 700;
   color: #eb162c;
   line-height: 0.1vh;
-  font-size: 5vh;
+  font-size: 3vw;
 }
 .home_section1_end_body {
   display: flex;
@@ -359,8 +370,9 @@
 }
 .home_section1_end_body > img {
   mix-blend-mode: multiply;
-  width: calc(8.33vw * 6);
+  width: calc(8.33vw * 5);
   margin-right: calc(8.33vw);
+  margin-top: calc(5.88vh*2.5);
 }
 .home_section1_end_body > div {
   border-left: solid 3px red;
@@ -371,7 +383,7 @@
   font-family: "Bahnschrift";
   font-style: normal;
   font-weight: 700;
-  font-size: 2vh;
+  font-size: 1.3vw;
   text-align: justify;
   width: calc(8.33vw * 3.7);
 
@@ -393,7 +405,7 @@
 .home_section1_header_end {
   display: flex;
   flex-direction: column;
-  margin-top: calc(5.88vh * 4);
+  margin-top: calc(5.88vh * 6);
   margin-right: calc(8.33vw * 1);
   color: #ed2f4c;
   z-index: 10;
@@ -401,9 +413,10 @@
 .home_section1_header_end > div {
   margin-top: calc(5.88vh * 0.5);
   border-left: 1px solid #ed2f4c;
-  width: calc(8.33vw);
+  width: calc(8.33vw*2);
   padding-left: calc(8.33vw * 0.2);
   height: calc(5.88vh * 0.3);
+  font-size: 1.3vw;
 }
 .home_section1_header_end > div:hover {
   border-left: 3px solid;
@@ -462,7 +475,7 @@
   .home_section2_column > h1 {
     font-size: calc(8.33vw * 1);
     margin-left: calc(8.33vw * 4);
-    margin-top: calc(5.88vh * 5);
+    margin-top: calc(5.88vh * 6.5);
     grid-column: 1;
     grid-row: 2/3;
   }
@@ -475,7 +488,6 @@
     font-size: 2vh;
     line-height: 38px;
     color: #6b6b6b;
-    margin-top: calc(5.88vh * 2);
     margin-left: calc(8.33vw * 4);
   }
   .home_section3_column {
@@ -543,9 +555,7 @@
   .home_section2_label {
     width: calc(8.33vw * 6);
     height: calc(5.88vh * 0.5);
-    margin-top: calc(-5.88vh * 0.5);
-    grid-row: 1;
-    grid-column: 2/3;
+    margin-top: calc(5.88vh * 1);
   }
   .home_section2_label > h2 {
     font-size: 2vh;
@@ -616,7 +626,8 @@
   .home_section4_group {
     grid-row: 1/2;
     grid-column: 1;
-    margin-top: calc(5.88vh);
+    margin-top: calc(5.88vh*2);
+    z-index: 4;
   }
   .home_section4_group > button {
     margin-top: calc(5.88vh * 10);
@@ -654,13 +665,13 @@
   }
   .home_section2_camara > img {
     width: calc(8.33vw * 5);
-    margin-top: calc(5.88vh * 5);
+    margin-top: calc(5.88vh * 7);
     margin-left: calc(8.33vw * 6);
   }
   .home_section2_carretera > img {
     width: calc(8.33vw * 8);
     mix-blend-mode: multiply;
-    margin-top: calc(5.88vh * 6);
+    margin-top: calc(5.88vh * 7.5);
     margin-left: calc(8.33vw * 2.5);
   }
   div.home_section2_group:nth-child(4) {

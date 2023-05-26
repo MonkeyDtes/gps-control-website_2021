@@ -168,20 +168,20 @@
 }
 .equipos_section2_start_buttons > a {
   width: calc(8.33vw * 1);
-  height: calc(5.88vh * 1);
+  height: calc(5.88vh * 0.5);
   margin-inline: 0.5vw;
-  background-color: red;
-  color: white;
+  background-color: #eee8f2;
+  color: #eb162b;
   border: 0.5px solid white;
   font-family: "Bahnschrift";
   font-style: normal;
   font-weight: 100;
-  font-size: 1.3vh;
+  font-size: 0.7vw;
   display: flex;
   flex-direction: row;
   align-items: center;
   text-decoration: none;
-  border-radius: 10%;
+  border-radius: 8px;
 }
 .equipos_section2_start_buttons > a:hover {
   background-color: white;
@@ -196,6 +196,7 @@
 }
 .equipos_section2_start_column > p {
   text-align: justify;
+  font-size: 1.3vw;
 }
 .equipos_section2_end {
   width: 50%;
@@ -317,6 +318,7 @@
 }
 .equipos_section3_end_column > p {
   text-align: justify;
+  font-size: 1.3vw;
 }
 @media only screen and (max-width: 600px) {
   .equipos_section2_column {

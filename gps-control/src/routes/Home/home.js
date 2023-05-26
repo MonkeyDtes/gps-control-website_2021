@@ -37,7 +37,9 @@ export default function Home() {
         </video>
         <div className="home_section1_header">
           <div className="home_section1_start">
-            <h1>Control is better</h1>
+            <div className="home_section1_start_label">
+              <h1>Control is better</h1>
+            </div>
             <h2>BEYOND CONTROL</h2>
           </div>
           <div className="home_section1_header_end">
@@ -119,10 +121,7 @@ export default function Home() {
           <h3>PLATAFORMA para controlar :</h3>
           <div className="home_section3_group">
             <div className="home_section2_body">
-              <div>Sensor Cableado</div>
-            </div>
-            <div className="home_section2_body">
-              <div>Sensor Bluetooth</div>
+              <div>El éxito del negocio de cualquier empresa con su flota depende en gran medida de la eficacia con que se organice en ella el control y la contabilidad del combustible.</div>
             </div>
             <button
               onClick={() =>

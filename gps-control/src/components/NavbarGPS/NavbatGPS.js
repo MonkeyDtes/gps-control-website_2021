@@ -16,7 +16,7 @@ import navbarWa from "../../assets/waGreen.svg";
 import navbarYT from "../../assets/navbarYT.svg";
 import navbarTel from "../../assets/navbarPhone.svg";
 import ingresoLogo1 from "../../assets/ingresoLogo1.svg";
-import ingresoLogo2 from "../../assets/userGray.svg";
+import ingresoLogo2 from "../../assets/userRed.svg";
 import { history } from "../History";
 import { useEffect, useRef, useState } from "react";
 

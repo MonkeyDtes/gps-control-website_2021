@@ -27,6 +27,9 @@ export default function Plataforma() {
             de rastreo, permite hacer seguimiento de diferentes tareas y
             controla su ejecución de forma remota.
           </h6>
+          <div className="plataforma_section2_body_ticket">MONITOREO VEHICULAR</div>
+          <div className="plataforma_section2_body_ticket">SEGUIMIENTO GPS</div>
+          <div className="plataforma_section2_body_ticket">MONITOREO FLOTAS DE VEHICULOS</div>
         </div>
       </section>
       <section className="plataforma_section1">

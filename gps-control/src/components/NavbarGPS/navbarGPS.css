@@ -82,15 +82,13 @@ nav>div:nth-child(6){
 }
 .navbar_close > div {
   width: calc(8.33vw * 1.2);
-
-  margin-right: calc(8.33vw * 0.3);
 }
 .navbar_close > div > img {
   margin-left: calc(8.33vw * 0.5);
   margin-top: calc(5.88vh * 0.5);
 }
 .main_box {
-  filter: drop-shadow(14px -5px 8px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(14px -5px 10px rgba(0, 0, 0, 0.25));
 }
 .navbar_home {
   clip-path: polygon(0% 0%, 100% 0, 85% 100%, 0% 100%);
@@ -141,7 +139,7 @@ nav>div:nth-child(6){
   font-family: "Bahnschrift";
   font-style: normal;
   font-weight: 300;
-  font-size: 3vh;
+  font-size: 1.5vw;
 }
 .navbar_home_click:hover {
   background-color: #eb162c;
@@ -360,6 +358,9 @@ nav>div:nth-child(6){
   justify-content: center;
   align-items: center;
   height: calc(5.88vh * 1.5);
+}
+.navar_section_select>img{
+  width: calc(8.33vw*0.5);
 }
 
 @media only screen and (max-width: 600px) {
