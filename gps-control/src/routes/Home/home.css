@@ -47,14 +47,14 @@
   margin-top: calc(5.88vh);
 }
 .home_section2 {
-  height: 83vh;
+  height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: row;
   background-color: #eee8f2;
 }
 .home_column_red {
-  height: 82.8vh;
+  height: 99.7vh;
   width: calc(8.33vw * 2);
   margin-left: calc(8.33vw * 2);
   background-color: #ed2f4c;
