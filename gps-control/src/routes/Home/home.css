@@ -309,8 +309,11 @@
   flex-direction: column;
   width: 100%;
   height: 100vh;
-  background: #eee8f2;
-  justify-content: center;
+  background: url("../../assets/redNeuronal.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-color: #eee8f2;
 }
 .home_section3_header {
   height: calc(5.88vh * 1.2);
@@ -319,7 +322,7 @@
   align-items: center;
   margin-top: calc(5.88vh * 2);
   margin-right: calc(8.33vw);
-  align-self: self-end;
+  align-self: center;
 }
 .home_section3_header > img {
   width: calc(8.33vw * 0.2);
@@ -336,7 +339,8 @@
 }
 .home_column_red_end {
   position: absolute;
-  height: calc(5.88vh * 17);
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 80%);
+  height: calc(5.88vh * 14);
   width: calc(8.33vw * 2);
   margin-left: calc(8.33vw * 2);
   background-color: #ed2f4c;
@@ -424,6 +428,37 @@
   padding-left: calc(8.33vw * 0.4);
   color: #1e8c93;
   transition: height 1s, padding-left 1s;
+}
+.home_section3_buttons_up{
+  display: flex;
+  flex-direction: row;
+  margin-top: calc(5.88vh);
+  align-self: flex-end;
+  margin-right: calc(8.33vw);
+}
+.home_section3_buttons_up>button{
+  height: calc(5.88vh*4);
+  width: calc(8.33vw*2);
+  background-color: #eee8f2;
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  border: none;
+  margin-left: calc(8.33vw*0.2);
+
+}
+.home_section3_buttons_up>button>img{
+  height: calc(5.88vh*2.2);
+}
+.home_corner_red{
+  clip-path: polygon(20% 65%, 35% 80%, 100% 80%, 85% 100%, 0 100%, 0 15%, 20% 0);
+  position: absolute;
+  top: 464.7vh;
+  left: 0;
+  background-color: #ed2f4c;
+  border: none;
+  width: calc(8.33vw*2.2);
+  height: calc(5.88vh*6);
+  mix-blend-mode: multiply;
 }
 @media only screen and (max-width: 600px) {
   .home_section1_end_body {

@@ -9,8 +9,10 @@ import iconoApps3 from "../../assets/iconoApps3.svg";
 import iconoApps4 from "../../assets/iconoApps4.svg";
 import iconoApps5 from "../../assets/iconoApps5.svg";
 import iconoApps6 from "../../assets/iconoApps6.svg";
-import ytVerde from "../../assets/ytVerde.svg";
-import appsUsuario from "../../assets/appsUsuario.svg";
+import ytVerde from "../../assets/ytVerdeBG.svg";
+import appsUsuario from "../../assets/userGreen.svg";
+import ytWhite from "../../assets/ytWhite.svg";
+import userWhite from "../../assets/userWhite.svg";
 
 const SwiperApps = (e) => {
   SwiperCore.use([Keyboard, Mousewheel]);
@@ -82,10 +84,10 @@ const SwiperApps = (e) => {
             <img alt="fleetrun" src={iconoApps3}></img>
             <div className="swiper_apps_buttons_clicked">
               <a href="https://www.youtube.com/channel/UCYU-Vn3lnDLePlavejpZMBg">
-                <img alt="Youtube" src={ytVerde}></img>DIDÁCTICO
+                <img alt="Youtube" src={ytWhite}></img>DIDÁCTICO
               </a>
               <a href="https://fleetrun.wialon.com/login ">
-                <img alt="usuario" src={appsUsuario}></img>INICIAR SESIÓN{" "}
+                <img alt="usuario" src={userWhite}></img>INICIAR SESIÓN{" "}
               </a>
             </div>
             <div className="text_suport_apps">
@@ -120,10 +122,10 @@ const SwiperApps = (e) => {
             <img alt="LOGISTICS" src={iconoApps2}></img>
             <div className="swiper_apps_buttons_clicked">
               <a href="https://www.youtube.com/channel/UCYU-Vn3lnDLePlavejpZMBg">
-                <img alt="Youtube" src={ytVerde}></img>DIDÁCTICO
+                <img alt="Youtube" src={ytWhite}></img>DIDÁCTICO
               </a>
               <a href="https://apps.wialon.com/logistics/?&lang=es#/">
-                <img alt="usuario" src={appsUsuario}></img>INICIAR SESIÓN{" "}
+                <img alt="usuario" src={userWhite}></img>INICIAR SESIÓN{" "}
               </a>
             </div>
             <div className="text_suport_apps">
@@ -157,10 +159,10 @@ const SwiperApps = (e) => {
             <img alt="HECTERRA" src={iconoApps4}></img>
             <div className="swiper_apps_buttons_clicked">
               <a href="https://www.youtube.com/channel/UCYU-Vn3lnDLePlavejpZMBg">
-                <img alt="Youtube" src={ytVerde}></img>DIDÁCTICO
+                <img alt="Youtube" src={ytWhite}></img>DIDÁCTICO
               </a>
               <a href="https://hecterra.wialon.com/login">
-                <img alt="usuario" src={appsUsuario}></img>INICIAR SESIÓN{" "}
+                <img alt="usuario" src={userWhite}></img>INICIAR SESIÓN{" "}
               </a>
             </div>
             <div className="text_suport_apps">
@@ -196,10 +198,10 @@ const SwiperApps = (e) => {
             <img alt="ECODRIVING" src={iconoApps5}></img>
             <div className="swiper_apps_buttons_clicked">
               <a href="https://www.youtube.com/channel/UCYU-Vn3lnDLePlavejpZMBg">
-                <img alt="Youtube" src={ytVerde}></img>DIDÁCTICO
+                <img alt="Youtube" src={ytWhite}></img>DIDÁCTICO
               </a>
               <a href="https://apps.wialon.com/ecodriving/">
-                <img alt="usuario" src={appsUsuario}></img>INICIAR SESIÓN{" "}
+                <img alt="usuario" src={userWhite}></img>INICIAR SESIÓN{" "}
               </a>
             </div>
             <div className="text_suport_apps">
@@ -233,10 +235,10 @@ const SwiperApps = (e) => {
             <img alt="CHATTERBOX" src={iconoApps6}></img>
             <div className="swiper_apps_buttons_clicked">
               <a href="https://www.youtube.com/channel/UCYU-Vn3lnDLePlavejpZMBg">
-                <img alt="Youtube" src={ytVerde}></img>DIDÁCTICO
+                <img alt="Youtube" src={ytWhite}></img>DIDÁCTICO
               </a>
               <a href="https://apps.wialon.com/chatterbox/">
-                <img alt="usuario" src={appsUsuario}></img>INICIAR SESIÓN{" "}
+                <img alt="usuario" src={userWhite}></img>INICIAR SESIÓN{" "}
               </a>
             </div>
             <div className="text_suport_apps">
@@ -272,10 +274,10 @@ const SwiperApps = (e) => {
             <img alt="WIATAG" src={iconoApps1}></img>
             <div className="swiper_apps_buttons_clicked">
               <a href="https://www.youtube.com/channel/UCYU-Vn3lnDLePlavejpZMBg">
-                <img alt="Youtube" src={ytVerde}></img>DIDÁCTICO
+                <img alt="Youtube" src={ytWhite}></img>DIDÁCTICO
               </a>
               <a href="https://configurator.wialon.com/login ">
-                <img alt="usuario" src={appsUsuario}></img>INICIAR SESIÓN{" "}
+                <img alt="usuario" src={userWhite}></img>INICIAR SESIÓN{" "}
               </a>
             </div>
             <div className="text_suport_apps">

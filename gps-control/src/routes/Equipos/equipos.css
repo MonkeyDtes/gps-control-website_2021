@@ -357,6 +357,7 @@
   color: rgba(107, 107, 107, 0.5);
   justify-content: center;
   align-items: center;
+  border-radius: 10px;
 }
 .equipos_section_sensores_buttons>button>img{
   height: calc(5.88vh*2);  
@@ -420,6 +421,25 @@
   align-items: center;;
 }
 .equipos_section_sensores_body_buttons>button>img{
+  height: calc(5.88vh*0.6);
+}
+.equipos_section_sensores_body_buttons>a{
+  text-decoration: none;
+}
+.equipos_section_sensores_body_buttons>a>button{
+  width: calc(8.33vw*1.7);
+  height: calc(5.88vh);
+  background-color: #eee8f2;
+  color: #1E8C93;
+  box-shadow: 0px 7.52941px 11.2941px rgba(235, 22, 44, 0.25);
+  border-radius: 10px;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.equipos_section_sensores_body_buttons>a>button>img{
   height: calc(5.88vh*0.6);
 }
 .equipos_section_sensores_downside{

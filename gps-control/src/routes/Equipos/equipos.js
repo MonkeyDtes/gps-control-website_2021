@@ -17,15 +17,17 @@ import sensorCableTG from "../../assets/SensorCableToggle.png";
 import masIcon from "../../assets/+ icon.svg";
 import ytVerde from "../../assets/ytVerdeBG.svg";
 import coticeVerde from "../../assets/cotizeVerde.svg";
+import fleetrunPDF from "../../assets/fleetrun.pdf";
 import sensorEquipos1 from "../../assets/sensorEquiposTD1.png";
 import sensorEquipos2 from "../../assets/sensorEquiposTD2.png";
 import sensorEquipos3 from "../../assets/sensorEquiposTD3.png";
 import sensorEquipos4 from "../../assets/sensorEquiposTD4.png";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export default function Equipos() {
   const [button1, setButton1] = useState(false);
   const [button2, setButton2] = useState(false);
+  const sectionRef = useRef(null);
   useEffect(() => {
     const sensorT1 = document.getElementById("sensor1");
     const sensorT2 = document.getElementById("sensor2");
@@ -84,15 +86,15 @@ export default function Equipos() {
       setButton2(false);
     }
   };
-  const onChangeIn =(e)=>{
-    e.target.style.marginTop= "7vh"
-    e.target.style.opacity= "1"
-  }
-  const onChangeOut =(e)=>{
-    e.target.style.marginTop= "14vh"
-    e.target.style.opacity= "0.4"
-    e.target.style.transition= "all 1s"
-  }
+  const onChangeIn = (e) => {
+    e.target.style.marginTop = "7vh";
+    e.target.style.opacity = "0.5";
+  };
+  const onChangeOut = (e) => {
+    e.target.style.marginTop = "14vh";
+    e.target.style.opacity = "0.4";
+    e.target.style.transition = "all 0.5s";
+  };
 
   return (
     <div>
@@ -167,26 +169,61 @@ export default function Equipos() {
               consumo real de combustible y reducir gastos.
             </p>
             <div className="equipos_section_sensores_body_buttons">
-              <button>
-                <img alt="información" src={masIcon}></img>INFORMACION
-              </button>
+              <a
+                href={fleetrunPDF}
+                download="fleetrun documentation"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <button>
+                  <img alt="información" src={masIcon}></img>INFORMACION
+                </button>
+              </a>
               <button>
                 <img alt="información" src={ytVerde}></img>REEL
               </button>
-              <button>
+              <button
+                onClick={() =>
+                  sectionRef.current.scrollIntoView({ behavior: "smooth" })
+                }
+              >
                 <img alt="información" src={coticeVerde}></img>COTICE AQUI
               </button>
             </div>
           </div>
         </div>
         <div className="equipos_section_sensores_downside">
-          <img onMouseEnter={e=>onChangeIn(e)} onMouseLeave={onChangeOut} alt="sensor" id="sensor1" src={sensorEquipos4}></img>
+          <img
+            onMouseEnter={(e) => onChangeIn(e)}
+            onMouseLeave={onChangeOut}
+            alt="sensor"
+            id="sensor1"
+            src={sensorEquipos4}
+          ></img>
           <div className="text_suport_equipos">BLE- 600</div>
-          <img onMouseEnter={e=>onChangeIn(e)} onMouseLeave={onChangeOut} alt="sensor" id="sensor2" src={sensorEquipos1}></img>
+          <img
+            onMouseEnter={(e) => onChangeIn(e)}
+            onMouseLeave={onChangeOut}
+            alt="sensor"
+            id="sensor2"
+            src={sensorEquipos1}
+          ></img>
           <div className="text_suport_equipos">BLE- 150</div>
-          <img onMouseEnter={e=>onChangeIn(e)} onMouseLeave={onChangeOut} alt="sensor" id="sensor3" src={sensorEquipos3}></img>
+          <img
+            onMouseEnter={(e) => onChangeIn(e)}
+            onMouseLeave={onChangeOut}
+            alt="sensor"
+            id="sensor3"
+            src={sensorEquipos3}
+          ></img>
           <div className="text_suport_equipos">TD- 600</div>
-          <img onMouseEnter={e=>onChangeIn(e)} onMouseLeave={onChangeOut} alt="sensor" id="sensor4" src={sensorEquipos2}></img>
+          <img
+            onMouseEnter={(e) => onChangeIn(e)}
+            onMouseLeave={onChangeOut}
+            alt="sensor"
+            id="sensor4"
+            src={sensorEquipos2}
+          ></img>
           <div className="text_suport_equipos">TD- 150</div>
         </div>
       </section>
@@ -269,6 +306,7 @@ export default function Equipos() {
         </div>
         <div className="equipos_section2_end"></div>
       </section>
+      <section ref={sectionRef}></section>
       <Leads></Leads>
       <Footer></Footer>
     </div>

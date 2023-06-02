@@ -10,15 +10,44 @@ import homeDownButton from "../../assets/homeDownButton.svg";
 import homeBG from "../../assets/homeBG.jpg";
 import camHome from "../../assets/camHome.png";
 import bgPortadaHome from "../../assets/bgPortadaHome.mp4";
+import iconoApps1 from "../../assets/iconoApps1.svg";
+import iconoApps2 from "../../assets/iconoApps2.svg";
+import iconoApps3 from "../../assets/iconoApps3.svg";
+import iconoApps4 from "../../assets/iconoApps4.svg";
+import iconoApps5 from "../../assets/iconoApps5.svg";
+import iconoApps6 from "../../assets/iconoApps6.svg";
 import GifGPS from "../../components/gifGPS/index";
 import "./home.css";
-import SwiperAppsHome from "../../components/SwiperAppsHome/index";
 import playGreen from "../../assets/playGreen.svg";
 import Leads from "../../components/Leads";
 import Footer from "../../components/Footer/index";
 import { useRef } from "react";
+import { history } from "../../components/History";
 
-export default function Home() {
+export default function Home({onChangeState}) {
+  const HandleClick =(e)=>{
+    if(e.currentTarget.value==="1"){
+      onChangeState([true,false,false,false,false,false,0])
+    }else if(e.currentTarget.value==="2"){
+      onChangeState([false,true,false,false,false,false,1])
+    }else if(e.currentTarget.value==="3"){
+      onChangeState([false,false,true,false,false,false,2])
+    }else if(e.currentTarget.value==="4"){
+      onChangeState([false,false,false,true,false,false,4])
+    }else if(e.currentTarget.value==="5"){
+      onChangeState([false,false,false,false,true,false,5])
+    }else if(e.currentTarget.value==="6"){
+      onChangeState([false,false,false,false,false,true,6])
+    }
+    goToTop();
+    history.push("/apps");
+  }
+  const goToTop = () => {
+    window.scrollTo({
+      top: 0,
+    });
+  };
+
   const sectionRef = useRef(null);
   return (
     <div>
@@ -121,7 +150,11 @@ export default function Home() {
           <h3>PLATAFORMA para controlar :</h3>
           <div className="home_section3_group">
             <div className="home_section2_body">
-              <div>El éxito del negocio de cualquier empresa con su flota depende en gran medida de la eficacia con que se organice en ella el control y la contabilidad del combustible.</div>
+              <div>
+                El éxito del negocio de cualquier empresa con su flota depende
+                en gran medida de la eficacia con que se organice en ella el
+                control y la contabilidad del combustible.
+              </div>
             </div>
             <button
               onClick={() =>
@@ -181,8 +214,30 @@ export default function Home() {
           <img alt="play verde" src={playGreen}></img>
           <h2>Aplicaciones</h2>
         </div>
-        <SwiperAppsHome></SwiperAppsHome>
+        <div className="home_section3_buttons_up">
+          <button value={"1"} onClick={e=>HandleClick(e)}>
+            <img alt="apps" src={iconoApps3}></img>
+          </button>
+          <button value={"2"} onClick={e=>HandleClick(e)}>
+            <img alt="apps" src={iconoApps2}></img>
+          </button>
+          <button value={3} onClick={e=>HandleClick(e)}>
+            <img alt="apps" src={iconoApps4}></img>
+          </button>
+        </div>
+        <div className="home_section3_buttons_up">
+          <button value={4} onClick={e=>HandleClick(e)}>
+            <img alt="apps" src={iconoApps5}></img>
+          </button>
+          <button value={5} onClick={e=>HandleClick(e)}>
+            <img alt="apps" src={iconoApps6}></img>
+          </button>
+          <button value={6} onClick={e=>HandleClick(e)}>
+            <img alt="apps" src={iconoApps1}></img>
+          </button>
+        </div>
         <div className="home_column_red_end"></div>
+        <div className="home_corner_red"></div>
       </section>
       <section ref={sectionRef}></section>
       <Leads></Leads>
