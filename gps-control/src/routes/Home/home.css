@@ -44,7 +44,6 @@
 .home_section1_icons {
   display: flex;
   margin-left: calc(8.33vw);
-  margin-top: calc(5.88vh);
 }
 .home_section2 {
   height: 100vh;
@@ -179,6 +178,7 @@
   width: calc(8.33vw * 3);
   padding-left: calc(8.33vw * 0.2);
   margin-inline: calc(8.33vw * 0.4);
+  cursor: pointer;
 }
 .home_section2_body > div:hover {
   border-bottom: 3px solid;
@@ -459,6 +459,16 @@
   width: calc(8.33vw*2.2);
   height: calc(5.88vh*6);
   mix-blend-mode: multiply;
+}
+.modal_home{
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  background-color: #1E8C93;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  filter: blur(450px);
 }
 @media only screen and (max-width: 600px) {
   .home_section1_end_body {

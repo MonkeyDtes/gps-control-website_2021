@@ -1,0 +1,9 @@
+.swiper_home{
+    z-index: 11 !important;
+    position: fixed !important;
+    top: 40vh;
+}
+.swiper_home_slide>img{
+    width: calc(8.33vw*8);
+    height: calc(5.88vh*10);
+}

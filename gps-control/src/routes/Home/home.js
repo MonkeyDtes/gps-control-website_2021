@@ -21,27 +21,32 @@ import "./home.css";
 import playGreen from "../../assets/playGreen.svg";
 import Leads from "../../components/Leads";
 import Footer from "../../components/Footer/index";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { history } from "../../components/History";
+import SwiperHome from "../../components/SwiperHome/index";
 
-export default function Home({onChangeState}) {
-  const HandleClick =(e)=>{
-    if(e.currentTarget.value==="1"){
-      onChangeState([true,false,false,false,false,false,0])
-    }else if(e.currentTarget.value==="2"){
-      onChangeState([false,true,false,false,false,false,1])
-    }else if(e.currentTarget.value==="3"){
-      onChangeState([false,false,true,false,false,false,2])
-    }else if(e.currentTarget.value==="4"){
-      onChangeState([false,false,false,true,false,false,4])
-    }else if(e.currentTarget.value==="5"){
-      onChangeState([false,false,false,false,true,false,5])
-    }else if(e.currentTarget.value==="6"){
-      onChangeState([false,false,false,false,false,true,6])
+export default function Home({ onChangeState }) {
+  const [modal, setModal] = useState(false);
+  const ModalClick = () => {
+    setModal(!modal);
+  };
+  const HandleClick = (e) => {
+    if (e.currentTarget.value === "1") {
+      onChangeState([true, false, false, false, false, false, 0]);
+    } else if (e.currentTarget.value === "2") {
+      onChangeState([false, true, false, false, false, false, 1]);
+    } else if (e.currentTarget.value === "3") {
+      onChangeState([false, false, true, false, false, false, 2]);
+    } else if (e.currentTarget.value === "4") {
+      onChangeState([false, false, false, true, false, false, 4]);
+    } else if (e.currentTarget.value === "5") {
+      onChangeState([false, false, false, false, true, false, 5]);
+    } else if (e.currentTarget.value === "6") {
+      onChangeState([false, false, false, false, false, true, 6]);
     }
     goToTop();
     history.push("/apps");
-  }
+  };
   const goToTop = () => {
     window.scrollTo({
       top: 0,
@@ -97,6 +102,7 @@ export default function Home({onChangeState}) {
           <img alt="home Down" src={homeDownButton}></img>
         </div>
       </section>
+      {modal ?<> <div onClick={ModalClick} className="modal_home"></div> <SwiperHome></SwiperHome></> : <></>}
       <section className="home_section2">
         <div className="home_column_red"></div>
         <div className="home_section2_column">
@@ -112,7 +118,7 @@ export default function Home({onChangeState}) {
           <h3>PLATAFORMA para controlar :</h3>
           <div className="home_section2_group">
             <div className="home_section2_body">
-              <div>Flota</div>
+              <div  onClick={ModalClick}>Flota</div>
               <div>Conductores</div>
             </div>
             <div className="home_section2_body">
@@ -215,24 +221,24 @@ export default function Home({onChangeState}) {
           <h2>Aplicaciones</h2>
         </div>
         <div className="home_section3_buttons_up">
-          <button value={"1"} onClick={e=>HandleClick(e)}>
+          <button value={"1"} onClick={(e) => HandleClick(e)}>
             <img alt="apps" src={iconoApps3}></img>
           </button>
-          <button value={"2"} onClick={e=>HandleClick(e)}>
+          <button value={"2"} onClick={(e) => HandleClick(e)}>
             <img alt="apps" src={iconoApps2}></img>
           </button>
-          <button value={3} onClick={e=>HandleClick(e)}>
+          <button value={3} onClick={(e) => HandleClick(e)}>
             <img alt="apps" src={iconoApps4}></img>
           </button>
         </div>
         <div className="home_section3_buttons_up">
-          <button value={4} onClick={e=>HandleClick(e)}>
+          <button value={4} onClick={(e) => HandleClick(e)}>
             <img alt="apps" src={iconoApps5}></img>
           </button>
-          <button value={5} onClick={e=>HandleClick(e)}>
+          <button value={5} onClick={(e) => HandleClick(e)}>
             <img alt="apps" src={iconoApps6}></img>
           </button>
-          <button value={6} onClick={e=>HandleClick(e)}>
+          <button value={6} onClick={(e) => HandleClick(e)}>
             <img alt="apps" src={iconoApps1}></img>
           </button>
         </div>

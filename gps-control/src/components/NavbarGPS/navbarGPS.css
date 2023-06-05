@@ -246,29 +246,16 @@ nav>div:nth-child(6){
   border-top-left-radius: 0%;
   border-bottom-left-radius: 0%;
   margin-top: calc(5.88vh * 0.5);
+  width: calc(8.33vw*0.5);
+  justify-content: center;
 }
 .navbar_ingresos > a > img {
-  height: calc(5.88vh * 0.5);
-  margin-right: 1vw;
+  height: calc(5.88vh * 1.5);
+  width: calc(8.33vw*0.25);
 }
 .navbar_ingresos > a:nth-child(1) {
   color: #eb162c;
-  width: calc(8.33vw*0.2);
-}
-.navbar_ingresos > a:nth-child(1)>img{
-  width: calc(8.33vw*0.15);
-} 
-.navbar_ingresos > a:nth-child(3) {
-  width: calc(8.33vw*0.2);
-}
-.navbar_ingresos > a:nth-child(3)>img{
-  width: calc(8.33vw*0.15);
-} 
-.navbar_ingresos > a:nth-child(5) {
-  width: calc(8.33vw*0.2);
-}
-.navbar_ingresos > a:nth-child(5)>img {
-  width: calc(8.33vw*0.15);
+  
 }
 .navbar_ingresos > a:nth-child(5):hover {
   background-color: #eb162bb1;
