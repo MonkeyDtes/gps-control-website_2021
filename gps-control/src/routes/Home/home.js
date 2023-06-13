@@ -24,11 +24,27 @@ import Footer from "../../components/Footer/index";
 import { useRef, useState } from "react";
 import { history } from "../../components/History";
 import SwiperHome from "../../components/SwiperHome/index";
+import SwiperHomeSecond from "../../components/SwiperHomeSecond/index";
 
 export default function Home({ onChangeState }) {
   const [modal, setModal] = useState(false);
-  const ModalClick = () => {
+  const [modal2, setModal2] = useState(false);
+  const [inicialSlide, setInicialSlide] = useState(0)
+  const ModalClick = (e) => {
+    console.log(e.target)
     setModal(!modal);
+    const body = document.getElementsByTagName("body")
+    console.log(body)
+    if(modal===false){
+      body[0].style.overflow="hidden"
+    }else{
+      body[0].style.overflow="auto"
+    }
+    
+    setInicialSlide(e.target.value)
+  };
+  const ModalClick2 = () => {
+    setModal2(!modal2);
   };
   const HandleClick = (e) => {
     if (e.currentTarget.value === "1") {
@@ -102,7 +118,7 @@ export default function Home({ onChangeState }) {
           <img alt="home Down" src={homeDownButton}></img>
         </div>
       </section>
-      {modal ?<> <div onClick={ModalClick} className="modal_home"></div> <SwiperHome></SwiperHome></> : <></>}
+      {modal ?<> <div onClick={ModalClick} className="modal_home"></div> <div className="modal_home_fade"><button onClick={ModalClick}>X</button> <SwiperHome incialSlide={inicialSlide}></SwiperHome></div></> : <></>}
       <section className="home_section2">
         <div className="home_column_red"></div>
         <div className="home_section2_column">
@@ -118,15 +134,15 @@ export default function Home({ onChangeState }) {
           <h3>PLATAFORMA para controlar :</h3>
           <div className="home_section2_group">
             <div className="home_section2_body">
-              <div  onClick={ModalClick}>Flota</div>
-              <div>Conductores</div>
+              <div value={0} onClick={e=>ModalClick(e)}>Flota</div>
+              <div value={1} onClick={e=>ModalClick(e)}>Conductores</div>
             </div>
             <div className="home_section2_body">
-              <div>Pasajeros</div>
-              <div>Carga</div>
+              <div value={2} onClick={e=>ModalClick(e)}>Pasajeros</div>
+              <div value={3} onClick={e=>ModalClick(e)}>Carga</div>
             </div>
             <div className="home_section2_body">
-              <div>Obtener estadísticas e informes</div>
+              <div value={4} onClick={e=>ModalClick(e)}>Obtener estadísticas e informes</div>
             </div>
             <button
               onClick={() =>
@@ -176,6 +192,7 @@ export default function Home({ onChangeState }) {
         </div>
       </section>
       <section className="home_section2">
+      {modal2 ?<><div onClick={ModalClick2} className="modal_home"></div> <div className="modal_home_fade"><button onClick={ModalClick2}>X</button> <SwiperHomeSecond incialSlide={inicialSlide}></SwiperHomeSecond></div></> : <></>}
         <div className="home_column_red"></div>
         <div className="home_section4_column">
           <div className="home_section2_wifiIcon">
@@ -189,7 +206,7 @@ export default function Home({ onChangeState }) {
           </div>
           <div className="home_section4_group">
             <div className="home_section2_body">
-              <div>Evitar accidentes</div>
+              <div onClick={ModalClick2}>Evitar accidentes</div>
             </div>
             <div className="home_section2_body">
               <div>
