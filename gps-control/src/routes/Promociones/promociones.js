@@ -4,7 +4,7 @@ import "./promociones.css";
 import cotizacion from "../../assets/cotizacion.svg";
 import Leads from "../../components/Leads/index";
 import Footer from "../../components/Footer/index";
-import { useRef } from "react";
+import { useRef } from "react"
 
 export default function Promociones() {
   const sectionRef = useRef(null);

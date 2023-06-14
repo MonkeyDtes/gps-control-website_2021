@@ -5,8 +5,23 @@ import GifGPS from "../../components/gifGPS/index";
 import Leads from "../../components/Leads/index";
 import Footer from "../../components/Footer/index";
 import YoutubeEmbed from "../../components/youtubeVideos/index";
+import SwiperPromo from "../../components/SwiperPromo";
+import { useState } from "react";
 
 export default function Plataforma() {
+  const [modal, setModal] = useState(false)
+  const [inicialSlide, setInicialSlide] = useState(false)
+  
+  const ModalClick =(e)=>{
+    setModal(!modal)
+    setInicialSlide(e.currentTarget.value);
+    const body = document.getElementsByTagName("body");
+    if (modal === false) {
+      body[0].style.overflow = "hidden";
+    } else {
+      body[0].style.overflow = "auto";
+    }
+  }
   return (
     <div>
       <NavbarGPS
@@ -33,33 +48,43 @@ export default function Plataforma() {
         </div>
       </section>
       <section className="plataforma_section1">
+      {modal ? (
+        <>
+          <div onClick={ModalClick} className="modal_home"></div>
+          <div className="modal_home_fade">
+            <SwiperPromo incialSlide={inicialSlide}></SwiperPromo>
+          </div>
+        </>
+      ) : (
+        <></>
+      )}
         <div className="plataforma_section1_header">
           <div className="plataforma_sectionq_body_text_a1">
-            <div>MANTENIMIENTO PREVENTIVO Y CORRECTIVO</div>
+            <button value={0} onClick={(e) => ModalClick(e)}>MANTENIMIENTO PREVENTIVO Y CORRECTIVO</button>
           </div>
           <div className="plataforma_sectionq_body_text_a1">
-            <div>CONTROL Y CALIFICACIÓN DE CONDUCTORES</div>
+            <button value={1} onClick={(e) => ModalClick(e)}>CONTROL Y CALIFICACIÓN DE CONDUCTORES</button>
           </div>
         </div>
         <div className="plataforma_section1_body">
           <div className="plataforma_section1_body_text">
             <div className="plataforma_sectionq_body_text_a2">
-              <div>APAGADO REMOTO</div>
+              <button value={2} onClick={(e) => ModalClick(e)}>APAGADO REMOTO</button>
             </div>
             <div className="plataforma_sectionq_body_text_a2">
-              <div>INFORMES A LA MEDIDA</div>
+              <button value={3} onClick={(e) => ModalClick(e)}>INFORMES A LA MEDIDA</button>
             </div>
           </div>
           <img alt="pantallas plataforma" src={PlataformaPantallas}></img>
           <div className="plataforma_section1_body_text">
             <div className="plataforma_sectionq_body_text_a">
-              <div>GEOCERCAS</div>
+              <button value={4} onClick={(e) => ModalClick(e)}>GEOCERCAS</button>
             </div>
             <div className="plataforma_sectionq_body_text_a">
-              <div>APLICACIÓN MÓVIL</div>
+              <button value={5} onClick={(e) => ModalClick(e)}>APLICACIÓN MÓVIL</button>
             </div>
             <div className="plataforma_sectionq_body_text_a">
-              <div>PRE ALISTAMIENTO</div>
+              <button value={6} onClick={(e) => ModalClick(e)}>PRE ALISTAMIENTO</button>
             </div>
           </div>
         </div>

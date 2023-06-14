@@ -100,7 +100,7 @@
   color: red;
 }
 .leads_page_form_end > label > textarea {
-  height: calc(5.88vh * 9);
+  height: calc(5.88vh * 8);
   background: #eee8f2;
   box-shadow: inset 0px -4px 5px 2px rgba(107, 107, 107, 0.25);
   border: none;

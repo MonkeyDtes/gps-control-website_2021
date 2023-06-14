@@ -28,52 +28,98 @@ export default function Equipos() {
   const [button1, setButton1] = useState(false);
   const [button2, setButton2] = useState(false);
   const sectionRef = useRef(null);
+  const windowSize = useRef([window.innerWidth, window.innerHeight]);
   useEffect(() => {
     const sensorT1 = document.getElementById("sensor1");
     const sensorT2 = document.getElementById("sensor2");
     const sensorT3 = document.getElementById("sensor3");
     const sensorT4 = document.getElementById("sensor4");
-    if (button2 === true) {
-      sensorT1.style.marginTop = "14vh";
-      sensorT2.style.marginTop = "14vh";
-      sensorT3.style.marginTop = "7vh";
-      sensorT4.style.marginTop = "7vh";
-      sensorT1.style.opacity = "0.4";
-      sensorT2.style.opacity = "0.4";
-      sensorT3.style.opacity = "1";
-      sensorT4.style.opacity = "1";
-      sensorT1.style.transition = "all 1s";
-      sensorT2.style.transition = "all 1s";
-      sensorT3.style.transition = "all 1s";
-      sensorT4.style.transition = "all 1s";
-    } else if (button1 === true) {
-      sensorT1.style.marginTop = "7vh";
-      sensorT2.style.marginTop = "7vh";
-      sensorT3.style.marginTop = "14vh";
-      sensorT4.style.marginTop = "14vh";
-      sensorT1.style.opacity = "1";
-      sensorT2.style.opacity = "1";
-      sensorT3.style.opacity = "0.4";
-      sensorT4.style.opacity = "0.4";
-      sensorT1.style.transition = "all 1s";
-      sensorT2.style.transition = "all 1s";
-      sensorT3.style.transition = "all 1s";
-      sensorT4.style.transition = "all 1s";
-    } else {
-      sensorT1.style.marginTop = "14vh";
-      sensorT2.style.marginTop = "14vh";
-      sensorT3.style.marginTop = "14vh";
-      sensorT4.style.marginTop = "14vh";
-      sensorT1.style.opacity = "0.4";
-      sensorT2.style.opacity = "0.4";
-      sensorT3.style.opacity = "0.4";
-      sensorT4.style.opacity = "0.4";
-      sensorT1.style.transition = "all 1s";
-      sensorT2.style.transition = "all 1s";
-      sensorT3.style.transition = "all 1s";
-      sensorT4.style.transition = "all 1s";
+    if (windowSize.current[0] > 600) {
+      if (button2 === true) {
+        sensorT1.style.marginTop = "14vh";
+        sensorT2.style.marginTop = "14vh";
+        sensorT3.style.marginTop = "7vh";
+        sensorT4.style.marginTop = "7vh";
+        sensorT1.style.opacity = "0.4";
+        sensorT2.style.opacity = "0.4";
+        sensorT3.style.opacity = "1";
+        sensorT4.style.opacity = "1";
+        sensorT1.style.transition = "all 1s";
+        sensorT2.style.transition = "all 1s";
+        sensorT3.style.transition = "all 1s";
+        sensorT4.style.transition = "all 1s";
+      } else if (button1 === true) {
+        sensorT1.style.marginTop = "7vh";
+        sensorT2.style.marginTop = "7vh";
+        sensorT3.style.marginTop = "14vh";
+        sensorT4.style.marginTop = "14vh";
+        sensorT1.style.opacity = "1";
+        sensorT2.style.opacity = "1";
+        sensorT3.style.opacity = "0.4";
+        sensorT4.style.opacity = "0.4";
+        sensorT1.style.transition = "all 1s";
+        sensorT2.style.transition = "all 1s";
+        sensorT3.style.transition = "all 1s";
+        sensorT4.style.transition = "all 1s";
+      } else {
+        sensorT1.style.marginTop = "14vh";
+        sensorT2.style.marginTop = "14vh";
+        sensorT3.style.marginTop = "14vh";
+        sensorT4.style.marginTop = "14vh";
+        sensorT1.style.opacity = "0.4";
+        sensorT2.style.opacity = "0.4";
+        sensorT3.style.opacity = "0.4";
+        sensorT4.style.opacity = "0.4";
+        sensorT1.style.transition = "all 1s";
+        sensorT2.style.transition = "all 1s";
+        sensorT3.style.transition = "all 1s";
+        sensorT4.style.transition = "all 1s";
+      }
+
+    }else {
+      if (button2 === true) {
+        sensorT1.style.marginTop = "20vh";
+        sensorT2.style.marginTop = "20vh";
+        sensorT3.style.marginTop = "17vh";
+        sensorT4.style.marginTop = "17vh";
+        sensorT1.style.opacity = "0.4";
+        sensorT2.style.opacity = "0.4";
+        sensorT3.style.opacity = "1";
+        sensorT4.style.opacity = "1";
+        sensorT1.style.transition = "all 1s";
+        sensorT2.style.transition = "all 1s";
+        sensorT3.style.transition = "all 1s";
+        sensorT4.style.transition = "all 1s";
+      } else if (button1 === true) {
+        sensorT1.style.marginTop = "17vh";
+        sensorT2.style.marginTop = "17vh";
+        sensorT3.style.marginTop = "20vh";
+        sensorT4.style.marginTop = "20vh";
+        sensorT1.style.opacity = "1";
+        sensorT2.style.opacity = "1";
+        sensorT3.style.opacity = "0.4";
+        sensorT4.style.opacity = "0.4";
+        sensorT1.style.transition = "all 1s";
+        sensorT2.style.transition = "all 1s";
+        sensorT3.style.transition = "all 1s";
+        sensorT4.style.transition = "all 1s";
+      } else {
+        sensorT1.style.marginTop = "20vh";
+        sensorT2.style.marginTop = "20vh";
+        sensorT3.style.marginTop = "20vh";
+        sensorT4.style.marginTop = "20vh";
+        sensorT1.style.opacity = "0.4";
+        sensorT2.style.opacity = "0.4";
+        sensorT3.style.opacity = "0.4";
+        sensorT4.style.opacity = "0.4";
+        sensorT1.style.transition = "all 1s";
+        sensorT2.style.transition = "all 1s";
+        sensorT3.style.transition = "all 1s";
+        sensorT4.style.transition = "all 1s";
+      }
     }
-  }, [button1, button2]);
+    
+  }, [button1, button2, windowSize]);
   const HandleClick = (e) => {
     if (e.currentTarget.value === "1") {
       setButton1(true);
@@ -87,13 +133,24 @@ export default function Equipos() {
     }
   };
   const onChangeIn = (e) => {
-    e.target.style.marginTop = "7vh";
-    e.target.style.opacity = "0.5";
+    if (windowSize.current[0] > 600) {
+      e.target.style.marginTop = "7vh";
+      e.target.style.opacity = "1";
+    }else{
+      e.target.style.marginTop = "17vh";
+      e.target.style.opacity = "1";
+    }
   };
   const onChangeOut = (e) => {
-    e.target.style.marginTop = "14vh";
-    e.target.style.opacity = "0.4";
-    e.target.style.transition = "all 0.5s";
+    if (windowSize.current[0] > 600) {
+      e.target.style.marginTop = "14vh";
+      e.target.style.opacity = "0.4";
+      e.target.style.transition = "all 0.5s";
+    }else{
+      e.target.style.marginTop = "20vh";
+      e.target.style.opacity = "0.4";
+      e.target.style.transition = "all 0.5s";
+    }
   };
 
   return (

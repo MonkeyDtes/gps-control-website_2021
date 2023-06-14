@@ -83,7 +83,7 @@
   font-family: "Bahnschrift";
   font-style: normal;
   font-weight: 700;
-  font-size: 6vh;
+  font-size: 3vw;
   color: #1e8c93;
 }
 .equipos_section2_circleIcon {
@@ -501,7 +501,7 @@
 
 @media only screen and (max-width: 600px) {
   .equipos_section2_column {
-    padding-top: calc(5.88vh * 3);
+    padding-top: calc(5.88vh * 5);
   }
   .equipos_section2_column > h1 {
     font-size: 4vh;
@@ -611,5 +611,40 @@
     margin-top: calc(5.88vh);
     isolation: isolate;
     z-index: 3;
+  }
+  .equipos_section_sensores_body_buttons{
+    display: none;
+  }
+  .equipos_section_sensores_header{
+    flex-direction: column;
+  }
+  .equipos_section_sensores_buttons{
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .equipos_section_sensores_buttons>button{
+    width: calc(8.33vw*4.7);
+    height: calc(5.88vh*2.5);
+  }
+  .equipos_section_sensores_buttons>button>img{
+    height: calc(5.88vh*1.5);
+  }
+  .equipos_section_sensores_title{
+    justify-content: center
+  }
+  .equipos_section_sensores_title>img{
+    width: auto;
+    height: calc(5.88vh*3);
+  }
+  .equipos_section_sensores_title>h3{
+    font-size: 2vh;
+  }.equipos_section_sensores_body>p{
+    margin-top: 3vh;
+    font-size: 1.5vh;
+    width: auto;
+  }
+  .equipos_section_sensores_downside>img{
+    height: calc(5.88vh*2);
+    margin-top: calc(5.88vh*4);
   }
 }

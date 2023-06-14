@@ -21,7 +21,7 @@ import "./home.css";
 import playGreen from "../../assets/playGreen.svg";
 import Leads from "../../components/Leads";
 import Footer from "../../components/Footer/index";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { history } from "../../components/History";
 import SwiperHome from "../../components/SwiperHome/index";
 import SwiperHomeSecond from "../../components/SwiperHomeSecond/index";
@@ -29,24 +29,29 @@ import SwiperHomeSecond from "../../components/SwiperHomeSecond/index";
 export default function Home({ onChangeState }) {
   const [modal, setModal] = useState(false);
   const [modal2, setModal2] = useState(false);
-  const [inicialSlide, setInicialSlide] = useState(0)
+  const [inicialSlide, setInicialSlide] = useState(0);
   const ModalClick = (e) => {
-    console.log(e.target)
     setModal(!modal);
-    const body = document.getElementsByTagName("body")
-    console.log(body)
-    if(modal===false){
-      body[0].style.overflow="hidden"
-    }else{
-      body[0].style.overflow="auto"
+    setInicialSlide(e.currentTarget.value);
+    const body = document.getElementsByTagName("body");
+    if (modal === false) {
+      body[0].style.overflow = "hidden";
+    } else {
+      body[0].style.overflow = "auto";
     }
-    
-    setInicialSlide(e.target.value)
   };
-  const ModalClick2 = () => {
+  const ModalClick2 = (e) => {
     setModal2(!modal2);
+    setInicialSlide(e.currentTarget.value);
+    const body = document.getElementsByTagName("body");
+    if (modal2 === false) {
+      body[0].style.overflow = "hidden";
+    } else {
+      body[0].style.overflow = "auto";
+    }
   };
   const HandleClick = (e) => {
+    console.log(e.currentTarget.value);
     if (e.currentTarget.value === "1") {
       onChangeState([true, false, false, false, false, false, 0]);
     } else if (e.currentTarget.value === "2") {
@@ -68,6 +73,10 @@ export default function Home({ onChangeState }) {
       top: 0,
     });
   };
+  useEffect(() => {
+    setInicialSlide(inicialSlide);
+    console.log(inicialSlide)
+  }, [inicialSlide]);
 
   const sectionRef = useRef(null);
   return (
@@ -118,9 +127,21 @@ export default function Home({ onChangeState }) {
           <img alt="home Down" src={homeDownButton}></img>
         </div>
       </section>
-      {modal ?<> <div onClick={ModalClick} className="modal_home"></div> <div className="modal_home_fade"><button onClick={ModalClick}>X</button> <SwiperHome incialSlide={inicialSlide}></SwiperHome></div></> : <></>}
+      {modal ? (
+        <>
+          {" "}
+          <div onClick={ModalClick} className="modal_home"></div>{" "}
+          <div className="modal_home_fade">
+            <SwiperHome incialSlide={inicialSlide}></SwiperHome>
+          </div>
+        </>
+      ) : (
+        <></>
+      )}
       <section className="home_section2">
-        <div className="home_column_red"></div>
+        <div className="home_column_red">
+          <img alt="home Down" src={homeDownButton}></img>
+        </div>
         <div className="home_section2_column">
           <div className="home_section2_wifiIcon">
             <img alt="wifi icon" src={wifiIcon}></img>
@@ -134,15 +155,25 @@ export default function Home({ onChangeState }) {
           <h3>PLATAFORMA para controlar :</h3>
           <div className="home_section2_group">
             <div className="home_section2_body">
-              <div value={0} onClick={e=>ModalClick(e)}>Flota</div>
-              <div value={1} onClick={e=>ModalClick(e)}>Conductores</div>
+              <button value={0} onClick={(e) => ModalClick(e)}>
+                Flota
+              </button>
+              <button value={1} onClick={(e) => ModalClick(e)}>
+                Conductores
+              </button>
             </div>
             <div className="home_section2_body">
-              <div value={2} onClick={e=>ModalClick(e)}>Pasajeros</div>
-              <div value={3} onClick={e=>ModalClick(e)}>Carga</div>
+              <button value={2} onClick={(e) => ModalClick(e)}>
+                Pasajeros
+              </button>
+              <button value={3} onClick={(e) => ModalClick(e)}>
+                Carga
+              </button>
             </div>
             <div className="home_section2_body">
-              <div value={4} onClick={e=>ModalClick(e)}>Obtener estadísticas e informes</div>
+              <button value={4} onClick={(e) => ModalClick(e)}>
+                Obtener estadísticas e informes
+              </button>
             </div>
             <button
               onClick={() =>
@@ -158,7 +189,9 @@ export default function Home({ onChangeState }) {
         </div>
       </section>
       <section className="home_section2">
-        <div className="home_column_red"></div>
+        <div className="home_column_red">
+          <img alt="home Down" src={homeDownButton}></img>
+        </div>
         <div className="home_section3_column">
           <div className="home_section3_circle">
             <img alt="wifi icon" src={circuloHome}></img>
@@ -172,11 +205,11 @@ export default function Home({ onChangeState }) {
           <h3>PLATAFORMA para controlar :</h3>
           <div className="home_section3_group">
             <div className="home_section2_body">
-              <div>
+              <button>
                 El éxito del negocio de cualquier empresa con su flota depende
                 en gran medida de la eficacia con que se organice en ella el
                 control y la contabilidad del combustible.
-              </div>
+              </button>
             </div>
             <button
               onClick={() =>
@@ -192,8 +225,19 @@ export default function Home({ onChangeState }) {
         </div>
       </section>
       <section className="home_section2">
-      {modal2 ?<><div onClick={ModalClick2} className="modal_home"></div> <div className="modal_home_fade"><button onClick={ModalClick2}>X</button> <SwiperHomeSecond incialSlide={inicialSlide}></SwiperHomeSecond></div></> : <></>}
-        <div className="home_column_red"></div>
+        {modal2 ? (
+          <>
+            <div onClick={ModalClick2} className="modal_home"></div>{" "}
+            <div className="modal_home_fade">
+              <SwiperHomeSecond incialSlide={inicialSlide}></SwiperHomeSecond>
+            </div>
+          </>
+        ) : (
+          <></>
+        )}
+        <div className="home_column_red">
+          <img alt="home Down" src={homeDownButton}></img>
+        </div>
         <div className="home_section4_column">
           <div className="home_section2_wifiIcon">
             <img alt="wifi icon" src={wifiIcon}></img>
@@ -206,15 +250,19 @@ export default function Home({ onChangeState }) {
           </div>
           <div className="home_section4_group">
             <div className="home_section2_body">
-              <div onClick={ModalClick2}>Evitar accidentes</div>
+              <button value={0} onClick={(e) => ModalClick2(e)}>
+                Evitar accidentes
+              </button>
             </div>
             <div className="home_section2_body">
-              <div>
+              <button value={1} onClick={(e) => ModalClick2(e)}>
                 Registrar lo que ocurre al interior del móvil en tiempo real
-              </div>
+              </button>
             </div>
             <div className="home_section2_body">
-              <div>Controlar el comportamiento de los conductores</div>
+              <button value={2} onClick={(e) => ModalClick2(e)}>
+                Controlar el comportamiento de los conductores
+              </button>
             </div>
             <button
               onClick={() =>
@@ -238,10 +286,10 @@ export default function Home({ onChangeState }) {
           <h2>Aplicaciones</h2>
         </div>
         <div className="home_section3_buttons_up">
-          <button value={"1"} onClick={(e) => HandleClick(e)}>
+          <button value={1} onClick={(e) => HandleClick(e)}>
             <img alt="apps" src={iconoApps3}></img>
           </button>
-          <button value={"2"} onClick={(e) => HandleClick(e)}>
+          <button value={2} onClick={(e) => HandleClick(e)}>
             <img alt="apps" src={iconoApps2}></img>
           </button>
           <button value={3} onClick={(e) => HandleClick(e)}>
@@ -259,7 +307,9 @@ export default function Home({ onChangeState }) {
             <img alt="apps" src={iconoApps1}></img>
           </button>
         </div>
-        <div className="home_column_red_end"></div>
+        <div className="home_column_red_end">
+          <img alt="home Down" src={homeDownButton}></img>
+        </div>
         <div className="home_corner_red"></div>
       </section>
       <section ref={sectionRef}></section>

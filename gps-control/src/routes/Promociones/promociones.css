@@ -32,10 +32,11 @@
   margin-top: calc(5.88vh * 0.5);
   border-bottom: 1px solid;
   border-image: linear-gradient(to right, red 15%, transparent 15%) 100% 1;
-  width: calc(8.33vw * 3);
+  width: calc(8.33vw * 4);
   padding-left: calc(8.33vw * 0.2);
   margin-inline: calc(8.33vw * 0.4);
   height: calc(5.88vh * 0.7);
+  padding-bottom: calc(8.33vw*0.05);
 }
 .promociones_section_body > div:hover {
   border-bottom: 3px solid;

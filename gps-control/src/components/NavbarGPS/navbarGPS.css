@@ -372,7 +372,8 @@ nav>div:nth-child(6){
     padding-inline: 4vw;
   }
   .navar_section_select > img {
-    height: calc(5.88vh * 0.5);
+    width: auto;
+    height: calc(5.88vh * 1);
   }
   .navar_section_select > h1 {
     font-family: "Bahnschrift";
@@ -424,6 +425,7 @@ nav>div:nth-child(6){
   }
   .navbar_home_click > h1 {
     margin-right: calc(8.33vw * 4);
+    font-size: 3vh;
   }
   .navbar_section_click {
     width: 83% !important;

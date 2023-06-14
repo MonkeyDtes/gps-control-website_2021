@@ -3,32 +3,21 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper";
 import SwiperCore, { Keyboard, Mousewheel } from "swiper/core";
 import "./swiper.css";
+import modalImg1 from "../../assets/Modal_comportamiento.jpg"
+import modalImg2 from "../../assets/Modal_interior.jpg"
 
-import modalImg6 from "../../assets/Modal_interior.jpg"
-import modalImg7 from "../../assets/Modal_pasajeros.jpg"
  
 const SwiperHomeSecond = (e) => {
   SwiperCore.use([Keyboard, Mousewheel]);
-  const [swiper, setSwiper] = useState(null);
-  const [inicialSlide, setInicialSlide] =useState(e.inicialSlide)
+  
+  const [inicialSlide, setInicialSlide] =useState(e.incialSlide)
 
   const swiperRef = useRef(null);
   useEffect(() => {
-    focusSlide(e.focusOnSlide);
-    setInicialSlide(e.inicialSlide)
+    setInicialSlide(e.incialSlide)
   }, [
-    e.focusOnSlide, e.inicialSlide
+    e.incialSlide
   ]);
-
-  const handleSwiperInit = (swiper) => {
-    setSwiper(swiper);
-  };
-
-  const focusSlide = (slideIndex) => {
-    if (swiper) {
-      swiper.slideTo(slideIndex);
-    }
-  };
   return (
     <div
       style={{
@@ -43,7 +32,6 @@ const SwiperHomeSecond = (e) => {
         initialSlide={inicialSlide}
         mousewheel={true}
         ref={swiperRef}
-        onSwiper={(swiper) => handleSwiperInit(swiper)}
         breakpoints={{
           200: {
             spaceBetween: 10,
@@ -55,8 +43,8 @@ const SwiperHomeSecond = (e) => {
         }}
         className="swiper_home"
       >
-        <SwiperSlide className="swiper_home_slide" ><img alt="swiper" src={modalImg6}></img></SwiperSlide>
-        <SwiperSlide className="swiper_home_slide" ><img alt="swiper" src={modalImg7}></img></SwiperSlide>
+        <SwiperSlide className="swiper_home_slide" ><img alt="swiper" src={modalImg1}></img></SwiperSlide>
+        <SwiperSlide className="swiper_home_slide" ><img alt="swiper" src={modalImg2}></img></SwiperSlide>
       </Swiper>
     </div>
   );
