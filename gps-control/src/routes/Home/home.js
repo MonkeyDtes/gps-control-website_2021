@@ -51,7 +51,6 @@ export default function Home({ onChangeState }) {
     }
   };
   const HandleClick = (e) => {
-    console.log(e.currentTarget.value);
     if (e.currentTarget.value === "1") {
       onChangeState([true, false, false, false, false, false, 0]);
     } else if (e.currentTarget.value === "2") {
@@ -75,7 +74,7 @@ export default function Home({ onChangeState }) {
   };
   useEffect(() => {
     setInicialSlide(inicialSlide);
-    console.log(inicialSlide)
+    
   }, [inicialSlide]);
 
   const sectionRef = useRef(null);

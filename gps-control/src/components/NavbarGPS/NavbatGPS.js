@@ -30,7 +30,9 @@ export default function NavbarGPS(e) {
   const windowSize = useRef([window.innerWidth, window.innerHeight]);
   const windowWidth = windowSize.current[0];
   const handleClick = (index) => {
+    const body = document.getElementsByTagName("body");
     goToTop();
+    body[0].style.overflow = "auto";
     if (index.currentTarget.id === "1") {
       history.push("/");
     } else if (index.currentTarget.id === "2") {

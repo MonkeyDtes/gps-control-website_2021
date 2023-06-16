@@ -3,24 +3,20 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper";
 import SwiperCore, { Keyboard, Mousewheel } from "swiper/core";
 import "./swiper.css";
-import modalImg1 from "../../assets/modal1.jpg"
 import modalImg2 from "../../assets/Modal_carga.jpg"
 import modalImg3 from "../../assets/Modal_pasajeros.jpg"
 import modalImg4 from "../../assets/Modal_conductores.jpg"
 import modalImg5 from "../../assets/Modal_flota.jpg"
 
-
-const SwiperHome = (e) => {
+const SwiperPromo = (e) => {
   SwiperCore.use([Keyboard, Mousewheel]);
   const [inicialSlide, setInicialSlide] =useState(e.incialSlide)
-
   const swiperRef = useRef(null);
   useEffect(() => {
     setInicialSlide(e.incialSlide)
   }, [
     e.incialSlide
   ]);
-
   return (
     <div
       style={{
@@ -29,15 +25,16 @@ const SwiperHome = (e) => {
       }}
     >
       <Swiper
+        touchRatio= {0}
         centeredSlides={true}
-        navigation={true}
+        navigation={false}
         modules={[Pagination, Navigation]}
         initialSlide={inicialSlide}
         mousewheel={true}
         ref={swiperRef}
         className="swiper_home"
       >
-        <SwiperSlide className="swiper_home_slide" ><img alt="swiper" src={modalImg1}></img></SwiperSlide>
+        <SwiperSlide className="swiper_home_slide" ></SwiperSlide>
         <SwiperSlide className="swiper_home_slide" ><img alt="swiper" src={modalImg2}></img></SwiperSlide>
         <SwiperSlide className="swiper_home_slide" ><img alt="swiper" src={modalImg3}></img></SwiperSlide>
         <SwiperSlide className="swiper_home_slide" ><img alt="swiper" src={modalImg4}></img></SwiperSlide>
@@ -47,4 +44,4 @@ const SwiperHome = (e) => {
   );
 };
 
-export default SwiperHome;
+export default SwiperPromo;

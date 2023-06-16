@@ -7,6 +7,7 @@ import Footer from "../../components/Footer/index";
 import YoutubeEmbed from "../../components/youtubeVideos/index";
 import SwiperPromo from "../../components/SwiperPromo";
 import { useState } from "react";
+import Camion from "../../components/camion/index";
 
 export default function Plataforma() {
   const [modal, setModal] = useState(false)
@@ -53,6 +54,9 @@ export default function Plataforma() {
           <div onClick={ModalClick} className="modal_home"></div>
           <div className="modal_home_fade">
             <SwiperPromo incialSlide={inicialSlide}></SwiperPromo>
+            <div className="Camion">
+              <Camion className="Camion"></Camion>
+            </div>
           </div>
         </>
       ) : (

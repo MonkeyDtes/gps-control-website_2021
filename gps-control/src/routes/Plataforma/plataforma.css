@@ -187,6 +187,16 @@
   border-left: 3px solid #1e8c93;
   transition: all 1s;
 }
+.Camion{
+  position: absolute;
+  z-index: 102;
+  overflow: hidden;
+  margin-top: calc(5.88vh*3);
+  margin-left: calc(8.33vw*2);
+}
+canvas:nth-child(2){
+  display: none !important;
+}
 @media only screen and (max-width: 600px) {
   .plataforma_section2_body_ticket{
     font-size: 2vh;
