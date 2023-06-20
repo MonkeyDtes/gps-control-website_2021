@@ -4,7 +4,7 @@
   background-color: #eee8f2;
 }
 .apps_section1_bg {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -19,7 +19,7 @@
   font-family: "Bahnschrift";
   font-style: normal;
   font-weight: 700;
-  font-size: 4vh;
+  font-size: 3vw;
   line-height: 72px;
   color: #6b6b6b;
 }
@@ -59,9 +59,8 @@
   font-size: 0.7vw;
   margin-bottom: calc(5.88vh * 0.2);
   color: #6b6b6b;
-  text-align:left;
+  text-align: left;
   margin-right: calc(8.33vw * 0.5);
- 
 }
 
 .apps_button_check {
@@ -96,6 +95,10 @@
   flex-direction: row;
 }
 @media only screen and (max-width: 600px) {
+  .apps_section1_bg {
+    background-size: cover;
+    background-position-y: 60vh;
+  }
   .apps_section1_buttons_top {
     flex-direction: column;
     height: calc(5.88vh);
@@ -110,9 +113,21 @@
   .apps_section1 > h1 {
     font-size: 2vh;
     margin-top: calc(5.88vh * 6);
-    margin-left: calc(8.33vw*2);
+    margin-left: calc(8.33vw * 2);
   }
   .apps_section1 {
     height: 140vh;
+  }
+  .apps_section1_bg > h1 {
+    font-size: 2vh;
+    text-align: center;
+    margin-top: calc(5.88vh * 5.5);
+  }
+  .apps_section1_buttons_top > button {
+    font-size: 1.5vh;
+    margin-left: calc(8.33vw);
+  }
+  .apps_section1_buttons_bot > button {
+    font-size: 1.5vh;
   }
 }

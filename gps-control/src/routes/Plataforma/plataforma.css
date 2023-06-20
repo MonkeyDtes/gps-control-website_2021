@@ -63,7 +63,6 @@
   width: calc(8.33vw * 4);
   justify-content: space-between;
   margin-top: calc(5.88vh * 1);
-
 }
 .plataforma_sectionq_body_text_a1 > button {
   font-family: "Bahnschrift";
@@ -174,34 +173,34 @@
   opacity: 0;
   width: calc(8.88vw * 6);
 }
-.plataforma_section2_body_ticket{
-  border-left: 1PX solid red;
+.plataforma_section2_body_ticket {
+  border-left: 1px solid red;
   font-size: 1.2vw;
-  width: calc(8.33vw*3);
-  margin-bottom: calc(5.88vh*0.3);
-  padding-left: calc(8.33vw*0.1);
+  width: calc(8.33vw * 3);
+  margin-bottom: calc(5.88vh * 0.3);
+  padding-left: calc(8.33vw * 0.1);
 }
-.plataforma_section2_body_ticket:hover{
-  padding-left: calc(8.33vw*0.5);
+.plataforma_section2_body_ticket:hover {
+  padding-left: calc(8.33vw * 0.5);
   color: #1e8c93;
   border-left: 3px solid #1e8c93;
   transition: all 1s;
 }
-.Camion{
+.Camion {
   position: absolute;
   z-index: 102;
   overflow: hidden;
-  margin-top: calc(5.88vh*3);
-  margin-left: calc(8.33vw*2);
+  margin-top: calc(5.88vh * 2);
+  margin-left: calc(8.33vw);
 }
-canvas:nth-child(2){
+canvas:nth-child(2) {
   display: none !important;
 }
 @media only screen and (max-width: 600px) {
-  .plataforma_section2_body_ticket{
+  .plataforma_section2_body_ticket {
     font-size: 2vh;
     width: inherit;
-  }  
+  }
   .plataforma_sectionq_body_text_a1 {
     width: inherit;
     margin-top: calc(5.88vh * 0);
@@ -325,5 +324,9 @@ canvas:nth-child(2){
   }
   .plataforma_section2_body > h6 {
     font-size: 2vh;
+  }
+  .Camion {
+    margin-top: calc(5.88vh * 6);
+    margin-left: calc(8.33vw * 2);
   }
 }

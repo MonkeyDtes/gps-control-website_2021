@@ -23,6 +23,15 @@ const SwiperApps = (e) => {
   const [button5, setButton5] = useState(e.button5);
   const [button6, setButton6] = useState(e.button6);
   const [swiper, setSwiper] = useState(null);
+  const handleSwiperInit = (swiper) => {
+    setSwiper(swiper);
+  };
+
+  const focusSlide = (slideIndex) => {
+    if (swiper) {
+      swiper.slideTo(slideIndex);
+    }
+  };
 
   const swiperRef = useRef(null);
   useEffect(() => {
@@ -33,6 +42,7 @@ const SwiperApps = (e) => {
     setButton5(e.button5);
     setButton6(e.button6);
     focusSlide(e.focusOnSlide);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [
     e.button1,
     e.button2,
@@ -42,23 +52,8 @@ const SwiperApps = (e) => {
     e.button6,
     e.focusOnSlide,
   ]);
-
-  const handleSwiperInit = (swiper) => {
-    setSwiper(swiper);
-  };
-
-  const focusSlide = (slideIndex) => {
-    if (swiper) {
-      swiper.slideTo(slideIndex);
-    }
-  };
   return (
-    <div
-      style={{
-        overflow: "hidden",
-        alignItems: "center",
-      }}
-    >
+    <div>
       <Swiper
         centeredSlides={true}
         navigation={true}

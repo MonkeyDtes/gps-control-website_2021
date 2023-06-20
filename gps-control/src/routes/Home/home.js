@@ -74,7 +74,6 @@ export default function Home({ onChangeState }) {
   };
   useEffect(() => {
     setInicialSlide(inicialSlide);
-    
   }, [inicialSlide]);
 
   const sectionRef = useRef(null);
@@ -284,28 +283,31 @@ export default function Home({ onChangeState }) {
           <img alt="play verde" src={playGreen}></img>
           <h2>Aplicaciones</h2>
         </div>
-        <div className="home_section3_buttons_up">
-          <button value={1} onClick={(e) => HandleClick(e)}>
-            <img alt="apps" src={iconoApps3}></img>
-          </button>
-          <button value={2} onClick={(e) => HandleClick(e)}>
-            <img alt="apps" src={iconoApps2}></img>
-          </button>
-          <button value={3} onClick={(e) => HandleClick(e)}>
-            <img alt="apps" src={iconoApps4}></img>
-          </button>
+        <div className="home_section3_buttons">
+          <div className="home_section3_buttons_up">
+            <button value={1} onClick={(e) => HandleClick(e)}>
+              <img alt="apps" src={iconoApps3}></img>
+            </button>
+            <button value={2} onClick={(e) => HandleClick(e)}>
+              <img alt="apps" src={iconoApps2}></img>
+            </button>
+            <button value={3} onClick={(e) => HandleClick(e)}>
+              <img alt="apps" src={iconoApps4}></img>
+            </button>
+          </div>
+          <div className="home_section3_buttons_up">
+            <button value={4} onClick={(e) => HandleClick(e)}>
+              <img alt="apps" src={iconoApps5}></img>
+            </button>
+            <button value={5} onClick={(e) => HandleClick(e)}>
+              <img alt="apps" src={iconoApps6}></img>
+            </button>
+            <button value={6} onClick={(e) => HandleClick(e)}>
+              <img alt="apps" src={iconoApps1}></img>
+            </button>
+          </div>
         </div>
-        <div className="home_section3_buttons_up">
-          <button value={4} onClick={(e) => HandleClick(e)}>
-            <img alt="apps" src={iconoApps5}></img>
-          </button>
-          <button value={5} onClick={(e) => HandleClick(e)}>
-            <img alt="apps" src={iconoApps6}></img>
-          </button>
-          <button value={6} onClick={(e) => HandleClick(e)}>
-            <img alt="apps" src={iconoApps1}></img>
-          </button>
-        </div>
+
         <div className="home_column_red_end">
           <img alt="home Down" src={homeDownButton}></img>
         </div>
