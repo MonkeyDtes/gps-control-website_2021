@@ -245,14 +245,22 @@ textarea {
     width: 100%;
     height: 170vh;
   }
+  .leads_page_form_start_control{
+    margin-left: calc(8.33vw*2);
+
+  }
+  .leads_page_form_start_control:nth-child(5) {
+    margin-left: calc(8.33vw * 2.2);
+  }
   .leads_page_form_start_control > label > input {
     width: calc(8.33vw * 8);
   }
   .leads_page_form_start > h6 {
     width: calc(8.33vw * 8);
+    margin-left: calc(8.33vw * 2.2);
   }
   .leads_page_form_end > label > textarea {
-    margin-left: 0vw;
+    margin-left: calc(8.33vw * 2);
     height: calc(5.88vh * 7);
     width: calc(8.33vw * 8);
   }
@@ -268,7 +276,7 @@ textarea {
     height: calc(5.88vh * 0.7);
     align-self: self-start;
     margin-top: calc(5.88vh);
-    margin-left: calc(8.33vw * 1);
+    margin-left: calc(8.33vw * 2);
     z-index: 1;
   }
   .leads_page_end_img_white > img {

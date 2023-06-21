@@ -82,7 +82,7 @@ export default function NavbarGPS(e) {
               {Home ? (
                 <div className="navar_section_select">
                   <h1>Home</h1>
-                  <img alt="logo gps control" src={GPSControlLogoRed}></img>
+                  <img alt="logo gps control" id="1" onClick={(e) => handleClick(e)} src={GPSControlLogoRed}></img>
                 </div>
               ) : (
                 <></>
@@ -90,7 +90,7 @@ export default function NavbarGPS(e) {
               {Plataforma ? (
                 <div className="navar_section_select">
                   <h1>Plataforma de monitoreo</h1>
-                  <img alt="logo gps control" src={GPSControlLogoRed}></img>
+                  <img alt="logo gps control" id="1" onClick={(e) => handleClick(e)} src={GPSControlLogoRed}></img>
                 </div>
               ) : (
                 <></>
@@ -98,7 +98,7 @@ export default function NavbarGPS(e) {
               {Equipos ? (
                 <div className="navar_section_select">
                   <h1>Soluciones de monitoreo</h1>
-                  <img alt="logo gps control" src={GPSControlLogoRed}></img>
+                  <img alt="logo gps control" id="1" onClick={(e) => handleClick(e)} src={GPSControlLogoRed}></img>
                 </div>
               ) : (
                 <></>
@@ -106,7 +106,7 @@ export default function NavbarGPS(e) {
               {transporte ? (
                 <div className="navar_section_select">
                   <h1>Soluciones de transporte</h1>
-                  <img alt="logo gps control" src={GPSControlLogoRed}></img>
+                  <img alt="logo gps control" id="1" onClick={(e) => handleClick(e)} src={GPSControlLogoRed}></img>
                 </div>
               ) : (
                 <></>
@@ -114,7 +114,7 @@ export default function NavbarGPS(e) {
               {Apps ? (
                 <div className="navar_section_select">
                   <h1>Aplicaciones</h1>
-                  <img alt="logo gps control" src={GPSControlLogoRed}></img>
+                  <img alt="logo gps control" id="1" onClick={(e) => handleClick(e)} src={GPSControlLogoRed}></img>
                 </div>
               ) : (
                 <></>
@@ -122,7 +122,7 @@ export default function NavbarGPS(e) {
               {Promociones ? (
                 <div className="navar_section_select">
                   <h1>Tu negocio propio de GPS</h1>
-                  <img alt="logo gps control" src={GPSControlLogoRed}></img>
+                  <img alt="logo gps control" id="1" onClick={(e) => handleClick(e)} src={GPSControlLogoRed}></img>
                 </div>
               ) : (
                 <></>
