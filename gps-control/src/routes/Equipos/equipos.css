@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Klik";
+  src: local("Klik"),
+  url("../../assets/Klik-Light.otf") format("opentype")
+}
 .equipos_section1 {
   width: 100%;
   height: 100vh;
@@ -62,9 +67,9 @@
 }
 .equipos_section2_column > h1 {
   font-size: calc(8.33vw * 0.5);
-  font-family: "Kiona";
+  font-family: "klik";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 100;
   color: #6b6b6b;
   margin-block-start: 0vh;
 }
@@ -153,9 +158,9 @@
 }
 
 .equipos_section2_start > h1 {
-  font-family: "Kiona";
+  font-family: "klik";
   font-style: normal;
-  font-weight: 900;
+  font-weight: 100;
   font-size: 6.3vh;
   margin-right: 2vw;
   text-align: center;
@@ -299,7 +304,7 @@
   mix-blend-mode: multiply;
 }
 .equipos_section3_end > h1 {
-  font-family: "Kiona";
+  font-family: "klik";
   font-style: normal;
   font-weight: 900;
   font-size: 6.3vh;
