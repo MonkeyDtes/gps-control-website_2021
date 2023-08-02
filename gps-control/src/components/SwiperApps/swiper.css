@@ -145,11 +145,11 @@
   opacity: 1;
 }
 .text_suport_apps:nth-child(2) {
-  bottom: calc(8.33vh * 2.5);
+  bottom: calc(8.33vh * -2.5);
   left: calc(5.88vh * 1.5);
 }
 .text_suport_apps:nth-child(4) {
-  bottom: calc(8.33vh * 1.7);
+  bottom: calc(8.33vh * -0.4);
   left: calc(5.88vh * 1.5);
 }
 
