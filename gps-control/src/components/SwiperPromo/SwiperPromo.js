@@ -47,6 +47,7 @@ const SwiperPromo = (e) => {
         initialSlide={inicialSlide}
         mousewheel={true}
         ref={swiperRef}
+        loop={true}
         className="swiper_home"
       >
         <SwiperSlide className="swiper_promo_slide">
