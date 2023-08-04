@@ -8,7 +8,7 @@ import instagramWhite from "../../assets/instagramWhite.svg";
 export default function Footer() {
   return (
     <footer className="footer_gpscontrol">
-      <h6>© GPS Control</h6>
+      <p>© GPS Control</p>
       <div className="footer_body">
         <div className="footer_body_start">
           <div className="footer_column">
@@ -34,7 +34,7 @@ export default function Footer() {
           <h3>+57 3187810059</h3>
           <h3>+57 3202410632</h3>
           <div className="footer_redes">
-            <h2>Social media</h2>
+            <h2 className="textSocial">Social media</h2>
             <a href=" https://www.instagram.com/gpscontrolsat/?fbclid=IwAR2AqTdN3wwqYcwnal4gexTfp1hYXZQRr3wRvTsFBjoSI8-xj3CA1Wj-Mfk">
               <img alt="instagram" src={instagramWhite}></img>
             </a>
@@ -53,7 +53,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <h6>Copyright 2023 © AB Comercial S.A.S</h6>
+      <p>Copyright 2023 © AB Comercial S.A.S</p>
     </footer>
   );
 }

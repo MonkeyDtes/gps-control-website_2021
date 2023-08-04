@@ -133,15 +133,7 @@ export default function NavbarGPS(e) {
             </button>
           </div>
           <div className="navbar_contacts">
-            <a href="mailto:sales@gpscontrol.co">
-              <img alt="mail" src={navbarMail}></img>
-            </a>
-            <a href="https://wa.me/qr/AFTZFJYUOAWOM1">
-              <img alt="yt" src={navbarYT}></img>
-            </a>
-            <a href="https://www.youtube.com/channel/UCYU-Vn3lnDLePlavejpZMBg">
-              <img alt="telefono" src={navbarTel}></img>
-            </a>
+           
           </div>
           <div className="navbar_ingresos">
             <a href="https://wa.me/qr/AFTZFJYUOAWOM1">
@@ -154,7 +146,6 @@ export default function NavbarGPS(e) {
             <div className="text_suport">Soporte Técnico</div>
             <a href="https://tracking.gpscontrolcolombia.com/">
               <img alt="ingreso plataforma" src={ingresoLogo2}></img>
-              <div></div>
             </a>
             <div className="text_suport">Ingreso plataforma</div>
           </div>
@@ -221,7 +212,7 @@ export default function NavbarGPS(e) {
                 <button className="navbar_section_click">
                   <div className="navbar_section_text">
                     <h2>Soluciones</h2>
-                    <img alt="nube" src={navbarLogowhite1}></img>
+                    <img alt="nube" className="iconsMenu" src={navbarLogowhite1}></img>
                   </div>
                   <div className="navbar_section_text">
                     <div className="navbar_section_linea_click"></div>
@@ -343,11 +334,11 @@ export default function NavbarGPS(e) {
             <a href="mailto:sales@gpscontrol.co">
               <img alt="mail" src={navbarMail}></img>
             </a>
-            <a href="https://www.youtube.com/channel/UCYU-Vn3lnDLePlavejpZMBg">
-              <img alt="yt" src={navbarYT}></img>
-            </a>
             <a href="https://wa.me/qr/AFTZFJYUOAWOM1">
               <img alt="telefono" src={navbarTel}></img>
+            </a>
+            <a href="https://www.youtube.com/channel/UCYU-Vn3lnDLePlavejpZMBg">
+              <img alt="yt" src={navbarYT}></img>
             </a>
           </div>
           <div className="navbar_ingresos">

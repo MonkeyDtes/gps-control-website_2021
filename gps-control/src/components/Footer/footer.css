@@ -64,6 +64,16 @@
   display: flex;
   flex-direction: row;
 }
+.textSocial{
+  margin-top: 9vw;
+}
+.footer_redes a{
+  margin-top: 8vw;
+}
+footer p{
+  font-size: 15px;
+}
+
 @media only screen and (max-width: 600px) {
   .footer_body {
     flex-direction: column;

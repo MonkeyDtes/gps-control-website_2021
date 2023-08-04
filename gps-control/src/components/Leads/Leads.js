@@ -134,10 +134,10 @@ export default function Leads() {
                   />
                 </label>
               </div>
-              <h6>
+              <p>
                 Seguimos los requerimientos del cliente ofreciendo la mejor
                 solución.
-              </h6>
+              </p>
             </div>
             <div className="leads_page_form_end">
               <label>
@@ -150,7 +150,7 @@ export default function Leads() {
                 />
               </label>
               <button type="submit" value="Enviar">
-                enviar
+                Enviar
               </button>
               <h2>control is better</h2>
             </div>
