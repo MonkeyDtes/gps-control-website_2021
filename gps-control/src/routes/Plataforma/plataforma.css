@@ -72,12 +72,12 @@
   line-height: 38px;
   color: #6b6b6b;
   text-align: left;
-  margin-top: calc(5.88vh * 0.5);
+  margin-top: calc(3.88vh * 0.5);
   border-bottom: 1px solid;
   border-top: none;
   border-image: linear-gradient(to right, red 15%, transparent 5%) 100% 1;
   width: calc(8.33vw * 3);
-  padding-left: calc(8.33vw * 0.2);
+  padding-left: calc(30.33vw * 0.2);
   background-color: transparent;
 }
 .plataforma_sectionq_body_text_a1 > button:hover {
@@ -131,6 +131,9 @@
 .plataforma_sectionq_body_text_a3 > div {
   width: inherit;
   padding-left: calc(8.33vw * 0.2);
+  border-bottom: 1px solid;
+  border-top: none;
+  border-image: linear-gradient(to right, red 5%, transparent 5%) 100% 1;
 }
 .plataforma_section2 {
   display: flex;

@@ -15,13 +15,16 @@ import sensorCable from "../../assets/SensorCable.png";
 import sensorBluetoohTG from "../../assets/SensorBluetoohToggle.png";
 import sensorCableTG from "../../assets/SensorCableToggle.png";
 import masIcon from "../../assets/+ icon.svg";
+import FramePalabraCombustible from "../../assets/FramePalabraCombustible.png";
 import ytVerde from "../../assets/ytVerdeBG.svg";
 import coticeVerde from "../../assets/cotizeVerde.svg";
 import fleetrunPDF from "../../assets/fleetrun.pdf";
 import sensorEquipos1 from "../../assets/sensorEquiposTD1.png";
+import FrameMaquinaria from "../../assets/FrameMaquinaria.png";
 import sensorEquipos2 from "../../assets/sensorEquiposTD2.png";
 import sensorEquipos3 from "../../assets/sensorEquiposTD3.png";
 import sensorEquipos4 from "../../assets/sensorEquiposTD4.png";
+import Ellipse21 from "../../assets/Ellipse21.png";
 import { useEffect, useRef, useState } from "react";
 
 export default function Equipos() {
@@ -76,7 +79,7 @@ export default function Equipos() {
         sensorT4.style.transition = "all 1s";
       }
 
-    }else {
+    } else {
       if (button2 === true) {
         sensorT1.style.marginTop = "20vh";
         sensorT2.style.marginTop = "20vh";
@@ -118,7 +121,7 @@ export default function Equipos() {
         sensorT4.style.transition = "all 1s";
       }
     }
-    
+
   }, [button1, button2, windowSize]);
   const HandleClick = (e) => {
     if (e.currentTarget.value === "1") {
@@ -136,7 +139,7 @@ export default function Equipos() {
     if (windowSize.current[0] > 600) {
       e.target.style.marginTop = "7vh";
       e.target.style.opacity = "1";
-    }else{
+    } else {
       e.target.style.marginTop = "17vh";
       e.target.style.opacity = "1";
     }
@@ -146,7 +149,7 @@ export default function Equipos() {
       e.target.style.marginTop = "14vh";
       e.target.style.opacity = "0.4";
       e.target.style.transition = "all 0.5s";
-    }else{
+    } else {
       e.target.style.marginTop = "20vh";
       e.target.style.opacity = "0.4";
       e.target.style.transition = "all 0.5s";
@@ -173,6 +176,7 @@ export default function Equipos() {
             <h1>EVITA EL ROBO</h1>
             <div className="main_box">
               <div className="equipos_section2_label">
+                <img alt="icon" className="iconCombustible" src={FramePalabraCombustible}></img>
                 <h2>De tu combustible</h2>
               </div>
             </div>
@@ -190,12 +194,12 @@ export default function Equipos() {
                 className="equipos_section_sensores_buttons_toggle"
               >
                 <img alt="sensor bluetooth" src={sensorBluetoohTG}></img>
-                <p>Sensor bluetooth</p>
+                <p className="textContainerEquipos">Sensor bluetooth</p>
               </button>
             ) : (
               <button value={1} onClick={(e) => HandleClick(e)}>
                 <img alt="sensor bluetooth" src={sensorBluetooh}></img>
-                <p>Sensor bluetooth</p>
+                <p className="textContainerEquipos">Sensor bluetooth</p>
               </button>
             )}
             {button2 ? (
@@ -205,12 +209,12 @@ export default function Equipos() {
                 className="equipos_section_sensores_buttons_toggle"
               >
                 <img alt="sensor Cableado" src={sensorCableTG}></img>
-                <p>Sensor bluetooth</p>
+                <p className="textContainerEquipos">Sensor bluetooth</p>
               </button>
             ) : (
               <button value={2} onClick={(e) => HandleClick(e)}>
                 <img alt="sensor Cableado" src={sensorCable}></img>
-                <p>Sensor Cableado</p>
+                <p className="textContainerEquipos">Sensor Cableado</p>
               </button>
             )}
           </div>
@@ -233,18 +237,21 @@ export default function Equipos() {
                 rel="noreferrer"
               >
                 <button>
-                  <img alt="información" src={masIcon}></img>INFORMACION
+                  <img alt="información" src={masIcon}></img>
+                  <p className="textContainerBlue">INFORMACION</p>
                 </button>
               </a>
               <button>
-                <img alt="información" src={ytVerde}></img>REEL
+                <img alt="información" src={ytVerde}></img>
+                <p className="textContainerBlue">REEL</p>
               </button>
               <button
                 onClick={() =>
                   sectionRef.current.scrollIntoView({ behavior: "smooth" })
                 }
               >
-                <img alt="información" src={coticeVerde}></img>COTICE AQUI
+                <img alt="información" src={coticeVerde}></img>
+                <p className="textContainerBlue">COTICE AQUÍ</p>
               </button>
             </div>
           </div>
@@ -290,10 +297,12 @@ export default function Equipos() {
           <div className="equipos_section2_start_column">
             <div className="equipos_section2_start_buttons">
               <a href="https://www.youtube.com/channel/UCYU-Vn3lnDLePlavejpZMBg">
-                <img alt="youtube icon " src={ytIcon}></img>VIDEO DEL EQUIPO
+                <img className="icons" alt="youtube icon " src={ytIcon}></img>
+                <p className="textContainerIcons">VIDEO DEL EQUIPO</p>
               </a>
               <a href=" https://wa.me/qr/HVC55BD4ZJMLH1">
-                <img alt="youtube icon " src={waIcon}></img>CHATEE CON NOSOTROS
+                <img className="icons" alt="youtube icon " src={waIcon}></img>
+                <p className="textContainerIcons">CHATEE CON NOSOTROS</p>
               </a>
             </div>
             <p>
@@ -303,17 +312,37 @@ export default function Equipos() {
               manejo, mejora la gestión de tus activos y tomar decisiones
               informadas sobre su uso y mantenimiento.
             </p>
-            <img alt=" logo gps control" src={gpsControlWhite}></img>
+            {/*<img alt=" logo gps control" src={gpsControlWhite}></img> */}
           </div>
           <h1>MAQUINARIA</h1>
         </div>
         <div className="equipos_section2_end">
           <img alt="suntech" src={Suntech}></img>
+          <div className="containerTitleGps">
+            <p className="titleGps">GPS</p>
+          </div>
+          <div className="containerelements">
+            <img className="imgFrameMaquinaria" alt="FrameMaquinaria" src={FrameMaquinaria}></img>
+            <div className="circleImg">
+              <img alt="Ellipse21" src={Ellipse21}></img>
+            </div>
+          </div>
         </div>
       </section>
       <section className="equipos_section3">
-        <div className="equipos_section3_start">
-          <img alt="suntech" src={FMC920}></img>
+        <div className="container_Section3">
+          <div className="equipos_section3_start">
+            <img alt="suntech" src={FMC920}></img>
+          </div>
+          <div className="container_elements">
+            <div className="containerTitleGps2">
+              <p className="titleGps2">GPS</p>
+            </div>
+            <div className="containerelements2">
+              <img className="imgFrameMaquinaria2" alt="FrameMaquinaria" src={FrameMaquinaria}></img>
+              <img className="imgFrameMaquinaria2" alt="Ellipse21" src={Ellipse21}></img>
+            </div>
+          </div>
         </div>
         <div className="equipos_section3_end_bg"></div>
         <div className="equipos_section3_end">
@@ -321,10 +350,10 @@ export default function Equipos() {
           <div className="equipos_section3_end_column">
             <div className="equipos_section2_start_buttons">
               <a href="https://www.youtube.com/channel/UCYU-Vn3lnDLePlavejpZMBg">
-                <img alt="youtube icon " src={ytIcon}></img>VIDEO DEL EQUIPO
+                <img className="icons" alt="youtube icon " src={ytIcon}></img>VIDEO DEL EQUIPO
               </a>
               <a href=" https://wa.me/qr/HVC55BD4ZJMLH1">
-                <img alt="youtube icon " src={waIcon}></img>CHATEE CON NOSOTROS
+                <img className="icons" alt="youtube icon " src={waIcon}></img>CHATEE CON NOSOTROS
               </a>
             </div>
             <p>
@@ -334,7 +363,7 @@ export default function Equipos() {
               manejo, mejora la gestión de tus activos y tomar decisiones
               informadas sobre su uso y mantenimiento.
             </p>
-            <img alt=" logo gps control" src={gpsControlWhite}></img>
+            {/*<img alt=" logo gps control" src={gpsControlWhite}></img> */}
           </div>
         </div>
       </section>
@@ -344,10 +373,10 @@ export default function Equipos() {
           <div className="equipos_section2_start_column">
             <div className="equipos_section2_start_buttons">
               <a href="https://www.youtube.com/channel/UCYU-Vn3lnDLePlavejpZMBg">
-                <img alt="youtube icon " src={ytIcon}></img>VIDEO DEL EQUIPO
+                <img className="icons" alt="youtube icon " src={ytIcon}></img>VIDEO DEL EQUIPO
               </a>
               <a href=" https://wa.me/qr/HVC55BD4ZJMLH1">
-                <img alt="youtube icon " src={waIcon}></img>CHATEE CON NOSOTROS
+                <img className="icons" alt="youtube icon " src={waIcon}></img>CHATEE CON NOSOTROS
               </a>
             </div>
             <p>
@@ -357,7 +386,7 @@ export default function Equipos() {
               manejo, mejora la gestión de tus activos y tomar decisiones
               informadas sobre su uso y mantenimiento.
             </p>
-            <img alt=" logo gps control" src={gpsControlWhite}></img>
+            {/*<img alt=" logo gps control" src={gpsControlWhite}></img> */}
           </div>
           <h1>PERSONAS</h1>
         </div>
