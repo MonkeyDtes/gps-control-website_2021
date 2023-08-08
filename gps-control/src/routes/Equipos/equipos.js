@@ -1,4 +1,7 @@
 import NavbarGPS from "../../components/NavbarGPS";
+import SectionEquipos from "../../components/Section_Equipos";
+import ButtonCotizar from "../../components/ButtonCotizar";
+import ContainerFlecha from "../../components/ContainerFlecha";
 import "./equipos.css";
 import circuloHome from "../../assets/circuloHome.svg";
 import waIcon from "../../assets/waRed.svg";
@@ -24,8 +27,10 @@ import FrameMaquinaria from "../../assets/FrameMaquinaria.png";
 import sensorEquipos2 from "../../assets/sensorEquiposTD2.png";
 import sensorEquipos3 from "../../assets/sensorEquiposTD3.png";
 import sensorEquipos4 from "../../assets/sensorEquiposTD4.png";
+import particles from "../../assets/particles.png";
 import Ellipse21 from "../../assets/Ellipse21.png";
 import { useEffect, useRef, useState } from "react";
+import ButtonsSocialMedia from "../../components/ButtonsSocialMedia/ButtonsSocialMedia";
 
 export default function Equipos() {
   const [button1, setButton1] = useState(false);
@@ -181,8 +186,8 @@ export default function Equipos() {
               </div>
             </div>
           </div>
-          <div className="equipos_section1_footer"></div>
         </div>
+        <ContainerFlecha></ContainerFlecha>
       </section>
       <section className="equipos_section_sensores">
         <div className="equipos_section_sensores_header">
@@ -245,14 +250,7 @@ export default function Equipos() {
                 <img alt="información" src={ytVerde}></img>
                 <p className="textContainerBlue">REEL</p>
               </button>
-              <button
-                onClick={() =>
-                  sectionRef.current.scrollIntoView({ behavior: "smooth" })
-                }
-              >
-                <img alt="información" src={coticeVerde}></img>
-                <p className="textContainerBlue">COTICE AQUÍ</p>
-              </button>
+              <ButtonCotizar elementRef={sectionRef}></ButtonCotizar>
             </div>
           </div>
         </div>
@@ -295,7 +293,7 @@ export default function Equipos() {
         <div className="equipos_section2_startbg"></div>
         <div className="equipos_section2_start">
           <div className="equipos_section2_start_column">
-            <div className="equipos_section2_start_buttons">
+            {/* <div className="equipos_section2_start_buttons">
               <a href="https://www.youtube.com/channel/UCYU-Vn3lnDLePlavejpZMBg">
                 <img className="icons" alt="youtube icon " src={ytIcon}></img>
                 <p className="textContainerIcons">VIDEO DEL EQUIPO</p>
@@ -304,7 +302,8 @@ export default function Equipos() {
                 <img className="icons" alt="youtube icon " src={waIcon}></img>
                 <p className="textContainerIcons">CHATEE CON NOSOTROS</p>
               </a>
-            </div>
+            </div> */}
+            <ButtonsSocialMedia></ButtonsSocialMedia>
             <p>
               Este equipo GPS para maquinaria amarilla es una solución efectiva
               para monitorear tus maquinas en tiempo real. Con geolocalización
@@ -312,19 +311,16 @@ export default function Equipos() {
               manejo, mejora la gestión de tus activos y tomar decisiones
               informadas sobre su uso y mantenimiento.
             </p>
-            {/*<img alt=" logo gps control" src={gpsControlWhite}></img> */}
           </div>
           <h1>MAQUINARIA</h1>
         </div>
-        <div className="equipos_section2_end">
-          <img alt="suntech" src={Suntech}></img>
-          <div className="containerTitleGps">
-            <p className="titleGps">GPS</p>
+        <div className="container_Section3">
+          <div className="equipos_section3_start">
+            <img className="imgSuntech" alt="suntech" src={Suntech}></img>
           </div>
-          <div className="containerelements">
-            <img className="imgFrameMaquinaria" alt="FrameMaquinaria" src={FrameMaquinaria}></img>
-            <div className="circleImg">
-              <img alt="Ellipse21" src={Ellipse21}></img>
+          <div className="container_elements">
+            <div className="positionElements">
+              <SectionEquipos></SectionEquipos>
             </div>
           </div>
         </div>
@@ -332,30 +328,20 @@ export default function Equipos() {
       <section className="equipos_section3">
         <div className="container_Section3">
           <div className="equipos_section3_start">
-            <img alt="suntech" src={FMC920}></img>
+            <img className="imgFmc920" alt="suntech" src={FMC920}></img>
           </div>
           <div className="container_elements">
-            <div className="containerTitleGps2">
-              <p className="titleGps2">GPS</p>
-            </div>
             <div className="containerelements2">
-              <img className="imgFrameMaquinaria2" alt="FrameMaquinaria" src={FrameMaquinaria}></img>
-              <img className="imgFrameMaquinaria2" alt="Ellipse21" src={Ellipse21}></img>
+              <SectionEquipos></SectionEquipos>
             </div>
           </div>
+
         </div>
         <div className="equipos_section3_end_bg"></div>
         <div className="equipos_section3_end">
           <h1>TRANSPORTE</h1>
           <div className="equipos_section3_end_column">
-            <div className="equipos_section2_start_buttons">
-              <a href="https://www.youtube.com/channel/UCYU-Vn3lnDLePlavejpZMBg">
-                <img className="icons" alt="youtube icon " src={ytIcon}></img>VIDEO DEL EQUIPO
-              </a>
-              <a href=" https://wa.me/qr/HVC55BD4ZJMLH1">
-                <img className="icons" alt="youtube icon " src={waIcon}></img>CHATEE CON NOSOTROS
-              </a>
-            </div>
+            <ButtonsSocialMedia></ButtonsSocialMedia>
             <p>
               Este equipo GPS para maquinaria amarilla es una solución efectiva
               para monitorear tus maquinas en tiempo real. Con geolocalización
@@ -363,7 +349,6 @@ export default function Equipos() {
               manejo, mejora la gestión de tus activos y tomar decisiones
               informadas sobre su uso y mantenimiento.
             </p>
-            {/*<img alt=" logo gps control" src={gpsControlWhite}></img> */}
           </div>
         </div>
       </section>
@@ -371,14 +356,7 @@ export default function Equipos() {
         <div className="equipos_section2_startbg"></div>
         <div className="equipos_section2_start">
           <div className="equipos_section2_start_column">
-            <div className="equipos_section2_start_buttons">
-              <a href="https://www.youtube.com/channel/UCYU-Vn3lnDLePlavejpZMBg">
-                <img className="icons" alt="youtube icon " src={ytIcon}></img>VIDEO DEL EQUIPO
-              </a>
-              <a href=" https://wa.me/qr/HVC55BD4ZJMLH1">
-                <img className="icons" alt="youtube icon " src={waIcon}></img>CHATEE CON NOSOTROS
-              </a>
-            </div>
+            <ButtonsSocialMedia></ButtonsSocialMedia>
             <p>
               Este equipo GPS para maquinaria amarilla es una solución efectiva
               para monitorear tus maquinas en tiempo real. Con geolocalización
@@ -390,7 +368,15 @@ export default function Equipos() {
           </div>
           <h1>PERSONAS</h1>
         </div>
-        <div className="equipos_section2_end"></div>
+        <div className="container_elemnts1">
+          <img alt="particles" className="img_Particles" src={particles}></img>
+          <div className="equipos_section3_start"></div>
+          <div className="container_elements">
+            <div className="positionElements">
+              <SectionEquipos></SectionEquipos>
+            </div>
+          </div>
+        </div>
       </section>
       <section ref={sectionRef}></section>
       <Leads></Leads>

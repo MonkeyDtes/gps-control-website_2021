@@ -1,4 +1,5 @@
 import NavbarGPS from "../../components/NavbarGPS/index";
+import ButtonCotizar from "../../components/ButtonCotizar";
 import iconsVertical from "../../assets/iconsVertical.svg";
 import wifiIcon from "../../assets/wifiIcon.svg";
 import cotizacion from "../../assets/cotizacion.svg";
@@ -31,6 +32,7 @@ import { useEffect, useRef, useState } from "react";
 import { history } from "../../components/History";
 import SwiperHome from "../../components/SwiperHome/index";
 import SwiperHomeSecond from "../../components/SwiperHomeSecond/index";
+import ContainerFlecha from "../../components/ContainerFlecha/ContainerFlecha";
 
 export default function Home({ onChangeState }) {
   const [modal, setModal] = useState(false);
@@ -127,9 +129,10 @@ export default function Home({ onChangeState }) {
             </div>
           </div>
         </div>
-        <div className="home_section1_column">
+        {/* <div className="home_section1_column">
           <img alt="home Down" src={homeDownButton}></img>
-        </div>
+        </div>*/} 
+        <ContainerFlecha></ContainerFlecha>
       </section>
       {modal ? (
         <>
@@ -180,14 +183,15 @@ export default function Home({ onChangeState }) {
                 Obtener estadísticas e informes
               </button>
             </div>
-            <button className="buttonsCotizar"
+            {/*<button className="buttonsCotizar"
               onClick={() =>
                 sectionRef.current.scrollIntoView({ behavior: "smooth" })
               }
             >
               <img alt="cotizacion" className="imgButton" src={cotizacion}></img>
               <p className="textCotice">COTICE AQUÍ</p> 
-            </button>
+            </button> */}
+            <ButtonCotizar elementRef={sectionRef}></ButtonCotizar>
           </div>
         </div>
         <div className="home_section2_pantallas">
@@ -219,14 +223,7 @@ export default function Home({ onChangeState }) {
                 control y la contabilidad del combustible.
               </button>
             </div>
-            <button
-              onClick={() =>
-                sectionRef.current.scrollIntoView({ behavior: "smooth" })
-              }
-            >
-              <img alt="cotizacion" src={cotizacion}></img>
-              <p className="textCotice">COTICE AQUÍ</p>
-            </button>
+            <ButtonCotizar elementRef={sectionRef}></ButtonCotizar>
           </div>
         </div>
         <div className="home_section2_combusible">
@@ -275,14 +272,7 @@ export default function Home({ onChangeState }) {
                 Controlar el comportamiento de los conductores
               </button>
             </div>
-            <button
-              onClick={() =>
-                sectionRef.current.scrollIntoView({ behavior: "smooth" })
-              }
-            >
-              <img alt="cotizacion" src={cotizacion}></img>
-              <p className="textCotice">COTICE AQUÍ</p>
-            </button>
+            <ButtonCotizar elementRef={sectionRef}></ButtonCotizar>
           </div>
         </div>
         <div className="home_section2_carretera">

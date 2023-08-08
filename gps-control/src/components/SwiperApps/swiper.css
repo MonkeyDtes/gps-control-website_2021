@@ -8,7 +8,7 @@
 .swiper_apps {
   height: 100%;
   width: 100%;
-  margin-left: calc(8.33vw);
+  margin-left: 60px;
   margin-top: calc(5.88vh * 1) !important;
 }
 .swiper_apps_slide {
@@ -17,7 +17,7 @@
   display: flex;
   flex-direction: column;
   background: #eee8f2;
-  opacity: 0.7;
+  opacity: 0.90;
   box-shadow: 0px 7px 10px rgba(235, 22, 44, 0.5);
   border-radius: 10px;
   margin-right: calc(8.33vw * 0.5);
@@ -27,7 +27,6 @@
   font-style: normal;
   font-weight: 100;
   color: #eb162c;
-  border: 1px solid #eb162c;
 }
 .swiper_apps_slide > img {
   width: calc(8.33vw);

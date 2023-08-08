@@ -5,36 +5,42 @@
   align-items: center;
   background-color: #eee8f2;
   width: 100%;
-  height: 100vh;
+  height: 100%;
 }
+
 .plataforma_section1_header {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
+
 .plataforma_section1_body {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-.plataforma_section1_body > img {
-  width: calc(8.33vw * 5.5);
+
+.plataforma_section1_body>img {
+  width: 60%;
 }
+
 .plataforma_section1_body_text {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-end;
 }
+
 .plataforma_sectionq_body_text_a {
   display: flex;
   flex-direction: row;
   width: calc(8.33vw);
   justify-content: space-between;
 }
-.plataforma_sectionq_body_text_a > button {
+
+.plataforma_sectionq_body_text_a>button {
   font-family: "Bahnschrift";
   font-style: normal;
   font-weight: 300;
@@ -50,21 +56,24 @@
   padding-left: calc(8.33vw * 0.2);
   height: calc(5.88vh);
 }
-.plataforma_sectionq_body_text_a > button:hover {
+
+.plataforma_sectionq_body_text_a>button:hover {
   border-left: 3px solid;
   height: calc(5.88vh * 2);
   padding-left: calc(8.33vw * 0.4);
   color: #1e8c93;
   transition: height 1s, padding-left 1s;
 }
+
 .plataforma_sectionq_body_text_a1 {
   display: flex;
   flex-direction: row;
   width: calc(8.33vw * 4);
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin-top: calc(5.88vh * 1);
 }
-.plataforma_sectionq_body_text_a1 > button {
+
+.plataforma_sectionq_body_text_a1>button {
   font-family: "Bahnschrift";
   font-style: normal;
   font-weight: 300;
@@ -77,22 +86,24 @@
   border-top: none;
   border-image: linear-gradient(to right, red 15%, transparent 5%) 100% 1;
   width: calc(8.33vw * 3);
-  padding-left: calc(30.33vw * 0.2);
   background-color: transparent;
 }
-.plataforma_sectionq_body_text_a1 > button:hover {
+
+.plataforma_sectionq_body_text_a1>button:hover {
   border-bottom: 3px solid;
   border-image: linear-gradient(to right, #1e8c93 25%, transparent 15%) 100% 1;
   padding-left: calc(8.33vw * 0.4);
   color: #1e8c93;
   transition: padding-left 1s;
 }
+
 .plataforma_sectionq_body_text_a2 {
   display: flex;
   width: calc(8.33vw * 1.5);
   justify-content: space-between;
 }
-.plataforma_sectionq_body_text_a2 > button {
+
+.plataforma_sectionq_body_text_a2>button {
   flex-direction: row;
   font-family: "Bahnschrift";
   font-style: normal;
@@ -109,13 +120,15 @@
   width: calc(8.33vw * 1.5);
   padding-right: calc(8.33vw * 0.2);
 }
-.plataforma_sectionq_body_text_a2 > button:hover {
+
+.plataforma_sectionq_body_text_a2>button:hover {
   border-right: 3px solid;
   height: calc(5.88vh * 2);
   padding-right: calc(8.33vw * 0.4);
   color: #1e8c93;
   transition: height 1s, padding-right 1s;
 }
+
 .plataforma_sectionq_body_text_a3 {
   display: flex;
   flex-direction: row;
@@ -128,13 +141,15 @@
   width: calc(8.33vw * 2-2);
   justify-content: space-between;
 }
-.plataforma_sectionq_body_text_a3 > div {
+
+.plataforma_sectionq_body_text_a3>div {
   width: inherit;
-  padding-left: calc(8.33vw * 0.2);
+  margin-bottom: 150px;
   border-bottom: 1px solid;
   border-top: none;
   border-image: linear-gradient(to right, red 5%, transparent 5%) 100% 1;
 }
+
 .plataforma_section2 {
   display: flex;
   flex-direction: row;
@@ -142,10 +157,12 @@
   width: 100%;
   background-color: #eee8f2;
 }
-.plataforma_section2 > img {
+
+.plataforma_section2>img {
   width: calc(8.33vw * 7);
   margin-left: calc(8.33vw);
 }
+
 .plataforma_section2_body {
   display: flex;
   flex-direction: column;
@@ -159,23 +176,26 @@
   text-align: justify;
   font-size: 4vh;
 }
-.plataforma_section2_body > h6 {
+
+.plataforma_section2_body>h6 {
   font-family: "Bahnschrift";
   font-style: normal;
   font-weight: 100;
   font-size: 1.3vw;
 }
+
 .plataforma_section2_body_line {
   height: calc(5.88vh * 0.4);
   width: auto;
   border-left: solid 1px red;
 }
 
-.plataforma_section1 > img {
+.plataforma_section1>img {
   display: none;
   opacity: 0;
   width: calc(8.88vw * 6);
 }
+
 .plataforma_section2_body_ticket {
   border-left: 1px solid red;
   font-size: 1.2vw;
@@ -183,12 +203,14 @@
   margin-bottom: calc(5.88vh * 0.3);
   padding-left: calc(8.33vw * 0.1);
 }
+
 .plataforma_section2_body_ticket:hover {
   padding-left: calc(8.33vw * 0.5);
   color: #1e8c93;
   border-left: 3px solid #1e8c93;
   transition: all 1s;
 }
+
 .Camion {
   position: absolute;
   z-index: 102;
@@ -196,19 +218,23 @@
   margin-top: calc(5.88vh * 2);
   margin-left: calc(8.33vw);
 }
+
 canvas:nth-child(2) {
   display: none !important;
 }
+
 @media only screen and (max-width: 600px) {
   .plataforma_section2_body_ticket {
     font-size: 2vh;
     width: inherit;
   }
+
   .plataforma_sectionq_body_text_a1 {
     width: inherit;
     margin-top: calc(5.88vh * 0);
   }
-  .plataforma_sectionq_body_text_a1 > button {
+
+  .plataforma_sectionq_body_text_a1>button {
     font-size: 2vh;
     width: inherit;
     border-image: none;
@@ -217,10 +243,12 @@ canvas:nth-child(2) {
     border-left: 1px solid red;
     border-right: none;
   }
+
   .plataforma_sectionq_body_text_a2 {
     width: inherit;
   }
-  .plataforma_sectionq_body_text_a2 > button {
+
+  .plataforma_sectionq_body_text_a2>button {
     font-size: 2vh;
     width: inherit;
     margin-top: calc(5.88vh * 0.5);
@@ -230,16 +258,19 @@ canvas:nth-child(2) {
     padding-left: calc(8.33vw * 0.2);
     text-align: left;
   }
+
   .plataforma_sectionq_body_text_a {
     font-size: 1.5vh;
     width: inherit;
   }
-  .plataforma_sectionq_body_text_a > button {
+
+  .plataforma_sectionq_body_text_a>button {
     font-size: 2vh;
     width: inherit;
     height: auto;
     margin-top: calc(5.88vh * 0.5);
   }
+
   .plataforma_sectionq_body_text_a3 {
     font-size: 1.5vh;
     width: inherit;
@@ -247,61 +278,72 @@ canvas:nth-child(2) {
     grid-column: 2/5;
     margin-bottom: calc(5.88vh);
   }
-  .plataforma_sectionq_body_text_a3 > div {
+
+  .plataforma_sectionq_body_text_a3>div {
     width: inherit;
     margin-top: calc(5.88vh * 0.1);
     border-right: 0px;
     padding-left: calc(8.33vw * 0.2);
     font-size: 2.2vh;
   }
+
   .plataforma_section1_body_text {
     width: 100%;
     height: auto;
   }
-  .plataforma_section1 > img {
+
+  .plataforma_section1>img {
     display: block;
     opacity: 1;
     width: calc(8.88vw * 11);
     grid-row: 4;
     grid-column: 1/6;
   }
+
   .plataforma_section2 {
     flex-direction: column;
     padding-top: calc(5.88vh * 2);
     height: 100vh;
   }
+
   .plataforma_section2_body {
     margin-top: calc(5.88vh * 1);
     width: calc(8.33vw * 8);
     margin-left: calc(8.33vw * 2);
   }
-  .plataforma_section2 > img {
+
+  .plataforma_section2>img {
     width: calc(8.33vw * 8);
     margin-left: calc(8.33vw * 2);
     margin-top: calc(5.88vh * 3);
   }
+
   .plataforma_section1 {
     display: grid;
     height: 100vh;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(4, 1fr);
   }
+
   .plataforma_section1_header {
     flex-direction: column;
     align-items: start;
     grid-row: 1;
     grid-column: 2/6;
   }
+
   .plataforma_section1_body {
     flex-direction: column;
     grid-row: 2;
     grid-column: 2/6;
   }
-  .plataforma_section1_body > img {
+
+  .plataforma_section1_body>img {
     position: absolute;
     opacity: 0;
   }
-  .plataforma_sectionq_body_text_a2 > button:hover {
+
+  .plataforma_sectionq_body_text_a2>button:hover {
     border-left: 3px solid;
     height: auto;
     padding-left: calc(8.33vw * 0.4);
@@ -309,7 +351,8 @@ canvas:nth-child(2) {
     transition: height 1s, padding-left 1s;
     border-right: 0px;
   }
-  .plataforma_sectionq_body_text_a > button:hover {
+
+  .plataforma_sectionq_body_text_a>button:hover {
     border-left: 3px solid;
     height: auto;
     padding-left: calc(8.33vw * 0.4);
@@ -317,7 +360,8 @@ canvas:nth-child(2) {
     transition: height 1s, padding-left 1s;
     border-right: 0px;
   }
-  .plataforma_sectionq_body_text_a1 > button:hover {
+
+  .plataforma_sectionq_body_text_a1>button:hover {
     border-left: 3px solid;
     border-bottom: 0px;
     border-image: none;
@@ -325,9 +369,11 @@ canvas:nth-child(2) {
     color: #1e8c93;
     transition: padding-left 1s;
   }
-  .plataforma_section2_body > h6 {
+
+  .plataforma_section2_body>h6 {
     font-size: 2vh;
   }
+
   .Camion {
     margin-top: calc(5.88vh * 6);
     margin-left: calc(8.33vw * 2);

@@ -14,6 +14,7 @@ import GifGPS from "../../components/gifGPS/index";
 import Leads from "../../components/Leads/index";
 import Footer from "../../components/Footer/index";
 import termometro from "../../assets/termometro.svg";
+import Vector4 from "../../assets/Vector4.svg";
 export default function Soluciones() {
   const [button1, setButton1] = useState(true);
   const [button2, setButton2] = useState(false);
@@ -130,12 +131,12 @@ export default function Soluciones() {
                 <h1>VIDEO PARA</h1>
                 <div className="soluciones_section1_row">
                   <div className="main_box">
+                  <img className="imgNube" alt="nube" src={navbarNube}></img>
                     <div className="soluciones_section1_label">
-                      <img alt="nube" src={navbarNube}></img>
                       <h2>Monitoreo vehicular</h2>
                     </div>
                   </div>
-                  <img alt="nube" src={navbarNube}></img>
+                  <img alt="nube" className="imgNube2" src={Vector4}></img>
                 </div>
               </div>
 

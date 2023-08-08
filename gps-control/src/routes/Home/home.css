@@ -446,6 +446,7 @@
   width: calc(8.33vw * 2);
   height: inherit;
 }
+
 .home_section1_header {
   display: flex;
   flex-direction: row;
@@ -868,9 +869,6 @@
     grid-row: 3/4;
     flex-direction: column;
     grid-column: 1;
-  }
-  .home_section1_column > img {
-    opacity: 0;
   }
   .home_section1_header {
     flex-direction: column;

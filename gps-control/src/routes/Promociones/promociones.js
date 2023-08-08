@@ -1,4 +1,5 @@
 import NavbarGPS from "../../components/NavbarGPS";
+import ButtonCotizar from "../../components/ButtonCotizar";
 import GifGPS from "../../components/gifGPS/index";
 import "./promociones.css";
 import cotizacion from "../../assets/cotizacion.svg";
@@ -27,13 +28,7 @@ export default function Promociones() {
             <div>Recargas de MB</div>
             <div>Plataforma de línea blanca</div>
             <div>Cotiza equipos con descuentos especiales</div>
-            <button
-              onClick={() =>
-                sectionRef.current.scrollIntoView({ behavior: "smooth" })
-              }
-            >
-              <img alt="cotizacion" src={cotizacion}></img>COTICE AQUÍ
-            </button>
+            <ButtonCotizar elementRef={sectionRef}></ButtonCotizar>
           </div>
         </div>
       </section>
