@@ -16,7 +16,7 @@
   display: flex;
   flex-direction: column;
   margin-top: calc(5.88vh * 6);
-  margin-left: calc(8.33vw * 0.2);
+  margin-left: 100px;
   width: calc(8.33vw * 3);
 }
 
@@ -35,6 +35,7 @@
   margin-bottom: calc(5.88vh * 0.5);
   color: #6b6b6b;
   text-align: justify;
+  font-size: 1.5rem;
 }
 
 .soluciones_button_check {
