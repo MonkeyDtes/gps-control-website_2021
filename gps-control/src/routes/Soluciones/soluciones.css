@@ -5,19 +5,19 @@
 }
 
 .soluciones_section {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(17, 1fr);
   height: 100vh;
   width: 100%;
   background-color: #eee8f2;
-  display: flex;
-  flex-direction: row;
 }
 
 .soluciones_buttons {
   display: flex;
   flex-direction: column;
-  margin-top: calc(5.88vh * 6);
-  margin-left: 100px;
-  width: calc(8.33vw * 3);
+  grid-column: 2/4;
+  grid-row: 7/11;
 }
 
 .soluciones_buttons>button {
@@ -177,8 +177,11 @@
 }
 
 .soluciones_section1_header {
-  margin-right: calc(8.33vw);
-}
+  display: flex;
+  flex-direction: column;
+    grid-column: 3/9;
+    grid-row: 4/8;
+  }
 
 .soluciones_section1_header>img {
   position: absolute;
@@ -186,14 +189,13 @@
 }
 
 .soluciones_section1_header>h1 {
-  margin-top: calc(5.88vh * 3);
   font-family: "klik";
   font-style: normal;
   font-weight: 700;
   font-size: calc(5.88vw * 0.8);
   line-height: 130px;
   color: #eb162c;
-  margin-left: calc(8.33vw * 0.5);
+  margin: 0;
 }
 
 .soluciones_section4_header {
@@ -232,16 +234,19 @@
 }
 
 .soluciones_slides {
-  width: calc(8.33vw * 9);
+  display: grid;
+  grid-column: 4/13;
+  grid-row: 1/18;
+  grid-template-rows: repeat(17, 1fr);
+  grid-template-columns: repeat(9, 1fr);
 }
 
 .soluciones_section1_label {
   clip-path: polygon(0% 0%, 100% 0, 80% 100%, 0% 100%);
-  width: calc(8.33vw * 6);
+  width: 70;
   height: calc(5.88vh * 1.5);
   background: #eee8f2;
   box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.25);
-  margin-top: -8vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -250,13 +255,6 @@
 .soluciones_section1_row {
   display: flex;
   flex-direction: row;
-}
-
-.soluciones_section1_row>img {
-  margin-top: -10.5vh;
-  width: calc(8.33vw);
-  max-height: calc(5.88vh * 3);
-  margin-left: calc(-8.33vw * 0.9);
 }
 
 .soluciones_section3_row {
@@ -284,6 +282,7 @@
   font-size: 5vh;
   color: #6b6b6b;
   margin-right: calc(8.33vw * 0.9);
+  margin-left: 10px;
 }
 
 .soluciones_section_greenColumn {
@@ -326,14 +325,40 @@
   display: flex;
 }
 
-.imgNube {
-  margin-left: -45px;
+
+/**/
+.image-container {
+  grid-column: 2/5;
+  grid-row: 8/15;
+  cursor: pointer;
+}
+.image-container img{
+  width: 100%;
 }
 
-.imgNube2 {
-  padding-top: 4rem;
+.text-overlay {
+  opacity: 0; /* Hacemos que el texto inicialmente sea invisible */
+  background-color: var(--azulClaro); 
+  color: var(--azulOscuro); 
+  transition: opacity 0.3s; /* Agregamos una transición para que aparezca suavemente */
+  border-radius: 20px;
+  
 }
 
+.image-container:hover .text-overlay {
+  opacity: 1; /* Al hacer hover, el texto se hace visible */
+}
+
+.containerImgHover{
+  width: 280px;
+  padding: -100px 50px 0px 60px;
+}
+
+.imgHover{
+  width: 80px;
+}
+
+/**/
 @media only screen and (max-width: 600px) {
   .soluciones_section {
     flex-direction: column;

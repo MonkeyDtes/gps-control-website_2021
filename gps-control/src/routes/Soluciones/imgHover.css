@@ -1,0 +1,41 @@
+:root{
+    --azulClaro: #40CEE4;
+    --azulOscuro: #00249C;
+    --blanco: #ffff;
+  }
+  
+  .image-container {
+      position: relative;
+      width: 200px;
+      height: 50px;
+      display: inline-block;
+      padding: 56px 0px 0px 50px;
+      cursor: pointer;
+    }
+    
+    .text-overlay {
+      opacity: 0; /* Hacemos que el texto inicialmente sea invisible */
+      background-color: var(--azulClaro); 
+      color: var(--azulOscuro); 
+      padding: 35px 30px 35px 30px;
+      transition: opacity 0.3s; /* Agregamos una transición para que aparezca suavemente */
+      border-radius: 20px;
+      
+    }
+    
+    .image-container:hover .text-overlay {
+      opacity: 1; /* Al hacer hover, el texto se hace visible */
+    }
+  
+    .containerImgHover{
+      width: 280px;
+      padding: -100px 50px 0px 60px;
+    }
+  
+    .imgHover{
+      width: 80px;
+    }
+  
+  
+  
+  

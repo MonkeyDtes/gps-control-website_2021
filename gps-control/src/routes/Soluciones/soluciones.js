@@ -126,12 +126,12 @@ export default function Soluciones() {
         </div>
         <div className="soluciones_slides">
           {button1 ? (
-            <div className="soluciones_section1">
+            <>
               <div className="soluciones_section1_header">
                 <h1>VIDEO PARA</h1>
                 <div className="soluciones_section1_row">
-                  <div className="main_box">
                   <img className="imgNube" alt="nube" src={navbarNube}></img>
+                  <div className="main_box">
                     <div className="soluciones_section1_label">
                       <h2>Monitoreo vehicular</h2>
                     </div>
@@ -139,14 +139,19 @@ export default function Soluciones() {
                   <img alt="nube" className="imgNube2" src={Vector4}></img>
                 </div>
               </div>
-
-              <img alt="camara" src={camaraSoluciones}></img>
-
+              <div class="image-container">
+                <img alt="camara" src={camaraSoluciones}></img>
+                <div class="containerImgHover">
+                  <div class="text-overlay">
+                    Esta aplicación permite gestionar las tareas asignadas
+                    por la empresa, y gestionarlas en tiempo real.</div>
+                </div>
+              </div>
               <div className="soluciones_section1_greenColumn"></div>
               <div className="gif_soluciones">
                 <GifGPS type="2"></GifGPS>
               </div>
-            </div>
+            </>
           ) : (
             <></>
           )}
