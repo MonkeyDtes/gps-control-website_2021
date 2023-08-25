@@ -1,2 +1,2 @@
-import Plataforma from "./plataforma"
-export default Plataforma
+import Plataforma from "./plataforma";
+export default Plataforma;

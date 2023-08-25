@@ -36,7 +36,7 @@ export default function NavbarGPS(e) {
     if (index.currentTarget.id === "1") {
       history.push("/");
     } else if (index.currentTarget.id === "2") {
-      history.push("/plataforma");
+      history.push("/monitoreo");
     } else if (index.currentTarget.id === "3") {
       history.push("/equipos");
     } else if (index.currentTarget.id === "4") {

@@ -1,104 +1,50 @@
-import NavbarGPS from "../../components/NavbarGPS";
-import "./plataforma.css";
-import PlataformaPantallas from "../../assets/PlataformaPantallas.png";
-import GifGPS from "../../components/gifGPS/index";
-import Leads from "../../components/Leads/index";
-import Footer from "../../components/Footer/index";
-import YoutubeEmbed from "../../components/youtubeVideos/index";
-import SwiperPromo from "../../components/SwiperPromo";
-import { useState } from "react";
-import Camion from "../../components/camion/index";
-
+import Group71 from "../../assets/Group71.png";
+import Group73 from "../../assets/Group73.svg";
+import Frame3 from "../../assets/Frame3.png";
+import Frame4 from "../../assets/Frame4.png";
+import "./plataforma.css"
 export default function Plataforma() {
-  const [modal, setModal] = useState(false)
-  const [inicialSlide, setInicialSlide] = useState(false)
-  
-  const ModalClick =(e)=>{
-    setModal(!modal)
-    setInicialSlide(e.currentTarget.value);
-    const body = document.getElementsByTagName("body");
-    if (modal === false) {
-      body[0].style.overflow = "hidden";
-    } else {
-      body[0].style.overflow = "auto";
-    }
-  }
-  return (
-    <div>
-      <NavbarGPS
-        Home={false}
-        Plataforma={true}
-        Equipos={false}
-        transporte={false}
-        Apps={false}
-        Promociones={false}
-      ></NavbarGPS>
-      <GifGPS type="2"></GifGPS>
-      <section className="plataforma_section2">
-        <YoutubeEmbed embedId="NPZ9K4G9Z9w"></YoutubeEmbed>
-        <div className="plataforma_section2_body">
-          <div className="plataforma_section2_body_line"></div>
-          <h6>
-            Esta aplicación conecta los dispositivos móviles como herramientas
-            de rastreo, permite hacer seguimiento de diferentes tareas y
-            controla su ejecución de forma remota.
-          </h6>
-          <div className="plataforma_section2_body_ticket">MONITOREO VEHICULAR</div>
-          <div className="plataforma_section2_body_ticket">SEGUIMIENTO GPS</div>
-          <div className="plataforma_section2_body_ticket">MONITOREO FLOTAS DE VEHICULOS</div>
+
+    return <section className="platform">
+
+        <div className="platform__title">
+            <h1>¿Buscas un rastreador gps para vehículos?</h1>
+            <h2>TENEMOS MÁS QUE ESO!</h2>
         </div>
-      </section>
-      <section className="plataforma_section1">
-      {modal ? (
-        <>
-          <div onClick={ModalClick} className="modal_home"></div>
-          <div className="modal_home_fade">
-            <SwiperPromo incialSlide={inicialSlide}></SwiperPromo>
-            <div className="Camion">
-              <Camion className="Camion"></Camion>
+        <div className="platform__content">
+            <div className="content__info-platform">
+                <div className="info__platform-container-text">
+                    <p>Controla de forma integral tu operación logística, monitorea en tiempo real tu flota, ahorra tiempos de gestión y reduce costos.</p>
+                </div>
+                <img src={Group73} alt="camiones" />
+                <img src={Group71}></img>
             </div>
-          </div>
-        </>
-      ) : (
-        <></>
-      )}
-        <div className="plataforma_section1_header">
-          <div className="plataforma_sectionq_body_text_a1">
-            <button value={0} onClick={(e) => ModalClick(e)}>MANTENIMIENTO PREVENTIVO Y CORRECTIVO</button>
-          </div>
-          <div className="plataforma_sectionq_body_text_a1">
-            <button value={1} onClick={(e) => ModalClick(e)}>CONTROL Y CALIFICACIÓN DE CONDUCTORES</button>
-          </div>
+            <div className="content__form-platform">
+                <form>
+                    <div className="content__form">
+                        <p>OBTÉN UNA ASESORÍA COMPLETA CON NUESTROS EXPERTOS</p>
+                        <input placeholder="Nombre completo" type="text" name="name" />
+                        <input placeholder="Correo electrónico" type="text" name="name" />
+                        <input placeholder="Número de teléfono" type="text" name="name" />
+                        <div className="content__form-select">
+                            <select>
+                                <option>Departamento</option>
+                            </select>
+                        </div>
+                        <div className="content__form-texarea">
+                            <textarea rows="5" cols="33" placeholder="Describe tu solicitud">
+                            </textarea>
+                        </div>
+                        <div className="content__button-form">
+                            <img src={Frame3}></img>
+                            <p>www.gpscontrol.co</p>
+                            <button>Enviar</button>
+                        </div>
+                    </div>
+                </form>
+                <img src={Frame4}></img>
+            </div>
         </div>
-        <div className="plataforma_section1_body">
-          <div className="plataforma_section1_body_text">
-            <div className="plataforma_sectionq_body_text_a2">
-              <button value={2} onClick={(e) => ModalClick(e)}>APAGADO REMOTO</button>
-            </div>
-            <div className="plataforma_sectionq_body_text_a2">
-              <button value={3} onClick={(e) => ModalClick(e)}>INFORMES A LA MEDIDA</button>
-            </div>
-          </div>
-          <img alt="pantallas plataforma" src={PlataformaPantallas}></img>
-          <div className="plataforma_section1_body_text">
-            <div className="plataforma_sectionq_body_text_a">
-              <button value={4} onClick={(e) => ModalClick(e)}>GEOCERCAS</button>
-            </div>
-            <div className="plataforma_sectionq_body_text_a">
-              <button value={5} onClick={(e) => ModalClick(e)}>APLICACIÓN MÓVIL</button>
-            </div>
-            <div className="plataforma_sectionq_body_text_a">
-              <button value={6} onClick={(e) => ModalClick(e)}>PRE ALISTAMIENTO</button>
-            </div>
-          </div>
-        </div>
-        <div className="plataforma_sectionq_body_text_a3">
-          <div>SEGUIMIENTO EN TIEMPO REAL</div>
-        </div>
-        <img alt="pantallas plataforma" src={PlataformaPantallas}></img>
-      </section>
-      <Leads></Leads>
-      <Footer></Footer>
-    </div>
-  );
+
+    </section>
 }
