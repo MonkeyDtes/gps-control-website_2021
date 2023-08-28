@@ -2,7 +2,6 @@ import NavbarGPS from "../../components/NavbarGPS";
 import ButtonCotizar from "../../components/ButtonCotizar";
 import GifGPS from "../../components/gifGPS/index";
 import "./promociones.css";
-import cotizacion from "../../assets/cotizacion.svg";
 import Leads from "../../components/Leads/index";
 import Footer from "../../components/Footer/index";
 import { useRef } from "react"

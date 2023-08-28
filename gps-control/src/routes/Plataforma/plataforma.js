@@ -17,7 +17,7 @@ export default function Plataforma() {
                     <p>Controla de forma integral tu operación logística, monitorea en tiempo real tu flota, ahorra tiempos de gestión y reduce costos.</p>
                 </div>
                 <img src={Group73} alt="camiones" />
-                <img src={Group71}></img>
+                <img src={Group71} alt="camionesdos"></img>
             </div>
             <div className="content__form-platform">
                 <form>
@@ -36,13 +36,13 @@ export default function Plataforma() {
                             </textarea>
                         </div>
                         <div className="content__button-form">
-                            <img src={Frame3}></img>
+                            <img src={Frame3} alt="b"></img>
                             <p>www.gpscontrol.co</p>
                             <button>Enviar</button>
                         </div>
                     </div>
                 </form>
-                <img src={Frame4}></img>
+                <img src={Frame4} alt="a"></img>
             </div>
         </div>
 

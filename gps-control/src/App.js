@@ -4,7 +4,6 @@ import ThreeRouter from "./components/ThreeRouter";
 import { Routes, Route } from "react-router-dom";
 import Home from "./routes/Home/index";
 import Monitoreo from "./routes/Monitoreo/index";
-import Plataforma from "./routes/Plataforma/index";
 import Equipos from "./routes/Equipos/index";
 import Promociones from "./routes/Promociones/index";
 import Apps from "./routes/Apps/index";
@@ -12,7 +11,6 @@ import Soluciones from "./routes/Soluciones/index";
 import NotFound from "./routes/404";
 import { useState } from "react"; 
 import Plataforma from "./routes/Plataforma";
-import { useState } from "react";
 
 function App() {
   const [estado, setEstado] = useState([]);

@@ -2,7 +2,6 @@ import NavbarGPS from "../../components/NavbarGPS/index";
 import ButtonCotizar from "../../components/ButtonCotizar";
 import iconsVertical from "../../assets/iconsVertical.svg";
 import wifiIcon from "../../assets/wifiIcon.svg";
-import cotizacion from "../../assets/cotizacion.svg";
 import pantallasHome from "../../assets/pantallasHome.png";
 import combustible from "../../assets/Combustible.png";
 import circuloHome from "../../assets/circuloHome.svg";
@@ -22,7 +21,6 @@ import FramePalabraCombustible from "../../assets/FramePalabraCombustible.png";
 import VectorNube from "../../assets/VectorNube.png"
 import VectorNube2 from "../../assets/VectorNube2.svg"
 import Line41 from "../../assets/Line41.png"
-import Line31 from "../../assets/Line31.png"
 import GifGPS from "../../components/gifGPS/index";
 import "./home.css";
 import playGreen from "../../assets/playGreen.svg";
