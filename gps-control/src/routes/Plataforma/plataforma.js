@@ -1,13 +1,17 @@
-import Group71 from "../../assets/Group71.png";
+import carro from "../../assets/carro.svg";
 import Group73 from "../../assets/Group73.svg";
-import Frame3 from "../../assets/Frame3.png";
 import Frame4 from "../../assets/Frame4.png";
-import flecha from "../../assets/FLECHA_SELECT.svg";
+import Group721 from "../../assets/Group721.svg";
+import bg_bolitas from "../../assets/bg_bolitas.png"
 import "./plataforma.css"
+import Form from "../../components/Form";
 export default function Plataforma() {
 
     return <section className="platform">
-
+        <div className="platform__back">
+            <img src={bg_bolitas}></img>
+        </div>
+        <img className="img1" src={Group721}></img>
         <div className="platform__title">
             <h1>¿Buscas un rastreador gps para vehículos?</h1>
             <h2>¡TENEMOS MÁS QUE ESO!</h2>
@@ -18,32 +22,10 @@ export default function Plataforma() {
                     <div className="info__platform-container-back"></div>
                     <p>Controla de forma integral tu operación logística, monitorea en tiempo real tu flota, ahorra tiempos de gestión y reduce costos.</p>
                 </div>
-                <img src={Group71} className="vehiculo" alt="camionesdos"></img>
+                <img src={carro} className="vehiculo" alt="camionesdos"></img>
             </div>
             <div className="content__form-platform">
-                <form>
-                    <div className="content__form">
-                        <p>OBTÉN UNA ASESORÍA COMPLETA CON NUESTROS EXPERTOS</p>
-                        <input placeholder="Nombre completo" type="text" name="name" />
-                        <input placeholder="Correo electrónico" type="text" name="name" />
-                        <input placeholder="Número de teléfono" type="text" name="name" />
-                        <div className="content__form-select">
-                            <select>
-                                <option>Departamento</option>
-                            </select>
-                            <img src={flecha} />
-                        </div>
-                        <div className="content__form-texarea">
-                            <textarea rows="5" cols="33" placeholder="Describe tu solicitud">
-                            </textarea>
-                        </div>
-                        <div className="content__button-form">
-                            <img src={Frame3} className="img-bottom" alt="b"></img>
-                            <p>www.gpscontrol.co</p>
-                            <button>Enviar</button>
-                        </div>
-                    </div>
-                </form>
+                <Form></Form>
                 <img src={Group73} className="img_bg_left" alt="camiones" />
                 <img src={Frame4} className="gato" alt="a"></img>
             </div>
