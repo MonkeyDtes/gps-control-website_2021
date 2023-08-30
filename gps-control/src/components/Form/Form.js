@@ -13,7 +13,7 @@ export default function Form() {
                     <select>
                         <option>Departamento</option>
                     </select>
-                    <img src={flecha} />
+                   {/*<img src={flecha} />*/} 
                 </div>
                 <div className="content__form-texarea">
                     <textarea rows="5" cols="33" placeholder="Describe tu solicitud">

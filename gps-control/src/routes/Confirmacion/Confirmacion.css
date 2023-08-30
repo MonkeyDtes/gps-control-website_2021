@@ -1,0 +1,177 @@
+.confirmation>* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-red: #ED2F4C;
+    --color-withe: #EEE8F2;
+}
+
+body {
+    background: var(--color-withe);
+}
+
+.confirmation {
+    background-image: url("../../assets/MONTAJE_PANTALLAS_PLAT6.png");
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(17, 1fr);
+    align-items: end;
+    height: 100vh;
+    width: 100%;
+}
+
+.content1__confirmation-red {
+    display: flex;
+    justify-content: space-around;
+    grid-row: 2/3;
+    grid-column: 4/9;
+    align-items: center;
+    width: calc(8.33vw*5);
+    height: calc(5.88vh*1.5);
+    background-color: red;
+    color: #EEE8F2;
+    font-family: "Bahnschrift";
+    font-size: 30px;
+    font-style: normal;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.content2__confirmation-info {
+    grid-row: 3/18;
+    grid-column: 1/13;
+    max-height: calc(5.88vh*15);
+    height: 100%;
+}
+
+.content2__confirmation-info h2 {
+    color: #EB162C;
+    font-family: "Klik";
+    font-size: 180px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.content-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    align-items: center;
+}
+
+.content-text>*{
+    margin: 0;
+}
+
+.content2__container-blue {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    width: calc(8.33vw*10);
+    height: calc(5.88vh*1.5);
+    background: #1E8C93;
+    color: #EEE8F2;
+    font-family: "Bahnschrift";
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.content2__confirmation-info img{
+    width: 70px;
+}
+
+.mediamovile{
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    
+    .confirmation{
+        background: none;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(34, 1fr);
+    }
+    .content1__confirmation-red {
+        display: flex;
+        justify-content: space-around;
+        grid-row: 6/7;
+        grid-column: 2/11;
+        align-items: center;
+        width: calc(8.33vw*9);
+        height: calc(5.88vh*1.5);
+        background-color: red;
+        color: #EEE8F2;
+        font-family: "Bahnschrift";
+        font-size: 30px;
+        font-style: normal;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+    .content2__confirmation-info {
+        grid-row: 9/31;
+        grid-column: 2/11;
+        max-height: calc(5.88vh*15);
+        height: 100%;
+    }
+    .content2__confirmation-info h2 {
+        color: #EB162C;
+        font-family: "Klik";
+        font-size: 100px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+    .content2__container-blue{
+        display: none;
+    }
+    .mediamovile{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .mediamovile p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1px;
+        border-radius: 20px;
+        height: calc(5.88vh*1.5);
+        background: #1E8C93;
+        color: #EEE8F2;
+        font-family: "Bahnschrift";
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+    .p1{
+        width: calc(8.33vw*8);
+    }
+    .p2{
+        width: calc(8.33vw*7);
+    }
+    .p3{
+        width: calc(8.33vw*10);
+    }
+    .pantallas{
+        width: calc(8.33vw*12);
+    }
+    
+    
+  }

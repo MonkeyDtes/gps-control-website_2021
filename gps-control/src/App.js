@@ -12,6 +12,7 @@ import NotFound from "./routes/404";
 import { useState } from "react"; 
 import Plataforma from "./routes/Plataforma";
 import Maquinaria from "./routes/Maquinaria";
+import Confirmacion from "./routes/Confirmacion";
 
 function App() {
   const [estado, setEstado] = useState([]);
@@ -28,6 +29,7 @@ function App() {
           <Route path="/monitoreo" element={<Monitoreo />} />
           <Route path="/plataforma"  element={<Plataforma />} />
           <Route path="/maquinaria"  element={<Maquinaria />} />
+          <Route path="/confirmacion"  element={<Confirmacion />} />
           <Route path="/equipos" element={<Equipos />} />
           <Route path="/promociones" element={<Promociones />} />
           <Route path="/apps" element={<Apps estadoApps={estado}/>} />
