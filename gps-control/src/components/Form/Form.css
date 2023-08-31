@@ -116,3 +116,76 @@ textarea {
     font-weight: 300;
     line-height: normal;
 }
+
+@media screen and (max-width: 768px) {
+    
+    .content__form {
+        width: calc(8.33vw*9.5);
+        height: calc(2.94vh*13);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 30px;
+        background: #FFF;
+        box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    .content__form>p {
+        color: #1E8C93;
+        text-align: center;
+        font-family: "Bahnschrift";
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .container__form form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content__form>* {
+        width: calc(8.33vw*9);
+    }
+
+    .content__form-texarea {
+        width: calc(8.33vw*8);
+
+    }
+
+    .content__form-texarea>textarea {
+        width: calc(8.33vw*8);
+        height: calc(2.94vh*4);
+        padding: 0;
+    }
+
+    .content__form-texarea>textarea::placeholder {
+        margin-left: 5px;
+    }
+
+    .content__form-select {
+        width: calc(8.33vw*8);
+
+    }
+
+    .content__form>input, .content__form-select>select {
+        height: calc(2.94vh*1);
+        width: calc(8.33vw*8);
+    }
+
+    .content__form>input::placeholder,
+    select,
+    textarea {
+        color: #6B6B6B;
+        font-family: "Bahnschrift";
+        font-size: 15px;
+        padding-left: 10px;
+        font-style: normal;
+        font-weight: 350;
+        line-height: normal;
+    }
+
+}

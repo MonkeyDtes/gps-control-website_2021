@@ -161,7 +161,6 @@ body {
     position: absolute;
     right: 0;
     bottom: 0;
-
 }
 
 .img-bottom {
@@ -177,5 +176,8 @@ body {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: repeat(34, 1fr);
+    }
+    .gato{
+        width: calc(8.33vw*2);
     }
 }

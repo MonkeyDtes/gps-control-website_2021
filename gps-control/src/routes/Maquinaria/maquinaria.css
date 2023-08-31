@@ -58,34 +58,39 @@ body {
     grid-column: 7/8;
     grid-row: 1/6;
 }
-.container__info img{
+
+.container__info img {
     width: 120px;
     margin: 0 0 0 0;
 }
 
-.container1__elemnts{
+.container1__elemnts {
     grid-column: 2/7;
     grid-row: 1/13;
 }
 
-.container__form{
+.cont1form {
+    display: flex;
     grid-column: 9/12;
     grid-row: 2/13;
 }
+
 .vehiculo {
     object-fit: cover;
     width: calc(8.33vw*3.3);
     max-height: calc(5.88vh*8);
     margin: 0 8.33vw 0 150px;
 }
+
 .info__maquinaria-container-text {
     display: grid;
     height: calc(5.88vh*3);
     width: calc(8.33vw*3);
     flex-shrink: 0;
     margin: 10px 5.88vh 0 0;
-    
+
 }
+
 .info__maquinaria-container-back {
     grid-row: 1/1;
     height: calc(5.88vh*11);
@@ -96,7 +101,7 @@ body {
     border-radius: 20px;
 }
 
-.info__maquinaria-container-text p{
+.info__maquinaria-container-text p {
     color: #6B6B6B;
     text-align: justify;
     font-family: "Bahnschrift";
@@ -107,43 +112,127 @@ body {
     line-height: normal;
     text-transform: capitalize;
 }
-.imgCont{
+
+.imgCont {
     margin: 80px 0 0 20px;
 }
 
-.container__elements-img{
+.container__elements-img {
     width: calc(8.33vw*2);
     margin-top: -150px;
 }
 
-.container__info-img1{
+.container__info-img1 {
     padding-bottom: 10px;
 }
 
+
 @media screen and (max-width: 768px) {
-    .maquinaria{
+    .maquinaria {
         height: 100vh;
+        width: 100%;
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: repeat(34, 1fr);
     }
+
+    .title__maquinaria {
+        grid-row: 4/7;
+        grid-column: 2/12;
+    }
+
     .title__maquinaria h1 {
         grid-row: 4/5;
         grid-column: 2/12;
         color: #EB162C;
         font-family: "Bahnschrift";
-        font-size: 30px;
+        font-size: 25px;
         font-style: normal;
         font-weight: 600;
         line-height: normal;
         text-transform: uppercase;
         margin: 0;
     }
-    .container__elements-maquinaria {
-        display: flex;
-        flex-direction: column;
+
+    .container__elements-img {
+        display: none;
     }
-    .container1__elemnts{
+
+    .container__elements-maquinaria {
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(26, 1fr);
+        grid-row: 8/34;
+        grid-column: 2/12;
+    }
+
+    .container1__elemnts {
+        grid-row: 16/27;
+        grid-column: 1/7;
         width: 100%;
+    }
+    .cont1form {
+        grid-row: 1/14;
+        grid-column: 1/11;
+    } 
+
+    .mediaq {
+        display: flex;
+    }
+
+    .container__form {
+        width: calc(8.33vw*10);
+    }
+
+    .mediaqdesk {
+        display: none;
+        width: calc(8.33vw*10);
+    }
+
+    /*-------------------------formulario------------------------*/
+
+    .info__maquinaria-container-back {
+        height: calc(5.88vh*5.5);
+        width: calc(8.33vw*5.3);
+        position: absolute;
+        mix-blend-mode: soft-light;
+        background: var(--color-withe);
+        border-radius: 20px;
+    }
+
+    .info__maquinaria-container-text p {
+        color: #6B6B6B;
+        text-align: justify;
+        font-family: "Bahnschrift";
+        margin: 15px;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-transform: capitalize;
+    }
+
+    .info__maquinaria-container-text {
+        display: grid;
+        height: calc(5.88vh*5.5);
+        width: calc(8.33vw*5.3);
+        flex-shrink: 0;
+        margin: 10px 5.88vh 0 0;
+    }
+
+    .vehiculo {
+        object-fit: cover;
+        width: calc(8.33vw*8);
+        grid-row: 19/26;
+        grid-column: 3/10;
+    }
+
+    .imgCont {
+        width: calc(8.33vw*1);
+    }
+
+    .container__info {
+        grid-row: 15/23;
+        grid-column: 8/11;
     }
 }
