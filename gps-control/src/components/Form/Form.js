@@ -10,10 +10,12 @@ export default function Form() {
                 <input placeholder="Correo electrónico" type="text" name="name" />
                 <input placeholder="Número de teléfono" type="text" name="name" />
                 <div className="content__form-select">
-                    <select>
+                    <select id="img_select">
                         <option>Departamento</option>
                     </select>
-                   {/*<img src={flecha} />*/} 
+                    <label htmlFor="img_select">
+                        <img src={flecha} />
+                    </label>
                 </div>
                 <div className="content__form-texarea">
                     <textarea rows="5" cols="33" placeholder="Describe tu solicitud">
