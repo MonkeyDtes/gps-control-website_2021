@@ -18,7 +18,9 @@ export default function Confirmacion() {
                     <p className="p2">UNO DE NUESTROS</p>
                     <p className="p3">EXPERTOS TE CONTACTARÁ</p>
                 </div>
+                <div className="cont__pantallas">
                 <img className="pantallas" src={MONTAJE_PANTALLAS_PLAT6}></img>
+                </div>
                 <img src={Group68}></img>
             </div>
 

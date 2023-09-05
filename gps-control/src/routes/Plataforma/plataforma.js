@@ -22,15 +22,16 @@ export default function Plataforma() {
                     <div className="info__platform-container-back"></div>
                     <p>Controla de forma integral tu operación logística, monitorea en tiempo real tu flota, ahorra tiempos de gestión y reduce costos.</p>
                 </div>
-                
             </div>
-            <img src={carro} className="vehiculo" alt="camionesdos"></img>
+            <div className="cont-vehicule-n">
+                <img src={carro} className="vehiculo" alt="camionesdos"></img>
+            </div>
             <div className="cont1form">
-                    <Form></Form>
+                <Form></Form>
             </div>
         </div>
         <img src={Group73} className="img_bg_left" alt="camiones" />
-                <img src={Frame4} className="gato" alt="a"></img>
+        <img src={Frame4} className="gato" alt="a"></img>
 
     </section>
 }

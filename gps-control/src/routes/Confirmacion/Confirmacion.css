@@ -66,7 +66,7 @@ body {
     align-items: center;
 }
 
-.content-text>*{
+.content-text>* {
     margin: 0;
 }
 
@@ -87,91 +87,101 @@ body {
     text-transform: uppercase;
 }
 
-.content2__confirmation-info img{
+.content2__confirmation-info img {
     width: 70px;
 }
 
-.mediamovile{
+.mediamovile {
     display: none;
 }
 
 @media screen and (max-width: 768px) {
-    
-    .confirmation{
+
+    .confirmation {
         background: none;
         height: 100vh;
+        width: 100%;
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: repeat(34, 1fr);
     }
+
     .content1__confirmation-red {
         display: flex;
         justify-content: space-around;
         grid-row: 6/7;
-        grid-column: 2/11;
+        grid-column: 3/11;
         align-items: center;
         width: calc(8.33vw*9);
-        height: calc(5.88vh*1.5);
-        background-color: red;
-        color: #EEE8F2;
-        font-family: "Bahnschrift";
+        height: calc(2.94vh*2);
         font-size: 30px;
-        font-style: normal;
-        line-height: normal;
-        text-transform: uppercase;
     }
+
     .content2__confirmation-info {
+        display: grid;
         grid-row: 9/31;
         grid-column: 2/11;
         max-height: calc(5.88vh*15);
         height: 100%;
     }
-    .content2__confirmation-info h2 {
-        color: #EB162C;
-        font-family: "Klik";
-        font-size: 100px;
-        font-style: normal;
-        font-weight: 300;
-        line-height: normal;
-        text-transform: uppercase;
-    }
-    .content2__container-blue{
+
+    .content2__container-blue {
         display: none;
     }
-    .mediamovile{
+
+    .mediamovile {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
     }
+
+    .content1__confirmation-red img {
+        width: calc(8.33vw*1.5);
+    }
+
+    .content-text h2 {
+        text-align: center;
+        font-size: 70px;
+    }
+
     .mediamovile p {
         display: flex;
         justify-content: center;
         align-items: center;
         margin: 1px;
-        border-radius: 20px;
-        height: calc(5.88vh*1.5);
+        border-radius: 10px;
+        height: calc(2.94vh*1.5);
         background: #1E8C93;
         color: #EEE8F2;
         font-family: "Bahnschrift";
-        font-size: 35px;
+        font-size: 20px;
         font-style: normal;
         font-weight: 300;
         line-height: normal;
         text-transform: uppercase;
     }
-    .p1{
+
+    .content1__confirmation-red p {
+        font-size: 20px;
+    }
+
+    .p1 {
         width: calc(8.33vw*8);
     }
-    .p2{
+
+    .p2 {
         width: calc(8.33vw*7);
     }
-    .p3{
+
+    .p3 {
         width: calc(8.33vw*10);
     }
-    .pantallas{
-        width: calc(8.33vw*12);
+
+    .cont__pantallas img {
+        width: calc(8.33vw*10);
+        height: calc(2.94*9);
     }
-    
-    
-  }
+
+
+}

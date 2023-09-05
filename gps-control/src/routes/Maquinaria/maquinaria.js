@@ -5,11 +5,16 @@ import excavator from "../../assets/excavator.png";
 import Group73 from "../../assets/Group73.png";
 import Vector8 from "../../assets/Vector8.png";
 import Frame4 from "../../assets/Frame4.png";
+import Group from "../../assets/Group.png";
+import constructionCity from "../../assets/constructionCity.png";
+import particles from "../../assets/back_particulas.svg"
 import "./maquinaria.css"
 import "../../components/Form/Form.css"
 export default function Plataforma() {
     return <section className="maquinaria">
-
+        <img className="bg-maq bg_constructionCity" src={constructionCity}></img>
+        <img className="bg-maq bg_particles" src={particles}></img>
+        <img className="bg-maq Group" src={Group}></img>
         <div className="title__maquinaria">
             <h1>¡QUE NO INMOVILICEN TU MÁQUINA AMARILLA!</h1>
         </div>
@@ -26,7 +31,7 @@ export default function Plataforma() {
                     <div className="mixb"></div>
                     <img className="imgCont" src={Group73}></img>
                 </div>
-                
+
             </div>
             <img className="vehiculo" src={excavadora2}></img>
             <div className="cont1form">
