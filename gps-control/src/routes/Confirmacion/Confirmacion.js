@@ -13,7 +13,7 @@ export default function Confirmacion() {
             <div className="content-text">
                 <h2>¡gracias!</h2>
                 <p className="content2__container-blue">EN UN MOMENTO UNO DE NUESTROS EXPERTOS TE CONTACTARÁ</p>
-                <div className="mediamovile">
+                <div className="mediamobile">
                     <p className="p1">EN UN MOMENTO</p>
                     <p className="p2">UNO DE NUESTROS</p>
                     <p className="p3">EXPERTOS TE CONTACTARÁ</p>
@@ -21,9 +21,11 @@ export default function Confirmacion() {
                 <div className="cont__pantallas">
                 <img className="pantallas" src={MONTAJE_PANTALLAS_PLAT6}></img>
                 </div>
-                <img src={Group68}></img>
             </div>
 
+        </div>
+        <div className="cont__logo-bottom">
+            <img className="logo__bottom" src={Group68}></img>
         </div>
     </section>
 }

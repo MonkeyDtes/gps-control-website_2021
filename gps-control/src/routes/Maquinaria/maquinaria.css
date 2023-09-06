@@ -89,7 +89,7 @@ body {
 .cont1form {
     display: flex;
     grid-column: 8/11;
-    grid-row: 1/13;
+    grid-row: 3/13;
 }
 
 .vehiculo {
@@ -97,7 +97,7 @@ body {
     width: calc(8.33vw*3.3);
     max-height: calc(5.88vh*8);
     grid-row: 5/12;
-    grid-column: 4/7;
+    grid-column: 3/7;
     z-index: 1;
     position: relative;
 }
@@ -187,6 +187,7 @@ body {
         grid-column: 2/12;
         font-size: 23px;
         margin: 0;
+        min-width: 255px;
     }
 
     .container__elements-img {

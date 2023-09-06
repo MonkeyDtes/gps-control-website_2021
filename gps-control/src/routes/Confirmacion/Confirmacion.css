@@ -42,7 +42,7 @@ body {
 }
 
 .content2__confirmation-info {
-    grid-row: 3/18;
+    grid-row: 4/17;
     grid-column: 1/13;
     max-height: calc(5.88vh*15);
     height: 100%;
@@ -61,7 +61,6 @@ body {
 .content-text {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     height: 100%;
     align-items: center;
 }
@@ -91,8 +90,19 @@ body {
     width: 70px;
 }
 
-.mediamovile {
+.mediamobile {
     display: none;
+}
+.cont__logo-bottom {
+    grid-column: 6/8;
+    grid-row: 13/16;
+    text-align: center;
+}
+
+.logo__bottom {
+    width: 80px;
+    grid-column: 7/9;
+    grid-row: 13/16;
 }
 
 @media screen and (max-width: 768px) {
@@ -108,7 +118,6 @@ body {
 
     .content1__confirmation-red {
         display: flex;
-        justify-content: space-around;
         grid-row: 6/7;
         grid-column: 3/11;
         align-items: center;
@@ -129,7 +138,7 @@ body {
         display: none;
     }
 
-    .mediamovile {
+    .mediamobile {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -139,13 +148,14 @@ body {
     .content1__confirmation-red img {
         width: calc(8.33vw*1.5);
     }
+    
 
     .content-text h2 {
         text-align: center;
         font-size: 70px;
     }
 
-    .mediamovile p {
+    .mediamobile p {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -155,9 +165,8 @@ body {
         background: #1E8C93;
         color: #EEE8F2;
         font-family: "Bahnschrift";
-        font-size: 20px;
+        font-size: 23px;
         font-style: normal;
-        font-weight: 300;
         line-height: normal;
         text-transform: uppercase;
     }
@@ -181,6 +190,22 @@ body {
     .cont__pantallas img {
         width: calc(8.33vw*10);
         height: calc(2.94*9);
+    }
+
+    .content2__confirmation-info img {
+        width: 100%;
+    }
+
+    .cont__logo-bottom {
+        grid-column: 6/8;
+        grid-row: 29/32;
+    }
+
+    .logo__bottom{
+        grid-column: 6/8;
+        grid-row: 29/32;
+        width: calc(8.33vw*2);
+
     }
 
 

@@ -14,7 +14,7 @@ export default function Form() {
                         <option>Departamento</option>
                     </select>
                     <label htmlFor="img_select">
-                        <img src={flecha} />
+                        <img className="imgSelect" src={flecha} />
                     </label>
                 </div>
                 <div className="content__form-texarea">

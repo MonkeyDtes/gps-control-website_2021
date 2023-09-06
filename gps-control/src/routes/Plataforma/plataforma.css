@@ -37,6 +37,10 @@ body {
     height: auto;
 }
 
+.imgb2 {
+    display: none;
+}
+
 .img1 {
     width: calc(8.33vw*2);
     height: calc(5.88vh*2);
@@ -156,7 +160,7 @@ body {
     text-transform: capitalize;
 }
 
-.cont1form {
+.cont2form {
     grid-column: 8/13;
     grid-row: 1/12;
 }
@@ -174,6 +178,12 @@ body {
     flex-shrink: 0;
 }
 
+.imgSelect {
+    margin-top: 15px;
+    margin-left: -50px;
+    width: 25px;
+}
+
 @media screen and (max-width: 768px) {
     .platform {
         height: 100vh;
@@ -184,8 +194,8 @@ body {
     }
 
     .img1 {
-        top: -25px;
-    } 
+        top: -31px;
+    }
 
     .platform__title>h1,
     .platform__title>h2 {
@@ -204,6 +214,7 @@ body {
 
     .platform__title h2 {
         width: calc(8.33vw*10);
+        height: calc(2.94vh*1);
         grid-row: 5/7;
     }
 
@@ -215,8 +226,8 @@ body {
         grid-column: 2/12;
     }
 
-    .cont1form {
-        grid-row: 5/15;
+    .cont2form {
+        grid-row: 1/15;
         grid-column: 1/11;
     }
 
@@ -250,7 +261,8 @@ body {
     }
 
     .img_bg_left {
-        width: calc(8.33vw*7);
+        width: calc(8.33vw*10);
+        z-index: -1;
     }
 
     .cont-vehicule-n {
@@ -263,4 +275,22 @@ body {
     .gato {
         width: calc(8.33vw*2);
     }
+
+    .platform__back {
+        width: 100vw;
+        height: calc(2.94vh*28);
+    }
+
+    .platform__back>img {
+        width: calc(8.33vw*7);
+        right: 0;
+        position: absolute;
+    }
+
+    .imgb2 {
+        display: block;
+        left: 0;
+        bottom: calc(2.94vh*12);
+    }
+    
 }

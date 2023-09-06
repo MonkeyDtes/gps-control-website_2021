@@ -10,6 +10,7 @@ export default function Plataforma() {
     return <section className="platform">
         <div className="platform__back">
             <img src={bg_bolitas}></img>
+            <img className="imgb2" src={bg_bolitas}></img>
         </div>
         <img className="img1" src={Group721}></img>
         <div className="platform__title">
@@ -26,7 +27,7 @@ export default function Plataforma() {
             <div className="cont-vehicule-n">
                 <img src={carro} className="vehiculo" alt="camionesdos"></img>
             </div>
-            <div className="cont1form">
+            <div className="cont2form">
                 <Form></Form>
             </div>
         </div>
