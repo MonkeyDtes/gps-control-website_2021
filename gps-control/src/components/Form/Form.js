@@ -11,11 +11,14 @@ export default function Form() {
                 <input placeholder="Número de teléfono" type="text" name="name" />
                 <div className="content__form-select">
                     <select id="img_select">
-                        <option>Departamento</option>
+                        <option className="op">Departamento</option>
+                        <option className="op">Departamento</option>  
+                        <option className="op">Departamento</option> 
                     </select>
-                    <label htmlFor="img_select">
+                    <i></i>
+                    {/* <label htmlFor="img_select">
                         <img className="imgSelect" src={flecha} />
-                    </label>
+                    </label> */}
                 </div>
                 <div className="content__form-texarea">
                     <textarea rows="5" cols="33" placeholder="Describe tu solicitud">

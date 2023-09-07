@@ -71,40 +71,6 @@ body {
     margin: 0;
 }
 
-.platform__content {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(11, 1fr);
-    grid-row: 7/18;
-    grid-column: 1/13;
-}
-
-.content__info-platform {
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    grid-column: 1/8;
-    grid-row: 1/12;
-}
-
-.img_bg_left {
-    width: calc(8.33vw*6);
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
-
-.cont-vehicule-n {
-    width: calc(8.33vw*3.2);
-    max-height: calc(5.88vh*6);
-    grid-column: 4/11;
-    grid-row: 4/27;
-}
-
-.vehiculo {
-    object-fit: cover;
-}
-
 .platform__title h2 {
     grid-column: 2/7;
     grid-row: 5/7;
@@ -128,14 +94,20 @@ body {
     margin: 00;
 }
 
-.info__platform-container-back {
-    grid-row: 1/1;
-    height: calc(5.88vh*3);
-    width: calc(8.33vw*3);
-    position: absolute;
-    mix-blend-mode: soft-light;
-    background: var(--color-withe);
-    border-radius: 20px;
+.platform__content {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(11, 1fr);
+    grid-row: 7/18;
+    grid-column: 1/13;
+}
+
+.content__info-platform {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    grid-column: 1/8;
+    grid-row: 1/12;
 }
 
 .info__platform-container-text {
@@ -160,15 +132,37 @@ body {
     text-transform: capitalize;
 }
 
+.info__platform-container-back {
+    grid-row: 1/1;
+    height: calc(5.88vh*3);
+    width: calc(8.33vw*3);
+    position: absolute;
+    mix-blend-mode: soft-light;
+    background: var(--color-withe);
+    border-radius: 20px;
+}
+
+.cont-vehicule-n {
+    width: calc(8.33vw*3.2);
+    max-height: calc(5.88vh*6);
+    grid-column: 4/11;
+    grid-row: 4/27;
+}
+
+.vehiculo {
+    object-fit: cover;
+}
+
 .cont2form {
     grid-column: 8/13;
     grid-row: 1/12;
 }
 
-.gato {
+.img_bg_left {
+    width: calc(8.33vw*6);
     position: absolute;
-    right: 0;
     bottom: 0;
+    left: 0;
 }
 
 .img-bottom {
@@ -184,6 +178,12 @@ body {
     width: 25px;
 }
 
+.gato {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
 @media screen and (max-width: 768px) {
     .platform {
         height: 100vh;
@@ -191,6 +191,23 @@ body {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: repeat(34, 1fr);
+    }
+    
+    .platform__back {
+        width: 100vw;
+        height: calc(2.94vh*28);
+    }
+    
+    .platform__back>img {
+        width: calc(8.33vw*7);
+        right: 0;
+        position: absolute;
+    }
+    
+    .imgb2 {
+        display: block;
+        left: 0;
+        bottom: calc(2.94vh*12);
     }
 
     .img1 {
@@ -226,13 +243,20 @@ body {
         grid-column: 2/12;
     }
 
-    .cont2form {
-        grid-row: 1/15;
-        grid-column: 1/11;
-    }
-
     .content__info-platform {
         grid-row: 16/27;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        grid-column: 2/10;
+    }
+
+    .info__platform-container-text {
+        display: grid;
+        grid-column: 3/10;
+        height: calc(2.94vh*5);
+        width: calc(8.33vw*9);
+        margin: 0;
     }
 
     .info__platform-container-text p {
@@ -245,26 +269,6 @@ body {
         width: calc(8.33vw*9);
     }
 
-    .info__platform-container-text {
-        display: grid;
-        grid-column: 3/10;
-        height: calc(2.94vh*5);
-        width: calc(8.33vw*9);
-        margin: 0;
-    }
-
-    .content__info-platform {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        grid-column: 2/10;
-    }
-
-    .img_bg_left {
-        width: calc(8.33vw*10);
-        z-index: -1;
-    }
-
     .cont-vehicule-n {
         width: calc(8.33vw*3.2);
         max-height: calc(5.88vh*6);
@@ -272,25 +276,18 @@ body {
         grid-row: 18/27;
     }
 
+    .cont2form {
+        grid-row: 1/15;
+        grid-column: 1/11;
+    }
+
+    .img_bg_left {
+        width: calc(8.33vw*10);
+        z-index: -1;
+    }
+
     .gato {
         width: calc(8.33vw*2);
     }
 
-    .platform__back {
-        width: 100vw;
-        height: calc(2.94vh*28);
-    }
-
-    .platform__back>img {
-        width: calc(8.33vw*7);
-        right: 0;
-        position: absolute;
-    }
-
-    .imgb2 {
-        display: block;
-        left: 0;
-        bottom: calc(2.94vh*12);
-    }
-    
 }

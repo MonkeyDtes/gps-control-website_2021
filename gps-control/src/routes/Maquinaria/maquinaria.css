@@ -35,8 +35,13 @@ body {
 }
 
 .bg_particles {
+    display: flex;
     right: 0;
     z-index: -1;
+}
+
+.Group {
+    display: none;
 }
 
 .title__maquinaria {
@@ -152,14 +157,6 @@ body {
     height: 20px;
 }
 
-.Group {
-    display: none;
-}
-
-.bg_particles {
-    display: flex;
-}
-
 @media screen and (max-width: 768px) {
     .maquinaria {
         height: 100vh;
@@ -175,6 +172,18 @@ body {
         right: 0;
         width: 100vw;
         mix-blend-mode: color-burn;
+    }
+
+    .bg_particles {
+        display: none;
+    }
+
+    .Group {
+        display: flex;
+        z-index: -1;
+        width: 100%;
+        height: 80%;
+        top: 0;
     }
 
     .title__maquinaria {
@@ -275,16 +284,4 @@ body {
         width: 95px;
     }
 
-    .Group {
-        display: flex;
-        z-index: -1;
-        width: 100%;
-        height: 80%;
-        top: 0;
-    }
-
-
-    .bg_particles {
-        display: none;
-    }
 }

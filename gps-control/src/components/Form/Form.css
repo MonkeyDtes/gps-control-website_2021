@@ -29,6 +29,7 @@
 .content__form>input {
     border: none;
     height: calc(5.88vh*1);
+    font-size: 18px;
     flex-shrink: 0;
     border-radius: 10px;
     background: #FFF;
@@ -64,10 +65,32 @@ textarea {
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
+    position: relative;
+}
+
+.content__form-select i{
+	position: absolute;
+	right: calc(8.33vw*1.5);
+	top: calc(5.33vh*11.7);
+	width: 16px;
+	height: 16px;
+	display: block;
+	border-left:4px solid #ffffff;
+	border-bottom:4px solid #ffffff;
+	transform: rotate(-45deg); /* Giramos el cuadrado */
+	transition: all 0.25s ease;
+}
+ 
+.content__form-select:hover i{
+	margin-top: 3px;
+}
+
+.imgSelect {
+    cursor: pointer;
 }
 
 .content__form-texarea>textarea {
-    width: calc(8.33vw*3.5);
+    width: calc((8.33vw*3.5) - 12px);
     height: calc(5.88vh*3);
     color: #6B6B6B;
     font-family: "Bahnschrift";
@@ -79,6 +102,26 @@ textarea {
     border-radius: 10px;
     background: #FFF;
     box-shadow: 0px -4px 5px 2px rgba(107, 107, 107, 0.25) inset;
+}
+
+.content__link {
+    margin: 0 0 10px -50px;
+}
+
+.content__link a {
+    margin: 0 0 0 10px;
+    text-decoration: none;
+    color: #EB162C;
+    font-family: "Klik";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.content__button-form {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .content__button-form>button {
@@ -97,26 +140,7 @@ textarea {
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-}
-
-.content__button-form {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.content__link {
-    margin: 0 0 10px -50px;
-}
-
-.content__link a {
-    margin: 0 0 0 10px;
-    text-decoration: none;
-    color: #EB162C;
-    font-family: "Klik";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {
@@ -152,6 +176,7 @@ textarea {
 
     .content__form>input {
         border-radius: 5px;
+        font-size: 10px;
     }
 
     .content__form-texarea {
@@ -179,10 +204,15 @@ textarea {
         right: 20vw;
         width: 15px;
     }
-
+    
     .content__form-select>label>img {
         object-fit: cover;
         width: 15px;
+    }
+    
+    .imgSelect {
+        margin-top: 0;
+        margin-left: -10px;
     }
 
     .content__form>input,
@@ -190,7 +220,19 @@ textarea {
         height: calc(2.94vh*1);
         width: calc(8.33vw*8);
         border-radius: 5px;
+    }
 
+    .content__form-select i{
+        top: calc(2.94vh * 12.4);
+        right: calc(8.33vw * 2.5);
+        width: 10px;
+        height: 10px;
+        border-left: 2px solid #ffffff;
+        border-bottom: 2px solid #ffffff;
+    }
+
+    .content__form-select:hover i {
+        margin: 0;
     }
 
     .content__form>input::placeholder,
@@ -202,6 +244,7 @@ textarea {
         font-weight: 350;
         line-height: normal;
     }
+
 
     .content__link {
         margin: 0;
@@ -226,10 +269,15 @@ textarea {
         font-size: 11px;
         border-radius: 5px;
     }
+    
+    .op {
+        width: calc(8.33vw*3.5);
+        height: calc(5.88vh*1);
+    }
 
-    .imgSelect {
-        margin-top: 0;
-        margin-left: -10px;
+    #img_select>option {
+        background-color: #ED2F4C;
+        border: none;
     }
 
 }
