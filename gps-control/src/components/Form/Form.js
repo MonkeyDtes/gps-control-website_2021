@@ -2,6 +2,40 @@ import Frame3 from "../../assets/Frame3.png";
 import flecha from "../../assets/FLECHA_SELECT.svg";
 import "./Form.css"
 export default function Form() {
+    const departamentosColombia = [
+        "Amazonas",
+        "Antioquia",
+        "Arauca",
+        "Atlántico",
+        "Bolívar",
+        "Boyacá",
+        "Caldas",
+        "Caquetá",
+        "Casanare",
+        "Cauca",
+        "Cesar",
+        "Chocó",
+        "Córdoba",
+        "Cundinamarca",
+        "Guainía",
+        "Guaviare",
+        "Huila",
+        "La Guajira",
+        "Magdalena",
+        "Meta",
+        "Nariño",
+        "Norte de Santander",
+        "Putumayo",
+        "Quindío",
+        "Risaralda",
+        "San Andrés y Providencia",
+        "Santander",
+        "Sucre",
+        "Tolima",
+        "Valle del Cauca",
+        "Vaupés",
+        "Vichada"
+    ];
     return (
         <form>
             <div className="content__form">
@@ -11,9 +45,9 @@ export default function Form() {
                 <input placeholder="Número de teléfono" type="text" name="name" />
                 <div className="content__form-select">
                     <select id="img_select">
-                        <option className="op">Departamento</option>
-                        <option className="op">Departamento</option>  
-                        <option className="op">Departamento</option> 
+                        {departamentosColombia.map((d,i) =>
+                            <option value={d} className="op" key={`${i}${d}`}>{d}</option>
+                        )}
                     </select>
                     <i></i>
                     {/* <label htmlFor="img_select">
