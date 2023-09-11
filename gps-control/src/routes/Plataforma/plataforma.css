@@ -159,10 +159,11 @@ body {
 }
 
 .img_bg_left {
-    width: calc(8.33vw*6);
+    width: calc(8.33vw*6.7);
     position: absolute;
     bottom: 0;
     left: 0;
+    z-index: -1;
 }
 
 .img-bottom {
@@ -222,11 +223,11 @@ body {
     }
 
     .platform__title h1 {
-        font-size: 15px;
         grid-column: 2/12;
         grid-row: 3/4;
-        font-size: 16px;
+        font-size: 18px;
         text-align: center;
+        line-height: 2;
     }
 
     .platform__title h2 {

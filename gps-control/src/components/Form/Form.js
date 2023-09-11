@@ -1,5 +1,4 @@
 import Frame3 from "../../assets/Frame3.png";
-import flecha from "../../assets/FLECHA_SELECT.svg";
 import "./Form.css"
 export default function Form() {
     const departamentosColombia = [
@@ -50,9 +49,6 @@ export default function Form() {
                         )}
                     </select>
                     <i></i>
-                    {/* <label htmlFor="img_select">
-                        <img className="imgSelect" src={flecha} />
-                    </label> */}
                 </div>
                 <div className="content__form-texarea">
                     <textarea rows="5" cols="33" placeholder="Describe tu solicitud">
