@@ -129,16 +129,16 @@ export default function Soluciones() {
             <>
               <div className="soluciones_section1_header">
                 <h1>VIDEO PARA</h1>
+                </div>
                 <div className="soluciones_section1_row">
-                  <img className="imgNube" alt="nube" src={navbarNube}></img>
                   <div className="main_box">
+                  <img className="imgNube" alt="nube" src={navbarNube}></img>
                     <div className="soluciones_section1_label">
                       <h2>Monitoreo vehicular</h2>
                     </div>
+                    <img alt="nube" className="imgNube2" src={Vector4}></img>
                   </div>
-                  <img alt="nube" className="imgNube2" src={Vector4}></img>
                 </div>
-              </div>
               <div class="image-container">
                 <img alt="camara" src={camaraSoluciones}></img>
                 <div class="containerImgHover">
@@ -158,8 +158,11 @@ export default function Soluciones() {
           {button2 ? (
             <div className="soluciones_section2">
               <div className="soluciones_section1_header">
-                <img alt="termometro" src={termometro}></img>
+                <div className="cont--title--img">
+                <img alt="termometro" className="img--termometro" src={termometro}></img>
                 <h1>CALOR/FRIO</h1>
+                </div>
+                
                 <div className="soluciones_section1_row">
                   <div className="main_box">
                     <div className="soluciones_section1_label">

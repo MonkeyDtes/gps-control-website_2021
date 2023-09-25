@@ -85,6 +85,8 @@
 }
 
 .soluciones_section2 {
+  grid-row: 2/15;
+  grid-column: 3/10;
   width: 100%;
   height: 100%;
   background: url("../../assets/Temperatura_CarrosBG.png");
@@ -92,10 +94,7 @@
   background-position-x: -5vw;
   background-position-y: -0vw;
   background-size: cover;
-
-  display: flex;
   flex-direction: column;
-  align-items: flex-end;
 }
 
 .soluciones_section2>img {
@@ -179,9 +178,9 @@
 .soluciones_section1_header {
   display: flex;
   flex-direction: column;
-    grid-column: 3/9;
-    grid-row: 4/8;
-  }
+  grid-column: 4/7;
+  grid-row: 1/4;
+}
 
 .soluciones_section1_header>img {
   position: absolute;
@@ -193,7 +192,7 @@
   font-style: normal;
   font-weight: 700;
   font-size: calc(5.88vw * 0.8);
-  line-height: 130px;
+  /*line-height: 130px;*/
   color: #eb162c;
   margin: 0;
 }
@@ -208,7 +207,6 @@
 }
 
 .soluciones_section4_header>h1 {
-  margin-top: calc(5.88vh * 3);
   font-family: "klik";
   font-style: normal;
   font-weight: 400;
@@ -236,7 +234,7 @@
 .soluciones_slides {
   display: grid;
   grid-column: 4/13;
-  grid-row: 1/18;
+  grid-row: 4/18;
   grid-template-rows: repeat(17, 1fr);
   grid-template-columns: repeat(9, 1fr);
 }
@@ -253,8 +251,7 @@
 }
 
 .soluciones_section1_row {
-  display: flex;
-  flex-direction: row;
+  grid-column: 3/9;
 }
 
 .soluciones_section3_row {
@@ -317,6 +314,10 @@
   margin-bottom: calc(5.88vh);
 }
 
+.main_box {
+  display: flex;
+}
+
 .main_box_pedestales {
   position: absolute;
   top: calc(5.88vh * 10.5);
@@ -329,33 +330,58 @@
 /**/
 .image-container {
   grid-column: 2/5;
-  grid-row: 8/15;
+  grid-row: 6/13;
   cursor: pointer;
 }
-.image-container img{
+
+.image-container img {
   width: 100%;
 }
 
 .text-overlay {
-  opacity: 0; /* Hacemos que el texto inicialmente sea invisible */
-  background-color: var(--azulClaro); 
-  color: var(--azulOscuro); 
-  transition: opacity 0.3s; /* Agregamos una transición para que aparezca suavemente */
+  opacity: 0;
+  /* Hacemos que el texto inicialmente sea invisible */
+  background-color: var(--azulClaro);
+  color: var(--azulOscuro);
+  transition: opacity 0.3s;
+  /* Agregamos una transición para que aparezca suavemente */
   border-radius: 20px;
-  
+
 }
 
 .image-container:hover .text-overlay {
-  opacity: 1; /* Al hacer hover, el texto se hace visible */
+  opacity: 1;
+  /* Al hacer hover, el texto se hace visible */
 }
 
-.containerImgHover{
+.containerImgHover {
   width: 280px;
   padding: -100px 50px 0px 60px;
 }
 
-.imgHover{
+.imgHover {
   width: 80px;
+}
+
+.imgNube2 {
+  width: calc(8.33vw*1);
+}
+
+.cont--title--img {
+  display: flex;
+}
+
+.cont--title--img {
+  color: #EB162C;
+  font-family: "Kiona";
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.img--termometro {
+  width: 20px;
 }
 
 /**/
@@ -386,9 +412,9 @@
   }
 
   .soluciones_section1_header>h1 {
-    margin-top: calc(8.33vw * 0);
+    /*margin-top: calc(8.33vw * 0);
     font-size: calc(5.88vw * 1.8);
-    margin-left: calc(8.33vw*2);
+    margin-left: calc(8.33vw*2);*/
   }
 
   .soluciones_section4_header>h1 {
