@@ -15,46 +15,51 @@ import Leads from "../../components/Leads/index";
 import Footer from "../../components/Footer/index";
 import termometro from "../../assets/termometro.svg";
 import Vector4 from "../../assets/Vector4.svg";
-export default function Soluciones() {
-  const [button1, setButton1] = useState(true);
-  const [button2, setButton2] = useState(false);
-  const [button3, setButton3] = useState(false);
-  const [button4, setButton4] = useState(false);
-  const [button5, setButton5] = useState(false);
+import Section_solutions from "../../components/Section_solutions/Section_solutions";
 
-  const HandleClick = (index) => {
-    if (index.currentTarget.id === "1") {
-      setButton1(true);
-      setButton2(false);
-      setButton3(false);
-      setButton4(false);
-      setButton5(false);
-    } else if (index.currentTarget.id === "2") {
-      setButton1(false);
-      setButton2(true);
-      setButton3(false);
-      setButton4(false);
-      setButton5(false);
-    } else if (index.currentTarget.id === "3") {
-      setButton1(false);
-      setButton2(false);
-      setButton3(true);
-      setButton4(false);
-      setButton5(false);
-    } else if (index.currentTarget.id === "4") {
-      setButton1(false);
-      setButton2(false);
-      setButton3(false);
-      setButton4(true);
-      setButton5(false);
-    } else if (index.currentTarget.id === "5") {
-      setButton1(false);
-      setButton2(false);
-      setButton3(false);
-      setButton4(false);
-      setButton5(true);
-    }
+export default function Soluciones() {
+
+  let listData = [{
+    "title": "VIDEO PARA",
+    "subtitle": "Monitoreo vehicular",
+    "image": camaraSoluciones,
+    "text": "Ofrecemos diferentes opciones de cámaras para vehículos son la elección perfecta para garantizar la seguridad y eficiencia en tus operaciones de transporte. Permiten tener una vista completa del entorno de tu vehículo, detectando posibles peligros y evitar colisiones. Adaptadas para monitorear la calidad del transporte, verificando con imágenes los productos, las vías y la situación del conductor."
+  },
+
+  {
+    "title": "CALOR/FRIO",
+    "subtitle": "Reporte cada minuto",
+    "image": eyeSensor,
+    "text": "Las Termocuplas son la solución perfecta para monitorear y medir temperaturas en tiempo real. Facilitando la necesidad de supervisar el rendimiento térmico de una máquina, la temperatura de un entorno, nuestras termocuplas/beacons te ofrecen una precisión inigualable y una fácil integración en tu sistema existente. Brindan seguridad en mediciones exactas y confiables en todo momento controlando la eficiencia de tu negocio."
+  },
+
+  {
+    "title": "PERSONALIZACIÓN",
+    "subtitle": "ID única de usuario",
+    "image": FMB_120,
+    "text": "Dispositivos aplicables a los equipos, para mayor pertinencia en el caso de uso y funciones extra."
+  },
+
+  {
+    "title": "IDENTIFICACIÓN",
+    "subtitle": "QR por persona/pasajero",
+    "image": Llaves_Dallas,
+    "text": "Dispositivos aplicables a los equipos, para mayor pertinencia en el caso de uso y funciones extra."
+  },
+
+  {
+    "title": "EQUIPO DE RASTREO",
+    "subtitle": "Sistema de posición global",
+    "image": LECTOR_QR,
+    "text": "Dispositivos aplicables a los equipos, para mayor pertinencia en el caso de uso y funciones extra."
+  }];
+
+  const [data, setData] = useState(listData[0]);
+  const HandleClick = (e) => {
+    setData(listData[e.target.id.slice(-1)])
+    console.log(listData[e.target.id]);
   };
+
   return (
     <div>
       <NavbarGPS
@@ -66,193 +71,43 @@ export default function Soluciones() {
         Promociones={false}
       ></NavbarGPS>
 
+      {/*----------------------------------------------------------------- */}
+
       <section className="soluciones_section">
         <div className="soluciones_buttons">
-          <button onClick={(e) => HandleClick(e)} id="1">
-            {" "}
-            {button1 ? (
-              <div className="soluciones_button_check">
-                <div className="dot"></div>
-              </div>
-            ) : (
-              <div className="soluciones_button_dontcheck"></div>
-            )}{" "}
-            Vigilancia vehicular
-          </button>
-          <button onClick={(e) => HandleClick(e)} id="2">
-            {" "}
-            {button2 ? (
-              <div className="soluciones_button_check">
-                <div className="dot"></div>
-              </div>
-            ) : (
-              <div className="soluciones_button_dontcheck"></div>
-            )}{" "}
-            Control de temperatura
-          </button>
-          <button onClick={(e) => HandleClick(e)} id="3">
-            {" "}
-            {button3 ? (
-              <div className="soluciones_button_check">
-                <div className="dot"></div>
-              </div>
-            ) : (
-              <div className="soluciones_button_dontcheck"></div>
-            )}{" "}
-            Equipos de avanzada
-          </button>
-          <button onClick={(e) => HandleClick(e)} id="4">
-            {" "}
-            {button4 ? (
-              <div className="soluciones_button_check">
-                <div className="dot"></div>
-              </div>
-            ) : (
-              <div className="soluciones_button_dontcheck"></div>
-            )}{" "}
-            Reconocimiento conductores
-          </button>
-          <button onClick={(e) => HandleClick(e)} id="5">
-            {" "}
-            {button5 ? (
-              <div className="soluciones_button_check">
-                <div className="dot"></div>
-              </div>
-            ) : (
-              <div className="soluciones_button_dontcheck"></div>
-            )}{" "}
-            Identificación QR
-          </button>
+
+          <div>
+            <input  type="radio" name="op1" onClick={(e) => HandleClick(e)} id="radio0" />
+            <label htmlFor="radio0">Vigilancia vehicular</label>
+          </div>
+
+          <div>
+            <input type="radio" name="op1" onClick={(e) => HandleClick(e)} id="radio1" />
+            <label htmlFor="radio1">Control de temperatura</label>
+          </div>
+
+          <div>
+            <input type="radio" name="op1" onClick={(e) => HandleClick(e)} id="radio2" />
+            <label htmlFor="radio2">Equipos de avanzada</label>
+          </div>
+
+          <div>
+            <input type="radio" name="op1" onClick={(e) => HandleClick(e)} id="radio3" />
+            <label htmlFor="radio3">Reconocimiento conductores</label>
+          </div>
+
+          <div>
+            <input type="radio" name="op1" onClick={(e) => HandleClick(e)} id="radio4" />
+            <label htmlFor="radio4">Identificación QR</label>
+          </div>
         </div>
+
+        {/*----------------------------------------------------------------- */}
         <div className="soluciones_slides">
-          {button1 ? (
-            <>
-              <div className="soluciones_section1_header">
-                <h1>VIDEO PARA</h1>
-                </div>
-                <div className="soluciones_section1_row">
-                  <div className="main_box">
-                  <img className="imgNube" alt="nube" src={navbarNube}></img>
-                    <div className="soluciones_section1_label">
-                      <h2>Monitoreo vehicular</h2>
-                    </div>
-                    <img alt="nube" className="imgNube2" src={Vector4}></img>
-                  </div>
-                </div>
-              <div class="image-container">
-                <img alt="camara" src={camaraSoluciones}></img>
-                <div class="containerImgHover">
-                  <div class="text-overlay">
-                    Esta aplicación permite gestionar las tareas asignadas
-                    por la empresa, y gestionarlas en tiempo real.</div>
-                </div>
-              </div>
-              <div className="soluciones_section1_greenColumn"></div>
-              <div className="gif_soluciones">
-                <GifGPS type="2"></GifGPS>
-              </div>
-            </>
-          ) : (
-            <></>
-          )}
-          {button2 ? (
-            <div className="soluciones_section2">
-              <div className="soluciones_section1_header">
-                <div className="cont--title--img">
-                <img alt="termometro" className="img--termometro" src={termometro}></img>
-                <h1>CALOR/FRIO</h1>
-                </div>
-                
-                <div className="soluciones_section1_row">
-                  <div className="main_box">
-                    <div className="soluciones_section1_label">
-                      <h2>Reporte cada minuto</h2>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <img alt="camara" src={eyeSensor}></img>
-              <div className="soluciones_section_greenColumn"></div>
-              <div className="gif_soluciones">
-                <GifGPS type="1"></GifGPS>
-              </div>
-            </div>
-          ) : (
-            <></>
-          )}
-          {button3 ? (
-            <div className="soluciones_section3">
-              <div className="soluciones_section3_header">
-                <h1>EQUIPO DE RASTREO</h1>
-                <div className="soluciones_section3_row">
-                  <div className="main_box">
-                    <div className="soluciones_section1_label">
-                      <img alt="nube" src={circulosRojos}></img>
-                      <h2>Sistema de posición global</h2>
-                    </div>
-                  </div>
-                  <img alt="nube" src={circulosRojos}></img>
-                </div>
-              </div>
-
-              <img alt="camara" src={FMB_120}></img>
-              <div className="soluciones_section_greenColumn"></div>
-              <div className="gif_soluciones">
-                <GifGPS type="1"></GifGPS>
-              </div>
-            </div>
-          ) : (
-            <></>
-          )}
-          {button4 ? (
-            <div className="soluciones_section4">
-              <div className="soluciones_section4_header">
-                <h1>PERSONALIZACIÓN</h1>
-                <div className="soluciones_section1_row">
-                  <div className="main_box">
-                    <div className="soluciones_section1_label">
-                      <img alt="nube" src={usuariosSoluciones}></img>
-                      <h2>ID única de usuario</h2>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <img alt="camara" src={Llaves_Dallas}></img>
-              <div className="soluciones_section_greenColumn"></div>
-              <div className="gif_soluciones">
-                <GifGPS type="1"></GifGPS>
-              </div>
-            </div>
-          ) : (
-            <></>
-          )}
-          {button5 ? (
-            <div className="soluciones_section5">
-              <div className="soluciones_section1_header">
-                <h1>IDENTIFICACIÓN</h1>
-                <div className="soluciones_section3_row">
-                  <div className="main_box">
-                    <div className="soluciones_section1_label">
-                      <h2>QR por persona/pasajero</h2>
-                    </div>
-                  </div>
-                  <img alt="nube" src={wifiHorizontal}></img>
-                </div>
-              </div>
-
-              <img alt="camara" src={LECTOR_QR}></img>
-              <div className="soluciones_section_greenColumn"></div>
-              <div className="gif_soluciones">
-                <GifGPS type="1"></GifGPS>
-              </div>
-            </div>
-          ) : (
-            <></>
-          )}
+          <Section_solutions data={data}></Section_solutions>
         </div>
       </section>
+
       <Leads></Leads>
       <Footer></Footer>
     </div>
