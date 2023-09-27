@@ -6,7 +6,13 @@ import camaraSoluciones from "../../assets/camaraSoluciones.png";
 import eyeSensor from "../../assets/eyeSensor.png";
 import FMB_120 from "../../assets/FMB_120.png";
 import Llaves_Dallas from "../../assets/Llaves_Dallas.png";
+import PersonalizacionConductores from "../../assets/PersonalizacionConductores.png";
+import Vigilancia_Vehicular1 from "../../assets/Vigilancia_Vehicular1.png";
+import Temperatura_CarrosBG from "../../assets/Temperatura_CarrosBG.png";
+import IdentificacionQR from "../../assets/IdentificacionQR.png";
+import gifNegativo from "../../assets/gifNegativo.gif";
 import LECTOR_QR from "../../assets/LECTOR_QR.png";
+import Rastreo from "../../assets/Rastreo.png";
 import circulosRojos from "../../assets/circulosRojos.svg";
 import usuariosSoluciones from "../../assets/usuariosSoluciones.svg";
 import wifiHorizontal from "../../assets/wifiHorizontal.svg";
@@ -23,35 +29,45 @@ export default function Soluciones() {
     "title": "VIDEO PARA",
     "subtitle": "Monitoreo vehicular",
     "image": camaraSoluciones,
-    "text": "Ofrecemos diferentes opciones de cámaras para vehículos son la elección perfecta para garantizar la seguridad y eficiencia en tus operaciones de transporte. Permiten tener una vista completa del entorno de tu vehículo, detectando posibles peligros y evitar colisiones. Adaptadas para monitorear la calidad del transporte, verificando con imágenes los productos, las vías y la situación del conductor."
+    "text": "Ofrecemos diferentes opciones de cámaras para vehículos son la elección perfecta para garantizar la seguridad y eficiencia en tus operaciones de transporte. Permiten tener una vista completa del entorno de tu vehículo, detectando posibles peligros y evitar colisiones. Adaptadas para monitorear la calidad del transporte, verificando con imágenes los productos, las vías y la situación del conductor.",
+    "imgf": Vigilancia_Vehicular1
   },
 
   {
     "title": "CALOR/FRIO",
     "subtitle": "Reporte cada minuto",
     "image": eyeSensor,
-    "text": "Las Termocuplas son la solución perfecta para monitorear y medir temperaturas en tiempo real. Facilitando la necesidad de supervisar el rendimiento térmico de una máquina, la temperatura de un entorno, nuestras termocuplas/beacons te ofrecen una precisión inigualable y una fácil integración en tu sistema existente. Brindan seguridad en mediciones exactas y confiables en todo momento controlando la eficiencia de tu negocio."
-  },
-
-  {
-    "title": "PERSONALIZACIÓN",
-    "subtitle": "ID única de usuario",
-    "image": FMB_120,
-    "text": "Dispositivos aplicables a los equipos, para mayor pertinencia en el caso de uso y funciones extra."
-  },
-
-  {
-    "title": "IDENTIFICACIÓN",
-    "subtitle": "QR por persona/pasajero",
-    "image": Llaves_Dallas,
-    "text": "Dispositivos aplicables a los equipos, para mayor pertinencia en el caso de uso y funciones extra."
+    "text": "Las Termocuplas son la solución perfecta para monitorear y medir temperaturas en tiempo real. Facilitando la necesidad de supervisar el rendimiento térmico de una máquina, la temperatura de un entorno, nuestras termocuplas/beacons te ofrecen una precisión inigualable y una fácil integración en tu sistema existente. Brindan seguridad en mediciones exactas y confiables en todo momento controlando la eficiencia de tu negocio.",
+    "imgf": Temperatura_CarrosBG,
+    "gif": gifNegativo
   },
 
   {
     "title": "EQUIPO DE RASTREO",
     "subtitle": "Sistema de posición global",
+    "image": FMB_120,
+    "text": "Dispositivos aplicables a los equipos, para mayor pertinencia en el caso de uso y funciones extra.",
+    "imgf": Rastreo,
+    "gif": gifNegativo
+
+  },
+
+  {
+    "title": "PERSONALIZACIÓN",
+    "subtitle": "ID única de usuario",
+    "image": Llaves_Dallas,
+    "text": "Dispositivos aplicables a los equipos, para mayor pertinencia en el caso de uso y funciones extra.",
+    "imgf": PersonalizacionConductores,
+    "gif": gifNegativo
+  },
+
+  {
+    "title": "IDENTIFICACIÓN",
+    "subtitle": "QR por persona/pasajero",
     "image": LECTOR_QR,
-    "text": "Dispositivos aplicables a los equipos, para mayor pertinencia en el caso de uso y funciones extra."
+    "text": "Dispositivos aplicables a los equipos, para mayor pertinencia en el caso de uso y funciones extra.",
+    "imgf": IdentificacionQR,
+    "gif": gifNegativo
   }];
 
   const [data, setData] = useState(listData[0]);
@@ -59,6 +75,7 @@ export default function Soluciones() {
     setData(listData[e.target.id.slice(-1)])
     console.log(listData[e.target.id]);
   };
+
 
   return (
     <div>
@@ -77,8 +94,12 @@ export default function Soluciones() {
         <div className="soluciones_buttons">
 
           <div>
-            <input  type="radio" name="op1" onClick={(e) => HandleClick(e)} id="radio0" />
+            <input type="radio" name="op1" onClick={(e) => HandleClick(e)} id="radio0" />
             <label htmlFor="radio0">Vigilancia vehicular</label>
+          </div>
+
+          <div className="apps_button_check">
+            <div className="dot"></div>
           </div>
 
           <div>
@@ -106,7 +127,11 @@ export default function Soluciones() {
         <div className="soluciones_slides">
           <Section_solutions data={data}></Section_solutions>
         </div>
+        <div className="cont--side__rigth">
+        </div>
       </section>
+
+
 
       <Leads></Leads>
       <Footer></Footer>

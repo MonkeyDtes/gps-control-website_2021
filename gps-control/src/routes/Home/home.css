@@ -555,14 +555,15 @@
   border-radius: 8px;
 }
 .textCotice{
-  font-size: 20px;
+  font-size: 10px;
+  font-weight: 700;
 }
 .iconCombustible, .iconHerramienta, .iconNube1{
   width: 30px;
 }
 .iconNube{
   margin-top: -40px;
-  margin-left: 420px;
+  margin-right: -292px;
   width: 130px;
 }
 .home_section2_label2 {

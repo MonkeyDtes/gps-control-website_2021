@@ -216,7 +216,8 @@
   margin: 10px;
 }
 .textContainerIcons{
-  font-size: 9px;
+  font-size: 6px;
+  font-weight: 700;
   margin: 5px;
 }
 .equipos_section2_start_buttons > a:hover {
@@ -547,7 +548,9 @@
   opacity: 1;
 }
 .textContainerBlue{
-  font-size: 1.5rem;
+  font-size: 10px;
+  font-weight: 700;
+
 }
 .circleImg{
   margin-top: -5px;
@@ -599,7 +602,12 @@
   color: #ED2F4C;
   font-family: var(--typography);
   font-size: 50px;
-  border-left: 1px solid #ED2F4C;
+}
+.containerTitleGps2>span {
+  border: 1px solid #ED2F4C;
+  height: 15px;
+  margin-right: 10px;
+
 }
 .imgFrameMaquinaria2{
   max-width: 50%;

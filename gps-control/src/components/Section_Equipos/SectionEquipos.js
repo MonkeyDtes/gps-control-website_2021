@@ -8,6 +8,7 @@ export default function SectionEquipos() {
     return (
         <>
             <div className="containerTitleGps2">
+                <span></span>
                 <p className="titleGps2">GPS</p>
             </div>
            {/*<div className="containerelements2"> */} 

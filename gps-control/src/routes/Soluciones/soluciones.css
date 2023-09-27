@@ -20,6 +20,8 @@
   justify-content: space-evenly;
   grid-column: 2/4;
   grid-row: 7/11;
+  position: relative;
+  z-index: 1;
 }
 
 .soluciones_buttons>button {
@@ -59,6 +61,7 @@
   font-style: normal;
   font-weight: 300;
   line-height: normal;
+  cursor: pointer;
 }
 
 .dot {
@@ -109,13 +112,16 @@
   grid-column: 1/3;
   grid-row: 5/12;
   cursor: pointer;
+  position: relative;
+  z-index: 1;
 }
 
 .image-container img {
-  width: calc(8.33vw*3);
+  width: calc(8.33vw*2.5);
 }
 
 .text-overlay {
+  display: none;
   opacity: 0;
   /* Hacemos que el texto inicialmente sea invisible */
   background-color: var(--azulClaro);
@@ -127,14 +133,16 @@
 }
 
 .image-container:hover .text-overlay {
+  display: block;
+  position: relative;
+  z-index: 1;
   opacity: 1;
   background: #6B6B6B;
-  margin-top: -200px;
-  margin-left: 200px;
-  font-size: 10px;
-  width: calc(8.33vw*4);
+  margin-top: -150px;
+  margin-left: 160px;
+  font-size: 8px;
+  width: calc(8.33vw*2);
   height: auto;
-
   /* Al hacer hover, el texto se hace visible */
 }
 
@@ -143,6 +151,7 @@
   padding: -100px 50px 0px 200px;
   color: #EEE8F2;
   margin: 20px;
+  z-index: -1;
 }
 
 .imgHover {
@@ -159,7 +168,7 @@
 
 .cont--title--img {
   color: #EB162C;
-  font-family: "Kiona";
+  font-family: "klik";
   font-size: 50px;
   font-style: normal;
   font-weight: 400;
@@ -171,14 +180,16 @@
 }
 
 .soluciones_section1_header {
-  grid-column: 3/8;
-  grid-row: 1/2
+  grid-column: 2/9;
+  grid-row: 1/2;
+  position: relative;
+  z-index: 1;
 }
 
 .soluciones_section1_header h1 {
   color: #EB162C;
-  font-family: "Kiona";
-  font-size: 50px;
+  font-family: "klik";
+  font-size: 48px;
   font-style: normal;
   font-weight: 700;
   line-height: 0;
@@ -186,12 +197,14 @@
 
 .soluciones_section1_row {
   grid-row: 3/4;
-  grid-column: 2/9;
+  grid-column: 1/8;
+  position: relative;
+  z-index: 1;
 }
 
 .soluciones_section1_label {
   clip-path: polygon(0% 0%, 100% 0, 85% 100%, 0% 100%);
-  width: calc(8.33vw * 4.5);
+  width: calc(8.33vw * 8);
   height: calc(5.88vh * 1.5);
   background: var(--colorWhite);
   box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.25);
@@ -200,7 +213,7 @@
   align-items: center;
   color: #6B6B6B;
   font-family: "Bahnschrift";
-  font-size: 20px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -217,7 +230,7 @@
   grid-column: 5/12;
   grid-row: 4/17;
 }
-
+/*
 input[type="radio"]+label::before {
   content: "";
   width: 10px;
@@ -225,20 +238,21 @@ input[type="radio"]+label::before {
   float: left;
   margin: 0.5em 0.5em 0 0;
   background: #6b6b6b48;
-  filter: drop-shadow(0px 4px 4px #030D4F);
+  filter: drop-shadow(0px 2px 2px #030D4F);
   display: flex;
   align-items: center;
   align-items: center;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 input[type="radio"]:checked+label::before {
   background-color: #EB162C;
-  filter: drop-shadow(0px 4px 4px #030D4F);
+  filter: drop-shadow(0px 2px 2px #030D4F);
   z-index: -1;
 }
 
-input[type="radio"]:checked+label:after {
+input[type="radio"]:checked+label::after {
   content: "";
   width: 6px;
   height: 6px;
@@ -256,6 +270,29 @@ input[type="radio"] {
 
 input[type="radio"]:checked {
   color: red;
+}*/
+
+.cont--side__rigth {
+  position: absolute;
+  right: calc(8.33vw*1);
+  top: 0;
+  width: calc(8.33vw*2);
+  height: 100vh;
+  flex-shrink: 0;
+  background-color: rgba(30, 140, 147, 0.20);
+  mix-blend-mode: multiply;
+}
+
+.cont--img__sideRigth {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+}
+
+.cont--img__sideRigth>img {
+  width: 100%;
+  max-height: 100vh;
 }
 
 /**/

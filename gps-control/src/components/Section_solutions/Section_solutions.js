@@ -7,11 +7,13 @@ function Section_solutions({data}) {
     const [subtitle,setSubtitle] = useState(data.subtitle);
     const [image,setImage] = useState(data.image);
     const [texts,setText] = useState(data.text);
+    const [imgf,setImgf] = useState(data.imgf);
     useEffect(()=>{
         setTitle(data.title);
         setSubtitle(data.subtitle);
         setImage(data.image);
         setText(data.text);
+        setImgf(data.imgf);
     },[data]);
     return <>
         <div className="soluciones_section1_header">
@@ -32,6 +34,10 @@ function Section_solutions({data}) {
                 <div class="text-overlay">
                     {texts}</div>
             </div>
+        </div>
+
+        <div className="cont--img__sideRigth">
+          <img alt="fondo" src={imgf}></img>
         </div>
     </>;
 }
