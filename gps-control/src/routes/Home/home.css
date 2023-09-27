@@ -158,6 +158,12 @@
   margin-top: calc(5.88vh * 3);
   align-self: flex-end;
 }
+.home_section2_wifiIcon>img{
+  width: 40px;
+}
+.home_section3_circle>img {
+  width: 40px;
+}
 .home_section3_circle {
   margin-top: calc(5.88vh * 3);
   align-self: flex-end;
@@ -499,14 +505,7 @@
   height: calc(5.88vh * 2.2);
 }
 .home_corner_red {
-  clip-path: polygon(
-    20% 65%,
-    35% 80%,
-    100% 80%,
-    85% 100%,
-    0 100%,
-    0 15%,
-    20% 0
+  clip-path: polygon(20% 65%,35% 80%,100% 80%,85% 100%,0 100%,0 15%,20% 0
   );
   position: absolute;
   top: 464.7vh;
@@ -559,12 +558,12 @@
   font-weight: 700;
 }
 .iconCombustible, .iconHerramienta, .iconNube1{
-  width: 30px;
+  width: 20px;
 }
 .iconNube{
   margin-top: -40px;
   margin-right: -292px;
-  width: 130px;
+  width: 100px;
 }
 .home_section2_label2 {
   clip-path: polygon(0% 0%, 100% 0, 85% 100%, 0% 100%);

@@ -417,6 +417,28 @@ nav>div:nth-child(6) {
   width: calc(8.33vw * 0.5);
 }
 
+body{
+  background: #303030;
+}
+
+.contenedor {
+  position: relative;
+  height: 290px;
+  width: 290px;
+  margin: 50px 20px;
+  float: left;
+}
+
+.contenedor img {
+  position: absolute;
+  left: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.contenedor img.top:hover {
+  opacity: 0;
+}
+
 @media only screen and (max-width: 600px) {
   .navbar_close {
     display: flex;

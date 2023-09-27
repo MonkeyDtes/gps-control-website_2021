@@ -44,6 +44,7 @@
   color: #6b6b6b;
   text-align: left;
   margin-right: 20px;
+  cursor: pointer;
 }
 .apps_section1_buttons_bot > button {
   display: flex;
@@ -61,6 +62,7 @@
   color: #6b6b6b;
   text-align: left;
   margin-right: 20px;
+  cursor: pointer;
 }
 
 .apps_button_check {
@@ -75,8 +77,8 @@
   box-shadow: 0px 4px 4px #030d4f;
 }
 .apps_button_dontcheck {
-  height: 20px;
-  width: 20px;
+  height: 15px;
+  width: 15px;
   background-color: #6b6b6b;
   border-radius: 50%;
   display: flex;
