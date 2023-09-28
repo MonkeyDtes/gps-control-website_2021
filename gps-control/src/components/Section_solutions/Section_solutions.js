@@ -2,19 +2,19 @@ import navbarNube from "../../assets/navbarNube.svg";
 import Vector4 from "../../assets/Vector4.svg";
 import { useEffect, useState } from "react";
 
-function Section_solutions({data}) {
-    const [title,setTitle] = useState(data.title);
-    const [subtitle,setSubtitle] = useState(data.subtitle);
-    const [image,setImage] = useState(data.image);
-    const [texts,setText] = useState(data.text);
-    const [imgf,setImgf] = useState(data.imgf);
-    useEffect(()=>{
+function Section_solutions({ data }) {
+    const [title, setTitle] = useState(data.title);
+    const [subtitle, setSubtitle] = useState(data.subtitle);
+    const [image, setImage] = useState(data.image);
+    const [texts, setText] = useState(data.text);
+    const [imgf, setImgf] = useState(data.imgf);
+    useEffect(() => {
         setTitle(data.title);
         setSubtitle(data.subtitle);
         setImage(data.image);
         setText(data.text);
         setImgf(data.imgf);
-    },[data]);
+    }, [data]);
     return <>
         <div className="soluciones_section1_header">
             <h1>{title}</h1>
@@ -37,7 +37,7 @@ function Section_solutions({data}) {
         </div>
 
         <div className="cont--img__sideRigth">
-          <img alt="fondo" src={imgf}></img>
+            <img alt="fondo" src={imgf}></img>
         </div>
     </>;
 }

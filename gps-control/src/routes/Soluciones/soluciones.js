@@ -88,7 +88,9 @@ export default function Soluciones() {
         Promociones={false}
       ></NavbarGPS>
 
-      {/*----------------------------------------------------------------- */}
+      {/*<GifGPS type="2"></GifGPS>*/}
+
+      {/*-----------------------------------------------------------------*/}
 
       <section className="soluciones_section">
         <div className="soluciones_buttons">
@@ -97,11 +99,11 @@ export default function Soluciones() {
             <input type="radio" name="op1" onClick={(e) => HandleClick(e)} id="radio0" />
             <label htmlFor="radio0">Vigilancia vehicular</label>
           </div>
-
+          {/*
           <div className="apps_button_check">
             <div className="dot"></div>
           </div>
-
+           */}
           <div>
             <input type="radio" name="op1" onClick={(e) => HandleClick(e)} id="radio1" />
             <label htmlFor="radio1">Control de temperatura</label>

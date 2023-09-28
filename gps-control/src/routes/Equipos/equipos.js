@@ -77,7 +77,6 @@ export default function Equipos() {
         sensorT3.style.transition = "all 1s";
         sensorT4.style.transition = "all 1s";
       }
-
     } else {
       if (button2 === true) {
         sensorT1.style.marginTop = "20vh";
@@ -287,16 +286,6 @@ export default function Equipos() {
         <div className="equipos_section2_startbg"></div>
         <div className="equipos_section2_start">
           <div className="equipos_section2_start_column">
-            {/* <div className="equipos_section2_start_buttons">
-              <a href="https://www.youtube.com/channel/UCYU-Vn3lnDLePlavejpZMBg">
-                <img className="icons" alt="youtube icon " src={ytIcon}></img>
-                <p className="textContainerIcons">VIDEO DEL EQUIPO</p>
-              </a>
-              <a href=" https://wa.me/qr/HVC55BD4ZJMLH1">
-                <img className="icons" alt="youtube icon " src={waIcon}></img>
-                <p className="textContainerIcons">CHATEE CON NOSOTROS</p>
-              </a>
-            </div> */}
             <ButtonsSocialMedia></ButtonsSocialMedia>
             <p>
               Este equipo GPS para maquinaria amarilla es una solución efectiva
@@ -358,7 +347,6 @@ export default function Equipos() {
               manejo, mejora la gestión de tus activos y tomar decisiones
               informadas sobre su uso y mantenimiento.
             </p>
-            {/*<img alt=" logo gps control" src={gpsControlWhite}></img> */}
           </div>
           <h1>PERSONAS</h1>
         </div>
