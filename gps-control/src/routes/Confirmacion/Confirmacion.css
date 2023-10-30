@@ -7,6 +7,7 @@
 :root {
     --color-red: #ED2F4C;
     --color-withe: #EEE8F2;
+    --colorGreen: #1E8C93;
 }
 
 body {
@@ -32,8 +33,8 @@ body {
     align-items: center;
     width: calc(8.33vw*5);
     height: calc(5.88vh*1.5);
-    background-color: #EB162C;
-    color: #EEE8F2;
+    background-color: var(--color-red);
+    color: var(--color-withe);
     font-family: "Bahnschrift";
     font-size: 30px;
     font-style: normal;
@@ -49,7 +50,7 @@ body {
 }
 
 .content2__confirmation-info h2 {
-    color: #EB162C;
+    color: var(--color-red);
     font-family: "Klik";
     font-size: 180px;
     font-style: normal;
@@ -76,8 +77,8 @@ body {
     border-radius: 20px;
     width: calc(8.33vw*10);
     height: calc(5.88vh*1.5);
-    background: #1E8C93;
-    color: #EEE8F2;
+    background: var(--colorGreen);
+    color: var(--color-withe);
     font-family: "Bahnschrift";
     font-size: 35px;
     font-style: normal;
@@ -93,6 +94,7 @@ body {
 .mediamobile {
     display: none;
 }
+
 .cont__logo-bottom {
     grid-column: 6/8;
     grid-row: 13/16;
@@ -148,7 +150,7 @@ body {
     .content1__confirmation-red img {
         width: calc(8.33vw*1.5);
     }
-    
+
 
     .content-text h2 {
         text-align: center;
@@ -162,8 +164,8 @@ body {
         margin: 1px;
         border-radius: 10px;
         height: calc(2.94vh*1.5);
-        background: #1E8C93;
-        color: #EEE8F2;
+        background: var(--colorGreen);
+        color: var(--color-withe);
         font-family: "Bahnschrift";
         font-size: 23px;
         font-style: normal;
@@ -201,7 +203,7 @@ body {
         grid-row: 29/32;
     }
 
-    .logo__bottom{
+    .logo__bottom {
         grid-column: 6/8;
         grid-row: 29/32;
         width: calc(8.33vw*2);

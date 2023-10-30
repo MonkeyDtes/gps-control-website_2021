@@ -18,9 +18,9 @@ import iconoApps5 from "../../assets/iconoApps5.svg";
 import iconoApps6 from "../../assets/iconoApps6.svg";
 import VectorPalabra from "../../assets/VectorPalabra.png";
 import FramePalabraCombustible from "../../assets/FramePalabraCombustible.png";
-import VectorNube from "../../assets/VectorNube.png"
-import VectorNube2 from "../../assets/VectorNube2.svg"
-import Line41 from "../../assets/Line41.png"
+import VectorNube from "../../assets/VectorNube.png";
+import VectorNube2 from "../../assets/VectorNube2.svg";
+import Line41 from "../../assets/Line41.png";
 import GifGPS from "../../components/gifGPS/index";
 import "./home.css";
 import playGreen from "../../assets/playGreen.svg";
@@ -94,7 +94,7 @@ export default function Home({ onChangeState }) {
         Promociones={false}
       ></NavbarGPS>
       <GifGPS type="2"></GifGPS>
-      <section className="home_section1">
+      {/* <section className="home_section1">
         <video playsInline autoPlay loop muted>
           <source src={bgPortadaHome} type="video/mp4" />
         </video>
@@ -127,10 +127,55 @@ export default function Home({ onChangeState }) {
             </div>
           </div>
         </div>
-        {/* <div className="home_section1_column">
-          <img alt="home Down" src={homeDownButton}></img>
-        </div>*/} 
         <ContainerFlecha></ContainerFlecha>
+      </section>*/}
+      <section className="container--portada___home">
+        <div className="">
+          <div>
+            <div>
+              <div>
+
+              </div>
+              <div>
+
+              </div>
+              <div>
+
+              </div>
+              <div>
+
+              </div>
+              <div>
+
+              </div>
+
+            </div>
+
+            <div>
+
+            </div>
+
+          </div>
+          {/*************************************/}
+          <div>
+            <div>
+
+            </div>
+            <div>
+
+            </div>
+            <div>
+
+            </div>
+            <div>
+
+            </div>
+            <div>
+
+            </div>
+
+          </div>
+        </div>
       </section>
       {modal ? (
         <>
@@ -153,7 +198,7 @@ export default function Home({ onChangeState }) {
           </div>
           <h1>LA HERRAMIENTA</h1>
           <div className="main_box">
-            <div className="home_section2_label"> 
+            <div className="home_section2_label">
               <h2>más completa</h2>
             </div>
           </div>
@@ -181,14 +226,6 @@ export default function Home({ onChangeState }) {
                 Obtener estadísticas e informes
               </button>
             </div>
-            {/*<button className="buttonsCotizar"
-              onClick={() =>
-                sectionRef.current.scrollIntoView({ behavior: "smooth" })
-              }
-            >
-              <img alt="cotizacion" className="imgButton" src={cotizacion}></img>
-              <p className="textCotice">COTICE AQUÍ</p> 
-            </button> */}
             <ButtonCotizar elementRef={sectionRef}></ButtonCotizar>
           </div>
         </div>
@@ -207,14 +244,13 @@ export default function Home({ onChangeState }) {
           <h1>EVITA EL ROBO</h1>
           <div className="main_box">
             <div className="home_section2_label">
-            <img alt="icon" className="iconCombustible" src={FramePalabraCombustible}></img>
+              <img alt="icon" className="iconCombustible" src={FramePalabraCombustible}></img>
               <h2>de tu combustible</h2>
             </div>
           </div>
           <h3>PLATAFORMA para controlar :</h3>
           <div className="home_section3_group">
             <div className="home_section2_body">
-            {/*<img alt="line31" src={Line31}></img>*/}
               <button>
                 El éxito del negocio de cualquier empresa con su flota depende
                 en gran medida de la eficacia con que se organice en ella el
@@ -248,7 +284,7 @@ export default function Home({ onChangeState }) {
           <h1>VIDEO VIGILANCIA</h1>
           <div className="main_box">
             <div className="home_section2_label">
-            <img alt="nube icon" className="iconNube1" src={VectorNube}></img>
+              <img alt="nube icon" className="iconNube1" src={VectorNube}></img>
               <h2>Vehicular</h2>
             </div>
           </div>
@@ -310,11 +346,11 @@ export default function Home({ onChangeState }) {
           </div>
         </div>
         <div className="main_box">
-            <div className="home_section2_label2">
+          <div className="home_section2_label2">
             <img alt="line icon" className="iconline41" src={Line41}></img>
-              <h2>SEGUIMIENTO Y REGISTRO VEHICULAR</h2>
-            </div>
+            <h2>SEGUIMIENTO Y REGISTRO VEHICULAR</h2>
           </div>
+        </div>
         <div className="home_column_red_end">
           <img alt="home Down" src={homeDownButton}></img>
         </div>

@@ -133,8 +133,6 @@ export default function Soluciones() {
         </div>
       </section>
 
-
-
       <Leads></Leads>
       <Footer></Footer>
     </div>
