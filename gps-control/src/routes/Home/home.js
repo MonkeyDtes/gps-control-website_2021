@@ -9,7 +9,7 @@ import vigilanciaHome from "../../assets/vigilanciaHome.png";
 import homeDownButton from "../../assets/homeDownButton.svg";
 import homeBG from "../../assets/homeBG.jpg";
 import camHome from "../../assets/camHome.png";
-import bgPortadaHome from "../../assets/bgPortadaHome.mp4";
+import bgPortadaHome from "../../assets/Home/Bg_portada_1.mp4";
 import iconoApps1 from "../../assets/iconoApps1.svg";
 import iconoApps2 from "../../assets/iconoApps2.svg";
 import iconoApps3 from "../../assets/iconoApps3.svg";
@@ -31,6 +31,12 @@ import { history } from "../../components/History";
 import SwiperHome from "../../components/SwiperHome/index";
 import SwiperHomeSecond from "../../components/SwiperHomeSecond/index";
 import ContainerFlecha from "../../components/ContainerFlecha/ContainerFlecha";
+import P_bgcomposicion from "../../assets/Home/P_bgcomposicion.png"
+import P_caminones from "../../assets/Home/P_caminones.png"
+import P_beyond from "../../assets/Home/P_beyond.png"
+import P_control from "../../assets/Home/P_control.png"
+import Ip_burburjas0 from "../../assets/Componentes/Iconos_pantalla/Ip_burburjas0.svg"
+import Ip_flechas1 from "../../assets/Componentes/Iconos_pantalla/Ip_flechas1.svg"
 
 export default function Home({ onChangeState }) {
   const [modal, setModal] = useState(false);
@@ -94,86 +100,36 @@ export default function Home({ onChangeState }) {
         Promociones={false}
       ></NavbarGPS>
       <GifGPS type="2"></GifGPS>
-      {/* <section className="home_section1">
-        <video playsInline autoPlay loop muted>
-          <source src={bgPortadaHome} type="video/mp4" />
-        </video>
-        <div className="home_section1_header">
-          <div className="home_section1_start">
-            <div className="home_section1_start_label">
-              <h1>Control is better</h1>
-            </div>
-            <h2>BEYOND CONTROL</h2>
-          </div>
-          <div className="home_section1_header_end">
-            <div>SENSORES REMOTOS</div>
-            <div>GESTIÓN DE FLOTAS</div>
-            <div>MONITOREO GPS</div>
-          </div>
-        </div>
-        <div className="home_section1_end">
-          <div className="home_section1_icons">
-            <img alt="Grupo iconos" src={iconsVertical}></img>
-          </div>
-          <div className="home_section1_end_body">
-            <img alt="camiones home" src={homeBG}></img>
-            <div>
-              <p>
-                {" "}
-                Creamos soluciones tecnológicas, en un ecosistema integrado por
-                un software robusto de tracking y monitoreo en tiempo real, todo
-                en una sola plataforma.
-              </p>
-            </div>
-          </div>
-        </div>
-        <ContainerFlecha></ContainerFlecha>
-      </section>*/}
       <section className="container--portada___home">
-        <div className="">
-          <div>
-            <div>
-              <div>
-
-              </div>
-              <div>
-
-              </div>
-              <div>
-
-              </div>
-              <div>
-
-              </div>
-              <div>
-
-              </div>
-
-            </div>
-
-            <div>
-
-            </div>
-
+        <div className="video">
+          <video playsInline autoPlay loop muted>
+            <source src={bgPortadaHome} type="video/mp4" />
+          </video>
+        </div>
+        <div className="subContainer1--portada___home">
+          <div className="contentSubContainer1--portada___home">
+            <img className="img--mapa__portadaHome" src={P_bgcomposicion}></img>
           </div>
-          {/*************************************/}
-          <div>
-            <div>
-
-            </div>
-            <div>
-
-            </div>
-            <div>
-
-            </div>
-            <div>
-
-            </div>
-            <div>
-
-            </div>
-
+        </div>
+        {/*************************************/}
+        <div className="subContainer2--portada___home">
+          <div className="title">
+            <img className="img--text__portadaHome" src={P_beyond} alt="" />
+          </div>
+          <div className="container--imgCamiones__portadaHome">
+            <img className="img--camiones__portadaHome" src={P_caminones}></img>
+          </div>
+          <div className="containerText--h2__portadaHome">
+            <img className="img--pControl__portadaHome" src={P_control} alt="" />
+          </div>
+          <div className="container--items__portadaHome">
+            <hr /><p>sensores remotos</p>
+            <hr /><p>gestión de flotas</p>
+            <hr /><p>monitoreo gps</p>
+          </div>
+          <div className="container--text__portadaHome">
+            <p><span>Creamos soluciones tecnológicas</span> en un ecosistema integrado por un software robusto
+              de tracking y monitoreo en tiempo real, <span>todo en una sola plataforma.</span></p>
           </div>
         </div>
       </section>

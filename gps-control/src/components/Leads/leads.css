@@ -35,7 +35,6 @@
 .leads_page_form {
   display: flex;
   flex-direction: row;
-  margin-top: calc(5.88vh * 4);
   isolation: isolate;
 }
 .leads_page_form_start {
@@ -59,12 +58,14 @@
 }
 .leads_page_form_start_control > label > input {
   height: calc(5.88vh);
-  background: #eee8f2;
+  background: #fff;
   box-shadow: inset 0px -4px 5px 2px rgba(107, 107, 107, 0.25);
   border: none;
+  border-radius: 10px;
   margin-left: calc(5.88vh * 0.3);
   width: calc(8.33vw * 3);
   font-size: 1.5vw;
+  outline: none;
 }
 .leads_page_form_start_control:nth-child(5) {
   margin-left: calc(8.33vw * 1.01);
@@ -105,7 +106,7 @@
   color: red;
 }
 .leads_page_form_end > label > textarea {
-  height: calc(5.88vh * 8);
+  height: calc(5.88vh * 4);
   background: #eee8f2;
   box-shadow: inset 0px -4px 5px 2px rgba(107, 107, 107, 0.25);
   border: none;
@@ -212,15 +213,12 @@ textarea {
   height: 0vh;
 }
 .leads_page_start_text{
-  position: absolute;
-  width: calc(8.33vw*6);
-  height: calc(5.88vh*3);
-  margin-top: calc(5.88vh*2);
-  margin-left: calc(8.33vw);
+  
+  
   font-family: 'Bahnschrift';
   font-style: normal;
   font-weight: 100;
-  font-size: 3vh;
+  font-size: 20px;
   text-align: justify;
   color: #FFFFFF;
 }
@@ -311,4 +309,57 @@ textarea {
     height: 0vw;
     font-size: 0vh;
   }
+}
+
+
+/***************************************************************************/
+.container--form {
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  grid-template-rows: repeat(17,1fr);
+  background: url("../../assets/fondoLeads.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.content--form {
+  display: grid;
+  grid-template-columns: repeat(8,1fr);
+  grid-template-rows: repeat(13,1fr);
+  background-color: #ED2F4C;
+  border-radius: 20px;
+  width: calc(8.33vw*8);
+  height: calc(5.88vh*13);
+  grid-column: 3/11;
+  grid-row: 4/16;
+  mix-blend-mode: multiply;
+filter: drop-shadow(0px 10px 6px rgba(0, 0, 0, 0.25));
+}
+
+.content--text__form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(8.33vw*3);
+}
+
+.content--formLeft {
+  grid-column: 1/4;
+  grid-row: 2/13;
+}
+
+.copntent--formRight {
+  grid-column: 6/8;
+  grid-row: 4/13;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cont--text {
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }

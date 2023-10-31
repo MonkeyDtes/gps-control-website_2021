@@ -51,7 +51,126 @@ export default function Leads() {
   };
 
   return (
-    <section className="leads_page">
+    <div>
+      {/************************************************
+       * ***********************************************
+      */}
+
+      <section className="container--form">
+        <div className="content--form">
+          <div className="content--formLeft">
+            <div className="cont--text">
+              <h2>control is better</h2>
+            </div>
+
+            <form className="leads_page_form" onSubmit={handleSubmit}>
+              <div className="leads_page_form_start">
+                <div className="leads_page_form_start_control">
+                  <img alt="usuario" src={Leads3}></img>
+                  <label>
+                    <input
+                      type="text"
+                      name="name"
+                      placeholder="Nombre y Apellido"
+                      value={formData.name}
+                      onChange={handleChange}
+                    />
+                  </label>
+                </div>
+                <div className="leads_page_form_start_control">
+                  <img alt="telefono" src={Leads1}></img>
+                  <label>
+                    <input
+                      type="phone"
+                      name="phone"
+                      value={formData.phone}
+                      onChange={handleChange}
+                      placeholder="+00 0000000"
+                    />
+                  </label>
+                </div>
+                <div className="leads_page_form_start_control">
+                  <img alt="correo" src={Leads2}></img>
+                  <label>
+                    <input
+                      type="email"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleChange}
+                      placeholder="gpscomercial@gpscontrol.co"
+                    />
+                  </label>
+                </div>
+                <div className="leads_buttons">
+                  <button onClick={(e) => HandleClick(e)} id="1">
+                    {" "}
+                    {button1 ? (
+                      <div className="soluciones_button_check">
+                        <div className="dot"></div>
+                      </div>
+                    ) : (
+                      <div className="leads_button_dontcheck"></div>
+                    )}{" "}
+                    Empresa
+                  </button>
+                  <button onClick={(e) => HandleClick(e)} id="2">
+                    {" "}
+                    {button1 ? (
+                      <div className="leads_button_dontcheck"></div>
+                    ) : (
+                      <div className="soluciones_button_check">
+                        <div className="dot"></div>
+                      </div>
+                    )}{" "}
+                    Independiente
+                  </button>
+                </div>
+                <div className="leads_page_form_start_control">
+                  <label>
+                    <input
+                      type="company"
+                      name="company"
+                      value={formData.company}
+                      onChange={handleChange}
+                      placeholder={
+                        button1 ? "Nombre de la Empresa" : "Independiente"
+                      }
+                    />
+                  </label>
+                </div>
+              </div>
+
+            </form>
+          </div>
+          <div className="copntent--formRight">
+            <div className="content--text__form">
+              <p className="leads_page_start_text">Aumenta la productividad de tu flota con nuestra
+             plataforma de gestión lógistica. Todos los beneficios están incluidos por una misma mensualidad. 
+                    llena el formulario y obtén una asesoría completa.</p>
+            </div>
+            <div className="leads_page_form_end">
+              <label>
+                <textarea
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  placeholder="Más información"
+                  cols="40"
+                />
+              </label>
+              <button type="submit" value="Enviar">
+                Enviar
+              </button>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/************************************************
+       * ***********************************************
+      */}
+      {/*<section className="leads_page">
       <div className="leads_page_background">
         <div className="leads_page_start_bg"></div>
         <div className="leads_page_start">
@@ -163,5 +282,7 @@ export default function Leads() {
         </div>
       </div>
     </section>
+                  */}
+    </div>
   );
 }
