@@ -135,6 +135,7 @@ export default function NavbarGPS(e) {
           <div className="navbar_contacts">
            
           </div>
+          {/** 
           <div className="navbar_ingresos">
             <a href="https://wa.me/qr/AFTZFJYUOAWOM1">
               <img alt="WhatsApp" src={navbarWa}></img>
@@ -148,7 +149,7 @@ export default function NavbarGPS(e) {
               <img alt="ingreso plataforma" src={ingresoLogo2}></img>
             </a>
             <div className="text_suport">Ingreso plataforma</div>
-          </div>
+          </div>*/}
         </div>
       ) : (
         <div className="navbar_app">

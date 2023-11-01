@@ -1,13 +1,11 @@
 import NavbarGPS from "../../components/NavbarGPS/index";
 import ButtonCotizar from "../../components/ButtonCotizar";
-import iconsVertical from "../../assets/iconsVertical.svg";
 import wifiIcon from "../../assets/wifiIcon.svg";
 import pantallasHome from "../../assets/pantallasHome.png";
 import combustible from "../../assets/Combustible.png";
 import circuloHome from "../../assets/circuloHome.svg";
 import vigilanciaHome from "../../assets/vigilanciaHome.png";
 import homeDownButton from "../../assets/homeDownButton.svg";
-import homeBG from "../../assets/homeBG.jpg";
 import camHome from "../../assets/camHome.png";
 import bgPortadaHome from "../../assets/Home/Bg_portada_1.mp4";
 import iconoApps1 from "../../assets/iconoApps1.svg";
@@ -18,6 +16,7 @@ import iconoApps5 from "../../assets/iconoApps5.svg";
 import iconoApps6 from "../../assets/iconoApps6.svg";
 import VectorPalabra from "../../assets/VectorPalabra.png";
 import FramePalabraCombustible from "../../assets/FramePalabraCombustible.png";
+import Frame4 from "../../assets/Frame4.png";
 import VectorNube from "../../assets/VectorNube.png";
 import VectorNube2 from "../../assets/VectorNube2.svg";
 import Line41 from "../../assets/Line41.png";
@@ -30,13 +29,14 @@ import { useEffect, useRef, useState } from "react";
 import { history } from "../../components/History";
 import SwiperHome from "../../components/SwiperHome/index";
 import SwiperHomeSecond from "../../components/SwiperHomeSecond/index";
-import ContainerFlecha from "../../components/ContainerFlecha/ContainerFlecha";
 import P_bgcomposicion from "../../assets/Home/P_bgcomposicion.png"
 import P_caminones from "../../assets/Home/P_caminones.png"
 import P_beyond from "../../assets/Home/P_beyond.png"
 import P_control from "../../assets/Home/P_control.png"
+import P_leadscontrol from "../../assets/Home/P_leadscontrol.png"
 import Ip_burburjas0 from "../../assets/Componentes/Iconos_pantalla/Ip_burburjas0.svg"
 import Ip_flechas1 from "../../assets/Componentes/Iconos_pantalla/Ip_flechas1.svg"
+import P_trama from "../../assets/Home/P_trama.png"
 
 export default function Home({ onChangeState }) {
   const [modal, setModal] = useState(false);
@@ -272,7 +272,58 @@ export default function Home({ onChangeState }) {
           <img alt="pantallas" src={camHome}></img>
         </div>
       </section>
+      {/**************************************************************/}
       <section className="home_section3">
+        <div className="container--left__homeSection3">
+          <div className="home_column_red_end">
+            <img alt="home Down" src={homeDownButton}></img>
+          </div>
+          <div className="container--imgGato__home">
+            <img className="imgGato--home" src={Frame4} alt="" />
+          </div>
+        </div>
+        <div className="container--right__homeSection3">
+          <div className="container--imgParticle__home">
+            <img className="img--Particle__home" src={P_trama} alt="" />
+          </div>
+          <div className="container--aplicaciones__home">
+            <h2>Aplicaciones</h2>
+          </div>
+          <div className="home_section3_buttons">
+            <div className="home_section3_buttons_up">
+              <button value={1} onClick={(e) => HandleClick(e)}>
+                <img alt="apps" src={iconoApps3}></img>
+              </button>
+              <button value={2} onClick={(e) => HandleClick(e)}>
+                <img alt="apps" src={iconoApps2}></img>
+              </button>
+              <button value={3} onClick={(e) => HandleClick(e)}>
+                <img alt="apps" src={iconoApps4}></img>
+              </button>
+            </div>
+            <div className="home_section3_buttons_up">
+              <button value={4} onClick={(e) => HandleClick(e)}>
+                <img alt="apps" src={iconoApps5}></img>
+              </button>
+              <button value={5} onClick={(e) => HandleClick(e)}>
+                <img alt="apps" src={iconoApps6}></img>
+              </button>
+              <button value={6} onClick={(e) => HandleClick(e)}>
+                <img alt="apps" src={iconoApps1}></img>
+              </button>
+            </div>
+          </div>
+
+          <div className="container--textSeguimiento__home">
+            <img alt="line icon" className="" src={Line41}></img>
+            <h2>SEGUIMIENTO Y REGISTRO VEHICULAR</h2>
+        </div>
+
+        </div>
+        {/* 
+        <div className="home_corner_red">
+          <img src={Frame4} alt="" />
+        </div>
         <div className="home_section3_header">
           <img alt="play verde" src={playGreen}></img>
           <h2>Aplicaciones</h2>
@@ -310,8 +361,10 @@ export default function Home({ onChangeState }) {
         <div className="home_column_red_end">
           <img alt="home Down" src={homeDownButton}></img>
         </div>
-        <div className="home_corner_red"></div>
+        
+      */}
       </section>
+      {/************************************************************************/}
       <section ref={sectionRef}></section>
       <Leads></Leads>
       <Footer></Footer>

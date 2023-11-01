@@ -3,6 +3,9 @@ import iconosWhite from "../../assets/iconsWhite.svg";
 import Leads1 from "../../assets/Leads1.svg";
 import Leads2 from "../../assets/Leads2.svg";
 import Leads3 from "../../assets/Leads3.svg";
+import P_trama from "../../assets/Home/P_trama.png"
+import P_bgleadstrama from "../../assets/Home/P_bgleadstrama.png"
+import P_leadscontrol from "../../assets/Home/P_leadscontrol.png"
 import emailjs from "emailjs-com";
 import { useState } from "react";
 import "./leads.css";
@@ -57,10 +60,16 @@ export default function Leads() {
       */}
 
       <section className="container--form">
+        <div className="container--imgParticles__form">
+          <img className="img--particles__form" src={P_bgleadstrama} alt="" />
+        </div>
+        <div className="container--icons__form">
+          <img className="icons--form" alt="iconosHome" src={iconosGroup}></img>
+        </div>
         <div className="content--form">
           <div className="content--formLeft">
             <div className="cont--text">
-              <h2>control is better</h2>
+              <img src={P_leadscontrol} alt="" />
             </div>
 
             <form className="leads_page_form" onSubmit={handleSubmit}>
@@ -111,7 +120,7 @@ export default function Leads() {
                     ) : (
                       <div className="leads_button_dontcheck"></div>
                     )}{" "}
-                    Empresa
+                    <p className="letra">Empresa</p>
                   </button>
                   <button onClick={(e) => HandleClick(e)} id="2">
                     {" "}
@@ -122,7 +131,7 @@ export default function Leads() {
                         <div className="dot"></div>
                       </div>
                     )}{" "}
-                    Independiente
+                    <p>Independiente</p>
                   </button>
                 </div>
                 <div className="leads_page_form_start_control">
@@ -144,9 +153,9 @@ export default function Leads() {
           </div>
           <div className="copntent--formRight">
             <div className="content--text__form">
-              <p className="leads_page_start_text">Aumenta la productividad de tu flota con nuestra
-             plataforma de gestión lógistica. Todos los beneficios están incluidos por una misma mensualidad. 
-                    llena el formulario y obtén una asesoría completa.</p>
+              <p className="leads_page_start_text"><span>Aumenta la productividad de tu flota con nuestra
+                plataforma</span> de gestión lógistica. Todos los beneficios están incluidos por una misma mensualidad.
+                llena el formulario y obtén una asesoría completa.</p>
             </div>
             <div className="leads_page_form_end">
               <label>
@@ -164,6 +173,7 @@ export default function Leads() {
 
             </div>
           </div>
+          <div className="pruebas"></div>
         </div>
       </section>
 
