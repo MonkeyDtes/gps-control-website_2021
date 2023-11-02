@@ -17,6 +17,13 @@ import navbarYT from "../../assets/navbarYT.svg";
 import navbarTel from "../../assets/navbarPhone.svg";
 import ingresoLogo1 from "../../assets/ingresoLogo1.svg";
 import ingresoLogo2 from "../../assets/userRed.svg";
+/**********************************************************/
+import Iconoflotante_correo from "../../assets/Componentes/Iconos_botonesflotantes/Iconoflotante_correo.svg"
+import Iconoflotante_soporte from "../../assets/Componentes/Iconos_botonesflotantes/Iconoflotante_soporte.svg"
+import Iconoflotante_telefono from "../../assets/Componentes/Iconos_botonesflotantes/Iconoflotante_telefono.svg"
+import Iconoflotante_usuario from "../../assets/Componentes/Iconos_botonesflotantes/Iconoflotante_usuario.svg"
+import Iconoflotante_whatsapp from "../../assets/Componentes/Iconos_botonesflotantes/Iconoflotante_whatsapp.svg"
+import Iconoflotante_youtube from "../../assets/Componentes/Iconos_botonesflotantes/Iconoflotante_youtube.svg"
 import { history } from "../History";
 import { useEffect, useRef, useState } from "react";
 
@@ -133,7 +140,7 @@ export default function NavbarGPS(e) {
             </button>
           </div>
           <div className="navbar_contacts">
-           
+
           </div>
           {/** 
           <div className="navbar_ingresos">
@@ -331,7 +338,27 @@ export default function NavbarGPS(e) {
               </button>
             </div>
           </nav>
-          <div className="navbar_contacts">
+          <div className="container--icons__portadaHome">
+            <div>
+              <img src={Iconoflotante_correo} alt="" />
+            </div>
+            <div>
+              <img src={Iconoflotante_telefono} alt="" />
+            </div>
+            <div>
+              <img src={Iconoflotante_whatsapp} alt="" />
+            </div>
+            <div>
+              <img src={Iconoflotante_youtube} alt="" />
+            </div>
+            <div>
+              <img src={Iconoflotante_usuario} alt="" />
+            </div>
+            <div>
+              <img src={Iconoflotante_soporte} alt="" />
+            </div>
+          </div>
+          {/* <div className="navbar_contacts">
             <a href="mailto:sales@gpscontrol.co">
               <img alt="mail" src={navbarMail}></img>
             </a>
@@ -341,8 +368,8 @@ export default function NavbarGPS(e) {
             <a href="https://www.youtube.com/channel/UCYU-Vn3lnDLePlavejpZMBg">
               <img alt="yt" src={navbarYT}></img>
             </a>
-          </div>
-          <div className="navbar_ingresos">
+          </div> */}
+          {/* <div className="navbar_ingresos">
             <a href="https://wa.me/qr/AFTZFJYUOAWOM1">
               <img alt="WhatsApp" src={navbarWa}></img>
             </a>
@@ -356,7 +383,7 @@ export default function NavbarGPS(e) {
               <div></div>
             </a>
             <div className="text_suport">Ingreso Plataforma</div>
-          </div>
+          </div> */}
         </div>
       )}
     </>

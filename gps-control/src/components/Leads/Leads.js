@@ -69,9 +69,8 @@ export default function Leads() {
         <div className="content--form">
           <div className="content--formLeft">
             <div className="cont--text">
-              <img src={P_leadscontrol} alt="" />
+              <img className="img--contText__form" src={P_leadscontrol} alt="" />
             </div>
-
             <form className="leads_page_form" onSubmit={handleSubmit}>
               <div className="leads_page_form_start">
                 <div className="leads_page_form_start_control">

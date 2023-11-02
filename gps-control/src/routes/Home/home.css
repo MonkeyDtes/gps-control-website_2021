@@ -128,7 +128,7 @@
 }
 
 .home_section2_wifiIcon>img {
-  width: 40px;
+  width: 50px;
 }
 
 .home_section3_circle>img {
@@ -143,15 +143,25 @@
 
 .home_section2_label {
   clip-path: polygon(0% 0%, 100% 0, 85% 100%, 0% 100%);
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
 .home_section2_label>h2,
 .home_section2_label2>h2 {
   font-family: var(--typography);
-  font-style: normal;
-  font-weight: 700;
-  font-size: 3vw;
-  color: var(--colorGray);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3vw;
+    background-color: #fff;
+    width: calc(8.33vw*4);
+    color: var(--colorGray);
+    margin: 20px;
+}
+
+.text--herramienta__home {
+  margin: 0;
 }
 
 .home_section2_body {
@@ -365,7 +375,7 @@
   background-color: #ED2F4C;
   mix-blend-mode: multiply;
   clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 80%);
-  width: calc(8.33vw*2);
+  width: calc(8.33vw*2.02);
   height: calc(5.88vh*13);
 }
 
@@ -381,6 +391,7 @@
 .imgGato--home {
   width: calc(8.33vw*2);
   margin-top: 16px;
+  margin-left: 16px;
 }
 
 .container--right__homeSection3 {
@@ -576,7 +587,7 @@
 }
 
 .textCotice {
-  font-size: 10px;
+  font-size: 20px;
   font-weight: 700;
 }
 
@@ -612,7 +623,8 @@
 
 .iconHerramienta {
   margin-right: 19vw;
-  margin-top: -2.5vw;
+  margin-top: -3.5vw;
+  width: 27px;
   z-index: 4;
 }
 

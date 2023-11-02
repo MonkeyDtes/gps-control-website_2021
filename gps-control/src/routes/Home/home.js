@@ -152,7 +152,7 @@ export default function Home({ onChangeState }) {
           <div className="home_section2_wifiIcon">
             <img alt="wifi icon" src={wifiIcon}></img>
           </div>
-          <h1>LA HERRAMIENTA</h1>
+          <h1 className="text--herramienta__home">LA HERRAMIENTA</h1>
           <div className="main_box">
             <div className="home_section2_label">
               <h2>más completa</h2>
@@ -197,7 +197,7 @@ export default function Home({ onChangeState }) {
           <div className="home_section3_circle">
             <img alt="wifi icon" src={circuloHome}></img>
           </div>
-          <h1>EVITA EL ROBO</h1>
+          <h1 className="text--herramienta__home">EVITA EL ROBO</h1>
           <div className="main_box">
             <div className="home_section2_label">
               <img alt="icon" className="iconCombustible" src={FramePalabraCombustible}></img>
@@ -237,7 +237,7 @@ export default function Home({ onChangeState }) {
         <div className="home_section4_column">
           <div className="home_section2_wifiIcon">
           </div>
-          <h1>VIDEO VIGILANCIA</h1>
+          <h1 className="text--herramienta__home">VIDEO VIGILANCIA</h1>
           <div className="main_box">
             <div className="home_section2_label">
               <img alt="nube icon" className="iconNube1" src={VectorNube}></img>
