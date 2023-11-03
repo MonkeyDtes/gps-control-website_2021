@@ -37,6 +37,7 @@ import P_leadscontrol from "../../assets/Home/P_leadscontrol.png"
 import Ip_burburjas0 from "../../assets/Componentes/Iconos_pantalla/Ip_burburjas0.svg"
 import Ip_flechas1 from "../../assets/Componentes/Iconos_pantalla/Ip_flechas1.svg"
 import P_trama from "../../assets/Home/P_trama.png"
+import ButtonHomeAplicaciones from "../../components/ButtonHomeAplicaciones";
 
 export default function Home({ onChangeState }) {
   const [modal, setModal] = useState(false);
@@ -200,8 +201,7 @@ export default function Home({ onChangeState }) {
           <h1 className="text--herramienta__home">EVITA EL ROBO</h1>
           <div className="main_box">
             <div className="home_section2_label">
-              <img alt="icon" className="iconCombustible" src={FramePalabraCombustible}></img>
-              <h2>de tu combustible</h2>
+              <h2><img className="img--icon" alt="wifi icon" src={circuloHome}></img>de tu combustible</h2>
             </div>
           </div>
           <h3>PLATAFORMA para controlar :</h3>
@@ -240,8 +240,8 @@ export default function Home({ onChangeState }) {
           <h1 className="text--herramienta__home">VIDEO VIGILANCIA</h1>
           <div className="main_box">
             <div className="home_section2_label">
-              <img alt="nube icon" className="iconNube1" src={VectorNube}></img>
-              <h2>Vehicular</h2>
+
+              <h2><img alt="nube icon" className="iconNube1" src={VectorNube}></img>Vehicular</h2>
             </div>
           </div>
           <img alt="nube icon" className="iconNube" src={VectorNube2}></img>
@@ -291,6 +291,16 @@ export default function Home({ onChangeState }) {
           </div>
           <div className="home_section3_buttons">
             <div className="home_section3_buttons_up">
+              <ButtonHomeAplicaciones text="MI SIM" image={iconoApps3} />
+              <ButtonHomeAplicaciones text="FLEETRUM" image={iconoApps2} />
+              <ButtonHomeAplicaciones text="HECTERRA" image={iconoApps4} />
+            </div>
+            <div className="home_section3_buttons_up">
+              <ButtonHomeAplicaciones text="FUEC" image={iconoApps5} />
+              <ButtonHomeAplicaciones text="PLATAFORMA" image={iconoApps6} />
+              <ButtonHomeAplicaciones text="WIATAG" image={iconoApps1} />
+            </div>
+            {/* <div className="home_section3_buttons_up">
               <button value={1} onClick={(e) => HandleClick(e)}>
                 <img alt="apps" src={iconoApps3}></img>
               </button>
@@ -300,8 +310,8 @@ export default function Home({ onChangeState }) {
               <button value={3} onClick={(e) => HandleClick(e)}>
                 <img alt="apps" src={iconoApps4}></img>
               </button>
-            </div>
-            <div className="home_section3_buttons_up">
+            </div> */}
+            {/* <div className="home_section3_buttons_up">
               <button value={4} onClick={(e) => HandleClick(e)}>
                 <img alt="apps" src={iconoApps5}></img>
               </button>
@@ -311,13 +321,13 @@ export default function Home({ onChangeState }) {
               <button value={6} onClick={(e) => HandleClick(e)}>
                 <img alt="apps" src={iconoApps1}></img>
               </button>
-            </div>
+            </div> */}
           </div>
 
           <div className="container--textSeguimiento__home">
             <img alt="line icon" className="" src={Line41}></img>
             <h2>SEGUIMIENTO Y REGISTRO VEHICULAR</h2>
-        </div>
+          </div>
 
         </div>
         {/* 

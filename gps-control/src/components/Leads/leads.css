@@ -265,14 +265,14 @@ textarea {
   font-weight: normal;
 }
 
-.leads_page_start_text>p> span {
+.leads_page_start_text>p>span {
   font-weight: 100;
 }
 
 .leads_button_dontcheck {
   height: 20px;
   width: 20px;
-  background-color: #eee8f2;
+  background-color: #fff;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -436,7 +436,7 @@ textarea {
 }
 
 .img--particles__form {
-  max-height: 100vh;
+  max-height: 86vh;
   width: calc(8.33vw*10);
   bottom: 0;
   left: 0;

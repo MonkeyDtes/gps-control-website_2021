@@ -17,7 +17,7 @@
 .equipos_section1 {
   width: 100%;
   height: 100vh;
-  background-color: var(--colorWhite);
+  background-color: #fff;
 }
 
 .equipos_section1_bg {
@@ -421,7 +421,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  background-color: #eee8f2;
+  background-color: #fff;
 }
 
 .equipos_section_sensores_header {
