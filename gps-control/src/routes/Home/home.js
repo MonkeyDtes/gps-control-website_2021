@@ -27,6 +27,13 @@ import Leads from "../../components/Leads";
 import Footer from "../../components/Footer/index";
 import { useEffect, useRef, useState } from "react";
 import { history } from "../../components/History";
+// /*swiper */
+// import { Swiper, SwiperSlide } from 'swiper/react';
+// import 'swiper/css';
+// import 'swiper/css/pagination';
+// import 'swiper/css/navigation';
+// import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+// /*swiper */
 import SwiperHome from "../../components/SwiperHome/index";
 import SwiperHomeSecond from "../../components/SwiperHomeSecond/index";
 import P_bgcomposicion from "../../assets/Home/P_bgcomposicion.png"
@@ -324,10 +331,13 @@ export default function Home({ onChangeState }) {
             </div> */}
           </div>
 
-          <div className="container--textSeguimiento__home">
-            <img alt="line icon" className="" src={Line41}></img>
-            <h2>SEGUIMIENTO Y REGISTRO VEHICULAR</h2>
+          <div className="main_box--home">
+            <div className="container--textSeguimiento__home">
+              <img alt="line icon" className="" src={Line41}></img>
+              <h2>SEGUIMIENTO Y REGISTRO VEHICULAR</h2>
+            </div>
           </div>
+
 
         </div>
         {/* 

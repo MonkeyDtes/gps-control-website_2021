@@ -12,8 +12,8 @@ import Camion from "../../components/camion/index";
 export default function Monitoreo() {
   const [modal, setModal] = useState(false)
   const [inicialSlide, setInicialSlide] = useState(false)
-  
-  const ModalClick =(e)=>{
+
+  const ModalClick = (e) => {
     setModal(!modal)
     setInicialSlide(e.currentTarget.value);
     const body = document.getElementsByTagName("body");
@@ -49,19 +49,19 @@ export default function Monitoreo() {
         </div>
       </section>
       <section className="plataforma_section1">
-      {modal ? (
-        <>
-          <div onClick={ModalClick} className="modal_home"></div>
-          <div className="modal_home_fade">
-            <SwiperPromo incialSlide={inicialSlide}></SwiperPromo>
-            <div className="Camion">
-              <Camion className="Camion"></Camion>
+        {modal ? (
+          <>
+            <div onClick={ModalClick} className="modal_home"></div>
+            <div className="modal_home_fade">
+              <SwiperPromo incialSlide={inicialSlide}></SwiperPromo>
+              <div className="Camion">
+                <Camion className="Camion"></Camion>
+              </div>
             </div>
-          </div>
-        </>
-      ) : (
-        <></>
-      )}
+          </>
+        ) : (
+          <></>
+        )}
         <div className="plataforma_section1_header">
           <div className="plataforma_sectionq_body_text_a1">
             <button value={0} onClick={(e) => ModalClick(e)}>MANTENIMIENTO PREVENTIVO Y CORRECTIVO</button>

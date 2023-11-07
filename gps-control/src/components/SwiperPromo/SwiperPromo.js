@@ -24,6 +24,8 @@ import EnlistResponsive from "../../assets/Enlist-responsive.png";
 import PlataformaResponsive from "../../assets/Plataforma-responsive.png";
 import GeocercasResponsive from "../../assets/Geocercas-responsive.png";
 import InformesResponsive from "../../assets/Informes-responsive.png";
+import iconoApps3 from "../../assets/iconoApps3.svg";
+import iconoApps5 from "../../assets/iconoApps5.svg";
 
 const SwiperPromo = (e) => {
   SwiperCore.use([Keyboard, Mousewheel]);
@@ -52,19 +54,30 @@ const SwiperPromo = (e) => {
       >
         <SwiperSlide className="swiper_promo_slide">
           <div className="swiper_promo_slide_white">
-            <img alt="fleet img" src={FleetImg}></img>
+            {/* <img alt="fleet img" src={FleetImg}></img> */}
+            {/* <p className="hr-c"><hr /></p> */}
+            <p className="text--slideWhite__home">Programa servicios técnicos y lleva trazabilidad sobre el mantenimiento de la flota:</p>
+            <img src={iconoApps3} alt="" />
           </div>
           <div className="swiper_promo_slide_red">
-            <img alt="fleet text" src={FleetText}></img>
+            <div className="content--slideRed__monitoreo">
+              <p>Notificaciones</p>
+              <p>Control especifico de cada unidad</p>
+            </div>
           </div>
-          <img alt="responsive" src={FleetResponsive}></img>
+          {/* <img alt="responsive" src={FleetResponsive}></img> */}
         </SwiperSlide>
         <SwiperSlide className="swiper_promo_slide">
           <div className="swiper_promo_slide_white">
             <img alt="fleet img" src={EcoImg}></img>
+            <img src={iconoApps5} alt="" />
           </div>
           <div className="swiper_promo_slide_red">
-            <img alt="fleet text" src={EcoText}></img>
+            {/* <img alt="fleet text" src={EcoText}></img> */}
+            <div className="content--slideRed__monitoreo">
+              <p>Consumo de combustible</p>
+              <p>Chat con el conductor</p>
+            </div>
           </div>
           <img alt="responsive" src={EcoResponsive}></img>
         </SwiperSlide>
@@ -73,7 +86,12 @@ const SwiperPromo = (e) => {
             <img alt="fleet img" src={EnlistImg}></img>
           </div>
           <div className="swiper_promo_slide_red">
-            <img alt="fleet text" src={EnlistText}></img>
+            {/* <img alt="fleet text" src={EnlistText}></img> */}
+            <div className="content--slideRed__monitoreo">
+              <p>Exportar datos</p>
+              <p>App móvil y web</p>
+              <p>Cuenta para supervisores</p>
+            </div>
           </div>
           <img alt="responsive" src={EnlistResponsive}></img>
         </SwiperSlide>
@@ -82,7 +100,12 @@ const SwiperPromo = (e) => {
             <img alt="fleet img" src={PlataformaImg}></img>
           </div>
           <div className="swiper_promo_slide_red">
-            <img alt="fleet text" src={PlataformaText}></img>
+            {/* <img alt="fleet text" src={PlataformaText}></img> */}
+            <div className="content--slideRed__monitoreo">
+              <p>Datos de la plataforma</p>
+              <p>Diseño  familiar en la
+                plataforma web y móvil</p>
+            </div>
           </div>
           <img alt="responsive" src={PlataformaResponsive}></img>
         </SwiperSlide>
@@ -91,7 +114,12 @@ const SwiperPromo = (e) => {
             <img alt="fleet img" src={GeocercasImg}></img>
           </div>
           <div className="swiper_promo_slide_red">
-            <img alt="fleet text" src={GeocercasText}></img>
+            {/* <img alt="fleet text" src={GeocercasText}></img> */}
+            <div className="content--slideRed__monitoreo">
+              <p>Tecnología geográfica</p>
+              <p>Posibilidad de agrupar
+                zonas del mapa</p>
+            </div>
           </div>
           <img alt="responsive" src={GeocercasResponsive}></img>
         </SwiperSlide>
