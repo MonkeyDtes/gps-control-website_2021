@@ -180,8 +180,21 @@ export default function Equipos() {
             </div>
           </div>
         </div>
-        <ContainerFlecha></ContainerFlecha>
+        {/* <ContainerFlecha></ContainerFlecha> */}
       </section>
+      {/**************************************************************/}
+      <section className="sectionNew1">
+        <div className="sectionNew1--cont1">
+          <h2>CERTIFICA TU MAQUINARIA AMARILLA</h2>
+          <p>ESTAMOS HABILITADOS Y CERTIFICADOS COMO PROVEEDOR DE SERVICIO DE GPS POR policía nacional
+            nuestra certificación es la que necesitas para poder obtener el RUNT de tu máquina amarilla, maquinaria
+            pesada o de construcción.</p>
+        </div>
+        <div className="sectionNew1--cont2">
+          <ContainerFlecha></ContainerFlecha>
+        </div>
+      </section>
+      {/**************************************************************/}
       <section className="equipos_section_sensores">
         <div className="equipos_section_sensores_header">
           <div className="equipos_section_sensores_buttons">

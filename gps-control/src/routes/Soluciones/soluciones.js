@@ -94,7 +94,6 @@ export default function Soluciones() {
 
       <section className="soluciones_section">
         <div className="soluciones_buttons">
-
           <div>
             <input type="radio" name="op1" onClick={(e) => HandleClick(e)} id="radio0" />
             <label htmlFor="radio0">Vigilancia vehicular</label>
