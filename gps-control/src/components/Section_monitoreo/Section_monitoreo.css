@@ -1,0 +1,43 @@
+.title--component__monitoreo {
+    color: #ED2F4C;
+    font-family: Klik;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.titlec2--component__monitoreo {
+    color: #1E8C93;
+}
+
+.subTitle--component__monitoreo {
+    color: #6B6B6B;
+    font-weight: 700;
+}
+
+.subTitle--component__monitoreo, .text--component__monitoreo, .subtitlec2--component__monitoreo {
+    text-align: justify;
+    font-family: Bahnschrift;
+    font-size: 18px;
+    font-style: normal;
+    margin: 0;
+}
+
+.text--component__monitoreo {
+    color: #6B6B6B;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.subtitlec2--component__monitoreo {
+    color: #ED2F4C;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.margin--container {
+    display: flex;
+    flex-direction: column;
+    margin: 35px 55px 0px 55px;
+}

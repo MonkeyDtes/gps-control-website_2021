@@ -6,7 +6,7 @@ export default function ContainerFlecha() {
     return (
         <>
             <div className="home_section1_column">
-          <img alt="home Down" src={homeDownButton}></img>
+          <img className="img--flechas" alt="home Down" src={homeDownButton}></img>
         </div>
         </>
 

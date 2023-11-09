@@ -1,6 +1,7 @@
 import NavbarGPS from "../../components/NavbarGPS";
 import SectionEquipos from "../../components/Section_Equipos";
 import ButtonCotizar from "../../components/ButtonCotizar";
+import Section_monitoreo from "../../components/Section_monitoreo"
 import ContainerFlecha from "../../components/ContainerFlecha";
 import "./equipos.css";
 import circuloHome from "../../assets/circuloHome.svg";
@@ -13,6 +14,8 @@ import VectorsensorEquipos from "../../assets/VectorsensorEquipos.png";
 import sensorBluetooh from "../../assets/SensorBluetooh.png";
 import sensorCable from "../../assets/SensorCable.png";
 import sensorBluetoohTG from "../../assets/SensorBluetoohToggle.png";
+import S_maquinaria from "../../assets/Solucionesm/S_maquinaria.png";
+import S_collage from "../../assets/Solucionesm/S_collage.png";
 import sensorCableTG from "../../assets/SensorCableToggle.png";
 import masIcon from "../../assets/+ icon.svg";
 import FramePalabraCombustible from "../../assets/FramePalabraCombustible.png";
@@ -27,6 +30,25 @@ import { useEffect, useRef, useState } from "react";
 import ButtonsSocialMedia from "../../components/ButtonsSocialMedia/ButtonsSocialMedia";
 
 export default function Equipos() {
+
+  let listData1 = [{
+    "title2": "CERTIFICA TU MAQUINARIA AMARILLA",
+    "subtitle2": "ESTAMOS HABILITADOS Y CERTIFICADOS COMO PROVEEDOR DE SERVICIO DE GPS POR policía nacional",
+    "text2": "nuestra certificación es la que necesitas para poder obtener el RUNT de tu máquina amarilla, maquinaria pesada o de construcción.",
+  },
+
+  {
+    "title2": "APRENDE TODO SOBRE EL RUNT",
+    "subtitlec2": "¿QUIÉNES DEBEN INSCRIBIRSE?",
+    "text2": "Todo vehículo automotor del tipo de maquinaria agrícola, industrial y de construcción autopropulsada, que esté vinculado en el país, deberá ser inscrito por parte del propietario o poseedor en el RNMA.",
+  }];
+
+  const [data1, setData1] = useState(listData1[0]);
+  const HandleClick1 = (e) => {
+    setData1(listData1[e.target.id.slice(-1)])
+    console.log(listData1[e.target.id]);
+  };
+
   const [button1, setButton1] = useState(false);
   const [button2, setButton2] = useState(false);
   const sectionRef = useRef(null);
@@ -180,21 +202,61 @@ export default function Equipos() {
             </div>
           </div>
         </div>
-        {/* <ContainerFlecha></ContainerFlecha> */}
+
       </section>
       {/**************************************************************/}
       <section className="sectionNew1">
-        <div className="sectionNew1--cont1">
-          <h2>CERTIFICA TU MAQUINARIA AMARILLA</h2>
-          <p>ESTAMOS HABILITADOS Y CERTIFICADOS COMO PROVEEDOR DE SERVICIO DE GPS POR policía nacional
-            nuestra certificación es la que necesitas para poder obtener el RUNT de tu máquina amarilla, maquinaria
-            pesada o de construcción.</p>
+        <div className="fondo">
+          <img className="img--fondo" src={S_maquinaria} alt="" />
         </div>
-        <div className="sectionNew1--cont2">
+        <div className="fn">
+          <Section_monitoreo data1={data1}></Section_monitoreo>
+          <div className="monitoreo_buttons">
+            <div>
+              <input type="radio" name="op1" onClick={(e) => HandleClick1(e)} id="radio0" />
+              <label htmlFor="radio0"></label>
+            </div>
+            {/*
+          <div className="apps_button_check">
+            <div className="dot"></div>
+          </div>
+           */}
+            <div>
+              <input type="radio" name="op1" onClick={(e) => HandleClick1(e)} id="radio1" />
+              <label htmlFor="radio1"></label>
+            </div>
+          </div>
+        </div>
+        <div className="container-flechas">
           <ContainerFlecha></ContainerFlecha>
         </div>
       </section>
       {/**************************************************************/}
+
+      {/**************************************************************/}
+      <section className="new--section2">
+        <div className="container--subconts">
+          <div className="container--left">
+            <div className="collage">
+              <img src={S_collage} alt="" />
+            </div>
+            <div className="text">
+              <p>Nota: si presenta dudas respecto al proceso puede comunicarse al Centro de ayuda y servicios: Línea a nivel nacional 018000930060 o línea en Bogotá (1) 4232221.
+                <br />
+                Tipo de actor: Ciudadano
+              </p>
+            </div>
+            <div className="container-flechas">
+              <ContainerFlecha></ContainerFlecha>
+            </div>
+          </div>
+          <div className="container--right">
+
+          </div>
+        </div>
+      </section>
+      {/**************************************************************/}
+
       <section className="equipos_section_sensores">
         <div className="equipos_section_sensores_header">
           <div className="equipos_section_sensores_buttons">

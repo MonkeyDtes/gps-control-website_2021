@@ -707,11 +707,20 @@
 .sectionNew1 {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(15, 1fr);
+  grid-template-rows: repeat(17, 1fr);
+  /* background-image: url("../../assets/Solucionesm/S_maquinaria.png"); */
   background-color: #fff;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
 }
 
-.sectionNew1--cont1 {
+.sectionNew1--cont2 {
+  grid-column: 3/5;
+  grid-row: 13/16;
+}
+
+.fn {
   border-radius: 20px;
   background: #FFF;
   width: calc(8.33vw*6);
@@ -719,13 +728,134 @@
   /* Sombra_negativos_V */
   box-shadow: 0px 7px 10px 0px rgba(235, 22, 44, 0.50);
   grid-column: 5/12;
-  grid-row: 5/11;
-
+  grid-row: 7/13;
 }
 
-.sectionNew1--cont2 {
+
+
+.monitoreo_buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  grid-column: 2/4;
+  grid-row: 7/11;
+  position: relative;
+  justify-content: flex-end;
+  z-index: 1;
+  margin: 0 45px
+}
+
+.monitoreo_buttons>button {
+  display: flex;
+  flex-direction: row;
+  background-color: transparent;
+  border: none;
+  justify-content: flex-start;
+  align-items: center;
+  width: calc(8.33vw * 2.5);
+  height: calc(5.88vh * 0.8);
+  font-family: "Bahnschrift";
+  font-style: normal;
+  font-weight: 300;
+  margin-bottom: calc(5.88vh * 0.5);
+  color: #6b6b6b;
+  text-align: justify;
+  font-size: 1.5rem;
+}
+
+.soluciones_button_check {
+  height: 20px;
+  width: 20px;
+  background-color: red;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2vw;
+  box-shadow: 0px 4px 4px #030d4f;
+}
+
+.monitoreo_buttons label {
+  color: #6B6B6B;
+  font-family: "Bahnschrift";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.soluciones_button_dontcheck {
+  height: 20px;
+  width: 20px;
+  background-color: #6b6b6b;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2vw;
+  opacity: 0.2;
+  box-shadow: 0px 4px 4px #030d4f;
+}
+
+.container-flechas {
+  background-color: #ED2F4C;
+  grid-row: 15/18;
   grid-column: 3/5;
-  grid-row: 13/16;
+}
+
+.fondo {
+  grid-column: 1/13;
+  grid-row: 1/18;
+}
+
+.img--fondo {
+  height: 100vh;
+}
+
+.new--section2 {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(17, 1fr);
+  background-color: red;
+  height: 100vh;
+  width: 100%;
+}
+
+.container--subconts {
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(13, 1fr);
+}
+
+.collage {
+  width: calc(8.33vw*6);
+  height: calc(5.88vh*5);
+}
+
+.collage>img {
+  max-width: 100%;
+}
+
+.text {
+  width: calc(8.33vw*6);
+  height: calc(5.88vh*3);
+  border-radius: 20px;
+  background: #1E8C93;
+  /* Sombra_botonV */
+  box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.container--left {
+  grid-column: 1/8;
+  grid-row: 1/14;
 }
 
 /* .section1--monitoreo {
