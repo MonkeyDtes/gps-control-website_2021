@@ -1,4 +1,11 @@
 import NavbarGPS from "../../components/NavbarGPS/index";
+import Iconoflotante_correo from "../../assets/Componentes/Iconos_botonesflotantes/Iconoflotante_correo.svg"
+import Iconoflotante_soporte from "../../assets/Componentes/Iconos_botonesflotantes/Iconoflotante_soporte.svg"
+import Iconoflotante_telefono from "../../assets/Componentes/Iconos_botonesflotantes/Iconoflotante_telefono.svg"
+import Iconoflotante_usuario from "../../assets/Componentes/Iconos_botonesflotantes/Iconoflotante_usuario.svg"
+import Iconoflotante_whatsapp from "../../assets/Componentes/Iconos_botonesflotantes/Iconoflotante_whatsapp.svg"
+import Iconoflotante_youtube from "../../assets/Componentes/Iconos_botonesflotantes/Iconoflotante_youtube.svg"
+import Ip_burburjas1 from "../../assets/Componentes/Iconos_pantalla/Ip_burburjas1.svg"
 import ButtonCotizar from "../../components/ButtonCotizar";
 import wifiIcon from "../../assets/wifiIcon.svg";
 import pantallasHome from "../../assets/pantallasHome.png";
@@ -116,11 +123,32 @@ export default function Home({ onChangeState }) {
         </div>
         <div className="subContainer1--portada___home">
           <div className="contentSubContainer1--portada___home">
+            <div className="container--icons__portadaHome">
+              <div>
+                <img src={Iconoflotante_correo} alt="" />
+              </div>
+              <div>
+                <img src={Iconoflotante_telefono} alt="" />
+              </div>
+              <div>
+                <img src={Iconoflotante_whatsapp} alt="" />
+              </div>
+              <div>
+                <img src={Iconoflotante_youtube} alt="" />
+              </div>
+              <div>
+                <img src={Iconoflotante_usuario} alt="" />
+              </div>
+              <div>
+                <img src={Iconoflotante_soporte} alt="" />
+              </div>
+            </div>
             <img className="img--mapa__portadaHome" src={P_bgcomposicion}></img>
           </div>
         </div>
         {/*************************************/}
         <div className="subContainer2--portada___home">
+
           <div className="title">
             <img className="img--text__portadaHome" src={P_beyond} alt="" />
           </div>
@@ -139,6 +167,11 @@ export default function Home({ onChangeState }) {
             <p><span>Creamos soluciones tecnológicas</span> en un ecosistema integrado por un software robusto
               de tracking y monitoreo en tiempo real, <span>todo en una sola plataforma.</span></p>
           </div>
+        </div>
+        <div className="container-f">
+          {/***********************************************************************************/}
+          <img alt="home Down" className="img-flecha" src={Ip_flechas1}></img>
+          <img alt="home Down" className="img--container-f" src={Ip_burburjas1}></img> 
         </div>
       </section>
       {modal ? (

@@ -338,7 +338,7 @@ export default function NavbarGPS(e) {
               </button>
             </div>
           </nav>
-          <div className="container--icons__portadaHome">
+          {/* <div className="container--icons__portadaHome">
             <div>
               <img src={Iconoflotante_correo} alt="" />
             </div>
@@ -357,7 +357,7 @@ export default function NavbarGPS(e) {
             <div>
               <img src={Iconoflotante_soporte} alt="" />
             </div>
-          </div>
+          </div> */}
           {/* <div className="navbar_contacts">
             <a href="mailto:sales@gpscontrol.co">
               <img alt="mail" src={navbarMail}></img>

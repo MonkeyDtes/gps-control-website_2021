@@ -632,7 +632,7 @@
 }
 
 .textCotice {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
 }
 
@@ -854,6 +854,54 @@ div#imagen:hover p#descripcion {
   margin-top: 75px;
 }
 
+.container-f {
+  width: calc(8.33vw*2);
+  height: calc(5.88vh*2);
+  grid-column: 3/5;
+  grid-row: 16/18;
+  display: grid;
+  justify-content: center;
+}
+
+.img-flecha {
+  height: calc(5.88vh*1);
+}
+
+.img--container-f { 
+  position: absolute;
+  bottom: 0;
+  max-width: calc(8.33vw*2);
+} 
+
+
+/***********************************************************/
+.container--icons__portadaHome {
+  grid-row: 1/10;
+  grid-column: 1/2;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  z-index: 5;
+  height: calc(5.88vh*9);
+}
+
+.container--icons__portadaHome>div {
+  background-color: #fff;
+  height: calc(5.88vh*1.2);
+  width: calc(8.33vw*0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px 20px 20px 0px;
+  background: #FFF;
+  /* Sombra_botones */
+  box-shadow: 0px 4px 6px 0px rgba(235, 22, 44, 0.25);
+}
+
+.container--icons__portadaHome>div>img {
+  height: calc(5.88vh*1);
+  margin-top: 8px;
+}
 @media only screen and (max-width: 600px) {
 
   .home_column_red {

@@ -10,6 +10,7 @@
   height: 100%;
   width: 100%;
   background: url("../../assets/promocionesBG.png");
+  background-color: #fff;
   background-repeat: no-repeat;
   background-size: 90vw 90vh;
   background-position-x: 15vw;
@@ -57,7 +58,7 @@
   align-items: center;
   width: calc(8.33vw * 2);
   height: calc(5.88vh);
-  background: #eee8f2;
+  background: #fff;
   border: none;
   margin-top: calc(5.88vh);
   box-shadow: 0px 7.52941px 11.2941px rgba(235, 22, 44, 0.25);

@@ -438,37 +438,7 @@ body {
   opacity: 0;
 }
 
-/***********************************************************/
-.container--icons__portadaHome {
-  margin-top: 90px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-direction: column;
-}
 
-.container--icons__portadaHome {
-  height: calc(5.88vh*9);
-}
-
-.container--icons__portadaHome>div {
-  background-color: #fff;
-  height: calc(5.88vh*1.2);
-  width: calc(8.33vw*0.8);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 0px 20px 20px 0px;
-  background: #FFF;
-
-  /* Sombra_botones */
-  box-shadow: 0px 4px 6px 0px rgba(235, 22, 44, 0.25);
-}
-
-.container--icons__portadaHome>div>img {
-  height: calc(5.88vh*1);
-  margin-top: 8px;
-}
 
 @media only screen and (max-width: 600px) {
   .navbar_close {

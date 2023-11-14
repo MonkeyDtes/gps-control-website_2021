@@ -26,6 +26,8 @@ import sensorEquipos2 from "../../assets/sensorEquiposTD2.png";
 import sensorEquipos3 from "../../assets/sensorEquiposTD3.png";
 import sensorEquipos4 from "../../assets/sensorEquiposTD4.png";
 import particles from "../../assets/particles.png";
+import Iconob_mas from "../../assets/Componentes/Iconos_botones/Iconob_mas.svg";
+import Iconob_youtube from "../../assets/Componentes/Iconos_botones/Iconob_youtube.svg";
 import { useEffect, useRef, useState } from "react";
 import ButtonsSocialMedia from "../../components/ButtonsSocialMedia/ButtonsSocialMedia";
 
@@ -235,23 +237,27 @@ export default function Equipos() {
 
       {/**************************************************************/}
       <section className="new--section2">
-        <div className="container--subconts">
-          <div className="container--left">
-            <div className="collage">
-              <img src={S_collage} alt="" />
-            </div>
-            <div className="text">
-              <p>Nota: si presenta dudas respecto al proceso puede comunicarse al Centro de ayuda y servicios: Línea a nivel nacional 018000930060 o línea en Bogotá (1) 4232221.
-                <br />
-                Tipo de actor: Ciudadano
-              </p>
-            </div>
-            <div className="container-flechas">
-              <ContainerFlecha></ContainerFlecha>
-            </div>
+        <div className="container--left">
+          <div className="collage">
+            <img src={S_collage} alt="" />
           </div>
-          <div className="container--right">
-
+          <div className="text">
+            <p>Nota: si presenta dudas respecto al proceso puede comunicarse al Centro de ayuda y servicios: Línea a nivel nacional 018000930060 o línea en Bogotá (1) 4232221.
+            
+              <p>Tipo de actor: Ciudadano</p>
+            </p>
+          </div>
+          <div className="container-flechas">
+            <ContainerFlecha></ContainerFlecha>
+          </div>
+        </div>
+        <div className="container--right">
+          <div className="content--container--right">
+            <h2>¿CÓMO REGISTRO MI MAQUINARIA ANTE EL RUNT?</h2>
+             <p>El ciudadano que va a registrar maquinaria agrícola ante el RUNT debe realizar el siguiente procedimiento</p>
+             {/* <hr className="hrg" /> */}<p className="capitalize">Se debe habilitar como importador ocasional o frecuente realizando la consulta mediante el correo soporteimportadores@runt.com.co a través del cual se le indicarán los pasos a seguir.</p>
+             <p className="capitalize">Después de encontrarse habilitado se debe dirigir al Organismo de Tránsito para la incorporación de la información de la Maquinaria dependiendo si la figura es ocasional o frecuente.</p>
+             <p className="capitalize1">Luego, solicitar el trámite de matrícula inicial ante el Organismo de Tránsito.</p>
           </div>
         </div>
       </section>
@@ -310,12 +316,12 @@ export default function Equipos() {
                 rel="noreferrer"
               >
                 <button>
-                  <img alt="información" src={masIcon}></img>
+                  <img alt="información" src={Iconob_mas}></img>
                   <p className="textContainerBlue">INFORMACION</p>
                 </button>
               </a>
               <button>
-                <img alt="información" src={ytVerde}></img>
+                <img alt="información" src={Iconob_youtube}></img>
                 <p className="textContainerBlue">REEL</p>
               </button>
               <ButtonCotizar elementRef={sectionRef}></ButtonCotizar>

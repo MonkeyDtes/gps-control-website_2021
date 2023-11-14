@@ -127,7 +127,7 @@
   background-repeat: no-repeat;
   background-position-x: 10vw;
   background-position-y: 27vh;
-  background-color: var(--colorWhite);
+  background-color: #fff;
   display: flex;
   flex-direction: row;
   position: relative;
@@ -142,7 +142,7 @@
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: center;
-  background-color: var(--colorWhite);
+  background-color: #fff;
   display: flex;
   flex-direction: row;
 }
@@ -155,7 +155,7 @@
   background-repeat: no-repeat;
   background-position-x: 45vw;
   background-position-y: 15vh;
-  background-color: var(--colorWhite);
+  background-color: #fff;
   display: flex;
   flex-direction: row;
 }
@@ -432,7 +432,7 @@
 .equipos_section_sensores_buttons {
   display: flex;
   flex-direction: column;
-  margin-top: calc(5.88vh*2);
+  margin-top: calc(5.88vh*2.3);
   margin-left: calc(8.33vw);
 }
 
@@ -442,7 +442,7 @@
   height: calc(5.88vh*4);
   width: calc(8.33vw*2);
   margin-bottom: calc(5.88vh);
-  background-color: #eee8f2;
+  background-color: #fff;
   box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.25);
   border: none;
   color: rgba(107, 107, 107, 0.5);
@@ -475,7 +475,7 @@
   display: flex;
   flex-direction: column;
   margin-left: calc(8.33vw);
-  margin-top: calc(5.88vh*2);
+  margin-top: calc(5.88vh*4);
 }
 
 .equipos_section_sensores_title {
@@ -500,7 +500,6 @@
 .equipos_section_sensores_body>p {
   width: calc(8.33vw*6);
   color: #6B6B6B;
-  margin-top: calc(5.88vh*2);
   font-size: 1.4vw;
   margin-bottom: 0vh;
 }
@@ -508,7 +507,7 @@
 .equipos_section_sensores_body_buttons {
   display: flex;
   flex-direction: row;
-  margin-top: calc(5.88vh*2);
+  margin-top: calc(5.88vh*1);
   width: calc(8.33vw*6);
   justify-content: space-around;
 }
@@ -516,7 +515,7 @@
 .equipos_section_sensores_body_buttons>button {
   width: calc(8.33vw*1.7);
   height: calc(5.88vh);
-  background-color: #eee8f2;
+  background-color: #fff;
   color: #1E8C93;
   box-shadow: 0px 7.52941px 11.2941px rgba(235, 22, 44, 0.25);
   border-radius: 10px;
@@ -539,7 +538,7 @@
 .equipos_section_sensores_body_buttons>a>button {
   width: calc(8.33vw*1.7);
   height: calc(5.88vh);
-  background-color: #eee8f2;
+  background-color: #fff;
   color: #1E8C93;
   box-shadow: 0px 7.52941px 11.2941px rgba(235, 22, 44, 0.25);
   border-radius: 10px;
@@ -556,7 +555,8 @@
 
 .equipos_section_sensores_downside {
   height: calc(5.88vh*5);
-  width: inherit;
+  width: calc(8.33vw*9);
+  margin-left: calc(8.33vw*1);
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -628,9 +628,8 @@
 }
 
 .textContainerBlue {
-  font-size: 10px;
+  font-size: 18px;
   font-weight: 700;
-
 }
 
 .circleImg {
@@ -731,8 +730,6 @@
   grid-row: 7/13;
 }
 
-
-
 .monitoreo_buttons {
   display: flex;
   flex-direction: row;
@@ -808,8 +805,59 @@
 
 .container-flechas {
   background-color: #ED2F4C;
-  grid-row: 15/18;
+  grid-row: 11/14;
   grid-column: 3/5;
+}
+
+.home_section1_column {
+  background-color: #ED2F4C;
+}
+
+.container--right {
+  grid-row: 5/17;
+  grid-column: 8/12;
+}
+
+.content--container--right {
+  width: calc(8.33vw*3.5);
+  width: calc(8.33vw*3.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: calc(8.33vw*0.5);
+}
+
+.content--container--right h2 {
+  margin: 0;
+  color: #ED2F4C;
+}
+
+.content--container--right p {
+  color: #6B6B6B;
+  text-align: justify;
+  font-family: "Bahnschrift";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.content--container--right .capitalize,
+.capitalize1 {
+  text-transform: capitalize;
+}
+
+.content--container--left p {
+  margin: 0;
+}
+
+.capitalize1 {
+  margin-top: 5px;
+}
+
+.hrg {
+  background-color: red;
+  height: 20px;
 }
 
 .fondo {
@@ -825,7 +873,7 @@
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(17, 1fr);
-  background-color: red;
+  background-color: #fff;
   height: 100vh;
   width: 100%;
 }
@@ -836,15 +884,20 @@
 }
 
 .collage {
+  grid-column: 2/8;
+  grid-row: 1/6;
   width: calc(8.33vw*6);
   height: calc(5.88vh*5);
 }
 
 .collage>img {
-  max-width: 100%;
+  width: calc(8.33vw*6);
+  height: calc(5.88vh*5);
 }
 
 .text {
+  grid-column: 2/8;
+  grid-row: 7/10;
   width: calc(8.33vw*6);
   height: calc(5.88vh*3);
   border-radius: 20px;
@@ -853,9 +906,24 @@
   box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.25);
 }
 
+.text>p {
+  margin: 29px;
+  color: #FFF;
+  text-align: justify;
+  font-family: "Bahnschrift";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
 .container--left {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(13, 1fr);
   grid-column: 1/8;
-  grid-row: 1/14;
+  grid-row: 5/17;
 }
 
 /* .section1--monitoreo {
