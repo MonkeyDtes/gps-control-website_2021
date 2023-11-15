@@ -162,7 +162,11 @@ export default function Leads() {
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
-                  placeholder="Más información"
+                  placeholder="Únete a nuestra Comunidad y se cliente de la mejor plataforma con múltiples opciones en innovación tecnológica, beneficios de Suscribirte:
+                  - Acceso exclusivo a contenido Premium
+                  - Ofertas y descuentos especiales para suscriptores
+                  - Actualizaciones regulares sobre nuevos productos/servicios
+                  - Consejos y recursos útiles directamente de nuestro equipo"
                   cols="40"
                 />
               </label>

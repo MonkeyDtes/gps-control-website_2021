@@ -140,7 +140,7 @@
   border-radius: 10px;
   margin-left: calc(5.88vh * 0.6);
   width: calc(8.33vw * 3);
-  font-size: 1.5vw;
+  font-size: 12px;
 }
 
 .leads_page_form_end>h2 {

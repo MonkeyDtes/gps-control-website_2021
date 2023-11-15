@@ -15,6 +15,8 @@ import sensorBluetooh from "../../assets/SensorBluetooh.png";
 import sensorCable from "../../assets/SensorCable.png";
 import sensorBluetoohTG from "../../assets/SensorBluetoohToggle.png";
 import S_maquinaria from "../../assets/Solucionesm/S_maquinaria.png";
+import S_ejecutivo from "../../assets/Solucionesm/S_ejecutivo.png";
+import triangulo from "../../assets/Solucionesm/triangulo.svg";
 import S_collage from "../../assets/Solucionesm/S_collage.png";
 import sensorCableTG from "../../assets/SensorCableToggle.png";
 import masIcon from "../../assets/+ icon.svg";
@@ -30,6 +32,8 @@ import Iconob_mas from "../../assets/Componentes/Iconos_botones/Iconob_mas.svg";
 import Iconob_youtube from "../../assets/Componentes/Iconos_botones/Iconob_youtube.svg";
 import { useEffect, useRef, useState } from "react";
 import ButtonsSocialMedia from "../../components/ButtonsSocialMedia/ButtonsSocialMedia";
+import Flecha_arriba from "../../components/Flecha_arriba/Flecha_arriba";
+import Ip_burburjas0 from "../../assets/Componentes/Iconos_pantalla/Ip_burburjas0.svg"
 
 export default function Equipos() {
 
@@ -230,7 +234,7 @@ export default function Equipos() {
           </div>
         </div>
         <div className="container-flechas">
-          <ContainerFlecha></ContainerFlecha>
+
         </div>
       </section>
       {/**************************************************************/}
@@ -243,7 +247,7 @@ export default function Equipos() {
           </div>
           <div className="text">
             <p>Nota: si presenta dudas respecto al proceso puede comunicarse al Centro de ayuda y servicios: Línea a nivel nacional 018000930060 o línea en Bogotá (1) 4232221.
-            
+
               <p>Tipo de actor: Ciudadano</p>
             </p>
           </div>
@@ -254,13 +258,43 @@ export default function Equipos() {
         <div className="container--right">
           <div className="content--container--right">
             <h2>¿CÓMO REGISTRO MI MAQUINARIA ANTE EL RUNT?</h2>
-             <p>El ciudadano que va a registrar maquinaria agrícola ante el RUNT debe realizar el siguiente procedimiento</p>
-             {/* <hr className="hrg" /> */}<p className="capitalize">Se debe habilitar como importador ocasional o frecuente realizando la consulta mediante el correo soporteimportadores@runt.com.co a través del cual se le indicarán los pasos a seguir.</p>
-             <p className="capitalize">Después de encontrarse habilitado se debe dirigir al Organismo de Tránsito para la incorporación de la información de la Maquinaria dependiendo si la figura es ocasional o frecuente.</p>
-             <p className="capitalize1">Luego, solicitar el trámite de matrícula inicial ante el Organismo de Tránsito.</p>
+            <p>El ciudadano que va a registrar maquinaria agrícola ante el RUNT debe realizar el siguiente procedimiento</p>
+            {/* <hr className="hrg" /> */}<p className="capitalize">Se debe habilitar como importador ocasional o frecuente realizando la consulta mediante el correo soporteimportadores@runt.com.co a través del cual se le indicarán los pasos a seguir.</p>
+            <p className="capitalize">Después de encontrarse habilitado se debe dirigir al Organismo de Tránsito para la incorporación de la información de la Maquinaria dependiendo si la figura es ocasional o frecuente.</p>
+            <p className="capitalize1">Luego, solicitar el trámite de matrícula inicial ante el Organismo de Tránsito.</p>
           </div>
         </div>
       </section>
+      {/**************************************************************/}
+
+      <section className="section--requisitos">
+        <div className="div1--section--requisitos">
+          <img className="img--ejecutivo" src={S_ejecutivo} alt="" />
+          <div className="container--text--div1__sectionRequisitos">
+            <p>Estamos habilitados y certificados como proveedor de servicio GPS  por la Policía Nacional</p>
+            <div className="tri">
+            <img className="triangulo" src={triangulo} alt="" />
+            </div>
+          </div>
+        </div>
+        <div className="div2--section--requisitos">
+          <div className="container--title--div2__sectionRequisitos">
+            <h2>REQUISITOS DEL TRÁMITE</h2>
+          </div>
+          <div className="container--text--div2__sectionRequisitos">
+            <p>Registro inicial de la maquinaria agrícola, industrial y de construcción autopropulsada,
+              fabricada, importada o ensamblada en el país, ante un organismo de tránsito, en donde se
+              consignan las características tanto internas como externas del equipo, así como los datos e
+              identificación del propietario.</p> 
+
+              <p><span>Pasos para realizar este trámite:</span> Antes de dirigirse a un punto de atención VUS, por favor 
+              lea las siguientes instrucciones y recomendaciones que deberá tener en cuenta para que pueda 
+              realizar su trámite de manera personal, sin contratiempos y obteniendo el resultado esperado a su 
+              solicitud. No recurra a intermediarios.</p>
+          </div>
+        </div>
+      </section>
+
       {/**************************************************************/}
 
       <section className="equipos_section_sensores">
@@ -382,11 +416,6 @@ export default function Equipos() {
           <div className="equipos_section3_start">
             <img className="imgSuntech" alt="suntech" src={Suntech}></img>
           </div>
-          <div className="container_elements">
-            <div className="positionElements">
-              <SectionEquipos></SectionEquipos>
-            </div>
-          </div>
         </div>
       </section>
       <section className="equipos_section3">
@@ -394,12 +423,6 @@ export default function Equipos() {
           <div className="equipos_section3_start">
             <img className="imgFmc920" alt="suntech" src={FMC920}></img>
           </div>
-          <div className="container_elements">
-            <div className="containerelements2">
-              <SectionEquipos></SectionEquipos>
-            </div>
-          </div>
-
         </div>
         <div className="equipos_section3_end_bg"></div>
         <div className="equipos_section3_end">
@@ -407,11 +430,10 @@ export default function Equipos() {
           <div className="equipos_section3_end_column">
             <ButtonsSocialMedia></ButtonsSocialMedia>
             <p>
-              Este equipo GPS para maquinaria amarilla es una solución efectiva
-              para monitorear tus maquinas en tiempo real. Con geolocalización
-              precisa, alertas de posibles problemas y fácil instalación y
-              manejo, mejora la gestión de tus activos y tomar decisiones
-              informadas sobre su uso y mantenimiento.
+              El modelo FMC920 es recomendado para transporte especial es eficiente en su monitoreo
+              y reporte a plataforma, mejorando la calidad y seguridad de tus servicios. Con geolocalización
+              precisa, alertas en tiempo real y fácil instalación, recibiendo datos de tus vehículos en todo momento
+              y garantizar una experiencia de viaje positiva y eficaz para tus pasajeros.
             </p>
           </div>
         </div>
@@ -422,11 +444,10 @@ export default function Equipos() {
           <div className="equipos_section2_start_column">
             <ButtonsSocialMedia></ButtonsSocialMedia>
             <p>
-              Este equipo GPS para maquinaria amarilla es una solución efectiva
-              para monitorear tus maquinas en tiempo real. Con geolocalización
-              precisa, alertas de posibles problemas y fácil instalación y
-              manejo, mejora la gestión de tus activos y tomar decisiones
-              informadas sobre su uso y mantenimiento.
+              OPTIMICE TIEMPOS DE OPERACIÓN DE SU TALENTO EN CALLE
+              Su personal siempre estará en constante conexión. Optimice tiempos, diseñe rutas,
+              organice pedidos y despachos; manteniendo así siempre el control sobre las labores
+              fuera de oficina.
             </p>
           </div>
           <h1>PERSONAS</h1>
@@ -434,11 +455,6 @@ export default function Equipos() {
         <div className="container_elemnts1">
           <img alt="particles" className="img_Particles" src={particles}></img>
           <div className="equipos_section3_start"></div>
-          <div className="container_elements">
-            <div className="positionElements">
-              <SectionEquipos></SectionEquipos>
-            </div>
-          </div>
         </div>
       </section>
       <section ref={sectionRef}></section>

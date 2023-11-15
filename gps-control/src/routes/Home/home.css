@@ -425,7 +425,7 @@
 
 .container--textSeguimiento__home>img {
   margin-right: 10px;
-  height: 15px;
+  margin-left: calc(8.33vw*0.5);
 }
 
 /*.home_column_red_end {
@@ -865,13 +865,29 @@ div#imagen:hover p#descripcion {
 
 .img-flecha {
   height: calc(5.88vh*1);
+  animation: flecha 1s infinite alternate linear;
+  z-index: 5;
 }
 
-.img--container-f { 
+.img--container-f {
   position: absolute;
   bottom: 0;
-  max-width: calc(8.33vw*2);
-} 
+  max-width: calc(8.33vw*2.08);
+}
+
+@keyframes flecha {
+  0% {
+      transform: translateY(0);
+  }
+  100% {
+      transform: translateY(3vh);
+  }
+}
+
+.flechaabajo {
+  display: flex;
+  justify-content: center;
+}
 
 
 /***********************************************************/
@@ -883,6 +899,7 @@ div#imagen:hover p#descripcion {
   flex-direction: column;
   z-index: 5;
   height: calc(5.88vh*9);
+  margin-top: calc(5.88vh*2);
 }
 
 .container--icons__portadaHome>div {
@@ -902,6 +919,80 @@ div#imagen:hover p#descripcion {
   height: calc(5.88vh*1);
   margin-top: 8px;
 }
+
+.flechaA {
+  margin-bottom: calc(5.88vh*10.08);
+  transform: rotate(180deg);
+}
+
+/****************************************************************/
+.slider {
+  width: 70%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slider h2 {
+  color: #ED2F4C;
+  font-family: "Bahnschrift";
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.slider ul {
+  display: flex;
+  padding: 0;
+  width: 400%;
+  animation: cambio 20s infinite alternate linear;
+}
+
+.slider li {
+  width: 100%;
+  list-style: none;
+}
+
+/*animation applications section container*/
+@keyframes cambio {
+  0% {
+    transform: translateX(0%);
+  }
+
+  20% {
+    transform: translateX(0%);
+  }
+
+  25% {
+    transform: translateX(-25%);
+  }
+
+  45% {
+    transform: translateX(-25%);
+  }
+
+  50% {
+    transform: translateX(-50%);
+  }
+
+  70% {
+    transform: translateX(-50%);
+  }
+
+  75% {
+    transform: translateX(-75%);
+  }
+  
+  100% {
+    transform: translateX(-75%);
+  }
+/* 
+  100% {
+    transform: translateX(0%);
+  } */
+}
+
+
 @media only screen and (max-width: 600px) {
 
   .home_column_red {

@@ -1,10 +1,4 @@
 import NavbarGPS from "../../components/NavbarGPS/index";
-import Iconoflotante_correo from "../../assets/Componentes/Iconos_botonesflotantes/Iconoflotante_correo.svg"
-import Iconoflotante_soporte from "../../assets/Componentes/Iconos_botonesflotantes/Iconoflotante_soporte.svg"
-import Iconoflotante_telefono from "../../assets/Componentes/Iconos_botonesflotantes/Iconoflotante_telefono.svg"
-import Iconoflotante_usuario from "../../assets/Componentes/Iconos_botonesflotantes/Iconoflotante_usuario.svg"
-import Iconoflotante_whatsapp from "../../assets/Componentes/Iconos_botonesflotantes/Iconoflotante_whatsapp.svg"
-import Iconoflotante_youtube from "../../assets/Componentes/Iconos_botonesflotantes/Iconoflotante_youtube.svg"
 import Ip_burburjas1 from "../../assets/Componentes/Iconos_pantalla/Ip_burburjas1.svg"
 import ButtonCotizar from "../../components/ButtonCotizar";
 import wifiIcon from "../../assets/wifiIcon.svg";
@@ -22,36 +16,26 @@ import iconoApps4 from "../../assets/iconoApps4.svg";
 import iconoApps5 from "../../assets/iconoApps5.svg";
 import iconoApps6 from "../../assets/iconoApps6.svg";
 import VectorPalabra from "../../assets/VectorPalabra.png";
-import FramePalabraCombustible from "../../assets/FramePalabraCombustible.png";
 import Frame4 from "../../assets/Frame4.png";
 import VectorNube from "../../assets/VectorNube.png";
 import VectorNube2 from "../../assets/VectorNube2.svg";
 import Line41 from "../../assets/Line41.png";
 import GifGPS from "../../components/gifGPS/index";
 import "./home.css";
-import playGreen from "../../assets/playGreen.svg";
 import Leads from "../../components/Leads";
 import Footer from "../../components/Footer/index";
 import { useEffect, useRef, useState } from "react";
 import { history } from "../../components/History";
-// /*swiper */
-// import { Swiper, SwiperSlide } from 'swiper/react';
-// import 'swiper/css';
-// import 'swiper/css/pagination';
-// import 'swiper/css/navigation';
-// import { Autoplay, Pagination, Navigation } from 'swiper/modules';
-// /*swiper */
 import SwiperHome from "../../components/SwiperHome/index";
 import SwiperHomeSecond from "../../components/SwiperHomeSecond/index";
 import P_bgcomposicion from "../../assets/Home/P_bgcomposicion.png"
 import P_caminones from "../../assets/Home/P_caminones.png"
 import P_beyond from "../../assets/Home/P_beyond.png"
 import P_control from "../../assets/Home/P_control.png"
-import P_leadscontrol from "../../assets/Home/P_leadscontrol.png"
-import Ip_burburjas0 from "../../assets/Componentes/Iconos_pantalla/Ip_burburjas0.svg"
 import Ip_flechas1 from "../../assets/Componentes/Iconos_pantalla/Ip_flechas1.svg"
 import P_trama from "../../assets/Home/P_trama.png"
 import ButtonHomeAplicaciones from "../../components/ButtonHomeAplicaciones";
+import Flecha_arriba from "../../components/Flecha_arriba/Flecha_arriba";
 
 export default function Home({ onChangeState }) {
   const [modal, setModal] = useState(false);
@@ -116,6 +100,7 @@ export default function Home({ onChangeState }) {
       ></NavbarGPS>
       <GifGPS type="2"></GifGPS>
       <section className="container--portada___home">
+
         <div className="video">
           <video playsInline autoPlay loop muted>
             <source src={bgPortadaHome} type="video/mp4" />
@@ -123,26 +108,6 @@ export default function Home({ onChangeState }) {
         </div>
         <div className="subContainer1--portada___home">
           <div className="contentSubContainer1--portada___home">
-            <div className="container--icons__portadaHome">
-              <div>
-                <img src={Iconoflotante_correo} alt="" />
-              </div>
-              <div>
-                <img src={Iconoflotante_telefono} alt="" />
-              </div>
-              <div>
-                <img src={Iconoflotante_whatsapp} alt="" />
-              </div>
-              <div>
-                <img src={Iconoflotante_youtube} alt="" />
-              </div>
-              <div>
-                <img src={Iconoflotante_usuario} alt="" />
-              </div>
-              <div>
-                <img src={Iconoflotante_soporte} alt="" />
-              </div>
-            </div>
             <img className="img--mapa__portadaHome" src={P_bgcomposicion}></img>
           </div>
         </div>
@@ -171,7 +136,7 @@ export default function Home({ onChangeState }) {
         <div className="container-f">
           {/***********************************************************************************/}
           <img alt="home Down" className="img-flecha" src={Ip_flechas1}></img>
-          <img alt="home Down" className="img--container-f" src={Ip_burburjas1}></img> 
+          <img alt="home Down" className="img--container-f" src={Ip_burburjas1}></img>
         </div>
       </section>
       {modal ? (
@@ -187,6 +152,7 @@ export default function Home({ onChangeState }) {
       )}
       <section className="home_section2">
         <div className="home_column_red">
+          <Flecha_arriba></Flecha_arriba>
           <img alt="home Down" src={homeDownButton}></img>
         </div>
         <div className="home_section2_column">
@@ -232,6 +198,7 @@ export default function Home({ onChangeState }) {
       </section>
       <section className="home_section2">
         <div className="home_column_red">
+          <Flecha_arriba></Flecha_arriba>
           <img alt="home Down" src={homeDownButton}></img>
         </div>
         <div className="home_section3_column">
@@ -272,6 +239,7 @@ export default function Home({ onChangeState }) {
           <></>
         )}
         <div className="home_column_red">
+          <Flecha_arriba></Flecha_arriba>
           <img alt="home Down" src={homeDownButton}></img>
         </div>
         <div className="home_section4_column">
@@ -280,12 +248,10 @@ export default function Home({ onChangeState }) {
           <h1 className="text--herramienta__home">VIDEO VIGILANCIA</h1>
           <div className="main_box">
             <div className="home_section2_label">
-
               <h2><img alt="nube icon" className="iconNube1" src={VectorNube}></img>Vehicular</h2>
             </div>
           </div>
           <img alt="nube icon" className="iconNube" src={VectorNube2}></img>
-
           <div className="home_section4_group">
             <div className="home_section2_body">
               <button value={0} onClick={(e) => ModalClick2(e)}>
@@ -331,13 +297,13 @@ export default function Home({ onChangeState }) {
           </div>
           <div className="home_section3_buttons">
             <div className="home_section3_buttons_up">
-              <ButtonHomeAplicaciones text="MI SIM" image={iconoApps3} />
-              <ButtonHomeAplicaciones text="FLEETRUM" image={iconoApps2} />
+              <ButtonHomeAplicaciones text="FLEETRUM" image={iconoApps3} />
+              <ButtonHomeAplicaciones text="LOGISTICS" image={iconoApps2} />
               <ButtonHomeAplicaciones text="HECTERRA" image={iconoApps4} />
             </div>
             <div className="home_section3_buttons_up">
-              <ButtonHomeAplicaciones text="FUEC" image={iconoApps5} />
-              <ButtonHomeAplicaciones text="PLATAFORMA" image={iconoApps6} />
+              <ButtonHomeAplicaciones text="ECODRIVING" image={iconoApps5} />
+              <ButtonHomeAplicaciones text="CHATERRBOX" image={iconoApps6} />
               <ButtonHomeAplicaciones text="WIATAG" image={iconoApps1} />
             </div>
             {/* <div className="home_section3_buttons_up">
@@ -363,15 +329,27 @@ export default function Home({ onChangeState }) {
               </button>
             </div> */}
           </div>
-
           <div className="main_box--home">
             <div className="container--textSeguimiento__home">
               <img alt="line icon" className="" src={Line41}></img>
-              <h2>SEGUIMIENTO Y REGISTRO VEHICULAR</h2>
+              <div class="slider">
+                <ul>
+                  <li>
+                    <h2>SEGUIMIENTO Y REGISTRO VEHICULAR</h2>
+                  </li>
+                  <li>
+                    <h2>MONITOREO REPORTE Y VERIFICACIÓN</h2>
+                  </li>
+                  <li>
+                    <h2>SEGUIMIENTO SATELITAL VEHICULAR</h2>
+                  </li>
+                  <li>
+                    <h2>MONITOREO GPS VEHICULAR</h2>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-
-
         </div>
         {/* 
         <div className="home_corner_red">
@@ -414,7 +392,6 @@ export default function Home({ onChangeState }) {
         <div className="home_column_red_end">
           <img alt="home Down" src={homeDownButton}></img>
         </div>
-        
       */}
       </section>
       {/************************************************************************/}

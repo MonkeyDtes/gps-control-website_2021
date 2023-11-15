@@ -1,0 +1,12 @@
+.flechaA {
+    animation: flecha 20s infinite alternate linear;
+}
+
+@keyframes flecha {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-6vh);
+    }
+}
