@@ -22,6 +22,10 @@
     font-size: 18px;
     font-style: normal;
     margin: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 5em;
+
 }
 
 .text--component__monitoreo {

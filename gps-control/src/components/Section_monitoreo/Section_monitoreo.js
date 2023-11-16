@@ -15,12 +15,12 @@ function Section_monitoreo({ data1 }) {
     return <>
         <div className="sectionNew1--cont1">
             <div className="margin--container">
-            <h2 className="title--component__monitoreo">{title2}</h2>
-            <p className="subTitle--component__monitoreo">{subtitle2}</p>
-            <p className="subtitlec2--component__monitoreo">{subtitlec2}</p>
-            <p className="text--component__monitoreo">{text2}</p>
+                <h2 className="title--component__monitoreo">{title2}</h2>
+                <p className="subTitle--component__monitoreo">{subtitle2}</p>
+                <p className="subtitlec2--component__monitoreo">{subtitlec2}</p>
+                <p className="text--component__monitoreo">{text2}</p>
             </div>
-            
+
         </div>
         {/* <div className="sectionNew1--cont2">
             <ContainerFlecha></ContainerFlecha>

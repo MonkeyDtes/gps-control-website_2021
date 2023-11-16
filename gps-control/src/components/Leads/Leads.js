@@ -52,13 +52,11 @@ export default function Leads() {
       setButton1(false);
     }
   };
-
   return (
     <div>
       {/************************************************
        * ***********************************************
       */}
-
       <section className="container--form">
         <div className="container--imgParticles__form">
           <img className="img--particles__form" src={P_bgleadstrama} alt="" />
@@ -147,7 +145,6 @@ export default function Leads() {
                   </label>
                 </div>
               </div>
-
             </form>
           </div>
           <div className="copntent--formRight">
@@ -173,7 +170,6 @@ export default function Leads() {
               <button type="submit" value="Enviar">
                 Enviar
               </button>
-
             </div>
           </div>
           <div className="pruebas"></div>

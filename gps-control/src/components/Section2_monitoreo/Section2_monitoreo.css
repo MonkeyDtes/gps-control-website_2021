@@ -1,0 +1,10 @@
+.margin--container2 {
+    display: flex;
+    flex-direction: column;
+    margin: 0 55px 0px 55px;
+}
+
+.margin--container2>h2 {
+    font-size: 20px;
+    font-weight: 700;
+}

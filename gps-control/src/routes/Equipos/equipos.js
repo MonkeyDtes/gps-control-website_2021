@@ -2,6 +2,7 @@ import NavbarGPS from "../../components/NavbarGPS";
 import SectionEquipos from "../../components/Section_Equipos";
 import ButtonCotizar from "../../components/ButtonCotizar";
 import Section_monitoreo from "../../components/Section_monitoreo"
+import Section2_monitoreo from "../../components/Section2_monitoreo"
 import ContainerFlecha from "../../components/ContainerFlecha";
 import "./equipos.css";
 import circuloHome from "../../assets/circuloHome.svg";
@@ -17,6 +18,7 @@ import sensorBluetoohTG from "../../assets/SensorBluetoohToggle.png";
 import S_maquinaria from "../../assets/Solucionesm/S_maquinaria.png";
 import S_ejecutivo from "../../assets/Solucionesm/S_ejecutivo.png";
 import triangulo from "../../assets/Solucionesm/triangulo.svg";
+import Logo_red from "../../assets/Solucionesm/Logo_red.svg";
 import S_collage from "../../assets/Solucionesm/S_collage.png";
 import sensorCableTG from "../../assets/SensorCableToggle.png";
 import masIcon from "../../assets/+ icon.svg";
@@ -49,10 +51,53 @@ export default function Equipos() {
     "text2": "Todo vehículo automotor del tipo de maquinaria agrícola, industrial y de construcción autopropulsada, que esté vinculado en el país, deberá ser inscrito por parte del propietario o poseedor en el RNMA.",
   }];
 
+  let listData2 = [{
+    "title3": "CUMPLIR CON LOS SIGUIENTES REQUISITOS GENERALES:",
+    "text3": "Estar inscrito en el Registro Único Nacional de Tránsito - RUNT como persona natural o jurídica. Cuando el trámite se realice a través de un tercero, este también deberá estar registrado",
+  },
+
+  {
+    "title3": "CUMPLIR CON LOS SIGUIENTES REQUISITOS GENERALES:",
+    "text3": "Formulario de solicitud de trámites del registro nacional de maquinaria agrícola, y de construcción autopropulsada",
+  },
+
+  {
+    "title3": "CUMPLIR CON LOS SIGUIENTES REQUISITOS GENERALES:",
+    "text3": "Declaración de importación: 1 Copia(s)",
+  },
+
+  {
+    "title3": "CUMPLIR CON LOS SIGUIENTES REQUISITOS GENERALES:",
+    "text3": "Factura de compra de la maquinaria: 1 Original(es)",
+  },
+
+  {
+    "title3": "CUMPLIR CON LOS SIGUIENTES REQUISITOS GENERALES:",
+    "text3": "Contar con un sistema de posicionamiento global (GPS) u otro dispositivo de seguridad y monitoreo electrónico, instalado de manera permanente, de conformidad con los requerimientos técnicos que para el efecto establezca la Policía Nacional, para la maquinaria clasificable en las sub partidas 8429.11.00.00, 8429.19.00.00, 8429.51.00.00, 8429.52.00.00, 8429.59.00.00, 8431.41.00.00, 8431.42.00.00 y 8905.10.00.00 del arancel de aduanas",
+  },
+
+  {
+    "title3": "CUMPLIR CON LOS SIGUIENTES REQUISITOS GENERALES:",
+    "text3": "Documento privado por medio del cual acredite la posesión de buena fe de la maquinaria: 1 Original(es)",
+  },
+
+  {
+    "title3": "CUMPLIR CON LOS SIGUIENTES REQUISITOS GENERALES:",
+    "text3": "Certificado de instalación del sistema de posicionamiento global (GPS) u otros dispositivo de seguridad y monitoreo electrónico: 1 Copia(s)",
+  },
+
+  ];
+
   const [data1, setData1] = useState(listData1[0]);
   const HandleClick1 = (e) => {
     setData1(listData1[e.target.id.slice(-1)])
     console.log(listData1[e.target.id]);
+  };
+
+  const [data2, setData2] = useState(listData2[0]);
+  const HandleClick2 = (e) => {
+    setData2(listData2[e.target.id.slice(-1)])
+    console.log(listData2[e.target.id]);
   };
 
   const [button1, setButton1] = useState(false);
@@ -272,9 +317,13 @@ export default function Equipos() {
           <img className="img--ejecutivo" src={S_ejecutivo} alt="" />
           <div className="container--text--div1__sectionRequisitos">
             <p>Estamos habilitados y certificados como proveedor de servicio GPS  por la Policía Nacional</p>
-            <div className="tri">
+            <div className="mixB"></div>
+          </div>
+          <div className="tri">
             <img className="triangulo" src={triangulo} alt="" />
-            </div>
+          </div>
+          <div className="container--logoRed">
+            <img src={Logo_red} alt="" />
           </div>
         </div>
         <div className="div2--section--requisitos">
@@ -285,16 +334,55 @@ export default function Equipos() {
             <p>Registro inicial de la maquinaria agrícola, industrial y de construcción autopropulsada,
               fabricada, importada o ensamblada en el país, ante un organismo de tránsito, en donde se
               consignan las características tanto internas como externas del equipo, así como los datos e
-              identificación del propietario.</p> 
+              identificación del propietario.</p>
 
-              <p><span>Pasos para realizar este trámite:</span> Antes de dirigirse a un punto de atención VUS, por favor 
-              lea las siguientes instrucciones y recomendaciones que deberá tener en cuenta para que pueda 
-              realizar su trámite de manera personal, sin contratiempos y obteniendo el resultado esperado a su 
+            <p><span>Pasos para realizar este trámite:</span> Antes de dirigirse a un punto de atención VUS, por favor
+              lea las siguientes instrucciones y recomendaciones que deberá tener en cuenta para que pueda
+              realizar su trámite de manera personal, sin contratiempos y obteniendo el resultado esperado a su
               solicitud. No recurra a intermediarios.</p>
+          </div>
+
+          <div className="container--cajaWhite--div2__sectionRequisitos">
+            <Section2_monitoreo data2={data2}></Section2_monitoreo>
+            <div className="monitoreo_buttons">
+              <div>
+                <input type="radio" name="op1" onClick={(e) => HandleClick2(e)} id="btn0" />
+                <label htmlFor="btn0"></label>
+              </div>
+
+              <div>
+                <input type="radio" name="op1" onClick={(e) => HandleClick2(e)} id="btn1" />
+                <label htmlFor="btn1"></label>
+              </div>
+
+              <div>
+                <input type="radio" name="op1" onClick={(e) => HandleClick2(e)} id="btn2" />
+                <label htmlFor="btn2"></label>
+              </div>
+
+              <div>
+                <input type="radio" name="op1" onClick={(e) => HandleClick2(e)} id="btn3" />
+                <label htmlFor="btn3"></label>
+              </div>
+
+              <div>
+                <input type="radio" name="op1" onClick={(e) => HandleClick2(e)} id="btn4" />
+                <label htmlFor="btn4"></label>
+              </div>
+
+              <div>
+                <input type="radio" name="op1" onClick={(e) => HandleClick2(e)} id="btn5" />
+                <label htmlFor="btn5"></label>
+              </div>
+
+              <div>
+                <input type="radio" name="op1" onClick={(e) => HandleClick2(e)} id="btn6" />
+                <label htmlFor="btn6"></label>
+              </div>
+            </div>
           </div>
         </div>
       </section>
-
       {/**************************************************************/}
 
       <section className="equipos_section_sensores">

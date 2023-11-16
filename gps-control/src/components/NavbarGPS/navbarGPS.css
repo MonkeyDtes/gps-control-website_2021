@@ -93,6 +93,7 @@ nav>div:nth-child(5) {
 
 nav>div:nth-child(6) {
   z-index: 31;
+  background-color: #fff;
 }
 
 .navbar_close {
