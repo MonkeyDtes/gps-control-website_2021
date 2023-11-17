@@ -15,13 +15,13 @@ import VectorsensorEquipos from "../../assets/VectorsensorEquipos.png";
 import sensorBluetooh from "../../assets/SensorBluetooh.png";
 import sensorCable from "../../assets/SensorCable.png";
 import sensorBluetoohTG from "../../assets/SensorBluetoohToggle.png";
-import S_maquinaria from "../../assets/Solucionesm/S_maquinaria.png";
 import S_ejecutivo from "../../assets/Solucionesm/S_ejecutivo.png";
 import triangulo from "../../assets/Solucionesm/triangulo.svg";
 import Logo_red from "../../assets/Solucionesm/Logo_red.svg";
+import S_combustible from "../../assets/Solucionesm/S_combustible.png";
+import S_maquinaria from "../../assets/Solucionesm/S_maquinaria.png";
 import S_collage from "../../assets/Solucionesm/S_collage.png";
 import sensorCableTG from "../../assets/SensorCableToggle.png";
-import masIcon from "../../assets/+ icon.svg";
 import FramePalabraCombustible from "../../assets/FramePalabraCombustible.png";
 import ytVerde from "../../assets/ytVerdeBG.svg";
 import fleetrunPDF from "../../assets/fleetrun.pdf";
@@ -239,7 +239,37 @@ export default function Equipos() {
       ></NavbarGPS>
       <GifGPS type="2"></GifGPS>
       <section className="equipos_section1">
-        <div className="equipos_section1_bg">
+        <div className="div2--equipos_section1">
+          <div className="container--title--div2--equipos_section1">
+            <h2>CERTIFICADO</h2>
+          </div>
+          <div className="container--subTitle--div2--equipos_section1">
+            <h2>de tu maquinaria</h2>
+          </div>
+          <div className="container--button--div1--equipos_section1">
+            <img alt="información" src={Iconob_mas}></img>
+            <p>Leer más</p>
+          </div>
+          <div className="contimg2">
+            <img src={S_maquinaria} alt="" />
+          </div>
+        </div>
+        <div className="div1--equipos_section1">
+          <div className="container--title--div1--equipos_section1">
+            <h2>EVITA EL ROBO</h2>
+          </div>
+          <div className="container--subTitle--div1--equipos_section1">
+            <h2>de tu combustible</h2>
+          </div>
+          <div className="container--button--div1--equipos_section1">
+            <img alt="información" src={Iconob_mas}></img>
+            <p>Leer más</p>
+          </div>
+          <div className="contimg">
+            <img src={S_combustible} alt="" />
+          </div>
+        </div>
+        {/* <div className="equipos_section1_bg">
           <div className="equipos_section2_column">
             <div className="equipos_section2_circleIcon">
               <img alt="wifi icon" src={circuloHome}></img>
@@ -252,7 +282,7 @@ export default function Equipos() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
       </section>
       {/**************************************************************/}
