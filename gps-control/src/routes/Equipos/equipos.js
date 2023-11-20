@@ -31,11 +31,15 @@ import sensorEquipos3 from "../../assets/sensorEquiposTD3.png";
 import sensorEquipos4 from "../../assets/sensorEquiposTD4.png";
 import particles from "../../assets/particles.png";
 import Iconob_mas from "../../assets/Componentes/Iconos_botones/Iconob_mas.svg";
+import Iconob_masBwhite from "../../assets/Componentes/Iconos_botones/Iconob_masBwhite.svg";
 import Iconob_youtube from "../../assets/Componentes/Iconos_botones/Iconob_youtube.svg";
 import { useEffect, useRef, useState } from "react";
 import ButtonsSocialMedia from "../../components/ButtonsSocialMedia/ButtonsSocialMedia";
 import Flecha_arriba from "../../components/Flecha_arriba/Flecha_arriba";
 import Ip_burburjas0 from "../../assets/Componentes/Iconos_pantalla/Ip_burburjas0.svg"
+import Ip_flechas0 from "../../assets/Componentes/Iconos_pantalla/Ip_flechas0.svg"
+import ButtonVerMas from "../../components/ButtonVerMas/ButtonVerMas";
+import Flecha_cont_red_abajo from "../../components/Flecha_cont_red_abajo/Flecha_cont_red_abajo";
 
 export default function Equipos() {
 
@@ -246,28 +250,52 @@ export default function Equipos() {
           <div className="container--subTitle--div2--equipos_section1">
             <h2>de tu maquinaria</h2>
           </div>
-          <div className="container--button--div1--equipos_section1">
-            <img alt="información" src={Iconob_mas}></img>
+          <a href="#b1" className="ab-container--button--div2--equipos_section1">
+            <ButtonVerMas></ButtonVerMas>
+            </a>
+            {/* <div className="container--button--div1--equipos_section1">
+              <img alt="información" className="iconMas1" src={Iconob_mas}></img>
+              <img alt="información" className="iconMas2" src={Iconob_masBwhite}></img>
+              <p>Leer más</p>
+            </div> */}
+          {/* <div className="container--button--div1--equipos_section1">
+            <img alt="información" className="iconMas1" src={Iconob_mas}></img>
+            <img alt="información" className="iconMas2" src={Iconob_masBwhite}></img>
             <p>Leer más</p>
-          </div>
+          </div> */}
           <div className="contimg2">
             <img src={S_maquinaria} alt="" />
           </div>
         </div>
         <div className="div1--equipos_section1">
+          <div className="container--circle">
+          <img className="circle" src={circuloHome} alt="" />
+          </div>
           <div className="container--title--div1--equipos_section1">
             <h2>EVITA EL ROBO</h2>
           </div>
           <div className="container--subTitle--div1--equipos_section1">
             <h2>de tu combustible</h2>
           </div>
-          <div className="container--button--div1--equipos_section1">
-            <img alt="información" src={Iconob_mas}></img>
-            <p>Leer más</p>
-          </div>
+          <a href="#verMasCombustible" className="a-container--button--div1--equipos_section1">
+            <ButtonVerMas></ButtonVerMas>
+            {/* <div className="container--button--div1--equipos_section1">
+              <img alt="información" className="iconMas1" src={Iconob_mas}></img>
+              <img alt="información" className="iconMas2" src={Iconob_masBwhite}></img>
+              <p>Leer más</p>
+            </div> */}
+          </a>
           <div className="contimg">
             <img src={S_combustible} alt="" />
           </div>
+          <div className="containerimg--burbujas--flechaAbajo">
+          <Flecha_cont_red_abajo></Flecha_cont_red_abajo>
+          </div>
+
+          {/* <div className="containerimg--burbujas--flechaAbajo">
+            <img className="img--burbujas--flechaAbajo" src={Ip_burburjas0} alt="" />
+            <img className="img--flecha--flechaAbajo" src={Ip_flechas0} alt="" />
+          </div> */}
         </div>
         {/* <div className="equipos_section1_bg">
           <div className="equipos_section2_column">
@@ -286,7 +314,7 @@ export default function Equipos() {
 
       </section>
       {/**************************************************************/}
-      <section className="sectionNew1">
+      <section className="sectionNew1" id="b1">
         <div className="fondo">
           <img className="img--fondo" src={S_maquinaria} alt="" />
         </div>
@@ -308,8 +336,8 @@ export default function Equipos() {
             </div>
           </div>
         </div>
-        <div className="container-flechas">
-
+        <div className="containerimg--burbujas--flechaAbajo2">
+        <Flecha_cont_red_abajo></Flecha_cont_red_abajo>
         </div>
       </section>
       {/**************************************************************/}
@@ -326,9 +354,9 @@ export default function Equipos() {
               <p>Tipo de actor: Ciudadano</p>
             </p>
           </div>
-          <div className="container-flechas">
-            <ContainerFlecha></ContainerFlecha>
-          </div>
+          <div className="containerimg--burbujas--flechaAbajo2">
+        <Flecha_cont_red_abajo></Flecha_cont_red_abajo>
+        </div>
         </div>
         <div className="container--right">
           <div className="content--container--right">
@@ -355,6 +383,9 @@ export default function Equipos() {
           <div className="container--logoRed">
             <img src={Logo_red} alt="" />
           </div>
+          <div className="containerimg--burbujas--flechaAbajo2">
+        <Flecha_cont_red_abajo></Flecha_cont_red_abajo>
+        </div>
         </div>
         <div className="div2--section--requisitos">
           <div className="container--title--div2__sectionRequisitos">
@@ -415,7 +446,7 @@ export default function Equipos() {
       </section>
       {/**************************************************************/}
 
-      <section className="equipos_section_sensores">
+      <section className="equipos_section_sensores" id="verMasCombustible">
         <div className="equipos_section_sensores_header">
           <div className="equipos_section_sensores_buttons">
             {button1 ? (
