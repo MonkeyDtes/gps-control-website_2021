@@ -36,6 +36,7 @@ import Ip_flechas1 from "../../assets/Componentes/Iconos_pantalla/Ip_flechas1.sv
 import P_trama from "../../assets/Home/P_trama.png"
 import ButtonHomeAplicaciones from "../../components/ButtonHomeAplicaciones";
 import Flecha_arriba from "../../components/Flecha_arriba/Flecha_arriba";
+import Flecha_cont_red_abajo from "../../components/Flecha_cont_red_abajo/Flecha_cont_red_abajo";
 
 export default function Home({ onChangeState }) {
   const [modal, setModal] = useState(false);
@@ -153,7 +154,9 @@ export default function Home({ onChangeState }) {
       <section className="home_section2">
         <div className="home_column_red">
           <Flecha_arriba></Flecha_arriba>
-          <img alt="home Down" src={homeDownButton}></img>
+          <div className="containerimg--burbujas--flechaAbajo2">
+            <Flecha_cont_red_abajo></Flecha_cont_red_abajo>
+          </div>
         </div>
         <div className="home_section2_column">
           <div className="home_section2_wifiIcon">
@@ -199,7 +202,9 @@ export default function Home({ onChangeState }) {
       <section className="home_section2">
         <div className="home_column_red">
           <Flecha_arriba></Flecha_arriba>
-          <img alt="home Down" src={homeDownButton}></img>
+          <div className="containerimg--burbujas--flechaAbajo2">
+            <Flecha_cont_red_abajo></Flecha_cont_red_abajo>
+          </div>
         </div>
         <div className="home_section3_column">
           <div className="home_section3_circle">
@@ -240,7 +245,9 @@ export default function Home({ onChangeState }) {
         )}
         <div className="home_column_red">
           <Flecha_arriba></Flecha_arriba>
-          <img alt="home Down" src={homeDownButton}></img>
+          <div className="containerimg--burbujas--flechaAbajo2">
+            <Flecha_cont_red_abajo></Flecha_cont_red_abajo>
+          </div>
         </div>
         <div className="home_section4_column">
           <div className="home_section2_wifiIcon">
@@ -297,37 +304,15 @@ export default function Home({ onChangeState }) {
           </div>
           <div className="home_section3_buttons">
             <div className="home_section3_buttons_up">
-              <ButtonHomeAplicaciones text="FLEETRUM" image={iconoApps3} />
-              <ButtonHomeAplicaciones text="LOGISTICS" image={iconoApps2} />
-              <ButtonHomeAplicaciones text="HECTERRA" image={iconoApps4} />
+              <ButtonHomeAplicaciones text="FLEETRUM" image={iconoApps3} onclick={HandleClick} value={1} />
+              <ButtonHomeAplicaciones text="LOGISTICS" image={iconoApps2} onclick={HandleClick} value={2} />
+              <ButtonHomeAplicaciones text="HECTERRA" image={iconoApps4} onclick={HandleClick} value={3} />
             </div>
             <div className="home_section3_buttons_up">
-              <ButtonHomeAplicaciones text="ECODRIVING" image={iconoApps5} />
-              <ButtonHomeAplicaciones text="CHATERRBOX" image={iconoApps6} />
-              <ButtonHomeAplicaciones text="WIATAG" image={iconoApps1} />
+              <ButtonHomeAplicaciones text="ECODRIVING" image={iconoApps5} onclick={HandleClick} value={4} />
+              <ButtonHomeAplicaciones text="CHATERRBOX" image={iconoApps6} onclick={HandleClick} value={5} />
+              <ButtonHomeAplicaciones text="WIATAG" image={iconoApps1} onclick={HandleClick} value={6} />
             </div>
-            {/* <div className="home_section3_buttons_up">
-              <button value={1} onClick={(e) => HandleClick(e)}>
-                <img alt="apps" src={iconoApps3}></img>
-              </button>
-              <button value={2} onClick={(e) => HandleClick(e)}>
-                <img alt="apps" src={iconoApps2}></img>
-              </button>
-              <button value={3} onClick={(e) => HandleClick(e)}>
-                <img alt="apps" src={iconoApps4}></img>
-              </button>
-            </div> */}
-            {/* <div className="home_section3_buttons_up">
-              <button value={4} onClick={(e) => HandleClick(e)}>
-                <img alt="apps" src={iconoApps5}></img>
-              </button>
-              <button value={5} onClick={(e) => HandleClick(e)}>
-                <img alt="apps" src={iconoApps6}></img>
-              </button>
-              <button value={6} onClick={(e) => HandleClick(e)}>
-                <img alt="apps" src={iconoApps1}></img>
-              </button>
-            </div> */}
           </div>
           <div className="main_box--home">
             <div className="container--textSeguimiento__home">
@@ -351,48 +336,6 @@ export default function Home({ onChangeState }) {
             </div>
           </div>
         </div>
-        {/* 
-        <div className="home_corner_red">
-          <img src={Frame4} alt="" />
-        </div>
-        <div className="home_section3_header">
-          <img alt="play verde" src={playGreen}></img>
-          <h2>Aplicaciones</h2>
-        </div>
-        <div className="home_section3_buttons">
-          <div className="home_section3_buttons_up">
-            <button value={1} onClick={(e) => HandleClick(e)}>
-              <img alt="apps" src={iconoApps3}></img>
-            </button>
-            <button value={2} onClick={(e) => HandleClick(e)}>
-              <img alt="apps" src={iconoApps2}></img>
-            </button>
-            <button value={3} onClick={(e) => HandleClick(e)}>
-              <img alt="apps" src={iconoApps4}></img>
-            </button>
-          </div>
-          <div className="home_section3_buttons_up">
-            <button value={4} onClick={(e) => HandleClick(e)}>
-              <img alt="apps" src={iconoApps5}></img>
-            </button>
-            <button value={5} onClick={(e) => HandleClick(e)}>
-              <img alt="apps" src={iconoApps6}></img>
-            </button>
-            <button value={6} onClick={(e) => HandleClick(e)}>
-              <img alt="apps" src={iconoApps1}></img>
-            </button>
-          </div>
-        </div>
-        <div className="main_box">
-          <div className="home_section2_label2">
-            <img alt="line icon" className="iconline41" src={Line41}></img>
-            <h2>SEGUIMIENTO Y REGISTRO VEHICULAR</h2>
-          </div>
-        </div>
-        <div className="home_column_red_end">
-          <img alt="home Down" src={homeDownButton}></img>
-        </div>
-      */}
       </section>
       {/************************************************************************/}
       <section ref={sectionRef}></section>

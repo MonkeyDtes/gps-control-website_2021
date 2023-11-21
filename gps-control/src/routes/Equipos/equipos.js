@@ -244,6 +244,9 @@ export default function Equipos() {
       <GifGPS type="2"></GifGPS>
       <section className="equipos_section1">
         <div className="div2--equipos_section1">
+          <div className="container--circle1">
+            <img className="circle1" src={circuloHome} alt="" />
+          </div>
           <div className="container--title--div2--equipos_section1">
             <h2>CERTIFICADO</h2>
           </div>
@@ -252,8 +255,8 @@ export default function Equipos() {
           </div>
           <a href="#b1" className="ab-container--button--div2--equipos_section1">
             <ButtonVerMas></ButtonVerMas>
-            </a>
-            {/* <div className="container--button--div1--equipos_section1">
+          </a>
+          {/* <div className="container--button--div1--equipos_section1">
               <img alt="información" className="iconMas1" src={Iconob_mas}></img>
               <img alt="información" className="iconMas2" src={Iconob_masBwhite}></img>
               <p>Leer más</p>
@@ -269,7 +272,7 @@ export default function Equipos() {
         </div>
         <div className="div1--equipos_section1">
           <div className="container--circle">
-          <img className="circle" src={circuloHome} alt="" />
+            <img className="circle" src={circuloHome} alt="" />
           </div>
           <div className="container--title--div1--equipos_section1">
             <h2>EVITA EL ROBO</h2>
@@ -279,39 +282,14 @@ export default function Equipos() {
           </div>
           <a href="#verMasCombustible" className="a-container--button--div1--equipos_section1">
             <ButtonVerMas></ButtonVerMas>
-            {/* <div className="container--button--div1--equipos_section1">
-              <img alt="información" className="iconMas1" src={Iconob_mas}></img>
-              <img alt="información" className="iconMas2" src={Iconob_masBwhite}></img>
-              <p>Leer más</p>
-            </div> */}
           </a>
           <div className="contimg">
             <img src={S_combustible} alt="" />
           </div>
-          <div className="containerimg--burbujas--flechaAbajo">
-          <Flecha_cont_red_abajo></Flecha_cont_red_abajo>
-          </div>
-
-          {/* <div className="containerimg--burbujas--flechaAbajo">
-            <img className="img--burbujas--flechaAbajo" src={Ip_burburjas0} alt="" />
-            <img className="img--flecha--flechaAbajo" src={Ip_flechas0} alt="" />
-          </div> */}
         </div>
-        {/* <div className="equipos_section1_bg">
-          <div className="equipos_section2_column">
-            <div className="equipos_section2_circleIcon">
-              <img alt="wifi icon" src={circuloHome}></img>
-            </div>
-            <h1>EVITA EL ROBO</h1>
-            <div className="main_box">
-              <div className="equipos_section2_label">
-                <img alt="icon" className="iconCombustible" src={FramePalabraCombustible}></img>
-                <h2>De tu combustible</h2>
-              </div>
-            </div>
-          </div>
-        </div> */}
-
+        <div className="containerimg--burbujas--flechaAbajo">
+          <Flecha_cont_red_abajo></Flecha_cont_red_abajo>
+        </div>
       </section>
       {/**************************************************************/}
       <section className="sectionNew1" id="b1">
@@ -325,11 +303,6 @@ export default function Equipos() {
               <input type="radio" name="op1" onClick={(e) => HandleClick1(e)} id="radio0" />
               <label htmlFor="radio0"></label>
             </div>
-            {/*
-          <div className="apps_button_check">
-            <div className="dot"></div>
-          </div>
-           */}
             <div>
               <input type="radio" name="op1" onClick={(e) => HandleClick1(e)} id="radio1" />
               <label htmlFor="radio1"></label>
@@ -337,7 +310,7 @@ export default function Equipos() {
           </div>
         </div>
         <div className="containerimg--burbujas--flechaAbajo2">
-        <Flecha_cont_red_abajo></Flecha_cont_red_abajo>
+          <Flecha_cont_red_abajo></Flecha_cont_red_abajo>
         </div>
       </section>
       {/**************************************************************/}
@@ -355,14 +328,14 @@ export default function Equipos() {
             </p>
           </div>
           <div className="containerimg--burbujas--flechaAbajo2">
-        <Flecha_cont_red_abajo></Flecha_cont_red_abajo>
-        </div>
+            <Flecha_cont_red_abajo></Flecha_cont_red_abajo>
+          </div>
         </div>
         <div className="container--right">
           <div className="content--container--right">
             <h2>¿CÓMO REGISTRO MI MAQUINARIA ANTE EL RUNT?</h2>
             <p>El ciudadano que va a registrar maquinaria agrícola ante el RUNT debe realizar el siguiente procedimiento</p>
-            {/* <hr className="hrg" /> */}<p className="capitalize">Se debe habilitar como importador ocasional o frecuente realizando la consulta mediante el correo soporteimportadores@runt.com.co a través del cual se le indicarán los pasos a seguir.</p>
+            <p className="capitalize">Se debe habilitar como importador ocasional o frecuente realizando la consulta mediante el correo soporteimportadores@runt.com.co a través del cual se le indicarán los pasos a seguir.</p>
             <p className="capitalize">Después de encontrarse habilitado se debe dirigir al Organismo de Tránsito para la incorporación de la información de la Maquinaria dependiendo si la figura es ocasional o frecuente.</p>
             <p className="capitalize1">Luego, solicitar el trámite de matrícula inicial ante el Organismo de Tránsito.</p>
           </div>
@@ -384,8 +357,8 @@ export default function Equipos() {
             <img src={Logo_red} alt="" />
           </div>
           <div className="containerimg--burbujas--flechaAbajo2">
-        <Flecha_cont_red_abajo></Flecha_cont_red_abajo>
-        </div>
+            <Flecha_cont_red_abajo></Flecha_cont_red_abajo>
+          </div>
         </div>
         <div className="div2--section--requisitos">
           <div className="container--title--div2__sectionRequisitos">
@@ -411,10 +384,20 @@ export default function Equipos() {
                 <label htmlFor="btn0"></label>
               </div>
 
-              <div>
+              <div className="prueba" >
+                <label htmlFor="btn1"></label>
+                <button name="op1" onClick={(e) => HandleClick2(e)} id="btn1"></button>
+              </div>
+
+              {/* <div className="prueba" >
+                <label htmlFor="btn1"></label>
+                <input type="radio" name="op1" onClick={(e) => HandleClick2(e)} id="btn1" />
+              </div> */}
+
+              {/* <div>
                 <input type="radio" name="op1" onClick={(e) => HandleClick2(e)} id="btn1" />
                 <label htmlFor="btn1"></label>
-              </div>
+              </div> */}
 
               <div>
                 <input type="radio" name="op1" onClick={(e) => HandleClick2(e)} id="btn2" />

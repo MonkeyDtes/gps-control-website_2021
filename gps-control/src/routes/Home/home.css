@@ -865,7 +865,7 @@ div#imagen:hover p#descripcion {
 
 .img-flecha {
   height: calc(5.88vh*1);
-  animation: flecha 1s infinite alternate linear;
+  animation: flecha 0.6s infinite alternate linear;
   z-index: 5;
 }
 
@@ -877,10 +877,11 @@ div#imagen:hover p#descripcion {
 
 @keyframes flecha {
   0% {
-      transform: translateY(0);
+    transform: translateY(0);
   }
+
   100% {
-      transform: translateY(3vh);
+    transform: translateY(3vh);
   }
 }
 
@@ -982,11 +983,12 @@ div#imagen:hover p#descripcion {
   75% {
     transform: translateX(-75%);
   }
-  
+
   100% {
     transform: translateX(-75%);
   }
-/* 
+
+  /* 
   100% {
     transform: translateX(0%);
   } */

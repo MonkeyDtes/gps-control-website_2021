@@ -9,7 +9,7 @@ import Footer from "../../components/Footer/index";
 export default function Apps(estadoApps) {
   const [button1, setButton1] = useState(true);
   const [button2, setButton2] = useState(false);
-  const [button3, setButton3] = useState(false);
+  const [button3, setButton3] = useState(false); 
   const [button4, setButton4] = useState(false);
   const [button5, setButton5] = useState(false);
   const [button6, setButton6] = useState(false);

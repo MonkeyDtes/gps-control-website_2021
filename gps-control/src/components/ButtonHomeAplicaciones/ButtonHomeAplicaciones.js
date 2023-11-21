@@ -1,9 +1,9 @@
 import "./ButtonHomeAplicaciones.css"
 
-function ButtonHomeAplicaciones({ text, image }) {
+function ButtonHomeAplicaciones({ text, image, onclick, value }) {
 
   return <>
-    <button className="container--hover__cardsHome">
+    <button value={value} onClick={(e) => onclick(e)} className="container--hover__cardsHome">
       <img alt={text} src={image}></img>
       <div>
         <p>{text}</p>
