@@ -1,9 +1,7 @@
 import NavbarGPS from "../../components/NavbarGPS";
-import SectionEquipos from "../../components/Section_Equipos";
 import ButtonCotizar from "../../components/ButtonCotizar";
 import Section_monitoreo from "../../components/Section_monitoreo"
 import Section2_monitoreo from "../../components/Section2_monitoreo"
-import ContainerFlecha from "../../components/ContainerFlecha";
 import "./equipos.css";
 import circuloHome from "../../assets/circuloHome.svg";
 import Suntech from "../../assets/Suntech.png";
@@ -23,7 +21,6 @@ import S_maquinaria from "../../assets/Solucionesm/S_maquinaria.png";
 import S_collage from "../../assets/Solucionesm/S_collage.png";
 import sensorCableTG from "../../assets/SensorCableToggle.png";
 import FramePalabraCombustible from "../../assets/FramePalabraCombustible.png";
-import ytVerde from "../../assets/ytVerdeBG.svg";
 import fleetrunPDF from "../../assets/fleetrun.pdf";
 import sensorEquipos1 from "../../assets/sensorEquiposTD1.png";
 import sensorEquipos2 from "../../assets/sensorEquiposTD2.png";
@@ -31,13 +28,9 @@ import sensorEquipos3 from "../../assets/sensorEquiposTD3.png";
 import sensorEquipos4 from "../../assets/sensorEquiposTD4.png";
 import particles from "../../assets/particles.png";
 import Iconob_mas from "../../assets/Componentes/Iconos_botones/Iconob_mas.svg";
-import Iconob_masBwhite from "../../assets/Componentes/Iconos_botones/Iconob_masBwhite.svg";
 import Iconob_youtube from "../../assets/Componentes/Iconos_botones/Iconob_youtube.svg";
 import { useEffect, useRef, useState } from "react";
 import ButtonsSocialMedia from "../../components/ButtonsSocialMedia/ButtonsSocialMedia";
-import Flecha_arriba from "../../components/Flecha_arriba/Flecha_arriba";
-import Ip_burburjas0 from "../../assets/Componentes/Iconos_pantalla/Ip_burburjas0.svg"
-import Ip_flechas0 from "../../assets/Componentes/Iconos_pantalla/Ip_flechas0.svg"
 import ButtonVerMas from "../../components/ButtonVerMas/ButtonVerMas";
 import Flecha_cont_red_abajo from "../../components/Flecha_cont_red_abajo/Flecha_cont_red_abajo";
 
@@ -277,7 +270,13 @@ export default function Equipos() {
           <div className="container--title--div1--equipos_section1">
             <h2>EVITA EL ROBO</h2>
           </div>
+          {/* <div className="container--FramePalabraCombustible">
+            <img src={FramePalabraCombustible} alt="" />
+          </div> */}
           <div className="container--subTitle--div1--equipos_section1">
+            <div className="container--FramePalabraCombustible">
+              <img src={FramePalabraCombustible} alt="" />
+            </div>
             <h2>de tu combustible</h2>
           </div>
           <a href="#verMasCombustible" className="a-container--button--div1--equipos_section1">
@@ -313,9 +312,7 @@ export default function Equipos() {
           <Flecha_cont_red_abajo></Flecha_cont_red_abajo>
         </div>
       </section>
-      {/**************************************************************/}
 
-      {/**************************************************************/}
       <section className="new--section2">
         <div className="container--left">
           <div className="collage">
@@ -323,12 +320,8 @@ export default function Equipos() {
           </div>
           <div className="text">
             <p>Nota: si presenta dudas respecto al proceso puede comunicarse al Centro de ayuda y servicios: Línea a nivel nacional 018000930060 o línea en Bogotá (1) 4232221.
-
               <p>Tipo de actor: Ciudadano</p>
             </p>
-          </div>
-          <div className="containerimg--burbujas--flechaAbajo2">
-            <Flecha_cont_red_abajo></Flecha_cont_red_abajo>
           </div>
         </div>
         <div className="container--right">
@@ -340,8 +333,10 @@ export default function Equipos() {
             <p className="capitalize1">Luego, solicitar el trámite de matrícula inicial ante el Organismo de Tránsito.</p>
           </div>
         </div>
+        <div className="containerimg--burbujas--flechaAbajo2">
+          <Flecha_cont_red_abajo></Flecha_cont_red_abajo>
+        </div>
       </section>
-      {/**************************************************************/}
 
       <section className="section--requisitos">
         <div className="div1--section--requisitos">
@@ -427,7 +422,6 @@ export default function Equipos() {
           </div>
         </div>
       </section>
-      {/**************************************************************/}
 
       <section className="equipos_section_sensores" id="verMasCombustible">
         <div className="equipos_section_sensores_header">

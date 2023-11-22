@@ -1,7 +1,6 @@
 import { useState } from "react";
 import NavbarGPS from "../../components/NavbarGPS";
 import "./soluciones.css";
-import navbarNube from "../../assets/navbarNube.svg";
 import camaraSoluciones from "../../assets/camaraSoluciones.png";
 import eyeSensor from "../../assets/eyeSensor.png";
 import FMB_120 from "../../assets/FMB_120.png";
@@ -13,14 +12,8 @@ import IdentificacionQR from "../../assets/IdentificacionQR.png";
 import gifNegativo from "../../assets/gifNegativo.gif";
 import LECTOR_QR from "../../assets/LECTOR_QR.png";
 import Rastreo from "../../assets/Rastreo.png";
-import circulosRojos from "../../assets/circulosRojos.svg";
-import usuariosSoluciones from "../../assets/usuariosSoluciones.svg";
-import wifiHorizontal from "../../assets/wifiHorizontal.svg";
-import GifGPS from "../../components/gifGPS/index";
 import Leads from "../../components/Leads/index";
 import Footer from "../../components/Footer/index";
-import termometro from "../../assets/termometro.svg";
-import Vector4 from "../../assets/Vector4.svg";
 import Section_solutions from "../../components/Section_solutions/Section_solutions";
 
 export default function Soluciones() {

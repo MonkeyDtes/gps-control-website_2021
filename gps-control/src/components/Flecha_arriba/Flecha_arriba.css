@@ -1,12 +1,4 @@
-.flechaA {
-    animation: flecha 20s infinite alternate linear;
-}
-
-@keyframes flecha {
-    0% {
-        transform: translateY(0);
-    }
-    100% {
-        transform: translateY(-6vh);
-    }
+.cont--red--flecha__arriba {
+ grid-column: 3/5;
+ grid-row: 1/4;
 }

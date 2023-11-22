@@ -6,7 +6,6 @@ import pantallasHome from "../../assets/pantallasHome.png";
 import combustible from "../../assets/Combustible.png";
 import circuloHome from "../../assets/circuloHome.svg";
 import vigilanciaHome from "../../assets/vigilanciaHome.png";
-import homeDownButton from "../../assets/homeDownButton.svg";
 import camHome from "../../assets/camHome.png";
 import bgPortadaHome from "../../assets/Home/Bg_portada_1.mp4";
 import iconoApps1 from "../../assets/iconoApps1.svg";
@@ -112,7 +111,6 @@ export default function Home({ onChangeState }) {
             <img className="img--mapa__portadaHome" src={P_bgcomposicion}></img>
           </div>
         </div>
-        {/*************************************/}
         <div className="subContainer2--portada___home">
 
           <div className="title">
@@ -135,7 +133,6 @@ export default function Home({ onChangeState }) {
           </div>
         </div>
         <div className="container-f">
-          {/***********************************************************************************/}
           <img alt="home Down" className="img-flecha" src={Ip_flechas1}></img>
           <img alt="home Down" className="img--container-f" src={Ip_burburjas1}></img>
         </div>
@@ -285,11 +282,10 @@ export default function Home({ onChangeState }) {
           <img alt="pantallas" src={camHome}></img>
         </div>
       </section>
-      {/**************************************************************/}
       <section className="home_section3">
         <div className="container--left__homeSection3">
           <div className="home_column_red_end">
-            <img alt="home Down" src={homeDownButton}></img>
+            <Flecha_arriba></Flecha_arriba>
           </div>
           <div className="container--imgGato__home">
             <img className="imgGato--home" src={Frame4} alt="" />
@@ -337,7 +333,6 @@ export default function Home({ onChangeState }) {
           </div>
         </div>
       </section>
-      {/************************************************************************/}
       <section ref={sectionRef}></section>
       <Leads></Leads>
       <Footer></Footer>

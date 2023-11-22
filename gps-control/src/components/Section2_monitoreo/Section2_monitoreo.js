@@ -12,7 +12,7 @@ function Section2_monitoreo({ data2 }) {
         <div className="sectionNew1--cont1">
             <div className="margin--container2">
                 <h2 className="title--component__monitoreo">{title3}</h2>
-                <p className="subTitle--component__monitoreo">{text3}</p>
+                <p className="subTitle--component__monitoreo1">{text3}</p>
             </div>
 
         </div>
