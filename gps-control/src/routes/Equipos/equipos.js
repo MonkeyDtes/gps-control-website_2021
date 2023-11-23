@@ -48,41 +48,14 @@ export default function Equipos() {
     "text2": "Todo vehículo automotor del tipo de maquinaria agrícola, industrial y de construcción autopropulsada, que esté vinculado en el país, deberá ser inscrito por parte del propietario o poseedor en el RNMA.",
   }];
 
-  let listData2 = [{
-    "title3": "CUMPLIR CON LOS SIGUIENTES REQUISITOS GENERALES:",
-    "text3": "Estar inscrito en el Registro Único Nacional de Tránsito - RUNT como persona natural o jurídica. Cuando el trámite se realice a través de un tercero, este también deberá estar registrado",
-  },
-
-  {
-    "title3": "CUMPLIR CON LOS SIGUIENTES REQUISITOS GENERALES:",
-    "text3": "Formulario de solicitud de trámites del registro nacional de maquinaria agrícola, y de construcción autopropulsada",
-  },
-
-  {
-    "title3": "CUMPLIR CON LOS SIGUIENTES REQUISITOS GENERALES:",
-    "text3": "Declaración de importación: 1 Copia(s)",
-  },
-
-  {
-    "title3": "CUMPLIR CON LOS SIGUIENTES REQUISITOS GENERALES:",
-    "text3": "Factura de compra de la maquinaria: 1 Original(es)",
-  },
-
-  {
-    "title3": "CUMPLIR CON LOS SIGUIENTES REQUISITOS GENERALES:",
-    "text3": "Contar con un sistema de posicionamiento global (GPS) u otro dispositivo de seguridad y monitoreo electrónico, instalado de manera permanente, de conformidad con los requerimientos técnicos que para el efecto establezca la Policía Nacional, para la maquinaria clasificable en las sub partidas 8429.11.00.00, 8429.19.00.00, 8429.51.00.00, 8429.52.00.00, 8429.59.00.00, 8431.41.00.00, 8431.42.00.00 y 8905.10.00.00 del arancel de aduanas",
-  },
-
-  {
-    "title3": "CUMPLIR CON LOS SIGUIENTES REQUISITOS GENERALES:",
-    "text3": "Documento privado por medio del cual acredite la posesión de buena fe de la maquinaria: 1 Original(es)",
-  },
-
-  {
-    "title3": "CUMPLIR CON LOS SIGUIENTES REQUISITOS GENERALES:",
-    "text3": "Certificado de instalación del sistema de posicionamiento global (GPS) u otros dispositivo de seguridad y monitoreo electrónico: 1 Copia(s)",
-  },
-
+  let listData2 = [
+    "Estar inscrito en el Registro Único Nacional de Tránsito - RUNT como persona natural o jurídica. Cuando el trámite se realice a través de un tercero, este también deberá estar registrado",
+    "Formulario de solicitud de trámites del registro nacional de maquinaria agrícola, y de construcción autopropulsada",
+    "Declaración de importación: 1 Copia(s)",
+    "Factura de compra de la maquinaria: 1 Original(es)",
+    "Contar con un sistema de posicionamiento global (GPS) u otro dispositivo de seguridad y monitoreo electrónico, instalado de manera permanente, de conformidad con los requerimientos técnicos que para el efecto establezca la Policía Nacional, para la maquinaria clasificable en las sub partidas 8429.11.00.00, 8429.19.00.00, 8429.51.00.00, 8429.52.00.00, 8429.59.00.00, 8431.41.00.00, 8431.42.00.00 y 8905.10.00.00 del arancel de aduanas",
+    "Documento privado por medio del cual acredite la posesión de buena fe de la maquinaria: 1 Original(es)",
+    "Certificado de instalación del sistema de posicionamiento global (GPS) u otros dispositivo de seguridad y monitoreo electrónico: 1 Copia(s)"
   ];
 
   const [data1, setData1] = useState(listData1[0]);
@@ -92,9 +65,11 @@ export default function Equipos() {
   };
 
   const [data2, setData2] = useState(listData2[0]);
-  const HandleClick2 = (e) => {
-    setData2(listData2[e.target.id.slice(-1)])
-    console.log(listData2[e.target.id]);
+  const [selectedRadio, setSelectedRadio] = useState(0);
+
+  const HandleClick2 = (i) => {
+    setSelectedRadio(i)
+    setData2(listData2[i]);
   };
 
   const [button1, setButton1] = useState(false);
@@ -342,7 +317,7 @@ export default function Equipos() {
         <div className="div1--section--requisitos">
           <img className="img--ejecutivo" src={S_ejecutivo} alt="" />
           <div className="container--text--div1__sectionRequisitos">
-            <p>Estamos habilitados y certificados como proveedor de servicio GPS  por la Policía Nacional</p>
+            <p><span>Estamos habilitados y certificados</span> como proveedor de servicio GPS  por la <span>Policía Nacional</span></p>
             <div className="mixB"></div>
           </div>
           <div className="tri">
@@ -372,52 +347,15 @@ export default function Equipos() {
           </div>
 
           <div className="container--cajaWhite--div2__sectionRequisitos">
-            <Section2_monitoreo data2={data2}></Section2_monitoreo>
+            <Section2_monitoreo data={data2}></Section2_monitoreo>
             <div className="monitoreo_buttons">
-              <div>
-                <input type="radio" name="op1" onClick={(e) => HandleClick2(e)} id="btn0" />
-                <label htmlFor="btn0"></label>
-              </div>
-
-              <div className="prueba" >
-                <label htmlFor="btn1"></label>
-                <button name="op1" onClick={(e) => HandleClick2(e)} id="btn1"></button>
-              </div>
-
-              {/* <div className="prueba" >
-                <label htmlFor="btn1"></label>
-                <input type="radio" name="op1" onClick={(e) => HandleClick2(e)} id="btn1" />
-              </div> */}
-
-              {/* <div>
-                <input type="radio" name="op1" onClick={(e) => HandleClick2(e)} id="btn1" />
-                <label htmlFor="btn1"></label>
-              </div> */}
-
-              <div>
-                <input type="radio" name="op1" onClick={(e) => HandleClick2(e)} id="btn2" />
-                <label htmlFor="btn2"></label>
-              </div>
-
-              <div>
-                <input type="radio" name="op1" onClick={(e) => HandleClick2(e)} id="btn3" />
-                <label htmlFor="btn3"></label>
-              </div>
-
-              <div>
-                <input type="radio" name="op1" onClick={(e) => HandleClick2(e)} id="btn4" />
-                <label htmlFor="btn4"></label>
-              </div>
-
-              <div>
-                <input type="radio" name="op1" onClick={(e) => HandleClick2(e)} id="btn5" />
-                <label htmlFor="btn5"></label>
-              </div>
-
-              <div>
-                <input type="radio" name="op1" onClick={(e) => HandleClick2(e)} id="btn6" />
-                <label htmlFor="btn6"></label>
-              </div>
+              {listData2.map((_, index) => {
+                return <div>
+                  <input checked={selectedRadio === index} onChange={() => { }} type="radio" name={"op" + index} onClick={() => HandleClick2(index)} id={"btn" + index} />
+                  <label htmlFor={"btn" + index}></label>
+                  <span className={selectedRadio === index ? "classspan" : "displaynone"}></span>
+                </div>
+              })}
             </div>
           </div>
         </div>

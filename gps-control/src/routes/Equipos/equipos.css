@@ -294,6 +294,7 @@
 .iconMas2 {
   display: none;
 }
+
 /*******************************************************************************/
 /*******************************************************************************/
 .pedestales_sensor {
@@ -965,7 +966,6 @@
 .container--cajaWhite--div2__sectionRequisitos {
   border-radius: 20px;
   background: #FFF;
-  width: calc(8.33vw*6);
   height: calc(5.88vh*4);
   box-shadow: 0px 7px 10px 0px rgba(235, 22, 44, 0.50);
   grid-column: 1/7;
@@ -981,7 +981,7 @@
   position: relative;
   justify-content: flex-end;
   z-index: 1;
-  margin: 0 45px
+  margin: 10px 45px
 }
 
 .monitoreo_buttons>button {
@@ -1002,6 +1002,32 @@
   font-size: 1.5rem;
 }
 
+.monitoreo_buttons label {
+  color: #6B6B6B;
+  font-family: "Bahnschrift";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.classspan {
+  width: 6px;
+  height: 6px;
+  display: block;
+  background-color: #fff;
+  z-index: 5;
+  position: relative;
+  border-radius: 50%;
+  top: 30%;
+  left: 22%;
+}
+
+.displaynone {
+  display: none;
+}
+
 .soluciones_button_check {
   height: 20px;
   width: 20px;
@@ -1012,16 +1038,6 @@
   align-items: center;
   margin-right: 2vw;
   box-shadow: 0px 4px 4px #030d4f;
-}
-
-.monitoreo_buttons label {
-  color: #6B6B6B;
-  font-family: "Bahnschrift";
-  font-size: 10px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
-  cursor: pointer;
 }
 
 .dot {
@@ -1214,11 +1230,15 @@
   font-family: "Bahnschrift";
   font-size: 18px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 300;
   line-height: normal;
   margin-left: 25px;
   margin-right: 25px;
   z-index: 5;
+}
+
+.container--text--div1__sectionRequisitos span {
+  font-weight: 700;
 }
 
 .container--title--div2__sectionRequisitos {
@@ -1300,7 +1320,8 @@
   z-index: 100;
 }
 
-.cont--red--flecha, .cont--red--flecha__arriba {
+.cont--red--flecha,
+.cont--red--flecha__arriba {
   background-color: #ED2F4C;
   display: flex;
   justify-content: center;
@@ -1312,7 +1333,8 @@
   rotate: 180deg;
 }
 
-.cont--red--flecha .img--burbujas--flechaAbajo, .cont--red--flecha__arriba .img--burbujas--flechaAbajo {
+.cont--red--flecha .img--burbujas--flechaAbajo,
+.cont--red--flecha__arriba .img--burbujas--flechaAbajo {
   max-height: 100vh;
   width: 100%;
   height: calc(5.88vh*3);
@@ -1355,60 +1377,6 @@
 .circle1 {
   width: 50px;
 }
-
-.contc {
-  background-color: red;
-}
-
-.cblanca {
-  background-color: #fff;
-  border-radius: 100%;
-}
-
-.prueba {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.prueba button {
-  background-color: #EB162C;
-  filter: drop-shadow(0px 4px 2px #030D4F);
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  border: none;
-  cursor: pointer;
-}
-
-.prueba label {
-  background-color: #fff;
-  z-index: 100;
-  position: absolute;
-  height: 7px;
-  width: 7px;
-  border-radius: 50%;
-
-}
-
-/* .container--FramePalabraCombustible {
-  grid-column: 2/4;
-  grid-row: 6/7;
-  display: flex;
-  flex-direction: row-reverse;
-  flex-wrap: wrap;
-    align-content: center;
-}
-
-.container--FramePalabraCombustible>img {
-  margin-right: calc(8.33vw*0.3);
-  width: 30px;
-  height: 30px;
-}
-
-.div1--equipos_section1:hover .container--FramePalabraCombustible {
-  grid-column: 4/5;
-} */
 
 .container--FramePalabraCombustible>img {
   margin-right: calc(8.33vw*0.3);
