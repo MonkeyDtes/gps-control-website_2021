@@ -276,10 +276,12 @@ export default function Equipos() {
             <div>
               <input type="radio" name="op1" onClick={(e) => HandleClick1(e)} id="radio0" />
               <label htmlFor="radio0"></label>
+              <span className="classspan"></span>
             </div>
             <div>
               <input type="radio" name="op1" onClick={(e) => HandleClick1(e)} id="radio1" />
               <label htmlFor="radio1"></label>
+              <span className="classspan"></span>
             </div>
           </div>
         </div>
@@ -287,7 +289,6 @@ export default function Equipos() {
           <Flecha_cont_red_abajo></Flecha_cont_red_abajo>
         </div>
       </section>
-
       <section className="new--section2">
         <div className="container--left">
           <div className="collage">
@@ -312,7 +313,6 @@ export default function Equipos() {
           <Flecha_cont_red_abajo></Flecha_cont_red_abajo>
         </div>
       </section>
-
       <section className="section--requisitos">
         <div className="div1--section--requisitos">
           <img className="img--ejecutivo" src={S_ejecutivo} alt="" />
@@ -345,7 +345,6 @@ export default function Equipos() {
               realizar su trámite de manera personal, sin contratiempos y obteniendo el resultado esperado a su
               solicitud. No recurra a intermediarios.</p>
           </div>
-
           <div className="container--cajaWhite--div2__sectionRequisitos">
             <Section2_monitoreo data={data2}></Section2_monitoreo>
             <div className="monitoreo_buttons">
@@ -360,7 +359,6 @@ export default function Equipos() {
           </div>
         </div>
       </section>
-
       <section className="equipos_section_sensores" id="verMasCombustible">
         <div className="equipos_section_sensores_header">
           <div className="equipos_section_sensores_buttons">

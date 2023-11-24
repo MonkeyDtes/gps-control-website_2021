@@ -49,6 +49,22 @@
   width: 50px;
 }
 
+.circle1 {
+  width: 50px;
+}
+
+.circleImg {
+  margin-top: -5px;
+}
+
+.container--circle1 {
+  display: flex;
+  align-items: center;
+  grid-row: 3/5;
+  grid-column: -3/-2;
+  transition-duration: 0.5s;
+}
+
 .container--title--div1--equipos_section1 {
   grid-column: -6/-2;
   grid-row: 5/6;
@@ -866,10 +882,6 @@
   font-weight: 700;
 }
 
-.circleImg {
-  margin-top: -5px;
-}
-
 .imgFrameMaquinaria {
   margin: 250px 0px 0px 20px;
 }
@@ -1038,14 +1050,6 @@
   align-items: center;
   margin-right: 2vw;
   box-shadow: 0px 4px 4px #030d4f;
-}
-
-.dot {
-  height: 10px;
-  width: 10px;
-  background-color: white;
-  border-radius: 50%;
-  display: inline-block;
 }
 
 .soluciones_button_dontcheck {
@@ -1224,6 +1228,20 @@
   mix-blend-mode: multiply;
 }
 
+.tri {
+  width: calc(8.33vw*1);
+  height: calc(5.88vh*2);
+  grid-column: 5/6;
+  grid-row: 10/12;
+}
+
+.triangulo {
+  width: calc(8.33vw*1);
+  height: calc(5.88vh*3);
+  position: relative;
+  top: -48px;
+}
+
 .container--text--div1__sectionRequisitos>p {
   color: #FFF;
   text-align: justify;
@@ -1255,20 +1273,6 @@
   font-weight: 300;
   line-height: normal;
   margin: 0;
-}
-
-.tri {
-  width: calc(8.33vw*1);
-  height: calc(5.88vh*2);
-  grid-column: 5/6;
-  grid-row: 10/12;
-}
-
-.triangulo {
-  width: calc(8.33vw*1);
-  height: calc(5.88vh*3);
-  position: relative;
-  top: -48px;
 }
 
 .container--logoRed {
@@ -1364,18 +1368,6 @@
 
 .container--subTitle--div1--equipos_section1 {
   justify-content: space-between;
-}
-
-.container--circle1 {
-  display: flex;
-  align-items: center;
-  grid-row: 3/5;
-  grid-column: -3/-2;
-  transition-duration: 0.5s;
-}
-
-.circle1 {
-  width: 50px;
 }
 
 .container--FramePalabraCombustible>img {

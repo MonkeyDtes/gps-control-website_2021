@@ -12,7 +12,6 @@ function Section2_monitoreo({ data }) {
                 <h2 className="title--component__monitoreo">Cumplir con los siguientes requisitos generales:</h2>
                 <p className="subTitle--component__monitoreo1">{text}</p>
             </div>
-
         </div>
     </>
 }

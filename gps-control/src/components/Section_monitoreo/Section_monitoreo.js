@@ -20,11 +20,7 @@ function Section_monitoreo({ data1 }) {
                 <p className="subtitlec2--component__monitoreo">{subtitlec2}</p>
                 <p className="text--component__monitoreo">{text2}</p>
             </div>
-
         </div>
-        {/* <div className="sectionNew1--cont2">
-            <ContainerFlecha></ContainerFlecha>
-        </div> */}
     </>
 }
 

@@ -12,7 +12,7 @@
   background: url("../../assets/promocionesBG.png");
   background-color: #fff;
   background-repeat: no-repeat;
-  background-size: 90vw 90vh;
+  background-size: contain;
   background-position-x: 15vw;
   background-position-y: 15vh;
 }

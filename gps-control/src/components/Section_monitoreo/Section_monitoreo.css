@@ -1,6 +1,10 @@
+.margin--container>.title--component__monitoreo {
+
+}
+
 .title--component__monitoreo {
     color: #ED2F4C;
-    font-family: Klik;
+    font-family: "Klik";
     font-size: 30px;
     font-style: normal;
     font-weight: 300;
@@ -22,7 +26,7 @@
 .subtitlec2--component__monitoreo,
 .subTitle--component__monitoreo1 {
     text-align: justify;
-    font-family: Bahnschrift;
+    font-family: "Bahnschrift";
     font-size: 20px;
     font-style: normal;
     margin: 0;
