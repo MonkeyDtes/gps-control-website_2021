@@ -592,21 +592,23 @@ body {
 }
 
 .modal_home_fade {
-  height: auto;
-  width: calc(8.33vw * 8);
-  position: fixed;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
   z-index: 100;
   top: 0;
-  left: 0;
+  /* left: 0; */
+  right: 0;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  background: none;
-  margin-left: calc(8.33vw * 2);
-  margin-top: calc(5.88vh * 3);
+  /* background: none; */
+  /* margin-left: calc(8.33vw * 2); */
+  /* margin-top: calc(5.88vh * 3); */
+  min-width: 100vw;
 }
 
-.modal_home_fade>button {
+/* .modal_home_fade>button {
   width: calc(8.33vw * 0.3);
   height: calc(5.88vh * 0.7);
   font-size: calc(8.33vw * 0.1);
@@ -617,7 +619,7 @@ body {
   margin-top: calc(5.88vh * 2);
   margin-right: calc(8.33vw);
   border-radius: 8px;
-}
+} */
 
 .textCotice {
   font-size: 18px;

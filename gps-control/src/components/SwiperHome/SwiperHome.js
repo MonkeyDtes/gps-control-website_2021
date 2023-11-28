@@ -2,76 +2,134 @@ import React, { useEffect, useState, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper";
 import SwiperCore, { Keyboard, Mousewheel } from "swiper/core";
+import Flota_vehículos from "../../assets/Modales_home/Flota_vehículos.jpg"
+import Iconos_gpscontrol from "../../assets/Modales_iconos/Iconos_gpscontrol.svg";
+import Flota_plataforma from "../../assets/Modales_home/Flota_plataforma.png";
+import Boton_flecha from "../../assets/Modales_botones/Boton_flecha.svg";
+import Pasajeros_captura from "../../assets/Modales_home/Pasajeros_captura.png";
+import Conductores_captura from "../../assets/Modales_home/Conductores_captura.png";
+import Estadisticas_captura from "../../assets/Modales_home/Estadisticas_captura.png";
+import Carga_bg from "../../assets/Modales_home/Carga_bg.png";
 import "./swiper.css";
-import modalImg1 from "../../assets/modal1.jpg";
-import modalImg2 from "../../assets/Modal_carga.jpg";
-import modalImg3 from "../../assets/Modal_pasajeros.jpg";
-import modalImg4 from "../../assets/Modal_conductores.jpg";
-import modalImg5 from "../../assets/Modal_flota.jpg";
-import resImg1 from "../../assets/swResponsive1.jpg";
-import resImg2 from "../../assets/swResponsive2.jpg";
-import resImg3 from "../../assets/swResponsive3.jpg";
-import resImg4 from "../../assets/swResponsive4.jpg";
-import resImg5 from "../../assets/swResponsive5.jpg";
 
-const SwiperHome = (e) => {
+function SwiperHome({ incial }) {
   SwiperCore.use([Keyboard, Mousewheel]);
-  const [inicialSlide, setInicialSlide] = useState(e.incialSlide);
+  const [inicialSlide, setInicialSlide] = useState(incial);
 
   const swiperRef = useRef(null);
   useEffect(() => {
-    setInicialSlide(e.incialSlide);
-  }, [e.incialSlide]);
+    setInicialSlide(incial);
+  }, [incial]);
 
   return (
-    <div
-      style={{
-        overflow: "hidden",
-        alignItems: "center",
-      }}
+    <Swiper
+      centeredSlides={true}
+      navigation={true}
+      modules={[Pagination, Navigation]}
+      initialSlide={inicialSlide}
+      mousewheel={true}
+      ref={swiperRef}
+      loop={true}
+      className="swiper_home_c"
     >
-      <Swiper
-        centeredSlides={true}
-        navigation={true}
-        modules={[Pagination, Navigation]}
-        initialSlide={inicialSlide}
-        mousewheel={true}
-        ref={swiperRef}
-        className="swiper_home"
-      >
-        <SwiperSlide className="swiper_home_slide">
-          <img alt="swiper" src={modalImg1}></img>
-          <div>
-            <img alt="swiper" src={resImg1}></img>
+
+      <SwiperSlide>
+        <div className="container__swiper_home">
+          <img className="img--flotaVehiculos__home" src={Flota_vehículos} alt="" />
+          {/* <img className="img--botonFlecha__home" src={Boton_flecha} alt="" /> */}
+          <div className="grid__sides__modal container__left__modal">
+            <div className="container--title--iconos--group__modal">
+              <h2>flota</h2>
+              <img className="iconos--group__modal" src={Iconos_gpscontrol} alt="" />
+            </div>
+            <div className="container--white__modal">
+              <p>Reporte en tiempo real</p>
+              <p>App móvil</p>
+              <p>Para todo tipo de vehículos</p>
+            </div>
           </div>
-        </SwiperSlide>
-        <SwiperSlide className="swiper_home_slide">
-          <img alt="swiper" src={modalImg2}></img>
-          <div>
-            <img alt="swiper" src={resImg2}></img>
+          <div className="grid__sides__modal container__right__modal">
+            <img className="img--flota__modal" src={Flota_plataforma} alt="" />
           </div>
-        </SwiperSlide>
-        <SwiperSlide className="swiper_home_slide">
-          <img alt="swiper" src={modalImg3}></img>
-          <div>
-            <img alt="swiper" src={resImg3}></img>
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div className="container__swiper_home">
+          <div className="container--img--pasajerosCaptura__home">
+          <img src={Pasajeros_captura} alt="" />
           </div>
-        </SwiperSlide>
-        <SwiperSlide className="swiper_home_slide">
-          <img alt="swiper" src={modalImg4}></img>
-          <div>
-            <img alt="swiper" src={resImg4}></img>
+          <div className="grid__sides__modal container__left__modal">
+          <div className="container--title--iconos--group__modal">
+              <h2>pasajeros</h2>
+              <img className="iconos--group__modal" src={Iconos_gpscontrol} alt="" />
+            </div>
+            <div className="container--white__modal">
+              <p>Creación de pasajeros</p>
+              <p>Monitoreo de ruta</p>
+              <p>Vinculación de pasajero y vehículo</p>
+            </div>
           </div>
-        </SwiperSlide>
-        <SwiperSlide className="swiper_home_slide">
-          <img alt="swiper" src={modalImg5}></img>
-          <div>
-            <img alt="swiper" src={resImg5}></img>
+          <div className="grid__sides__modal container__right__modal"></div>
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div className="container__swiper_home">
+          <div className="grid__sides__modal container__left__modal">
+            <div className="container--title--iconos--group__modal">
+              <h2>estadísticas</h2>
+              <img className="iconos--group__modal" src={Iconos_gpscontrol} alt="" />
+            </div>
+            <div className="container--white__modal">
+              <p>Sistema de control</p>
+              <p>Localización de vehículos</p>
+              <p>Obtención de informes mediante satélite vehicular</p>
+            </div>
           </div>
-        </SwiperSlide>
-      </Swiper>
-    </div>
+          <div className="grid__sides__modal container__right__modal">
+            <div className="container--img--estadisticasCaptura__home">
+            <img src={Estadisticas_captura} alt="" />
+            </div>
+          </div>
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div className="container__swiper_home">
+        <div className="container--img--pasajerosCaptura__home">
+          <img src={Conductores_captura} alt="" />
+          </div>
+          <div className="grid__sides__modal container__left__modal">
+          <div className="container--title--iconos--group__modal">
+              <h2>conductores</h2>
+              <img className="iconos--group__modal" src={Iconos_gpscontrol} alt="" />
+            </div>
+            <div className="container--white__modal">
+              <p>Registro de conductores</p>
+              <p>Comunicación constante</p>
+              <p>Vinculación de conductor y vehículo</p>
+            </div>
+          </div>
+          <div className="grid__sides__modal container__right__modal"></div>
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div className="container__swiper_home">
+          <img className="img--cargaBg__home" src={Carga_bg} alt="" />
+          <div className="grid__sides__modal container__left__modal">
+            <div className="container--title--iconos--group__modal">
+              <h2>carga</h2>
+              <img className="iconos--group__modal" src={Iconos_gpscontrol} alt="" />
+            </div>
+            <div className="container--white__modal">
+              <p>GPS para transporte</p>
+              <p>Monitoreo interno</p>
+              <p>Rastreo localizador de camiones</p>
+            </div>
+          </div>
+          <div className="grid__sides__modal container__right__modal"></div>
+        </div>
+      </SwiperSlide>
+    </Swiper>
   );
 };
 
-export default SwiperHome;
+export default SwiperHome; 

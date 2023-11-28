@@ -1,35 +1,184 @@
-.swiper_home{
-    z-index: 101 !important;
-    top: -10vh;
-    width: 100%;
-    height: 100vh;
+.swiper_home_c {
+    max-width: calc(8.33vw*8);
+    height: calc(5.88vh*11);
+    top: calc(5.88vh*3);
+    display: grid !important;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(11, 1fr);
 }
-.swiper_home_slide>img{
-    width: calc(8.33vw*8);
-    height: calc(5.88vh*10);
+
+.swiper-wrapper {
+    grid-row: 1/12;
+    grid-column: 1/9;
+}
+
+.container__swiper_home {
+    display: grid;
+    justify-items: end;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(11, 1fr);
+    height: 100%;
+}
+
+.container__left__modal {
+    width: calc(8.33vw*4);
+    height: calc(5.88vh*11);
+    background: #ED2F4C;
     mix-blend-mode: multiply;
-    border-radius: 21px;
-    filter: drop-shadow(0px 10px 6px rgba(0, 0, 0, 0.25));
+    grid-row: 1/12;
+    grid-column: 1/5;
+    z-index: 2;
+    border-radius: 15px 0 0 15px;
 }
-.swiper_home_slide>div>img{
-    display: none;
+
+.container__right__modal {
+    width: calc(8.33vw*4);
+    height: calc(5.88vh*11);
+    background: #FFF;
+    grid-row: 1/12;
+    grid-column: 5/9;
+    border-radius: 0 15px 15px 0;
 }
-.swiper_home_slide{
-    margin-top: calc(5.88vh*3);
-    display: flex !important;
+
+.MuiModal-root {
+    background: rgba(30, 140, 147, .2);
+}
+
+.css-i9fmh8-MuiBackdrop-root-MuiModal-backdrop {
+    background-color: transparent !important;
+}
+
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after,
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+    color: white;
+}
+
+.grid__sides__modal {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(11, 1fr);
+}
+
+.swiper-button-prev {
+    grid-row: 10/11;
+    grid-column: 2/3;
+    margin-left: calc(8.33vw*0.25);
+}
+
+.swiper-button-next {
+    grid-row: 10/11;
+    grid-column: 3/4;
+    margin-right: calc(8.33vw*0.25);
+}
+
+.img--flotaVehiculos__home {
+    height: calc(5.88vh*5.7);
+    grid-column: 4/9;
+    grid-row: 6/12;
+    z-index: 1;
+}
+
+.iconos--group__modal {
+    width: calc(8.33vw*2);
+}
+
+.container--white__modal {
+    background-color: #fff;
+    width: calc(8.33vw*3);
+    height: calc(5.88vh*5);
+    grid-row: 4/9;
+    grid-column: 1/5;
+    border-radius: 15px;
+    display: flex;
     flex-direction: column;
     align-items: center;
-
+    gap: 30px;
 }
+
+.container--white__modal>p {
+    color: #6B6B6B;
+    font-family: Bahnschrift;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin: 0;
+}
+
+.container--title--iconos--group__modal {
+    color: #FFF;
+    font-family: Bahnschrift;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-row: 2/4;
+    grid-column: 2/4;
+}
+
+.container--title--iconos--group__modal>h2 {
+    margin: 0;
+}
+
+.img--flota__modal {
+    height: calc(5.88vh*5);
+    grid-row: 2/7;
+    z-index: 1;
+    margin-top: calc(5.88vh*0.5);
+}
+
+.img--botonFlecha__home {
+    grid-column: 2/3;
+    grid-row: 10/11;
+}
+
+.container--img--pasajerosCaptura__home {
+    grid-column: 4/7;
+    grid-row: 8/12;
+    z-index: 5;
+    width: calc(8.33vw*3);
+}
+
+.container--img--pasajerosCaptura__home>img {
+    width: calc(8.33vw*2.5);
+}
+
+.container--img--estadisticasCaptura__home {
+    width: calc(8.33vw*4);
+    display: flex;
+    justify-content: center;
+    grid-column: 1/5;
+    grid-row: 7/11;
+}
+
+.container--img--estadisticasCaptura__home>img {
+    height: auto;
+}
+
+.img--cargaBg__home {
+    position: absolute;
+    height: calc(5.88vh*11);
+    width: 100%;
+}
+
 @media only screen and (max-width: 600px) {
-    .swiper_home_slide>div>img{
+    .swiper_home_slide>div>img {
         display: flex;
         height: calc(5.88vh*11);
         mix-blend-mode: multiply;
         border-radius: 21px;
         filter: drop-shadow(0px 10px 6px rgba(0, 0, 0, 0.25));
     }
-    .swiper_home_slide>img{
+
+    .swiper_home_slide>img {
         display: none;
     }
 }

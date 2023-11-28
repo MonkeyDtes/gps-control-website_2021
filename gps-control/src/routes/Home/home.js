@@ -36,11 +36,30 @@ import P_trama from "../../assets/Home/P_trama.png"
 import ButtonHomeAplicaciones from "../../components/ButtonHomeAplicaciones";
 import Flecha_arriba from "../../components/Flecha_arriba/Flecha_arriba";
 import Flecha_cont_red_abajo from "../../components/Flecha_cont_red_abajo/Flecha_cont_red_abajo";
+import Modal from '@mui/material/Modal';
+import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
 
 export default function Home({ onChangeState }) {
   const [modal, setModal] = useState(false);
   const [modal2, setModal2] = useState(false);
   const [inicialSlide, setInicialSlide] = useState(0);
+  const [open, setOpen] = useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+
+  const style = {
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    width: 400,
+    bgcolor: 'background.paper',
+    border: '2px solid #000',
+    boxShadow: 24,
+    p: 4,
+  };
+
   const ModalClick = (e) => {
     setModal(!modal);
     setInicialSlide(e.currentTarget.value);
@@ -137,18 +156,16 @@ export default function Home({ onChangeState }) {
           <img alt="home Down" className="img--container-f" src={Ip_burburjas1}></img>
         </div>
       </section>
-      {modal ? (
-        <>
-          {" "}
-          <div onClick={ModalClick} className="modal_home"></div>{" "}
-          <div className="modal_home_fade">
-            <SwiperHome incialSlide={inicialSlide}></SwiperHome>
-          </div>
-        </>
-      ) : (
-        <></>
-      )}
+
       <section className="home_section2">
+        <Modal
+          open={open}
+          onClose={handleClose}
+          aria-labelledby="modal-modal-title"
+          aria-describedby="modal-modal-description"
+        >
+          <SwiperHome incial={inicialSlide}></SwiperHome>
+        </Modal>
         <div className="home_column_red">
           <Flecha_arriba></Flecha_arriba>
           <div className="containerimg--burbujas--flechaAbajo2">
@@ -169,23 +186,23 @@ export default function Home({ onChangeState }) {
           <h3>PLATAFORMA para controlar :</h3>
           <div className="home_section2_group">
             <div className="home_section2_body">
-              <button value={0} onClick={(e) => ModalClick(e)}>
+              <button value={0} onClick={handleOpen}>
                 Flota
               </button>
-              <button value={1} onClick={(e) => ModalClick(e)}>
+              <button value={1} onClick={handleOpen}>
                 Conductores
               </button>
             </div>
             <div className="home_section2_body">
-              <button value={2} onClick={(e) => ModalClick(e)}>
+              <button value={2} onClick={handleOpen}>
                 Pasajeros
               </button>
-              <button value={3} onClick={(e) => ModalClick(e)}>
+              <button value={3} onClick={handleOpen}>
                 Carga
               </button>
             </div>
             <div className="home_section2_body">
-              <button value={4} onClick={(e) => ModalClick(e)}>
+              <button value={4} onClick={handleOpen}>
                 Obtener estadísticas e informes
               </button>
             </div>
