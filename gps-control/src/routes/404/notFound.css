@@ -14,6 +14,7 @@
 }
 .notFound_img > img {
   mix-blend-mode: multiply;
+  height: calc(5.88vh*13);
 }
 .notFound_body {
   display: flex;
