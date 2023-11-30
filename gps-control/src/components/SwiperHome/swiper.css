@@ -107,8 +107,8 @@
 
 
 .container--white__modal>p,
-.container--white__modal>.cont--text--container--white__modal__flota>p,
-.container--white__modal__flota>.cont--text--container--white__modal__flota>p {
+.container--white__modal>.cont--text--container--white__modal__flota p,
+.container--white__modal__flota>.cont--text--container--white__modal__flota p {
     color: #6B6B6B;
     font-family: Bahnschrift;
     font-size: 23px;
@@ -123,6 +123,12 @@
     display: flex;
     gap: 15px;
     flex-direction: column;
+}
+
+.cont--text--container--white__modal__flota>div {
+    display: flex;
+    gap: 10px;
+    margin-left: 40px;
 }
 
 .container--title--iconos--group__modal {

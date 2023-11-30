@@ -14,6 +14,7 @@ import Pasajeros_bg from "../../assets/Modales_home/Pasajeros_bg.png";
 import Estadisticas_bg from "../../assets/Modales_home/Estadisticas_bg.png";
 import Conductores_conductor from "../../assets/Modales_home/Conductores_conductor.png";
 import "./swiper.css";
+import Ondas from "../Ondas/Ondas";
 
 function SwiperHome({ incial }) {
   SwiperCore.use([Keyboard, Mousewheel]);
@@ -48,9 +49,19 @@ function SwiperHome({ incial }) {
             </div>
             <div className="container--white__modal__flota">
               <div className="cont--text--container--white__modal__flota">
-                <p>Reporte en tiempo real</p>
-                <p>App móvil</p>
-                <p>Para todo tipo de vehículos</p>
+                {/*animación de ondas */}
+                <div>
+                  <Ondas />
+                  <p>Reporte en tiempo real</p>
+                </div>
+                <div>
+                  <Ondas />
+                  <p>App móvil</p>
+                </div>
+                <div>
+                  <Ondas />
+                  <p>Para todo tipo de vehículos</p>
+                </div>
               </div>
             </div>
           </div>
@@ -73,9 +84,19 @@ function SwiperHome({ incial }) {
           </div>
           <div className="container--white__modal">
             <div className="cont--text--container--white__modal__flota">
-              <p>Creación de pasajeros</p>
-              <p>Monitoreo de ruta</p>
-              <p>Vinculación de pasajero y vehículo</p>
+              {/*animación de ondas */}
+              <div>
+                  <Ondas />
+                  <p>Creación de pasajeros</p>
+                </div>
+                <div>
+                  <Ondas />
+                  <p>Monitoreo de ruta</p>
+                </div>
+                <div>
+                  <Ondas />
+                  <p>Vinculación de pasajero y vehículo</p>
+                </div>
             </div>
           </div>
           <div className="cont--img--cargaBg__home">
@@ -96,9 +117,19 @@ function SwiperHome({ incial }) {
           </div>
           <div className="container--white__modal">
             <div className="cont--text--container--white__modal__flota">
-              <p>Sistema de control</p>
-              <p>Localización de vehículos</p>
-              <p>Obtención de informes mediante satélite vehicular</p>
+               {/*animación de ondas */}
+               <div>
+                  <Ondas />
+                  <p>Sistema de control</p>
+                </div>
+                <div>
+                  <Ondas />
+                  <p>Localización de vehículos</p>
+                </div>
+                <div>
+                  <Ondas />
+                  <p>Obtención de informes mediante satélite vehicular</p>
+                </div>
             </div>
           </div>
           <div className="cont--img--cargaBg__home">
@@ -126,9 +157,19 @@ function SwiperHome({ incial }) {
           </div>
           <div className="container--white__modal">
             <div className="cont--text--container--white__modal__flota">
-              <p>Registro de conductores</p>
-              <p>Comunicación constante</p>
-              <p>Vinculación de conductor y vehículo</p>
+              {/*animación de ondas */}
+              <div>
+                  <Ondas />
+                  <p>Registro de conductores</p>
+                </div>
+                <div>
+                  <Ondas />
+                  <p>Comunicación constante</p>
+                </div>
+                <div>
+                  <Ondas />
+                  <p>Vinculación de conductor y vehículo</p>
+                </div>
             </div>
           </div>
           <div className="cont--img--cargaBg__home">
@@ -149,9 +190,19 @@ function SwiperHome({ incial }) {
           </div>
           <div className="container--white__modal">
             <div className="cont--text--container--white__modal__flota">
-              <p>GPS para transporte</p>
-              <p>Monitoreo interno</p>
-              <p>Rastreo localizador de camiones</p>
+              {/*animación de ondas */}
+              <div>
+                  <Ondas />
+                  <p>GPS para transporte</p>
+                </div>
+                <div>
+                  <Ondas />
+                  <p>Monitoreo interno</p>
+                </div>
+                <div>
+                  <Ondas />
+                  <p>Rastreo localizador de camiones</p>
+                </div>
             </div>
           </div>
           <div className="cont--img--cargaBg__home">
