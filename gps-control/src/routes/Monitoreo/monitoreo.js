@@ -8,13 +8,35 @@ import YoutubeEmbed from "../../components/youtubeVideos/index";
 import SwiperPromo from "../../components/SwiperPromo";
 import { useState } from "react";
 import Camion from "../../components/camion/index";
+import Modal from '@mui/material/Modal';
+import SwiperHome from "../../components/SwiperHome/index";
 
 export default function Monitoreo() {
-  const [modal, setModal] = useState(false)
-  const [inicialSlide, setInicialSlide] = useState(false)
+  const [modal, setModal] = useState(false);
+  const [modal2, setModal2] = useState(false);
+  const [inicialSlide, setInicialSlide] = useState(0);
+  const [open, setOpen] = useState(false);
+  const [openTwo, setOpenTwo] = useState(false);
+  const handleOpen = (value, setState) => {
+    setInicialSlide(value);
+    setState(true);
+  };
+  const handleClose = (setState) => setState(false);
+
+  const style = {
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    width: 400,
+    bgcolor: 'background.paper',
+    border: '2px solid #000',
+    boxShadow: 24,
+    p: 4,
+  };
 
   const ModalClick = (e) => {
-    setModal(!modal)
+    setModal(!modal);
     setInicialSlide(e.currentTarget.value);
     const body = document.getElementsByTagName("body");
     if (modal === false) {
@@ -22,7 +44,30 @@ export default function Monitoreo() {
     } else {
       body[0].style.overflow = "auto";
     }
-  }
+  };
+  const ModalClick2 = (e) => {
+    setModal2(!modal2);
+    setInicialSlide(e.currentTarget.value);
+    const body = document.getElementsByTagName("body");
+    if (modal2 === false) {
+      body[0].style.overflow = "hidden";
+    } else {
+      body[0].style.overflow = "auto";
+    }
+  };
+  // const [modal, setModal] = useState(false)
+  // const [inicialSlide, setInicialSlide] = useState(false)
+
+  // const ModalClick = (e) => {
+  //   setModal(!modal)
+  //   setInicialSlide(e.currentTarget.value);
+  //   const body = document.getElementsByTagName("body");
+  //   if (modal === false) {
+  //     body[0].style.overflow = "hidden";
+  //   } else {
+  //     body[0].style.overflow = "auto";
+  //   }
+  // }
   return (
     <div>
       <NavbarGPS
@@ -49,7 +94,15 @@ export default function Monitoreo() {
         </div>
       </section>
       <section className="plataforma_section1">
-        {modal ? (
+        <Modal
+          open={open}
+          onClose={() => handleClose(setOpen)}
+          aria-labelledby="modal-modal-title"
+          aria-describedby="modal-modal-description"
+        >
+          <SwiperHome incial={inicialSlide}></SwiperHome>
+        </Modal>
+        {/* {modal ? (
           <>
             <div onClick={ModalClick} className="modal_home"></div>
             <div className="modal_home_fade">
@@ -61,34 +114,55 @@ export default function Monitoreo() {
           </>
         ) : (
           <></>
-        )}
+        )} */}
         <div className="plataforma_section1_header">
           <div className="plataforma_sectionq_body_text_a1">
-            <button value={0} onClick={(e) => ModalClick(e)}>MANTENIMIENTO PREVENTIVO Y CORRECTIVO</button>
+            <button onClick={() => handleOpen(0, setOpen)}>
+              MANTENIMIENTO PREVENTIVO Y CORRECTIVO
+            </button>
+            {/* <button value={0} onClick={(e) => ModalClick(e)}>MANTENIMIENTO PREVENTIVO Y CORRECTIVO</button> */}
           </div>
           <div className="plataforma_sectionq_body_text_a1">
-            <button value={1} onClick={(e) => ModalClick(e)}>CONTROL Y CALIFICACIÓN DE CONDUCTORES</button>
+            <button onClick={() => handleOpen(3, setOpen)}>
+              CONTROL Y CALIFICACIÓN DE CONDUCTORES
+            </button>
+            {/* <button value={1} onClick={(e) => ModalClick(e)}>CONTROL Y CALIFICACIÓN DE CONDUCTORES</button> */}
           </div>
         </div>
         <div className="plataforma_section1_body">
           <div className="plataforma_section1_body_text">
             <div className="plataforma_sectionq_body_text_a2">
-              <button value={2} onClick={(e) => ModalClick(e)}>APAGADO REMOTO</button>
+              <button onClick={() => handleOpen(2, setOpen)}>
+                APAGADO REMOTO
+              </button>
+              {/* <button value={2} onClick={(e) => ModalClick(e)}>APAGADO REMOTO</button> */}
             </div>
             <div className="plataforma_sectionq_body_text_a2">
-              <button value={3} onClick={(e) => ModalClick(e)}>INFORMES A LA MEDIDA</button>
+              <button onClick={() => handleOpen(2, setOpen)}>
+                INFORMES A LA MEDIDA
+              </button>
+              {/* <button value={3} onClick={(e) => ModalClick(e)}>INFORMES A LA MEDIDA</button> */}
             </div>
           </div>
           <img alt="pantallas plataforma" src={PlataformaPantallas}></img>
           <div className="plataforma_section1_body_text">
             <div className="plataforma_sectionq_body_text_a">
-              <button value={4} onClick={(e) => ModalClick(e)}>GEOCERCAS</button>
+              <button onClick={() => handleOpen(2, setOpen)}>
+                GEOCERCAS
+              </button>
+              {/* <button value={4} onClick={(e) => ModalClick(e)}>GEOCERCAS</button> */}
             </div>
             <div className="plataforma_sectionq_body_text_a">
-              <button value={5} onClick={(e) => ModalClick(e)}>APLICACIÓN MÓVIL</button>
+              <button onClick={() => handleOpen(2, setOpen)}>
+                APLICACIÓN MÓVIL
+              </button>
+              {/* <button value={5} onClick={(e) => ModalClick(e)}>APLICACIÓN MÓVIL</button> */}
             </div>
             <div className="plataforma_sectionq_body_text_a">
-              <button value={6} onClick={(e) => ModalClick(e)}>PRE ALISTAMIENTO</button>
+              <button onClick={() => handleOpen(2, setOpen)}>
+                PRE ALISTAMIENTO
+              </button>
+              {/* <button value={6} onClick={(e) => ModalClick(e)}>PRE ALISTAMIENTO</button> */}
             </div>
           </div>
         </div>

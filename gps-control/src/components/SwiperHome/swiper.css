@@ -88,7 +88,7 @@
 .container--white__modal,
 .container--white__modal__flota {
     background-color: #fff;
-    width: calc(8.33vw*3);
+    width: calc(8.33vw*2.8);
     height: calc(5.88vh*5);
     grid-row: 4/9;
     grid-column: 1/5;
@@ -108,14 +108,24 @@
 
 .container--white__modal>p,
 .container--white__modal>.cont--text--container--white__modal__flota p,
-.container--white__modal__flota>.cont--text--container--white__modal__flota p {
+.container--white__modal__flota>.cont--text--container--white__modal__flota p,
+.cont--text--container--white__modal__accidentes p {
     color: #6B6B6B;
     font-family: Bahnschrift;
-    font-size: 23px;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
     margin: 0;
+}
+
+.container--white__modal>p,
+.container--white__modal>.cont--text--container--white__modal__flota p,
+.container--white__modal__flota>.cont--text--container--white__modal__flota p {
+    font-size: 21px;
+}
+
+.cont--text--container--white__modal__accidentes p {
+    font-size: 19px;
 }
 
 .cont--text--container--white__modal__flota {
@@ -128,7 +138,7 @@
 .cont--text--container--white__modal__flota>div {
     display: flex;
     gap: 10px;
-    margin-left: 40px;
+    margin: 0 14px 0 40px;
 }
 
 .container--title--iconos--group__modal {

@@ -5,6 +5,7 @@
     grid-template-rows: 1fr;
     align-items: center;
     justify-items: center;
+    min-width: 23px;
 }
 
 .border__ondas {

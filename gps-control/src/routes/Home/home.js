@@ -45,8 +45,12 @@ export default function Home({ onChangeState }) {
   const [modal2, setModal2] = useState(false);
   const [inicialSlide, setInicialSlide] = useState(0);
   const [open, setOpen] = useState(false);
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
+  const [openTwo, setOpenTwo] = useState(false);
+  const handleOpen = (value, setState) => {
+    setInicialSlide(value);
+    setState(true);
+  };
+  const handleClose = (setState) => setState(false);
 
   const style = {
     position: 'absolute',
@@ -160,7 +164,7 @@ export default function Home({ onChangeState }) {
       <section className="home_section2">
         <Modal
           open={open}
-          onClose={handleClose}
+          onClose={()=>handleClose(setOpen)}
           aria-labelledby="modal-modal-title"
           aria-describedby="modal-modal-description"
         >
@@ -186,23 +190,23 @@ export default function Home({ onChangeState }) {
           <h3>PLATAFORMA para controlar :</h3>
           <div className="home_section2_group">
             <div className="home_section2_body">
-              <button value={0} onClick={handleOpen}>
+              <button onClick={()=>handleOpen(0, setOpen)}>
                 Flota
               </button>
-              <button value={1} onClick={handleOpen}>
+              <button onClick={()=>handleOpen(3, setOpen)}>
                 Conductores
               </button>
             </div>
             <div className="home_section2_body">
-              <button value={2} onClick={handleOpen}>
+              <button onClick={()=>handleOpen(1, setOpen)}>
                 Pasajeros
               </button>
-              <button value={3} onClick={handleOpen}>
+              <button onClick={()=>handleOpen(4, setOpen)}>
                 Carga
               </button>
             </div>
             <div className="home_section2_body">
-              <button value={4} onClick={handleOpen}>
+              <button onClick={()=>handleOpen(2, setOpen)}>
                 Obtener estadísticas e informes
               </button>
             </div>
@@ -247,16 +251,14 @@ export default function Home({ onChangeState }) {
         </div>
       </section>
       <section className="home_section2">
-        {modal2 ? (
-          <>
-            <div onClick={ModalClick2} className="modal_home"></div>{" "}
-            <div className="modal_home_fade">
-              <SwiperHomeSecond incialSlide={inicialSlide}></SwiperHomeSecond>
-            </div>
-          </>
-        ) : (
-          <></>
-        )}
+        <Modal
+          open={openTwo}
+          onClose={()=>handleClose(setOpenTwo)}
+          aria-labelledby="modal-modal-title"
+          aria-describedby="modal-modal-description"
+        >
+          <SwiperHomeSecond incial={inicialSlide}></SwiperHomeSecond>
+        </Modal>
         <div className="home_column_red">
           <Flecha_arriba></Flecha_arriba>
           <div className="containerimg--burbujas--flechaAbajo2">
@@ -275,17 +277,17 @@ export default function Home({ onChangeState }) {
           <img alt="nube icon" className="iconNube" src={VectorNube2}></img>
           <div className="home_section4_group">
             <div className="home_section2_body">
-              <button value={0} onClick={(e) => ModalClick2(e)}>
+              <button onClick={()=>handleOpen(0, setOpenTwo)}>
                 Evitar accidentes
               </button>
             </div>
             <div className="home_section2_body">
-              <button value={1} onClick={(e) => ModalClick2(e)}>
+              <button onClick={()=>handleOpen(1, setOpenTwo)}>
                 Registrar lo que ocurre al interior del móvil en tiempo real
               </button>
             </div>
             <div className="home_section2_body">
-              <button value={2} onClick={(e) => ModalClick2(e)}>
+              <button onClick={()=>handleOpen(2, setOpenTwo)}>
                 Controlar el comportamiento de los conductores
               </button>
             </div>
