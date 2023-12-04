@@ -26,14 +26,45 @@ import GeocercasResponsive from "../../assets/Geocercas-responsive.png";
 import InformesResponsive from "../../assets/Informes-responsive.png";
 import iconoApps3 from "../../assets/iconoApps3.svg";
 import iconoApps5 from "../../assets/iconoApps5.svg";
+import Modalplataforma_fleetrun from "../../assets/Modales_plataforma/Modalplataforma_fleetrun.mp4";
+import Camion from "../camion";
+import Ondas from "../Ondas/Ondas";
+import Modales_plataforma from "../Modales_plataforma/Modales_plataforma";
 
 const SwiperPromo = (e) => {
   SwiperCore.use([Keyboard, Mousewheel]);
   const [inicialSlide, setInicialSlide] = useState(e.incialSlide);
   const swiperRef = useRef(null);
+  const [dataB,setDataB] = useState([
+    {
+      imgCenter: iconoApps3,
+      textRed: "Programa servicios técnicos y lleva trazabilidad sobre el mantenimiento de la flota:",
+      videoRed: Modalplataforma_fleetrun,
+      textWhite: ["Notificaciones", "Control especifico de cada unidad"]
+    },
+    {
+      imgCenter: iconoApps3,
+      textRed: "Programa servicios técnicos y lleva trazabilidad sobre el mantenimiento de la flota:",
+      videoRed: Modalplataforma_fleetrun,
+      textWhite: ["Notificaciones", "Control especifico de cada unidad"]
+    },
+    {
+      imgCenter: iconoApps3,
+      textRed: "Programa servicios técnicos y lleva trazabilidad sobre el mantenimiento de la flota:",
+      videoRed: Modalplataforma_fleetrun,
+      textWhite: ["Notificaciones", "Control especifico de cada unidad"]
+    },
+    {
+      imgCenter: iconoApps3,
+      textRed: "Programa servicios técnicos y lleva trazabilidad sobre el mantenimiento de la flota:",
+      videoRed: Modalplataforma_fleetrun,
+      textWhite: ["Notificaciones", "Control especifico de cada unidad"]
+    }
+  ])
   useEffect(() => {
     setInicialSlide(e.incialSlide);
-  }, [e.incialSlide]);
+  }, [e.incialSlide]); 
+
   return (
     <div
       style={{
@@ -52,30 +83,19 @@ const SwiperPromo = (e) => {
         loop={true}
         className="swiper_home_m"
       >
-        <SwiperSlide className="content__swiper">
-          <div className="swiper_promo_slide">
-            <div className="swiper_promo_slide_red">
-              {/* <img alt="fleet img" src={FleetImg}></img> */}
-              {/* <p className="hr-c"><hr /></p> */}
-              <p className="text--slideWhite__home">Programa servicios técnicos y lleva trazabilidad sobre el mantenimiento de la flota:</p>
-              <img src={iconoApps3} alt="" />
-            </div>
-            <div className="swiper_promo_slide_white">
-              <div className="content--slideRed__monitoreo">
-                <p>Notificaciones</p>
-                <p>Control especifico de cada unidad</p>
-              </div>
-            </div>
-          </div>
-          {/* <img alt="responsive" src={FleetResponsive}></img> */}
-        </SwiperSlide>
-        <SwiperSlide className="swiper_promo_slide">
+        {dataB.map((obj) => {
+          return <SwiperSlide className="content__swiper">
+            <Modales_plataforma data={obj} />
+            {/* <img alt="responsive" src={FleetResponsive}></img> */}
+          </SwiperSlide>
+        })}
+        {/* <SwiperSlide className="swiper_promo_slide">
           <div className="swiper_promo_slide_white">
             <img alt="fleet img" src={EcoImg}></img>
             <img src={iconoApps5} alt="" />
           </div>
           <div className="swiper_promo_slide_red">
-            {/* <img alt="fleet text" src={EcoText}></img> */}
+            
             <div className="content--slideRed__monitoreo">
               <p>Consumo de combustible</p>
               <p>Chat con el conductor</p>
@@ -88,7 +108,7 @@ const SwiperPromo = (e) => {
             <img alt="fleet img" src={EnlistImg}></img>
           </div>
           <div className="swiper_promo_slide_red">
-            {/* <img alt="fleet text" src={EnlistText}></img> */}
+            
             <div className="content--slideRed__monitoreo">
               <p>Exportar datos</p>
               <p>App móvil y web</p>
@@ -102,7 +122,7 @@ const SwiperPromo = (e) => {
             <img alt="fleet img" src={PlataformaImg}></img>
           </div>
           <div className="swiper_promo_slide_red">
-            {/* <img alt="fleet text" src={PlataformaText}></img> */}
+           
             <div className="content--slideRed__monitoreo">
               <p>Datos de la plataforma</p>
               <p>Diseño  familiar en la
@@ -116,7 +136,7 @@ const SwiperPromo = (e) => {
             <img alt="fleet img" src={GeocercasImg}></img>
           </div>
           <div className="swiper_promo_slide_red">
-            {/* <img alt="fleet text" src={GeocercasText}></img> */}
+            
             <div className="content--slideRed__monitoreo">
               <p>Tecnología geográfica</p>
               <p>Posibilidad de agrupar
@@ -142,7 +162,7 @@ const SwiperPromo = (e) => {
             <img alt="fleet text" src={InformesText}></img>
           </div>
           <img alt="responsive" src={InformesResponsive}></img>
-        </SwiperSlide>
+        </SwiperSlide> */}
       </Swiper>
     </div>
   );
