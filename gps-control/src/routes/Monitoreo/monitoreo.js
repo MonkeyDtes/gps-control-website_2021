@@ -23,18 +23,6 @@ export default function Monitoreo() {
   };
   const handleClose = (setState) => setState(false);
 
-  const style = {
-    position: 'absolute',
-    top: '50%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)',
-    width: 400,
-    bgcolor: 'background.paper',
-    border: '2px solid #000',
-    boxShadow: 24,
-    p: 4,
-  };
-
   const ModalClick = (e) => {
     setModal(!modal);
     setInicialSlide(e.currentTarget.value);
@@ -100,7 +88,7 @@ export default function Monitoreo() {
           aria-labelledby="modal-modal-title"
           aria-describedby="modal-modal-description"
         >
-          <SwiperHome incial={inicialSlide}></SwiperHome>
+          <SwiperPromo incialSlide={inicialSlide}></SwiperPromo>
         </Modal>
         {/* {modal ? (
           <>

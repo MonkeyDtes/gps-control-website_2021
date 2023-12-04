@@ -1,7 +1,6 @@
 .swiper_home_c {
     max-width: calc(8.33vw*8);
     height: calc(5.88vh*11);
-    top: calc(5.88vh*3);
     display: grid !important;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(11, 1fr);

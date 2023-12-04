@@ -50,19 +50,21 @@ const SwiperPromo = (e) => {
         mousewheel={true}
         ref={swiperRef}
         loop={true}
-        className="swiper_home"
+        className="swiper_home_m"
       >
-        <SwiperSlide className="swiper_promo_slide">
-          <div className="swiper_promo_slide_white">
-            {/* <img alt="fleet img" src={FleetImg}></img> */}
-            {/* <p className="hr-c"><hr /></p> */}
-            <p className="text--slideWhite__home">Programa servicios técnicos y lleva trazabilidad sobre el mantenimiento de la flota:</p>
-            <img src={iconoApps3} alt="" />
-          </div>
-          <div className="swiper_promo_slide_red">
-            <div className="content--slideRed__monitoreo">
-              <p>Notificaciones</p>
-              <p>Control especifico de cada unidad</p>
+        <SwiperSlide className="content__swiper">
+          <div className="swiper_promo_slide">
+            <div className="swiper_promo_slide_red">
+              {/* <img alt="fleet img" src={FleetImg}></img> */}
+              {/* <p className="hr-c"><hr /></p> */}
+              <p className="text--slideWhite__home">Programa servicios técnicos y lleva trazabilidad sobre el mantenimiento de la flota:</p>
+              <img src={iconoApps3} alt="" />
+            </div>
+            <div className="swiper_promo_slide_white">
+              <div className="content--slideRed__monitoreo">
+                <p>Notificaciones</p>
+                <p>Control especifico de cada unidad</p>
+              </div>
             </div>
           </div>
           {/* <img alt="responsive" src={FleetResponsive}></img> */}
