@@ -1,0 +1,11 @@
+.display--none {
+    display: none;
+}
+
+.imgRed__modal {
+    display: flex;
+    justify-content: center;
+    width: calc(8.33vw*3);
+    grid-row: 6/11;
+    grid-column: 1/5;
+}

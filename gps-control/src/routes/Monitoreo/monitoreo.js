@@ -1,6 +1,7 @@
 import NavbarGPS from "../../components/NavbarGPS";
 import "./monitoreo.css";
 import PlataformaPantallas from "../../assets/PlataformaPantallas.png";
+import Pl_pantallas from "../../assets/Assets1/Plataforma de monitoreo/Pl_pantallas.png";
 import GifGPS from "../../components/gifGPS/index";
 import Leads from "../../components/Leads/index";
 import Footer from "../../components/Footer/index";
@@ -132,7 +133,7 @@ export default function Monitoreo() {
               {/* <button value={3} onClick={(e) => ModalClick(e)}>INFORMES A LA MEDIDA</button> */}
             </div>
           </div>
-          <img alt="pantallas plataforma" src={PlataformaPantallas}></img>
+          <img className="img__pantallas" alt="pantallas plataforma" src={Pl_pantallas}></img>
           <div className="plataforma_section1_body_text">
             <div className="plataforma_sectionq_body_text_a">
               <button onClick={() => handleOpen(2, setOpen)}>

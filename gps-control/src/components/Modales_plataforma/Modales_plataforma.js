@@ -4,24 +4,28 @@ import Modalplataforma_fleetrun from "../../assets/Modales_plataforma/Modalplata
 import Camion from "../camion";
 import Ondas from "../Ondas/Ondas";
 import { useEffect } from "react";
+import "./Modales_plataforma.css"
 
-function Modales_plataforma({data}) {
-    console.log(data);
-    console.log(data.textWhite);
-    const [dataA,setDataA] = useState(data);
-    useEffect(()=>{
+function Modales_plataforma({ data }) {
+    const [dataA, setDataA] = useState(data);
+    useEffect(() => {
         setDataA(data);
-    },[data])
+    }, [data])
     return <div className="swiper_promo_slide">
-        <div className="container__img__swiper">
-            <img className="grid__container__img__swiper" src={dataA.imgCenter} alt="" />
+        <div className="content__hr">
+            <p className="hr-c"><hr /></p>
         </div>
+        {dataA.imgCenter ?
+            <div className="container__img__swiper">
+                <img className="grid__container__img__swiper" src={dataA.imgCenter} alt="" />
+            </div> : ''
+        }
         <div className="swiper_promo_slide_red">
-            {/* <img alt="fleet img" src={FleetImg}></img> */}
-            {/* <p className="hr-c"><hr /></p> */}
-            <p className="text--slideWhite__home">{dataA.textRed}</p>
-            <div className="cont__video__modal">
-                <video autoPlay loop className="video__modal" src={dataA.videoRed}></video>
+            <p className={dataA.videoRed || dataA.imgRed ? "text--slideWhite__home" : "text--slideWhite__home_big"}>{dataA.textRed}</p>
+            
+            <div className={dataA.videoRed || dataA.imgRed ? "cont__video__modal" : "display--none"}>
+                {dataA.videoRed ? <video autoPlay loop className="video__modal" src={dataA.videoRed}></video>:""}
+                {dataA.imgRed ? <img className="imgRed__modal" src={dataA.imgRed}/>:""}
             </div>
         </div>
         <div className="swiper_promo_slide_white">

@@ -993,7 +993,7 @@
   position: relative;
   justify-content: flex-end;
   z-index: 1;
-  margin: 10px 45px
+  margin-right: 45px; 
 }
 
 .monitoreo_buttons>button {
