@@ -29,6 +29,7 @@ import SwiperHome from "../../components/SwiperHome/index";
 import SwiperHomeSecond from "../../components/SwiperHomeSecond/index";
 import P_bgcomposicion from "../../assets/Home/P_bgcomposicion.png"
 import P_caminones from "../../assets/Home/P_caminones.png"
+import containerF__responsive from "../../assets/containerF__responsive.png"
 import P_beyond from "../../assets/Home/P_beyond.png"
 import P_control from "../../assets/Home/P_control.png"
 import Ip_flechas1 from "../../assets/Componentes/Iconos_pantalla/Ip_flechas1.svg"
@@ -158,6 +159,7 @@ export default function Home({ onChangeState }) {
         <div className="container-f">
           <img alt="home Down" className="img-flecha" src={Ip_flechas1}></img>
           <img alt="home Down" className="img--container-f" src={Ip_burburjas1}></img>
+          <img alt="home Down" className="img--container-f__responsive" src={containerF__responsive}></img>
         </div>
       </section>
 
