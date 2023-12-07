@@ -28,6 +28,7 @@ import { history } from "../../components/History";
 import SwiperHome from "../../components/SwiperHome/index";
 import SwiperHomeSecond from "../../components/SwiperHomeSecond/index";
 import P_bgcomposicion from "../../assets/Home/P_bgcomposicion.png"
+import P_bgcomposicion_mobile from "../../assets/Home/P_bgcomposicion_mobile.png"
 import P_caminones from "../../assets/Home/P_caminones.png"
 import containerF__responsive from "../../assets/containerF__responsive.png"
 import P_beyond from "../../assets/Home/P_beyond.png"
@@ -133,6 +134,7 @@ export default function Home({ onChangeState }) {
         <div className="subContainer1--portada___home">
           <div className="contentSubContainer1--portada___home">
             <img className="img--mapa__portadaHome" src={P_bgcomposicion}></img>
+            <img className="img--mapa__portadaHome_mobile" src={P_bgcomposicion_mobile}></img>
           </div>
         </div>
         <div className="subContainer2--portada___home">

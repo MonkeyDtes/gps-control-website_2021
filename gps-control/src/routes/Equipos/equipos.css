@@ -1324,27 +1324,6 @@
   z-index: 100;
 }
 
-.cont--red--flecha,
-.cont--red--flecha__arriba {
-  background-color: #ED2F4C;
-  display: flex;
-  justify-content: center;
-  width: calc(8.33vw*1.94);
-  height: calc(5.88vh*3);
-}
-
-.cont--red--flecha__arriba {
-  rotate: 180deg;
-}
-
-.cont--red--flecha .img--burbujas--flechaAbajo,
-.cont--red--flecha__arriba .img--burbujas--flechaAbajo {
-  max-height: 100vh;
-  width: 100%;
-  height: calc(5.88vh*3);
-  position: absolute;
-}
-
 .img--flecha--flechaAbajo {
   height: calc(5.88vh*1);
   margin-top: calc(5.88vh*1);

@@ -1,0 +1,9 @@
+@media screen and (max-width: 768px) {
+    .cont--red--flecha {
+        display: grid;
+        justify-items: center;
+    }
+    .img--flecha--flechaAbajo{
+        margin-top: 0;
+    }
+}

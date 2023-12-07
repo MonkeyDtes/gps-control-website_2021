@@ -2,3 +2,51 @@
  grid-column: 3/5;
  grid-row: 1/4;
 }
+
+.img--burbujas--flechaAbajo_mobile {
+    display: none;
+}
+
+.cont--red--flecha,
+.cont--red--flecha__arriba {
+  background-color: #ED2F4C;
+  display: flex;
+  justify-content: center;
+  width: calc(8.33vw*1.94);
+  height: calc(5.88vh*3);
+}
+
+.cont--red--flecha__arriba {
+  rotate: 180deg;
+}
+
+.cont--red--flecha .img--burbujas--flechaAbajo,
+.cont--red--flecha__arriba .img--burbujas--flechaAbajo {
+  max-height: 100vh;
+  width: 100%;
+  height: calc(5.88vh*3);
+  position: absolute;
+}
+
+@media screen and (max-width: 768px) {
+    .img--burbujas--flechaAbajo {
+        display: none;
+    }
+    .img--burbujas--flechaAbajo_mobile {
+        display: block;
+        grid-column: 1/3;
+        grid-row: 1/8;
+        max-width: calc(8.33vw*2);
+        transform: rotate(180deg);
+    }
+    .img--flecha--flechaAbajo {
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+    .cont--red--flecha__arriba {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(7, 1fr);
+        justify-items: center;
+    }
+}
