@@ -193,7 +193,7 @@ export default function Home({ onChangeState }) {
           <img alt="home Down" className="iconHerramienta" src={VectorPalabra}></img>
           <h3>PLATAFORMA para controlar :</h3>
           <div className="home_section2_group">
-            <div className="home_section2_body">
+            <div className="home_section2_body home_section2_body_one">
               <button onClick={()=>handleOpen(0, setOpen)}>
                 Flota
               </button>
@@ -201,7 +201,7 @@ export default function Home({ onChangeState }) {
                 Conductores
               </button>
             </div>
-            <div className="home_section2_body">
+            <div className="home_section2_body home_section2_body_two">
               <button onClick={()=>handleOpen(1, setOpen)}>
                 Pasajeros
               </button>
@@ -209,7 +209,7 @@ export default function Home({ onChangeState }) {
                 Carga
               </button>
             </div>
-            <div className="home_section2_body">
+            <div className="home_section2_body home_section2_body_tree">
               <button onClick={()=>handleOpen(2, setOpen)}>
                 Obtener estadísticas e informes
               </button>
@@ -273,24 +273,24 @@ export default function Home({ onChangeState }) {
           <div className="home_section2_wifiIcon">
           </div>
           <h1 className="text--herramienta__home">VIDEO VIGILANCIA</h1>
-          <div className="main_box">
+          <div className="main_box main_box__video_vigilancia">
             <div className="home_section2_label">
               <h2><img alt="nube icon" className="iconNube1" src={VectorNube}></img>Vehicular</h2>
             </div>
           </div>
           <img alt="nube icon" className="iconNube" src={VectorNube2}></img>
           <div className="home_section4_group">
-            <div className="home_section2_body">
+            <div className="home_section2_body home_section2_body_vo">
               <button onClick={()=>handleOpen(0, setOpenTwo)}>
                 Evitar accidentes
               </button>
             </div>
-            <div className="home_section2_body">
+            <div className="home_section2_body home_section2_body_vt">
               <button onClick={()=>handleOpen(1, setOpenTwo)}>
                 Registrar lo que ocurre al interior del móvil en tiempo real
               </button>
             </div>
-            <div className="home_section2_body">
+            <div className="home_section2_body home_section2_body_vtr">
               <button onClick={()=>handleOpen(2, setOpenTwo)}>
                 Controlar el comportamiento de los conductores
               </button>
@@ -299,9 +299,9 @@ export default function Home({ onChangeState }) {
           </div>
         </div>
         <div className="home_section2_carretera">
-          <img alt="pantallas" src={vigilanciaHome}></img>
+          <img alt="pantallas" className="carreteras_h" src={vigilanciaHome}></img>
         </div>
-        <div className="home_section2_camara">
+        <div className="home_section2_camara camera_h">
           <img alt="pantallas" src={camHome}></img>
         </div>
       </section>

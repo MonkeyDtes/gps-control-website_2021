@@ -1,0 +1,9 @@
+@media screen and (max-width: 768px) {
+.buttonsCotizar {
+    margin: 0;
+  }
+.textCotice {
+  font-size: calc(2.94vh*0.5) !important;
+  margin: 0 !important;
+}
+}
