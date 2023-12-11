@@ -302,14 +302,15 @@ textarea {
     height: 170vh;
   }
 
+  /* 
   .leads_page_form_start_control {
     margin-left: calc(8.33vw*2);
 
-  }
+  } */
 
-  .leads_page_form_start_control:nth-child(5) {
+  /* .leads_page_form_start_control:nth-child(5) {
     margin-left: calc(8.33vw * 2.2);
-  }
+  } */
 
   .leads_page_form_start>h6 {
     width: calc(8.33vw * 8);
@@ -347,10 +348,6 @@ textarea {
     height: 0vh;
     width: 0vw;
     margin: 0vh;
-  }
-
-  .leads_buttons {
-    margin-left: 0vw;
   }
 
   .leads_buttons>button {
@@ -461,6 +458,14 @@ textarea {
   margin-bottom: calc(5.88vh*1);
 }
 
+.icons--form__white {
+  display: none;
+}
+
+.text--movile__form {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
   .container--form {
     height: 100vh;
@@ -476,7 +481,7 @@ textarea {
 
   .container--icons__form {
     grid-row: 5/6;
-    grid-column: 3/11;
+    grid-column: 4/10;
     z-index: 20;
     width: calc(8.33vw*6);
   }
@@ -517,6 +522,13 @@ textarea {
 
   .leads_buttons>button {
     width: calc(8.33vw*3.8);
+    height: calc(2.94vh*1.5);
+  }
+
+  .leads_page_form_start_control {
+    justify-content: center;
+    margin-bottom: calc(2.94vh*1);
+    margin-left: 0;
   }
 
   .leads_page_form_start_control>label>input {
@@ -532,6 +544,86 @@ textarea {
 
   .plataforma_sectionq_body_text_a3>div {
     font-size: 14px;
+  }
+
+  /*container left*/
+  .content--formLeft {
+    grid-column: 1/13;
+    grid-row: 1/20;
+    max-height: calc(2.94vh*20);
+  }
+
+  .copntent--formRight {
+    z-index: 1;
+    grid-column: 1/13;
+    grid-row: 20/30;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-height: calc(2.94vh*15);
+    align-items: center;
+  }
+
+  .cont--text {
+    margin-top: calc(2.94vh*3);
+    display: flex;
+    justify-content: center;
+  }
+
+  .leads_page_form_end>label>textarea,
+  .leads_page_form_end {
+    margin: 0;
+  }
+
+  .leads_page_form_end {
+    margin: 0;
+  }
+
+  .content--text__form {
+    display: none;
+  }
+
+  .leads_page_form {
+    margin-top: calc(2.94vh * 3);
+  }
+
+  .leads_buttons>button {
+    margin-bottom: calc(2.94vh*1);
+  }
+
+  input .input__company {
+    margin-left: 0;
+    background-color: red;
+  }
+
+  .leads_page_form_start_control>img {
+    width: 7vw;
+  }
+
+  .icons--form__white {
+    width: calc(8.33vw*7);
+  }
+
+  .icons--form__white {
+    display: block;
+  }
+
+  /*container left*/
+
+  .container--text--mobile__form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .text--mobile__form {
+    display: block;
+    color: #FFF;
+    font-family: Bahnschrift;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
   }
 
 }

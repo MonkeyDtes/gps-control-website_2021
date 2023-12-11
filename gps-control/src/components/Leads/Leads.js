@@ -1,4 +1,5 @@
 import iconosGroup from "../../assets/iconosGroup.svg";
+import iconsWhite from "../../assets/iconsWhite.svg";
 import Leads1 from "../../assets/Leads1.svg";
 import Leads2 from "../../assets/Leads2.svg";
 import Leads3 from "../../assets/Leads3.svg";
@@ -58,6 +59,7 @@ export default function Leads() {
         </div>
         <div className="container--icons__form">
           <img className="icons--form" alt="iconosHome" src={iconosGroup}></img>
+          <img className="icons--form__white" alt="iconosHome" src={iconsWhite}></img>
         </div>
         <div className="content--form">
           <div className="content--formLeft">
@@ -129,6 +131,7 @@ export default function Leads() {
                 <div className="leads_page_form_start_control">
                   <label>
                     <input
+                    className="input__company"
                       type="company"
                       name="company"
                       value={formData.company}
@@ -166,6 +169,9 @@ export default function Leads() {
                 Enviar
               </button>
             </div>
+            <div className="container--text--mobile__form">
+              <p className="text--mobile__form">Seguimos los requerimientos del cliente ofreciendo la mejor solución.</p>
+              </div>
           </div>
           <div className="pruebas"></div>
         </div>
