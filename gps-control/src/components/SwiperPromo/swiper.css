@@ -173,7 +173,7 @@
   margin: 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
 
   .MuiModal-root {
     width: 100vw;

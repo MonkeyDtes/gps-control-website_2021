@@ -83,7 +83,7 @@
 }
 
 .leads_page_form_start_control:nth-child(5) {
-  margin-left: calc(8.33vw * 1.01);
+  margin-left: calc(8.33vw * .7);
 }
 
 .leads_page_form_end {
@@ -572,7 +572,7 @@ textarea {
 
   .leads_page_form_end>label>textarea,
   .leads_page_form_end {
-    margin: 0;
+    margin-left: calc(8.33vw*1);
   }
 
   .leads_page_form_end {
@@ -625,5 +625,10 @@ textarea {
     font-weight: 600;
     line-height: normal;
   }
+
+  .leads_buttons>button {
+    font-size: 12px;
+  }
+
 
 }

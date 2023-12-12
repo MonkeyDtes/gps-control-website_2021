@@ -32,6 +32,7 @@ import Modalplataforma_eco from "../../assets/Modales_plataforma/Modalplataforma
 import Modalplataforma_enlist from "../../assets/Modales_plataforma/Modalplataforma_enlist.mp4";
 import Modalplataforma_apagado from "../../assets/Modales_plataforma/Modalplataforma_apagado.mp4";
 import Modalplataforma_googleplay from "../../assets/Modales_plataforma/Modalplataforma_googleplay.svg";
+import Modalplataforma_enlist1 from "../../assets/Modales_plataforma/Modalplataforma_enlist.svg";
 import Modalplataforma_aplicaciones from "../../assets/Modales_plataforma/Modalplataforma_aplicaciones.png";
 import Camion from "../camion";
 import Ondas from "../Ondas/Ondas";
@@ -59,7 +60,7 @@ const SwiperPromo = (e) => {
       videoWhite: false
     },
     {
-      imgCenter: FleetResponsive,
+      imgCenter: Modalplataforma_enlist1,
       textRed: "App destinada al alistamiento pre-operativo, para verificar el estado del vehículo y dejar reportes antes de los viajes: ",
       videoRed: Modalplataforma_enlist,
       textWhite: ["Exportar datos", "App móvil y web", "Cuenta para supervisores"],

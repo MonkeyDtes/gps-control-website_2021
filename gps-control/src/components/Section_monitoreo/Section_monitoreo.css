@@ -1,6 +1,4 @@
-.margin--container>.title--component__monitoreo {
-
-}
+.margin--container>.title--component__monitoreo {}
 
 .title--component__monitoreo {
     color: #ED2F4C;
@@ -67,5 +65,9 @@
 
     .text--component__monitoreo {
         font-size: 5px;
+    }
+
+    .margin--container {
+        margin: calc(8.33vw*1);
     }
 }
