@@ -26,6 +26,7 @@ import sensorEquipos1 from "../../assets/sensorEquiposTD1.png";
 import sensorEquipos2 from "../../assets/sensorEquiposTD2.png";
 import sensorEquipos3 from "../../assets/sensorEquiposTD3.png";
 import sensorEquipos4 from "../../assets/sensorEquiposTD4.png";
+import bg_responsive from "../../assets/Assets1/Responsive/Soluciones m_responsive/bg_responsive.png";
 import particles from "../../assets/particles.png";
 import Iconob_mas from "../../assets/Componentes/Iconos_botones/Iconob_mas.svg";
 import Iconob_youtube from "../../assets/Componentes/Iconos_botones/Iconob_youtube.svg";
@@ -224,30 +225,18 @@ export default function Equipos() {
           <a href="#b1" className="ab-container--button--div2--equipos_section1">
             <ButtonVerMas></ButtonVerMas>
           </a>
-          {/* <div className="container--button--div1--equipos_section1">
-              <img alt="información" className="iconMas1" src={Iconob_mas}></img>
-              <img alt="información" className="iconMas2" src={Iconob_masBwhite}></img>
-              <p>Leer más</p>
-            </div> */}
-          {/* <div className="container--button--div1--equipos_section1">
-            <img alt="información" className="iconMas1" src={Iconob_mas}></img>
-            <img alt="información" className="iconMas2" src={Iconob_masBwhite}></img>
-            <p>Leer más</p>
-          </div> */}
           <div className="contimg2">
             <img src={S_maquinaria} alt="" />
           </div>
         </div>
         <div className="div1--equipos_section1">
+          <gitLogo></gitLogo>
           <div className="container--circle">
             <img className="circle" src={circuloHome} alt="" />
           </div>
           <div className="container--title--div1--equipos_section1">
             <h2>EVITA EL ROBO</h2>
           </div>
-          {/* <div className="container--FramePalabraCombustible">
-            <img src={FramePalabraCombustible} alt="" />
-          </div> */}
           <div className="container--subTitle--div1--equipos_section1">
             <div className="container--FramePalabraCombustible">
               <img src={FramePalabraCombustible} alt="" />
@@ -314,7 +303,9 @@ export default function Equipos() {
         </div>
       </section>
       <section className="section--requisitos">
+        <gitLogo></gitLogo>
         <div className="div1--section--requisitos">
+          <img className="img__ejecutivo__responsive" src={bg_responsive} alt="" />
           <img className="img--ejecutivo" src={S_ejecutivo} alt="" />
           <div className="container--text--div1__sectionRequisitos">
             <p><span>Estamos habilitados y certificados</span> como proveedor de servicio GPS  por la <span>Policía Nacional</span></p>
@@ -360,6 +351,13 @@ export default function Equipos() {
         </div>
       </section>
       <section className="equipos_section_sensores" id="verMasCombustible">
+        {/***************************************************************************/}
+        <div className="main_box">
+          <div className="home_section2_label">
+              <h2>de tu combustible</h2>
+          </div>
+        </div>
+        {/***************************************************************************/}
         <div className="equipos_section_sensores_header">
           <div className="equipos_section_sensores_buttons">
             {button1 ? (

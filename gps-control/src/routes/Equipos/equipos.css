@@ -1355,6 +1355,10 @@
   height: 30px;
 }
 
+.img__ejecutivo__responsive {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
 
   /**********equipos section 1***********/
@@ -1640,11 +1644,11 @@
 
   .container--text--div1__sectionRequisitos {
     grid-column: 8/12;
-    /* grid-row: 29/34; */
-    grid-row: 21/27;
+    grid-row: 22/28;
     display: flex;
     justify-content: center;
     width: calc(8.33vw*4);
+    height: calc(2.94vh*3);
   }
 
   .img--ejecutivo {
@@ -1652,10 +1656,11 @@
   }
 
   .tri {
-    width: calc(8.33vw*1);
+    /* width: calc(8.33vw*1);
     height: calc(2.94vh*1.5);
     grid-column: 10/12;
-    grid-row: 25/27;
+    grid-row: 25/27; */
+    display: none;
   }
 
   .cont--red--flecha,
@@ -1730,12 +1735,30 @@
   .monitoreo_buttons {
     justify-content: flex-start;
     margin-left: calc(8.33vw*.5);
+    margin-top: calc(2.94vh*1.5);
 
   }
 
-  .monitoreo_buttons {
+  .container--logoRed {
+    height: calc(2.94vh*2);
+    grid-column: 9/11;
+    grid-row: 24/26;
+  }
+
+  .container--logoRed>img {
+    height: calc(2.94vh*3);
+  }
+
+  .img__ejecutivo__responsive {
+    grid-row: 1/16;
+    grid-column: 1/11;
+    width: calc(8.33vw*10);
+    display: block;
+  }
+
+  /* .monitoreo_buttons {
     margin-top: calc(8.33vw*3);
-  }
+  } */
 
 
   /* .container--logoRed {

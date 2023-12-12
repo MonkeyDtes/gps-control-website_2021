@@ -1,0 +1,10 @@
+.container__gifLogo {
+    display: none;
+}
+
+@media only screen and (max-width: 992px) {
+    .container__gifLogo {
+        grid-column: 5/9;
+        grid-row: 2/6;
+    }
+}
