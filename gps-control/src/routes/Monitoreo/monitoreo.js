@@ -105,13 +105,13 @@ export default function Monitoreo() {
           <></>
         )} */}
         <div className="plataforma_section1_header">
-          <div className="plataforma_sectionq_body_text_a1">
+          <div className="plataforma_sectionq_body_text_a1 plataforma_sectionq_body_text_a11">
             <button onClick={() => handleOpen(0, setOpen)}>
               MANTENIMIENTO PREVENTIVO Y CORRECTIVO
             </button>
             {/* <button value={0} onClick={(e) => ModalClick(e)}>MANTENIMIENTO PREVENTIVO Y CORRECTIVO</button> */}
           </div>
-          <div className="plataforma_sectionq_body_text_a1">
+          <div className="plataforma_sectionq_body_text_a1 plataforma_sectionq_body_text_a12">
             <button onClick={() => handleOpen(3, setOpen)}>
               CONTROL Y CALIFICACIÓN DE CONDUCTORES
             </button>
@@ -119,7 +119,7 @@ export default function Monitoreo() {
           </div>
         </div>
         <div className="plataforma_section1_body">
-          <div className="plataforma_section1_body_text">
+          <div className="plataforma_section1_body_text plataforma_section1_body_text1">
             <div className="plataforma_sectionq_body_text_a2">
               <button onClick={() => handleOpen(2, setOpen)}>
                 APAGADO REMOTO
@@ -134,20 +134,20 @@ export default function Monitoreo() {
             </div>
           </div>
           <img className="img__pantallas" alt="pantallas plataforma" src={Pl_pantallas}></img>
-          <div className="plataforma_section1_body_text">
-            <div className="plataforma_sectionq_body_text_a">
+          <div className="plataforma_section1_body_text plataforma_section1_body_text2">
+            <div className="plataforma_sectionq_body_text_a plataforma_sectionq_body_text_a1">
               <button onClick={() => handleOpen(2, setOpen)}>
                 GEOCERCAS
               </button>
               {/* <button value={4} onClick={(e) => ModalClick(e)}>GEOCERCAS</button> */}
             </div>
-            <div className="plataforma_sectionq_body_text_a">
+            <div className="plataforma_sectionq_body_text_a plataforma_sectionq_body_text_a2">
               <button onClick={() => handleOpen(2, setOpen)}>
                 APLICACIÓN MÓVIL
               </button>
               {/* <button value={5} onClick={(e) => ModalClick(e)}>APLICACIÓN MÓVIL</button> */}
             </div>
-            <div className="plataforma_sectionq_body_text_a">
+            <div className="plataforma_sectionq_body_text_a plataforma_sectionq_body_text_a33">
               <button onClick={() => handleOpen(2, setOpen)}>
                 PRE ALISTAMIENTO
               </button>
