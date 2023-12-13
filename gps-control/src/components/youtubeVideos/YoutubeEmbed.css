@@ -9,10 +9,16 @@
   margin-left: calc(8.33vw * 1);
   margin-top: calc(5.88vh * 4.5);
 }
-@media only screen and (max-width: 600px) {
-  .video-responsive iframe {
-    width: calc(8.33vw * 8);
-    margin-left: calc(8.33vw * 2);
-    height: calc(5.88vh*4);
+@media only screen and (max-width: 992px) {
+  .video-responsive {
+    grid-row: 10/18;
+    grid-column: 2/12;
+    height: auto;
+    position: static;
+  }
+  .video-responsive>iframe {
+    margin: 0;
+    width: 83.33vw;
+    height: calc(2.94vh*8);
   }
 }
