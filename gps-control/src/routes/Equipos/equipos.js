@@ -352,9 +352,11 @@ export default function Equipos() {
       </section>
       <section className="equipos_section_sensores" id="verMasCombustible">
         {/***************************************************************************/}
-        <div className="main_box">
-          <div className="home_section2_label">
-              <h2>de tu combustible</h2>
+
+        <div className="main_box__equipos">
+          <h2>evita el robo</h2>
+          <div className="home_section2_label__equipos">
+            <h2>de tu combustible</h2>
           </div>
         </div>
         {/***************************************************************************/}

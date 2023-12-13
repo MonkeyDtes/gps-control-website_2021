@@ -1355,7 +1355,8 @@
   height: 30px;
 }
 
-.img__ejecutivo__responsive {
+.img__ejecutivo__responsive,
+.home_section2_label__equipos {
   display: none;
 }
 
@@ -1368,6 +1369,59 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(34, 1fr);
+  }
+
+  .home_section2_label__equipos {
+    clip-path: polygon(0% 0%, 100% 0, 85% 100%, 0% 100%);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: red;
+    width: calc(8.33vw*8.5);
+    height: calc(2.94vh*1.5);
+    grid-row: 9/11;
+    /* margin-top: calc(2.94vh*9); */
+  }
+
+  .home_section2_label__equipos>h2 {
+    margin: 0;
+    font-size: 1.8vh;
+  }
+
+  .main_box__equipos {
+    grid-column: 3/9;
+    grid-row: 23/24;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.25));
+  }
+
+  .main_box__equipos>h2 {
+    color: #6B6B6B;
+    font-family: Kiona;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: calc(2.94vh*8);
+    margin-bottom: 0;
+  }
+
+  .equipos_section_sensores_downside>img {
+    margin: 0;
+  }
+
+  .equipos_section_sensores_buttons>button {
+    margin: 0;
+  }
+
+  .equipos_section_sensores_buttons {
+    margin: 0;
+  }
+
+  .equipos_section_sensores_body {
+    margin: 0;
   }
 
   /********content div1*********/
@@ -1767,6 +1821,16 @@
   } */
 
   /*section requisitos*/
+
+  
+  .equipos_section_sensores_downside>img {
+    height: calc(5.88vh*2);
+    margin: 0;
+  }
+
+  .text_suport_equipos img {
+    margin: 0;
+  }
 }
 
 
@@ -1933,11 +1997,6 @@
     margin: 25px;
     font-size: 15px;
     width: auto;
-  }
-
-  .equipos_section_sensores_downside>img {
-    height: calc(5.88vh*2);
-    margin-top: calc(5.88vh*4);
   }
 
   .imgSuntech {
