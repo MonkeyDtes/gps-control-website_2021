@@ -1831,6 +1831,17 @@
   .text_suport_equipos img {
     margin: 0;
   }
+
+  .equipos_section_sensores_downside {
+    align-items: flex-end;
+  }
+
+  #sensor1,
+  #sensor2,
+  #sensor3,
+  #sensor4 {
+    margin-top: calc(2.94vh*3)!important;
+  }
 }
 
 

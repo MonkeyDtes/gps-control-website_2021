@@ -97,10 +97,11 @@
   display: flex;
   flex-direction: row;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 992px) {
   .apps_section1_bg {
-    background-size: cover;
-    background-position-y: 60vh;
+    background-size: 95vh;
+    background-position-y: 55vh;
+    background-position-x: -94vw;
   }
   .apps_section1_buttons_top {
     flex-direction: column;
@@ -119,7 +120,7 @@
     margin-left: calc(8.33vw * 2);
   }
   .apps_section1 {
-    height: 140vh;
+    height: 100vh;
   }
   .apps_section1_bg > h1 {
     font-size: 2vh;

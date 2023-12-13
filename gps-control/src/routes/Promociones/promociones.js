@@ -5,6 +5,7 @@ import "./promociones.css";
 import Leads from "../../components/Leads/index";
 import Footer from "../../components/Footer/index";
 import { useRef } from "react"
+import GifLogo from "../../components/GifLogo";
 
 export default function Promociones() {
   const sectionRef = useRef(null);
@@ -21,6 +22,7 @@ export default function Promociones() {
       <GifGPS type="2"></GifGPS>
       <section className="promociones_section">
         <div className="promociones_section_bg">
+        <GifLogo />
           <div className="promociones_section_body">
             <div>Mi SIM</div>
             <div>Sistema de comunicación simCARD M2M</div>

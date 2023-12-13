@@ -5,24 +5,25 @@ import SwiperApps from "../../components/SwiperApps";
 import GifGPS from "../../components/gifGPS/index";
 import Leads from "../../components/Leads/index";
 import Footer from "../../components/Footer/index";
+import GifLogo from "../../components/GifLogo";
 
 export default function Apps(estadoApps) {
   const [button1, setButton1] = useState(true);
   const [button2, setButton2] = useState(false);
-  const [button3, setButton3] = useState(false); 
+  const [button3, setButton3] = useState(false);
   const [button4, setButton4] = useState(false);
   const [button5, setButton5] = useState(false);
   const [button6, setButton6] = useState(false);
   const [focusOnSlide, setFocusOnSlide] = useState(0);
-  useEffect(()=>{
-      setButton1(estadoApps.estadoApps[0]);
-      setButton2(estadoApps.estadoApps[1]);
-      setButton3(estadoApps.estadoApps[2]);
-      setButton4(estadoApps.estadoApps[3]);
-      setButton5(estadoApps.estadoApps[4]);
-      setButton6(estadoApps.estadoApps[5]);
-      setFocusOnSlide(estadoApps.estadoApps[6])
-  },[estadoApps])
+  useEffect(() => {
+    setButton1(estadoApps.estadoApps[0]);
+    setButton2(estadoApps.estadoApps[1]);
+    setButton3(estadoApps.estadoApps[2]);
+    setButton4(estadoApps.estadoApps[3]);
+    setButton5(estadoApps.estadoApps[4]);
+    setButton6(estadoApps.estadoApps[5]);
+    setFocusOnSlide(estadoApps.estadoApps[6])
+  }, [estadoApps])
   const HandleClick = (index) => {
     if (index.currentTarget.id === "1") {
       setButton1(true);
@@ -87,6 +88,7 @@ export default function Apps(estadoApps) {
       <GifGPS type="2"></GifGPS>
       <section className="apps_section1">
         <div className="apps_section1_bg">
+          <GifLogo />
           <h1>Seleccione una actividad de su interés</h1>
           <div className="apps_section1_buttons">
             <div className="apps_section1_buttons_top">
@@ -103,7 +105,7 @@ export default function Apps(estadoApps) {
               </button>
               <button onClick={(e) => HandleClick(e)} id="2">
                 {" "}
-                {button2 ? ( 
+                {button2 ? (
                   <div className="apps_button_check">
                     <div className="dot"></div>
                   </div>

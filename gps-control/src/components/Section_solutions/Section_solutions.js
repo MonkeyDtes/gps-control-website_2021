@@ -35,6 +35,7 @@ function Section_solutions({ data }) {
                     {texts}</div>
             </div>
         </div>
+        {/* {imgNube ? <div></div> : ''} */}
 
         <div className="cont--img__sideRigth">
             <img alt="fondo" src={imgf}></img>

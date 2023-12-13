@@ -15,6 +15,7 @@ import Rastreo from "../../assets/Rastreo.png";
 import Leads from "../../components/Leads/index";
 import Footer from "../../components/Footer/index";
 import Section_solutions from "../../components/Section_solutions/Section_solutions";
+import GifLogo from "../../components/GifLogo";
 
 export default function Soluciones() {
 
@@ -23,7 +24,8 @@ export default function Soluciones() {
     "subtitle": "Monitoreo vehicular",
     "image": camaraSoluciones,
     "text": "Ofrecemos diferentes opciones de cámaras para vehículos son la elección perfecta para garantizar la seguridad y eficiencia en tus operaciones de transporte. Permiten tener una vista completa del entorno de tu vehículo, detectando posibles peligros y evitar colisiones. Adaptadas para monitorear la calidad del transporte, verificando con imágenes los productos, las vías y la situación del conductor.",
-    "imgf": Vigilancia_Vehicular1
+    "imgf": Vigilancia_Vehicular1,
+    "textradio": "Vigilancia vehícular"
   },
 
   {
@@ -32,7 +34,8 @@ export default function Soluciones() {
     "image": eyeSensor,
     "text": "Las Termocuplas son la solución perfecta para monitorear y medir temperaturas en tiempo real. Facilitando la necesidad de supervisar el rendimiento térmico de una máquina, la temperatura de un entorno, nuestras termocuplas/beacons te ofrecen una precisión inigualable y una fácil integración en tu sistema existente. Brindan seguridad en mediciones exactas y confiables en todo momento controlando la eficiencia de tu negocio.",
     "imgf": Temperatura_CarrosBG,
-    "gif": gifNegativo
+    "gif": gifNegativo,
+    "textradio": "Control de temperatura"
   },
 
   {
@@ -41,7 +44,8 @@ export default function Soluciones() {
     "image": FMB_120,
     "text": "Dispositivos aplicables a los equipos, para mayor pertinencia en el caso de uso y funciones extra.",
     "imgf": Rastreo,
-    "gif": gifNegativo
+    "gif": gifNegativo,
+    "textradio": "Equipos de avanzada"
 
   },
 
@@ -51,7 +55,8 @@ export default function Soluciones() {
     "image": Llaves_Dallas,
     "text": "Dispositivos aplicables a los equipos, para mayor pertinencia en el caso de uso y funciones extra.",
     "imgf": PersonalizacionConductores,
-    "gif": gifNegativo
+    "gif": gifNegativo,
+    "textradio": "Reconocimiento conductores"
   },
 
   {
@@ -60,15 +65,17 @@ export default function Soluciones() {
     "image": LECTOR_QR,
     "text": "Dispositivos aplicables a los equipos, para mayor pertinencia en el caso de uso y funciones extra.",
     "imgf": IdentificacionQR,
-    "gif": gifNegativo
+    "gif": gifNegativo,
+    "textradio": "Identificación QR"
   }];
 
   const [data, setData] = useState(listData[0]);
-  const HandleClick = (e) => {
-    setData(listData[e.target.id.slice(-1)])
-    console.log(listData[e.target.id]);
+  const [selectedRadio, setSelectedRadio] = useState(0);
+  const HandleClick = (i) => {
+    setSelectedRadio(i)
+    setData(listData[i])
+    console.log(i);
   };
-
 
   return (
     <div>
@@ -86,34 +93,16 @@ export default function Soluciones() {
       {/*-----------------------------------------------------------------*/}
 
       <section className="soluciones_section">
+        <GifLogo />
         <div className="soluciones_buttons">
-          <div>
-            <input type="radio" name="op1" onClick={(e) => HandleClick(e)} id="radio0" />
-            <label htmlFor="radio0">Vigilancia vehicular</label>
-          </div>
-          {/*
-          <div className="apps_button_check">
-            <div className="dot"></div>
-          </div>
-           */}
-          <div>
-            <input type="radio" name="op1" onClick={(e) => HandleClick(e)} id="radio1" />
-            <label htmlFor="radio1">Control de temperatura</label>
-          </div>
-
-          <div>
-            <input type="radio" name="op1" onClick={(e) => HandleClick(e)} id="radio2" />
-            <label htmlFor="radio2">Equipos de avanzada</label>
-          </div>
-
-          <div>
-            <input type="radio" name="op1" onClick={(e) => HandleClick(e)} id="radio3" />
-            <label htmlFor="radio3">Reconocimiento conductores</label>
-          </div>
-
-          <div>
-            <input type="radio" name="op1" onClick={(e) => HandleClick(e)} id="radio4" />
-            <label htmlFor="radio4">Identificación QR</label>
+          <div className="monitoreo_buttons_solutions_trans">
+            {listData.map((obj, index) => {
+              return <div>
+                <input checked={selectedRadio === index} onChange={() => { }} type="radio" name={"op" + index} onClick={() => HandleClick(index)} id={"btn" + index} />
+                <label htmlFor={"btn" + index}>{obj.textradio}</label>
+                <span className={selectedRadio === index ? "classspan" : "displaynone"}></span>
+              </div>
+            })}
           </div>
         </div>
 

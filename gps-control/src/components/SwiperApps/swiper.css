@@ -164,7 +164,7 @@
   left: calc(5.88vh * 1.5);
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 992px) {
   .swiper_apps_slide_clicked {
     width: calc(8.33vw * 6) !important;
     margin-bottom: calc(5.88vh);
@@ -191,5 +191,9 @@
 
   .swiper_apps_slide_clicked > img {
     width: calc(8.33vw * 4);
+  }
+
+  .swiper_apps_slide_clicked {
+    opacity: 0.9;
   }
 }
