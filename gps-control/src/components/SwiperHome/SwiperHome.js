@@ -42,7 +42,7 @@ function SwiperHome({ incial }) {
           <img className="img--flotaVehiculos__home" src={Flota_vehículos} alt="" />
           <img className="img--botonFlecha__home" src={Boton_flecha} alt="" />
           <img className="img--botonFlecha__invertido__home" src={Boton_flecha} alt="" />
-          <div className="grid__sides__modal container__left__modal">
+          <div className="grid__sides__modalwhite container__left__modal">
             <div className="container--title--iconos--group__modal">
               <h2>flota</h2>
               <img className="iconos--group__modal" src={Iconos_gpscontrol} alt="" />
@@ -65,7 +65,7 @@ function SwiperHome({ incial }) {
               </div>
             </div>
           </div>
-          <div className="grid__sides__modal container__right__modal">
+          <div className="grid__sides__modalred container__right__modal">
             <img className="img--flota__modal" src={Flota_plataforma} alt="" />
           </div>
         </div>
@@ -136,7 +136,7 @@ function SwiperHome({ incial }) {
             <img className="img--cargaBg__home" src={Estadisticas_bg} alt="" />
           </div>
           <div className="container--img--estadisticasCaptura__home">
-            <img src={Estadisticas_captura} alt="" />
+            <img className="container--img--estadisticasCaptura__home__img" src={Estadisticas_captura} alt="" />
           </div>
           <div className="grid__sides__modal container__left__modal">
           </div>
@@ -149,7 +149,7 @@ function SwiperHome({ incial }) {
           <img className="img--botonFlecha__home" src={Boton_flecha} alt="" />
           <img className="img--botonFlecha__invertido__home" src={Boton_flecha} alt="" />
           <div className="container--img--pasajerosCaptura__home">
-            <img src={Conductores_captura} alt="" />
+            <img className="img__conductores" src={Conductores_captura} alt="" />
           </div>
           <div className="container--title--iconos--group__modal">
             <h2>conductores</h2>

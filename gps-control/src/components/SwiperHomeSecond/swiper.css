@@ -14,3 +14,10 @@
 .filter_gray {
     filter: grayscale(100%);
 }
+
+@media screen and (max-width: 992px) {
+    .img__comportamiento {
+        width: calc(10.41*5);
+        margin-right: calc(10.41vw*1.5);
+    }
+}
