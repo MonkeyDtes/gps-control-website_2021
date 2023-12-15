@@ -1836,6 +1836,7 @@ input[type="radio"]:checked + label::before {
   .container--text--div1__sectionRequisitos>p {
     font-size: 8px;
     margin: 0;
+    padding: 0 15px;
   }
 
   .margin--container2 {
@@ -2216,6 +2217,37 @@ input[type="radio"]:checked + label::before {
   .div2--equipos_section1:hover .ab-container--button--div2--equipos_section1 {
     grid-column: 8/11;
     grid-row: 7/8;
+  }
+
+  .sectionNew1--cont12 {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+  }
+
+  .sectionNew1--cont12>.margin--container2 {
+    margin: 0;
+    grid-column: 1/10;
+    grid-row: 1/10;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+  }
+
+  .sectionNew1--cont12>.margin--container2>.title--component__monitoreo {
+    margin: 0;
+    grid-column: 2/9;
+    grid-row: 1/3;
+  }
+
+  .sectionNew1--cont12>.margin--container2>.subTitle--component__monitoreo1 {
+    margin: 0;
+    grid-column: 2/9;
+    grid-row: 4/10;
+  }
+
+  .sectionNew1--cont12+.monitoreo_buttons {
+    margin: 0 8.33vw;
   }
 
 }
