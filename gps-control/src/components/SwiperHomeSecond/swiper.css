@@ -17,7 +17,8 @@
 
 @media screen and (max-width: 992px) {
     .img__comportamiento {
-        width: calc(10.41*5);
-        margin-right: calc(10.41vw*1.5);
+        grid-column: 3/9;
+        grid-row: 6/8;
+        width: calc(10.41vw*4.5)!important;
     }
 }

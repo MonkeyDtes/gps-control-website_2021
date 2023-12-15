@@ -369,7 +369,7 @@ body {
   border: 1px solid var(--colorRed1);
   mix-blend-mode: multiply;
   clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 80%);
-  width: calc(8.33vw*2.02);
+  width: calc(8.33vw*2);
   height: calc(5.88vh*13);
 }
 

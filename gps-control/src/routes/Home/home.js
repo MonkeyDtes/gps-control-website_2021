@@ -41,6 +41,7 @@ import Flecha_cont_red_abajo from "../../components/Flecha_cont_red_abajo/Flecha
 import Modal from '@mui/material/Modal';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
+import GifLogo from "../../components/GifLogo";
 
 export default function Home({ onChangeState }) {
   const [modal, setModal] = useState(false);
@@ -166,6 +167,7 @@ export default function Home({ onChangeState }) {
       </section>
 
       <section className="home_section2">
+      <GifLogo />
         <Modal
           open={open}
           onClose={()=>handleClose(setOpen)}
@@ -181,6 +183,7 @@ export default function Home({ onChangeState }) {
           </div>
         </div>
         <div className="home_section2_column">
+          
           <div className="home_section2_wifiIcon">
             <img alt="wifi icon" src={wifiIcon}></img>
           </div>
@@ -222,6 +225,7 @@ export default function Home({ onChangeState }) {
         </div>
       </section>
       <section className="home_section2">
+      <GifLogo />
         <div className="home_column_red">
           <Flecha_arriba></Flecha_arriba>
           <div className="containerimg--burbujas--flechaAbajo2">
@@ -255,6 +259,7 @@ export default function Home({ onChangeState }) {
         </div>
       </section>
       <section className="home_section2">
+      <GifLogo />
         <Modal
           open={openTwo}
           onClose={()=>handleClose(setOpenTwo)}
