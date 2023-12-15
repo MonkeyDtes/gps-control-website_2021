@@ -34,6 +34,7 @@ import { useEffect, useRef, useState } from "react";
 import ButtonsSocialMedia from "../../components/ButtonsSocialMedia/ButtonsSocialMedia";
 import ButtonVerMas from "../../components/ButtonVerMas/ButtonVerMas";
 import Flecha_cont_red_abajo from "../../components/Flecha_cont_red_abajo/Flecha_cont_red_abajo";
+import GifLogo from "../../components/GifLogo";
 
 export default function Equipos() {
 
@@ -257,6 +258,7 @@ export default function Equipos() {
       </section>
       {/**************************************************************/}
       <section className="sectionNew1" id="b1">
+        <GifLogo />
         <div className="fondo">
           <img className="img--fondo" src={S_maquinaria} alt="" />
         </div>
@@ -277,6 +279,7 @@ export default function Equipos() {
         </div>
       </section>
       <section className="new--section2">
+        <GifLogo />
         <div className="container--left">
           <div className="collage">
             <img src={S_collage} alt="" />
@@ -301,7 +304,7 @@ export default function Equipos() {
         </div>
       </section>
       <section className="section--requisitos">
-        <gitLogo></gitLogo>
+        <GifLogo />
         <div className="div1--section--requisitos">
           <img className="img__ejecutivo__responsive" src={bg_responsive} alt="" />
           <img className="img--ejecutivo" src={S_ejecutivo} alt="" />
@@ -349,6 +352,7 @@ export default function Equipos() {
         </div>
       </section>
       <section className="equipos_section_sensores" id="verMasCombustible">
+        <GifLogo />
         {/***************************************************************************/}
 
         <div className="main_box__equipos">
@@ -457,6 +461,11 @@ export default function Equipos() {
           <div className="text_suport_equipos">TD- 150</div>
         </div>
       </section>
+      <section className="section__ajedrez">
+        <GifLogo />
+        <div className="container__botones__socialMedia">
+        <ButtonsSocialMedia />
+        </div>
       <section className="equipos_section2">
         <div className="equipos_section2_startbg"></div>
         <div className="equipos_section2_start">
@@ -516,6 +525,7 @@ export default function Equipos() {
           <img alt="particles" className="img_Particles" src={particles}></img>
           <div className="equipos_section3_start"></div>
         </div>
+      </section>
       </section>
       <section ref={sectionRef}></section>
       <Leads></Leads>
