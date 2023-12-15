@@ -113,7 +113,7 @@ function SwiperHomeSecond({ incialSlide }) {
           <img className="img--botonFlecha__invertido__home" src={Boton_flecha} alt="" />
           <img className="img--botonFlecha__home" src={Boton_flecha} alt="" />
           <div className="container--img--pasajerosCaptura__home">
-            <img src={Vpasajeros_capturas} alt="" />
+            <img className="img__comportamiento" src={Vpasajeros_capturas} alt="" />
           </div>
           <div className="container--title--iconos--group__modal">
             <h2>comportamiento</h2>
