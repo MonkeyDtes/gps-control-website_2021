@@ -60,21 +60,22 @@ export default function Equipos() {
   ];
 
   const [data1, setData1] = useState(listData1[0]);
-  const HandleClick1 = (e) => {
-    setData1(listData1[e.target.id.slice(-1)])
-    console.log(listData1[e.target.id]);
-  };
-
   const [data2, setData2] = useState(listData2[0]);
   const [selectedRadio, setSelectedRadio] = useState(0);
+  const [button1, setButton1] = useState(false);
+  const [button2, setButton2] = useState(false);
+
+  const HandleClick1 = (i) => {
+    setSelectedRadio(i)
+    setData1(listData1[i])
+    console.log(listData1[i]);
+  };
 
   const HandleClick2 = (i) => {
     setSelectedRadio(i)
     setData2(listData2[i]);
   };
 
-  const [button1, setButton1] = useState(false);
-  const [button2, setButton2] = useState(false);
   const sectionRef = useRef(null);
   const windowSize = useRef([window.innerWidth, window.innerHeight]);
   useEffect(() => {
@@ -262,16 +263,13 @@ export default function Equipos() {
         <div className="fn">
           <Section_monitoreo data1={data1}></Section_monitoreo>
           <div className="monitoreo_buttons">
-            <div>
-              <input type="radio" name="op1" onClick={(e) => HandleClick1(e)} id="radio0" />
-              <label htmlFor="radio0"></label>
-              <span className="classspan"></span>
-            </div>
-            <div>
-              <input type="radio" name="op1" onClick={(e) => HandleClick1(e)} id="radio1" />
-              <label htmlFor="radio1"></label>
-              <span className="classspan"></span>
-            </div>
+            {listData1.map((_, index) => {
+              return <div>
+                <input checked={selectedRadio === index} onChange={() => { }} type="radio" name={"op" + index} onClick={() => HandleClick1(index)} id={"btn" + index} />
+                <label htmlFor={"btn" + index}></label>
+                <span className={selectedRadio === index ? "classspan" : "displaynone"}></span>
+              </div>
+            })}
           </div>
         </div>
         <div className="containerimg--burbujas--flechaAbajo2">
@@ -341,7 +339,7 @@ export default function Equipos() {
             <div className="monitoreo_buttons">
               {listData2.map((_, index) => {
                 return <div>
-                  <input checked={selectedRadio === index} onChange={() => { }} type="radio" name={"op" + index} onClick={() => HandleClick2(index)} id={"btn" + index} />
+                  <input checked={selectedRadio === index} onChange={() => { }} type="radio" name={"btn" + index} onClick={() => HandleClick2(index)} id={"btn" + index} />
                   <label htmlFor={"btn" + index}></label>
                   <span className={selectedRadio === index ? "classspan" : "displaynone"}></span>
                 </div>
