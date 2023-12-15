@@ -12,9 +12,9 @@ function Modales_plataforma({ data }) {
         setDataA(data);
     }, [data])
     return <div className="swiper_promo_slide">
-        <div className="content__hr">
+        {/* <div className="content__hr">
             <p className="hr-c"><hr /></p>
-        </div>
+        </div> */}
         {dataA.imgCenter ?
             <div className="container__img__swiper">
                 <img className="grid__container__img__swiper" src={dataA.imgCenter} alt="" />

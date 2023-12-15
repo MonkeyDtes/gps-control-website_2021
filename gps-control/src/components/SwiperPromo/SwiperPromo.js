@@ -3,30 +3,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper";
 import SwiperCore, { Keyboard, Mousewheel } from "swiper/core";
 import "./swiper.css";
-import FleetImg from "../../assets/Fleet-img.png";
-import FleetText from "../../assets/Fleet-txt.png";
-import EcoImg from "../../assets/Eco-img.png";
-import EcoText from "../../assets/Eco-txt.png";
-import EnlistImg from "../../assets/Enlist-img.png";
-import EnlistText from "../../assets/Enlist-txt.png";
-import PlataformaImg from "../../assets/Plataforma-img.png";
-import PlataformaText from "../../assets/Plataforma-txt.png";
-import GeocercasImg from "../../assets/Geocercas-img.png";
-import GeocercasText from "../../assets/Geocercas-txt.png";
-import ApagadoImg from "../../assets/Apagado-img.png";
-import ApagadoText from "../../assets/Apagado-txt.png";
-import InformesImg from "../../assets/Informes-img.png";
-import InformesText from "../../assets/Informes-txt.png";
-import ApagadoResponsive from "../../assets/Apagado-responsive.png";
-import FleetResponsive from "../../assets/Fleet-responsive.png";
-import EcoResponsive from "../../assets/Eco-responsive.png";
-import EnlistResponsive from "../../assets/Enlist-responsive.png";
-import PlataformaResponsive from "../../assets/Plataforma-responsive.png";
-import GeocercasResponsive from "../../assets/Geocercas-responsive.png";
-import InformesResponsive from "../../assets/Informes-responsive.png";
 import iconoApps3 from "../../assets/iconoApps3.svg";
 import L_ecodriving from "../../assets/Componentes/Logos_aplicaciones/L_ecodriving.svg";
-import iconoApps5 from "../../assets/iconoApps5.svg";
 import Modalplataforma_fleetrun from "../../assets/Modales_plataforma/Modalplataforma_fleetrun.mp4";
 import Modalplataforma_eco from "../../assets/Modales_plataforma/Modalplataforma_eco.mp4";
 import Modalplataforma_enlist from "../../assets/Modales_plataforma/Modalplataforma_enlist.mp4";
@@ -96,7 +74,7 @@ const SwiperPromo = (e) => {
       textRed: "Posibilidades de exportar y analizar diferentes tipos de métricas, según los dispositivos instalados:",
       videoRed: Modalplataforma_fleetrun,
       textWhite: ["Llenados de combustible", "Informes de viajes", "Estadísticas de la flota"],
-      imgRed: true,
+      imgRed: false,
       videoWhite: false
     }
   ])

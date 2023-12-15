@@ -175,30 +175,112 @@
 
 @media screen and (max-width: 992px) {
 
+  .swiper_home_m {
+    height: calc(2.94vh*23);
+    width: calc(8.33vw*10);
+  }
+
   .MuiModal-root {
     width: 100vw;
     height: 100vh;
   }
+
   .MuiModal-backdrop {
     max-height: 100vh;
   }
+
   .swiper_promo_slide {
-    grid-template-rows: repeat(23,1fr);
-    grid-template-columns: repeat(10,1fr);
-    height: calc(2.94vh * 23);
+    display: grid;
+    justify-items: end;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(11, 1fr);
     width: calc(8.33vw*10);
+    height: calc(2.94vh*23);
+    background-color: #fff;
+    border-radius: 5px;
   }
 
 
-  .swiper_promo_slide_red  {
-    grid-template-columns: repeat(10,1fr);
-    grid-template-rows: repeat(8,1fr);
+  .swiper_promo_slide_red {
+    display: flex;
+    width: calc(10.41vw*8);
+    flex-direction: column;
+    height: calc(5.63vh*7);
+    justify-content: space-around;
+    align-items: center;
+    grid-row: 1/7;
+    grid-column: 1/9;
+    border-radius: 5px 5px 0 0;
   }
 
   .swiper_promo_slide_white {
-    grid-template-columns: repeat(10,1fr);
-    grid-template-rows: repeat(15,1fr);
-    grid-column: 9/24;
-    grid-row: 1/11;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column: 1/9;
+    grid-row: 8/12;
+    width: calc(10.41vw*8);
+    height: calc(5.63vh*5);
+  }
+
+  /*container red*/
+  .cont__video__modal {
+    grid-row: 4/7;
+    grid-column: 2/7;
+    height: calc(5.63vh*3);
+  }
+
+  .text--slideWhite__home {
+    font-size: 14px;
+    max-width: calc(10.41vw*6);
+    grid-column: 2/8;
+    grid-row: 2/3;
+  }
+
+  .container__img__swiper {
+    grid-column: 2/4;
+    grid-row: 3/5;
+    width: calc(10.41vw*2);
+    height: calc(5.63vh*1.5);
+    border-radius: 10px;
+  }
+
+  .container__img__swiper>img {
+    height: calc(5.63vh*1);
+  }
+
+  /*container white*/
+  .content--slideRed__monitoreo {
+    width: calc(10.41vw*5);
+    height: calc(5.63vh*2);
+    grid-column: 2/7;
+    grid-row: 1/4;
+    margin-top: calc(5.63vh*.5);
+    border-radius: 10px;
+  }
+
+  .content__p>p {
+    font-size: 15px;
+  }
+
+  .content__Camion {
+    grid-row: 3/6;
+    grid-column: 3/7;
+    max-height: calc(5.63vh*3);
+    max-width: calc(10.41vw*3);
+  }
+
+  .content__Camion>div>canvas {
+    max-height: calc(5.63vh*3);
+    max-width: calc(10.41vw*3);
+  }
+
+  /******/
+  .imgRed__modal {
+    width: calc(10.41vw*5.5) !important;
+  }
+
+  .text--slideWhite__home_big {
+    font-size: 15px;
+    max-width: calc(10.41vw*6);
   }
 }

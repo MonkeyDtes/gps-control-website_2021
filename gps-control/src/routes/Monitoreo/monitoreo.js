@@ -11,6 +11,7 @@ import { useState } from "react";
 import Camion from "../../components/camion/index";
 import Modal from '@mui/material/Modal';
 import SwiperHome from "../../components/SwiperHome/index";
+import GifLogo from "../../components/GifLogo";
 
 export default function Monitoreo() {
   const [modal, setModal] = useState(false);
@@ -69,6 +70,7 @@ export default function Monitoreo() {
       ></NavbarGPS>
       <GifGPS type="2"></GifGPS>
       <section className="plataforma_section2">
+        <GifLogo />
         <YoutubeEmbed embedId="NPZ9K4G9Z9w"></YoutubeEmbed>
         <div className="plataforma_section2_body">
           <div className="plataforma_section2_body_line"></div>
@@ -83,6 +85,7 @@ export default function Monitoreo() {
         </div>
       </section>
       <section className="plataforma_section1">
+        <GifLogo />
         <Modal
           open={open}
           onClose={() => handleClose(setOpen)}
