@@ -58,7 +58,7 @@
     margin: 35px 55px 0px 55px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
     .subTitle--component__monitoreo {
         font-size: 5px;
     }

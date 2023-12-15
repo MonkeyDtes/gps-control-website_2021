@@ -258,9 +258,9 @@ canvas:nth-child(2) {
   }
 
   .plataforma_section1_header {
-    width: calc(8.33vw*9);
+    width: 83.33vw;
     height: calc(2.94vh*3);
-    grid-column: 2/11;
+    grid-column: 2/12;
     grid-row: 17/20;
     display: grid;
     grid-template-columns: repeat(9,1fr);
@@ -269,22 +269,18 @@ canvas:nth-child(2) {
 
   .plataforma_section1_header>div {
     margin: 0;
+    justify-content: flex-start;
+    width: calc(8.33vw * 10);
+    padding: 0 0 0 4.16vw;
   }
 
   .plataforma_section1_header>div>button {
+    border: none;
     margin: 0;
-  }
-
-  .plataforma_sectionq_body_text_a11 {
-    height: 2.94vh; 
-    grid-row: 1/2;
-    grid-column: 1/10;
-  }
-
-  .plataforma_sectionq_body_text_a12 {
-    height: 2.94vh;
-    grid-row: 3/4;
-    grid-column: 1/10;
+    border-left: 1px solid red;
+    border-image: none;
+    width: calc(8.33vw * 10);
+    font-size: calc(2.94vh * 0.5);
   }
 
   .plataforma_section1_body>.img__pantallas {
@@ -312,6 +308,13 @@ canvas:nth-child(2) {
     grid-column: 1/11;
     height: calc(2.94vh*3);
     width: calc(8.33vw*10);
+    justify-content: space-between;
+    padding: 0 0 0 4.16vw;
+  }
+
+  .plataforma_section1_body_text1>div {
+    height: 2.94vh;
+    width: calc(8.33vw*10);
   }
 
   .plataforma_section1_body_text2 {
@@ -322,31 +325,32 @@ canvas:nth-child(2) {
     grid-column: 1/11;
     height: calc(2.94vh*5);
     width: calc(8.33vw*10);
+    padding: 0 0 0 4.16vw;
   }
 
   .plataforma_section1_body_text2>div {
     margin: 0;
     height: 2.94vh;
-  }
-
-  .plataforma_section1_body_text2>div>button {
-    margin: 0;
-    height: 2.94vh;
+    justify-content: flex-start;
+    width: calc(8.33vw * 10);
   }
 
   .plataforma_sectionq_body_text_a1 {
     grid-column: 1/11;
     grid-row: 1/2;
+    width: calc(8.33vw*10);
   }
 
   .plataforma_sectionq_body_text_a2 {
     grid-column: 1/11;
     grid-row: 3/4;
+    width: calc(8.33vw*10);
   }
 
   .plataforma_sectionq_body_text_a33 {
     grid-column: 1/11;
     grid-row: 5/6;
+    width: calc(8.33vw*10);
   }
 
   .plataforma_sectionq_body_text_a3{
@@ -354,5 +358,47 @@ canvas:nth-child(2) {
     height: calc(2.94vh*2);
     grid-row: 29/31;
     grid-column: 3/11;
+    color: #6B6B6B80;
+    text-align: center;
+  }
+
+  .plataforma_sectionq_body_text_a3>div {
+    margin: 0;
+    border: none;
+    font-size: calc(2.94vh*0.67);
+  }
+
+  .plataforma_sectionq_body_text_a11 {
+    height: 2.94vh; 
+    grid-row: 1/2;
+    grid-column: 1/10;
+  }
+
+  .plataforma_sectionq_body_text_a12 {
+    height: 2.94vh;
+    grid-row: 3/4;
+    grid-column: 1/10;
+  }
+
+  .plataforma_section1_body_text1 > div>button {
+    margin: 0;
+    height: 2.94vh;
+    border: none;
+    border-left: 1px solid red;
+    border-image: none;
+    width: calc(8.33vw * 10);
+    text-align: left;
+    font-size: calc(2.94vh * 0.5);
+  }
+
+  .plataforma_section1_body_text2>div>button {
+    margin: 0;
+    height: 2.94vh;
+    border: none;
+    border-left: 1px solid red;
+    border-image: none;
+    width: calc(8.33vw * 10);
+    text-align: left;
+    font-size: calc(2.94vh * 0.5);
   }
 }
