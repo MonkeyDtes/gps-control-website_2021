@@ -1998,7 +1998,7 @@ input[type="radio"]:checked + label::before {
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 992px) {
   .equipos_section2_column {
     padding-top: calc(5.88vh * 5);
   }
@@ -2150,7 +2150,7 @@ input[type="radio"]:checked + label::before {
 
   .equipos_section_sensores_title>img {
     width: auto;
-    height: calc(5.88vh*3);
+    height: calc(5.88vh*2);
   }
 
   .equipos_section_sensores_title>h3 {
@@ -2223,6 +2223,7 @@ input[type="radio"]:checked + label::before {
     display: grid;
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: repeat(9, 1fr);
+    height: calc(2.94vh*8);
   }
 
   .sectionNew1--cont12>.margin--container2 {
@@ -2248,6 +2249,54 @@ input[type="radio"]:checked + label::before {
 
   .sectionNew1--cont12+.monitoreo_buttons {
     margin: 0 8.33vw;
+  }
+
+  .equipos_section_sensores {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(34, 1fr);
+  }
+
+  .equipos_section_sensores>.main_box__equipos {
+    margin: 0;
+    grid-column: 2/12;
+    grid-row: 6/11;
+    align-items: center;
+
+  }
+
+  .equipos_section_sensores>.main_box__equipos>h2 {
+    font-size: calc(2.94vh*1.5);
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+
+  .equipos_section_sensores>.main_box__equipos>.home_section2_label__equipos {
+    background: #FFFFFF;
+    color: #1E8C93;
+    font-size: 2.94vh;
+  }
+
+  .equipos_section_sensores>.main_box__equipos>.home_section2_label__equipos>h2 {
+    color: #1E8C93;
+    font-size: 2.94vh;
+  }
+
+  .equipos_section_sensores>.main_box__equipos>* {
+    margin: 0;
+  }
+
+  .equipos_section_sensores>.equipos_section_sensores_header {
+    margin: 0;
+    grid-column: 2/12;
+    grid-row: 12/28;
+    justify-content: space-between;
+  }
+
+  .equipos_section_sensores>.equipos_section_sensores_downside {
+    margin: 0;
+    grid-column: 2/12;
+    grid-row: 31/35;
   }
 
 }
