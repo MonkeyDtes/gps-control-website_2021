@@ -167,10 +167,10 @@ export default function Home({ onChangeState }) {
       </section>
 
       <section className="home_section2">
-      <GifLogo />
+        <GifLogo />
         <Modal
           open={open}
-          onClose={()=>handleClose(setOpen)}
+          onClose={() => handleClose(setOpen)}
           aria-labelledby="modal-modal-title"
           aria-describedby="modal-modal-description"
         >
@@ -183,7 +183,7 @@ export default function Home({ onChangeState }) {
           </div>
         </div>
         <div className="home_section2_column">
-          
+
           <div className="home_section2_wifiIcon">
             <img alt="wifi icon" src={wifiIcon}></img>
           </div>
@@ -197,23 +197,23 @@ export default function Home({ onChangeState }) {
           <h3>PLATAFORMA para controlar :</h3>
           <div className="home_section2_group">
             <div className="home_section2_body home_section2_body_one">
-              <button onClick={()=>handleOpen(0, setOpen)}>
+              <button onClick={() => handleOpen(0, setOpen)}>
                 Flota
               </button>
-              <button onClick={()=>handleOpen(3, setOpen)}>
+              <button onClick={() => handleOpen(3, setOpen)}>
                 Conductores
               </button>
             </div>
             <div className="home_section2_body home_section2_body_two">
-              <button onClick={()=>handleOpen(1, setOpen)}>
+              <button onClick={() => handleOpen(1, setOpen)}>
                 Pasajeros
               </button>
-              <button onClick={()=>handleOpen(4, setOpen)}>
+              <button onClick={() => handleOpen(4, setOpen)}>
                 Carga
               </button>
             </div>
             <div className="home_section2_body home_section2_body_tree">
-              <button onClick={()=>handleOpen(2, setOpen)}>
+              <button onClick={() => handleOpen(2, setOpen)}>
                 Obtener estadísticas e informes
               </button>
             </div>
@@ -225,7 +225,7 @@ export default function Home({ onChangeState }) {
         </div>
       </section>
       <section className="home_section2">
-      <GifLogo />
+        <GifLogo />
         <div className="home_column_red">
           <Flecha_arriba></Flecha_arriba>
           <div className="containerimg--burbujas--flechaAbajo2">
@@ -259,10 +259,10 @@ export default function Home({ onChangeState }) {
         </div>
       </section>
       <section className="home_section2">
-      <GifLogo />
+        <GifLogo />
         <Modal
           open={openTwo}
-          onClose={()=>handleClose(setOpenTwo)}
+          onClose={() => handleClose(setOpenTwo)}
           aria-labelledby="modal-modal-title"
           aria-describedby="modal-modal-description"
         >
@@ -286,17 +286,17 @@ export default function Home({ onChangeState }) {
           <img alt="nube icon" className="iconNube" src={VectorNube2}></img>
           <div className="home_section4_group">
             <div className="home_section2_body home_section2_body_vo">
-              <button onClick={()=>handleOpen(0, setOpenTwo)}>
+              <button onClick={() => handleOpen(0, setOpenTwo)}>
                 Evitar accidentes
               </button>
             </div>
             <div className="home_section2_body home_section2_body_vt">
-              <button onClick={()=>handleOpen(1, setOpenTwo)}>
+              <button onClick={() => handleOpen(1, setOpenTwo)}>
                 Registrar lo que ocurre al interior del móvil en tiempo real
               </button>
             </div>
             <div className="home_section2_body home_section2_body_vtr">
-              <button onClick={()=>handleOpen(2, setOpenTwo)}>
+              <button onClick={() => handleOpen(2, setOpenTwo)}>
                 Controlar el comportamiento de los conductores
               </button>
             </div>
@@ -311,6 +311,7 @@ export default function Home({ onChangeState }) {
         </div>
       </section>
       <section className="home_section3">
+        <GifLogo />
         <div className="container--left__homeSection3">
           <div className="home_column_red_end">
             <Flecha_arriba></Flecha_arriba>

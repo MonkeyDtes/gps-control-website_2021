@@ -1246,7 +1246,7 @@ div#imagen:hover p#descripcion {
   }
 
   .container--right__homeSection3 {
-    grid-column: 4/13;
+    grid-column: 5/12;
     grid-row: 1/35;
     display: grid;
     height: 100vh;
@@ -1270,19 +1270,22 @@ div#imagen:hover p#descripcion {
 
   .main_box--home {
     grid-column: 2/8;
-    grid-row: 23/25;
+    grid-row: 25/27;
     width: calc(8.33vw*7);
   }
 
   .container--textSeguimiento__home {
     width: calc(8.33vw * 7);
-    height: calc(2.94vh * 1.3);
+    height: calc(2.94vh * 1.2);
   }
 
   .home_section3_buttons_up>button {
     margin-bottom: calc(5.88vh * 0.5);
     width: calc(8.33vw * 3);
-    height: calc(2.94vh*3);
+    height: calc(2.94vh*3.8);
+    border-radius: 12px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.25);
+
   }
 
   .home_section3_buttons_up>button>img {
