@@ -263,6 +263,7 @@ export default function Equipos() {
         <GifLogo />
         <div className="fondo">
           <img className="img--fondo" src={Certifica_tu_maquinaria1} alt="" />
+          <img className="img--fondo2" src={S_maquinaria} alt="" />
         </div>
         <div className="fn">
           <Section_monitoreo data1={data1}></Section_monitoreo>
