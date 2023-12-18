@@ -201,7 +201,7 @@
 .container--title--div2--equipos_section1>h2 {
   color: #6B6B6B;
   font-family: Klik;
-  font-size: 60px;
+  font-size: 8vh;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -878,7 +878,7 @@
 }
 
 .textContainerBlue {
-  font-size: 18px;
+  font-size: 2.4vh;
   font-weight: 700;
 }
 
@@ -1098,7 +1098,7 @@
   color: #6B6B6B;
   text-align: justify;
   font-family: "Bahnschrift";
-  font-size: 18px;
+  font-size: 2.4vh;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
@@ -1168,7 +1168,7 @@
   color: #FFF;
   text-align: justify;
   font-family: "Bahnschrift";
-  font-size: 15px;
+  font-size: 2vh;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -1246,7 +1246,7 @@
   color: #FFF;
   text-align: justify;
   font-family: "Bahnschrift";
-  font-size: 18px;
+  font-size: 2.4vh;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
@@ -1307,7 +1307,7 @@
   color: #6B6B6B;
   text-align: justify;
   font-family: "Bahnschrift";
-  font-size: 20px;
+  font-size: 2.5vh;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
@@ -1366,6 +1366,10 @@ input[type="radio"]:checked+label::before {
   display: none;
 }
 
+.main_box__equipos {
+  display: none;
+}
+
 @media screen and (max-width: 992px) {
 
   /**********equipos section 1***********/
@@ -1414,6 +1418,10 @@ input[type="radio"]:checked+label::before {
     margin-bottom: 0;
   }
 
+  .equipos_section_sensores>.container__gifLogo {
+    margin-top: 0!important;
+  }
+
   .equipos_section_sensores_downside>img,
   .equipos_section_sensores_buttons>button,
   .equipos_section_sensores_buttons {
@@ -1422,6 +1430,7 @@ input[type="radio"]:checked+label::before {
 
   .equipos_section_sensores_body {
     margin-top: 2.94vh;
+    margin-left: 0;
   }
 
   /********content div1*********/
@@ -1708,7 +1717,7 @@ input[type="radio"]:checked+label::before {
 
 
   .content--container--right p {
-    font-size: 12.6px;
+    font-size: 12.5px;
   }
 
   .content--container--right h2 {
@@ -1743,6 +1752,10 @@ input[type="radio"]:checked+label::before {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(34, 1fr);
+  }
+
+  .section--requisitos>.container__gifLogo {
+    margin-top: calc(2.94vh*1)!important;
   }
 
   .div1--section--requisitos {
@@ -1847,7 +1860,7 @@ input[type="radio"]:checked+label::before {
   .text--component__monitoreo,
   .subtitlec2--component__monitoreo,
   .subTitle--component__monitoreo1 {
-    font-size: 15px;
+    font-size: 2.4vh;
   }
 
   .triangulo {
@@ -1895,7 +1908,7 @@ input[type="radio"]:checked+label::before {
 
   .sectionNew1--cont1>.margin--container>.title--component__monitoreo {
     margin: 0;
-    grid-column: 1/6;
+    grid-column: 1/13;
     grid-row: 1/5;
     font-size: 2.5vh;
     line-height: 1.4;
@@ -1904,8 +1917,8 @@ input[type="radio"]:checked+label::before {
   .sectionNew1--cont1>.margin--container>.subTitle--component__monitoreo {
     margin: 0;
     grid-column: 1/10;
-    grid-row: 6/11;
-    font-size: 2.2vh;
+    grid-row: 5/10;
+    font-size: 2vh;
   }
 
   .sectionNew1--cont1>.margin--container>.subtitlec2--component__monitoreo {
@@ -1914,7 +1927,7 @@ input[type="radio"]:checked+label::before {
 
   .sectionNew1--cont1>.margin--container>.text--component__monitoreo {
     grid-column: 1/10;
-    grid-row: 11/17;
+    grid-row: 9/15;
     font-size: 2.1vh;
   }
 
@@ -1938,7 +1951,7 @@ input[type="radio"]:checked+label::before {
   .text--component__monitoreo,
   .subtitlec2--component__monitoreo,
   .subTitle--component__monitoreo1 {
-    font-size: 15px;
+    font-size: 2vh;
   }
 
   .container--logoRed {
@@ -2028,9 +2041,10 @@ input[type="radio"]:checked+label::before {
     background-position-y: 65vh;
   }
 
-  .equipos_section2_start>h1 {
+  .equipos_section2_start>h1,
+  .equipos_section3_end>h1 {
     font-size: 2vh;
-
+    writing-mode: horizontal-tb;
     text-shadow: 0px 0 white, 0 0px white, 0px 0 white, 0 0px white;
   }
 
@@ -2041,9 +2055,11 @@ input[type="radio"]:checked+label::before {
 
   .equipos_section2_start_buttons>a {
     font-size: 0.7vh;
-    width: calc(8.33vw * 3);
+    width: calc(8.33vw * 4);
     height: calc(5.88vh * 0.5);
     border-radius: 10%;
+    background-color: #fff;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.25);
   }
 
   .equipos_section2_start_column>p {
@@ -2148,12 +2164,16 @@ input[type="radio"]:checked+label::before {
     height: calc(5.88vh*2);
   }
 
+  .equipos_section2_start_buttons>a>img {
+    height: calc(2.94vh*.8);
+  }
+
   .equipos_section_sensores_title>h3 {
-    font-size: 15px;
+    font-size: 17px;
   }
 
   .equipos_section_sensores_body>p {
-    margin: 25px;
+    margin-top: 25px;
     font-size: 15px;
     width: auto;
   }
@@ -2227,9 +2247,10 @@ input[type="radio"]:checked+label::before {
   }
 
   .sectionNew1--cont12>.margin--container2>.title--component__monitoreo {
-    margin: 0;
+    margin-top: 1vh;
     grid-column: 2/9;
     grid-row: 1/3;
+    font-size: 19px;
   }
 
   .sectionNew1--cont12>.margin--container2>.subTitle--component__monitoreo1 {
@@ -2280,7 +2301,7 @@ input[type="radio"]:checked+label::before {
   .equipos_section_sensores>.equipos_section_sensores_header {
     margin: 0;
     grid-column: 2/12;
-    grid-row: 12/28;
+    grid-row: 13/28;
     justify-content: space-between;
   }
 
@@ -2298,6 +2319,13 @@ input[type="radio"]:checked+label::before {
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(34, 1fr);
     background-color: #fff;
+  }
+
+  .section__ajedrez .equipos_section2_start_buttons {
+    padding-left: 0!important;
+    justify-content: center!important;
+    background-color: #fff;
+    gap: 10px;
   }
 
   .equipos_section2 {

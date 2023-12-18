@@ -5,7 +5,7 @@ function Section2_monitoreo({ data }) {
 
     useEffect(() => {
         setText(data);
-    }, [data]);
+    }, [data]); 
     return <>
         <div className="sectionNew1--cont1 sectionNew1--cont12">
             <div className="margin--container2">

@@ -140,7 +140,7 @@
   border-radius: 10px;
   margin-left: calc(5.88vh * 0.6);
   width: calc(8.33vw * 3);
-  font-size: 12px;
+  font-size: 1.5vh;
 }
 
 .leads_page_form_end>h2 {
@@ -259,7 +259,7 @@ textarea {
 .leads_page_start_text {
   font-family: 'Bahnschrift';
   font-style: normal;
-  font-size: 20px;
+  font-size: 2.4vh;
   text-align: justify;
   color: #FFFFFF;
   font-weight: normal;

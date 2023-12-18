@@ -56,7 +56,7 @@
 .soluciones_buttons label {
   color: #6B6B6B;
   font-family: "Bahnschrift";
-  font-size: 15px;
+  font-size: 2vh;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
@@ -140,7 +140,7 @@
   background: #6B6B6B;
   margin-top: -150px;
   margin-left: 160px;
-  font-size: 8px;
+  font-size: 1.8vh;
   width: calc(8.33vw*2);
   height: auto;
   /* Al hacer hover, el texto se hace visible */
@@ -189,7 +189,7 @@
 .soluciones_section1_header h1 {
   color: #EB162C;
   font-family: "klik";
-  font-size: 70px;
+  font-size: 8vh;
   font-style: normal;
   font-weight: 700;
   line-height: 0;
@@ -213,7 +213,7 @@
   align-items: center;
   color: #6B6B6B;
   font-family: "Bahnschrift";
-  font-size: 16px;
+  font-size: 2.4vh;
   font-style: normal;
   font-weight: 700;
   line-height: normal;

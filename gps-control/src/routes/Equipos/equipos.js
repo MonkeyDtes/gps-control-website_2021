@@ -27,6 +27,7 @@ import sensorEquipos2 from "../../assets/sensorEquiposTD2.png";
 import sensorEquipos3 from "../../assets/sensorEquiposTD3.png";
 import sensorEquipos4 from "../../assets/sensorEquiposTD4.png";
 import bg_responsive from "../../assets/Assets1/Responsive/Soluciones m_responsive/bg_responsive.png";
+import Certifica_tu_maquinaria1 from "../../assets/Assets1/Soluciones m/Certifica_tu_maquinaria1.png";
 import particles from "../../assets/particles.png";
 import Iconob_mas from "../../assets/Componentes/Iconos_botones/Iconob_mas.svg";
 import Iconob_youtube from "../../assets/Componentes/Iconos_botones/Iconob_youtube.svg";
@@ -63,6 +64,7 @@ export default function Equipos() {
   const [data1, setData1] = useState(listData1[0]);
   const [data2, setData2] = useState(listData2[0]);
   const [selectedRadio, setSelectedRadio] = useState(0);
+  const [selectedRadio2, setSelectedRadio2] = useState(0);
   const [button1, setButton1] = useState(false);
   const [button2, setButton2] = useState(false);
 
@@ -73,7 +75,7 @@ export default function Equipos() {
   };
 
   const HandleClick2 = (i) => {
-    setSelectedRadio(i)
+    setSelectedRadio2(i)
     setData2(listData2[i]);
   };
 
@@ -260,15 +262,15 @@ export default function Equipos() {
       <section className="sectionNew1" id="b1">
         <GifLogo />
         <div className="fondo">
-          <img className="img--fondo" src={S_maquinaria} alt="" />
+          <img className="img--fondo" src={Certifica_tu_maquinaria1} alt="" />
         </div>
         <div className="fn">
           <Section_monitoreo data1={data1}></Section_monitoreo>
           <div className="monitoreo_buttons">
             {listData1.map((_, index) => {
               return <div>
-                <input checked={selectedRadio === index} onChange={() => { }} type="radio" name={"op" + index} onClick={() => HandleClick1(index)} id={"btn" + index} />
-                <label htmlFor={"btn" + index}></label>
+                <input checked={selectedRadio === index} type="radio" name={"btnU" + index} onClick={() => HandleClick1(index)} id={"btnU" + index} />
+                <label htmlFor={"btnU" + index}></label>
                 <span className={selectedRadio === index ? "classspan" : "displaynone"}></span>
               </div>
             })}
@@ -342,9 +344,9 @@ export default function Equipos() {
             <div className="monitoreo_buttons">
               {listData2.map((_, index) => {
                 return <div>
-                  <input checked={selectedRadio === index} onChange={() => { }} type="radio" name={"btn" + index} onClick={() => HandleClick2(index)} id={"btn" + index} />
+                  <input checked={selectedRadio2 === index} type="radio" name={"btn" + index} onClick={() => HandleClick2(index)} id={"btn" + index} />
                   <label htmlFor={"btn" + index}></label>
-                  <span className={selectedRadio === index ? "classspan" : "displaynone"}></span>
+                  <span className={selectedRadio2 === index ? "classspan" : "displaynone"}></span>
                 </div>
               })}
             </div>

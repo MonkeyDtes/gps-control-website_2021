@@ -352,6 +352,7 @@ body {
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(17, 1fr);
   background-color: #fff;
+  height: 100vh;
 }
 
 .container--left__homeSection3 {
@@ -385,7 +386,7 @@ body {
 .imgGato--home {
   width: calc(8.33vw*2);
   margin-top: 16px;
-  margin-left: 16px;
+  /* margin-left: 16px; */
 }
 
 .container--right__homeSection3 {
@@ -631,6 +632,12 @@ body {
 .video {
   z-index: -100;
   position: fixed;
+  width: 100vw;
+  height: 100vh;
+}
+
+.video>video {
+  width: 100%;
 }
 
 .subContainer1--portada___home {
@@ -961,6 +968,10 @@ div#imagen:hover p#descripcion {
     overflow: hidden;
     width: 100vw;
     height: 100vh;
+  }
+
+  .home_section2>.container__gifLogo {
+    margin-top: 0!important;
   }
 
   .home_column_red {
