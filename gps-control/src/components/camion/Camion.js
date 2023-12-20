@@ -29,7 +29,7 @@ export default function ModelViewer() {
     if (windowSize.current[0] > 992) {
       renderer.setSize(window.innerWidth / 2, window.innerHeight / 2);
       containerRef.current.appendChild(renderer.domElement);
-      camera.position.set(100, -30, 400);
+      camera.position.set(100, -30, 200);
     } else {
       renderer.setSize(window.innerWidth / 3, window.innerHeight / 3);
       containerRef.current.appendChild(renderer.domElement);
