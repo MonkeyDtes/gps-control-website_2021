@@ -87,6 +87,8 @@ const SwiperPromo = (e) => {
       style={{
         overflow: "hidden",
         alignItems: "center",
+        gridColumn: "1/9",
+        gridRow: "1/12"
       }}
     >
       <Swiper
@@ -100,10 +102,9 @@ const SwiperPromo = (e) => {
         loop={true}
         className="swiper_home_m"
       >
-        {dataB.map((obj) => {
-          return <SwiperSlide className="content__swiper">
+        {dataB.map((obj, i) => {
+          return <SwiperSlide key={i} className="content__swiper">
             <Modales_plataforma data={obj} />
-            {/* <img alt="responsive" src={FleetResponsive}></img> */}
           </SwiperSlide>
         })}
       </Swiper>

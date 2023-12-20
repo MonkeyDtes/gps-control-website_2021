@@ -381,8 +381,9 @@ body {
 }
 
 .imgGato--home {
-  width: calc(8.33vw*2);
-    transform: rotate(90deg);
+  /* width: calc(8.33vw*2); */
+  height: 100%;
+  transform: rotate(90deg);
   /* margin-left: 16px; */
 }
 
@@ -437,7 +438,7 @@ body {
 
 .container--aplicaciones__home {
   color: #1E8C93;
-  font-size: 2vh;
+  font-size: 3vh;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -998,7 +999,7 @@ div#imagen:hover p#descripcion {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(27, 1fr);
-    grid-row: 6/30;
+    grid-row: 4/30;
     grid-column: 4/12;
     margin: 0;
   }
@@ -1091,6 +1092,7 @@ div#imagen:hover p#descripcion {
   .home_section2_body_two {
     grid-row: 3/10;
     height: calc(2.94vh * 7);
+    z-index: 50;
   }
 
   .home_section2_body_tree {
@@ -1181,7 +1183,8 @@ div#imagen:hover p#descripcion {
   }
 
   .video>video {
-    max-height: 100vh;
+    height: 100vh;
+    width: auto;
   }
 
   .img--text__portadaHome {
@@ -1541,5 +1544,57 @@ div#imagen:hover p#descripcion {
     margin: 0;
     position: absolute;
     transform: rotate(90deg);
+  }
+
+  .container--items__portadaHome p {
+    font-size: 1vh;
+  }
+
+  .container--text__portadaHome p {
+    font-size: 1.5vh;
+    margin: 0;
+  }
+
+  .display__none__icon {
+    display: none !important;
+  }
+
+  .nav {
+    /* justify-content: flex-end; */
+    top: 0;
+  }
+
+  .navbar_app {
+    justify-content: center;
+    height: 100vh;
+  }
+
+  .container--icons__portadaHome {
+    justify-content: center;
+    gap: 1vh;
+    height: calc(2.94vh*5);
+    /* margin-top: calc(2.94vh*8); */
+  }
+
+  .container--icons__portadaHome>div {
+    height: calc(2.94vh*1);
+    width: calc(8.33vw*1.5);
+    border-radius: 0px 5px 5px 0px;
+  }
+
+  .container--icons__portadaHome>div>img {
+    width: 7vw;
+    margin-top: 0;
+  }
+
+  .navbar_app .main_box {
+    justify-content: flex-start;
+  }
+
+  .navbar_close_button {
+    background: #fff;
+    font-weight: 900;
+    height: 3vh;
+    border: none;
   }
 }

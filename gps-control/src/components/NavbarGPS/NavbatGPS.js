@@ -49,7 +49,7 @@ export default function NavbarGPS(e) {
   };
   const [showTopBtn, setShowTopBtn] = useState(false);
   useEffect(() => {
-    if (windowSize.current[0] > 600) {
+    if (windowSize.current[0] > 992) {
       window.addEventListener("scroll", () => {
         if (window.scrollY > 5) {
           setShowTopBtn(true);
@@ -135,30 +135,39 @@ export default function NavbarGPS(e) {
           <div className="navbar_contacts">
 
           </div>
+          <div className="container--icons__portadaHome">
+            <div>
+              <img src={Iconoflotante_correo} alt="" />
+            </div>
+            <div className="display__none__icon">
+              <img src={Iconoflotante_telefono} alt="" />
+            </div>
+            <div>
+              <img src={Iconoflotante_whatsapp} alt="" />
+            </div>
+            <div>
+              <img src={Iconoflotante_youtube} alt="" />
+            </div>
+            <div className="display__none__icon">
+              <img src={Iconoflotante_usuario} alt="" />
+            </div>
+            <div className="display__none__icon">
+              <img src={Iconoflotante_soporte} alt="" />
+            </div>
+          </div>
         </div>
       ) : (
         <div className="navbar_app">
           <nav>
             <div className="main_box">
-              {Home ? (
-                <button
-                  className="navbar_home"
-                  id="1"
-                  onClick={(e) => handleClick(e)}
-                >
-                  <img alt="logo gps control" src={GPSControlLogo}></img>
-                  <h1>Home</h1>
-                </button>
-              ) : (
-                <button
-                  className="navbar_home_click"
-                  id="1"
-                  onClick={(e) => handleClick(e)}
-                >
-                  <img alt="logo gps control" src={GPSControlLogoRed}></img>
-                  <h1>Home</h1>
-                </button>
-              )}
+              <button
+                className={Home ? "navbar_home" : "navbar_home_click"}
+                id="1"
+                onClick={(e) => handleClick(e)}
+              >
+                <img alt="logo gps control" src={Home ? GPSControlLogo : GPSControlLogoRed}></img>
+                <h1>Home</h1>
+              </button>
             </div>
             <div className="main_box">
               {Plataforma ? (
@@ -316,26 +325,6 @@ export default function NavbarGPS(e) {
               </button>
             </div>
           </nav>
-          <div className="container--icons__portadaHome">
-            <div>
-              <img src={Iconoflotante_correo} alt="" />
-            </div>
-            <div>
-              <img src={Iconoflotante_telefono} alt="" />
-            </div>
-            <div>
-              <img src={Iconoflotante_whatsapp} alt="" />
-            </div>
-            <div>
-              <img src={Iconoflotante_youtube} alt="" />
-            </div>
-            <div>
-              <img src={Iconoflotante_usuario} alt="" />
-            </div>
-            <div>
-              <img src={Iconoflotante_soporte} alt="" />
-            </div>
-          </div>
         </div>
       )}
     </>

@@ -26,14 +26,14 @@ export default function ModelViewer() {
     controls.enableRotate = true;
     controls.enableZoom = false;
     controls.enablePan = false;
-    if (windowSize.current[0] > 600) {
+    if (windowSize.current[0] > 992) {
       renderer.setSize(window.innerWidth / 2, window.innerHeight / 2);
       containerRef.current.appendChild(renderer.domElement);
-      camera.position.set(100, -30, 200);
+      camera.position.set(100, -30, 400);
     } else {
       renderer.setSize(window.innerWidth / 3, window.innerHeight / 3);
       containerRef.current.appendChild(renderer.domElement);
-      camera.position.set(100, -30, 300);
+      camera.position.set(100, -30, 400);
     }
 
     scene.background = null;

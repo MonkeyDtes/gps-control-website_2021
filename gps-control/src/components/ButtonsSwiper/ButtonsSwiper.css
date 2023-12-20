@@ -1,8 +1,9 @@
 @import url(/node_modules/swiper/swiper-bundle.min.css);
+
 @font-face {
   font-family: "Klik";
   src: local("Klik"),
-   
+
 }
 
 .swiper_apps {
@@ -14,6 +15,7 @@
   width: 100%;
   margin-top: calc(5.88vh * 1) !important;
 }
+
 .swiper_apps_slide {
   width: calc(8.33vw * 2) !important;
   height: calc(5.88vh * 8) !important;
@@ -31,10 +33,12 @@
   font-weight: 100;
   color: #eb162c;
 }
-.swiper_apps_slide > img {
+
+.swiper_apps_slide>img {
   width: calc(8.33vw);
   max-height: calc(5.88vh * 3.5);
 }
+
 .swiper_apps_slide_clicked {
   width: calc(8.33vw * 2) !important;
   height: calc(5.88vh * 8) !important;
@@ -52,10 +56,12 @@
   color: #eee8f2;
   border: 1px solid #eee8f2;
 }
-.swiper_apps_slide_clicked > img {
+
+.swiper_apps_slide_clicked>img {
   width: calc(8.33vw);
   max-height: calc(5.88vh * 3.5);
 }
+
 .swiper_apps_buttons {
   display: flex;
   flex-direction: row;
@@ -63,7 +69,8 @@
   align-items: flex-end;
   height: 100%;
 }
-.swiper_apps_buttons > a {
+
+.swiper_apps_buttons>a {
   display: flex;
   flex-direction: row;
   font-size: 1.2vh;
@@ -80,14 +87,17 @@
   text-decoration: none;
   border-radius: 10%;
 }
-.swiper_apps_buttons > a:hover {
+
+.swiper_apps_buttons>a:hover {
   background-color: #eb162c;
   color: white;
 }
-.swiper_apps_buttons > a > img {
+
+.swiper_apps_buttons>a>img {
   height: calc(5.88 * 0.33);
   max-width: calc(8.33vw * 0.3);
 }
+
 .swiper_apps_buttons_clicked {
   display: flex;
   flex-direction: row;
@@ -95,7 +105,8 @@
   align-items: flex-end;
   height: 100%;
 }
-.swiper_apps_buttons_clicked > a {
+
+.swiper_apps_buttons_clicked>a {
   margin-bottom: calc(5.88vh * 1);
   width: calc(8.33vw * 0.8);
   height: calc(5.88vh);
@@ -112,25 +123,32 @@
   text-decoration: none;
   border-radius: 10%;
 }
-.swiper_apps_buttons_clicked > a > img {
+
+.swiper_apps_buttons_clicked>a>img {
   height: calc(5.88 * 0.33);
   max-width: calc(8.33vw * 0.3);
 }
-.swiper_apps_buttons_clicked > a:hover {
+
+.swiper_apps_buttons_clicked>a:hover {
   background-color: #eb162c;
   color: white;
 }
+
 .swiper-button-prev,
 .swiper-button-next {
   opacity: 1;
+  display: none;
 }
-.swiper_apps > div:nth-child(3) {
+
+.swiper_apps>div:nth-child(3) {
   margin-right: calc(8.33vw * 2);
 }
+
 .swiper-button-next.swiper-button-disabled,
 .swiper-button-prev.swiper-button-disabled {
   opacity: 1;
 }
+
 .text_suport_apps {
   opacity: 0;
   position: fixed;
@@ -142,62 +160,81 @@
   padding-inline: 1.5vw;
   z-index: 3;
 }
-.swiper_apps_slide:hover>  .text_suport_apps{
+
+.swiper_apps_slide:hover>.text_suport_apps {
   opacity: 1;
 }
-.swiper_apps_slide_clicked:hover>  .text_suport_apps{
+
+.swiper_apps_slide_clicked:hover>.text_suport_apps {
   opacity: 1;
 }
-.swiper_apps:hover + .text_suport_apps{
+
+.swiper_apps:hover+.text_suport_apps {
   opacity: 1;
 }
+
 .text_suport_apps:nth-child(2) {
   bottom: calc(8.33vh * -2.5);
   left: calc(5.88vh * 1.5);
 }
+
 .text_suport_apps:nth-child(4) {
   bottom: calc(8.33vh * -0.4);
   left: calc(5.88vh * 1.5);
 }
-.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after{
-  content:prev;
+
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  content: prev;
 }
-.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after{
+
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
   content: next;
 }
-.swiper-wrapper{
+
+.swiper-wrapper {
   margin-left: -300px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 992px) {
   .swiper_apps_slide_clicked {
     width: calc(8.33vw * 6) !important;
     margin-bottom: calc(5.88vh);
     height: calc(5.88vh * 7) !important;
   }
+
   .swiper_apps_slide {
     width: calc(8.33vw * 6) !important;
     margin-bottom: calc(5.88vh);
     height: calc(5.88vh * 7) !important;
   }
-  .swiper_apps_buttons > a {
+
+  .swiper_apps_buttons>a {
     width: calc(8.33vw * 2);
     margin-inline: calc(8.33vw * 0.4);
     justify-content: space-around;
   }
-  .swiper_apps_buttons_clicked > a {
+
+  .swiper_apps_buttons_clicked>a {
     width: calc(8.33vw * 2);
     margin-inline: calc(8.33vw * 0.4);
     justify-content: space-around;
   }
-  .swiper_apps_slide > img {
+
+  .swiper_apps_slide>img {
     width: calc(8.33vw * 4);
   }
 
-  .swiper_apps_slide_clicked > img {
+  .swiper_apps_slide_clicked>img {
     width: calc(8.33vw * 4);
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: block;
   }
 }

@@ -39,11 +39,17 @@
   justify-items: center;
 }
 
+@-moz-document url-prefix() {
+  .swiper_promo_slide_red {
+    background-color: #EC2F4D;
+  }
+}
+
 .text--slideWhite__home {
   color: #FFF;
   text-align: justify;
   font-family: "Bahnschrift";
-  font-size: 20px;
+  font-size: 2.4vh;
   max-width: calc(8.33vw*2.5);
   font-style: normal;
   font-weight: 300;
@@ -56,7 +62,7 @@
   color: #FFF;
   text-align: justify;
   font-family: "Bahnschrift";
-  font-size: 20px;
+  font-size: 2.5vh;
   max-width: calc(8.33vw*2.5);
   font-style: normal;
   font-weight: 300;
@@ -118,9 +124,10 @@
 
 .content__Camion {
   grid-row: 6/12;
-  grid-column: 1/5;
+  grid-column: 5/9;
   max-height: calc(5.88vh*6);
   max-width: calc(8.33vw*4);
+  z-index: 50;
 }
 
 .content__Camion>div,
@@ -166,7 +173,7 @@
 .content__p>p {
   color: #6B6B6B;
   font-family: Bahnschrift;
-  font-size: 20px;
+  font-size: 2.5vh;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
@@ -263,15 +270,20 @@
   }
 
   .content__Camion {
-    grid-row: 3/6;
+    grid-row: 7/12;
     grid-column: 3/7;
-    max-height: calc(5.63vh*3);
-    max-width: calc(10.41vw*3);
+    margin-top: calc(2.94vh*1);
+    /* grid-row: 8/12;
+    grid-column: 3/7; */
+    /* max-height: calc(5.63vh*3);
+    max-width: calc(10.41vw*3); */
   }
 
   .content__Camion>div>canvas {
-    max-height: calc(5.63vh*3);
-    max-width: calc(10.41vw*3);
+    max-height: calc(5.63vh*6);
+    max-width: calc(10.41vw*6);
+    height: auto !important;
+    width: calc(10.41vw*5) !important;
   }
 
   /******/

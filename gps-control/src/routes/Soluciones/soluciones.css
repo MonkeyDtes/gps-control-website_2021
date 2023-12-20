@@ -335,7 +335,7 @@ input[type="radio"]:checked {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(19, 1fr);
-    grid-column: 2/12;
+    grid-column: 3/13;
     grid-row: 16/31;
   }
 
@@ -345,8 +345,8 @@ input[type="radio"]:checked {
   }
 
   .soluciones_buttons {
-    grid-row: 5/12;
-    grid-column: 2/12;
+    grid-row: 6/13;
+    grid-column: 3/13;
     margin-left: 0;
     margin-top: 0;
     gap: 20px;

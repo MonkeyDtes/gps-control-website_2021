@@ -12,9 +12,6 @@ function Modales_plataforma({ data }) {
         setDataA(data);
     }, [data])
     return <div className="swiper_promo_slide">
-        {/* <div className="content__hr">
-            <p className="hr-c"><hr /></p>
-        </div> */}
         {dataA.imgCenter ?
             <div className="container__img__swiper">
                 <img className="grid__container__img__swiper" src={dataA.imgCenter} alt="" />
@@ -30,15 +27,12 @@ function Modales_plataforma({ data }) {
         </div>
         <div className="swiper_promo_slide_white">
             <div className="content--slideRed__monitoreo">
-                {dataA.textWhite.map((el) => {
-                    return <div className="content__p">
+                {dataA.textWhite.map((el, i) => {
+                    return <div key={i} className="content__p">
                         <Ondas />
                         <p>{el}</p>
                     </div>
                 })}
-            </div>
-            <div className="content__Camion">
-                <Camion className="Camion"></Camion>
             </div>
         </div>
     </div>

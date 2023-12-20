@@ -8,7 +8,7 @@ import Footer from "../../components/Footer/index";
 import YoutubeEmbed from "../../components/youtubeVideos/index";
 import SwiperPromo from "../../components/SwiperPromo";
 import { useState } from "react";
-import Camion from "../../components/camion/index";
+import Camion from "../../components/camion";
 import Modal from '@mui/material/Modal';
 import SwiperHome from "../../components/SwiperHome/index";
 import GifLogo from "../../components/GifLogo";
@@ -92,33 +92,23 @@ export default function Monitoreo() {
           aria-labelledby="modal-modal-title"
           aria-describedby="modal-modal-description"
         >
-          <SwiperPromo incialSlide={inicialSlide}></SwiperPromo>
-        </Modal>
-        {/* {modal ? (
-          <>
-            <div onClick={ModalClick} className="modal_home"></div>
-            <div className="modal_home_fade">
-              <SwiperPromo incialSlide={inicialSlide}></SwiperPromo>
-              <div className="Camion">
-                <Camion className="Camion"></Camion>
-              </div>
+          <div className="cont__camion__swiper">
+            <SwiperPromo incialSlide={inicialSlide}></SwiperPromo>
+            <div className="content__Camion">
+              <Camion className="Camion"></Camion>
             </div>
-          </>
-        ) : (
-          <></>
-        )} */}
+          </div>
+        </Modal>
         <div className="plataforma_section1_header">
           <div className="plataforma_sectionq_body_text_a1 plataforma_sectionq_body_text_a11">
             <button onClick={() => handleOpen(0, setOpen)}>
               MANTENIMIENTO PREVENTIVO Y CORRECTIVO
             </button>
-            {/* <button value={0} onClick={(e) => ModalClick(e)}>MANTENIMIENTO PREVENTIVO Y CORRECTIVO</button> */}
           </div>
           <div className="plataforma_sectionq_body_text_a1 plataforma_sectionq_body_text_a12">
             <button onClick={() => handleOpen(3, setOpen)}>
               CONTROL Y CALIFICACIÓN DE CONDUCTORES
             </button>
-            {/* <button value={1} onClick={(e) => ModalClick(e)}>CONTROL Y CALIFICACIÓN DE CONDUCTORES</button> */}
           </div>
         </div>
         <div className="plataforma_section1_body">
@@ -127,13 +117,11 @@ export default function Monitoreo() {
               <button onClick={() => handleOpen(2, setOpen)}>
                 APAGADO REMOTO
               </button>
-              {/* <button value={2} onClick={(e) => ModalClick(e)}>APAGADO REMOTO</button> */}
             </div>
             <div className="plataforma_sectionq_body_text_a2">
               <button onClick={() => handleOpen(2, setOpen)}>
                 INFORMES A LA MEDIDA
               </button>
-              {/* <button value={3} onClick={(e) => ModalClick(e)}>INFORMES A LA MEDIDA</button> */}
             </div>
           </div>
           <img className="img__pantallas" alt="pantallas plataforma" src={Pl_pantallas}></img>
@@ -142,19 +130,16 @@ export default function Monitoreo() {
               <button onClick={() => handleOpen(2, setOpen)}>
                 GEOCERCAS
               </button>
-              {/* <button value={4} onClick={(e) => ModalClick(e)}>GEOCERCAS</button> */}
             </div>
             <div className="plataforma_sectionq_body_text_a plataforma_sectionq_body_text_a2">
               <button onClick={() => handleOpen(2, setOpen)}>
                 APLICACIÓN MÓVIL
               </button>
-              {/* <button value={5} onClick={(e) => ModalClick(e)}>APLICACIÓN MÓVIL</button> */}
             </div>
             <div className="plataforma_sectionq_body_text_a plataforma_sectionq_body_text_a33">
               <button onClick={() => handleOpen(2, setOpen)}>
                 PRE ALISTAMIENTO
               </button>
-              {/* <button value={6} onClick={(e) => ModalClick(e)}>PRE ALISTAMIENTO</button> */}
             </div>
           </div>
         </div>
