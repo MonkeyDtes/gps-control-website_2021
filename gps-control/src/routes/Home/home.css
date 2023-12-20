@@ -215,6 +215,7 @@ body {
   font-style: normal;
   font-weight: 600;
   color: var(--colorGreen);
+  cursor: pointer;
 }
 
 .main_box--home {
@@ -290,6 +291,7 @@ body {
   font-style: normal;
   font-weight: 600;
   color: var(--colorGreen);
+  cursor: pointer;
 }
 
 .home_section4_group>button:hover {
@@ -871,6 +873,7 @@ div#imagen:hover p#descripcion {
   background: #FFF;
   /* Sombra_botones */
   box-shadow: 0px 4px 6px 0px rgba(235, 22, 44, 0.25);
+  cursor: pointer;
 }
 
 .container--icons__portadaHome>div>img {
@@ -1566,6 +1569,19 @@ div#imagen:hover p#descripcion {
 
   .navbar_app {
     justify-content: center;
+    height: 100vh;
+    display: grid;
+    align-content: center;
+    align-items: center;
+  }
+
+  .back__navbar_app, .navbar_app {
+    grid-column: 1/1;
+    grid-row: 1/1;
+  }
+
+  .back__navbar_app {
+    width: 100vw;
     height: 100vh;
   }
 

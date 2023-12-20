@@ -184,6 +184,11 @@
 }
 
 @media only screen and (max-width: 992px) {
+
+  .swiper_apps {
+    width: 120%;
+  }
+
   .swiper_apps_slide_clicked {
     width: calc(8.33vw * 6) !important;
     margin-bottom: calc(5.88vh);

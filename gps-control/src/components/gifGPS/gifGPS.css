@@ -13,7 +13,7 @@
   min-width: 100px;
   min-height: 120px;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 992px) {
   .gif_gpscontrol {
     position: absolute;
     top: -60vh;

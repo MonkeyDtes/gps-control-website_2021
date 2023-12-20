@@ -700,6 +700,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .textContainerEquipos {
@@ -775,6 +776,7 @@
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  cursor: pointer;
 }
 
 .equipos_section_sensores_body_buttons>button>img {
@@ -797,6 +799,7 @@
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  cursor: pointer;
 }
 
 .equipos_section_sensores_body_buttons>a>button>img {
@@ -2007,6 +2010,8 @@ input[type="radio"]:checked+label::before {
   }
 
   .equipos_section_sensores_downside {
+    height: calc(5.88vh*2);
+    margin: 0;
     align-items: flex-end;
   }
 
@@ -2122,6 +2127,8 @@ input[type="radio"]:checked+label::before {
 
   .equipos_section2_start_column {
     opacity: 0;
+    margin-left: 0;
+    width: calc(8.33vw * 2);
   }
 
   .equipos_section3_end_column {

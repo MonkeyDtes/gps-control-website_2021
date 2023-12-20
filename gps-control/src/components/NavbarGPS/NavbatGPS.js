@@ -157,7 +157,7 @@ export default function NavbarGPS(e) {
           </div>
         </div>
       ) : (
-        <div className="navbar_app">
+        <div className="navbar_app" onClick={handleClickClose}>
           <nav>
             <div className="main_box">
               <button
@@ -317,14 +317,9 @@ export default function NavbarGPS(e) {
                   </div>
                 </button>
               )}
-              <button
-                className="navbar_close_button"
-                onClick={handleClickClose}
-              >
-                X
-              </button>
             </div>
           </nav>
+          <div className="back__navbar_app"></div>
         </div>
       )}
     </>

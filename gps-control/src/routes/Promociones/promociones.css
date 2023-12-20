@@ -67,6 +67,7 @@
   font-weight: 600;
   color: #1e8c93;
   margin-left: calc(8.33vw * 0.5);
+  cursor: pointer;
 }
 
 .promociones_section_body>button:hover {
