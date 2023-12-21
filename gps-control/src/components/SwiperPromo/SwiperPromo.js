@@ -12,6 +12,8 @@ import Modalplataforma_apagado from "../../assets/Modales_plataforma/Modalplataf
 import Modalplataforma_googleplay from "../../assets/Modales_plataforma/Modalplataforma_googleplay.svg";
 import Modalplataforma_enlist1 from "../../assets/Modales_plataforma/Modalplataforma_enlist.svg";
 import Modalplataforma_aplicaciones from "../../assets/Modales_plataforma/Modalplataforma_aplicaciones.png";
+import Imagen_modal_geocerca from "../../assets/Modales_plataforma/Imagen_modal_geocerca.png";
+import Pantallas_llenados from "../../assets/Modales_plataforma/Pantallas_llenados.png";
 import Camion from "../camion";
 import Ondas from "../Ondas/Ondas";
 import Modales_plataforma from "../Modales_plataforma/Modales_plataforma";
@@ -59,7 +61,7 @@ const SwiperPromo = (e) => {
       videoRed: false,
       textWhite: ["Tecnología geográfica", "Posibilidad de agrupar zonas del mapa"],
       imgRed: false,
-      videoWhite: true
+      videoWhite: Imagen_modal_geocerca
     },
     {
       imgCenter: false,
@@ -72,9 +74,9 @@ const SwiperPromo = (e) => {
     {
       imgCenter: false,
       textRed: "Posibilidades de exportar y analizar diferentes tipos de métricas, según los dispositivos instalados:",
-      videoRed: Modalplataforma_fleetrun,
+      videoRed: false,
       textWhite: ["Llenados de combustible", "Informes de viajes", "Estadísticas de la flota"],
-      imgRed: false,
+      imgRed: Pantallas_llenados,
       videoWhite: false
     }
   ])

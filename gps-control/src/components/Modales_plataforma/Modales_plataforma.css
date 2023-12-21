@@ -5,11 +5,16 @@
 .imgRed__modal {
     display: flex;
     justify-content: center;
-    width: calc(8.33vw*3);
+    /* width: calc(8.33vw*3); */
+    height: calc(5.88vh*5);
     grid-row: 6/11;
     grid-column: 1/5;
 }
 
 @media screen and (max-width: 992px) {
     
+    .imgRed__modal {
+         height: calc(5.63vh*3);
+         width: auto!important;
+    }
 }

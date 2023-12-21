@@ -373,6 +373,7 @@ nav>div:nth-child(6) {
   align-items: center;
   padding-bottom: calc(5.88vh * 0.3);
   border: none;
+  cursor: pointer;
 }
 
 /* .hamburguer_nav:hover {

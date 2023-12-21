@@ -67,8 +67,8 @@
 }
 
 .apps_button_check {
-  height: 20px;
-  width: 20px;
+  height: 2vh;
+  width: 2vh;
   background-color: red;
   border-radius: 50%;
   display: flex;
@@ -78,8 +78,8 @@
   box-shadow: 0px 4px 4px #030d4f;
 }
 .apps_button_dontcheck {
-  height: 15px;
-  width: 15px;
+  height: 2vh;
+  width: 2vh;
   background-color: #6b6b6b;
   border-radius: 50%;
   display: flex;

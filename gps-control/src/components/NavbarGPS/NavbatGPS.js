@@ -136,24 +136,36 @@ export default function NavbarGPS(e) {
 
           </div>
           <div className="container--icons__portadaHome">
-            <div>
-              <img src={Iconoflotante_correo} alt="" />
-            </div>
-            <div className="display__none__icon">
-              <img src={Iconoflotante_telefono} alt="" />
-            </div>
-            <div>
-              <img src={Iconoflotante_whatsapp} alt="" />
-            </div>
-            <div>
-              <img src={Iconoflotante_youtube} alt="" />
-            </div>
-            <div className="display__none__icon">
-              <img src={Iconoflotante_usuario} alt="" />
-            </div>
-            <div className="display__none__icon">
-              <img src={Iconoflotante_soporte} alt="" />
-            </div>
+            <a href="mailto:sales@gpscontrol.co" target="_blank">
+              <div>
+                <img src={Iconoflotante_correo} alt="" />
+              </div>
+            </a>
+            <a className="display__none__icon" href="https://wa.me/qr/AFTZFJYUOAWOM1" target="_blank">
+              <div className="display__none__icon">
+                <img src={Iconoflotante_telefono} alt="" />
+              </div>
+            </a>
+            <a href="https://wa.me/qr/AFTZFJYUOAWOM1" target="_blank">
+              <div>
+                <img src={Iconoflotante_whatsapp} alt="" />
+              </div>
+            </a>
+            <a href="https://www.youtube.com/channel/UCYU-Vn3lnDLePlavejpZMBg" target="_blank">
+              <div>
+                <img src={Iconoflotante_youtube} alt="" />
+              </div>
+            </a>
+            <a className="display__none__icon" href="https://tracking.gpscontrolcolombia.com/" target="_blank">
+              <div className="display__none__icon">
+                <img src={Iconoflotante_usuario} alt="" />
+              </div>
+            </a>
+            <a className="display__none__icon" href="https://wa.me/message/Y3KRNJYESUPWL1" target="_blank">
+              <div className="display__none__icon">
+                <img src={Iconoflotante_soporte} alt="" />
+              </div>
+            </a>
           </div>
         </div>
       ) : (

@@ -42,14 +42,14 @@
 }
 
 .soluciones_button_check {
-  height: 20px;
-  width: 20px;
+  height: 2vh;
+  width: 2vh;
   background-color: red;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 2vw;
+  margin-right: .5vw;
   box-shadow: 0px 4px 4px #030d4f;
 }
 
@@ -64,8 +64,8 @@
 }
 
 .dot {
-  height: 10px;
-  width: 10px;
+  width: 0.8vh;
+  height: 0.8vh;
   background-color: #fff;
   border-radius: 50%;
   display: inline-block;
@@ -233,10 +233,9 @@
 
 input[type="radio"]+label::before {
   content: "";
-  width: 15px;
-  height: 17px;
+  width: calc(2vh);
+  height: calc(2vh);
   float: left;
-  margin: 0 0.5em 0 0;
   background: #6b6b6b48;
   filter: drop-shadow(0px 2px 2px #030D4F);
   display: flex;
@@ -304,9 +303,18 @@ input[type="radio"]:checked {
   gap: calc(2.94vh*.7);
 }
 
-.monitoreo_buttons_solutions_trans>div>span {
-  top: -50%;
-  left: 1.5%;
+.monitoreo_buttons_solutions_trans>div {
+  display: grid;
+  align-items: center;
+}
+
+.monitoreo_buttons_solutions_trans>div>.classspan {
+  margin-left: 0.6vh;
+}
+
+.monitoreo_buttons_solutions_trans>div>label {
+  grid-column: 1/1;
+  grid-row: 1/1;
 }
 
 /**/

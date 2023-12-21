@@ -22,6 +22,8 @@ import S_collage from "../../assets/Solucionesm/S_collage.png";
 import sensorCableTG from "../../assets/SensorCableToggle.png";
 import FramePalabraCombustible from "../../assets/FramePalabraCombustible.png";
 import fleetrunPDF from "../../assets/fleetrun.pdf";
+import Brochure_sensor_de_combustible_compressed from "../../assets/Modales_plataforma/Brochure_sensor_de_combustible_compressed.pdf";
+import Reel_SENSORES from "../../assets/Modales_plataforma/Reel_SENSORES.mp4";
 import sensorEquipos1 from "../../assets/sensorEquiposTD1.png";
 import sensorEquipos2 from "../../assets/sensorEquiposTD2.png";
 import sensorEquipos3 from "../../assets/sensorEquiposTD3.png";
@@ -411,8 +413,8 @@ export default function Equipos() {
             </p>
             <div className="equipos_section_sensores_body_buttons">
               <a
-                href={fleetrunPDF}
-                download="fleetrun documentation"
+                href={Brochure_sensor_de_combustible_compressed}
+                download="Brochure sensor de combustible compressed"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -421,10 +423,12 @@ export default function Equipos() {
                   <p className="textContainerBlue">INFORMACION</p>
                 </button>
               </a>
-              <button>
-                <img alt="información" src={Iconob_youtube}></img>
-                <p className="textContainerBlue">REEL</p>
-              </button>
+              <a href={Reel_SENSORES} target="_blank">
+                <button>
+                  <img alt="información" src={Iconob_youtube}></img>
+                  <p className="textContainerBlue">REEL</p>
+                </button>
+              </a>
               <ButtonCotizar elementRef={sectionRef}></ButtonCotizar>
             </div>
           </div>
@@ -467,68 +471,68 @@ export default function Equipos() {
       <section className="section__ajedrez">
         <GifLogo />
         <div className="container__botones__socialMedia">
-        <ButtonsSocialMedia />
+          <ButtonsSocialMedia />
         </div>
-      <section className="equipos_section2">
-        <div className="equipos_section2_startbg"></div>
-        <div className="equipos_section2_start">
-          <div className="equipos_section2_start_column">
-            <ButtonsSocialMedia></ButtonsSocialMedia>
-            <p>
-              Este equipo GPS para maquinaria amarilla es una solución efectiva
-              para monitorear tus maquinas en tiempo real. Con geolocalización
-              precisa, alertas de posibles problemas y fácil instalación y
-              manejo, mejora la gestión de tus activos y tomar decisiones
-              informadas sobre su uso y mantenimiento.
-            </p>
+        <section className="equipos_section2">
+          <div className="equipos_section2_startbg"></div>
+          <div className="equipos_section2_start">
+            <div className="equipos_section2_start_column">
+              <ButtonsSocialMedia></ButtonsSocialMedia>
+              <p>
+                Este equipo GPS para maquinaria amarilla es una solución efectiva
+                para monitorear tus maquinas en tiempo real. Con geolocalización
+                precisa, alertas de posibles problemas y fácil instalación y
+                manejo, mejora la gestión de tus activos y tomar decisiones
+                informadas sobre su uso y mantenimiento.
+              </p>
+            </div>
+            <h1>MAQUINARIA</h1>
           </div>
-          <h1>MAQUINARIA</h1>
-        </div>
-        <div className="container_Section3">
-          <div className="equipos_section3_start">
-            <img className="imgSuntech" alt="suntech" src={Suntech}></img>
+          <div className="container_Section3">
+            <div className="equipos_section3_start">
+              <img className="imgSuntech" alt="suntech" src={Suntech}></img>
+            </div>
           </div>
-        </div>
-      </section>
-      <section className="equipos_section3">
-        <div className="container_Section3">
-          <div className="equipos_section3_start">
-            <img className="imgFmc920" alt="suntech" src={FMC920}></img>
+        </section>
+        <section className="equipos_section3">
+          <div className="container_Section3">
+            <div className="equipos_section3_start">
+              <img className="imgFmc920" alt="suntech" src={FMC920}></img>
+            </div>
           </div>
-        </div>
-        <div className="equipos_section3_end_bg"></div>
-        <div className="equipos_section3_end">
-          <h1>TRANSPORTE</h1>
-          <div className="equipos_section3_end_column">
-            <ButtonsSocialMedia></ButtonsSocialMedia>
-            <p>
-              El modelo FMC920 es recomendado para transporte especial es eficiente en su monitoreo
-              y reporte a plataforma, mejorando la calidad y seguridad de tus servicios. Con geolocalización
-              precisa, alertas en tiempo real y fácil instalación, recibiendo datos de tus vehículos en todo momento
-              y garantizar una experiencia de viaje positiva y eficaz para tus pasajeros.
-            </p>
+          <div className="equipos_section3_end_bg"></div>
+          <div className="equipos_section3_end">
+            <h1>TRANSPORTE</h1>
+            <div className="equipos_section3_end_column">
+              <ButtonsSocialMedia></ButtonsSocialMedia>
+              <p>
+                El modelo FMC920 es recomendado para transporte especial es eficiente en su monitoreo
+                y reporte a plataforma, mejorando la calidad y seguridad de tus servicios. Con geolocalización
+                precisa, alertas en tiempo real y fácil instalación, recibiendo datos de tus vehículos en todo momento
+                y garantizar una experiencia de viaje positiva y eficaz para tus pasajeros.
+              </p>
+            </div>
           </div>
-        </div>
-      </section>
-      <section className="equipos_section4">
-        <div className="equipos_section2_startbg"></div>
-        <div className="equipos_section2_start">
-          <div className="equipos_section2_start_column">
-            <ButtonsSocialMedia></ButtonsSocialMedia>
-            <p>
-              OPTIMICE TIEMPOS DE OPERACIÓN DE SU TALENTO EN CALLE
-              Su personal siempre estará en constante conexión. Optimice tiempos, diseñe rutas,
-              organice pedidos y despachos; manteniendo así siempre el control sobre las labores
-              fuera de oficina.
-            </p>
+        </section>
+        <section className="equipos_section4">
+          <div className="equipos_section2_startbg"></div>
+          <div className="equipos_section2_start">
+            <div className="equipos_section2_start_column">
+              <ButtonsSocialMedia></ButtonsSocialMedia>
+              <p>
+                OPTIMICE TIEMPOS DE OPERACIÓN DE SU TALENTO EN CALLE
+                Su personal siempre estará en constante conexión. Optimice tiempos, diseñe rutas,
+                organice pedidos y despachos; manteniendo así siempre el control sobre las labores
+                fuera de oficina.
+              </p>
+            </div>
+            <h1>PERSONAS</h1>
           </div>
-          <h1>PERSONAS</h1>
-        </div>
-        <div className="container_elemnts1">
-          <img alt="particles" className="img_Particles" src={particles}></img>
-          <div className="equipos_section3_start"></div>
-        </div>
-      </section>
+          <div className="container_elemnts1">
+            <img alt="particles" className="img_Particles" src={particles}></img>
+            <div className="equipos_section3_start"></div>
+          </div>
+        </section>
       </section>
       <section ref={sectionRef}></section>
       <Leads></Leads>

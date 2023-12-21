@@ -134,9 +134,9 @@
   color: white;
 }
 
-.swiper-button-prev,
-.swiper-button-next {
-  opacity: 1;
+.swiper_home_m >.swiper-button-prev,
+.swiper_home_m >.swiper-button-next {
+  display: none;
 }
 
 .swiper_apps>div:nth-child(3) {

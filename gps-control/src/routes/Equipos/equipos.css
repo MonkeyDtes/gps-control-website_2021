@@ -417,6 +417,8 @@
   flex-direction: row;
   justify-content: space-between;
   isolation: isolate;
+  position: relative;
+  z-index: 100;
 }
 
 .equipos_section2_startbg {
@@ -1027,16 +1029,27 @@
   cursor: pointer;
 }
 
+.monitoreo_buttons>div {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.monitoreo_buttons>div>label {
+  grid-column: 1/1;
+  grid-row: 1/1;
+}
+
 .classspan {
-  width: 6px;
-  height: 6px;
+  width: 0.8vh;
+  height: 0.8vh;
   display: block;
   background-color: #fff;
   z-index: 5;
   position: relative;
   border-radius: 50%;
-  top: 30%;
-  left: 22%;
+  grid-column: 1/1;
+  grid-row: 1/1;
 }
 
 .displaynone {
@@ -1044,14 +1057,14 @@
 }
 
 .soluciones_button_check {
-  height: 20px;
-  width: 20px;
+  height: 2vh;
+  width: 2vh;
   background-color: red;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 2vw;
+  margin-right: .5vw;
   box-shadow: 0px 4px 4px #030d4f;
 }
 
@@ -2389,5 +2402,16 @@ input[type="radio"]:checked+label::before {
 
   .equipos_section_sensores_buttons_toggle>img {
     height: calc(5.88vh*1.5) !important;
+  }
+
+  .soluciones_button_check,
+  .leads_button_dontcheck {
+    width: 1.5vh;
+    height: 1.5vh;
+  }
+
+  .dot {
+    width: 0.5vh;
+    height: 0.5vh;
   }
 }
