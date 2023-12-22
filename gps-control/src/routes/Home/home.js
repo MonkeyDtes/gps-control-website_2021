@@ -47,12 +47,19 @@ export default function Home({ onChangeState }) {
   const [modal, setModal] = useState(false);
   const [modal2, setModal2] = useState(false);
   const [inicialSlide, setInicialSlide] = useState(0);
+  const [inicialSlideTwo, setInicialSlideTwo] = useState(0);
   const [open, setOpen] = useState(false);
   const [openTwo, setOpenTwo] = useState(false);
   const handleOpen = (value, setState) => {
     setInicialSlide(value);
     setState(true);
   };
+
+  const handleOpenTwo = (value, setState) => {
+    setInicialSlideTwo(value);
+    setState(true);
+  };
+
   const handleClose = (setState) => setState(false);
 
   const style = {
@@ -67,26 +74,6 @@ export default function Home({ onChangeState }) {
     p: 4,
   };
 
-  const ModalClick = (e) => {
-    setModal(!modal);
-    setInicialSlide(e.currentTarget.value);
-    const body = document.getElementsByTagName("body");
-    if (modal === false) {
-      body[0].style.overflow = "hidden";
-    } else {
-      body[0].style.overflow = "auto";
-    }
-  };
-  const ModalClick2 = (e) => {
-    setModal2(!modal2);
-    setInicialSlide(e.currentTarget.value);
-    const body = document.getElementsByTagName("body");
-    if (modal2 === false) {
-      body[0].style.overflow = "hidden";
-    } else {
-      body[0].style.overflow = "auto";
-    }
-  };
   const HandleClick = (e) => {
     if (e.currentTarget.value === "1") {
       onChangeState([true, false, false, false, false, false, 0]);
@@ -200,7 +187,7 @@ export default function Home({ onChangeState }) {
               <button onClick={() => handleOpen(0, setOpen)}>
                 Flota
               </button>
-              <button onClick={() => handleOpen(3, setOpen)}>
+              <button className="home_section2_body_tree__conductores" onClick={() => handleOpen(3, setOpen)}>
                 Conductores
               </button>
             </div>
@@ -266,7 +253,7 @@ export default function Home({ onChangeState }) {
           aria-labelledby="modal-modal-title"
           aria-describedby="modal-modal-description"
         >
-          <SwiperHomeSecond incial={inicialSlide}></SwiperHomeSecond>
+          <SwiperHomeSecond incialSlide={inicialSlideTwo}></SwiperHomeSecond>
         </Modal>
         <div className="home_column_red">
           <Flecha_arriba></Flecha_arriba>
@@ -286,17 +273,17 @@ export default function Home({ onChangeState }) {
           <img alt="nube icon" className="iconNube" src={VectorNube2}></img>
           <div className="home_section4_group">
             <div className="home_section2_body home_section2_body_vo">
-              <button onClick={() => handleOpen(0, setOpenTwo)}>
+              <button onClick={() => handleOpenTwo(0, setOpenTwo)}>
                 Evitar accidentes
               </button>
             </div>
             <div className="home_section2_body home_section2_body_vt">
-              <button onClick={() => handleOpen(1, setOpenTwo)}>
+              <button onClick={() => handleOpenTwo(1, setOpenTwo)}>
                 Registrar lo que ocurre al interior del móvil en tiempo real
               </button>
             </div>
             <div className="home_section2_body home_section2_body_vtr">
-              <button onClick={() => handleOpen(2, setOpenTwo)}>
+              <button onClick={() => handleOpenTwo(2, setOpenTwo)}>
                 Controlar el comportamiento de los conductores
               </button>
             </div>

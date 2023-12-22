@@ -281,6 +281,8 @@ canvas:nth-child(2) {
     display: grid;
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: 1fr 1fr 1fr;
+    position: relative;
+    z-index: 196;
   }
 
   .plataforma_section1_header>div {

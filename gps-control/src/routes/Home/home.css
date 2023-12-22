@@ -1101,6 +1101,13 @@ div#imagen:hover p#descripcion {
   .home_section2_body_tree {
     grid-row: 5/6;
     height: 2.94vh;
+    position: relative;
+    z-index: 196;
+  }
+
+  .home_section2_body_tree__conductores {
+    position: relative;
+    z-index: 196;
   }
 
   .home_section2_pantallas>img {
@@ -1516,6 +1523,8 @@ div#imagen:hover p#descripcion {
 
   .home_section2_body_vtr {
     grid-row: 5/7;
+    position: relative;
+    z-index: 196;
   }
 
   .carreteras_h {
