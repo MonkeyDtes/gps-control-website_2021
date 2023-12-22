@@ -45,19 +45,7 @@ export default function Monitoreo() {
       body[0].style.overflow = "auto";
     }
   };
-  // const [modal, setModal] = useState(false)
-  // const [inicialSlide, setInicialSlide] = useState(false)
 
-  // const ModalClick = (e) => {
-  //   setModal(!modal)
-  //   setInicialSlide(e.currentTarget.value);
-  //   const body = document.getElementsByTagName("body");
-  //   if (modal === false) {
-  //     body[0].style.overflow = "hidden";
-  //   } else {
-  //     body[0].style.overflow = "auto";
-  //   }
-  // }
   return (
     <div>
       <NavbarGPS
@@ -106,7 +94,7 @@ export default function Monitoreo() {
             </button>
           </div>
           <div className="plataforma_sectionq_body_text_a1 plataforma_sectionq_body_text_a12">
-            <button onClick={() => handleOpen(3, setOpen)}>
+            <button onClick={() => handleOpen(1, setOpen)}>
               CONTROL Y CALIFICACIÓN DE CONDUCTORES
             </button>
           </div>
@@ -114,12 +102,12 @@ export default function Monitoreo() {
         <div className="plataforma_section1_body">
           <div className="plataforma_section1_body_text plataforma_section1_body_text1">
             <div className="plataforma_sectionq_body_text_a2">
-              <button onClick={() => handleOpen(2, setOpen)}>
+              <button onClick={() => handleOpen(5, setOpen)}>
                 APAGADO REMOTO
               </button>
             </div>
             <div className="plataforma_sectionq_body_text_a2">
-              <button onClick={() => handleOpen(2, setOpen)}>
+              <button onClick={() => handleOpen(6, setOpen)}>
                 INFORMES A LA MEDIDA
               </button>
             </div>
@@ -127,12 +115,12 @@ export default function Monitoreo() {
           <img className="img__pantallas" alt="pantallas plataforma" src={Pl_pantallas}></img>
           <div className="plataforma_section1_body_text plataforma_section1_body_text2">
             <div className="plataforma_sectionq_body_text_a plataforma_sectionq_body_text_a1">
-              <button onClick={() => handleOpen(2, setOpen)}>
+              <button onClick={() => handleOpen(4, setOpen)}>
                 GEOCERCAS
               </button>
             </div>
             <div className="plataforma_sectionq_body_text_a plataforma_sectionq_body_text_a2">
-              <button onClick={() => handleOpen(2, setOpen)}>
+              <button onClick={() => handleOpen(3, setOpen)}>
                 APLICACIÓN MÓVIL
               </button>
             </div>

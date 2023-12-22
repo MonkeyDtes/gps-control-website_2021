@@ -230,8 +230,7 @@ body {
 }
 
 .home_section2_group>button:hover svg {
-  background-color: var(--colorGreen);
-  color: white;
+  fill: white;
 }
 
 .home_section2_group>button>img {

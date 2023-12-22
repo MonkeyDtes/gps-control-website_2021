@@ -395,6 +395,8 @@
   background-color: #fff;
   display: flex;
   flex-direction: row;
+  position: relative;
+  z-index: 100;
 }
 
 .equipos_section4 {
@@ -781,12 +783,21 @@
   cursor: pointer;
 }
 
+.equipos_section_sensores_body_buttons>button:hover {
+  background-color: var(--colorGreen);
+  color: white;
+}
+
 .equipos_section_sensores_body_buttons>button>img {
   height: calc(5.88vh*0.6);
 }
 
 .equipos_section_sensores_body_buttons>a {
   text-decoration: none;
+}
+
+.video_modal_equipos {
+  max-height: 80vh;
 }
 
 .equipos_section_sensores_body_buttons>a>button {

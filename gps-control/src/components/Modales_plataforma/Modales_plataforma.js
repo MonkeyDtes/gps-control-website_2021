@@ -19,10 +19,10 @@ function Modales_plataforma({ data }) {
         }
         <div className="swiper_promo_slide_red">
             <p className={dataA.videoRed || dataA.imgRed ? "text--slideWhite__home" : "text--slideWhite__home_big"}>{dataA.textRed}</p>
-            
+
             <div className={dataA.videoRed || dataA.imgRed ? "cont__video__modal" : "display--none"}>
-                {dataA.videoRed ? <video autoPlay loop className="video__modal" src={dataA.videoRed}></video>:""}
-                {dataA.imgRed ? <img className="imgRed__modal" src={dataA.imgRed}/>:""}
+                {dataA.videoRed ? <video autoPlay loop className="video__modal" src={dataA.videoRed}></video> : ""}
+                {dataA.imgRed ? <img className="imgRed__modal" src={dataA.imgRed} /> : ""}
             </div>
         </div>
         <div className="swiper_promo_slide_white">

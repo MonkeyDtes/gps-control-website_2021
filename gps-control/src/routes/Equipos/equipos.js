@@ -38,6 +38,7 @@ import ButtonsSocialMedia from "../../components/ButtonsSocialMedia/ButtonsSocia
 import ButtonVerMas from "../../components/ButtonVerMas/ButtonVerMas";
 import Flecha_cont_red_abajo from "../../components/Flecha_cont_red_abajo/Flecha_cont_red_abajo";
 import GifLogo from "../../components/GifLogo";
+import { Modal } from "@mui/material";
 
 export default function Equipos() {
 
@@ -69,6 +70,9 @@ export default function Equipos() {
   const [selectedRadio2, setSelectedRadio2] = useState(0);
   const [button1, setButton1] = useState(false);
   const [button2, setButton2] = useState(false);
+  const [openE, setOpenE] = useState(false);
+
+  const handleClose = () => setOpenE(false);
 
   const HandleClick1 = (i) => {
     setSelectedRadio(i)
@@ -423,7 +427,7 @@ export default function Equipos() {
                   <p className="textContainerBlue">INFORMACION</p>
                 </button>
               </a>
-              <a href={Reel_SENSORES} target="_blank">
+              <a target="_blank" onClick={() => setOpenE(true)}>
                 <button>
                   <img alt="información" src={Iconob_youtube}></img>
                   <p className="textContainerBlue">REEL</p>
@@ -432,6 +436,16 @@ export default function Equipos() {
               <ButtonCotizar elementRef={sectionRef}></ButtonCotizar>
             </div>
           </div>
+          <Modal
+            open={openE}
+            onClose={() => handleClose()}
+            aria-labelledby="modal-modal-title"
+            aria-describedby="modal-modal-description"
+          >
+            <video className="video_modal_equipos" playsInline autoPlay loop>
+              <source src={Reel_SENSORES} type="video/mp4" />
+            </video>
+          </Modal>
         </div>
         <div className="equipos_section_sensores_downside">
           <img

@@ -28,56 +28,49 @@ const SwiperPromo = (e) => {
       textRed: "Programa servicios técnicos y lleva trazabilidad sobre el mantenimiento de la flota:",
       videoRed: Modalplataforma_fleetrun,
       textWhite: ["Notificaciones", "Control especifico de cada unidad"],
-      imgRed: false,
-      videoWhite: false
+      imgRed: false
     },
     {
       imgCenter: L_ecodriving,
       textRed: "Obtén informes sobre la calidad de conducción, en cada unidad de la flota, controlando:",
       videoRed: Modalplataforma_eco,
       textWhite: ["Consumo de combustible", "Chat con el conductor"],
-      imgRed: false,
-      videoWhite: false
+      imgRed: false
     },
     {
       imgCenter: Modalplataforma_enlist1,
       textRed: "App destinada al alistamiento pre-operativo, para verificar el estado del vehículo y dejar reportes antes de los viajes: ",
       videoRed: Modalplataforma_enlist,
       textWhite: ["Exportar datos", "App móvil y web", "Cuenta para supervisores"],
-      imgRed: false,
-      videoWhite: false
+      imgRed: false
     },
     {
       imgCenter: Modalplataforma_googleplay,
       textRed: "Nuestra plataforma cuenta con una versión descargable para seguir monitoreando fuera de la versión web:",
       videoRed: false,
       textWhite: ["Datos de la plataforma", "Diseño  familiar en la plataforma web y móvil"],
-      imgRed: Modalplataforma_aplicaciones,
-      videoWhite: false
+      imgRed: Modalplataforma_aplicaciones
     },
     {
       imgCenter: false,
       textRed: "Las geocercas o cercas geográficas son áreas determinadas en el mapa que se utilizan para controlar el movimiento de unidades dentro de estas áreas o fuera de ellas:",
       videoRed: false,
       textWhite: ["Tecnología geográfica", "Posibilidad de agrupar zonas del mapa"],
-      imgRed: false,
-      videoWhite: Imagen_modal_geocerca
+      imgRed: Imagen_modal_geocerca
     },
     {
       imgCenter: false,
       textRed: "Dispositivos aplicables a los equipos, para mayor pertinencia en el caso de uso y funciones extra:",
       videoRed: Modalplataforma_apagado,
       textWhite: ["Tecnología precisa", "Soporte constante"],
-      imgRed: false,
-      videoWhite: false
+      imgRed: false
     },
     {
       imgCenter: false,
       textRed: "Posibilidades de exportar y analizar diferentes tipos de métricas, según los dispositivos instalados:",
       videoRed: false,
       textWhite: ["Llenados de combustible", "Informes de viajes", "Estadísticas de la flota"],
-      imgRed: Pantallas_llenados,
-      videoWhite: false
+      imgRed: Pantallas_llenados
     }
   ])
   useEffect(() => {

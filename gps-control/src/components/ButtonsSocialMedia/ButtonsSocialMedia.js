@@ -1,6 +1,4 @@
 import "./ButtonsSocialMedia.css"
-import ytIcon from "../../assets/ytRed.svg";
-import waIcon from "../../assets/waRed.svg";
 import Iconob_whatsapp from "../../assets/Componentes/Iconos_botones/Iconob_whatsapp.svg"
 import Iconob_youtubec from "../../assets/Componentes/Iconos_botones/Iconob_youtubec.svg"
 
@@ -14,7 +12,7 @@ export default function ButtonsSocialMedia() {
                 <img className="icons" alt="youtube icon " src={Iconob_youtubec}></img>
                 <p className="textContainerIcons">VIDEO DEL EQUIPO</p>
               </a>
-              <a href=" https://wa.me/qr/HVC55BD4ZJMLH1">
+              <a href=" https://wa.me/qr/HVC55BD4ZJMLH1" target="_blank">
                 <img className="icons" alt="youtube icon " src={Iconob_whatsapp}></img>
                 <p className="textContainerIcons">CHATEE CON NOSOTROS</p>
               </a>

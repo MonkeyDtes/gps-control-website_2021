@@ -98,6 +98,11 @@
   justify-items: center;
 }
 
+.swiper_promo_slide_white>.image__geocercas {
+  grid-column: 1/3;
+  grid-row: 6/11;
+}
+
 .hr-c>hr {
   height: calc(5.88vh*1);
   margin-bottom: calc(5.88vh*1);
