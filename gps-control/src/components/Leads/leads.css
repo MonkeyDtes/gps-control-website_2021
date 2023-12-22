@@ -88,6 +88,7 @@
 
 .leads_page_form_end {
   display: flex;
+  justify-content: flex-end;
   flex-direction: column;
   align-items: center;
   margin-right: calc(5.88vh * 0.5);
@@ -119,6 +120,7 @@
   font-weight: 400;
   line-height: 100.02%;
   cursor: pointer;
+  margin-bottom: calc(5.88vh*1);
 }
 
 .leads_page_form_end>button:hover {
@@ -315,6 +317,10 @@ textarea {
     height: 170vh;
   }
 
+  .leads_page_form_end {
+    z-index: 100;
+  }
+
   .leads_page_form_end>button {
     width: calc(8.33vw * 3);
     font-size: 2vh;
@@ -384,7 +390,6 @@ textarea {
   justify-content: center;
   align-items: center;
   width: calc(8.33vw*3);
-  margin-bottom: calc(5.88vh*0.5);
 }
 
 .content--formLeft {
@@ -401,6 +406,7 @@ textarea {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  max-height: calc(5.88vh*5);
 }
 
 .cont--text {
@@ -545,8 +551,8 @@ textarea {
 
   .copntent--formRight {
     z-index: 1;
-    grid-column: 1/13;
-    grid-row: 20/30;
+    grid-column: 3/10;
+    grid-row: 31/33;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -604,20 +610,21 @@ textarea {
     width: 100%;
     display: flex;
     justify-content: center;
+
   }
 
   .text--mobile__form {
     display: block;
     color: #FFF;
     font-family: Bahnschrift;
-    font-size: 10px;
+    font-size: 1.5vh;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
   }
 
-  .leads_buttons>button {
-    font-size: 12px;
+  .leads_buttons>button, .letra  {
+    font-size: 11px;
   }
 
 

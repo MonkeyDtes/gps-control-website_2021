@@ -143,15 +143,7 @@ export default function Leads() {
                   </label>
                 </div>
               </div>
-            </form>
-          </div>
-          <div className="copntent--formRight">
-            <div className="content--text__form">
-              <p className="leads_page_start_text"><span>Aumenta la productividad de tu flota con nuestra
-                plataforma</span> de gestión lógistica. Todos los beneficios están incluidos por una misma mensualidad.
-                llena el formulario y obtén una asesoría completa.</p>
-            </div>
-            <div className="leads_page_form_end">
+              <div className="leads_page_form_end">
               <label>
                 <textarea
                   name="message"
@@ -169,6 +161,15 @@ export default function Leads() {
                 Enviar
               </button>
             </div>
+            </form>
+          </div>
+          <div className="copntent--formRight">
+            <div className="content--text__form">
+              <p className="leads_page_start_text"><span>Aumenta la productividad de tu flota con nuestra
+                plataforma</span> de gestión lógistica. Todos los beneficios están incluidos por una misma mensualidad.
+                llena el formulario y obtén una asesoría completa.</p>
+            </div>
+            
             <div className="container--text--mobile__form">
               <p className="text--mobile__form">Seguimos los requerimientos del cliente ofreciendo la mejor solución.</p>
               </div>
