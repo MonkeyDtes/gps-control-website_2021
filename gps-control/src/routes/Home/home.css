@@ -63,7 +63,7 @@ body {
 .home_section2_column>h3 {
   font-weight: 400;
   font-size: 1.5vw;
-  line-height: 38px;
+  line-height: 12vh;
   color: var(--colorGray);
 }
 
@@ -505,14 +505,14 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
-  width: 100px;
-  height: 30px;
+  width: calc(8.33vw*1);
+  height: calc(5.88vh*.5);
   background-color: #6B6B6B;
   grid-row: 4/5;
   grid-column: 2/3;
   color: #FFF;
   text-align: justify;
-  font-size: 15px;
+  font-size: 2vh;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
