@@ -405,6 +405,7 @@ body {
 .container--textSeguimiento__home>img {
   margin-right: 10px;
   margin-left: calc(8.33vw*0.5);
+  height: 2.7vh;
 }
 
 .container--textSeguimiento__home {
