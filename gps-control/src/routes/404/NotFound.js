@@ -21,8 +21,8 @@ export default function NotFound() {
           </p>
           <div className="main_box">
             <div className="notFound_body_label">
-                <img alt="Enthernet" src={internetIcon}></img>
-                <a href="https://www.gpscontrol.co">www.gpscontrol.co</a>
+              <img alt="Enthernet" src={internetIcon}></img>
+              <a href="https://www.gpscontrol.co">www.gpscontrol.co</a>
             </div>
           </div>
           <p>O comunicarse con nosotros en nuestras Redes</p>
